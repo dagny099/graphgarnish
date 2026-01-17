@@ -38,6 +38,98 @@
             max-width: 400px;
             max-height: calc(100vh - 40px);
             overflow-y: auto;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        #control-panel.collapsed {
+            transform: translateX(-420px);
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        /* Toggle Button */
+        #toggle-panel {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.95);
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 99;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        #toggle-panel:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+        
+        #toggle-panel.panel-open {
+            left: 440px;
+        }
+        
+        /* Loading Status Indicator */
+        #status-indicator {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        
+        #status-indicator.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        #status-indicator.loading {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95));
+            color: white;
+        }
+        
+        #status-indicator.success {
+            background: linear-gradient(135deg, rgba(72, 187, 120, 0.95), rgba(56, 161, 105, 0.95));
+            color: white;
+        }
+        
+        #status-indicator.error {
+            background: linear-gradient(135deg, rgba(245, 101, 101, 0.95), rgba(229, 62, 62, 0.95));
+            color: white;
+        }
+        
+        .status-icon {
+            font-size: 20px;
+            animation: none;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        #status-indicator.loading .status-icon {
+            animation: spin 1s linear infinite;
         }
         
         #control-panel::-webkit-scrollbar {
@@ -431,9 +523,20 @@
 </head>
 <body>
     <div id="container">
+        <!-- Toggle Button -->
+        <button id="toggle-panel" class="panel-open" aria-label="Toggle control panel">
+            ✕
+        </button>
+        
+        <!-- Status Indicator -->
+        <div id="status-indicator">
+            <span class="status-icon">⏳</span>
+            <span class="status-text">Loading...</span>
+        </div>
+        
         <div id="control-panel">
             <h1>🍸 GraphGarnish</h1>
-            <div class="subtitle">Interactive Network Explorer with Filters</div>
+            <div class="subtitle">Interactive Network Explorer • Press <strong>H</strong> to hide/show</div>
             
             <!-- File Upload -->
             <div class="file-upload">
@@ -603,11 +706,70 @@
             searchQuery: ''
         };
         
+        // Status indicator helper functions
+        function showStatus(type, icon, text, duration = 3000) {
+            const indicator = document.getElementById('status-indicator');
+            const iconEl = indicator.querySelector('.status-icon');
+            const textEl = indicator.querySelector('.status-text');
+            
+            // Remove all status classes
+            indicator.classList.remove('loading', 'success', 'error');
+            
+            // Add new status class
+            indicator.classList.add(type);
+            iconEl.textContent = icon;
+            textEl.textContent = text;
+            
+            // Show indicator
+            indicator.classList.add('show');
+            
+            // Auto-hide after duration (unless loading)
+            if (type !== 'loading' && duration > 0) {
+                setTimeout(() => {
+                    indicator.classList.remove('show');
+                }, duration);
+            }
+        }
+        
+        function hideStatus() {
+            const indicator = document.getElementById('status-indicator');
+            indicator.classList.remove('show');
+        }
+        
+        // Toggle panel functionality
+        document.getElementById('toggle-panel').addEventListener('click', togglePanel);
+        
+        function togglePanel() {
+            const panel = document.getElementById('control-panel');
+            const button = document.getElementById('toggle-panel');
+            
+            panel.classList.toggle('collapsed');
+            button.classList.toggle('panel-open');
+            
+            // Update button emoji
+            if (panel.classList.contains('collapsed')) {
+                button.textContent = '🎛️';
+                button.style.left = '20px';
+            } else {
+                button.textContent = '✕';
+                button.style.left = '440px';
+            }
+        }
+        
+        // Keyboard shortcut: Press 'H' to toggle panel
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'h' || e.key === 'H') {
+                // Don't trigger if typing in an input field
+                if (e.target.tagName !== 'INPUT') {
+                    togglePanel();
+                }
+            }
+        });
+        
         // Auto-load sample data on page load
         window.addEventListener('DOMContentLoaded', function() {
+            showStatus('loading', '⏳', 'Loading network data...');
             loadNetworkFromURL('sample_network.json');
-       //     <button onclick="loadNetworkFromURL('catalog_cocktails.json')">Catalog & Cocktails</button>
-       //     <button onclick="loadNetworkFromURL('another_podcast.json')">Another Podcast</button>
         });
         
         // Function to load network from URL
@@ -623,10 +785,17 @@
                     // Store pristine copy (deep clone)
                     pristineGraphData = JSON.parse(JSON.stringify(data));
                     fullGraphData = data;
+                    
+                    // Show success status
+                    const nodeCount = data.nodes?.length || 0;
+                    const linkCount = data.links?.length || 0;
+                    showStatus('success', '✓', `Loaded ${nodeCount} nodes, ${linkCount} connections`, 4000);
+                    
                     initializeGraph();
                 })
                 .catch(error => {
                     console.log('Auto-load failed (this is normal if file not present):', error);
+                    showStatus('error', '⚠️', 'No data loaded. Upload a JSON file to begin.', 5000);
                     // Silent fail - user can still upload manually
                 });
         }
@@ -635,6 +804,8 @@
         document.getElementById('fileInput').addEventListener('change', function(event) {
             const file = event.target.files[0];
             if (file) {
+                showStatus('loading', '⏳', `Loading ${file.name}...`);
+                
                 const reader = new FileReader();
                 reader.onload = function(e) {
                     try {
@@ -642,8 +813,15 @@
                         // Store pristine copy (deep clone)
                         pristineGraphData = JSON.parse(JSON.stringify(rawData));
                         fullGraphData = rawData;
+                        
+                        // Show success status
+                        const nodeCount = rawData.nodes?.length || 0;
+                        const linkCount = rawData.links?.length || 0;
+                        showStatus('success', '✓', `Loaded ${nodeCount} nodes, ${linkCount} connections`, 4000);
+                        
                         initializeGraph();
                     } catch (error) {
+                        showStatus('error', '✕', `Error: ${error.message}`, 5000);
                         alert('Error parsing JSON file: ' + error.message);
                     }
                 };
