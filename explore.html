@@ -132,6 +132,75 @@
             animation: spin 1s linear infinite;
         }
         
+        /* Title Banner */
+        #title-banner {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            z-index: 98;
+            text-align: center;
+            max-width: 600px;
+            transition: opacity 0.3s ease;
+        }
+        
+        #title-banner.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        #title-banner h2 {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0;
+        }
+        
+        #title-banner .subtitle {
+            font-size: 14px;
+            color: #718096;
+            margin-top: 5px;
+        }
+        
+        /* Layout Toggle Button */
+        #layout-toggle {
+            position: absolute;
+            top: 90px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border: none;
+            border-radius: 12px;
+            padding: 12px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            color: #4a5568;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            z-index: 99;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        #layout-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+        
+        #layout-toggle.panel-open {
+            left: 440px;
+        }
+        
         #control-panel::-webkit-scrollbar {
             width: 8px;
         }
@@ -523,9 +592,21 @@
 </head>
 <body>
     <div id="container">
+        <!-- Title Banner -->
+        <div id="title-banner">
+            <h2 id="network-title">Catalog & Cocktails</h2>
+            <div class="subtitle" id="network-subtitle">203 Episodes • 2021-2026</div>
+        </div>
+        
         <!-- Toggle Button -->
         <button id="toggle-panel" class="panel-open" aria-label="Toggle control panel">
             ✕
+        </button>
+        
+        <!-- Layout Toggle -->
+        <button id="layout-toggle" class="panel-open" aria-label="Toggle layout">
+            <span id="layout-icon">🎯</span>
+            <span id="layout-text">Force Layout</span>
         </button>
         
         <!-- Status Indicator -->
@@ -693,6 +774,7 @@
         let pristineGraphData = null; // Pristine copy never mutated by D3
         let simulation = null;
         let selectedNode = null;
+        let currentLayout = 'force'; // 'force' or 'radial'
         
         // Filter state
         const filters = {
@@ -754,6 +836,9 @@
                 button.textContent = '✕';
                 button.style.left = '440px';
             }
+            
+            // Update layout toggle position too
+            updateLayoutTogglePosition();
         }
         
         // Keyboard shortcut: Press 'H' to toggle panel
@@ -765,6 +850,56 @@
                 }
             }
         });
+        
+        // Layout toggle functionality
+        document.getElementById('layout-toggle').addEventListener('click', function() {
+            if (currentLayout === 'force') {
+                currentLayout = 'radial';
+                document.getElementById('layout-icon').textContent = '⭕';
+                document.getElementById('layout-text').textContent = 'Radial Layout';
+            } else {
+                currentLayout = 'force';
+                document.getElementById('layout-icon').textContent = '🎯';
+                document.getElementById('layout-text').textContent = 'Force Layout';
+            }
+            
+            // Re-apply filters to rebuild with new layout
+            if (pristineGraphData) {
+                applyFilters();
+            }
+        });
+        
+        // Update toggle button position when panel state changes
+        function updateLayoutTogglePosition() {
+            const panel = document.getElementById('control-panel');
+            const layoutToggle = document.getElementById('layout-toggle');
+            
+            if (panel.classList.contains('collapsed')) {
+                layoutToggle.classList.remove('panel-open');
+                layoutToggle.style.left = '20px';
+            } else {
+                layoutToggle.classList.add('panel-open');
+                layoutToggle.style.left = '440px';
+            }
+        }
+        
+        // Update title banner with network info
+        function updateTitle(data) {
+            const episodes = data.nodes.filter(n => n.type === 'episode');
+            const guests = data.nodes.filter(n => n.type === 'person');
+            
+            // Extract years from episodes
+            const years = episodes
+                .map(ep => ep.date ? parseInt(ep.date.substring(0, 4)) : null)
+                .filter(y => y !== null);
+            
+            const minYear = Math.min(...years);
+            const maxYear = Math.max(...years);
+            
+            document.getElementById('network-title').textContent = 'Catalog & Cocktails';
+            document.getElementById('network-subtitle').textContent = 
+                `${episodes.length} Episodes • ${guests.length} Guests • ${minYear}-${maxYear}`;
+        }
         
         // Auto-load sample data on page load
         window.addEventListener('DOMContentLoaded', function() {
@@ -785,6 +920,9 @@
                     // Store pristine copy (deep clone)
                     pristineGraphData = JSON.parse(JSON.stringify(data));
                     fullGraphData = data;
+                    
+                    // Update title banner
+                    updateTitle(data);
                     
                     // Show success status
                     const nodeCount = data.nodes?.length || 0;
@@ -813,6 +951,9 @@
                         // Store pristine copy (deep clone)
                         pristineGraphData = JSON.parse(JSON.stringify(rawData));
                         fullGraphData = rawData;
+                        
+                        // Update title banner
+                        updateTitle(rawData);
                         
                         // Show success status
                         const nodeCount = rawData.nodes?.length || 0;
@@ -1087,9 +1228,9 @@
             
             svg.call(zoom);
             
-            // Initial zoom
+            // Initial zoom (more zoomed out to see full network)
             setTimeout(() => {
-                svg.call(zoom.transform, d3.zoomIdentity.translate(width/2, height/2).scale(0.5));
+                svg.call(zoom.transform, d3.zoomIdentity.translate(width/2, height/2).scale(0.3));
             }, 100);
             
             // Color & size maps
@@ -1105,21 +1246,38 @@
                 'organization': 15
             };
             
-            // Force simulation
-            simulation = d3.forceSimulation(graphData.nodes)
-                .force('link', d3.forceLink(graphData.links)
-                    .id(d => d.id)
-                    .distance(d => d.type === 'AFFILIATED_WITH' ? 60 : 100))
-                .force('charge', d3.forceManyBody()
-                    .strength(d => {
-                        if (d.type === 'organization') return -1200;
-                        if (d.type === 'person') return -500;
-                        return -200;
-                    }))
-                .force('center', d3.forceCenter(width / 2, height / 2))
-                .force('collision', d3.forceCollide().radius(d => sizeMap[d.type] + 8))
-                .force('x', d3.forceX(width / 2).strength(0.05))
-                .force('y', d3.forceY(height / 2).strength(0.05));
+            // Force simulation with layout options
+            if (currentLayout === 'radial') {
+                // Radial layout: organize by node type in concentric circles
+                simulation = d3.forceSimulation(graphData.nodes)
+                    .force('link', d3.forceLink(graphData.links)
+                        .id(d => d.id)
+                        .distance(d => d.type === 'AFFILIATED_WITH' ? 80 : 150))
+                    .force('charge', d3.forceManyBody().strength(-400))
+                    .force('collision', d3.forceCollide().radius(d => sizeMap[d.type] + 10))
+                    .force('r', d3.forceRadial(d => {
+                        // Place nodes in concentric circles by type
+                        if (d.type === 'organization') return 200;  // Inner circle
+                        if (d.type === 'person') return 400;        // Middle circle
+                        return 600;                                 // Outer circle (episodes)
+                    }, width / 2, height / 2).strength(0.8));
+            } else {
+                // Standard force-directed layout
+                simulation = d3.forceSimulation(graphData.nodes)
+                    .force('link', d3.forceLink(graphData.links)
+                        .id(d => d.id)
+                        .distance(d => d.type === 'AFFILIATED_WITH' ? 60 : 100))
+                    .force('charge', d3.forceManyBody()
+                        .strength(d => {
+                            if (d.type === 'organization') return -1200;
+                            if (d.type === 'person') return -500;
+                            return -200;
+                        }))
+                    .force('center', d3.forceCenter(width / 2, height / 2))
+                    .force('collision', d3.forceCollide().radius(d => sizeMap[d.type] + 8))
+                    .force('x', d3.forceX(width / 2).strength(0.05))
+                    .force('y', d3.forceY(width / 2).strength(0.05));
+            }
             
             // Links
             const link = g.append('g')
