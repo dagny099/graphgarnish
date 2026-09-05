@@ -40,10 +40,25 @@ jobs:
         run: |
           set -o pipefail
           if [ -n "$FEED_URL" ]; then
-            python3 tools/build_network.py --feed "$FEED_URL" --report 2>&1 | tee build.log
+            python3 tools/build_network.py --feed "$FEED_URL" \
+              --save-feed feed-raw.xml --report 2>&1 | tee build.log
           else
-            python3 tools/build_network.py --feed --report 2>&1 | tee build.log
+            python3 tools/build_network.py --feed \
+              --save-feed feed-raw.xml --report 2>&1 | tee build.log
           fi
+
+      # Keep whatever the feed URL actually returned, so a parse failure can be
+      # diagnosed from the bytes rather than guessed at from the error message.
+      - name: Keep the raw response
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: feed-raw
+          path: |
+            feed-raw.xml
+            build.log
+          if-no-files-found: warn
+          retention-days: 14
 
       - name: Fail if the feed could not be used
         run: |
@@ -64,7 +79,7 @@ jobs:
 
       - name: Commit if the graph changed
         run: |
-          rm -f build.log
+          rm -f build.log feed-raw.xml
           if [ -z "$(git status --porcelain)" ]; then
             echo "No change."
             exit 0

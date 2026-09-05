@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Catalog &amp; Cocktails</title>
+  <entry>
+    <title>Decision intelligence and context graphs with Priya Raman</title>
+    <published>2026-02-06T10:00:00Z</published>
+    <link rel="alternate" href="https://example.com/ep/decision-intel"/>
+    <summary>Our guest is Priya Raman, Head of Data at Acme Analytics. Knowledge graphs and agentic workflows.</summary>
+  </entry>
+  <entry>
+    <title>Season 12 Finale</title>
+    <published>2026-08-12T10:00:00Z</published>
+    <link rel="alternate" href="https://example.com/ep/s12-finale"/>
+    <summary>Tim and Juan wrap the season.</summary>
+  </entry>
+</feed>

@@ -14,9 +14,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_network import (  # noqa: E402
-    build, clean_org, dedupe_attributes, guests_from_title, load_topics,
-    parse_feed, parse_feed_loosely, parse_pubdate, split_people,
-    strip_takeaway_prefix,
+    Payload, build, clean_org, dedupe_attributes, discover_feed_url,
+    guests_from_title, load_feed, load_topics, parse_feed, parse_feed_loosely,
+    parse_pubdate, split_people, strip_takeaway_prefix,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -129,6 +129,60 @@ check("the loose parser recovers titles and dates",
 check("recovery paths produce the same graph as a clean feed",
       len([n for n in build(SEED, parse_feed(dup_xml), TOPICS)["nodes"] if n["type"] == "episode"])
       == len([n for n in build(SEED, FIXTURE, TOPICS)["nodes"] if n["type"] == "episode"]))
+
+print("\nlanding pages and Atom")
+atom_xml = (TESTDATA / "sample_feed_atom.xml").read_text(encoding="utf-8")
+landing_html = (TESTDATA / "landing_page.html").read_text(encoding="utf-8")
+
+check("Atom <feed>/<entry> parses like RSS",
+      [i["title"] for i in parse_feed(atom_xml)][:1] ==
+      ["Decision intelligence and context graphs with Priya Raman"])
+check("Atom dates and links are read",
+      parse_feed(atom_xml)[1]["date"] == "2026-08-12"
+      and parse_feed(atom_xml)[1]["url"] == "https://example.com/ep/s12-finale")
+check("a feed link is discovered in an HTML page and resolved against the URL",
+      discover_feed_url(landing_html, "https://example.com/127/Show/feed")
+      == "https://example.com/real/feed.xml")
+check("a page with no feed link discovers nothing",
+      discover_feed_url("<html><head></head></html>", "https://example.com/") is None)
+check("an HTML response is identified as HTML",
+      Payload(landing_html, "https://example.com/x", "text/html").looks_like_html)
+check("the diagnosis names the shape and the counts",
+      all(k in Payload(landing_html, "https://example.com/x", "text/html").describe()
+          for k in ("final URL", "content-type", "HTML page", "<item> count")))
+
+# End-to-end: a URL that serves a landing page must follow the advertised feed.
+import http.server, socketserver, threading  # noqa: E402
+
+feed_body = (TESTDATA / "sample_feed.xml").read_bytes()
+
+
+class Handler(http.server.BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == "/real/feed.xml":
+            body, ctype = feed_body, "application/rss+xml"
+        else:
+            body, ctype = landing_html.encode(), "text/html; charset=utf-8"
+        self.send_response(200)
+        self.send_header("Content-Type", ctype)
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def log_message(self, *a):
+        pass
+
+
+with socketserver.TCPServer(("127.0.0.1", 0), Handler) as srv:
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    base = f"http://127.0.0.1:{srv.server_address[1]}/podcast"
+    recovered = load_feed(base, None)
+    srv.shutdown()
+
+check("a landing-page URL is followed through to the real feed",
+      len(recovered) == len(FIXTURE), f"got {len(recovered)} items")
+check("load_feed returns no items rather than raising when a host is unreachable",
+      load_feed("http://127.0.0.1:9/nothing", None) == [])
 
 print()
 if failures:

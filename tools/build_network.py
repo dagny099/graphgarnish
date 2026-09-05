@@ -26,6 +26,7 @@ import json
 import re
 import sys
 import unicodedata
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
@@ -257,10 +258,69 @@ def topics_for(text: str, taxonomy: list[dict]) -> list[str]:
 
 # -------------------------------------------------------------- feed access
 
-def fetch_feed(url: str, timeout: int = 60) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": "GraphGarnish/1.0"})
+FETCH_HEADERS = {
+    "User-Agent": "GraphGarnish/1.0 (+https://github.com/dagny099/graphgarnish)",
+    # Some hosts content-negotiate and hand a browser-shaped client the HTML
+    # landing page instead of the feed.
+    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.5",
+}
+
+
+class Payload:
+    """A fetched response plus the context needed to explain a parse failure."""
+
+    def __init__(self, text: str, url: str, content_type: str):
+        self.text = text
+        self.url = url
+        self.content_type = content_type
+
+    @property
+    def looks_like_html(self) -> bool:
+        head = self.text[:2000].lower()
+        return ("html" in self.content_type.lower()
+                or "<!doctype html" in head
+                or "<html" in head)
+
+    def describe(self) -> str:
+        """A compact diagnosis that survives being read out of a CI log."""
+        preview = re.sub(r"\s+", " ", self.text[:400]).strip()
+        n_items = len(re.findall(r"<item[\s>]", self.text, re.I))
+        n_entries = len(re.findall(r"<entry[\s>]", self.text, re.I))
+        shape = "HTML page" if self.looks_like_html else "XML/unknown"
+        return (
+            f"  final URL   : {self.url}\n"
+            f"  content-type: {self.content_type or '(none)'}\n"
+            f"  bytes       : {len(self.text)}\n"
+            f"  looks like  : {shape}\n"
+            f"  <item> count: {n_items}\n"
+            f"  <entry> cnt : {n_entries}\n"
+            f"  first 400ch : {preview}"
+        )
+
+
+def fetch_feed(url: str, timeout: int = 60) -> Payload:
+    req = urllib.request.Request(url, headers=FETCH_HEADERS)
     with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read().decode("utf-8", "replace")
+        raw = resp.read().decode("utf-8", "replace")
+        return Payload(raw, resp.geturl(), resp.headers.get("Content-Type", ""))
+
+
+# <link rel="alternate" type="application/rss+xml" href="..."> is the standard
+# way a page points at its own feed. If the URL we were given turns out to be a
+# landing page, follow that pointer rather than failing.
+LINK_TAG_RE = re.compile(r"<link\b[^>]*>", re.I)
+HREF_RE = re.compile(r"""href\s*=\s*("[^"]*"|'[^']*')""", re.I)
+FEED_TYPE_RE = re.compile(r"""type\s*=\s*["']application/(?:rss|atom)\+xml["']""", re.I)
+
+
+def discover_feed_url(html: str, base_url: str) -> str | None:
+    for tag in LINK_TAG_RE.findall(html):
+        if not FEED_TYPE_RE.search(tag):
+            continue
+        href = HREF_RE.search(tag)
+        if href:
+            return urllib.parse.urljoin(base_url, href.group(1).strip("\"'"))
+    return None
 
 
 MONTHS = {m: i for i, m in enumerate(
@@ -341,6 +401,35 @@ def parse_feed_loosely(xml_text: str) -> list[dict]:
     return items
 
 
+ATOM_NS = "{http://www.w3.org/2005/Atom}"
+
+
+def parse_atom(root) -> list[dict]:
+    """Atom feeds use <feed>/<entry> where RSS uses <channel>/<item>."""
+    items = []
+    for entry in root.findall(f"{ATOM_NS}entry") or root.findall("entry"):
+        def txt(tag):
+            el = entry.find(f"{ATOM_NS}{tag}")
+            if el is None:
+                el = entry.find(tag)
+            return (el.text or "") if el is not None else ""
+        title = strip_html(txt("title"))
+        if not title:
+            continue
+        link = ""
+        for el in list(entry.findall(f"{ATOM_NS}link")) + list(entry.findall("link")):
+            if el.get("rel", "alternate") == "alternate":
+                link = el.get("href", "")
+                break
+        items.append({
+            "title": title,
+            "date": parse_pubdate(txt("published") or txt("updated")),
+            "description": strip_html(txt("summary") or txt("content")),
+            "url": link,
+        })
+    return items
+
+
 def parse_feed(xml_text: str) -> list[dict]:
     try:
         root = ET.fromstring(xml_text)
@@ -357,6 +446,9 @@ def parse_feed(xml_text: str) -> list[dict]:
                   f"recovered {len(items)} items with the fallback parser",
                   file=sys.stderr)
             return items
+
+    if root.tag.rsplit("}", 1)[-1].lower() == "feed":
+        return parse_atom(root)
 
     channel = root.find("channel")
     if channel is None:
@@ -556,6 +648,62 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
     }
 
 
+def try_payload(payload: Payload, label: str) -> list[dict]:
+    """Parse one fetched response, reporting rather than raising on failure."""
+    try:
+        items = parse_feed(payload.text)
+    except Exception as exc:  # noqa: BLE001 - diagnose instead of crashing
+        print(f"could not parse {label} ({exc})", file=sys.stderr)
+        return []
+    if not items:
+        print(f"parsed {label} but it contained no episodes", file=sys.stderr)
+    return items
+
+
+def load_feed(url: str, save_to: Path | None) -> list[dict]:
+    """Fetch and parse the feed, following a landing page to the real feed if
+    that is what the URL turns out to point at. Any failure is reported with
+    enough context to diagnose it from a CI log, and returns no items so the
+    caller falls back to an offline rebuild."""
+    try:
+        payload = fetch_feed(url)
+    except Exception as exc:  # noqa: BLE001 - report and fall back
+        print(f"FEED ERROR: could not fetch {url} ({exc}); continuing offline",
+              file=sys.stderr)
+        return []
+
+    if save_to:
+        save_to.write_text(payload.text, encoding="utf-8")
+        print(f"saved raw response to {save_to}", file=sys.stderr)
+
+    items = try_payload(payload, "the response")
+    if items:
+        return items
+
+    # The URL may point at a page that links to the feed rather than the feed.
+    discovered = discover_feed_url(payload.text, payload.url)
+    if discovered and discovered != payload.url:
+        print(f"response was not a usable feed; it advertises one at {discovered}",
+              file=sys.stderr)
+        try:
+            followed = fetch_feed(discovered)
+        except Exception as exc:  # noqa: BLE001
+            print(f"FEED ERROR: could not fetch the advertised feed {discovered} ({exc})",
+                  file=sys.stderr)
+            return []
+        if save_to:
+            save_to.write_text(followed.text, encoding="utf-8")
+        items = try_payload(followed, "the advertised feed")
+        if items:
+            print(f"recovered {len(items)} episodes from {discovered}", file=sys.stderr)
+            return items
+        payload = followed
+
+    print("FEED ERROR: the URL did not yield a usable feed; continuing offline\n"
+          + payload.describe(), file=sys.stderr)
+    return []
+
+
 # --------------------------------------------------------------------- main
 
 def main() -> int:
@@ -581,25 +729,7 @@ def main() -> int:
     if args.feed_file:
         items = parse_feed(Path(args.feed_file).read_text(encoding="utf-8"))
     elif args.feed:
-        raw = None
-        try:
-            raw = fetch_feed(args.feed)
-        except Exception as exc:  # noqa: BLE001 - report and fall back
-            print(f"FEED ERROR: could not fetch {args.feed} ({exc}); continuing offline",
-                  file=sys.stderr)
-        if raw is not None:
-            if args.save_feed:
-                args.save_feed.write_text(raw, encoding="utf-8")
-                print(f"saved raw feed to {args.save_feed}", file=sys.stderr)
-            try:
-                items = parse_feed(raw)
-            except Exception as exc:  # noqa: BLE001 - report and fall back
-                print(f"FEED ERROR: fetched {len(raw)} bytes but could not parse them "
-                      f"({exc}); continuing offline", file=sys.stderr)
-            else:
-                if not items:
-                    print("FEED ERROR: feed parsed but contained no items; "
-                          "continuing offline", file=sys.stderr)
+        items = load_feed(args.feed, args.save_feed)
 
     graph = build(seed, items, taxonomy)
 
