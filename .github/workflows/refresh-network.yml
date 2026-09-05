@@ -32,11 +32,15 @@ jobs:
 
       - name: Rebuild from the feed
         id: build
+        # The URL reaches the shell through the environment, never through
+        # ${{ }} interpolation: the feed URL contains an "&", and a directly
+        # interpolated input is also an injection vector.
+        env:
+          FEED_URL: ${{ github.event.inputs.feed_url }}
         run: |
           set -o pipefail
-          FEED="${{ github.event.inputs.feed_url }}"
-          if [ -n "$FEED" ]; then
-            python3 tools/build_network.py --feed "$FEED" --report 2>&1 | tee build.log
+          if [ -n "$FEED_URL" ]; then
+            python3 tools/build_network.py --feed "$FEED_URL" --report 2>&1 | tee build.log
           else
             python3 tools/build_network.py --feed --report 2>&1 | tee build.log
           fi

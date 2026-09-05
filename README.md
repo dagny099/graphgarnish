@@ -196,6 +196,14 @@ Guest extraction from a title recovers roughly half of all guests; the rest are
 named only in the episode description. It is a starting point that needs review,
 not a replacement for a curated list.
 
+If the feed parses badly, capture the raw XML so the problem can be reproduced
+without network access:
+
+```bash
+python3 tools/build_network.py --feed --save-feed /tmp/feed.xml --report
+python3 tools/build_network.py --feed-file /tmp/feed.xml --report
+```
+
 `data/seed_curated.json` is a frozen copy of the original spreadsheet-derived
 data, kept so the curation can never be lost to a bad rebuild.
 

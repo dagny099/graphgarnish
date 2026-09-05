@@ -493,6 +493,9 @@ def main() -> int:
     ap.add_argument("--feed", nargs="?", const=DEFAULT_FEED, default=None,
                     help=f"fetch the RSS feed (default {DEFAULT_FEED})")
     ap.add_argument("--feed-file", help="parse a local RSS file instead of fetching")
+    ap.add_argument("--save-feed", type=Path,
+                    help="write the fetched RSS XML here before parsing it, so a "
+                         "parsing problem can be reproduced without the network")
     ap.add_argument("--seed", type=Path, default=DEFAULT_SEED)
     ap.add_argument("--topics", type=Path, default=DEFAULT_TOPICS)
     ap.add_argument("--out", type=Path, action="append",
@@ -508,7 +511,11 @@ def main() -> int:
         items = parse_feed(Path(args.feed_file).read_text(encoding="utf-8"))
     elif args.feed:
         try:
-            items = parse_feed(fetch_feed(args.feed))
+            raw = fetch_feed(args.feed)
+            if args.save_feed:
+                args.save_feed.write_text(raw, encoding="utf-8")
+                print(f"saved raw feed to {args.save_feed}", file=sys.stderr)
+            items = parse_feed(raw)
         except Exception as exc:  # noqa: BLE001 - report and fall back
             print(f"feed fetch failed ({exc}); continuing offline", file=sys.stderr)
 
