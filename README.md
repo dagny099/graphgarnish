@@ -43,7 +43,7 @@ Perfect for podcast producers, researchers, or anyone who wants to understand th
 
 ### 🎨 **Beautiful Defaults**
 - D3.js force-directed physics
-- Color-coded node types (episodes=red, guests=cyan, orgs=yellow)
+- Color-coded node types (episodes=red, guests=cyan, orgs=yellow, topics=violet)
 - Smooth animations and transitions
 - Responsive design (works on mobile)
 
@@ -53,7 +53,7 @@ Perfect for podcast producers, researchers, or anyone who wants to understand th
 
 ### Option 1: Try the Demo
 1. Visit **[graph-gist.com](https://graph-gist.com)**
-2. The demo loads with 203 episodes from *Catalog & Cocktails*
+2. The demo loads with 162 episodes from *Catalog & Cocktails*
 3. Use filters and search to explore
 
 ### Option 2: Use Your Own Data
@@ -133,37 +133,92 @@ GraphGarnish expects a JSON file with two arrays: `nodes` and `links`.
 - `name`: Organization name
 - `type`: `"organization"`
 
+**Topic:**
+- `id`: Unique identifier (e.g., `topic_data_governance`)
+- `name`: Topic name
+- `type`: `"topic"`
+
+Topics are what make the graph a network rather than a list. A podcast that
+books one guest per episode produces almost no guest-to-guest structure — in
+the *Catalog & Cocktails* data only four guests have ever appeared twice.
+Topics recur constantly, so they are what actually connects episodes across
+years and guests.
+
+Topics are assigned by matching phrases from `data/topics.json` against each
+episode's title and description. That file is meant to be edited: add a topic,
+add or remove match phrases, delete one you do not care about, then re-run the
+builder.
+
 ### Link Types
 
 - `GUEST_ON`: Connects a person to an episode
 - `AFFILIATED_WITH`: Connects a person to an organization
+- `COVERS`: Connects an episode to a topic
+- `TAKEAWAY_OF`: Connects a short companion clip to the full episode it summarizes
+
+### Full episodes vs. companion clips
+
+The show publishes a short `TAKEAWAYS - ...` clip alongside most episodes.
+These carry `is_full: false` and a `TAKEAWAY_OF` link to their parent. Guests
+attach only to the parent, so a guest's episode count is a real count. The
+explorer hides companion clips by default; the **Full episodes only** checkbox
+turns them back on.
 
 ---
 
-## 🛠️ Creating Your Network JSON
+## 🛠️ Building the Network JSON
 
-We provide a Python script to transform podcast metadata from a spreadsheet into network JSON.
+`tools/build_network.py` builds `catalog_cocktails.json` and `sample_network.json`.
+It runs in two modes over the same code path.
 
-### From a Spreadsheet
+**Offline** — normalize and enrich whatever is already in the repo. No network
+access needed:
 
-**Required columns:**
-- `Episode` - Episode title
-- `Release Date` - Publication date
-- `Guest` - Guest name
-- `Role & Company` - Guest's role and organization (format: "Role at Company")
-
-**Example:**
-| Episode | Release Date | Guest | Role & Company |
-|---------|--------------|-------|----------------|
-| Data Mesh Explained | 2024-01-15 | Juan Sequeda | Principal Scientist at data.world |
-
-**Run the generator:**
 ```bash
-python generate_network.py your_episodes.xlsx
-# Outputs: network.json
+python3 tools/build_network.py --report
 ```
 
-See `examples/` folder for sample spreadsheets and generated JSON.
+**Online** — additionally pull the podcast RSS feed, repair titles that were
+truncated in the original spreadsheet export, and append everything published
+since:
+
+```bash
+python3 tools/build_network.py --feed --report
+```
+
+The existing JSON is treated as curated ground truth: guest and company links
+that came from the spreadsheet survive the rebuild untouched. Only episodes the
+feed adds beyond it get auto-extracted, and any episode where no guest could be
+identified is listed under `meta.episodes_needing_review` so it can be checked
+by hand rather than silently dropped.
+
+Guest extraction from a title recovers roughly half of all guests; the rest are
+named only in the episode description. It is a starting point that needs review,
+not a replacement for a curated list.
+
+If the feed parses badly, capture the raw XML so the problem can be reproduced
+without network access:
+
+```bash
+python3 tools/build_network.py --feed --save-feed /tmp/feed.xml --report
+python3 tools/build_network.py --feed-file /tmp/feed.xml --report
+```
+
+`data/seed_curated.json` is a frozen copy of the original spreadsheet-derived
+data, kept so the curation can never be lost to a bad rebuild.
+
+Run the checks after changing anything in `tools/`:
+
+```bash
+python3 tools/test_build_network.py
+```
+
+### Automatic refresh
+
+`.github/workflows/refresh-network.yml` runs the online build weekly and commits
+the result if the graph changed. GitHub's runners have open outbound network
+access, so the site keeps itself current with no local setup. Trigger it by hand
+from the repository's **Actions** tab via **Run workflow**.
 
 ---
 
@@ -326,7 +381,11 @@ Open an issue on GitHub or reach out on LinkedIn.
 - ✅ File upload interface
 - ✅ Responsive design
 
-### v1.1 (Next)
+### v1.1 (In progress)
+- [x] Topic layer connecting episodes across years and guests
+- [x] Search across every node type, not just episode titles
+- [x] Companion-clip handling so guest counts are honest
+- [x] Scheduled rebuild from the podcast RSS feed
 - [ ] Export filtered network as image
 - [ ] Save/load filter presets
 - [ ] Keyboard shortcuts

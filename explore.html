@@ -641,6 +641,10 @@
                     <div class="stat-value" id="visible-orgs">0</div>
                     <div class="stat-label">Orgs</div>
                 </div>
+                <div class="stat">
+                    <div class="stat-value" id="visible-topics">0</div>
+                    <div class="stat-label">Topics</div>
+                </div>
             </div>
             <div style="padding: 12px; background: rgba(255, 235, 59, 0.15); border-radius: 8px; border-left: 3px solid #ffc107;">
                 <div style="font-size: 13px; color: #5a4a00; line-height: 1.5;">
@@ -695,7 +699,8 @@
                         class="search-input" 
                         placeholder="Search by name...">
                     <div class="search-help">
-                        Type to filter nodes by name. Shows matching nodes and their connections.
+                        Matches episodes, guests, organizations and topics by name,
+                        and shows each match together with what it connects to.
                     </div>
                 </div>
                  
@@ -736,6 +741,28 @@
                         <div class="color-indicator" style="background: #ffe66d;"></div>
                         <label for="show-orgs">Organizations</label>
                     </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="show-topics" checked>
+                        <div class="color-indicator" style="background: #a78bfa;"></div>
+                        <label for="show-topics">Topics</label>
+                    </div>
+                </div>
+
+                <!-- Filter: Companion clips -->
+                <div class="filter-section-title">
+                    <span class="icon">🎬</span>
+                    <span>Episode Type</span>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="full-episodes-only" checked>
+                        <label for="full-episodes-only">Full episodes only</label>
+                    </div>
+                </div>
+                <div style="font-size: 11px; color: #718096; margin-top: 8px;">
+                    The show publishes a short TAKEAWAYS clip alongside most
+                    episodes. Counting those as separate episodes double-counts
+                    every guest, so they are hidden by default.
                 </div>
             </div>
             
@@ -781,11 +808,21 @@
         let selectedNode = null;
         let currentLayout = 'force'; // 'force' or 'radial'
         
+        // D3 rewrites link.source/target from an id string to the node object
+        // once a simulation has run, so every read has to handle both.
+        const linkEnd = end => (typeof end === 'object' && end !== null) ? end.id : end;
+        const nameOf = end => (typeof end === 'object' && end !== null)
+            ? (end.name || end.id)
+            : ((pristineGraphData &&
+                pristineGraphData.nodes.find(n => n.id === end) || {}).name || end);
+
         // Filter state
         const filters = {
             showEpisodes: true,
             showGuests: true,
             showOrgs: true,
+            showTopics: true,
+            fullEpisodesOnly: true,
             yearStart: 2021,
             yearEnd: 2026,
             minGuestEpisodes: 1,
@@ -926,7 +963,9 @@
                 loadButton.style.display = 'none';
             }
             
-            const episodes = data.nodes.filter(n => n.type === 'episode');
+            // Count full episodes only: the companion TAKEAWAYS clips are not
+            // separate shows, and counting them inflates the headline number.
+            const episodes = data.nodes.filter(n => n.type === 'episode' && n.is_full !== false);
             const guests = data.nodes.filter(n => n.type === 'person');
             
             // Extract years from episodes
@@ -1032,6 +1071,16 @@
             filters.showOrgs = e.target.checked;
             applyFilters();
         });
+
+        document.getElementById('show-topics').addEventListener('change', (e) => {
+            filters.showTopics = e.target.checked;
+            applyFilters();
+        });
+
+        document.getElementById('full-episodes-only').addEventListener('change', (e) => {
+            filters.fullEpisodesOnly = e.target.checked;
+            applyFilters();
+        });
         
         document.getElementById('year-start').addEventListener('input', (e) => {
             filters.yearStart = parseInt(e.target.value);
@@ -1060,12 +1109,19 @@
             applyFilters();
         });
         
-        document.getElementById('min-org-guests').addEventListener('input', (e) => {
-            const value = parseInt(e.target.value);
-            filters.minOrgGuests = value;
-            document.getElementById('min-org-guests-value').textContent = value;
-            applyFilters();
-        });
+        // The organization-size slider is currently commented out of the markup,
+        // so bind defensively: a hard reference here threw on load and silently
+        // killed every listener registered after it (search, reset).
+        const minOrgGuestsInput = document.getElementById('min-org-guests');
+        if (minOrgGuestsInput) {
+            minOrgGuestsInput.addEventListener('input', (e) => {
+                const value = parseInt(e.target.value);
+                filters.minOrgGuests = value;
+                const readout = document.getElementById('min-org-guests-value');
+                if (readout) readout.textContent = value;
+                applyFilters();
+            });
+        }
         
         document.getElementById('search-input').addEventListener('input', (e) => {
             filters.searchQuery = e.target.value.toLowerCase().trim();
@@ -1077,6 +1133,8 @@
             filters.showEpisodes = true;
             filters.showGuests = true;
             filters.showOrgs = true;
+            filters.showTopics = true;
+            filters.fullEpisodesOnly = true;
             filters.yearStart = 2021;
             filters.yearEnd = 2026;
             filters.minGuestEpisodes = 1;
@@ -1088,13 +1146,16 @@
             document.getElementById('show-episodes').checked = true;
             document.getElementById('show-guests').checked = true;
             document.getElementById('show-orgs').checked = true;
+            document.getElementById('show-topics').checked = true;
+            document.getElementById('full-episodes-only').checked = true;
             document.getElementById('year-start').value = 2021;
             document.getElementById('year-end').value = 2026;
             document.getElementById('min-guest-episodes').value = 1;
-            document.getElementById('min-org-guests').value = 1;
+            if (minOrgGuestsInput) minOrgGuestsInput.value = 1;
             document.getElementById('search-input').value = '';
             document.getElementById('min-guest-episodes-value').textContent = '1';
-            document.getElementById('min-org-guests-value').textContent = '1';
+            const minOrgGuestsReadout = document.getElementById('min-org-guests-value');
+            if (minOrgGuestsReadout) minOrgGuestsReadout.textContent = '1';
             
             applyFilters();
         });
@@ -1106,156 +1167,127 @@
         
         function applyFilters() {
             if (!pristineGraphData) return;
-            
-            // Use pristine data (never mutated by D3)
+
             const sourceData = pristineGraphData;
-            
-            // STEP 1: Calculate connection counts from FULL dataset
+
+            // Connection counts always come from the FULL dataset, so that
+            // moving a year slider never changes what "3+ episodes" means.
             const guestEpisodeCounts = {};
             const orgGuestCounts = {};
-            
             sourceData.links.forEach(link => {
-                const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-                const targetId = typeof link.target === 'object' ? link.target.id : link.target;
-                
-                if (link.type === 'GUEST_ON') {
-                    guestEpisodeCounts[sourceId] = (guestEpisodeCounts[sourceId] || 0) + 1;
-                }
-                if (link.type === 'AFFILIATED_WITH') {
-                    orgGuestCounts[targetId] = (orgGuestCounts[targetId] || 0) + 1;
-                }
+                const s = linkEnd(link.source), t = linkEnd(link.target);
+                if (link.type === 'GUEST_ON') guestEpisodeCounts[s] = (guestEpisodeCounts[s] || 0) + 1;
+                if (link.type === 'AFFILIATED_WITH') orgGuestCounts[t] = (orgGuestCounts[t] || 0) + 1;
             });
-            
-            // STEP 2: Filter episodes first (by type, year, search)
-            const filteredEpisodes = sourceData.nodes.filter(node => {
-                if (node.type !== 'episode') return false;
-                
-                // Type visibility
-                if (!filters.showEpisodes) return false;
-                
-                // Year filter
-                if (node.date) {
-                    const year = parseInt(node.date.substring(0, 4));
-                    if (year < filters.yearStart || year > filters.yearEnd) return false;
+
+            // STEP 1: which nodes are eligible at all, ignoring the search box.
+            const eligible = new Set();
+            sourceData.nodes.forEach(node => {
+                let ok = false;
+                if (node.type === 'episode') {
+                    ok = filters.showEpisodes;
+                    if (ok && filters.fullEpisodesOnly && node.is_full === false) ok = false;
+                    if (ok && node.date) {
+                        const year = parseInt(node.date.substring(0, 4));
+                        if (year < filters.yearStart || year > filters.yearEnd) ok = false;
+                    }
+                } else if (node.type === 'person') {
+                    ok = filters.showGuests &&
+                         (guestEpisodeCounts[node.id] || 0) >= filters.minGuestEpisodes;
+                } else if (node.type === 'organization') {
+                    ok = filters.showOrgs &&
+                         (orgGuestCounts[node.id] || 0) >= filters.minOrgGuests;
+                } else if (node.type === 'topic') {
+                    ok = filters.showTopics;
                 }
-                
-                // Search filter
-                if (filters.searchQuery && !node.name.toLowerCase().includes(filters.searchQuery)) {
-                    return false;
-                }
-                
-                return true;
+                if (ok) eligible.add(node.id);
             });
-            
-            const filteredEpisodeIds = new Set(filteredEpisodes.map(e => e.id));
-            
-            // STEP 3: Find guests connected to filtered episodes
-            const connectedGuestIds = new Set();
+
+            // Adjacency over the full link set, restricted to eligible nodes.
+            const neighbors = new Map();
             sourceData.links.forEach(link => {
-                const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-                const targetId = typeof link.target === 'object' ? link.target.id : link.target;
-                
-                if (link.type === 'GUEST_ON' && filteredEpisodeIds.has(targetId)) {
-                    connectedGuestIds.add(sourceId);
-                }
+                const s = linkEnd(link.source), t = linkEnd(link.target);
+                if (!eligible.has(s) || !eligible.has(t)) return;
+                if (!neighbors.has(s)) neighbors.set(s, new Set());
+                if (!neighbors.has(t)) neighbors.set(t, new Set());
+                neighbors.get(s).add(t);
+                neighbors.get(t).add(s);
             });
-            
-            // STEP 4: Filter guests (by type, connection count, search)
-            const filteredGuests = sourceData.nodes.filter(node => {
-                if (node.type !== 'person') return false;
-                
-                // Type visibility
-                if (!filters.showGuests) return false;
-                
-                // Must be connected to at least one visible episode
-                if (!connectedGuestIds.has(node.id)) return false;
-                
-                // Connection count filter (use FULL dataset counts)
-                const episodeCount = guestEpisodeCounts[node.id] || 0;
-                if (episodeCount < filters.minGuestEpisodes) return false;
-                
-                // Search filter
-                if (filters.searchQuery && !node.name.toLowerCase().includes(filters.searchQuery)) {
-                    return false;
-                }
-                
-                return true;
-            });
-            
-            const filteredGuestIds = new Set(filteredGuests.map(g => g.id));
-            
-            // STEP 5: Find orgs connected to filtered guests
-            const connectedOrgIds = new Set();
-            sourceData.links.forEach(link => {
-                const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-                const targetId = typeof link.target === 'object' ? link.target.id : link.target;
-                
-                if (link.type === 'AFFILIATED_WITH' && filteredGuestIds.has(sourceId)) {
-                    connectedOrgIds.add(targetId);
-                }
-            });
-            
-            // STEP 6: Filter organizations (by type, connection count, search)
-            const filteredOrgs = sourceData.nodes.filter(node => {
-                if (node.type !== 'organization') return false;
-                
-                // Type visibility
-                if (!filters.showOrgs) return false;
-                
-                // Must be connected to at least one visible guest
-                if (!connectedOrgIds.has(node.id)) return false;
-                
-                // Connection count filter (use FULL dataset counts)
-                const guestCount = orgGuestCounts[node.id] || 0;
-                if (guestCount < filters.minOrgGuests) return false;
-                
-                // Search filter
-                if (filters.searchQuery && !node.name.toLowerCase().includes(filters.searchQuery)) {
-                    return false;
-                }
-                
-                return true;
-            });
-            
-            // STEP 7: Combine all filtered nodes
-            const filteredNodes = [...filteredEpisodes, ...filteredGuests, ...filteredOrgs];
-            const filteredNodeIds = new Set(filteredNodes.map(n => n.id));
-            
-            // STEP 8: Filter links - IMPORTANT: create fresh copies with string IDs
+
+            let visibleIds;
+
+            if (filters.searchQuery) {
+                // STEP 2a: search matches ANY node type, and each match brings
+                // its immediate neighbourhood along. Previously the search term
+                // was applied inside an episode -> guest -> org cascade, so a
+                // term that only matched an organization (say "Databricks")
+                // emptied the first stage and returned nothing at all.
+                visibleIds = new Set();
+                sourceData.nodes.forEach(node => {
+                    if (!eligible.has(node.id)) return;
+                    if (!node.name.toLowerCase().includes(filters.searchQuery)) return;
+                    visibleIds.add(node.id);
+                    (neighbors.get(node.id) || []).forEach(id => visibleIds.add(id));
+                });
+
+                // One hop is not enough for a term that matches an organization
+                // or a topic: the episodes sit two hops away, behind the guests.
+                // Pull each visible guest's episodes and affiliation in, so a
+                // search returns a readable subgraph rather than a bare pair.
+                const byId = new Map(sourceData.nodes.map(n => [n.id, n]));
+                const guestsInView = [...visibleIds].filter(id => {
+                    const n = byId.get(id);
+                    return n && n.type === 'person';
+                });
+                guestsInView.forEach(pid => {
+                    (neighbors.get(pid) || []).forEach(id => visibleIds.add(id));
+                });
+            } else {
+                // STEP 2b: no search. Cascade outward from the visible episodes
+                // so that guests, orgs and topics never float unconnected.
+                visibleIds = new Set();
+                sourceData.nodes.forEach(node => {
+                    if (node.type === 'episode' && eligible.has(node.id)) visibleIds.add(node.id);
+                });
+                // Guests and topics hang off episodes; orgs hang off guests.
+                sourceData.links.forEach(link => {
+                    const s = linkEnd(link.source), t = linkEnd(link.target);
+                    if (!eligible.has(s) || !eligible.has(t)) return;
+                    if (link.type === 'GUEST_ON' && visibleIds.has(t)) visibleIds.add(s);
+                    if (link.type === 'COVERS' && visibleIds.has(s)) visibleIds.add(t);
+                    if (link.type === 'TAKEAWAY_OF' && visibleIds.has(t)) visibleIds.add(s);
+                });
+                sourceData.links.forEach(link => {
+                    const s = linkEnd(link.source), t = linkEnd(link.target);
+                    if (!eligible.has(s) || !eligible.has(t)) return;
+                    if (link.type === 'AFFILIATED_WITH' && visibleIds.has(s)) visibleIds.add(t);
+                });
+            }
+
+            const filteredNodes = sourceData.nodes.filter(n => visibleIds.has(n.id));
             const filteredLinks = sourceData.links
-                .filter(link => {
-                    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-                    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
-                    return filteredNodeIds.has(sourceId) && filteredNodeIds.has(targetId);
-                })
+                .filter(link => visibleIds.has(linkEnd(link.source)) &&
+                                visibleIds.has(linkEnd(link.target)))
                 .map(link => ({
-                    // Create fresh link objects with string IDs (D3 will convert to object refs)
-                    source: typeof link.source === 'object' ? link.source.id : link.source,
-                    target: typeof link.target === 'object' ? link.target.id : link.target,
+                    source: linkEnd(link.source),
+                    target: linkEnd(link.target),
                     type: link.type
                 }));
-            
-            // STEP 9: Update stats
-            document.getElementById('visible-episodes').textContent = filteredEpisodes.length;
-            document.getElementById('visible-guests').textContent = filteredGuests.length;
-            document.getElementById('visible-orgs').textContent = filteredOrgs.length;
-            
-            // DEBUG: Log what we're rendering
-            console.log('Filter applied:', {
-                episodes: filteredEpisodes.length,
-                guests: filteredGuests.length,
-                orgs: filteredOrgs.length,
-                links: filteredLinks.length,
-                filters: filters
+
+            const countOf = type => filteredNodes.filter(n => n.type === type).length;
+            document.getElementById('visible-episodes').textContent = countOf('episode');
+            document.getElementById('visible-guests').textContent = countOf('person');
+            document.getElementById('visible-orgs').textContent = countOf('organization');
+            const topicStat = document.getElementById('visible-topics');
+            if (topicStat) topicStat.textContent = countOf('topic');
+
+            // Fresh copies so the force simulation never mutates the pristine data.
+            createGraph({
+                nodes: filteredNodes.map(n => ({...n})),
+                links: filteredLinks
             });
-            
-            // STEP 10: Create FRESH copies of nodes (to avoid D3 mutating original data)
-            const freshNodes = filteredNodes.map(n => ({...n}));
-            
-            // STEP 11: Render graph
-            createGraph({ nodes: freshNodes, links: filteredLinks });
         }
-        
+
         function createGraph(graphData) {
             const width = window.innerWidth;
             const height = window.innerHeight;
@@ -1284,13 +1316,15 @@
             const colorMap = {
                 'episode': '#ff6b6b',
                 'person': '#4ecdc4',
-                'organization': '#ffe66d'
+                'organization': '#ffe66d',
+                'topic': '#a78bfa'
             };
             
             const sizeMap = {
                 'episode': 7,
                 'person': 11,
-                'organization': 15
+                'organization': 15,
+                'topic': 18
             };
             
             // Force simulation with layout options
@@ -1299,23 +1333,35 @@
                 simulation = d3.forceSimulation(graphData.nodes)
                     .force('link', d3.forceLink(graphData.links)
                         .id(d => d.id)
-                        .distance(d => d.type === 'AFFILIATED_WITH' ? 80 : 150))
+                        .distance(d => {
+                            if (d.type === 'AFFILIATED_WITH') return 80;
+                            if (d.type === 'TAKEAWAY_OF') return 30;
+                            if (d.type === 'COVERS') return 200;
+                            return 150;
+                        }))
                     .force('charge', d3.forceManyBody().strength(-400))
                     .force('collision', d3.forceCollide().radius(d => sizeMap[d.type] + 10))
                     .force('r', d3.forceRadial(d => {
                         // Place nodes in concentric circles by type
-                        if (d.type === 'organization') return 200;  // Inner circle
-                        if (d.type === 'person') return 400;        // Middle circle
-                        return 600;                                 // Outer circle (episodes)
+                        if (d.type === 'topic') return 120;         // Core
+                        if (d.type === 'organization') return 280;
+                        if (d.type === 'person') return 450;
+                        return 620;                                 // Outer ring (episodes)
                     }, width / 2, height / 2).strength(0.8));
             } else {
                 // Standard force-directed layout
                 simulation = d3.forceSimulation(graphData.nodes)
                     .force('link', d3.forceLink(graphData.links)
                         .id(d => d.id)
-                        .distance(d => d.type === 'AFFILIATED_WITH' ? 60 : 100))
+                        .distance(d => {
+                            if (d.type === 'AFFILIATED_WITH') return 60;
+                            if (d.type === 'TAKEAWAY_OF') return 25;
+                            if (d.type === 'COVERS') return 140;
+                            return 100;
+                        }))
                     .force('charge', d3.forceManyBody()
                         .strength(d => {
+                            if (d.type === 'topic') return -2000;
                             if (d.type === 'organization') return -1200;
                             if (d.type === 'person') return -500;
                             return -200;
@@ -1365,14 +1411,26 @@
                     content += `<div class="tooltip-meta">📅 ${d.date}</div>`;
                 }
                 
+                if (d.type === 'episode') {
+                    const topics = graphData.links
+                        .filter(l => linkEnd(l.source) === d.id && l.type === 'COVERS')
+                        .map(l => nameOf(l.target));
+                    if (topics.length) {
+                        content += `<div class="tooltip-meta">🏷️ ${topics.join(' • ')}</div>`;
+                    }
+                    if (d.is_full === false) {
+                        content += `<div class="tooltip-meta">🎬 Companion clip</div>`;
+                    }
+                }
+
                 if (d.type === 'person') {
-                    const episodes = graphData.links.filter(l => 
-                        l.source.id === d.id && l.type === 'GUEST_ON'
+                    const episodes = graphData.links.filter(l =>
+                        linkEnd(l.source) === d.id && l.type === 'GUEST_ON'
                     ).length;
-                    const orgs = new Set(graphData.links.filter(l => 
-                        l.source.id === d.id && l.type === 'AFFILIATED_WITH'
-                    ).map(l => l.target.name || l.target.id)).size;
-                    
+                    const orgs = new Set(graphData.links.filter(l =>
+                        linkEnd(l.source) === d.id && l.type === 'AFFILIATED_WITH'
+                    ).map(l => nameOf(l.target))).size;
+
                     content += `<div class="tooltip-meta">👤 Guest on ${episodes} episode${episodes !== 1 ? 's' : ''}`;
                     if (orgs > 0) content += `<br/>🏢 Affiliated with ${orgs} org${orgs !== 1 ? 's' : ''}`;
                     content += `</div>`;
@@ -1380,9 +1438,16 @@
                 
                 if (d.type === 'organization') {
                     const people = new Set(graphData.links.filter(l => 
-                        l.target.id === d.id && l.type === 'AFFILIATED_WITH'
-                    ).map(l => l.source.id)).size;
+                        linkEnd(l.target) === d.id && l.type === 'AFFILIATED_WITH'
+                    ).map(l => linkEnd(l.source))).size;
                     content += `<div class="tooltip-meta">🏢 ${people} guest${people !== 1 ? 's' : ''} affiliated</div>`;
+                }
+
+                if (d.type === 'topic') {
+                    const eps = graphData.links.filter(l =>
+                        linkEnd(l.target) === d.id && l.type === 'COVERS'
+                    ).length;
+                    content += `<div class="tooltip-meta">🏷️ ${eps} episode${eps !== 1 ? 's' : ''} in view</div>`;
                 }
                 
                 tooltip.html(content)
@@ -1426,8 +1491,8 @@
                     // Find connected node IDs
                     const connectedIds = new Set([clickedNode.id]);
                     graphData.links.forEach(l => {
-                        if (l.source.id === clickedNode.id) connectedIds.add(l.target.id);
-                        if (l.target.id === clickedNode.id) connectedIds.add(l.source.id);
+                        if (linkEnd(l.source) === clickedNode.id) connectedIds.add(linkEnd(l.target));
+                        if (linkEnd(l.target) === clickedNode.id) connectedIds.add(linkEnd(l.source));
                     });
                     
                     // Apply selection styling
@@ -1436,10 +1501,10 @@
                         .classed('dimmed', d => !connectedIds.has(d.id));
                     
                     link
-                        .classed('highlighted', l => 
-                            l.source.id === clickedNode.id || l.target.id === clickedNode.id)
-                        .classed('dimmed', l => 
-                            l.source.id !== clickedNode.id && l.target.id !== clickedNode.id);
+                        .classed('highlighted', l =>
+                            linkEnd(l.source) === clickedNode.id || linkEnd(l.target) === clickedNode.id)
+                        .classed('dimmed', l =>
+                            linkEnd(l.source) !== clickedNode.id && linkEnd(l.target) !== clickedNode.id);
                     
                     label
                         .classed('dimmed', d => !connectedIds.has(d.id));

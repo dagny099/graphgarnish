@@ -1,0 +1,27 @@
+{
+  "_comment": "Topic taxonomy for GraphGarnish. Edit freely: add a topic, add or remove match phrases, delete one you don't care about. Matching is case-insensitive substring against episode title + description. 'exclude' phrases veto a match. Re-run tools/build_network.py after editing.",
+  "topics": [
+    {"name": "AI Agents",            "match": ["ai agent", "agentic", "autonomous agent", "mcp ", "tool use"]},
+    {"name": "Generative AI / LLMs", "match": ["llm", "genai", "gen ai", "generative ai", "foundation model", "chatgpt", "gpt-", "prompt engineering", "rag "]},
+    {"name": "Data Governance",      "match": ["data governance", "governance", "stewardship", "data policy"]},
+    {"name": "Data Products",        "match": ["data product", "data as a product"]},
+    {"name": "Data Mesh",            "match": ["data mesh", "decentraliz"]},
+    {"name": "Data Catalogs",        "match": ["data catalog", "catalog"], "exclude": ["catalog & cocktails", "catalog and cocktails"]},
+    {"name": "Master Data Management","match": ["master data", " mdm", "mdm "]},
+    {"name": "Knowledge Graphs",     "match": ["knowledge graph", "ontolog", "semantic layer", "semantic web", "rdf", "sparql", "taxonom"]},
+    {"name": "Metadata",             "match": ["metadata", "meta grid", "active metadata"]},
+    {"name": "Data Quality",         "match": ["data quality", "observability", "data trust", "trust in your data", "data reliability"]},
+    {"name": "Data Contracts",       "match": ["data contract"]},
+    {"name": "Data Modeling",        "match": ["data model", "dimensional model", "modeling", "schema"]},
+    {"name": "Architecture & Platforms","match": ["architect", "lakehouse", "data warehouse", "data lake", "data platform", "data stack", "data fabric"]},
+    {"name": "Data Engineering",     "match": ["data engineer", "pipeline", " etl", "elt ", "dbt", "ingestion", "orchestration"]},
+    {"name": "Analytics & BI",       "match": ["analytics", "business intelligence", " bi ", "dashboard", "reporting", "self-service"]},
+    {"name": "Data Teams & Org",     "match": ["data team", "chief data", " cdo", "data office", "operating model", "hiring", "career"]},
+    {"name": "Data Strategy",        "match": ["data strategy", "strategic", "roadmap", "maturity"]},
+    {"name": "Data Culture & Literacy","match": ["data culture", "literacy", "change management", "adoption", "storytelling"]},
+    {"name": "Business Value & ROI", "match": ["roi", "business value", "business case", "monetiz", "value of data", "cost"]},
+    {"name": "Privacy, Ethics & Risk","match": ["privacy", "ethic", "responsible ai", "bias", "regulat", "compliance", "risk", "security"]},
+    {"name": "Data Sharing & Marketplaces","match": ["data sharing", "data marketplace", "open data", "data exchange", "data collaborat"]},
+    {"name": "Industry & Field Notes","match": ["gartner", "field notes", "trends", "predictions", "takeaways from", "live from", "conference", "summit"]}
+  ]
+}
