@@ -183,8 +183,32 @@ truncated in the original spreadsheet export, and append everything published
 since:
 
 ```bash
-python3 tools/build_network.py --feed --report
+python3 tools/build_network.py --feed --report          # try the known URLs
+python3 tools/build_network.py --feed <URL> --report    # or name one
 ```
+
+With no URL, `--feed` uses the show's own canonical feed, taken from the
+`<atom:link rel="self">` inside the feed itself.
+
+**The feed is paginated.** Page 1 carries only the most recent episodes and
+links the rest through `<atom:link rel="next">`; the builder follows every page
+and de-duplicates by GUID. Fetching one page would look like a successful run
+while silently dropping most of the back catalogue.
+
+Companion clips are identified two ways, because neither is reliable alone:
+older ones carry `<itunes:episodeType>full</itunes:episodeType>` and are only
+recognisable by their `TAKEAWAYS - ` title prefix, while the newest drop the
+separator (`TAKEAWAY Foo`) and are only recognisable by `episodeType`. A real
+episode titled *Takeaways from Gartner Data & Analytics Rants* is neither, and
+is treated as a full episode. If the URL turns out to serve a
+web page rather than a feed, the builder reads that page's
+`<link rel="alternate" type="application/rss+xml">` pointer and follows it once,
+over https, refusing to downgrade the connection or follow an unusual scheme.
+The run log prints `USING FEED: <url>` so the working URL can be pinned.
+
+A rebuild can only add episodes. If one would drop more than a handful, the
+builder refuses to write and exits non-zero rather than overwrite curated data
+with a truncated or unrelated feed.
 
 The existing JSON is treated as curated ground truth: guest and company links
 that came from the spreadsheet survive the rebuild untouched. Only episodes the

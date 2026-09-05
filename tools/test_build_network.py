@@ -14,9 +14,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_network import (  # noqa: E402
-    build, clean_org, dedupe_attributes, guests_from_title, load_topics,
-    parse_feed, parse_feed_loosely, parse_pubdate, split_people,
-    strip_takeaway_prefix,
+    Payload, build, clean_org, dedupe_attributes, discover_feed_url,
+    episode_drop_is_safe, is_takeaway, next_page_url, strip_takeaway_prefix,
+    guests_from_title, load_feed, load_topics, parse_feed, parse_feed_loosely,
+    parse_pubdate, split_people, strip_takeaway_prefix,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -129,6 +130,160 @@ check("the loose parser recovers titles and dates",
 check("recovery paths produce the same graph as a clean feed",
       len([n for n in build(SEED, parse_feed(dup_xml), TOPICS)["nodes"] if n["type"] == "episode"])
       == len([n for n in build(SEED, FIXTURE, TOPICS)["nodes"] if n["type"] == "episode"]))
+
+print("\nlanding pages and Atom")
+atom_xml = (TESTDATA / "sample_feed_atom.xml").read_text(encoding="utf-8")
+landing_html = (TESTDATA / "landing_page.html").read_text(encoding="utf-8")
+
+check("Atom <feed>/<entry> parses like RSS",
+      [i["title"] for i in parse_feed(atom_xml)][:1] ==
+      ["Decision intelligence and context graphs with Priya Raman"])
+check("Atom dates and links are read",
+      parse_feed(atom_xml)[1]["date"] == "2026-08-12"
+      and parse_feed(atom_xml)[1]["url"] == "https://example.com/ep/s12-finale")
+check("a feed link is discovered in an HTML page and resolved against the URL",
+      discover_feed_url(landing_html, "https://example.com/127/Show/feed")
+      == "https://example.com/real/feed.xml")
+check("a page with no feed link discovers nothing",
+      discover_feed_url("<html><head></head></html>", "https://example.com/") is None)
+check("an https page is not downgraded to an http feed",
+      discover_feed_url(
+          '<link rel="alternate" type="application/rss+xml" href="http://evil/f.xml">',
+          "https://example.com/") is None)
+check("a non-http scheme is never followed",
+      discover_feed_url(
+          '<link rel="alternate" type="application/rss+xml" href="file:///etc/passwd">',
+          "https://example.com/") is None)
+check("an HTML response is identified as HTML",
+      Payload(landing_html, "https://example.com/x", "text/html").looks_like_html)
+check("the diagnosis names the shape and the counts",
+      all(k in Payload(landing_html, "https://example.com/x", "text/html").describe()
+          for k in ("final URL", "content-type", "HTML page", "<item> count")))
+
+# End-to-end: a URL that serves a landing page must follow the advertised feed.
+import http.server, socketserver, threading  # noqa: E402
+
+feed_body = (TESTDATA / "sample_feed.xml").read_bytes()
+
+
+class Handler(http.server.BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == "/real/feed.xml":
+            body, ctype = feed_body, "application/rss+xml"
+        else:
+            body, ctype = landing_html.encode(), "text/html; charset=utf-8"
+        self.send_response(200)
+        self.send_header("Content-Type", ctype)
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def log_message(self, *a):
+        pass
+
+
+with socketserver.TCPServer(("127.0.0.1", 0), Handler) as srv:
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    base = f"http://127.0.0.1:{srv.server_address[1]}/podcast"
+    recovered = load_feed(base, None)
+    srv.shutdown()
+
+check("a landing-page URL is followed through to the real feed",
+      len(recovered) == len(FIXTURE), f"got {len(recovered)} items")
+check("load_feed returns no items rather than raising when a host is unreachable",
+      load_feed("http://127.0.0.1:9/nothing", None) == [])
+
+print("\nsafety and determinism")
+check("a rebuild that loses one duplicate episode is allowed",
+      episode_drop_is_safe(203, 202))
+check("a rebuild that loses most episodes is refused",
+      not episode_drop_is_safe(203, 20))
+check("a rebuild that adds episodes is allowed",
+      episode_drop_is_safe(203, 240))
+
+# The seed's own node order must not leak into the output, or every weekly
+# commit shows a reshuffle instead of the actual change.
+shuffled = {"nodes": list(reversed(SEED["nodes"])), "links": list(reversed(SEED["links"]))}
+a = build(SEED, [], TOPICS)
+b = build(shuffled, [], TOPICS)
+check("output does not depend on the order of the seed",
+      [n["id"] for n in a["nodes"]] == [n["id"] for n in b["nodes"]]
+      and a["links"] == b["links"])
+check("building twice gives an identical result",
+      build(SEED, FIXTURE, TOPICS) == build(SEED, FIXTURE, TOPICS))
+
+print("\nthe real feed's shape")
+OMNY1 = (TESTDATA / "omny_feed_page1.xml").read_text(encoding="utf-8")
+OMNY2 = (TESTDATA / "omny_feed_page2.xml").read_text(encoding="utf-8")
+omny_items = parse_feed(OMNY1)
+
+check("itunes:episodeType trailer marks a companion clip",
+      is_takeaway("TAKEAWAY Intelligence Without Action", "trailer"))
+check("a title starting 'Takeaways from' is a real episode, not a companion",
+      not is_takeaway("Takeaways from Gartner Data & Analytics Rants", "full"))
+check("the title prefix still wins when episodeType says full",
+      is_takeaway("TAKEAWAYS - What is Data + AI Observability", "full"))
+check("the bare prefix is only stripped for known companions",
+      strip_takeaway_prefix("TAKEAWAY Intelligence", companion=True) == "Intelligence"
+      and strip_takeaway_prefix("Takeaways from Gartner") == "Takeaways from Gartner")
+check("season and episode numbers are read",
+      any(i["season"] == "12" and i["number"] == "3" for i in omny_items))
+check("the next page is discovered",
+      next_page_url(OMNY1) is not None and next_page_url(OMNY2) is None)
+
+omny_graph = build(SEED, omny_items, TOPICS)
+onodes = {n["id"]: n for n in omny_graph["nodes"]}
+oparent = {l["source"] for l in omny_graph["links"] if l["type"] == "TAKEAWAY_OF"}
+ocompanions = [n for n in omny_graph["nodes"]
+               if n["type"] == "episode" and not n["is_full"]
+               and n["date"] >= "2026-08-01"]
+check("the bare-prefix companion attaches to its parent",
+      all(n["id"] in oparent for n in ocompanions),
+      f"{[n['name'][:40] for n in ocompanions if n['id'] not in oparent]}")
+opeople = {n["name"] for n in omny_graph["nodes"] if n["type"] == "person"}
+check("both guests of a two-guest episode become people",
+      {"Jenna Jordan", "Amalia Child"} <= opeople)
+check("the hosts are still excluded when named in a title",
+      not ({"Juan Sequeda", "Tim Gasper"} & opeople))
+oaff = {onodes[l["source"]]["name"]: onodes[l["target"]]["name"]
+        for l in omny_graph["links"] if l["type"] == "AFFILIATED_WITH"}
+check("companies are read out of episode descriptions",
+      oaff.get("Patrick McGarry") == "ServiceNow"
+      and oaff.get("Bethany Sehon") == "Capital One"
+      and oaff.get("Lena Hall") == "Akamai",
+      f"got {[oaff.get(x) for x in ('Patrick McGarry', 'Bethany Sehon', 'Lena Hall')]}")
+
+# Pagination end to end: page 1 links page 2, and both must land in the graph.
+PAGED_HOST = ""  # filled in once the test server has a port
+
+
+class PagedHandler(http.server.BaseHTTPRequestHandler):
+    def do_GET(self):
+        page = OMNY2 if "page=2" in self.path else OMNY1
+        # The feed advertises absolute next-page URLs, so point them at this
+        # server to exercise the same code path the real feed will take.
+        body = page.replace("https://www.omnycontent.com", PAGED_HOST).encode()
+        self.send_response(200)
+        self.send_header("Content-Type", "application/rss+xml")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def log_message(self, *a):
+        pass
+
+
+with socketserver.TCPServer(("127.0.0.1", 0), PagedHandler) as srv:
+    PAGED_HOST = f"http://127.0.0.1:{srv.server_address[1]}"
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    paged = load_feed(f"{PAGED_HOST}/d/playlist/ORG/PROG/PLAYLIST/podcast.rss", None)
+    srv.shutdown()
+
+check("every page of a paginated feed is followed",
+      len(paged) == len(omny_items) + len(parse_feed(OMNY2)),
+      f"got {len(paged)} items, expected {len(omny_items) + len(parse_feed(OMNY2))}")
+check("a page-2 episode reaches the graph",
+      "Ethan Mollick" in {n["name"] for n in build(SEED, paged, TOPICS)["nodes"]})
 
 print()
 if failures:

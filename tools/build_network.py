@@ -26,13 +26,28 @@ import json
 import re
 import sys
 import unicodedata
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_FEED = "https://feeds.casted.us/127/Catalog-&-Cocktails-2fcf8728/feed"
+# The show's own feed, taken from the <atom:link rel="self"> and
+# <itunes:new-feed-url> inside the feed itself, so it is the publisher's
+# canonical URL rather than one inferred from a directory listing.
+OMNY_FEED = ("https://www.omnycontent.com/d/playlist/"
+             "922e0f19-2d84-4485-835c-a83f00036b00/"
+             "ec23d51c-1891-4428-81ee-b387002de817/"
+             "46398967-49a1-45c7-9af5-b387002de875/podcast.rss")
+OMNY_SHOW = "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast"
+DEFAULT_FEED_CANDIDATES = [OMNY_FEED, OMNY_SHOW]
+DEFAULT_FEED = DEFAULT_FEED_CANDIDATES[0]
+
+# The feed is paginated: page 1 carries only the most recent episodes and
+# links the rest through <atom:link rel="next">. Fetching one page silently
+# drops most of the back catalogue, so every page gets followed.
+MAX_FEED_PAGES = 40
 DEFAULT_SEED = ROOT / "catalog_cocktails.json"
 DEFAULT_TOPICS = ROOT / "data" / "topics.json"
 OUTPUTS = [ROOT / "catalog_cocktails.json", ROOT / "sample_network.json"]
@@ -46,11 +61,11 @@ def slug(text: str, limit: int = 40) -> str:
     return text[:limit] or "unknown"
 
 
-def norm_key(title: str) -> str:
+def norm_key(title: str, companion: bool = False) -> str:
     """Normalized title with the companion-clip prefix and all punctuation
     removed. Not truncated: length differences are what let prefix_match
     line a 60-char-truncated seed title up with the full title from the feed."""
-    t = strip_takeaway_prefix(title)
+    t = strip_takeaway_prefix(title, companion)
     t = t.replace("\u2019", "'").replace("\u2018", "'")
     t = re.sub(r"\bw/\b", "w", t, flags=re.I)
     return re.sub(r"[^a-z0-9]", "", t.lower())
@@ -116,15 +131,38 @@ def prefix_match(key: str, candidates) -> str | None:
     return best
 
 
+# "TAKEAWAYS - Foo" and "TAKEAWAYS – Foo" both appear, and newer episodes
+# drop the separator entirely ("TAKEAWAY Foo").
 TAKEAWAY_RE = re.compile(r"^\s*TAKEAWAYS?\s*[-–—:]\s*", re.I)
+TAKEAWAY_BARE_RE = re.compile(r"^\s*TAKEAWAYS?\s+(?=[A-Z])")
 
 
-def strip_takeaway_prefix(title: str) -> str:
-    return TAKEAWAY_RE.sub("", title).strip()
+def strip_takeaway_prefix(title: str, companion: bool = False) -> str:
+    """Remove the companion-clip prefix from a title.
+
+    The bare form is only stripped for episodes already known to be
+    companions: a real episode is titled "Takeaways from Gartner Data &
+    Analytics Rants ...", and stripping its first word would mangle it."""
+    stripped = TAKEAWAY_RE.sub("", title).strip()
+    if stripped != title.strip():
+        return stripped
+    if companion:
+        return TAKEAWAY_BARE_RE.sub("", title).strip()
+    return title.strip()
 
 
-def is_takeaway(title: str) -> bool:
-    return bool(TAKEAWAY_RE.match(title))
+def is_takeaway(title: str, episode_type: str = "") -> bool:
+    """Is this the short companion clip rather than the episode itself?
+
+    Two independent signals, because neither is reliable alone: older
+    companions carry <itunes:episodeType>full</itunes:episodeType> and are
+    only identifiable by their title prefix, while the newest ones drop the
+    prefix separator and are only identifiable by episodeType."""
+    if TAKEAWAY_RE.match(title):
+        return True
+    if episode_type.strip().lower() == "trailer":
+        return True
+    return False
 
 
 # ------------------------------------------------------------ guest parsing
@@ -180,8 +218,8 @@ def split_people(raw: str) -> list[str]:
     return out
 
 
-def guests_from_title(title: str) -> list[str]:
-    t = strip_takeaway_prefix(title)
+def guests_from_title(title: str, companion: bool = False) -> list[str]:
+    t = strip_takeaway_prefix(title, companion)
     parts = GUEST_SPLIT.split(t)
     if len(parts) < 2:
         return []
@@ -257,10 +295,85 @@ def topics_for(text: str, taxonomy: list[dict]) -> list[str]:
 
 # -------------------------------------------------------------- feed access
 
-def fetch_feed(url: str, timeout: int = 60) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": "GraphGarnish/1.0"})
+FETCH_HEADERS = {
+    "User-Agent": "GraphGarnish/1.0 (+https://github.com/dagny099/graphgarnish)",
+    # Some hosts content-negotiate and hand a browser-shaped client the HTML
+    # landing page instead of the feed.
+    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.5",
+}
+
+
+class Payload:
+    """A fetched response plus the context needed to explain a parse failure."""
+
+    def __init__(self, text: str, url: str, content_type: str):
+        self.text = text
+        self.url = url
+        self.content_type = content_type
+
+    @property
+    def looks_like_html(self) -> bool:
+        head = self.text[:2000].lower()
+        return ("html" in self.content_type.lower()
+                or "<!doctype html" in head
+                or "<html" in head)
+
+    def describe(self) -> str:
+        """A compact diagnosis that survives being read out of a CI log."""
+        preview = re.sub(r"\s+", " ", self.text[:400]).strip()
+        n_items = len(re.findall(r"<item[\s>]", self.text, re.I))
+        n_entries = len(re.findall(r"<entry[\s>]", self.text, re.I))
+        shape = "HTML page" if self.looks_like_html else "XML/unknown"
+        return (
+            f"  final URL   : {self.url}\n"
+            f"  content-type: {self.content_type or '(none)'}\n"
+            f"  bytes       : {len(self.text)}\n"
+            f"  looks like  : {shape}\n"
+            f"  <item> count: {n_items}\n"
+            f"  <entry> cnt : {n_entries}\n"
+            f"  first 400ch : {preview}"
+        )
+
+
+def fetch_feed(url: str, timeout: int = 60) -> Payload:
+    req = urllib.request.Request(url, headers=FETCH_HEADERS)
     with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read().decode("utf-8", "replace")
+        raw = resp.read().decode("utf-8", "replace")
+        return Payload(raw, resp.geturl(), resp.headers.get("Content-Type", ""))
+
+
+# <link rel="alternate" type="application/rss+xml" href="..."> is the standard
+# way a page points at its own feed. If the URL we were given turns out to be a
+# landing page, follow that pointer rather than failing.
+LINK_TAG_RE = re.compile(r"<link\b[^>]*>", re.I)
+HREF_RE = re.compile(r"""href\s*=\s*("[^"]*"|'[^']*')""", re.I)
+FEED_TYPE_RE = re.compile(r"""type\s*=\s*["']application/(?:rss|atom)\+xml["']""", re.I)
+
+
+def discover_feed_url(html: str, base_url: str) -> str | None:
+    """Read a page's advertised feed URL.
+
+    The page is not under our control, so the URL it names is untrusted input.
+    Restricting the follow to https keeps a hijacked or expired domain from
+    redirecting the build at an arbitrary scheme."""
+    for tag in LINK_TAG_RE.findall(html):
+        if not FEED_TYPE_RE.search(tag):
+            continue
+        href = HREF_RE.search(tag)
+        if not href:
+            continue
+        target = urllib.parse.urljoin(base_url, href.group(1).strip("\"'"))
+        scheme = urllib.parse.urlparse(target).scheme
+        if scheme not in ("http", "https"):
+            print(f"ignoring advertised feed {target}: unsupported scheme",
+                  file=sys.stderr)
+            continue
+        if scheme == "http" and urllib.parse.urlparse(base_url).scheme == "https":
+            print(f"ignoring advertised feed {target}: refuses to downgrade from https",
+                  file=sys.stderr)
+            continue
+        return target
+    return None
 
 
 MONTHS = {m: i for i, m in enumerate(
@@ -337,6 +450,45 @@ def parse_feed_loosely(xml_text: str) -> list[dict]:
             "description": strip_html(_tag_text(block, "description"))
                            or strip_html(_tag_text(block, "content:encoded")),
             "url": strip_html(_tag_text(block, "link")),
+            "guid": strip_html(_tag_text(block, "guid")),
+            "episode_type": strip_html(_tag_text(block, "itunes:episodeType")),
+            "season": strip_html(_tag_text(block, "itunes:season")),
+            "number": strip_html(_tag_text(block, "itunes:episode")),
+        })
+    return items
+
+
+ATOM_NS = "{http://www.w3.org/2005/Atom}"
+ITUNES_NS = "{http://www.itunes.com/dtds/podcast-1.0.dtd}"
+CONTENT_NS = "{http://purl.org/rss/1.0/modules/content/}"
+
+
+def parse_atom(root) -> list[dict]:
+    """Atom feeds use <feed>/<entry> where RSS uses <channel>/<item>."""
+    items = []
+    for entry in root.findall(f"{ATOM_NS}entry") or root.findall("entry"):
+        def txt(tag):
+            el = entry.find(f"{ATOM_NS}{tag}")
+            if el is None:
+                el = entry.find(tag)
+            return (el.text or "") if el is not None else ""
+        title = strip_html(txt("title"))
+        if not title:
+            continue
+        link = ""
+        for el in list(entry.findall(f"{ATOM_NS}link")) + list(entry.findall("link")):
+            if el.get("rel", "alternate") == "alternate":
+                link = el.get("href", "")
+                break
+        items.append({
+            "title": title,
+            "date": parse_pubdate(txt("published") or txt("updated")),
+            "description": strip_html(txt("summary") or txt("content")),
+            "url": link,
+            "guid": txt("id"),
+            "episode_type": "",
+            "season": "",
+            "number": "",
         })
     return items
 
@@ -358,6 +510,9 @@ def parse_feed(xml_text: str) -> list[dict]:
                   file=sys.stderr)
             return items
 
+    if root.tag.rsplit("}", 1)[-1].lower() == "feed":
+        return parse_atom(root)
+
     channel = root.find("channel")
     if channel is None:
         channel = root
@@ -370,14 +525,36 @@ def parse_feed(xml_text: str) -> list[dict]:
         if not title:
             continue
         desc = strip_html(txt("description")) or strip_html(
-            txt("{http://purl.org/rss/1.0/modules/content/}encoded"))
+            txt(f"{CONTENT_NS}encoded"))
         items.append({
             "title": title,
             "date": parse_pubdate(txt("pubDate")),
             "description": desc,
             "url": txt("link").strip(),
+            "guid": txt("guid").strip(),
+            "episode_type": txt(f"{ITUNES_NS}episodeType").strip(),
+            "season": txt(f"{ITUNES_NS}season").strip(),
+            "number": txt(f"{ITUNES_NS}episode").strip(),
         })
     return items
+
+
+def next_page_url(xml_text: str) -> str | None:
+    """The URL of the next page of the feed, if it advertises one."""
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError:
+        try:
+            root = ET.fromstring(dedupe_attributes(xml_text))
+        except ET.ParseError:
+            return None
+    channel = root.find("channel")
+    if channel is None:
+        channel = root
+    for link in channel.findall(f"{ATOM_NS}link") + channel.findall("link"):
+        if link.get("rel") == "next" and link.get("href"):
+            return link.get("href")
+    return None
 
 
 # ------------------------------------------------------------------- build
@@ -396,7 +573,8 @@ def index_seed(seed: dict) -> dict:
     for n in seed["nodes"]:
         if n["type"] != "episode":
             continue
-        episodes[(norm_key(n["name"]), is_takeaway(n["name"]))] = {
+        companion = is_takeaway(n["name"])
+        episodes[(norm_key(n["name"], companion), companion)] = {
             "name": n["name"],
             "date": n.get("date", ""),
             "guests": guests.get(n["id"], []),
@@ -416,12 +594,19 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
         records[key] = {
             "title": ep["name"], "date": ep["date"], "description": "",
             "url": "", "guests": list(ep["guests"]), "source": "seed",
+            "season": "", "number": "",
         }
 
+    seen_guids: set[str] = set()
     for item in feed_items:
-        companion = is_takeaway(item["title"])
+        guid = item.get("guid") or ""
+        if guid:
+            if guid in seen_guids:
+                continue
+            seen_guids.add(guid)
+        companion = is_takeaway(item["title"], item.get("episode_type", ""))
         same_kind = [k for (k, c) in records if c == companion]
-        ikey = norm_key(item["title"])
+        ikey = norm_key(item["title"], companion)
         hit = prefix_match(ikey, same_kind)
         if hit is None:
             # The seed titles came from a spreadsheet and sometimes diverge from
@@ -436,25 +621,29 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
             rec["description"] = item["description"]
             rec["url"] = item["url"] or rec["url"]
             rec["date"] = item["date"] or rec["date"]
+            rec["season"] = item.get("season", "")
+            rec["number"] = item.get("number", "")
             rec["source"] = "seed+feed"
         else:
             records[key] = {
                 "title": item["title"], "date": item["date"],
                 "description": item["description"], "url": item["url"],
                 "guests": [], "source": "feed",
+                "season": item.get("season", ""), "number": item.get("number", ""),
             }
 
     # Expand any seed guest entry that packed several humans into one name,
     # and fill in guests for feed-only episodes.
     review = []
-    for key, rec in records.items():
+    for (key, companion), rec in records.items():
         expanded = []
         for name in rec["guests"]:
             people = split_people(name)
             expanded.extend(people if people else [name])
         rec["guests"] = [p for p in expanded if p.lower() not in HOSTS]
-        if not rec["guests"] and not is_takeaway(rec["title"]):
-            found = guests_from_title(rec["title"]) or guests_from_description(rec["description"])
+        if not rec["guests"] and not companion:
+            found = (guests_from_title(rec["title"], companion)
+                     or guests_from_description(rec["description"]))
             found = [p for p in found if p.lower() not in HOSTS]
             if found:
                 rec["guests"] = found
@@ -486,7 +675,7 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
     for (key, companion), rec in ordered:
         full = not companion
         eid = base_eid = "ep_" + (rec["date"] or "0000-00-00").replace("-", "") + "_" + slug(
-            strip_takeaway_prefix(rec["title"]), 24) + ("" if full else "_ta")
+            strip_takeaway_prefix(rec["title"], companion), 24) + ("" if full else "_ta")
         # Same date and same first 24 slug characters still means two different
         # episodes (e.g. a two-parter). Keep them apart.
         suffix = 2
@@ -502,6 +691,10 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
             node["url"] = rec["url"]
         if rec["description"]:
             node["summary"] = rec["description"][:400]
+        if rec.get("season"):
+            node["season"] = rec["season"]
+        if rec.get("number"):
+            node["episode"] = rec["number"]
         add_node(node)
         node_id[(key, companion)] = eid
 
@@ -543,6 +736,15 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
                 add_node({"id": tid, "name": topic, "type": "topic"})
                 add_link(eid, tid, "COVERS")
 
+    # Emission order follows whatever order the seed happened to be in, which
+    # changes every time the seed is regenerated. Sort so that identical input
+    # always produces an identical file and the weekly commit shows only real
+    # changes.
+    type_rank = {"episode": 0, "person": 1, "organization": 2, "topic": 3}
+    nodes.sort(key=lambda n: (type_rank.get(n["type"], 9),
+                              n.get("date", ""), n.get("name", ""), n["id"]))
+    links.sort(key=lambda l: (l["type"], l["source"], l["target"]))
+
     counts = Counter(n["type"] for n in nodes)
     return {
         "meta": {
@@ -556,13 +758,136 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
     }
 
 
+def episode_drop_tolerance(seed_episodes: int) -> int:
+    """How many episodes a rebuild may legitimately lose.
+
+    Genuine duplicates in the seed collapse into one episode, so a small drop
+    is expected. A large one means the feed was truncated, pointed somewhere
+    else, or stopped being this show."""
+    return max(5, seed_episodes // 50)
+
+
+def episode_drop_is_safe(seed_episodes: int, built_episodes: int) -> bool:
+    return built_episodes >= seed_episodes - episode_drop_tolerance(seed_episodes)
+
+
+def try_payload(payload: Payload, label: str) -> list[dict]:
+    """Parse one fetched response, reporting rather than raising on failure."""
+    try:
+        items = parse_feed(payload.text)
+    except Exception as exc:  # noqa: BLE001 - diagnose instead of crashing
+        print(f"could not parse {label} ({exc})", file=sys.stderr)
+        return []
+    if not items:
+        print(f"parsed {label} but it contained no episodes", file=sys.stderr)
+    return items
+
+
+def follow_pages(first: Payload, save_to: Path | None) -> list[dict]:
+    """Walk <atom:link rel="next"> to the end of the feed.
+
+    Page 1 of a paginated podcast feed carries only the most recent episodes.
+    Stopping there would quietly drop most of the back catalogue and look
+    like a successful run."""
+    extra: list[dict] = []
+    seen_urls = {first.url}
+    text, base = first.text, first.url
+    for _ in range(MAX_FEED_PAGES):
+        nxt = next_page_url(text)
+        if not nxt:
+            break
+        nxt = urllib.parse.urljoin(base, nxt)
+        if nxt in seen_urls:
+            break
+        seen_urls.add(nxt)
+        try:
+            page = fetch_feed(nxt)
+        except Exception as exc:  # noqa: BLE001
+            print(f"FEED ERROR: stopped paging at {nxt} ({exc}); "
+                  f"the graph would be missing episodes", file=sys.stderr)
+            break
+        try:
+            page_items = parse_feed(page.text)
+        except Exception as exc:  # noqa: BLE001
+            print(f"FEED ERROR: could not parse {nxt} ({exc})", file=sys.stderr)
+            break
+        if not page_items:
+            break
+        extra.extend(page_items)
+        if save_to:
+            with save_to.open("a", encoding="utf-8") as fh:
+                fh.write("\n<!-- page: " + nxt + " -->\n")
+                fh.write(page.text)
+        text, base = page.text, page.url
+    if extra:
+        print(f"followed {len(seen_urls) - 1} more feed page(s) "
+              f"for {len(extra)} additional items", file=sys.stderr)
+    return extra
+
+
+def load_feed_candidates(urls: list[str], save_to: Path | None) -> list[dict]:
+    """Try each candidate URL until one yields episodes."""
+    for url in urls:
+        print(f"trying feed URL: {url}", file=sys.stderr)
+        items = load_feed(url, save_to)
+        if items:
+            print(f"USING FEED: {url} ({len(items)} items) — "
+                  f"pin this as DEFAULT_FEED_CANDIDATES[0]", file=sys.stderr)
+            return items
+    return []
+
+
+def load_feed(url: str, save_to: Path | None) -> list[dict]:
+    """Fetch and parse the feed, following a landing page to the real feed if
+    that is what the URL turns out to point at. Any failure is reported with
+    enough context to diagnose it from a CI log, and returns no items so the
+    caller falls back to an offline rebuild."""
+    try:
+        payload = fetch_feed(url)
+    except Exception as exc:  # noqa: BLE001 - report and fall back
+        print(f"could not fetch {url} ({exc})", file=sys.stderr)
+        return []
+
+    if save_to:
+        save_to.write_text(payload.text, encoding="utf-8")
+        print(f"saved raw response to {save_to}", file=sys.stderr)
+
+    items = try_payload(payload, "the response")
+    if items:
+        return items + follow_pages(payload, save_to)
+
+    # The URL may point at a page that links to the feed rather than the feed.
+    discovered = discover_feed_url(payload.text, payload.url)
+    if discovered and discovered != payload.url:
+        print(f"response was not a usable feed; it advertises one at {discovered}",
+              file=sys.stderr)
+        try:
+            followed = fetch_feed(discovered)
+        except Exception as exc:  # noqa: BLE001
+            print(f"could not fetch the advertised feed {discovered} ({exc})",
+                  file=sys.stderr)
+            return []
+        if save_to:
+            save_to.write_text(followed.text, encoding="utf-8")
+        items = try_payload(followed, "the advertised feed")
+        if items:
+            items += follow_pages(followed, save_to)
+            print(f"recovered {len(items)} episodes from {discovered}", file=sys.stderr)
+            return items
+        payload = followed
+
+    print(f"{url} did not yield a usable feed:\n" + payload.describe(), file=sys.stderr)
+    return []
+
+
 # --------------------------------------------------------------------- main
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--feed", nargs="?", const=DEFAULT_FEED, default=None,
-                    help=f"fetch the RSS feed (default {DEFAULT_FEED})")
+    ap.add_argument("--feed", nargs="?", const=True, default=None,
+                    help="fetch the RSS feed; with no value, tries "
+                         f"{len(DEFAULT_FEED_CANDIDATES)} known candidate URLs")
     ap.add_argument("--feed-file", help="parse a local RSS file instead of fetching")
     ap.add_argument("--save-feed", type=Path,
                     help="write the fetched RSS XML here before parsing it, so a "
@@ -581,27 +906,27 @@ def main() -> int:
     if args.feed_file:
         items = parse_feed(Path(args.feed_file).read_text(encoding="utf-8"))
     elif args.feed:
-        raw = None
-        try:
-            raw = fetch_feed(args.feed)
-        except Exception as exc:  # noqa: BLE001 - report and fall back
-            print(f"FEED ERROR: could not fetch {args.feed} ({exc}); continuing offline",
-                  file=sys.stderr)
-        if raw is not None:
-            if args.save_feed:
-                args.save_feed.write_text(raw, encoding="utf-8")
-                print(f"saved raw feed to {args.save_feed}", file=sys.stderr)
-            try:
-                items = parse_feed(raw)
-            except Exception as exc:  # noqa: BLE001 - report and fall back
-                print(f"FEED ERROR: fetched {len(raw)} bytes but could not parse them "
-                      f"({exc}); continuing offline", file=sys.stderr)
-            else:
-                if not items:
-                    print("FEED ERROR: feed parsed but contained no items; "
-                          "continuing offline", file=sys.stderr)
+        candidates = [args.feed] if args.feed is not True else DEFAULT_FEED_CANDIDATES
+        items = load_feed_candidates(candidates, args.save_feed)
+        if not items:
+            print("FEED ERROR: no candidate URL yielded a usable feed; "
+                  "continuing offline", file=sys.stderr)
 
     graph = build(seed, items, taxonomy)
+
+    # A merge can only ever add episodes. If the output has fewer than the
+    # input, something upstream went wrong — a truncated feed, a parser fault,
+    # or a URL that stopped pointing at this show — and overwriting the curated
+    # data with it would lose work that cannot be recovered from the feed.
+    seed_episodes = sum(1 for n in seed["nodes"] if n["type"] == "episode")
+    built_episodes = graph["meta"]["counts"].get("episode", 0)
+    if not episode_drop_is_safe(seed_episodes, built_episodes):
+        print(f"FEED ERROR: rebuild produced {built_episodes} episodes but the "
+              f"existing data has {seed_episodes} "
+              f"(tolerance {episode_drop_tolerance(seed_episodes)}). "
+              f"Refusing to overwrite curated data. Inspect the feed first.",
+              file=sys.stderr)
+        return 1
 
     outputs = args.out or OUTPUTS
     payload = json.dumps(graph, indent=2, ensure_ascii=False) + "\n"
