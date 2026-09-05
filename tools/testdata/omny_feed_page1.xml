@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:omny="https://omny.fm/rss-extensions" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<channel>
+<language>en</language>
+<atom:link rel="self" type="application/rss+xml" href="https://www.omnycontent.com/d/playlist/ORG/PROG/PLAYLIST/podcast.rss"/>
+<atom:link rel="next" type="application/rss+xml" href="https://www.omnycontent.com/d/playlist/ORG/PROG/PLAYLIST/podcast.rss?page=2"/>
+<atom:link rel="last" type="application/rss+xml" href="https://www.omnycontent.com/d/playlist/ORG/PROG/PLAYLIST/podcast.rss?page=4"/>
+<title>Catalog &amp; Cocktails: The Honest, No-BS Data Podcast</title>
+<link>https://honestnobsdata.com/</link>
+<description><![CDATA[ <p>The honest, No-BS podcast about data and analytics.</p> ]]></description>
+<itunes:author>data.world from ServiceNow</itunes:author>
+
+<item>
+<title>Intelligence Without Action Is Just Overhead with Patrick McGarry</title>
+<description><![CDATA[ <p>Patrick McGarry, Federal CDO at ServiceNow and author of <em>The Adaptive Organization</em>, has spent years watching organizations accumulate data and tools but fail to convert them into decisions. Patrick joins Juan and Tim to walk through why federal data programs stall.</p> ]]></description>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:season>12</itunes:season>
+<itunes:episode>3</itunes:episode>
+<guid isPermaLink="false">9bb74e04-9d26-4f67-aaca-b4ba0101448c</guid>
+<pubDate>Thu, 03 Sep 2026 15:39:12 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/intelligence-without-action-is-just-overhead-with-patrick-mcgarry</link>
+</item>
+
+<item>
+<title>TAKEAWAY Intelligence Without Action Is Just Overhead with Patrick McGarry</title>
+<description><![CDATA[ <p>This is the takeaway episode with Patrick McGarry, Federal CDO at ServiceNow.</p> ]]></description>
+<itunes:episodeType>trailer</itunes:episodeType>
+<itunes:season>12</itunes:season>
+<itunes:episode>3</itunes:episode>
+<guid isPermaLink="false">9cbeb438-8a96-4177-b32a-b4ba00f7895d</guid>
+<pubDate>Thu, 03 Sep 2026 15:10:54 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/takeaway-intelligence-without-action-is-just-overhead-with-patrick-mcgarry</link>
+</item>
+
+<item>
+<title>Data Products Done Right: Lessons from Capital One's Journey at Scale with Bethany Sehon</title>
+<description><![CDATA[ <p>Bethany Sehon, Enterprise Data Leader at Capital One, has been building data products and ontologies in production long before they became buzzwords.</p> ]]></description>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:season>12</itunes:season>
+<itunes:episode>2</itunes:episode>
+<guid isPermaLink="false">ef99a3c6-2722-49fc-b8d2-b4b200ff78b4</guid>
+<pubDate>Wed, 26 Aug 2026 15:43:56 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/data-products-done-right</link>
+</item>
+
+<item>
+<title>TAKEAWAY - Data Products Done Right: Lessons from Capital One's Journey at Scale with Bethany Sehon</title>
+<description><![CDATA[ <p>This is the takeaway episode with Bethany Sehon, Enterprise Data Leader at Capital One.</p> ]]></description>
+<itunes:episodeType>trailer</itunes:episodeType>
+<itunes:season>12</itunes:season>
+<itunes:episode>2</itunes:episode>
+<guid isPermaLink="false">b9f6156e-8506-460c-be5e-b4b200eefdcf</guid>
+<pubDate>Wed, 26 Aug 2026 14:58:36 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/takeaway-data-products-done-right</link>
+</item>
+
+<item>
+<title>Honest No-BS Data Podcast 7th Year and Season 12 Kick Off</title>
+<description><![CDATA[ <p>This is the start of our 7th year of doing the podcast. Juan and Tim kick off the 12th season.</p> ]]></description>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:season>12</itunes:season>
+<itunes:episode>1</itunes:episode>
+<guid isPermaLink="false">8ed340df-d6b3-4cb2-950f-b4ab01134484</guid>
+<pubDate>Wed, 19 Aug 2026 16:53:14 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/season-12-kick-off</link>
+</item>
+
+<item>
+<title>Takeaways from Gartner Data &amp; Analytics Rants with Sanjeev Mohan, Ryan Dolley, Juan and Tim</title>
+<description><![CDATA[ <p>This was an impromptu recording where Sanjeev Mohan and Ryan Dolley join Juan and Tim to share what they learned.</p> ]]></description>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:season>11</itunes:season>
+<itunes:episode>13</itunes:episode>
+<guid isPermaLink="false">fbe60963-8407-4167-aa28-b40a011885cf</guid>
+<pubDate>Wed, 11 Mar 2026 17:02:27 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/takeaways-from-gartner-rants</link>
+</item>
+
+<item>
+<title>Think Like a Librarian: Why the Reference Interview Is the Framework Data Teams Are Missing with Jenna Jordan and Amalia Child </title>
+<description><![CDATA[ <p>Juan and Tim sit down with data librarians Jenna Jordan and Amalia Child to explore why library science may be the missing lens for data work.</p> ]]></description>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:season>11</itunes:season>
+<itunes:episode>19</itunes:episode>
+<guid isPermaLink="false">2f4d708d-d0d4-4e97-99b7-b42a016d88c6</guid>
+<pubDate>Thu, 16 Apr 2026 11:00:00 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/think-like-a-librarian</link>
+</item>
+
+<item>
+<title>Season 11 Premiere: What happened in 2025 and where are we going in 2026</title>
+<description><![CDATA[ <p>In the opening episode of 2026, Juan and Tim discuss what happened in the data world during 2025. We discuss semantics, ontologies, context, governance, and of course... AI!</p> ]]></description>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:season>11</itunes:season>
+<itunes:episode>1</itunes:episode>
+<guid isPermaLink="false">9d073444-98c3-471e-ace7-b3cc002d8d9a</guid>
+<pubDate>Thu, 08 Jan 2026 02:53:29 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/season-11-premiere</link>
+</item>
+
+<item>
+<title>Building AI Agents with Lena Hall</title>
+<description><![CDATA[ <p>Tim and Juan chat with Lena Hall, the Senior Director of Developer Relations at Akamai, and an AI practitioner where we dive into what it means to build AI agents.</p> ]]></description>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:season>10</itunes:season>
+<itunes:episode>7</itunes:episode>
+<guid isPermaLink="false">f8e54f68-a4c2-4030-9509-b3b600881696</guid>
+<pubDate>Wed, 17 Dec 2025 14:30:00 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/building-ai-agents-with-lena-hall</link>
+</item>
+
+<item>
+<title>TAKEAWAYS - What is Data + AI Observability and Why It's Part of Your Competitive Moat with Barr Moses</title>
+<description><![CDATA[ <p>Barr Moses, CEO &amp; Co-Founder of Monte Carlo, challenges the notion that models alone create competitive advantage.</p> ]]></description>
+<itunes:episodeType>full</itunes:episodeType>
+<guid isPermaLink="false">c12833d1-c048-4f49-9a81-b387002e13bf</guid>
+<pubDate>Thu, 01 May 2025 14:29:51 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/takeaways-observability</link>
+</item>
+
+</channel>
+</rss>

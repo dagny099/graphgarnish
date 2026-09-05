@@ -187,8 +187,20 @@ python3 tools/build_network.py --feed --report          # try the known URLs
 python3 tools/build_network.py --feed <URL> --report    # or name one
 ```
 
-With no URL, `--feed` tries the candidates in `DEFAULT_FEED_CANDIDATES` in
-order and uses the first that yields episodes. If the URL turns out to serve a
+With no URL, `--feed` uses the show's own canonical feed, taken from the
+`<atom:link rel="self">` inside the feed itself.
+
+**The feed is paginated.** Page 1 carries only the most recent episodes and
+links the rest through `<atom:link rel="next">`; the builder follows every page
+and de-duplicates by GUID. Fetching one page would look like a successful run
+while silently dropping most of the back catalogue.
+
+Companion clips are identified two ways, because neither is reliable alone:
+older ones carry `<itunes:episodeType>full</itunes:episodeType>` and are only
+recognisable by their `TAKEAWAYS - ` title prefix, while the newest drop the
+separator (`TAKEAWAY Foo`) and are only recognisable by `episodeType`. A real
+episode titled *Takeaways from Gartner Data & Analytics Rants* is neither, and
+is treated as a full episode. If the URL turns out to serve a
 web page rather than a feed, the builder reads that page's
 `<link rel="alternate" type="application/rss+xml">` pointer and follows it once,
 over https, refusing to downgrade the connection or follow an unusual scheme.

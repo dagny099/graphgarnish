@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<atom:link rel="self" type="application/rss+xml" href="https://www.omnycontent.com/d/playlist/ORG/PROG/PLAYLIST/podcast.rss?page=2"/>
+<title>Catalog &amp; Cocktails: The Honest, No-BS Data Podcast</title>
+<item>
+<title>We Have Agency Over AI with Ethan Mollick</title>
+<description><![CDATA[ <p>Ethan Mollick, Associate Professor at the Wharton School of the University of Pennsylvania, dives into how we can shape the future of AI.</p> ]]></description>
+<itunes:episodeType>full</itunes:episodeType>
+<guid isPermaLink="false">dffee41c-c78f-3e44-a9ef-24ff17f896ea</guid>
+<pubDate>Thu, 21 Nov 2024 17:03:20 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/we-have-agency-over-ai</link>
+</item>
+<item>
+<title>The Truth About Open Table Formats with Vinoth Chandar</title>
+<description><![CDATA[ <p>Vinoth Chandar, founder &amp; CEO of Onehouse, creator of Apache Hudi, unpacks the challenges of data siloes and vendor lock-in.</p> ]]></description>
+<itunes:episodeType>full</itunes:episodeType>
+<guid isPermaLink="false">5429003e-ce0a-35ca-8e3d-7bfe3b20e47e</guid>
+<pubDate>Thu, 14 Nov 2024 14:29:33 +0000</pubDate>
+<link>https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/open-table-formats</link>
+</item>
+</channel>
+</rss>

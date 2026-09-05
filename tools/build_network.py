@@ -33,19 +33,21 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-# The show is hosted on Omny Studio. Candidates are tried in order and the
-# first one that yields episodes wins; the run log names the winner so it can
-# be pinned here afterwards.
-#
-# The first is Omny's conventional feed path. The second is the show page,
-# which carries a <link rel="alternate" type="application/rss+xml"> pointer
-# that discovery follows. Neither has been confirmed against the live site.
+# The show's own feed, taken from the <atom:link rel="self"> and
+# <itunes:new-feed-url> inside the feed itself, so it is the publisher's
+# canonical URL rather than one inferred from a directory listing.
+OMNY_FEED = ("https://www.omnycontent.com/d/playlist/"
+             "922e0f19-2d84-4485-835c-a83f00036b00/"
+             "ec23d51c-1891-4428-81ee-b387002de817/"
+             "46398967-49a1-45c7-9af5-b387002de875/podcast.rss")
 OMNY_SHOW = "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast"
-DEFAULT_FEED_CANDIDATES = [
-    f"{OMNY_SHOW}/playlists/podcast.rss",
-    OMNY_SHOW,
-]
+DEFAULT_FEED_CANDIDATES = [OMNY_FEED, OMNY_SHOW]
 DEFAULT_FEED = DEFAULT_FEED_CANDIDATES[0]
+
+# The feed is paginated: page 1 carries only the most recent episodes and
+# links the rest through <atom:link rel="next">. Fetching one page silently
+# drops most of the back catalogue, so every page gets followed.
+MAX_FEED_PAGES = 40
 DEFAULT_SEED = ROOT / "catalog_cocktails.json"
 DEFAULT_TOPICS = ROOT / "data" / "topics.json"
 OUTPUTS = [ROOT / "catalog_cocktails.json", ROOT / "sample_network.json"]
@@ -59,11 +61,11 @@ def slug(text: str, limit: int = 40) -> str:
     return text[:limit] or "unknown"
 
 
-def norm_key(title: str) -> str:
+def norm_key(title: str, companion: bool = False) -> str:
     """Normalized title with the companion-clip prefix and all punctuation
     removed. Not truncated: length differences are what let prefix_match
     line a 60-char-truncated seed title up with the full title from the feed."""
-    t = strip_takeaway_prefix(title)
+    t = strip_takeaway_prefix(title, companion)
     t = t.replace("\u2019", "'").replace("\u2018", "'")
     t = re.sub(r"\bw/\b", "w", t, flags=re.I)
     return re.sub(r"[^a-z0-9]", "", t.lower())
@@ -129,15 +131,38 @@ def prefix_match(key: str, candidates) -> str | None:
     return best
 
 
+# "TAKEAWAYS - Foo" and "TAKEAWAYS – Foo" both appear, and newer episodes
+# drop the separator entirely ("TAKEAWAY Foo").
 TAKEAWAY_RE = re.compile(r"^\s*TAKEAWAYS?\s*[-–—:]\s*", re.I)
+TAKEAWAY_BARE_RE = re.compile(r"^\s*TAKEAWAYS?\s+(?=[A-Z])")
 
 
-def strip_takeaway_prefix(title: str) -> str:
-    return TAKEAWAY_RE.sub("", title).strip()
+def strip_takeaway_prefix(title: str, companion: bool = False) -> str:
+    """Remove the companion-clip prefix from a title.
+
+    The bare form is only stripped for episodes already known to be
+    companions: a real episode is titled "Takeaways from Gartner Data &
+    Analytics Rants ...", and stripping its first word would mangle it."""
+    stripped = TAKEAWAY_RE.sub("", title).strip()
+    if stripped != title.strip():
+        return stripped
+    if companion:
+        return TAKEAWAY_BARE_RE.sub("", title).strip()
+    return title.strip()
 
 
-def is_takeaway(title: str) -> bool:
-    return bool(TAKEAWAY_RE.match(title))
+def is_takeaway(title: str, episode_type: str = "") -> bool:
+    """Is this the short companion clip rather than the episode itself?
+
+    Two independent signals, because neither is reliable alone: older
+    companions carry <itunes:episodeType>full</itunes:episodeType> and are
+    only identifiable by their title prefix, while the newest ones drop the
+    prefix separator and are only identifiable by episodeType."""
+    if TAKEAWAY_RE.match(title):
+        return True
+    if episode_type.strip().lower() == "trailer":
+        return True
+    return False
 
 
 # ------------------------------------------------------------ guest parsing
@@ -193,8 +218,8 @@ def split_people(raw: str) -> list[str]:
     return out
 
 
-def guests_from_title(title: str) -> list[str]:
-    t = strip_takeaway_prefix(title)
+def guests_from_title(title: str, companion: bool = False) -> list[str]:
+    t = strip_takeaway_prefix(title, companion)
     parts = GUEST_SPLIT.split(t)
     if len(parts) < 2:
         return []
@@ -425,11 +450,17 @@ def parse_feed_loosely(xml_text: str) -> list[dict]:
             "description": strip_html(_tag_text(block, "description"))
                            or strip_html(_tag_text(block, "content:encoded")),
             "url": strip_html(_tag_text(block, "link")),
+            "guid": strip_html(_tag_text(block, "guid")),
+            "episode_type": strip_html(_tag_text(block, "itunes:episodeType")),
+            "season": strip_html(_tag_text(block, "itunes:season")),
+            "number": strip_html(_tag_text(block, "itunes:episode")),
         })
     return items
 
 
 ATOM_NS = "{http://www.w3.org/2005/Atom}"
+ITUNES_NS = "{http://www.itunes.com/dtds/podcast-1.0.dtd}"
+CONTENT_NS = "{http://purl.org/rss/1.0/modules/content/}"
 
 
 def parse_atom(root) -> list[dict]:
@@ -454,6 +485,10 @@ def parse_atom(root) -> list[dict]:
             "date": parse_pubdate(txt("published") or txt("updated")),
             "description": strip_html(txt("summary") or txt("content")),
             "url": link,
+            "guid": txt("id"),
+            "episode_type": "",
+            "season": "",
+            "number": "",
         })
     return items
 
@@ -490,14 +525,36 @@ def parse_feed(xml_text: str) -> list[dict]:
         if not title:
             continue
         desc = strip_html(txt("description")) or strip_html(
-            txt("{http://purl.org/rss/1.0/modules/content/}encoded"))
+            txt(f"{CONTENT_NS}encoded"))
         items.append({
             "title": title,
             "date": parse_pubdate(txt("pubDate")),
             "description": desc,
             "url": txt("link").strip(),
+            "guid": txt("guid").strip(),
+            "episode_type": txt(f"{ITUNES_NS}episodeType").strip(),
+            "season": txt(f"{ITUNES_NS}season").strip(),
+            "number": txt(f"{ITUNES_NS}episode").strip(),
         })
     return items
+
+
+def next_page_url(xml_text: str) -> str | None:
+    """The URL of the next page of the feed, if it advertises one."""
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError:
+        try:
+            root = ET.fromstring(dedupe_attributes(xml_text))
+        except ET.ParseError:
+            return None
+    channel = root.find("channel")
+    if channel is None:
+        channel = root
+    for link in channel.findall(f"{ATOM_NS}link") + channel.findall("link"):
+        if link.get("rel") == "next" and link.get("href"):
+            return link.get("href")
+    return None
 
 
 # ------------------------------------------------------------------- build
@@ -516,7 +573,8 @@ def index_seed(seed: dict) -> dict:
     for n in seed["nodes"]:
         if n["type"] != "episode":
             continue
-        episodes[(norm_key(n["name"]), is_takeaway(n["name"]))] = {
+        companion = is_takeaway(n["name"])
+        episodes[(norm_key(n["name"], companion), companion)] = {
             "name": n["name"],
             "date": n.get("date", ""),
             "guests": guests.get(n["id"], []),
@@ -536,12 +594,19 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
         records[key] = {
             "title": ep["name"], "date": ep["date"], "description": "",
             "url": "", "guests": list(ep["guests"]), "source": "seed",
+            "season": "", "number": "",
         }
 
+    seen_guids: set[str] = set()
     for item in feed_items:
-        companion = is_takeaway(item["title"])
+        guid = item.get("guid") or ""
+        if guid:
+            if guid in seen_guids:
+                continue
+            seen_guids.add(guid)
+        companion = is_takeaway(item["title"], item.get("episode_type", ""))
         same_kind = [k for (k, c) in records if c == companion]
-        ikey = norm_key(item["title"])
+        ikey = norm_key(item["title"], companion)
         hit = prefix_match(ikey, same_kind)
         if hit is None:
             # The seed titles came from a spreadsheet and sometimes diverge from
@@ -556,25 +621,29 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
             rec["description"] = item["description"]
             rec["url"] = item["url"] or rec["url"]
             rec["date"] = item["date"] or rec["date"]
+            rec["season"] = item.get("season", "")
+            rec["number"] = item.get("number", "")
             rec["source"] = "seed+feed"
         else:
             records[key] = {
                 "title": item["title"], "date": item["date"],
                 "description": item["description"], "url": item["url"],
                 "guests": [], "source": "feed",
+                "season": item.get("season", ""), "number": item.get("number", ""),
             }
 
     # Expand any seed guest entry that packed several humans into one name,
     # and fill in guests for feed-only episodes.
     review = []
-    for key, rec in records.items():
+    for (key, companion), rec in records.items():
         expanded = []
         for name in rec["guests"]:
             people = split_people(name)
             expanded.extend(people if people else [name])
         rec["guests"] = [p for p in expanded if p.lower() not in HOSTS]
-        if not rec["guests"] and not is_takeaway(rec["title"]):
-            found = guests_from_title(rec["title"]) or guests_from_description(rec["description"])
+        if not rec["guests"] and not companion:
+            found = (guests_from_title(rec["title"], companion)
+                     or guests_from_description(rec["description"]))
             found = [p for p in found if p.lower() not in HOSTS]
             if found:
                 rec["guests"] = found
@@ -606,7 +675,7 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
     for (key, companion), rec in ordered:
         full = not companion
         eid = base_eid = "ep_" + (rec["date"] or "0000-00-00").replace("-", "") + "_" + slug(
-            strip_takeaway_prefix(rec["title"]), 24) + ("" if full else "_ta")
+            strip_takeaway_prefix(rec["title"], companion), 24) + ("" if full else "_ta")
         # Same date and same first 24 slug characters still means two different
         # episodes (e.g. a two-parter). Keep them apart.
         suffix = 2
@@ -622,6 +691,10 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
             node["url"] = rec["url"]
         if rec["description"]:
             node["summary"] = rec["description"][:400]
+        if rec.get("season"):
+            node["season"] = rec["season"]
+        if rec.get("number"):
+            node["episode"] = rec["number"]
         add_node(node)
         node_id[(key, companion)] = eid
 
@@ -710,6 +783,48 @@ def try_payload(payload: Payload, label: str) -> list[dict]:
     return items
 
 
+def follow_pages(first: Payload, save_to: Path | None) -> list[dict]:
+    """Walk <atom:link rel="next"> to the end of the feed.
+
+    Page 1 of a paginated podcast feed carries only the most recent episodes.
+    Stopping there would quietly drop most of the back catalogue and look
+    like a successful run."""
+    extra: list[dict] = []
+    seen_urls = {first.url}
+    text, base = first.text, first.url
+    for _ in range(MAX_FEED_PAGES):
+        nxt = next_page_url(text)
+        if not nxt:
+            break
+        nxt = urllib.parse.urljoin(base, nxt)
+        if nxt in seen_urls:
+            break
+        seen_urls.add(nxt)
+        try:
+            page = fetch_feed(nxt)
+        except Exception as exc:  # noqa: BLE001
+            print(f"FEED ERROR: stopped paging at {nxt} ({exc}); "
+                  f"the graph would be missing episodes", file=sys.stderr)
+            break
+        try:
+            page_items = parse_feed(page.text)
+        except Exception as exc:  # noqa: BLE001
+            print(f"FEED ERROR: could not parse {nxt} ({exc})", file=sys.stderr)
+            break
+        if not page_items:
+            break
+        extra.extend(page_items)
+        if save_to:
+            with save_to.open("a", encoding="utf-8") as fh:
+                fh.write("\n<!-- page: " + nxt + " -->\n")
+                fh.write(page.text)
+        text, base = page.text, page.url
+    if extra:
+        print(f"followed {len(seen_urls) - 1} more feed page(s) "
+              f"for {len(extra)} additional items", file=sys.stderr)
+    return extra
+
+
 def load_feed_candidates(urls: list[str], save_to: Path | None) -> list[dict]:
     """Try each candidate URL until one yields episodes."""
     for url in urls:
@@ -739,7 +854,7 @@ def load_feed(url: str, save_to: Path | None) -> list[dict]:
 
     items = try_payload(payload, "the response")
     if items:
-        return items
+        return items + follow_pages(payload, save_to)
 
     # The URL may point at a page that links to the feed rather than the feed.
     discovered = discover_feed_url(payload.text, payload.url)
@@ -756,6 +871,7 @@ def load_feed(url: str, save_to: Path | None) -> list[dict]:
             save_to.write_text(followed.text, encoding="utf-8")
         items = try_payload(followed, "the advertised feed")
         if items:
+            items += follow_pages(followed, save_to)
             print(f"recovered {len(items)} episodes from {discovered}", file=sys.stderr)
             return items
         payload = followed
