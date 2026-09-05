@@ -1060,12 +1060,19 @@
             applyFilters();
         });
         
-        document.getElementById('min-org-guests').addEventListener('input', (e) => {
-            const value = parseInt(e.target.value);
-            filters.minOrgGuests = value;
-            document.getElementById('min-org-guests-value').textContent = value;
-            applyFilters();
-        });
+        // The organization-size slider is currently commented out of the markup,
+        // so bind defensively: a hard reference here threw on load and silently
+        // killed every listener registered after it (search, reset).
+        const minOrgGuestsInput = document.getElementById('min-org-guests');
+        if (minOrgGuestsInput) {
+            minOrgGuestsInput.addEventListener('input', (e) => {
+                const value = parseInt(e.target.value);
+                filters.minOrgGuests = value;
+                const readout = document.getElementById('min-org-guests-value');
+                if (readout) readout.textContent = value;
+                applyFilters();
+            });
+        }
         
         document.getElementById('search-input').addEventListener('input', (e) => {
             filters.searchQuery = e.target.value.toLowerCase().trim();
@@ -1091,10 +1098,11 @@
             document.getElementById('year-start').value = 2021;
             document.getElementById('year-end').value = 2026;
             document.getElementById('min-guest-episodes').value = 1;
-            document.getElementById('min-org-guests').value = 1;
+            if (minOrgGuestsInput) minOrgGuestsInput.value = 1;
             document.getElementById('search-input').value = '';
             document.getElementById('min-guest-episodes-value').textContent = '1';
-            document.getElementById('min-org-guests-value').textContent = '1';
+            const minOrgGuestsReadout = document.getElementById('min-org-guests-value');
+            if (minOrgGuestsReadout) minOrgGuestsReadout.textContent = '1';
             
             applyFilters();
         });
