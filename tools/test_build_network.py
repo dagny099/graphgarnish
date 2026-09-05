@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_network import (  # noqa: E402
     Payload, build, clean_org, dedupe_attributes, discover_feed_url,
+    episode_drop_is_safe,
     guests_from_title, load_feed, load_topics, parse_feed, parse_feed_loosely,
     parse_pubdate, split_people, strip_takeaway_prefix,
 )
@@ -145,6 +146,14 @@ check("a feed link is discovered in an HTML page and resolved against the URL",
       == "https://example.com/real/feed.xml")
 check("a page with no feed link discovers nothing",
       discover_feed_url("<html><head></head></html>", "https://example.com/") is None)
+check("an https page is not downgraded to an http feed",
+      discover_feed_url(
+          '<link rel="alternate" type="application/rss+xml" href="http://evil/f.xml">',
+          "https://example.com/") is None)
+check("a non-http scheme is never followed",
+      discover_feed_url(
+          '<link rel="alternate" type="application/rss+xml" href="file:///etc/passwd">',
+          "https://example.com/") is None)
 check("an HTML response is identified as HTML",
       Payload(landing_html, "https://example.com/x", "text/html").looks_like_html)
 check("the diagnosis names the shape and the counts",
@@ -183,6 +192,25 @@ check("a landing-page URL is followed through to the real feed",
       len(recovered) == len(FIXTURE), f"got {len(recovered)} items")
 check("load_feed returns no items rather than raising when a host is unreachable",
       load_feed("http://127.0.0.1:9/nothing", None) == [])
+
+print("\nsafety and determinism")
+check("a rebuild that loses one duplicate episode is allowed",
+      episode_drop_is_safe(203, 202))
+check("a rebuild that loses most episodes is refused",
+      not episode_drop_is_safe(203, 20))
+check("a rebuild that adds episodes is allowed",
+      episode_drop_is_safe(203, 240))
+
+# The seed's own node order must not leak into the output, or every weekly
+# commit shows a reshuffle instead of the actual change.
+shuffled = {"nodes": list(reversed(SEED["nodes"])), "links": list(reversed(SEED["links"]))}
+a = build(SEED, [], TOPICS)
+b = build(shuffled, [], TOPICS)
+check("output does not depend on the order of the seed",
+      [n["id"] for n in a["nodes"]] == [n["id"] for n in b["nodes"]]
+      and a["links"] == b["links"])
+check("building twice gives an identical result",
+      build(SEED, FIXTURE, TOPICS) == build(SEED, FIXTURE, TOPICS))
 
 print()
 if failures:

@@ -1426,659 +1426,9 @@
       "is_full": true
     },
     {
-      "id": "person_peter_bailis",
-      "name": "Peter Bailis",
-      "type": "person"
-    },
-    {
-      "id": "org_stanford",
-      "name": "Stanford",
-      "type": "organization"
-    },
-    {
-      "id": "topic_analytics_bi",
-      "name": "Analytics & BI",
-      "type": "topic"
-    },
-    {
-      "id": "person_chris_bergh",
-      "name": "Chris Bergh",
-      "type": "person"
-    },
-    {
-      "id": "org_datakitchen",
-      "name": "DataKitchen",
-      "type": "organization"
-    },
-    {
-      "id": "person_meetesh_karia",
-      "name": "Meetesh Karia",
-      "type": "person"
-    },
-    {
-      "id": "org_the_zebra",
-      "name": "The Zebra",
-      "type": "organization"
-    },
-    {
-      "id": "person_brandon_chen",
-      "name": "Brandon Chen",
-      "type": "person"
-    },
-    {
-      "id": "org_fivetran",
-      "name": "Fivetran",
-      "type": "organization"
-    },
-    {
-      "id": "topic_architecture_platforms",
-      "name": "Architecture & Platforms",
-      "type": "topic"
-    },
-    {
-      "id": "person_dj_patil",
-      "name": "DJ Patil",
-      "type": "person"
-    },
-    {
-      "id": "person_emil_eifrem",
-      "name": "Emil Eifrem",
-      "type": "person"
-    },
-    {
-      "id": "person_denise_gosnell",
-      "name": "Denise Gosnell",
-      "type": "person"
-    },
-    {
-      "id": "person_kirk_borne",
-      "name": "Kirk Borne",
-      "type": "person"
-    },
-    {
-      "id": "org_dataprime",
-      "name": "DataPrime",
-      "type": "organization"
-    },
-    {
-      "id": "person_mike_ferguson",
-      "name": "Mike Ferguson",
-      "type": "person"
-    },
-    {
-      "id": "person_tejas_manohar",
-      "name": "Tejas Manohar",
-      "type": "person"
-    },
-    {
-      "id": "topic_data_engineering",
-      "name": "Data Engineering",
-      "type": "topic"
-    },
-    {
-      "id": "person_lars_albertsson",
-      "name": "Lars Albertsson",
-      "type": "person"
-    },
-    {
-      "id": "person_jans_aasman",
-      "name": "Jans Aasman",
-      "type": "person"
-    },
-    {
-      "id": "person_mammad_zadeh",
-      "name": "Mammad Zadeh",
-      "type": "person"
-    },
-    {
-      "id": "org_intuit",
-      "name": "Intuit",
-      "type": "organization"
-    },
-    {
-      "id": "person_danielle_oberdier",
-      "name": "Danielle Oberdier",
-      "type": "person"
-    },
-    {
-      "id": "person_partha_srinivasa",
-      "name": "Partha Srinivasa",
-      "type": "person"
-    },
-    {
-      "id": "org_erie_insurance",
-      "name": "Erie Insurance",
-      "type": "organization"
-    },
-    {
-      "id": "topic_privacy_ethics_risk",
-      "name": "Privacy, Ethics & Risk",
-      "type": "topic"
-    },
-    {
-      "id": "topic_data_mesh",
-      "name": "Data Mesh",
-      "type": "topic"
-    },
-    {
-      "id": "person_doug_laney",
-      "name": "Doug Laney",
-      "type": "person"
-    },
-    {
-      "id": "org_west_monroe",
-      "name": "West Monroe",
-      "type": "organization"
-    },
-    {
-      "id": "person_erik_bernhardsson",
-      "name": "Erik Bernhardsson",
-      "type": "person"
-    },
-    {
-      "id": "org_better_com",
-      "name": "Better.com",
-      "type": "organization"
-    },
-    {
-      "id": "person_cindi_howson",
-      "name": "Cindi Howson",
-      "type": "person"
-    },
-    {
-      "id": "org_thoughtspot",
-      "name": "ThoughtSpot",
-      "type": "organization"
-    },
-    {
-      "id": "person_andy_palmer",
-      "name": "Andy Palmer",
-      "type": "person"
-    },
-    {
-      "id": "person_nick_schrock",
-      "name": "Nick Schrock",
-      "type": "person"
-    },
-    {
-      "id": "person_kelly_wright",
-      "name": "Kelly Wright",
-      "type": "person"
-    },
-    {
-      "id": "org_gong",
-      "name": "Gong",
-      "type": "organization"
-    },
-    {
-      "id": "person_steve_whitla",
-      "name": "Steve Whitla",
-      "type": "person"
-    },
-    {
-      "id": "person_sarah_catanzaro",
-      "name": "Sarah Catanzaro",
-      "type": "person"
-    },
-    {
-      "id": "org_amplify_partners",
-      "name": "Amplify Partners",
-      "type": "organization"
-    },
-    {
-      "id": "person_emily_hawkins",
-      "name": "Emily Hawkins",
-      "type": "person"
-    },
-    {
-      "id": "org_drizly",
-      "name": "Drizly",
-      "type": "organization"
-    },
-    {
-      "id": "person_benn_stancil",
-      "name": "Benn Stancil",
-      "type": "person"
-    },
-    {
-      "id": "person_dora_boussias",
-      "name": "Dora Boussias",
-      "type": "person"
-    },
-    {
-      "id": "org_stryker",
-      "name": "Stryker",
-      "type": "organization"
-    },
-    {
-      "id": "person_laura_madsen",
-      "name": "Laura Madsen",
-      "type": "person"
-    },
-    {
-      "id": "topic_data_governance",
-      "name": "Data Governance",
-      "type": "topic"
-    },
-    {
-      "id": "person_luke_slotwinski",
-      "name": "Luke Slotwinski",
-      "type": "person"
-    },
-    {
-      "id": "org_prologis",
-      "name": "Prologis",
-      "type": "organization"
-    },
-    {
-      "id": "person_karen_lopez",
-      "name": "Karen Lopez",
-      "type": "person"
-    },
-    {
-      "id": "org_infoadvisors",
-      "name": "InfoAdvisors",
-      "type": "organization"
-    },
-    {
-      "id": "topic_industry_field_notes",
-      "name": "Industry & Field Notes",
-      "type": "topic"
-    },
-    {
-      "id": "person_arjun_narayan",
-      "name": "Arjun Narayan",
-      "type": "person"
-    },
-    {
-      "id": "person_patricia_thaine",
-      "name": "Patricia Thaine",
-      "type": "person"
-    },
-    {
-      "id": "person_shane_gibson",
-      "name": "Shane Gibson",
-      "type": "person"
-    },
-    {
-      "id": "person_bob_muglia",
-      "name": "Bob Muglia",
-      "type": "person"
-    },
-    {
-      "id": "person_nong_li",
-      "name": "Nong Li",
-      "type": "person"
-    },
-    {
-      "id": "topic_data_products",
-      "name": "Data Products",
-      "type": "topic"
-    },
-    {
-      "id": "person_chad_sanderson",
-      "name": "Chad Sanderson",
-      "type": "person"
-    },
-    {
-      "id": "org_convoy",
-      "name": "Convoy",
-      "type": "organization"
-    },
-    {
-      "id": "person_steve_perry",
-      "name": "Steve Perry",
-      "type": "person"
-    },
-    {
-      "id": "org_genius_sports",
-      "name": "Genius Sports",
-      "type": "organization"
-    },
-    {
-      "id": "person_nick_handel",
-      "name": "Nick Handel",
-      "type": "person"
-    },
-    {
-      "id": "person_francois_scharffe",
-      "name": "François Scharffe",
-      "type": "person"
-    },
-    {
-      "id": "topic_knowledge_graphs",
-      "name": "Knowledge Graphs",
-      "type": "topic"
-    },
-    {
-      "id": "person_sarah_krasnik",
-      "name": "Sarah Krasnik",
-      "type": "person"
-    },
-    {
-      "id": "org_perpay",
-      "name": "Perpay",
-      "type": "organization"
-    },
-    {
-      "id": "person_omar_khawaja",
-      "name": "Omar Khawaja",
-      "type": "person"
-    },
-    {
-      "id": "org_givaudan",
-      "name": "Givaudan",
-      "type": "organization"
-    },
-    {
-      "id": "topic_data_strategy",
-      "name": "Data Strategy",
-      "type": "topic"
-    },
-    {
-      "id": "person_brett_hurt",
-      "name": "Brett Hurt",
-      "type": "person"
-    },
-    {
-      "id": "person_sanjeev_mohan",
-      "name": "Sanjeev Mohan",
-      "type": "person"
-    },
-    {
-      "id": "org_sanjmo",
-      "name": "SanjMo",
-      "type": "organization"
-    },
-    {
-      "id": "person_peter_kapur",
-      "name": "Peter Kapur",
-      "type": "person"
-    },
-    {
-      "id": "org_aig",
-      "name": "AIG",
-      "type": "organization"
-    },
-    {
-      "id": "topic_metadata",
-      "name": "Metadata",
-      "type": "topic"
-    },
-    {
-      "id": "person_ergest_xheblati",
-      "name": "Ergest Xheblati",
-      "type": "person"
-    },
-    {
-      "id": "org_everquote",
-      "name": "EverQuote",
-      "type": "organization"
-    },
-    {
-      "id": "topic_data_modeling",
-      "name": "Data Modeling",
-      "type": "topic"
-    },
-    {
-      "id": "person_vip_parmar",
-      "name": "Vip Parmar",
-      "type": "person"
-    },
-    {
-      "id": "org_wpp",
-      "name": "WPP",
-      "type": "organization"
-    },
-    {
-      "id": "person_gabi_steele",
-      "name": "Gabi Steele",
-      "type": "person"
-    },
-    {
-      "id": "person_leah_weiss",
-      "name": "Leah Weiss",
-      "type": "person"
-    },
-    {
-      "id": "person_dan_bennett",
-      "name": "Dan Bennett",
-      "type": "person"
-    },
-    {
-      "id": "org_s_p_global",
-      "name": "S&P Global",
-      "type": "organization"
-    },
-    {
-      "id": "person_theresa_kushner",
-      "name": "Theresa Kushner",
-      "type": "person"
-    },
-    {
-      "id": "org_ntt_data_services",
-      "name": "NTT DATA Services",
-      "type": "organization"
-    },
-    {
-      "id": "topic_data_teams_org",
-      "name": "Data Teams & Org",
-      "type": "topic"
-    },
-    {
-      "id": "person_allison_sagraves",
-      "name": "Allison Sagraves",
-      "type": "person"
-    },
-    {
-      "id": "person_bill_inmon",
-      "name": "Bill Inmon",
-      "type": "person"
-    },
-    {
-      "id": "person_jane_urban",
-      "name": "Jane Urban",
-      "type": "person"
-    },
-    {
-      "id": "org_takeda_pharmaceuticals",
-      "name": "Takeda Pharmaceuticals",
-      "type": "organization"
-    },
-    {
-      "id": "topic_business_value_roi",
-      "name": "Business Value & ROI",
-      "type": "topic"
-    },
-    {
-      "id": "person_anna_abramova",
-      "name": "Anna Abramova",
-      "type": "person"
-    },
-    {
-      "id": "org_sqldbm",
-      "name": "SqlDBM",
-      "type": "organization"
-    },
-    {
-      "id": "person_malcolm_hawker",
-      "name": "Malcolm Hawker",
-      "type": "person"
-    },
-    {
-      "id": "org_profisee",
-      "name": "Profisee",
-      "type": "organization"
-    },
-    {
-      "id": "topic_master_data_management",
-      "name": "Master Data Management",
-      "type": "topic"
-    },
-    {
-      "id": "person_jeff_jonas",
-      "name": "Jeff Jonas",
-      "type": "person"
-    },
-    {
-      "id": "person_mohammad_syed",
-      "name": "Mohammad Syed",
-      "type": "person"
-    },
-    {
-      "id": "org_capco",
-      "name": "Capco",
-      "type": "organization"
-    },
-    {
-      "id": "person_brian_t_oneill",
-      "name": "Brian T. O’Neill",
-      "type": "person"
-    },
-    {
-      "id": "topic_data_culture_literacy",
-      "name": "Data Culture & Literacy",
-      "type": "topic"
-    },
-    {
-      "id": "person_kristin_schooley",
-      "name": "Kristin Schooley",
-      "type": "person"
-    },
-    {
-      "id": "org_learning_care_group",
-      "name": "Learning Care Group",
-      "type": "organization"
-    },
-    {
-      "id": "person_abhi_sivasailam",
-      "name": "Abhi Sivasailam",
-      "type": "person"
-    },
-    {
-      "id": "person_benny_benford",
-      "name": "Benny Benford",
-      "type": "person"
-    },
-    {
-      "id": "org_jaguar_land_rover",
-      "name": "Jaguar Land Rover",
-      "type": "organization"
-    },
-    {
-      "id": "person_veronika_durgin",
-      "name": "Veronika Durgin",
-      "type": "person"
-    },
-    {
-      "id": "org_saks_fifth_avenue",
-      "name": "Saks Fifth Avenue",
-      "type": "organization"
-    },
-    {
-      "id": "person_tony_seale",
-      "name": "Tony Seale",
-      "type": "person"
-    },
-    {
-      "id": "topic_generative_ai_llms",
-      "name": "Generative AI / LLMs",
-      "type": "topic"
-    },
-    {
-      "id": "person_alex_vayner",
-      "name": "Alex Vayner",
-      "type": "person"
-    },
-    {
-      "id": "org_kpmg",
-      "name": "KPMG",
-      "type": "organization"
-    },
-    {
-      "id": "person_ricardo_baezayates",
-      "name": "Ricardo Baeza‑Yates",
-      "type": "person"
-    },
-    {
-      "id": "org_northeastern_universitys_institute_for_e",
-      "name": "Northeastern University’s Institute for Experiential AI",
-      "type": "organization"
-    },
-    {
-      "id": "person_katariina_kari",
-      "name": "Katariina Kari",
-      "type": "person"
-    },
-    {
-      "id": "org_ikea",
-      "name": "IKEA",
-      "type": "organization"
-    },
-    {
-      "id": "person_madeleine_want",
-      "name": "Madeleine Want",
-      "type": "person"
-    },
-    {
-      "id": "person_ben_clinch",
-      "name": "Ben Clinch",
-      "type": "person"
-    },
-    {
-      "id": "org_bt_group",
-      "name": "BT Group",
-      "type": "organization"
-    },
-    {
       "id": "person_aakriti_agrawal",
       "name": "Aakriti Agrawal",
       "type": "person"
-    },
-    {
-      "id": "org_american_express",
-      "name": "American Express",
-      "type": "organization"
-    },
-    {
-      "id": "topic_data_catalogs",
-      "name": "Data Catalogs",
-      "type": "topic"
-    },
-    {
-      "id": "person_joe_reis",
-      "name": "Joe Reis",
-      "type": "person"
-    },
-    {
-      "id": "person_tom_redman",
-      "name": "Tom Redman",
-      "type": "person"
-    },
-    {
-      "id": "person_ethan_aaron",
-      "name": "Ethan Aaron",
-      "type": "person"
-    },
-    {
-      "id": "person_wendy_turnerwilliams",
-      "name": "Wendy Turner‑Williams",
-      "type": "person"
-    },
-    {
-      "id": "org_tableau_salesforce",
-      "name": "Tableau/Salesforce",
-      "type": "organization"
-    },
-    {
-      "id": "person_simone_steel",
-      "name": "Simone Steel",
-      "type": "person"
-    },
-    {
-      "id": "org_nationwide_building_society",
-      "name": "Nationwide Building Society",
-      "type": "organization"
     },
     {
       "id": "person_aaron_wilkerson",
@@ -2086,368 +1436,23 @@
       "type": "person"
     },
     {
-      "id": "org_carhartt",
-      "name": "Carhartt",
-      "type": "organization"
-    },
-    {
-      "id": "person_ari_kaplan",
-      "name": "Ari Kaplan",
+      "id": "person_abhi_sivasailam",
+      "name": "Abhi Sivasailam",
       "type": "person"
     },
     {
-      "id": "org_databricks",
-      "name": "Databricks",
-      "type": "organization"
+      "id": "person_alex_bertails",
+      "name": "Alex Bertails",
+      "type": "person"
+    },
+    {
+      "id": "person_alex_vayner",
+      "name": "Alex Vayner",
+      "type": "person"
     },
     {
       "id": "person_alexa_westlake",
       "name": "Alexa Westlake",
-      "type": "person"
-    },
-    {
-      "id": "org_okta",
-      "name": "Okta",
-      "type": "organization"
-    },
-    {
-      "id": "person_chris_tabb",
-      "name": "Chris Tabb",
-      "type": "person"
-    },
-    {
-      "id": "person_peter_norvig",
-      "name": "Peter Norvig",
-      "type": "person"
-    },
-    {
-      "id": "person_nazneen_rajani",
-      "name": "Nazneen Rajani",
-      "type": "person"
-    },
-    {
-      "id": "person_fabiana_clemente",
-      "name": "Fabiana Clemente",
-      "type": "person"
-    },
-    {
-      "id": "person_danny_bickson",
-      "name": "Danny Bickson",
-      "type": "person"
-    },
-    {
-      "id": "person_gev_sogomonian",
-      "name": "Gev Sogomonian",
-      "type": "person"
-    },
-    {
-      "id": "person_yujian_tang",
-      "name": "Yujian Tang",
-      "type": "person"
-    },
-    {
-      "id": "person_patrick_mcfadin",
-      "name": "Patrick McFadin",
-      "type": "person"
-    },
-    {
-      "id": "person_ofer_mendelevitch",
-      "name": "Ofer Mendelevitch",
-      "type": "person"
-    },
-    {
-      "id": "person_jon_cooke",
-      "name": "Jon Cooke",
-      "type": "person"
-    },
-    {
-      "id": "person_krystin_kim",
-      "name": "Krystin Kim",
-      "type": "person"
-    },
-    {
-      "id": "org_post_holdings",
-      "name": "Post Holdings",
-      "type": "organization"
-    },
-    {
-      "id": "person_mike_dillinger",
-      "name": "Mike Dillinger",
-      "type": "person"
-    },
-    {
-      "id": "person_kat_greenbrook",
-      "name": "Kat Greenbrook",
-      "type": "person"
-    },
-    {
-      "id": "person_doris_lee",
-      "name": "Doris Lee",
-      "type": "person"
-    },
-    {
-      "id": "person_dean_allemang",
-      "name": "Dean Allemang",
-      "type": "person"
-    },
-    {
-      "id": "person_bryon_jacob",
-      "name": "Bryon Jacob",
-      "type": "person"
-    },
-    {
-      "id": "person_andrew_jones",
-      "name": "Andrew Jones",
-      "type": "person"
-    },
-    {
-      "id": "org_gocardless",
-      "name": "GoCardless",
-      "type": "organization"
-    },
-    {
-      "id": "topic_data_contracts",
-      "name": "Data Contracts",
-      "type": "topic"
-    },
-    {
-      "id": "person_jeremiah_owyang",
-      "name": "Jeremiah Owyang",
-      "type": "person"
-    },
-    {
-      "id": "org_blitzscaling_ventures",
-      "name": "Blitzscaling Ventures",
-      "type": "organization"
-    },
-    {
-      "id": "person_samia_rahman",
-      "name": "Samia Rahman",
-      "type": "person"
-    },
-    {
-      "id": "org_seagen",
-      "name": "Seagen",
-      "type": "organization"
-    },
-    {
-      "id": "person_santona_tuli",
-      "name": "Santona Tuli",
-      "type": "person"
-    },
-    {
-      "id": "org_upsolver",
-      "name": "Upsolver",
-      "type": "organization"
-    },
-    {
-      "id": "person_jessica_talisman",
-      "name": "Jessica Talisman",
-      "type": "person"
-    },
-    {
-      "id": "org_amazon",
-      "name": "Amazon",
-      "type": "organization"
-    },
-    {
-      "id": "person_paco_nathan",
-      "name": "Paco Nathan",
-      "type": "person"
-    },
-    {
-      "id": "person_eva_nahari",
-      "name": "Eva Nahari",
-      "type": "person"
-    },
-    {
-      "id": "org_vectara",
-      "name": "Vectara",
-      "type": "organization"
-    },
-    {
-      "id": "person_karen_meppen",
-      "name": "Karen Meppen",
-      "type": "person"
-    },
-    {
-      "id": "person_amy_raygada",
-      "name": "Amy Raygada",
-      "type": "person"
-    },
-    {
-      "id": "org_servicenow",
-      "name": "ServiceNow",
-      "type": "organization"
-    },
-    {
-      "id": "person_cris_hadjez",
-      "name": "Cris Hadjez",
-      "type": "person"
-    },
-    {
-      "id": "person_scott_taylor",
-      "name": "Scott Taylor",
-      "type": "person"
-    },
-    {
-      "id": "person_jesse_sedler",
-      "name": "Jesse Sedler",
-      "type": "person"
-    },
-    {
-      "id": "person_neil_burge",
-      "name": "Neil Burge",
-      "type": "person"
-    },
-    {
-      "id": "person_peter_kromhout",
-      "name": "Peter Kromhout",
-      "type": "person"
-    },
-    {
-      "id": "person_mariam_halfhide",
-      "name": "Mariam Halfhide",
-      "type": "person"
-    },
-    {
-      "id": "person_bob_van_luijt",
-      "name": "Bob van Luijt",
-      "type": "person"
-    },
-    {
-      "id": "person_sol_rashidi",
-      "name": "Sol Rashidi",
-      "type": "person"
-    },
-    {
-      "id": "person_ora_lassila",
-      "name": "Ora Lassila",
-      "type": "person"
-    },
-    {
-      "id": "person_brandon_gadoci",
-      "name": "Brandon Gadoci",
-      "type": "person"
-    },
-    {
-      "id": "org_data_world",
-      "name": "data.world",
-      "type": "organization"
-    },
-    {
-      "id": "person_anna_bergevin",
-      "name": "Anna Bergevin",
-      "type": "person"
-    },
-    {
-      "id": "org_resmed",
-      "name": "ResMed",
-      "type": "organization"
-    },
-    {
-      "id": "person_tiankai_feng",
-      "name": "Tiankai Feng",
-      "type": "person"
-    },
-    {
-      "id": "org_thoughtworks_europe",
-      "name": "Thoughtworks Europe",
-      "type": "organization"
-    },
-    {
-      "id": "person_dawn_carter",
-      "name": "Dawn Carter",
-      "type": "person"
-    },
-    {
-      "id": "org_bae_systems",
-      "name": "BAE Systems",
-      "type": "organization"
-    },
-    {
-      "id": "person_amalia_child",
-      "name": "Amalia Child",
-      "type": "person"
-    },
-    {
-      "id": "person_dael_williamson",
-      "name": "Dael Williamson",
-      "type": "person"
-    },
-    {
-      "id": "person_kevin_hu",
-      "name": "Kevin Hu",
-      "type": "person"
-    },
-    {
-      "id": "topic_data_quality",
-      "name": "Data Quality",
-      "type": "topic"
-    },
-    {
-      "id": "person_mike_evans",
-      "name": "Mike Evans",
-      "type": "person"
-    },
-    {
-      "id": "org_amplifi",
-      "name": "Amplifi",
-      "type": "organization"
-    },
-    {
-      "id": "person_colleen_tartow",
-      "name": "Colleen Tartow",
-      "type": "person"
-    },
-    {
-      "id": "person_andrea_gioia",
-      "name": "Andrea Gioia",
-      "type": "person"
-    },
-    {
-      "id": "org_quantyca",
-      "name": "Quantyca",
-      "type": "organization"
-    },
-    {
-      "id": "person_vinoth_chandar",
-      "name": "Vinoth Chandar",
-      "type": "person"
-    },
-    {
-      "id": "person_ethan_mollick",
-      "name": "Ethan Mollick",
-      "type": "person"
-    },
-    {
-      "id": "org_the_wharton_school_of_the_university_of_",
-      "name": "the Wharton School of the University of Pennsylvania",
-      "type": "organization"
-    },
-    {
-      "id": "person_nicola_askham",
-      "name": "Nicola Askham",
-      "type": "person"
-    },
-    {
-      "id": "person_ole_olesen_bagneux",
-      "name": "Ole Olesen-Bagneux",
-      "type": "person"
-    },
-    {
-      "id": "person_jordan_morrow",
-      "name": "Jordan Morrow",
-      "type": "person"
-    },
-    {
-      "id": "person_lindsay_murphy",
-      "name": "Lindsay Murphy",
-      "type": "person"
-    },
-    {
-      "id": "person_olga_maydanchik",
-      "name": "Olga Maydanchik",
       "type": "person"
     },
     {
@@ -2456,8 +1461,253 @@
       "type": "person"
     },
     {
-      "id": "person_winfried_etzel",
-      "name": "Winfried Etzel",
+      "id": "person_allison_sagraves",
+      "name": "Allison Sagraves",
+      "type": "person"
+    },
+    {
+      "id": "person_amalia_child",
+      "name": "Amalia Child",
+      "type": "person"
+    },
+    {
+      "id": "person_amy_raygada",
+      "name": "Amy Raygada",
+      "type": "person"
+    },
+    {
+      "id": "person_andrea_gioia",
+      "name": "Andrea Gioia",
+      "type": "person"
+    },
+    {
+      "id": "person_andrew_jones",
+      "name": "Andrew Jones",
+      "type": "person"
+    },
+    {
+      "id": "person_andy_palmer",
+      "name": "Andy Palmer",
+      "type": "person"
+    },
+    {
+      "id": "person_anna_abramova",
+      "name": "Anna Abramova",
+      "type": "person"
+    },
+    {
+      "id": "person_anna_bergevin",
+      "name": "Anna Bergevin",
+      "type": "person"
+    },
+    {
+      "id": "person_ari_kaplan",
+      "name": "Ari Kaplan",
+      "type": "person"
+    },
+    {
+      "id": "person_arielle_rolland",
+      "name": "Arielle Rolland",
+      "type": "person"
+    },
+    {
+      "id": "person_arjun_narayan",
+      "name": "Arjun Narayan",
+      "type": "person"
+    },
+    {
+      "id": "person_barr_moses",
+      "name": "Barr Moses",
+      "type": "person"
+    },
+    {
+      "id": "person_ben_clinch",
+      "name": "Ben Clinch",
+      "type": "person"
+    },
+    {
+      "id": "person_benn_stancil",
+      "name": "Benn Stancil",
+      "type": "person"
+    },
+    {
+      "id": "person_benny_benford",
+      "name": "Benny Benford",
+      "type": "person"
+    },
+    {
+      "id": "person_bill_inmon",
+      "name": "Bill Inmon",
+      "type": "person"
+    },
+    {
+      "id": "person_blake_burch",
+      "name": "Blake Burch",
+      "type": "person"
+    },
+    {
+      "id": "person_bob_muglia",
+      "name": "Bob Muglia",
+      "type": "person"
+    },
+    {
+      "id": "person_bob_van_luijt",
+      "name": "Bob van Luijt",
+      "type": "person"
+    },
+    {
+      "id": "person_brandon_chen",
+      "name": "Brandon Chen",
+      "type": "person"
+    },
+    {
+      "id": "person_brandon_gadoci",
+      "name": "Brandon Gadoci",
+      "type": "person"
+    },
+    {
+      "id": "person_brett_hurt",
+      "name": "Brett Hurt",
+      "type": "person"
+    },
+    {
+      "id": "person_brian_t_oneill",
+      "name": "Brian T. O’Neill",
+      "type": "person"
+    },
+    {
+      "id": "person_bryon_jacob",
+      "name": "Bryon Jacob",
+      "type": "person"
+    },
+    {
+      "id": "person_chad_sanderson",
+      "name": "Chad Sanderson",
+      "type": "person"
+    },
+    {
+      "id": "person_chris_bergh",
+      "name": "Chris Bergh",
+      "type": "person"
+    },
+    {
+      "id": "person_chris_tabb",
+      "name": "Chris Tabb",
+      "type": "person"
+    },
+    {
+      "id": "person_cindi_howson",
+      "name": "Cindi Howson",
+      "type": "person"
+    },
+    {
+      "id": "person_colleen_tartow",
+      "name": "Colleen Tartow",
+      "type": "person"
+    },
+    {
+      "id": "person_cris_hadjez",
+      "name": "Cris Hadjez",
+      "type": "person"
+    },
+    {
+      "id": "person_dj_patil",
+      "name": "DJ Patil",
+      "type": "person"
+    },
+    {
+      "id": "person_dael_williamson",
+      "name": "Dael Williamson",
+      "type": "person"
+    },
+    {
+      "id": "person_dan_bennett",
+      "name": "Dan Bennett",
+      "type": "person"
+    },
+    {
+      "id": "person_danielle_crop",
+      "name": "Danielle Crop",
+      "type": "person"
+    },
+    {
+      "id": "person_danielle_oberdier",
+      "name": "Danielle Oberdier",
+      "type": "person"
+    },
+    {
+      "id": "person_danny_bickson",
+      "name": "Danny Bickson",
+      "type": "person"
+    },
+    {
+      "id": "person_dawn_carter",
+      "name": "Dawn Carter",
+      "type": "person"
+    },
+    {
+      "id": "person_dean_allemang",
+      "name": "Dean Allemang",
+      "type": "person"
+    },
+    {
+      "id": "person_denise_gosnell",
+      "name": "Denise Gosnell",
+      "type": "person"
+    },
+    {
+      "id": "person_dora_boussias",
+      "name": "Dora Boussias",
+      "type": "person"
+    },
+    {
+      "id": "person_doris_lee",
+      "name": "Doris Lee",
+      "type": "person"
+    },
+    {
+      "id": "person_doug_laney",
+      "name": "Doug Laney",
+      "type": "person"
+    },
+    {
+      "id": "person_emil_eifrem",
+      "name": "Emil Eifrem",
+      "type": "person"
+    },
+    {
+      "id": "person_emily_hawkins",
+      "name": "Emily Hawkins",
+      "type": "person"
+    },
+    {
+      "id": "person_ergest_xheblati",
+      "name": "Ergest Xheblati",
+      "type": "person"
+    },
+    {
+      "id": "person_erik_bernhardsson",
+      "name": "Erik Bernhardsson",
+      "type": "person"
+    },
+    {
+      "id": "person_ethan_aaron",
+      "name": "Ethan Aaron",
+      "type": "person"
+    },
+    {
+      "id": "person_ethan_mollick",
+      "name": "Ethan Mollick",
+      "type": "person"
+    },
+    {
+      "id": "person_eva_nahari",
+      "name": "Eva Nahari",
+      "type": "person"
+    },
+    {
+      "id": "person_fabiana_clemente",
+      "name": "Fabiana Clemente",
       "type": "person"
     },
     {
@@ -2466,18 +1716,18 @@
       "type": "person"
     },
     {
-      "id": "org_baringa",
-      "name": "Baringa",
-      "type": "organization"
-    },
-    {
-      "id": "person_jean_georges_perrin",
-      "name": "Jean-Georges Perrin",
+      "id": "person_francois_scharffe",
+      "name": "François Scharffe",
       "type": "person"
     },
     {
-      "id": "person_patrick_cuba",
-      "name": "Patrick Cuba",
+      "id": "person_gabi_steele",
+      "name": "Gabi Steele",
+      "type": "person"
+    },
+    {
+      "id": "person_gev_sogomonian",
+      "name": "Gev Sogomonian",
       "type": "person"
     },
     {
@@ -2491,29 +1741,39 @@
       "type": "person"
     },
     {
-      "id": "person_blake_burch",
-      "name": "Blake Burch",
+      "id": "person_jane_urban",
+      "name": "Jane Urban",
       "type": "person"
     },
     {
-      "id": "person_barr_moses",
-      "name": "Barr Moses",
+      "id": "person_jans_aasman",
+      "name": "Jans Aasman",
       "type": "person"
     },
     {
-      "id": "person_rebecca_o_kill",
-      "name": "Rebecca O'Kill",
+      "id": "person_jean_georges_perrin",
+      "name": "Jean-Georges Perrin",
       "type": "person"
     },
     {
-      "id": "person_alex_bertails",
-      "name": "Alex Bertails",
+      "id": "person_jeff_jonas",
+      "name": "Jeff Jonas",
       "type": "person"
     },
     {
-      "id": "org_netflix",
-      "name": "Netflix",
-      "type": "organization"
+      "id": "person_jeremiah_owyang",
+      "name": "Jeremiah Owyang",
+      "type": "person"
+    },
+    {
+      "id": "person_jesse_sedler",
+      "name": "Jesse Sedler",
+      "type": "person"
+    },
+    {
+      "id": "person_jessica_talisman",
+      "name": "Jessica Talisman",
+      "type": "person"
     },
     {
       "id": "person_jessica_zuniga",
@@ -2521,18 +1781,78 @@
       "type": "person"
     },
     {
-      "id": "org_blueyeti",
-      "name": "BlueYeti",
-      "type": "organization"
-    },
-    {
-      "id": "person_danielle_crop",
-      "name": "Danielle Crop",
+      "id": "person_joe_reis",
+      "name": "Joe Reis",
       "type": "person"
     },
     {
-      "id": "person_arielle_rolland",
-      "name": "Arielle Rolland",
+      "id": "person_jon_cooke",
+      "name": "Jon Cooke",
+      "type": "person"
+    },
+    {
+      "id": "person_jordan_morrow",
+      "name": "Jordan Morrow",
+      "type": "person"
+    },
+    {
+      "id": "person_karen_lopez",
+      "name": "Karen Lopez",
+      "type": "person"
+    },
+    {
+      "id": "person_karen_meppen",
+      "name": "Karen Meppen",
+      "type": "person"
+    },
+    {
+      "id": "person_kat_greenbrook",
+      "name": "Kat Greenbrook",
+      "type": "person"
+    },
+    {
+      "id": "person_katariina_kari",
+      "name": "Katariina Kari",
+      "type": "person"
+    },
+    {
+      "id": "person_kelly_wright",
+      "name": "Kelly Wright",
+      "type": "person"
+    },
+    {
+      "id": "person_kevin_hu",
+      "name": "Kevin Hu",
+      "type": "person"
+    },
+    {
+      "id": "person_kirk_borne",
+      "name": "Kirk Borne",
+      "type": "person"
+    },
+    {
+      "id": "person_kristin_schooley",
+      "name": "Kristin Schooley",
+      "type": "person"
+    },
+    {
+      "id": "person_krystin_kim",
+      "name": "Krystin Kim",
+      "type": "person"
+    },
+    {
+      "id": "person_lars_albertsson",
+      "name": "Lars Albertsson",
+      "type": "person"
+    },
+    {
+      "id": "person_laura_madsen",
+      "name": "Laura Madsen",
+      "type": "person"
+    },
+    {
+      "id": "person_leah_weiss",
+      "name": "Leah Weiss",
       "type": "person"
     },
     {
@@ -2541,236 +1861,776 @@
       "type": "person"
     },
     {
+      "id": "person_lindsay_murphy",
+      "name": "Lindsay Murphy",
+      "type": "person"
+    },
+    {
+      "id": "person_luke_slotwinski",
+      "name": "Luke Slotwinski",
+      "type": "person"
+    },
+    {
+      "id": "person_madeleine_want",
+      "name": "Madeleine Want",
+      "type": "person"
+    },
+    {
+      "id": "person_malcolm_hawker",
+      "name": "Malcolm Hawker",
+      "type": "person"
+    },
+    {
+      "id": "person_mammad_zadeh",
+      "name": "Mammad Zadeh",
+      "type": "person"
+    },
+    {
+      "id": "person_mariam_halfhide",
+      "name": "Mariam Halfhide",
+      "type": "person"
+    },
+    {
+      "id": "person_meetesh_karia",
+      "name": "Meetesh Karia",
+      "type": "person"
+    },
+    {
+      "id": "person_mike_dillinger",
+      "name": "Mike Dillinger",
+      "type": "person"
+    },
+    {
+      "id": "person_mike_evans",
+      "name": "Mike Evans",
+      "type": "person"
+    },
+    {
+      "id": "person_mike_ferguson",
+      "name": "Mike Ferguson",
+      "type": "person"
+    },
+    {
+      "id": "person_mohammad_syed",
+      "name": "Mohammad Syed",
+      "type": "person"
+    },
+    {
+      "id": "person_nazneen_rajani",
+      "name": "Nazneen Rajani",
+      "type": "person"
+    },
+    {
+      "id": "person_neil_burge",
+      "name": "Neil Burge",
+      "type": "person"
+    },
+    {
+      "id": "person_nick_handel",
+      "name": "Nick Handel",
+      "type": "person"
+    },
+    {
+      "id": "person_nick_schrock",
+      "name": "Nick Schrock",
+      "type": "person"
+    },
+    {
+      "id": "person_nicola_askham",
+      "name": "Nicola Askham",
+      "type": "person"
+    },
+    {
+      "id": "person_nong_li",
+      "name": "Nong Li",
+      "type": "person"
+    },
+    {
+      "id": "person_ofer_mendelevitch",
+      "name": "Ofer Mendelevitch",
+      "type": "person"
+    },
+    {
+      "id": "person_ole_olesen_bagneux",
+      "name": "Ole Olesen-Bagneux",
+      "type": "person"
+    },
+    {
+      "id": "person_olga_maydanchik",
+      "name": "Olga Maydanchik",
+      "type": "person"
+    },
+    {
+      "id": "person_omar_khawaja",
+      "name": "Omar Khawaja",
+      "type": "person"
+    },
+    {
+      "id": "person_ora_lassila",
+      "name": "Ora Lassila",
+      "type": "person"
+    },
+    {
+      "id": "person_paco_nathan",
+      "name": "Paco Nathan",
+      "type": "person"
+    },
+    {
+      "id": "person_partha_srinivasa",
+      "name": "Partha Srinivasa",
+      "type": "person"
+    },
+    {
+      "id": "person_patricia_thaine",
+      "name": "Patricia Thaine",
+      "type": "person"
+    },
+    {
+      "id": "person_patrick_cuba",
+      "name": "Patrick Cuba",
+      "type": "person"
+    },
+    {
+      "id": "person_patrick_mcfadin",
+      "name": "Patrick McFadin",
+      "type": "person"
+    },
+    {
+      "id": "person_peter_bailis",
+      "name": "Peter Bailis",
+      "type": "person"
+    },
+    {
+      "id": "person_peter_kapur",
+      "name": "Peter Kapur",
+      "type": "person"
+    },
+    {
+      "id": "person_peter_kromhout",
+      "name": "Peter Kromhout",
+      "type": "person"
+    },
+    {
+      "id": "person_peter_norvig",
+      "name": "Peter Norvig",
+      "type": "person"
+    },
+    {
+      "id": "person_rebecca_o_kill",
+      "name": "Rebecca O'Kill",
+      "type": "person"
+    },
+    {
+      "id": "person_ricardo_baezayates",
+      "name": "Ricardo Baeza‑Yates",
+      "type": "person"
+    },
+    {
+      "id": "person_samia_rahman",
+      "name": "Samia Rahman",
+      "type": "person"
+    },
+    {
+      "id": "person_sanjeev_mohan",
+      "name": "Sanjeev Mohan",
+      "type": "person"
+    },
+    {
+      "id": "person_santona_tuli",
+      "name": "Santona Tuli",
+      "type": "person"
+    },
+    {
+      "id": "person_sarah_catanzaro",
+      "name": "Sarah Catanzaro",
+      "type": "person"
+    },
+    {
+      "id": "person_sarah_krasnik",
+      "name": "Sarah Krasnik",
+      "type": "person"
+    },
+    {
+      "id": "person_scott_taylor",
+      "name": "Scott Taylor",
+      "type": "person"
+    },
+    {
+      "id": "person_shane_gibson",
+      "name": "Shane Gibson",
+      "type": "person"
+    },
+    {
+      "id": "person_simone_steel",
+      "name": "Simone Steel",
+      "type": "person"
+    },
+    {
+      "id": "person_sol_rashidi",
+      "name": "Sol Rashidi",
+      "type": "person"
+    },
+    {
+      "id": "person_steve_perry",
+      "name": "Steve Perry",
+      "type": "person"
+    },
+    {
+      "id": "person_steve_whitla",
+      "name": "Steve Whitla",
+      "type": "person"
+    },
+    {
+      "id": "person_tejas_manohar",
+      "name": "Tejas Manohar",
+      "type": "person"
+    },
+    {
+      "id": "person_theresa_kushner",
+      "name": "Theresa Kushner",
+      "type": "person"
+    },
+    {
+      "id": "person_tiankai_feng",
+      "name": "Tiankai Feng",
+      "type": "person"
+    },
+    {
+      "id": "person_tom_redman",
+      "name": "Tom Redman",
+      "type": "person"
+    },
+    {
+      "id": "person_tony_seale",
+      "name": "Tony Seale",
+      "type": "person"
+    },
+    {
+      "id": "person_veronika_durgin",
+      "name": "Veronika Durgin",
+      "type": "person"
+    },
+    {
+      "id": "person_vinoth_chandar",
+      "name": "Vinoth Chandar",
+      "type": "person"
+    },
+    {
+      "id": "person_vip_parmar",
+      "name": "Vip Parmar",
+      "type": "person"
+    },
+    {
+      "id": "person_wendy_turnerwilliams",
+      "name": "Wendy Turner‑Williams",
+      "type": "person"
+    },
+    {
+      "id": "person_winfried_etzel",
+      "name": "Winfried Etzel",
+      "type": "person"
+    },
+    {
+      "id": "person_yujian_tang",
+      "name": "Yujian Tang",
+      "type": "person"
+    },
+    {
+      "id": "org_aig",
+      "name": "AIG",
+      "type": "organization"
+    },
+    {
       "id": "org_akamai",
       "name": "Akamai",
+      "type": "organization"
+    },
+    {
+      "id": "org_amazon",
+      "name": "Amazon",
+      "type": "organization"
+    },
+    {
+      "id": "org_american_express",
+      "name": "American Express",
+      "type": "organization"
+    },
+    {
+      "id": "org_amplifi",
+      "name": "Amplifi",
+      "type": "organization"
+    },
+    {
+      "id": "org_amplify_partners",
+      "name": "Amplify Partners",
+      "type": "organization"
+    },
+    {
+      "id": "org_bae_systems",
+      "name": "BAE Systems",
+      "type": "organization"
+    },
+    {
+      "id": "org_bt_group",
+      "name": "BT Group",
+      "type": "organization"
+    },
+    {
+      "id": "org_baringa",
+      "name": "Baringa",
+      "type": "organization"
+    },
+    {
+      "id": "org_better_com",
+      "name": "Better.com",
+      "type": "organization"
+    },
+    {
+      "id": "org_blitzscaling_ventures",
+      "name": "Blitzscaling Ventures",
+      "type": "organization"
+    },
+    {
+      "id": "org_blueyeti",
+      "name": "BlueYeti",
+      "type": "organization"
+    },
+    {
+      "id": "org_capco",
+      "name": "Capco",
+      "type": "organization"
+    },
+    {
+      "id": "org_carhartt",
+      "name": "Carhartt",
+      "type": "organization"
+    },
+    {
+      "id": "org_convoy",
+      "name": "Convoy",
+      "type": "organization"
+    },
+    {
+      "id": "org_datakitchen",
+      "name": "DataKitchen",
+      "type": "organization"
+    },
+    {
+      "id": "org_dataprime",
+      "name": "DataPrime",
+      "type": "organization"
+    },
+    {
+      "id": "org_databricks",
+      "name": "Databricks",
+      "type": "organization"
+    },
+    {
+      "id": "org_drizly",
+      "name": "Drizly",
+      "type": "organization"
+    },
+    {
+      "id": "org_erie_insurance",
+      "name": "Erie Insurance",
+      "type": "organization"
+    },
+    {
+      "id": "org_everquote",
+      "name": "EverQuote",
+      "type": "organization"
+    },
+    {
+      "id": "org_fivetran",
+      "name": "Fivetran",
+      "type": "organization"
+    },
+    {
+      "id": "org_genius_sports",
+      "name": "Genius Sports",
+      "type": "organization"
+    },
+    {
+      "id": "org_givaudan",
+      "name": "Givaudan",
+      "type": "organization"
+    },
+    {
+      "id": "org_gocardless",
+      "name": "GoCardless",
+      "type": "organization"
+    },
+    {
+      "id": "org_gong",
+      "name": "Gong",
+      "type": "organization"
+    },
+    {
+      "id": "org_ikea",
+      "name": "IKEA",
+      "type": "organization"
+    },
+    {
+      "id": "org_infoadvisors",
+      "name": "InfoAdvisors",
+      "type": "organization"
+    },
+    {
+      "id": "org_intuit",
+      "name": "Intuit",
+      "type": "organization"
+    },
+    {
+      "id": "org_jaguar_land_rover",
+      "name": "Jaguar Land Rover",
+      "type": "organization"
+    },
+    {
+      "id": "org_kpmg",
+      "name": "KPMG",
+      "type": "organization"
+    },
+    {
+      "id": "org_learning_care_group",
+      "name": "Learning Care Group",
+      "type": "organization"
+    },
+    {
+      "id": "org_ntt_data_services",
+      "name": "NTT DATA Services",
+      "type": "organization"
+    },
+    {
+      "id": "org_nationwide_building_society",
+      "name": "Nationwide Building Society",
+      "type": "organization"
+    },
+    {
+      "id": "org_netflix",
+      "name": "Netflix",
+      "type": "organization"
+    },
+    {
+      "id": "org_northeastern_universitys_institute_for_e",
+      "name": "Northeastern University’s Institute for Experiential AI",
+      "type": "organization"
+    },
+    {
+      "id": "org_okta",
+      "name": "Okta",
+      "type": "organization"
+    },
+    {
+      "id": "org_perpay",
+      "name": "Perpay",
+      "type": "organization"
+    },
+    {
+      "id": "org_post_holdings",
+      "name": "Post Holdings",
+      "type": "organization"
+    },
+    {
+      "id": "org_profisee",
+      "name": "Profisee",
+      "type": "organization"
+    },
+    {
+      "id": "org_prologis",
+      "name": "Prologis",
+      "type": "organization"
+    },
+    {
+      "id": "org_quantyca",
+      "name": "Quantyca",
+      "type": "organization"
+    },
+    {
+      "id": "org_resmed",
+      "name": "ResMed",
+      "type": "organization"
+    },
+    {
+      "id": "org_s_p_global",
+      "name": "S&P Global",
+      "type": "organization"
+    },
+    {
+      "id": "org_saks_fifth_avenue",
+      "name": "Saks Fifth Avenue",
+      "type": "organization"
+    },
+    {
+      "id": "org_sanjmo",
+      "name": "SanjMo",
+      "type": "organization"
+    },
+    {
+      "id": "org_seagen",
+      "name": "Seagen",
+      "type": "organization"
+    },
+    {
+      "id": "org_servicenow",
+      "name": "ServiceNow",
+      "type": "organization"
+    },
+    {
+      "id": "org_sqldbm",
+      "name": "SqlDBM",
+      "type": "organization"
+    },
+    {
+      "id": "org_stanford",
+      "name": "Stanford",
+      "type": "organization"
+    },
+    {
+      "id": "org_stryker",
+      "name": "Stryker",
+      "type": "organization"
+    },
+    {
+      "id": "org_tableau_salesforce",
+      "name": "Tableau/Salesforce",
+      "type": "organization"
+    },
+    {
+      "id": "org_takeda_pharmaceuticals",
+      "name": "Takeda Pharmaceuticals",
+      "type": "organization"
+    },
+    {
+      "id": "org_the_zebra",
+      "name": "The Zebra",
+      "type": "organization"
+    },
+    {
+      "id": "org_thoughtspot",
+      "name": "ThoughtSpot",
+      "type": "organization"
+    },
+    {
+      "id": "org_thoughtworks_europe",
+      "name": "Thoughtworks Europe",
+      "type": "organization"
+    },
+    {
+      "id": "org_upsolver",
+      "name": "Upsolver",
+      "type": "organization"
+    },
+    {
+      "id": "org_vectara",
+      "name": "Vectara",
+      "type": "organization"
+    },
+    {
+      "id": "org_wpp",
+      "name": "WPP",
+      "type": "organization"
+    },
+    {
+      "id": "org_west_monroe",
+      "name": "West Monroe",
+      "type": "organization"
+    },
+    {
+      "id": "org_data_world",
+      "name": "data.world",
+      "type": "organization"
+    },
+    {
+      "id": "org_the_wharton_school_of_the_university_of_",
+      "name": "the Wharton School of the University of Pennsylvania",
       "type": "organization"
     },
     {
       "id": "topic_ai_agents",
       "name": "AI Agents",
       "type": "topic"
+    },
+    {
+      "id": "topic_analytics_bi",
+      "name": "Analytics & BI",
+      "type": "topic"
+    },
+    {
+      "id": "topic_architecture_platforms",
+      "name": "Architecture & Platforms",
+      "type": "topic"
+    },
+    {
+      "id": "topic_business_value_roi",
+      "name": "Business Value & ROI",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_catalogs",
+      "name": "Data Catalogs",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_contracts",
+      "name": "Data Contracts",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_culture_literacy",
+      "name": "Data Culture & Literacy",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_engineering",
+      "name": "Data Engineering",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_governance",
+      "name": "Data Governance",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_mesh",
+      "name": "Data Mesh",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_modeling",
+      "name": "Data Modeling",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_products",
+      "name": "Data Products",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_quality",
+      "name": "Data Quality",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_strategy",
+      "name": "Data Strategy",
+      "type": "topic"
+    },
+    {
+      "id": "topic_data_teams_org",
+      "name": "Data Teams & Org",
+      "type": "topic"
+    },
+    {
+      "id": "topic_generative_ai_llms",
+      "name": "Generative AI / LLMs",
+      "type": "topic"
+    },
+    {
+      "id": "topic_industry_field_notes",
+      "name": "Industry & Field Notes",
+      "type": "topic"
+    },
+    {
+      "id": "topic_knowledge_graphs",
+      "name": "Knowledge Graphs",
+      "type": "topic"
+    },
+    {
+      "id": "topic_master_data_management",
+      "name": "Master Data Management",
+      "type": "topic"
+    },
+    {
+      "id": "topic_metadata",
+      "name": "Metadata",
+      "type": "topic"
+    },
+    {
+      "id": "topic_privacy_ethics_risk",
+      "name": "Privacy, Ethics & Risk",
+      "type": "topic"
     }
   ],
   "links": [
     {
-      "source": "ep_20251217_building_ai_agents_with__ta",
-      "target": "ep_20251217_building_ai_agents_with_",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20251209_how_are_we_over_complica_ta",
-      "target": "ep_20251210_how_are_we_over_complica",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20251203_ai_isnt_magic_its_math_w_ta",
-      "target": "ep_20251203_ai_isnt_magic_its_math_w",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20251126_when_is_data_and_ai_gove_ta",
-      "target": "ep_20251126_when_is_data_and_ai_gove",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20251119_netflixs_unified_data_ar_ta",
-      "target": "ep_20251119_netflixs_unified_data_ar",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20251111_fall_2025_data_analytics_ta",
-      "target": "ep_20251112_fall_2025_data_analytics",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250515_gartner_data_analytics_s_ta",
-      "target": "ep_20250515_gartner_data_analytics_s",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250501_what_is_data_ai_observab_ta",
-      "target": "ep_20250501_what_is_data_ai_observab",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250417_most_data_teams_are_a_wa_ta",
-      "target": "ep_20250417_most_data_teams_are_a_wa",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250410_how_to_get_out_of_ai_pro_ta",
-      "target": "ep_20250410_how_to_get_out_of_ai_pro",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250402_digital_twins_and_ai_wit_ta",
-      "target": "ep_20250403_digital_twins_and_ai_wit",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250328_what_do_data_modeling_da_ta",
-      "target": "ep_20250328_what_do_data_modeling_da",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250320_data_contracts_data_prod_ta",
-      "target": "ep_20250320_data_contracts_data_prod",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250313_building_trust_in_your_d_ta",
-      "target": "ep_20250313_building_trust_in_your_d",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250212_rethinking_data_governan_ta",
-      "target": "ep_20250213_rethinking_data_governan",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250205_how_data_governance_beco_ta",
-      "target": "ep_20250206_how_data_governance_beco",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250130_want_to_be_data_and_ai_d_ta",
-      "target": "ep_20250130_want_to_be_data_and_ai_d",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250123_data_teams_are_strategic_ta",
-      "target": "ep_20250123_data_teams_are_strategic",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20250116_data_ai_business_literac_ta",
-      "target": "ep_20250116_data_ai_business_literac",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20241205_demystifying_meta_grid_w_ta",
-      "target": "ep_20241205_demystifying_meta_grid_w",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20241127_stop_talking_about_data__ta",
-      "target": "ep_20241128_stop_talking_about_data_",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20241120_we_have_agency_over_ai_w_ta",
-      "target": "ep_20241121_we_have_agency_over_ai_w",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20241114_the_truth_about_open_tab_ta",
-      "target": "ep_20241114_the_truth_about_open_tab",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20241024_why_we_need_to_focus_on__ta",
-      "target": "ep_20241024_why_we_need_to_focus_on_",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20241017_streamlining_data_value__ta",
-      "target": "ep_20241017_streamlining_data_value_",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20241010_the_power_of_active_meta_ta",
-      "target": "ep_20241010_the_power_of_active_meta",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20241003_data_quality_the_key_to__ta",
-      "target": "ep_20241003_data_quality_the_key_to_",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240926_why_data_ai_needs_to_emb_ta",
-      "target": "ep_20240926_why_data_ai_needs_to_emb",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240918_responsible_ai_with_mari_ta",
-      "target": "ep_20240919_responsible_ai_with_mari",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240822_who_is_doing_the_data_pr_ta",
-      "target": "ep_20240822_who_is_doing_the_data_pr",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240522_what_is_ai_ops_with_bran_ta",
-      "target": "ep_20240523_what_is_ai_ops_with_bran",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240509_everything_you_wanted_to_ta",
-      "target": "ep_20240509_everything_you_wanted_to",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240507_leadership_transformatio_ta",
-      "target": "ep_20240507_leadership_transformatio",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240425_demystifying_vector_data_ta",
-      "target": "ep_20240425_demystifying_vector_data",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240417_crawl_walk_and_run_on_ho_ta",
-      "target": "ep_20240418_crawl_walk_and_run_on_ho",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240410_whos_buying_data_catalog_ta",
-      "target": "ep_20240411_whos_buying_data_catalog",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240403_data_security_and_ai_how_ta",
-      "target": "ep_20240404_data_security_and_ai_how",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20240320_what_data_will_say_when__ta",
-      "target": "ep_20240321_what_data_will_say_when_",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20231004_generative_ai_data_produ_ta",
-      "target": "ep_20231005_generative_ai_data_produ",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "ep_20230824_from_technical_to_busine_ta",
-      "target": "ep_20230824_from_technical_to_busine",
-      "type": "TAKEAWAY_OF"
-    },
-    {
-      "source": "person_peter_bailis",
-      "target": "ep_20210114_has_business_intelligenc",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_peter_bailis",
-      "target": "org_stanford",
+      "source": "person_aakriti_agrawal",
+      "target": "org_american_express",
       "type": "AFFILIATED_WITH"
     },
     {
-      "source": "ep_20210114_has_business_intelligenc",
-      "target": "topic_analytics_bi",
-      "type": "COVERS"
+      "source": "person_aaron_wilkerson",
+      "target": "org_carhartt",
+      "type": "AFFILIATED_WITH"
     },
     {
-      "source": "person_chris_bergh",
-      "target": "ep_20210429_whats_the_secret_recipe_",
-      "type": "GUEST_ON"
+      "source": "person_alex_bertails",
+      "target": "org_netflix",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_alex_vayner",
+      "target": "org_kpmg",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_alexa_westlake",
+      "target": "org_okta",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_amy_raygada",
+      "target": "org_servicenow",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_andrea_gioia",
+      "target": "org_quantyca",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_andrew_jones",
+      "target": "org_gocardless",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_anna_abramova",
+      "target": "org_sqldbm",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_anna_bergevin",
+      "target": "org_resmed",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ari_kaplan",
+      "target": "org_databricks",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ben_clinch",
+      "target": "org_bt_group",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_benny_benford",
+      "target": "org_jaguar_land_rover",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_brandon_chen",
+      "target": "org_fivetran",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_brandon_gadoci",
+      "target": "org_data_world",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_chad_sanderson",
+      "target": "org_convoy",
+      "type": "AFFILIATED_WITH"
     },
     {
       "source": "person_chris_bergh",
@@ -2778,9 +2638,134 @@
       "type": "AFFILIATED_WITH"
     },
     {
-      "source": "person_meetesh_karia",
-      "target": "ep_20210506_data_organization_reap_w",
-      "type": "GUEST_ON"
+      "source": "person_cindi_howson",
+      "target": "org_thoughtspot",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_dael_williamson",
+      "target": "org_databricks",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_dan_bennett",
+      "target": "org_s_p_global",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_dawn_carter",
+      "target": "org_bae_systems",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_dora_boussias",
+      "target": "org_stryker",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_doug_laney",
+      "target": "org_west_monroe",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_emily_hawkins",
+      "target": "org_drizly",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ergest_xheblati",
+      "target": "org_everquote",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_erik_bernhardsson",
+      "target": "org_better_com",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ethan_mollick",
+      "target": "org_the_wharton_school_of_the_university_of_",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_eva_nahari",
+      "target": "org_vectara",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_frances_o_rafferty",
+      "target": "org_baringa",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_jane_urban",
+      "target": "org_takeda_pharmaceuticals",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_jeremiah_owyang",
+      "target": "org_blitzscaling_ventures",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_jessica_talisman",
+      "target": "org_amazon",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_jessica_zuniga",
+      "target": "org_blueyeti",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_karen_lopez",
+      "target": "org_infoadvisors",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_katariina_kari",
+      "target": "org_ikea",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_kelly_wright",
+      "target": "org_gong",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_kirk_borne",
+      "target": "org_dataprime",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_kristin_schooley",
+      "target": "org_learning_care_group",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_krystin_kim",
+      "target": "org_post_holdings",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_lena_hall",
+      "target": "org_akamai",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_luke_slotwinski",
+      "target": "org_prologis",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_malcolm_hawker",
+      "target": "org_profisee",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_mammad_zadeh",
+      "target": "org_intuit",
+      "type": "AFFILIATED_WITH"
     },
     {
       "source": "person_meetesh_karia",
@@ -2788,14 +2773,104 @@
       "type": "AFFILIATED_WITH"
     },
     {
-      "source": "person_brandon_chen",
-      "target": "ep_20210513_dont_treat_your_data_sta",
-      "type": "GUEST_ON"
+      "source": "person_mike_evans",
+      "target": "org_amplifi",
+      "type": "AFFILIATED_WITH"
     },
     {
-      "source": "person_brandon_chen",
-      "target": "org_fivetran",
+      "source": "person_mohammad_syed",
+      "target": "org_capco",
       "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_omar_khawaja",
+      "target": "org_givaudan",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_partha_srinivasa",
+      "target": "org_erie_insurance",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_peter_bailis",
+      "target": "org_stanford",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_peter_kapur",
+      "target": "org_aig",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ricardo_baezayates",
+      "target": "org_northeastern_universitys_institute_for_e",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_samia_rahman",
+      "target": "org_seagen",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_sanjeev_mohan",
+      "target": "org_sanjmo",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_santona_tuli",
+      "target": "org_upsolver",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_sarah_catanzaro",
+      "target": "org_amplify_partners",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_sarah_krasnik",
+      "target": "org_perpay",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_simone_steel",
+      "target": "org_nationwide_building_society",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_steve_perry",
+      "target": "org_genius_sports",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_theresa_kushner",
+      "target": "org_ntt_data_services",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_tiankai_feng",
+      "target": "org_thoughtworks_europe",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_veronika_durgin",
+      "target": "org_saks_fifth_avenue",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_vip_parmar",
+      "target": "org_wpp",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_wendy_turnerwilliams",
+      "target": "org_tableau_salesforce",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "ep_20210114_has_business_intelligenc",
+      "target": "topic_analytics_bi",
+      "type": "COVERS"
     },
     {
       "source": "ep_20210513_dont_treat_your_data_sta",
@@ -2808,79 +2883,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_dj_patil",
-      "target": "ep_20210804_season_two_kickoff_w_dj_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_emil_eifrem",
-      "target": "ep_20210812_documents_and_clouds_and",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_denise_gosnell",
-      "target": "ep_20210819_freerange_grassfed_opens",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_kirk_borne",
-      "target": "ep_20210826_cant_spell_buzzwords_wit",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_kirk_borne",
-      "target": "org_dataprime",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_mike_ferguson",
-      "target": "ep_20210902_the_era_of_data_usage",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_tejas_manohar",
-      "target": "ep_20210909_whats_the_deal_with_reve",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20210909_whats_the_deal_with_reve",
       "target": "topic_data_engineering",
       "type": "COVERS"
-    },
-    {
-      "source": "person_lars_albertsson",
-      "target": "ep_20210916_how_to_think_about_data_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_jans_aasman",
-      "target": "ep_20210923_fashion_week_but_for_dat",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_mammad_zadeh",
-      "target": "ep_20210930_do_we_have_a_data_infras",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_mammad_zadeh",
-      "target": "org_intuit",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_danielle_oberdier",
-      "target": "ep_20211007_a_data_analyst_scientist",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_partha_srinivasa",
-      "target": "ep_20211014_sure_youre_responsible_b",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_partha_srinivasa",
-      "target": "org_erie_insurance",
-      "type": "AFFILIATED_WITH"
     },
     {
       "source": "ep_20211014_sure_youre_responsible_b",
@@ -2893,49 +2898,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_doug_laney",
-      "target": "ep_20211028_data_is_the_new_herman_m",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_doug_laney",
-      "target": "org_west_monroe",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_erik_bernhardsson",
-      "target": "ep_20211104_data_tools_the_good_the_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_erik_bernhardsson",
-      "target": "org_better_com",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_cindi_howson",
-      "target": "ep_20211111_is_selfservice_bi_the_an",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_cindi_howson",
-      "target": "org_thoughtspot",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20211111_is_selfservice_bi_the_an",
       "target": "topic_analytics_bi",
       "type": "COVERS"
-    },
-    {
-      "source": "person_andy_palmer",
-      "target": "ep_20211118_long_live_the_monolith",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_nick_schrock",
-      "target": "ep_20211202_modern_data_stack_techno",
-      "type": "GUEST_ON"
     },
     {
       "source": "ep_20211202_modern_data_stack_techno",
@@ -2943,64 +2908,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_kelly_wright",
-      "target": "ep_20211209_what_happens_when_everyo",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_kelly_wright",
-      "target": "org_gong",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_steve_whitla",
-      "target": "ep_20211216_please_be_quiet_the_mach",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_sarah_catanzaro",
-      "target": "ep_20220106_will_2022_change_how_we_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_sarah_catanzaro",
-      "target": "org_amplify_partners",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_emily_hawkins",
-      "target": "ep_20220113_modern_data_work_at_driz",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_emily_hawkins",
-      "target": "org_drizly",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_benn_stancil",
-      "target": "ep_20220120_what_good_is_a_metrics_l",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_dora_boussias",
-      "target": "ep_20220127_can_the_data_mesh_be_gov",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_dora_boussias",
-      "target": "org_stryker",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20220127_can_the_data_mesh_be_gov",
       "target": "topic_data_mesh",
       "type": "COVERS"
-    },
-    {
-      "source": "person_laura_madsen",
-      "target": "ep_20220203_can_agile_practices_disr",
-      "type": "GUEST_ON"
     },
     {
       "source": "ep_20220203_can_agile_practices_disr",
@@ -3008,29 +2918,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_luke_slotwinski",
-      "target": "ep_20220210_the_three_most_important",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_luke_slotwinski",
-      "target": "org_prologis",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20220210_the_three_most_important",
       "target": "topic_analytics_bi",
       "type": "COVERS"
-    },
-    {
-      "source": "person_karen_lopez",
-      "target": "ep_20220217_the_easiest_data_is_alwa",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_karen_lopez",
-      "target": "org_infoadvisors",
-      "type": "AFFILIATED_WITH"
     },
     {
       "source": "ep_20220224_why_are_data_transformat",
@@ -3038,34 +2928,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_arjun_narayan",
-      "target": "ep_20220303_are_you_swimming_upstrea",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_patricia_thaine",
-      "target": "ep_20220310_your_privacy_is_my_curre",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20220310_your_privacy_is_my_curre",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS"
-    },
-    {
-      "source": "person_shane_gibson",
-      "target": "ep_20220317_agile_like_a_fox_but_for",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_bob_muglia",
-      "target": "ep_20220331_the_future_of_data_is_kn",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_nong_li",
-      "target": "ep_20220407_can_data_policy_drive_da",
-      "type": "GUEST_ON"
     },
     {
       "source": "ep_20220407_can_data_policy_drive_da",
@@ -3078,43 +2943,8 @@
       "type": "COVERS"
     },
     {
-      "source": "person_chad_sanderson",
-      "target": "ep_20220414_why_are_we_so_bad_at_thi",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_chad_sanderson",
-      "target": "org_convoy",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20220414_why_are_we_so_bad_at_thi",
       "target": "topic_architecture_platforms",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_steve_perry",
-      "target": "ep_20220421_everybodys_an_imposter_s",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_steve_perry",
-      "target": "org_genius_sports",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_nick_handel",
-      "target": "ep_20220428_a_layered_approach_to_da",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_francois_scharffe",
-      "target": "ep_20220505_automating_the_enterpris",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "ep_20220505_automating_the_enterpris",
-      "target": "topic_knowledge_graphs",
       "type": "COVERS"
     },
     {
@@ -3123,29 +2953,14 @@
       "type": "COVERS"
     },
     {
-      "source": "person_sarah_krasnik",
-      "target": "ep_20220512_is_your_modern_data_stac",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_sarah_krasnik",
-      "target": "org_perpay",
-      "type": "AFFILIATED_WITH"
+      "source": "ep_20220505_automating_the_enterpris",
+      "target": "topic_knowledge_graphs",
+      "type": "COVERS"
     },
     {
       "source": "ep_20220512_is_your_modern_data_stac",
       "target": "topic_architecture_platforms",
       "type": "COVERS"
-    },
-    {
-      "source": "person_omar_khawaja",
-      "target": "ep_20220519_a_roadmap_to_data_mesh_s",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_omar_khawaja",
-      "target": "org_givaudan",
-      "type": "AFFILIATED_WITH"
     },
     {
       "source": "ep_20220519_a_roadmap_to_data_mesh_s",
@@ -3158,11 +2973,6 @@
       "type": "COVERS"
     },
     {
-      "source": "person_brett_hurt",
-      "target": "ep_20220526_the_data_entrepreneurs_e",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20220602_does_our_understanding_o",
       "target": "topic_analytics_bi",
       "type": "COVERS"
@@ -3173,39 +2983,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_sanjeev_mohan",
-      "target": "ep_20220609_getting_all_meta_about_d",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_sanjeev_mohan",
-      "target": "org_sanjmo",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_peter_kapur",
-      "target": "ep_20220616_dont_let_good_metadata_g",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_peter_kapur",
-      "target": "org_aig",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20220616_dont_let_good_metadata_g",
       "target": "topic_metadata",
       "type": "COVERS"
-    },
-    {
-      "source": "person_ergest_xheblati",
-      "target": "ep_20220623_data_models_are_divas",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_ergest_xheblati",
-      "target": "org_everquote",
-      "type": "AFFILIATED_WITH"
     },
     {
       "source": "ep_20220623_data_models_are_divas",
@@ -3213,54 +2993,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_vip_parmar",
-      "target": "ep_20220825_build_bridges_dont_burn_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_vip_parmar",
-      "target": "org_wpp",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_gabi_steele",
-      "target": "ep_20221103_put_the_business_in_char",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_leah_weiss",
-      "target": "ep_20221103_put_the_business_in_char",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_dan_bennett",
-      "target": "ep_20221110_where_are_the_semantics_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_dan_bennett",
-      "target": "org_s_p_global",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_theresa_kushner",
-      "target": "ep_20221117_are_data_teams_keeping_u",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_theresa_kushner",
-      "target": "org_ntt_data_services",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20221117_are_data_teams_keeping_u",
       "target": "topic_data_teams_org",
       "type": "COVERS"
-    },
-    {
-      "source": "person_allison_sagraves",
-      "target": "ep_20221201_getting_into_the_pool_wi",
-      "type": "GUEST_ON"
     },
     {
       "source": "ep_20221208_2022_state_of_data_gover",
@@ -3268,28 +3003,8 @@
       "type": "COVERS"
     },
     {
-      "source": "person_bill_inmon",
-      "target": "ep_20230112_a_conversation_with_the_",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20230112_a_conversation_with_the_",
       "target": "topic_architecture_platforms",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_jane_urban",
-      "target": "ep_20230119_providing_data_business_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_jane_urban",
-      "target": "org_takeda_pharmaceuticals",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "ep_20230119_providing_data_business_",
-      "target": "topic_data_teams_org",
       "type": "COVERS"
     },
     {
@@ -3298,14 +3013,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_anna_abramova",
-      "target": "ep_20230126_data_modeling_your_data_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_anna_abramova",
-      "target": "org_sqldbm",
-      "type": "AFFILIATED_WITH"
+      "source": "ep_20230119_providing_data_business_",
+      "target": "topic_data_teams_org",
+      "type": "COVERS"
     },
     {
       "source": "ep_20230126_data_modeling_your_data_",
@@ -3313,48 +3023,13 @@
       "type": "COVERS"
     },
     {
-      "source": "person_malcolm_hawker",
-      "target": "ep_20230202_is_master_data_managemen",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_malcolm_hawker",
-      "target": "org_profisee",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20230202_is_master_data_managemen",
       "target": "topic_master_data_management",
       "type": "COVERS"
     },
     {
-      "source": "person_jeff_jonas",
-      "target": "ep_20230209_everywhere_you_look_ther",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_mohammad_syed",
-      "target": "ep_20230216_metadata_is_this_a_graph",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_mohammad_syed",
-      "target": "org_capco",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20230216_metadata_is_this_a_graph",
       "target": "topic_metadata",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_brian_t_oneill",
-      "target": "ep_20230223_increasing_adoption_of_d",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "ep_20230223_increasing_adoption_of_d",
-      "target": "topic_data_products",
       "type": "COVERS"
     },
     {
@@ -3363,49 +3038,14 @@
       "type": "COVERS"
     },
     {
-      "source": "ep_20230309_data_operations_vs_data_",
-      "target": "topic_analytics_bi",
+      "source": "ep_20230223_increasing_adoption_of_d",
+      "target": "topic_data_products",
       "type": "COVERS"
     },
     {
-      "source": "person_kristin_schooley",
-      "target": "ep_20230316_school_of_building_data_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_kristin_schooley",
-      "target": "org_learning_care_group",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_abhi_sivasailam",
-      "target": "ep_20230330_show_me_the_metrics_w_ab",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_benny_benford",
-      "target": "ep_20230406_passing_the_buck_busines",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_benny_benford",
-      "target": "org_jaguar_land_rover",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_veronika_durgin",
-      "target": "ep_20230413_dos_and_dont_for_the_nex",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_veronika_durgin",
-      "target": "org_saks_fifth_avenue",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_tony_seale",
-      "target": "ep_20230420_kg_llm_happily_ever_afte",
-      "type": "GUEST_ON"
+      "source": "ep_20230309_data_operations_vs_data_",
+      "target": "topic_analytics_bi",
+      "type": "COVERS"
     },
     {
       "source": "ep_20230420_kg_llm_happily_ever_afte",
@@ -3413,43 +3053,8 @@
       "type": "COVERS"
     },
     {
-      "source": "person_alex_vayner",
-      "target": "ep_20230427_what_is_the_dna_of_a_dat",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_alex_vayner",
-      "target": "org_kpmg",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_ricardo_baezayates",
-      "target": "ep_20230504_unpacking_responsible_ai",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_ricardo_baezayates",
-      "target": "org_northeastern_universitys_institute_for_e",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20230504_unpacking_responsible_ai",
       "target": "topic_privacy_ethics_risk",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_katariina_kari",
-      "target": "ep_20230511_live_from_the_knowledge_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_katariina_kari",
-      "target": "org_ikea",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "ep_20230511_live_from_the_knowledge_",
-      "target": "topic_knowledge_graphs",
       "type": "COVERS"
     },
     {
@@ -3458,34 +3063,14 @@
       "type": "COVERS"
     },
     {
-      "source": "person_madeleine_want",
-      "target": "ep_20230518_using_data_to_change_the",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_ben_clinch",
-      "target": "ep_20230529_updated_release_automati",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_ben_clinch",
-      "target": "org_bt_group",
-      "type": "AFFILIATED_WITH"
+      "source": "ep_20230511_live_from_the_knowledge_",
+      "target": "topic_knowledge_graphs",
+      "type": "COVERS"
     },
     {
       "source": "ep_20230529_updated_release_automati",
       "target": "topic_data_governance",
       "type": "COVERS"
-    },
-    {
-      "source": "person_aakriti_agrawal",
-      "target": "ep_20230608_there_is_no_i_in_data_go",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_aakriti_agrawal",
-      "target": "org_american_express",
-      "type": "AFFILIATED_WITH"
     },
     {
       "source": "ep_20230608_there_is_no_i_in_data_go",
@@ -3503,24 +3088,14 @@
       "type": "COVERS"
     },
     {
-      "source": "person_joe_reis",
-      "target": "ep_20230713_modeling_and_semantics_a",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20230713_modeling_and_semantics_a",
       "target": "topic_data_modeling",
       "type": "COVERS"
     },
     {
-      "source": "person_tom_redman",
-      "target": "ep_20230720_people_and_data_w_tom_re",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_ethan_aaron",
-      "target": "ep_20230727_ranting_about_lack_of_bu",
-      "type": "GUEST_ON"
+      "source": "ep_20230727_ranting_about_lack_of_bu",
+      "target": "topic_business_value_roi",
+      "type": "COVERS"
     },
     {
       "source": "ep_20230727_ranting_about_lack_of_bu",
@@ -3528,58 +3103,8 @@
       "type": "COVERS"
     },
     {
-      "source": "ep_20230727_ranting_about_lack_of_bu",
-      "target": "topic_business_value_roi",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_wendy_turnerwilliams",
-      "target": "ep_20230803_is_data_a_first_class_ci",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_wendy_turnerwilliams",
-      "target": "org_tableau_salesforce",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_simone_steel",
-      "target": "ep_20230810_data_sustainability_w_si",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_simone_steel",
-      "target": "org_nationwide_building_society",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_aaron_wilkerson",
-      "target": "ep_20230824_from_technical_to_busine",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_aaron_wilkerson",
-      "target": "org_carhartt",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20230824_from_technical_to_busine",
       "target": "topic_data_strategy",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_ari_kaplan",
-      "target": "ep_20230831_what_does_data_lakehouse",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_ari_kaplan",
-      "target": "org_databricks",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "ep_20230831_what_does_data_lakehouse",
-      "target": "topic_generative_ai_llms",
       "type": "COVERS"
     },
     {
@@ -3588,19 +3113,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_alexa_westlake",
-      "target": "ep_20230907_data_that_doesnt_drive_r",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_alexa_westlake",
-      "target": "org_okta",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_chris_tabb",
-      "target": "ep_20230921_business_value_on_the_me",
-      "type": "GUEST_ON"
+      "source": "ep_20230831_what_does_data_lakehouse",
+      "target": "topic_generative_ai_llms",
+      "type": "COVERS"
     },
     {
       "source": "ep_20230921_business_value_on_the_me",
@@ -3608,53 +3123,8 @@
       "type": "COVERS"
     },
     {
-      "source": "person_peter_norvig",
-      "target": "ep_20230928_from_london_to_san_franc",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_nazneen_rajani",
-      "target": "ep_20230928_from_london_to_san_franc",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_fabiana_clemente",
-      "target": "ep_20230928_from_london_to_san_franc",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_danny_bickson",
-      "target": "ep_20230928_from_london_to_san_franc",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_gev_sogomonian",
-      "target": "ep_20230928_from_london_to_san_franc",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_yujian_tang",
-      "target": "ep_20230928_from_london_to_san_franc",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_patrick_mcfadin",
-      "target": "ep_20230928_from_london_to_san_franc",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_ofer_mendelevitch",
-      "target": "ep_20230928_from_london_to_san_franc",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_jon_cooke",
-      "target": "ep_20231005_generative_ai_data_produ",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20231005_generative_ai_data_produ",
-      "target": "topic_generative_ai_llms",
+      "target": "topic_business_value_roi",
       "type": "COVERS"
     },
     {
@@ -3664,7 +3134,7 @@
     },
     {
       "source": "ep_20231005_generative_ai_data_produ",
-      "target": "topic_business_value_roi",
+      "target": "topic_generative_ai_llms",
       "type": "COVERS"
     },
     {
@@ -3676,16 +3146,6 @@
       "source": "ep_20231012_data_stewardship_data_pr",
       "target": "topic_data_products",
       "type": "COVERS"
-    },
-    {
-      "source": "person_krystin_kim",
-      "target": "ep_20231024_data_catalogs_the_power_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_krystin_kim",
-      "target": "org_post_holdings",
-      "type": "AFFILIATED_WITH"
     },
     {
       "source": "ep_20231024_data_catalogs_the_power_",
@@ -3693,11 +3153,6 @@
       "type": "COVERS"
     },
     {
-      "source": "person_mike_dillinger",
-      "target": "ep_20231026_llms_retrieval_augmented",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20231026_llms_retrieval_augmented",
       "target": "topic_generative_ai_llms",
       "type": "COVERS"
@@ -3708,19 +3163,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_kat_greenbrook",
-      "target": "ep_20231102_data_storytelling_with_k",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20231102_data_storytelling_with_k",
       "target": "topic_data_culture_literacy",
       "type": "COVERS"
-    },
-    {
-      "source": "person_kat_greenbrook",
-      "target": "ep_20231102_data_storytelling_with_k_2",
-      "type": "GUEST_ON"
     },
     {
       "source": "ep_20231102_data_storytelling_with_k_2",
@@ -3728,34 +3173,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_doris_lee",
-      "target": "ep_20231122_making_data_science_more",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_dean_allemang",
-      "target": "ep_20231122_understanding_the_role_o",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_bryon_jacob",
-      "target": "ep_20231122_understanding_the_role_o",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20231122_understanding_the_role_o",
       "target": "topic_knowledge_graphs",
       "type": "COVERS"
-    },
-    {
-      "source": "person_andrew_jones",
-      "target": "ep_20231201_data_contracts_and_shift",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_andrew_jones",
-      "target": "org_gocardless",
-      "type": "AFFILIATED_WITH"
     },
     {
       "source": "ep_20231201_data_contracts_and_shift",
@@ -3763,49 +3183,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_jeremiah_owyang",
-      "target": "ep_20240111_how_will_ai_impact_2024_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_jeremiah_owyang",
-      "target": "org_blitzscaling_ventures",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_samia_rahman",
-      "target": "ep_20240119_the_data_mesh_terclass",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_samia_rahman",
-      "target": "org_seagen",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20240119_the_data_mesh_terclass",
       "target": "topic_data_mesh",
       "type": "COVERS"
-    },
-    {
-      "source": "person_santona_tuli",
-      "target": "ep_20240130_productivity_is_not_perf",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_santona_tuli",
-      "target": "org_upsolver",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_jessica_talisman",
-      "target": "ep_20240131_without_information_arch",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_jessica_talisman",
-      "target": "org_amazon",
-      "type": "AFFILIATED_WITH"
     },
     {
       "source": "ep_20240131_without_information_arch",
@@ -3813,48 +3193,8 @@
       "type": "COVERS"
     },
     {
-      "source": "person_paco_nathan",
-      "target": "ep_20240208_bridging_innovation_and_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_eva_nahari",
-      "target": "ep_20240215_another_sucky_year_for_s",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_eva_nahari",
-      "target": "org_vectara",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_karen_meppen",
-      "target": "ep_20240226_dont_lift_and_shift_data",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20240226_dont_lift_and_shift_data",
       "target": "topic_data_governance",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_amy_raygada",
-      "target": "ep_20240311_when_business_goals_and_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_amy_raygada",
-      "target": "org_servicenow",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_cris_hadjez",
-      "target": "ep_20240314_gartner_data_and_analyti",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "ep_20240314_gartner_data_and_analyti",
-      "target": "topic_metadata",
       "type": "COVERS"
     },
     {
@@ -3868,9 +3208,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_scott_taylor",
-      "target": "ep_20240321_what_data_will_say_when_",
-      "type": "GUEST_ON"
+      "source": "ep_20240314_gartner_data_and_analyti",
+      "target": "topic_metadata",
+      "type": "COVERS"
     },
     {
       "source": "ep_20240328_live_from_data_council_a",
@@ -3878,49 +3218,14 @@
       "type": "COVERS"
     },
     {
-      "source": "person_jesse_sedler",
-      "target": "ep_20240404_data_security_and_ai_how",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20240404_data_security_and_ai_how",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS"
     },
     {
-      "source": "person_neil_burge",
-      "target": "ep_20240411_whos_buying_data_catalog",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20240411_whos_buying_data_catalog",
       "target": "topic_data_catalogs",
       "type": "COVERS"
-    },
-    {
-      "source": "person_peter_kromhout",
-      "target": "ep_20240418_crawl_walk_and_run_on_ho",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_mariam_halfhide",
-      "target": "ep_20240418_crawl_walk_and_run_on_ho",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_bob_van_luijt",
-      "target": "ep_20240425_demystifying_vector_data",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_sol_rashidi",
-      "target": "ep_20240507_leadership_transformatio",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_ora_lassila",
-      "target": "ep_20240509_everything_you_wanted_to",
-      "type": "GUEST_ON"
     },
     {
       "source": "ep_20240509_everything_you_wanted_to",
@@ -3933,39 +3238,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_brandon_gadoci",
-      "target": "ep_20240523_what_is_ai_ops_with_bran",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_brandon_gadoci",
-      "target": "org_data_world",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_anna_bergevin",
-      "target": "ep_20240822_who_is_doing_the_data_pr",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_anna_bergevin",
-      "target": "org_resmed",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20240822_who_is_doing_the_data_pr",
       "target": "topic_data_products",
       "type": "COVERS"
-    },
-    {
-      "source": "person_tiankai_feng",
-      "target": "ep_20240829_humanizing_data_strategy",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_tiankai_feng",
-      "target": "org_thoughtworks_europe",
-      "type": "AFFILIATED_WITH"
     },
     {
       "source": "ep_20240829_humanizing_data_strategy",
@@ -3973,48 +3248,8 @@
       "type": "COVERS"
     },
     {
-      "source": "person_dawn_carter",
-      "target": "ep_20240905_building_diversity_in_da",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_dawn_carter",
-      "target": "org_bae_systems",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_amalia_child",
-      "target": "ep_20240912_the_five_laws_of_data_en",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_mariam_halfhide",
-      "target": "ep_20240919_responsible_ai_with_mari",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20240919_responsible_ai_with_mari",
       "target": "topic_privacy_ethics_risk",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_dael_williamson",
-      "target": "ep_20240926_why_data_ai_needs_to_emb",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_dael_williamson",
-      "target": "org_databricks",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_kevin_hu",
-      "target": "ep_20241003_data_quality_the_key_to_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "ep_20241003_data_quality_the_key_to_",
-      "target": "topic_generative_ai_llms",
       "type": "COVERS"
     },
     {
@@ -4023,14 +3258,9 @@
       "type": "COVERS"
     },
     {
-      "source": "person_mike_evans",
-      "target": "ep_20241010_the_power_of_active_meta",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_mike_evans",
-      "target": "org_amplifi",
-      "type": "AFFILIATED_WITH"
+      "source": "ep_20241003_data_quality_the_key_to_",
+      "target": "topic_generative_ai_llms",
+      "type": "COVERS"
     },
     {
       "source": "ep_20241010_the_power_of_active_meta",
@@ -4038,59 +3268,14 @@
       "type": "COVERS"
     },
     {
-      "source": "person_colleen_tartow",
-      "target": "ep_20241017_streamlining_data_value_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_andrea_gioia",
-      "target": "ep_20241024_why_we_need_to_focus_on_",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_andrea_gioia",
-      "target": "org_quantyca",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_malcolm_hawker",
-      "target": "ep_20241031_what_is_the_future_of_da",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20241031_what_is_the_future_of_da",
       "target": "topic_data_catalogs",
       "type": "COVERS"
     },
     {
-      "source": "person_vinoth_chandar",
-      "target": "ep_20241114_the_truth_about_open_tab",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_ethan_mollick",
-      "target": "ep_20241121_we_have_agency_over_ai_w",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_ethan_mollick",
-      "target": "org_the_wharton_school_of_the_university_of_",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "person_nicola_askham",
-      "target": "ep_20241128_stop_talking_about_data_",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20241128_stop_talking_about_data_",
       "target": "topic_data_governance",
       "type": "COVERS"
-    },
-    {
-      "source": "person_ole_olesen_bagneux",
-      "target": "ep_20241205_demystifying_meta_grid_w",
-      "type": "GUEST_ON"
     },
     {
       "source": "ep_20241205_demystifying_meta_grid_w",
@@ -4103,23 +3288,8 @@
       "type": "COVERS"
     },
     {
-      "source": "person_jordan_morrow",
-      "target": "ep_20250116_data_ai_business_literac",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20250116_data_ai_business_literac",
       "target": "topic_data_culture_literacy",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_lindsay_murphy",
-      "target": "ep_20250123_data_teams_are_strategic",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "ep_20250123_data_teams_are_strategic",
-      "target": "topic_data_teams_org",
       "type": "COVERS"
     },
     {
@@ -4128,24 +3298,14 @@
       "type": "COVERS"
     },
     {
-      "source": "person_olga_maydanchik",
-      "target": "ep_20250130_want_to_be_data_and_ai_d",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_alexander_torrenegra",
-      "target": "ep_20250206_how_data_governance_beco",
-      "type": "GUEST_ON"
+      "source": "ep_20250123_data_teams_are_strategic",
+      "target": "topic_data_teams_org",
+      "type": "COVERS"
     },
     {
       "source": "ep_20250206_how_data_governance_beco",
       "target": "topic_data_governance",
       "type": "COVERS"
-    },
-    {
-      "source": "person_winfried_etzel",
-      "target": "ep_20250213_rethinking_data_governan",
-      "type": "GUEST_ON"
     },
     {
       "source": "ep_20250213_rethinking_data_governan",
@@ -4159,12 +3319,12 @@
     },
     {
       "source": "ep_20250306_gartner_data_and_analyti",
-      "target": "topic_data_governance",
+      "target": "topic_analytics_bi",
       "type": "COVERS"
     },
     {
       "source": "ep_20250306_gartner_data_and_analyti",
-      "target": "topic_analytics_bi",
+      "target": "topic_data_governance",
       "type": "COVERS"
     },
     {
@@ -4173,28 +3333,13 @@
       "type": "COVERS"
     },
     {
-      "source": "person_frances_o_rafferty",
-      "target": "ep_20250313_building_trust_in_your_d",
-      "type": "GUEST_ON"
-    },
-    {
-      "source": "person_frances_o_rafferty",
-      "target": "org_baringa",
-      "type": "AFFILIATED_WITH"
-    },
-    {
       "source": "ep_20250313_building_trust_in_your_d",
       "target": "topic_data_quality",
       "type": "COVERS"
     },
     {
-      "source": "person_jean_georges_perrin",
-      "target": "ep_20250320_data_contracts_data_prod",
-      "type": "GUEST_ON"
-    },
-    {
       "source": "ep_20250320_data_contracts_data_prod",
-      "target": "topic_data_products",
+      "target": "topic_data_contracts",
       "type": "COVERS"
     },
     {
@@ -4204,13 +3349,13 @@
     },
     {
       "source": "ep_20250320_data_contracts_data_prod",
-      "target": "topic_data_contracts",
+      "target": "topic_data_products",
       "type": "COVERS"
     },
     {
-      "source": "person_patrick_cuba",
-      "target": "ep_20250328_what_do_data_modeling_da",
-      "type": "GUEST_ON"
+      "source": "ep_20250328_what_do_data_modeling_da",
+      "target": "topic_data_modeling",
+      "type": "COVERS"
     },
     {
       "source": "ep_20250328_what_do_data_modeling_da",
@@ -4218,9 +3363,359 @@
       "type": "COVERS"
     },
     {
-      "source": "ep_20250328_what_do_data_modeling_da",
-      "target": "topic_data_modeling",
+      "source": "ep_20250417_most_data_teams_are_a_wa",
+      "target": "topic_data_teams_org",
       "type": "COVERS"
+    },
+    {
+      "source": "ep_20250501_what_is_data_ai_observab",
+      "target": "topic_data_quality",
+      "type": "COVERS"
+    },
+    {
+      "source": "ep_20250515_gartner_data_analytics_s",
+      "target": "topic_analytics_bi",
+      "type": "COVERS"
+    },
+    {
+      "source": "ep_20250515_gartner_data_analytics_s",
+      "target": "topic_industry_field_notes",
+      "type": "COVERS"
+    },
+    {
+      "source": "ep_20251112_fall_2025_data_analytics",
+      "target": "topic_analytics_bi",
+      "type": "COVERS"
+    },
+    {
+      "source": "ep_20251112_fall_2025_data_analytics",
+      "target": "topic_industry_field_notes",
+      "type": "COVERS"
+    },
+    {
+      "source": "ep_20251119_netflixs_unified_data_ar",
+      "target": "topic_architecture_platforms",
+      "type": "COVERS"
+    },
+    {
+      "source": "ep_20251126_when_is_data_and_ai_gove",
+      "target": "topic_data_governance",
+      "type": "COVERS"
+    },
+    {
+      "source": "ep_20251210_how_are_we_over_complica",
+      "target": "topic_data_products",
+      "type": "COVERS"
+    },
+    {
+      "source": "ep_20251217_building_ai_agents_with_",
+      "target": "topic_ai_agents",
+      "type": "COVERS"
+    },
+    {
+      "source": "person_aakriti_agrawal",
+      "target": "ep_20230608_there_is_no_i_in_data_go",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_aaron_wilkerson",
+      "target": "ep_20230824_from_technical_to_busine",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_abhi_sivasailam",
+      "target": "ep_20230330_show_me_the_metrics_w_ab",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alex_bertails",
+      "target": "ep_20251119_netflixs_unified_data_ar",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alex_vayner",
+      "target": "ep_20230427_what_is_the_dna_of_a_dat",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alexa_westlake",
+      "target": "ep_20230907_data_that_doesnt_drive_r",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alexander_torrenegra",
+      "target": "ep_20250206_how_data_governance_beco",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_allison_sagraves",
+      "target": "ep_20221201_getting_into_the_pool_wi",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_amalia_child",
+      "target": "ep_20240912_the_five_laws_of_data_en",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_amy_raygada",
+      "target": "ep_20240311_when_business_goals_and_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_andrea_gioia",
+      "target": "ep_20241024_why_we_need_to_focus_on_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_andrew_jones",
+      "target": "ep_20231201_data_contracts_and_shift",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_andy_palmer",
+      "target": "ep_20211118_long_live_the_monolith",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_anna_abramova",
+      "target": "ep_20230126_data_modeling_your_data_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_anna_bergevin",
+      "target": "ep_20240822_who_is_doing_the_data_pr",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ari_kaplan",
+      "target": "ep_20230831_what_does_data_lakehouse",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_arielle_rolland",
+      "target": "ep_20251210_how_are_we_over_complica",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_arjun_narayan",
+      "target": "ep_20220303_are_you_swimming_upstrea",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_barr_moses",
+      "target": "ep_20250501_what_is_data_ai_observab",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ben_clinch",
+      "target": "ep_20230529_updated_release_automati",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_benn_stancil",
+      "target": "ep_20220120_what_good_is_a_metrics_l",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_benny_benford",
+      "target": "ep_20230406_passing_the_buck_busines",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_bill_inmon",
+      "target": "ep_20230112_a_conversation_with_the_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_blake_burch",
+      "target": "ep_20250417_most_data_teams_are_a_wa",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_bob_muglia",
+      "target": "ep_20220331_the_future_of_data_is_kn",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_bob_van_luijt",
+      "target": "ep_20240425_demystifying_vector_data",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_brandon_chen",
+      "target": "ep_20210513_dont_treat_your_data_sta",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_brandon_gadoci",
+      "target": "ep_20240523_what_is_ai_ops_with_bran",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_brett_hurt",
+      "target": "ep_20220526_the_data_entrepreneurs_e",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_brian_t_oneill",
+      "target": "ep_20230223_increasing_adoption_of_d",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_bryon_jacob",
+      "target": "ep_20231122_understanding_the_role_o",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_chad_sanderson",
+      "target": "ep_20220414_why_are_we_so_bad_at_thi",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_chris_bergh",
+      "target": "ep_20210429_whats_the_secret_recipe_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_chris_tabb",
+      "target": "ep_20230921_business_value_on_the_me",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_cindi_howson",
+      "target": "ep_20211111_is_selfservice_bi_the_an",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_colleen_tartow",
+      "target": "ep_20241017_streamlining_data_value_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_cris_hadjez",
+      "target": "ep_20240314_gartner_data_and_analyti",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dael_williamson",
+      "target": "ep_20240926_why_data_ai_needs_to_emb",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dan_bennett",
+      "target": "ep_20221110_where_are_the_semantics_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_danielle_crop",
+      "target": "ep_20251203_ai_isnt_magic_its_math_w",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_danielle_oberdier",
+      "target": "ep_20211007_a_data_analyst_scientist",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_danny_bickson",
+      "target": "ep_20230928_from_london_to_san_franc",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dawn_carter",
+      "target": "ep_20240905_building_diversity_in_da",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dean_allemang",
+      "target": "ep_20231122_understanding_the_role_o",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_denise_gosnell",
+      "target": "ep_20210819_freerange_grassfed_opens",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dj_patil",
+      "target": "ep_20210804_season_two_kickoff_w_dj_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dora_boussias",
+      "target": "ep_20220127_can_the_data_mesh_be_gov",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_doris_lee",
+      "target": "ep_20231122_making_data_science_more",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_doug_laney",
+      "target": "ep_20211028_data_is_the_new_herman_m",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_emil_eifrem",
+      "target": "ep_20210812_documents_and_clouds_and",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_emily_hawkins",
+      "target": "ep_20220113_modern_data_work_at_driz",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ergest_xheblati",
+      "target": "ep_20220623_data_models_are_divas",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_erik_bernhardsson",
+      "target": "ep_20211104_data_tools_the_good_the_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ethan_aaron",
+      "target": "ep_20230727_ranting_about_lack_of_bu",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ethan_mollick",
+      "target": "ep_20241121_we_have_agency_over_ai_w",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_eva_nahari",
+      "target": "ep_20240215_another_sucky_year_for_s",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_fabiana_clemente",
+      "target": "ep_20230928_from_london_to_san_franc",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_frances_o_rafferty",
+      "target": "ep_20250313_building_trust_in_your_d",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_francois_scharffe",
+      "target": "ep_20220505_automating_the_enterpris",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_gabi_steele",
+      "target": "ep_20221103_put_the_business_in_char",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_gev_sogomonian",
+      "target": "ep_20230928_from_london_to_san_franc",
+      "type": "GUEST_ON"
     },
     {
       "source": "person_hala_nelson",
@@ -4233,69 +3728,39 @@
       "type": "GUEST_ON"
     },
     {
-      "source": "person_blake_burch",
-      "target": "ep_20250417_most_data_teams_are_a_wa",
+      "source": "person_jane_urban",
+      "target": "ep_20230119_providing_data_business_",
       "type": "GUEST_ON"
     },
     {
-      "source": "ep_20250417_most_data_teams_are_a_wa",
-      "target": "topic_data_teams_org",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_barr_moses",
-      "target": "ep_20250501_what_is_data_ai_observab",
+      "source": "person_jans_aasman",
+      "target": "ep_20210923_fashion_week_but_for_dat",
       "type": "GUEST_ON"
     },
     {
-      "source": "ep_20250501_what_is_data_ai_observab",
-      "target": "topic_data_quality",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_rebecca_o_kill",
-      "target": "ep_20250515_gartner_data_analytics_s",
+      "source": "person_jean_georges_perrin",
+      "target": "ep_20250320_data_contracts_data_prod",
       "type": "GUEST_ON"
     },
     {
-      "source": "ep_20250515_gartner_data_analytics_s",
-      "target": "topic_analytics_bi",
-      "type": "COVERS"
-    },
-    {
-      "source": "ep_20250515_gartner_data_analytics_s",
-      "target": "topic_industry_field_notes",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_sanjeev_mohan",
-      "target": "ep_20251112_fall_2025_data_analytics",
+      "source": "person_jeff_jonas",
+      "target": "ep_20230209_everywhere_you_look_ther",
       "type": "GUEST_ON"
     },
     {
-      "source": "ep_20251112_fall_2025_data_analytics",
-      "target": "topic_analytics_bi",
-      "type": "COVERS"
-    },
-    {
-      "source": "ep_20251112_fall_2025_data_analytics",
-      "target": "topic_industry_field_notes",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_alex_bertails",
-      "target": "ep_20251119_netflixs_unified_data_ar",
+      "source": "person_jeremiah_owyang",
+      "target": "ep_20240111_how_will_ai_impact_2024_",
       "type": "GUEST_ON"
     },
     {
-      "source": "person_alex_bertails",
-      "target": "org_netflix",
-      "type": "AFFILIATED_WITH"
+      "source": "person_jesse_sedler",
+      "target": "ep_20240404_data_security_and_ai_how",
+      "type": "GUEST_ON"
     },
     {
-      "source": "ep_20251119_netflixs_unified_data_ar",
-      "target": "topic_architecture_platforms",
-      "type": "COVERS"
+      "source": "person_jessica_talisman",
+      "target": "ep_20240131_without_information_arch",
+      "type": "GUEST_ON"
     },
     {
       "source": "person_jessica_zuniga",
@@ -4303,29 +3768,84 @@
       "type": "GUEST_ON"
     },
     {
-      "source": "person_jessica_zuniga",
-      "target": "org_blueyeti",
-      "type": "AFFILIATED_WITH"
-    },
-    {
-      "source": "ep_20251126_when_is_data_and_ai_gove",
-      "target": "topic_data_governance",
-      "type": "COVERS"
-    },
-    {
-      "source": "person_danielle_crop",
-      "target": "ep_20251203_ai_isnt_magic_its_math_w",
+      "source": "person_joe_reis",
+      "target": "ep_20230713_modeling_and_semantics_a",
       "type": "GUEST_ON"
     },
     {
-      "source": "person_arielle_rolland",
-      "target": "ep_20251210_how_are_we_over_complica",
+      "source": "person_jon_cooke",
+      "target": "ep_20231005_generative_ai_data_produ",
       "type": "GUEST_ON"
     },
     {
-      "source": "ep_20251210_how_are_we_over_complica",
-      "target": "topic_data_products",
-      "type": "COVERS"
+      "source": "person_jordan_morrow",
+      "target": "ep_20250116_data_ai_business_literac",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_karen_lopez",
+      "target": "ep_20220217_the_easiest_data_is_alwa",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_karen_meppen",
+      "target": "ep_20240226_dont_lift_and_shift_data",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kat_greenbrook",
+      "target": "ep_20231102_data_storytelling_with_k",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kat_greenbrook",
+      "target": "ep_20231102_data_storytelling_with_k_2",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_katariina_kari",
+      "target": "ep_20230511_live_from_the_knowledge_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kelly_wright",
+      "target": "ep_20211209_what_happens_when_everyo",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kevin_hu",
+      "target": "ep_20241003_data_quality_the_key_to_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kirk_borne",
+      "target": "ep_20210826_cant_spell_buzzwords_wit",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kristin_schooley",
+      "target": "ep_20230316_school_of_building_data_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_krystin_kim",
+      "target": "ep_20231024_data_catalogs_the_power_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_lars_albertsson",
+      "target": "ep_20210916_how_to_think_about_data_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_laura_madsen",
+      "target": "ep_20220203_can_agile_practices_disr",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_leah_weiss",
+      "target": "ep_20221103_put_the_business_in_char",
+      "type": "GUEST_ON"
     },
     {
       "source": "person_lena_hall",
@@ -4333,14 +3853,494 @@
       "type": "GUEST_ON"
     },
     {
-      "source": "person_lena_hall",
-      "target": "org_akamai",
-      "type": "AFFILIATED_WITH"
+      "source": "person_lindsay_murphy",
+      "target": "ep_20250123_data_teams_are_strategic",
+      "type": "GUEST_ON"
     },
     {
-      "source": "ep_20251217_building_ai_agents_with_",
-      "target": "topic_ai_agents",
-      "type": "COVERS"
+      "source": "person_luke_slotwinski",
+      "target": "ep_20220210_the_three_most_important",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_madeleine_want",
+      "target": "ep_20230518_using_data_to_change_the",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_malcolm_hawker",
+      "target": "ep_20230202_is_master_data_managemen",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_malcolm_hawker",
+      "target": "ep_20241031_what_is_the_future_of_da",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mammad_zadeh",
+      "target": "ep_20210930_do_we_have_a_data_infras",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mariam_halfhide",
+      "target": "ep_20240418_crawl_walk_and_run_on_ho",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mariam_halfhide",
+      "target": "ep_20240919_responsible_ai_with_mari",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_meetesh_karia",
+      "target": "ep_20210506_data_organization_reap_w",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mike_dillinger",
+      "target": "ep_20231026_llms_retrieval_augmented",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mike_evans",
+      "target": "ep_20241010_the_power_of_active_meta",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mike_ferguson",
+      "target": "ep_20210902_the_era_of_data_usage",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mohammad_syed",
+      "target": "ep_20230216_metadata_is_this_a_graph",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_nazneen_rajani",
+      "target": "ep_20230928_from_london_to_san_franc",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_neil_burge",
+      "target": "ep_20240411_whos_buying_data_catalog",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_nick_handel",
+      "target": "ep_20220428_a_layered_approach_to_da",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_nick_schrock",
+      "target": "ep_20211202_modern_data_stack_techno",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_nicola_askham",
+      "target": "ep_20241128_stop_talking_about_data_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_nong_li",
+      "target": "ep_20220407_can_data_policy_drive_da",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ofer_mendelevitch",
+      "target": "ep_20230928_from_london_to_san_franc",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ole_olesen_bagneux",
+      "target": "ep_20241205_demystifying_meta_grid_w",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_olga_maydanchik",
+      "target": "ep_20250130_want_to_be_data_and_ai_d",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_omar_khawaja",
+      "target": "ep_20220519_a_roadmap_to_data_mesh_s",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ora_lassila",
+      "target": "ep_20240509_everything_you_wanted_to",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_paco_nathan",
+      "target": "ep_20240208_bridging_innovation_and_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_partha_srinivasa",
+      "target": "ep_20211014_sure_youre_responsible_b",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_patricia_thaine",
+      "target": "ep_20220310_your_privacy_is_my_curre",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_patrick_cuba",
+      "target": "ep_20250328_what_do_data_modeling_da",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_patrick_mcfadin",
+      "target": "ep_20230928_from_london_to_san_franc",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_peter_bailis",
+      "target": "ep_20210114_has_business_intelligenc",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_peter_kapur",
+      "target": "ep_20220616_dont_let_good_metadata_g",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_peter_kromhout",
+      "target": "ep_20240418_crawl_walk_and_run_on_ho",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_peter_norvig",
+      "target": "ep_20230928_from_london_to_san_franc",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_rebecca_o_kill",
+      "target": "ep_20250515_gartner_data_analytics_s",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ricardo_baezayates",
+      "target": "ep_20230504_unpacking_responsible_ai",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_samia_rahman",
+      "target": "ep_20240119_the_data_mesh_terclass",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sanjeev_mohan",
+      "target": "ep_20220609_getting_all_meta_about_d",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sanjeev_mohan",
+      "target": "ep_20251112_fall_2025_data_analytics",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_santona_tuli",
+      "target": "ep_20240130_productivity_is_not_perf",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sarah_catanzaro",
+      "target": "ep_20220106_will_2022_change_how_we_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sarah_krasnik",
+      "target": "ep_20220512_is_your_modern_data_stac",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_scott_taylor",
+      "target": "ep_20240321_what_data_will_say_when_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_shane_gibson",
+      "target": "ep_20220317_agile_like_a_fox_but_for",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_simone_steel",
+      "target": "ep_20230810_data_sustainability_w_si",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sol_rashidi",
+      "target": "ep_20240507_leadership_transformatio",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_steve_perry",
+      "target": "ep_20220421_everybodys_an_imposter_s",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_steve_whitla",
+      "target": "ep_20211216_please_be_quiet_the_mach",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_tejas_manohar",
+      "target": "ep_20210909_whats_the_deal_with_reve",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_theresa_kushner",
+      "target": "ep_20221117_are_data_teams_keeping_u",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_tiankai_feng",
+      "target": "ep_20240829_humanizing_data_strategy",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_tom_redman",
+      "target": "ep_20230720_people_and_data_w_tom_re",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_tony_seale",
+      "target": "ep_20230420_kg_llm_happily_ever_afte",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_veronika_durgin",
+      "target": "ep_20230413_dos_and_dont_for_the_nex",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_vinoth_chandar",
+      "target": "ep_20241114_the_truth_about_open_tab",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_vip_parmar",
+      "target": "ep_20220825_build_bridges_dont_burn_",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_wendy_turnerwilliams",
+      "target": "ep_20230803_is_data_a_first_class_ci",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_winfried_etzel",
+      "target": "ep_20250213_rethinking_data_governan",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_yujian_tang",
+      "target": "ep_20230928_from_london_to_san_franc",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "ep_20230824_from_technical_to_busine_ta",
+      "target": "ep_20230824_from_technical_to_busine",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20231004_generative_ai_data_produ_ta",
+      "target": "ep_20231005_generative_ai_data_produ",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240320_what_data_will_say_when__ta",
+      "target": "ep_20240321_what_data_will_say_when_",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240403_data_security_and_ai_how_ta",
+      "target": "ep_20240404_data_security_and_ai_how",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240410_whos_buying_data_catalog_ta",
+      "target": "ep_20240411_whos_buying_data_catalog",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240417_crawl_walk_and_run_on_ho_ta",
+      "target": "ep_20240418_crawl_walk_and_run_on_ho",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240425_demystifying_vector_data_ta",
+      "target": "ep_20240425_demystifying_vector_data",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240507_leadership_transformatio_ta",
+      "target": "ep_20240507_leadership_transformatio",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240509_everything_you_wanted_to_ta",
+      "target": "ep_20240509_everything_you_wanted_to",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240522_what_is_ai_ops_with_bran_ta",
+      "target": "ep_20240523_what_is_ai_ops_with_bran",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240822_who_is_doing_the_data_pr_ta",
+      "target": "ep_20240822_who_is_doing_the_data_pr",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240918_responsible_ai_with_mari_ta",
+      "target": "ep_20240919_responsible_ai_with_mari",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20240926_why_data_ai_needs_to_emb_ta",
+      "target": "ep_20240926_why_data_ai_needs_to_emb",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20241003_data_quality_the_key_to__ta",
+      "target": "ep_20241003_data_quality_the_key_to_",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20241010_the_power_of_active_meta_ta",
+      "target": "ep_20241010_the_power_of_active_meta",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20241017_streamlining_data_value__ta",
+      "target": "ep_20241017_streamlining_data_value_",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20241024_why_we_need_to_focus_on__ta",
+      "target": "ep_20241024_why_we_need_to_focus_on_",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20241114_the_truth_about_open_tab_ta",
+      "target": "ep_20241114_the_truth_about_open_tab",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20241120_we_have_agency_over_ai_w_ta",
+      "target": "ep_20241121_we_have_agency_over_ai_w",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20241127_stop_talking_about_data__ta",
+      "target": "ep_20241128_stop_talking_about_data_",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20241205_demystifying_meta_grid_w_ta",
+      "target": "ep_20241205_demystifying_meta_grid_w",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250116_data_ai_business_literac_ta",
+      "target": "ep_20250116_data_ai_business_literac",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250123_data_teams_are_strategic_ta",
+      "target": "ep_20250123_data_teams_are_strategic",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250130_want_to_be_data_and_ai_d_ta",
+      "target": "ep_20250130_want_to_be_data_and_ai_d",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250205_how_data_governance_beco_ta",
+      "target": "ep_20250206_how_data_governance_beco",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250212_rethinking_data_governan_ta",
+      "target": "ep_20250213_rethinking_data_governan",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250313_building_trust_in_your_d_ta",
+      "target": "ep_20250313_building_trust_in_your_d",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250320_data_contracts_data_prod_ta",
+      "target": "ep_20250320_data_contracts_data_prod",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250328_what_do_data_modeling_da_ta",
+      "target": "ep_20250328_what_do_data_modeling_da",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250402_digital_twins_and_ai_wit_ta",
+      "target": "ep_20250403_digital_twins_and_ai_wit",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250410_how_to_get_out_of_ai_pro_ta",
+      "target": "ep_20250410_how_to_get_out_of_ai_pro",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250417_most_data_teams_are_a_wa_ta",
+      "target": "ep_20250417_most_data_teams_are_a_wa",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250501_what_is_data_ai_observab_ta",
+      "target": "ep_20250501_what_is_data_ai_observab",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20250515_gartner_data_analytics_s_ta",
+      "target": "ep_20250515_gartner_data_analytics_s",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20251111_fall_2025_data_analytics_ta",
+      "target": "ep_20251112_fall_2025_data_analytics",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20251119_netflixs_unified_data_ar_ta",
+      "target": "ep_20251119_netflixs_unified_data_ar",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20251126_when_is_data_and_ai_gove_ta",
+      "target": "ep_20251126_when_is_data_and_ai_gove",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20251203_ai_isnt_magic_its_math_w_ta",
+      "target": "ep_20251203_ai_isnt_magic_its_math_w",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20251209_how_are_we_over_complica_ta",
+      "target": "ep_20251210_how_are_we_over_complica",
+      "type": "TAKEAWAY_OF"
+    },
+    {
+      "source": "ep_20251217_building_ai_agents_with__ta",
+      "target": "ep_20251217_building_ai_agents_with_",
+      "type": "TAKEAWAY_OF"
     }
   ]
 }

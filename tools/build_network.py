@@ -33,7 +33,19 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_FEED = "https://feeds.casted.us/127/Catalog-&-Cocktails-2fcf8728/feed"
+# The show is hosted on Omny Studio. Candidates are tried in order and the
+# first one that yields episodes wins; the run log names the winner so it can
+# be pinned here afterwards.
+#
+# The first is Omny's conventional feed path. The second is the show page,
+# which carries a <link rel="alternate" type="application/rss+xml"> pointer
+# that discovery follows. Neither has been confirmed against the live site.
+OMNY_SHOW = "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast"
+DEFAULT_FEED_CANDIDATES = [
+    f"{OMNY_SHOW}/playlists/podcast.rss",
+    OMNY_SHOW,
+]
+DEFAULT_FEED = DEFAULT_FEED_CANDIDATES[0]
 DEFAULT_SEED = ROOT / "catalog_cocktails.json"
 DEFAULT_TOPICS = ROOT / "data" / "topics.json"
 OUTPUTS = [ROOT / "catalog_cocktails.json", ROOT / "sample_network.json"]
@@ -314,12 +326,28 @@ FEED_TYPE_RE = re.compile(r"""type\s*=\s*["']application/(?:rss|atom)\+xml["']""
 
 
 def discover_feed_url(html: str, base_url: str) -> str | None:
+    """Read a page's advertised feed URL.
+
+    The page is not under our control, so the URL it names is untrusted input.
+    Restricting the follow to https keeps a hijacked or expired domain from
+    redirecting the build at an arbitrary scheme."""
     for tag in LINK_TAG_RE.findall(html):
         if not FEED_TYPE_RE.search(tag):
             continue
         href = HREF_RE.search(tag)
-        if href:
-            return urllib.parse.urljoin(base_url, href.group(1).strip("\"'"))
+        if not href:
+            continue
+        target = urllib.parse.urljoin(base_url, href.group(1).strip("\"'"))
+        scheme = urllib.parse.urlparse(target).scheme
+        if scheme not in ("http", "https"):
+            print(f"ignoring advertised feed {target}: unsupported scheme",
+                  file=sys.stderr)
+            continue
+        if scheme == "http" and urllib.parse.urlparse(base_url).scheme == "https":
+            print(f"ignoring advertised feed {target}: refuses to downgrade from https",
+                  file=sys.stderr)
+            continue
+        return target
     return None
 
 
@@ -635,6 +663,15 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
                 add_node({"id": tid, "name": topic, "type": "topic"})
                 add_link(eid, tid, "COVERS")
 
+    # Emission order follows whatever order the seed happened to be in, which
+    # changes every time the seed is regenerated. Sort so that identical input
+    # always produces an identical file and the weekly commit shows only real
+    # changes.
+    type_rank = {"episode": 0, "person": 1, "organization": 2, "topic": 3}
+    nodes.sort(key=lambda n: (type_rank.get(n["type"], 9),
+                              n.get("date", ""), n.get("name", ""), n["id"]))
+    links.sort(key=lambda l: (l["type"], l["source"], l["target"]))
+
     counts = Counter(n["type"] for n in nodes)
     return {
         "meta": {
@@ -646,6 +683,19 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict]) -> dict:
         "nodes": nodes,
         "links": links,
     }
+
+
+def episode_drop_tolerance(seed_episodes: int) -> int:
+    """How many episodes a rebuild may legitimately lose.
+
+    Genuine duplicates in the seed collapse into one episode, so a small drop
+    is expected. A large one means the feed was truncated, pointed somewhere
+    else, or stopped being this show."""
+    return max(5, seed_episodes // 50)
+
+
+def episode_drop_is_safe(seed_episodes: int, built_episodes: int) -> bool:
+    return built_episodes >= seed_episodes - episode_drop_tolerance(seed_episodes)
 
 
 def try_payload(payload: Payload, label: str) -> list[dict]:
@@ -660,6 +710,18 @@ def try_payload(payload: Payload, label: str) -> list[dict]:
     return items
 
 
+def load_feed_candidates(urls: list[str], save_to: Path | None) -> list[dict]:
+    """Try each candidate URL until one yields episodes."""
+    for url in urls:
+        print(f"trying feed URL: {url}", file=sys.stderr)
+        items = load_feed(url, save_to)
+        if items:
+            print(f"USING FEED: {url} ({len(items)} items) — "
+                  f"pin this as DEFAULT_FEED_CANDIDATES[0]", file=sys.stderr)
+            return items
+    return []
+
+
 def load_feed(url: str, save_to: Path | None) -> list[dict]:
     """Fetch and parse the feed, following a landing page to the real feed if
     that is what the URL turns out to point at. Any failure is reported with
@@ -668,8 +730,7 @@ def load_feed(url: str, save_to: Path | None) -> list[dict]:
     try:
         payload = fetch_feed(url)
     except Exception as exc:  # noqa: BLE001 - report and fall back
-        print(f"FEED ERROR: could not fetch {url} ({exc}); continuing offline",
-              file=sys.stderr)
+        print(f"could not fetch {url} ({exc})", file=sys.stderr)
         return []
 
     if save_to:
@@ -688,7 +749,7 @@ def load_feed(url: str, save_to: Path | None) -> list[dict]:
         try:
             followed = fetch_feed(discovered)
         except Exception as exc:  # noqa: BLE001
-            print(f"FEED ERROR: could not fetch the advertised feed {discovered} ({exc})",
+            print(f"could not fetch the advertised feed {discovered} ({exc})",
                   file=sys.stderr)
             return []
         if save_to:
@@ -699,8 +760,7 @@ def load_feed(url: str, save_to: Path | None) -> list[dict]:
             return items
         payload = followed
 
-    print("FEED ERROR: the URL did not yield a usable feed; continuing offline\n"
-          + payload.describe(), file=sys.stderr)
+    print(f"{url} did not yield a usable feed:\n" + payload.describe(), file=sys.stderr)
     return []
 
 
@@ -709,8 +769,9 @@ def load_feed(url: str, save_to: Path | None) -> list[dict]:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--feed", nargs="?", const=DEFAULT_FEED, default=None,
-                    help=f"fetch the RSS feed (default {DEFAULT_FEED})")
+    ap.add_argument("--feed", nargs="?", const=True, default=None,
+                    help="fetch the RSS feed; with no value, tries "
+                         f"{len(DEFAULT_FEED_CANDIDATES)} known candidate URLs")
     ap.add_argument("--feed-file", help="parse a local RSS file instead of fetching")
     ap.add_argument("--save-feed", type=Path,
                     help="write the fetched RSS XML here before parsing it, so a "
@@ -729,9 +790,27 @@ def main() -> int:
     if args.feed_file:
         items = parse_feed(Path(args.feed_file).read_text(encoding="utf-8"))
     elif args.feed:
-        items = load_feed(args.feed, args.save_feed)
+        candidates = [args.feed] if args.feed is not True else DEFAULT_FEED_CANDIDATES
+        items = load_feed_candidates(candidates, args.save_feed)
+        if not items:
+            print("FEED ERROR: no candidate URL yielded a usable feed; "
+                  "continuing offline", file=sys.stderr)
 
     graph = build(seed, items, taxonomy)
+
+    # A merge can only ever add episodes. If the output has fewer than the
+    # input, something upstream went wrong — a truncated feed, a parser fault,
+    # or a URL that stopped pointing at this show — and overwriting the curated
+    # data with it would lose work that cannot be recovered from the feed.
+    seed_episodes = sum(1 for n in seed["nodes"] if n["type"] == "episode")
+    built_episodes = graph["meta"]["counts"].get("episode", 0)
+    if not episode_drop_is_safe(seed_episodes, built_episodes):
+        print(f"FEED ERROR: rebuild produced {built_episodes} episodes but the "
+              f"existing data has {seed_episodes} "
+              f"(tolerance {episode_drop_tolerance(seed_episodes)}). "
+              f"Refusing to overwrite curated data. Inspect the feed first.",
+              file=sys.stderr)
+        return 1
 
     outputs = args.out or OUTPUTS
     payload = json.dumps(graph, indent=2, ensure_ascii=False) + "\n"
