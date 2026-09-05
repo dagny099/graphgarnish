@@ -1,0 +1,3707 @@
+{
+  "nodes": [
+    {
+      "id": "ep_0",
+      "name": "Season 11 Premiere: What happened in 2025 and where are we g",
+      "type": "episode",
+      "date": "2026-01-08",
+      "is_full": true
+    },
+    {
+      "id": "ep_1",
+      "name": "Building AI Agents with Lena Hall",
+      "type": "episode",
+      "date": "2025-12-17",
+      "is_full": true
+    },
+    {
+      "id": "person_lena_hall",
+      "name": "Lena Hall",
+      "type": "person"
+    },
+    {
+      "id": "org_akamai",
+      "name": "Akamai",
+      "type": "organization"
+    },
+    {
+      "id": "ep_2",
+      "name": "TAKEAWAYS - Building AI Agents with Lena Hall",
+      "type": "episode",
+      "date": "2025-12-17",
+      "is_full": false
+    },
+    {
+      "id": "ep_3",
+      "name": "How are we over complicating data products? with Arielle Rol",
+      "type": "episode",
+      "date": "2025-12-10",
+      "is_full": true
+    },
+    {
+      "id": "person_arielle_rolland",
+      "name": "Arielle Rolland",
+      "type": "person"
+    },
+    {
+      "id": "ep_4",
+      "name": "TAKEAWAYS - How are we over complicating data products? with",
+      "type": "episode",
+      "date": "2025-12-09",
+      "is_full": false
+    },
+    {
+      "id": "ep_5",
+      "name": "AI isn\u2019t magic, it\u2019s math w/ Danielle Crop",
+      "type": "episode",
+      "date": "2025-12-03",
+      "is_full": true
+    },
+    {
+      "id": "person_danielle_crop",
+      "name": "Danielle Crop",
+      "type": "person"
+    },
+    {
+      "id": "ep_6",
+      "name": "TAKEAWAYS - AI isn\u2019t magic, it\u2019s math w/ Danielle Crop",
+      "type": "episode",
+      "date": "2025-12-03",
+      "is_full": false
+    },
+    {
+      "id": "ep_7",
+      "name": "When is Data and AI governance truly a business enabler? w/ ",
+      "type": "episode",
+      "date": "2025-11-26",
+      "is_full": true
+    },
+    {
+      "id": "person_jessica_zu\u00f1iga",
+      "name": "Jessica Zu\u00f1iga",
+      "type": "person"
+    },
+    {
+      "id": "org_blueyeti",
+      "name": "BlueYeti",
+      "type": "organization"
+    },
+    {
+      "id": "ep_8",
+      "name": "TAKEAWAYS - When is Data and AI governance truly a business ",
+      "type": "episode",
+      "date": "2025-11-26",
+      "is_full": false
+    },
+    {
+      "id": "ep_9",
+      "name": "Netflix\u2019s Unified Data Architecture: Model Once, Represent E",
+      "type": "episode",
+      "date": "2025-11-19",
+      "is_full": true
+    },
+    {
+      "id": "person_alex_bertails",
+      "name": "Alex Bertails",
+      "type": "person"
+    },
+    {
+      "id": "org_netflix",
+      "name": "Netflix",
+      "type": "organization"
+    },
+    {
+      "id": "ep_10",
+      "name": "TAKEAWAYS - Netflix\u2019s Unified Data Architecture: Model Once,",
+      "type": "episode",
+      "date": "2025-11-19",
+      "is_full": false
+    },
+    {
+      "id": "ep_11",
+      "name": "Fall 2025 Data & Analytics trends with Sanjeev Mohan",
+      "type": "episode",
+      "date": "2025-11-12",
+      "is_full": true
+    },
+    {
+      "id": "person_sanjeev_mohan",
+      "name": "Sanjeev Mohan",
+      "type": "person"
+    },
+    {
+      "id": "ep_12",
+      "name": "TAKEAWAYS - Fall 2025 Data & Analytics trends with Sanjeev M",
+      "type": "episode",
+      "date": "2025-11-11",
+      "is_full": false
+    },
+    {
+      "id": "ep_13",
+      "name": "Season 10 Premiere: Juan and Tim revisit 5+ years of Data",
+      "type": "episode",
+      "date": "2025-11-05",
+      "is_full": true
+    },
+    {
+      "id": "ep_14",
+      "name": "Season 9 Finale with Tim Gasper and Juan Sequeda",
+      "type": "episode",
+      "date": "2025-05-29",
+      "is_full": true
+    },
+    {
+      "id": "ep_15",
+      "name": "Gartner Data & Analytics Summit UK 2025 Takeaways with Rebec",
+      "type": "episode",
+      "date": "2025-05-15",
+      "is_full": true
+    },
+    {
+      "id": "person_rebecca_o'kill",
+      "name": "Rebecca O'Kill",
+      "type": "person"
+    },
+    {
+      "id": "ep_16",
+      "name": "TAKEAWAYS - Gartner Data & Analytics Summit UK 2025 Takeaway",
+      "type": "episode",
+      "date": "2025-05-15",
+      "is_full": false
+    },
+    {
+      "id": "ep_17",
+      "name": "Tim & Juan are on the Road (Again!): Rants About Their Lates",
+      "type": "episode",
+      "date": "2025-05-08",
+      "is_full": true
+    },
+    {
+      "id": "ep_18",
+      "name": "What is Data + AI Observability and Why It's Part of Your Co",
+      "type": "episode",
+      "date": "2025-05-01",
+      "is_full": true
+    },
+    {
+      "id": "person_barr_moses",
+      "name": "Barr Moses",
+      "type": "person"
+    },
+    {
+      "id": "ep_19",
+      "name": "TAKEAWAYS - What is Data + AI Observability and Why It's Par",
+      "type": "episode",
+      "date": "2025-05-01",
+      "is_full": false
+    },
+    {
+      "id": "ep_20",
+      "name": "Tim & Juan Rant About AI and TED2025 Insights",
+      "type": "episode",
+      "date": "2025-04-24",
+      "is_full": true
+    },
+    {
+      "id": "ep_21",
+      "name": "(Most) Data Teams Are a Waste of Resources with Blake Burch",
+      "type": "episode",
+      "date": "2025-04-17",
+      "is_full": true
+    },
+    {
+      "id": "person_blake_burch",
+      "name": "Blake Burch",
+      "type": "person"
+    },
+    {
+      "id": "ep_22",
+      "name": "TAKEAWAYS - (Most) Data Teams Are a Waste of Resources with ",
+      "type": "episode",
+      "date": "2025-04-17",
+      "is_full": false
+    },
+    {
+      "id": "ep_23",
+      "name": "How to Get Out of AI Proof-of-Concept Purgatory with Hugo Bo",
+      "type": "episode",
+      "date": "2025-04-10",
+      "is_full": true
+    },
+    {
+      "id": "person_hugo_bowne_anderson",
+      "name": "Hugo Bowne-Anderson",
+      "type": "person"
+    },
+    {
+      "id": "ep_24",
+      "name": "TAKEAWAYS - How to Get Out of AI Proof-of-Concept Purgatory ",
+      "type": "episode",
+      "date": "2025-04-10",
+      "is_full": false
+    },
+    {
+      "id": "ep_25",
+      "name": "Digital Twins and AI with Hala Nelson",
+      "type": "episode",
+      "date": "2025-04-03",
+      "is_full": true
+    },
+    {
+      "id": "person_hala_nelson",
+      "name": "Hala Nelson",
+      "type": "person"
+    },
+    {
+      "id": "ep_26",
+      "name": "TAKEAWAYS - Digital Twins and AI with Hala Nelson",
+      "type": "episode",
+      "date": "2025-04-02",
+      "is_full": false
+    },
+    {
+      "id": "ep_27",
+      "name": "What Do Data Modeling, Data Vault and Knowledge Graphs Have ",
+      "type": "episode",
+      "date": "2025-03-28",
+      "is_full": true
+    },
+    {
+      "id": "person_patrick_cuba",
+      "name": "Patrick Cuba",
+      "type": "person"
+    },
+    {
+      "id": "ep_28",
+      "name": "TAKEAWAYS - What Do Data Modeling, Data Vault and Knowledge ",
+      "type": "episode",
+      "date": "2025-03-28",
+      "is_full": false
+    },
+    {
+      "id": "ep_29",
+      "name": "Data Contracts, Data Products, Data Mesh with Jean-Georges P",
+      "type": "episode",
+      "date": "2025-03-20",
+      "is_full": true
+    },
+    {
+      "id": "person_jean_georges_perrin",
+      "name": "Jean-Georges Perrin",
+      "type": "person"
+    },
+    {
+      "id": "ep_30",
+      "name": "TAKEAWAYS - Data Contracts, Data Products, Data Mesh with Je",
+      "type": "episode",
+      "date": "2025-03-20",
+      "is_full": false
+    },
+    {
+      "id": "ep_31",
+      "name": "Building Trust in Your Data with Frances O'Rafferty",
+      "type": "episode",
+      "date": "2025-03-13",
+      "is_full": true
+    },
+    {
+      "id": "person_frances_o'rafferty",
+      "name": "Frances O'Rafferty",
+      "type": "person"
+    },
+    {
+      "id": "org_baringa",
+      "name": "Baringa",
+      "type": "organization"
+    },
+    {
+      "id": "ep_32",
+      "name": "TAKEAWAYS - Building Trust in Your Data with Frances O'Raffe",
+      "type": "episode",
+      "date": "2025-03-13",
+      "is_full": false
+    },
+    {
+      "id": "ep_33",
+      "name": "Gartner Data and Analytics 2025 Takeaways: Modern Governance",
+      "type": "episode",
+      "date": "2025-03-06",
+      "is_full": true
+    },
+    {
+      "id": "ep_34",
+      "name": "Field Notes: Six Data Trends We're Seeing Everywhere with Ti",
+      "type": "episode",
+      "date": "2025-02-20",
+      "is_full": true
+    },
+    {
+      "id": "ep_35",
+      "name": "Rethinking Data Governance for a Distributed World with Winf",
+      "type": "episode",
+      "date": "2025-02-13",
+      "is_full": true
+    },
+    {
+      "id": "person_winfried_etzel",
+      "name": "Winfried Etzel",
+      "type": "person"
+    },
+    {
+      "id": "ep_36",
+      "name": "TAKEAWAYS - Rethinking Data Governance for a Distributed Wor",
+      "type": "episode",
+      "date": "2025-02-12",
+      "is_full": false
+    },
+    {
+      "id": "ep_37",
+      "name": "How Data Governance Becomes Your Secret Weapon with Alexande",
+      "type": "episode",
+      "date": "2025-02-06",
+      "is_full": true
+    },
+    {
+      "id": "person_alexander_torrenegra",
+      "name": "Alexander Torrenegra",
+      "type": "person"
+    },
+    {
+      "id": "ep_38",
+      "name": "TAKEAWAYS - How Data Governance Becomes Your Secret Weapon w",
+      "type": "episode",
+      "date": "2025-02-05",
+      "is_full": false
+    },
+    {
+      "id": "ep_39",
+      "name": "Want to Be Data and AI-Driven? Start with the Basics...a Glo",
+      "type": "episode",
+      "date": "2025-01-30",
+      "is_full": true
+    },
+    {
+      "id": "person_olga_maydanchik",
+      "name": "Olga Maydanchik",
+      "type": "person"
+    },
+    {
+      "id": "ep_40",
+      "name": "TAKEAWAYS - Want to Be Data and AI-Driven? Start with the Ba",
+      "type": "episode",
+      "date": "2025-01-30",
+      "is_full": false
+    },
+    {
+      "id": "ep_41",
+      "name": "Data Teams Are Strategic, Not Just Technical with Lindsay Mu",
+      "type": "episode",
+      "date": "2025-01-23",
+      "is_full": true
+    },
+    {
+      "id": "person_lindsay_murphy",
+      "name": "Lindsay Murphy",
+      "type": "person"
+    },
+    {
+      "id": "ep_42",
+      "name": "TAKEAWAYS - Data Teams Are Strategic, Not Just Technical wit",
+      "type": "episode",
+      "date": "2025-01-23",
+      "is_full": false
+    },
+    {
+      "id": "ep_43",
+      "name": "Data, AI, & Business Literacy with Jordan Morrow",
+      "type": "episode",
+      "date": "2025-01-16",
+      "is_full": true
+    },
+    {
+      "id": "person_jordan_morrow",
+      "name": "Jordan Morrow",
+      "type": "person"
+    },
+    {
+      "id": "ep_44",
+      "name": "TAKEAWAYS - Data, AI, & Business Literacy with Jordan Morrow",
+      "type": "episode",
+      "date": "2025-01-16",
+      "is_full": false
+    },
+    {
+      "id": "ep_45",
+      "name": "Season 8 Finale with Tim Gasper and Juan Sequeda",
+      "type": "episode",
+      "date": "2024-12-19",
+      "is_full": true
+    },
+    {
+      "id": "ep_46",
+      "name": "Live from DGIQ + AIGov with Tim Gasper and Juan Sequeda",
+      "type": "episode",
+      "date": "2024-12-12",
+      "is_full": true
+    },
+    {
+      "id": "ep_47",
+      "name": "Demystifying Meta Grid with Ole Olesen-Bagneux",
+      "type": "episode",
+      "date": "2024-12-05",
+      "is_full": true
+    },
+    {
+      "id": "person_ole_olesen_bagneux",
+      "name": "Ole Olesen-Bagneux",
+      "type": "person"
+    },
+    {
+      "id": "ep_48",
+      "name": "TAKEAWAYS - Demystifying Meta Grid with Ole Olesen-Bagneux",
+      "type": "episode",
+      "date": "2024-12-05",
+      "is_full": false
+    },
+    {
+      "id": "ep_49",
+      "name": "Stop Talking About Data Governance and Just Start Doing It! ",
+      "type": "episode",
+      "date": "2024-11-28",
+      "is_full": true
+    },
+    {
+      "id": "person_nicola_askham",
+      "name": "Nicola Askham",
+      "type": "person"
+    },
+    {
+      "id": "ep_50",
+      "name": "TAKEAWAYS - Stop Talking About Data Governance and Just Star",
+      "type": "episode",
+      "date": "2024-11-27",
+      "is_full": false
+    },
+    {
+      "id": "ep_51",
+      "name": "We Have Agency Over AI with Ethan Mollick",
+      "type": "episode",
+      "date": "2024-11-21",
+      "is_full": true
+    },
+    {
+      "id": "person_ethan_mollick",
+      "name": "Ethan Mollick",
+      "type": "person"
+    },
+    {
+      "id": "org_the_wharton_school_of_the_university_of_pennsylvania",
+      "name": "the Wharton School of the University of Pennsylvania",
+      "type": "organization"
+    },
+    {
+      "id": "ep_52",
+      "name": "TAKEAWAYS - We Have Agency Over AI with Ethan Mollick",
+      "type": "episode",
+      "date": "2024-11-20",
+      "is_full": false
+    },
+    {
+      "id": "ep_53",
+      "name": "The Truth About Open Table Formats with Vinoth Chandar",
+      "type": "episode",
+      "date": "2024-11-14",
+      "is_full": true
+    },
+    {
+      "id": "person_vinoth_chandar",
+      "name": "Vinoth Chandar",
+      "type": "person"
+    },
+    {
+      "id": "ep_54",
+      "name": "TAKEAWAYS - The Truth About Open Table Formats with Vinoth C",
+      "type": "episode",
+      "date": "2024-11-14",
+      "is_full": false
+    },
+    {
+      "id": "ep_55",
+      "name": "What is the Future of Data Catalogs? with Malcolm Hawker",
+      "type": "episode",
+      "date": "2024-10-31",
+      "is_full": true
+    },
+    {
+      "id": "person_malcolm_hawker",
+      "name": "Malcolm Hawker",
+      "type": "person"
+    },
+    {
+      "id": "org_profisee_and_host_of_cdo_matters_podcast",
+      "name": "Profisee and host of CDO Matters Podcast",
+      "type": "organization"
+    },
+    {
+      "id": "ep_56",
+      "name": "Why we need to focus on Knowledge Management, NOW! with Andr",
+      "type": "episode",
+      "date": "2024-10-24",
+      "is_full": true
+    },
+    {
+      "id": "person_andrea_gioia",
+      "name": "Andrea Gioia",
+      "type": "person"
+    },
+    {
+      "id": "org_quantyca_and_co_founder_of_blindata",
+      "name": "Quantyca and Co-founder of Blindata",
+      "type": "organization"
+    },
+    {
+      "id": "ep_57",
+      "name": "TAKEAWAYS - Why we need to focus on Knowledge Management, NO",
+      "type": "episode",
+      "date": "2024-10-24",
+      "is_full": false
+    },
+    {
+      "id": "ep_58",
+      "name": "Streamlining Data Value with Colleen Tartow, Ph.D.",
+      "type": "episode",
+      "date": "2024-10-17",
+      "is_full": true
+    },
+    {
+      "id": "person_colleen_tartow_phd",
+      "name": "Colleen Tartow, Ph.D.",
+      "type": "person"
+    },
+    {
+      "id": "org_vast_data",
+      "name": "VAST Data",
+      "type": "organization"
+    },
+    {
+      "id": "ep_59",
+      "name": "TAKEAWAYS - Streamlining Data Value with Colleen Tartow, Ph.",
+      "type": "episode",
+      "date": "2024-10-17",
+      "is_full": false
+    },
+    {
+      "id": "ep_60",
+      "name": "The Power of Active Metadata with Mike Evans",
+      "type": "episode",
+      "date": "2024-10-10",
+      "is_full": true
+    },
+    {
+      "id": "person_mike_evans",
+      "name": "Mike Evans",
+      "type": "person"
+    },
+    {
+      "id": "org_amplifi",
+      "name": "Amplifi",
+      "type": "organization"
+    },
+    {
+      "id": "ep_61",
+      "name": "TAKEAWAYS - The Power of Active Metadata with Mike Evans",
+      "type": "episode",
+      "date": "2024-10-10",
+      "is_full": false
+    },
+    {
+      "id": "ep_62",
+      "name": "Data Quality: The Key to GenAI Success with Kevin Hu",
+      "type": "episode",
+      "date": "2024-10-03",
+      "is_full": true
+    },
+    {
+      "id": "person_kevin_hu",
+      "name": "Kevin Hu",
+      "type": "person"
+    },
+    {
+      "id": "ep_63",
+      "name": "TAKEAWAYS - Data Quality: The Key to GenAI Success with Kevi",
+      "type": "episode",
+      "date": "2024-10-03",
+      "is_full": false
+    },
+    {
+      "id": "ep_64",
+      "name": "Why Data & AI Needs to Embrace Interoperability with Dael Wi",
+      "type": "episode",
+      "date": "2024-09-26",
+      "is_full": true
+    },
+    {
+      "id": "person_dael_williamson",
+      "name": "Dael Williamson",
+      "type": "person"
+    },
+    {
+      "id": "org_databricks",
+      "name": "Databricks",
+      "type": "organization"
+    },
+    {
+      "id": "ep_65",
+      "name": "TAKEAWAYS - Why Data & AI Needs to Embrace Interoperability ",
+      "type": "episode",
+      "date": "2024-09-26",
+      "is_full": false
+    },
+    {
+      "id": "ep_66",
+      "name": "Responsible AI with Mariam Halfhide",
+      "type": "episode",
+      "date": "2024-09-19",
+      "is_full": true
+    },
+    {
+      "id": "person_mariam_halfhide",
+      "name": "Mariam Halfhide",
+      "type": "person"
+    },
+    {
+      "id": "ep_67",
+      "name": "TAKEAWAYS - Responsible AI with Mariam Halfhide",
+      "type": "episode",
+      "date": "2024-09-18",
+      "is_full": false
+    },
+    {
+      "id": "ep_68",
+      "name": "The Five Laws of Data Enablement with Amalia Child",
+      "type": "episode",
+      "date": "2024-09-12",
+      "is_full": true
+    },
+    {
+      "id": "person_amalia_child",
+      "name": "Amalia Child",
+      "type": "person"
+    },
+    {
+      "id": "ep_69",
+      "name": "Building Diversity in Data with Dawn Carter",
+      "type": "episode",
+      "date": "2024-09-05",
+      "is_full": true
+    },
+    {
+      "id": "person_dawn_carter",
+      "name": "Dawn Carter",
+      "type": "person"
+    },
+    {
+      "id": "org_bae_systems",
+      "name": "BAE Systems",
+      "type": "organization"
+    },
+    {
+      "id": "ep_70",
+      "name": "Humanizing Data Strategy with Tiankai Feng",
+      "type": "episode",
+      "date": "2024-08-29",
+      "is_full": true
+    },
+    {
+      "id": "person_tiankai_feng",
+      "name": "Tiankai Feng",
+      "type": "person"
+    },
+    {
+      "id": "org_thoughtworks_europe_and_author_of_humanizing_data_strategy",
+      "name": "Thoughtworks Europe and author of Humanizing Data Strategy",
+      "type": "organization"
+    },
+    {
+      "id": "ep_71",
+      "name": "Who is doing the Data Product Management work? with Anna Ber",
+      "type": "episode",
+      "date": "2024-08-22",
+      "is_full": true
+    },
+    {
+      "id": "person_anna_bergevin",
+      "name": "Anna Bergevin",
+      "type": "person"
+    },
+    {
+      "id": "org_resmed",
+      "name": "ResMed",
+      "type": "organization"
+    },
+    {
+      "id": "ep_72",
+      "name": "TAKEAWAYS - Who is doing the Data Product Management work? w",
+      "type": "episode",
+      "date": "2024-08-22",
+      "is_full": false
+    },
+    {
+      "id": "ep_73",
+      "name": "We need your Honest No-BS Feedback! What should we do next?",
+      "type": "episode",
+      "date": "2024-06-04",
+      "is_full": true
+    },
+    {
+      "id": "ep_74",
+      "name": "What is AI Ops with Brandon Gadoci",
+      "type": "episode",
+      "date": "2024-05-23",
+      "is_full": true
+    },
+    {
+      "id": "person_brandon_gadoci",
+      "name": "Brandon Gadoci",
+      "type": "person"
+    },
+    {
+      "id": "org_data",
+      "name": "data",
+      "type": "organization"
+    },
+    {
+      "id": "ep_75",
+      "name": "TAKEAWAYS - What is AI Ops with Brandon Gadoci",
+      "type": "episode",
+      "date": "2024-05-22",
+      "is_full": false
+    },
+    {
+      "id": "ep_76",
+      "name": "4 Years of our Honest No-BS Podcast, Live from Gartner D&A S",
+      "type": "episode",
+      "date": "2024-05-17",
+      "is_full": true
+    },
+    {
+      "id": "ep_77",
+      "name": "Everything you wanted to know about Knowledge Graphs but wer",
+      "type": "episode",
+      "date": "2024-05-09",
+      "is_full": true
+    },
+    {
+      "id": "person_ora_lassila",
+      "name": "Ora Lassila",
+      "type": "person"
+    },
+    {
+      "id": "ep_78",
+      "name": "TAKEAWAYS - Everything you wanted to know about Knowledge Gr",
+      "type": "episode",
+      "date": "2024-05-09",
+      "is_full": false
+    },
+    {
+      "id": "ep_79",
+      "name": "Leadership transformation in this Data and AI world with Sol",
+      "type": "episode",
+      "date": "2024-05-07",
+      "is_full": true
+    },
+    {
+      "id": "person_sol_rashidi",
+      "name": "Sol Rashidi",
+      "type": "person"
+    },
+    {
+      "id": "ep_80",
+      "name": "TAKEAWAYS - Leadership transformation in this Data and AI wo",
+      "type": "episode",
+      "date": "2024-05-07",
+      "is_full": false
+    },
+    {
+      "id": "ep_81",
+      "name": "Demystifying Vector Databases with Bob van Luijt",
+      "type": "episode",
+      "date": "2024-04-25",
+      "is_full": true
+    },
+    {
+      "id": "person_bob_van_luijt",
+      "name": "Bob van Luijt",
+      "type": "person"
+    },
+    {
+      "id": "ep_82",
+      "name": "TAKEAWAYS - Demystifying Vector Databases with Bob van Luijt",
+      "type": "episode",
+      "date": "2024-04-25",
+      "is_full": false
+    },
+    {
+      "id": "ep_83",
+      "name": "Crawl, Walk, and Run on How to be AI Ready with Peter Kromho",
+      "type": "episode",
+      "date": "2024-04-18",
+      "is_full": true
+    },
+    {
+      "id": "person_peter_kromhout_and_mariam_halfhide",
+      "name": "Peter Kromhout and Mariam Halfhide",
+      "type": "person"
+    },
+    {
+      "id": "ep_84",
+      "name": "TAKEAWAYS - Crawl, Walk, and Run on How to be AI Ready with ",
+      "type": "episode",
+      "date": "2024-04-17",
+      "is_full": false
+    },
+    {
+      "id": "ep_85",
+      "name": "Who\u2019s buying Data Catalogs and Why? with Neil Burge",
+      "type": "episode",
+      "date": "2024-04-11",
+      "is_full": true
+    },
+    {
+      "id": "person_neil_burge",
+      "name": "Neil Burge",
+      "type": "person"
+    },
+    {
+      "id": "ep_86",
+      "name": "TAKEAWAYS - Who\u2019s buying Data Catalogs and Why? with Neil Bu",
+      "type": "episode",
+      "date": "2024-04-10",
+      "is_full": false
+    },
+    {
+      "id": "ep_87",
+      "name": "Data Security and AI: How to get them on the same page with ",
+      "type": "episode",
+      "date": "2024-04-04",
+      "is_full": true
+    },
+    {
+      "id": "person_jesse_sedler",
+      "name": "Jesse Sedler",
+      "type": "person"
+    },
+    {
+      "id": "ep_88",
+      "name": "TAKEAWAYS - Data Security and AI: How to get them on the sam",
+      "type": "episode",
+      "date": "2024-04-03",
+      "is_full": false
+    },
+    {
+      "id": "ep_89",
+      "name": "Live from Data Council Austin: what\u2019s your honest no-bs take",
+      "type": "episode",
+      "date": "2024-03-28",
+      "is_full": true
+    },
+    {
+      "id": "ep_90",
+      "name": "What data will say when you\u2019re willing to listen with Scott ",
+      "type": "episode",
+      "date": "2024-03-21",
+      "is_full": true
+    },
+    {
+      "id": "person_scott_taylor",
+      "name": "Scott Taylor",
+      "type": "person"
+    },
+    {
+      "id": "ep_91",
+      "name": "TAKEAWAYS - What data will say when you\u2019re willing to listen",
+      "type": "episode",
+      "date": "2024-03-20",
+      "is_full": false
+    },
+    {
+      "id": "ep_92",
+      "name": "Gartner Data and Analytics 2024 Takeaways: Metadata is Every",
+      "type": "episode",
+      "date": "2024-03-14",
+      "is_full": true
+    },
+    {
+      "id": "person_cris_hadjez",
+      "name": "Cris Hadjez",
+      "type": "person"
+    },
+    {
+      "id": "ep_93",
+      "name": "When business goals and data strategies align with Amy Rayga",
+      "type": "episode",
+      "date": "2024-03-11",
+      "is_full": true
+    },
+    {
+      "id": "person_amy_raygada",
+      "name": "Amy Raygada",
+      "type": "person"
+    },
+    {
+      "id": "org_servicenow",
+      "name": "ServiceNow",
+      "type": "organization"
+    },
+    {
+      "id": "ep_94",
+      "name": "Don\u2019t lift and shift: Data governance to AI Governance with ",
+      "type": "episode",
+      "date": "2024-02-26",
+      "is_full": true
+    },
+    {
+      "id": "person_karen_meppen",
+      "name": "Karen Meppen",
+      "type": "person"
+    },
+    {
+      "id": "ep_95",
+      "name": "Another sucky year for startups and investment? with Eva Nah",
+      "type": "episode",
+      "date": "2024-02-15",
+      "is_full": true
+    },
+    {
+      "id": "person_eva_nahari",
+      "name": "Eva Nahari",
+      "type": "person"
+    },
+    {
+      "id": "org_vectara",
+      "name": "Vectara",
+      "type": "organization"
+    },
+    {
+      "id": "ep_96",
+      "name": "Bridging Innovation and Open Source to the Real World with P",
+      "type": "episode",
+      "date": "2024-02-08",
+      "is_full": true
+    },
+    {
+      "id": "person_paco_nathan",
+      "name": "Paco Nathan",
+      "type": "person"
+    },
+    {
+      "id": "ep_97",
+      "name": "Without information architecture, there is no AI with Jessic",
+      "type": "episode",
+      "date": "2024-01-31",
+      "is_full": true
+    },
+    {
+      "id": "person_jessica_talisman",
+      "name": "Jessica Talisman",
+      "type": "person"
+    },
+    {
+      "id": "org_amazon",
+      "name": "Amazon",
+      "type": "organization"
+    },
+    {
+      "id": "ep_98",
+      "name": "Productivity is not performance with Santona Tuli",
+      "type": "episode",
+      "date": "2024-01-30",
+      "is_full": true
+    },
+    {
+      "id": "person_santona_tuli",
+      "name": "Santona Tuli",
+      "type": "person"
+    },
+    {
+      "id": "org_upsolver",
+      "name": "Upsolver",
+      "type": "organization"
+    },
+    {
+      "id": "ep_99",
+      "name": "The data mesh-terclass",
+      "type": "episode",
+      "date": "2024-01-19",
+      "is_full": true
+    },
+    {
+      "id": "person_samia_rahman",
+      "name": "Samia Rahman",
+      "type": "person"
+    },
+    {
+      "id": "org_seagen",
+      "name": "Seagen",
+      "type": "organization"
+    },
+    {
+      "id": "ep_100",
+      "name": "How will AI impact 2024 and beyond?",
+      "type": "episode",
+      "date": "2024-01-11",
+      "is_full": true
+    },
+    {
+      "id": "person_jeremiah_owyang",
+      "name": "Jeremiah Owyang",
+      "type": "person"
+    },
+    {
+      "id": "org_blitzscaling_ventures",
+      "name": "Blitzscaling Ventures",
+      "type": "organization"
+    },
+    {
+      "id": "ep_101",
+      "name": "Season 6 Finale with Tim Gasper and Juan Sequeda",
+      "type": "episode",
+      "date": "2023-12-15",
+      "is_full": true
+    },
+    {
+      "id": "ep_102",
+      "name": "Data Contracts and Shift Responsibility to Left with Andrew ",
+      "type": "episode",
+      "date": "2023-12-01",
+      "is_full": true
+    },
+    {
+      "id": "person_andrew_jones",
+      "name": "Andrew Jones",
+      "type": "person"
+    },
+    {
+      "id": "org_gocardless;_inventor_of_data_contracts",
+      "name": "GoCardless; inventor of data contracts",
+      "type": "organization"
+    },
+    {
+      "id": "ep_103",
+      "name": "Making Data Science more Accessible with Doris Lee",
+      "type": "episode",
+      "date": "2023-11-22",
+      "is_full": true
+    },
+    {
+      "id": "person_doris_lee",
+      "name": "Doris Lee",
+      "type": "person"
+    },
+    {
+      "id": "ep_104",
+      "name": "Understanding the Role of Knowledge Graphs on Large Language",
+      "type": "episode",
+      "date": "2023-11-22",
+      "is_full": true
+    },
+    {
+      "id": "person_dean_allemang_&_bryon_jacob",
+      "name": "Dean Allemang & Bryon Jacob",
+      "type": "person"
+    },
+    {
+      "id": "org_dataworld",
+      "name": "data.world",
+      "type": "organization"
+    },
+    {
+      "id": "ep_105",
+      "name": "Data Storytelling with Kat Greenbrook (Episode 1)",
+      "type": "episode",
+      "date": "2023-11-02",
+      "is_full": true
+    },
+    {
+      "id": "person_kat_greenbrook",
+      "name": "Kat Greenbrook",
+      "type": "person"
+    },
+    {
+      "id": "ep_106",
+      "name": "Data Storytelling with Kat Greenbrook (Episode 2)",
+      "type": "episode",
+      "date": "2023-11-02",
+      "is_full": true
+    },
+    {
+      "id": "ep_107",
+      "name": "LLMs, Retrieval Augmented Generation, Knowledge Graph, Vecto",
+      "type": "episode",
+      "date": "2023-10-26",
+      "is_full": true
+    },
+    {
+      "id": "person_mike_dillinger",
+      "name": "Mike Dillinger",
+      "type": "person"
+    },
+    {
+      "id": "ep_108",
+      "name": "Data Catalogs, The Power of Collaboration with Krystin Kim",
+      "type": "episode",
+      "date": "2023-10-24",
+      "is_full": true
+    },
+    {
+      "id": "person_krystin_kim",
+      "name": "Krystin Kim",
+      "type": "person"
+    },
+    {
+      "id": "org_post_holdings",
+      "name": "Post Holdings",
+      "type": "organization"
+    },
+    {
+      "id": "ep_109",
+      "name": "Data Stewardship, Data Product Management, Data Governance a",
+      "type": "episode",
+      "date": "2023-10-12",
+      "is_full": true
+    },
+    {
+      "id": "ep_110",
+      "name": "Generative AI, Data Products and Business Value with Jon Coo",
+      "type": "episode",
+      "date": "2023-10-05",
+      "is_full": true
+    },
+    {
+      "id": "person_jon_cooke",
+      "name": "Jon Cooke",
+      "type": "person"
+    },
+    {
+      "id": "ep_111",
+      "name": "TAKEAWAYS \u2013 Generative AI, Data Products and Business Value ",
+      "type": "episode",
+      "date": "2023-10-04",
+      "is_full": false
+    },
+    {
+      "id": "ep_112",
+      "name": "From London to San Francisco: Summary of BigDataLDN and AI C",
+      "type": "episode",
+      "date": "2023-09-28",
+      "is_full": true
+    },
+    {
+      "id": "person_various_guests:_peter_norvig_nazneen_rajani_fabiana_clemente_danny_bickson_gev_sogomonian_yujian_tang_patrick_mcfadin_&_ofer_mendelevitch",
+      "name": "Various guests: Peter Norvig, Nazneen Rajani, Fabiana Clemente, Danny Bickson, Gev Sogomonian, Yujian Tang, Patrick McFadin & Ofer Mendelevitch",
+      "type": "person"
+    },
+    {
+      "id": "ep_113",
+      "name": "Business Value on the #meandatastreets with Chris Tabb",
+      "type": "episode",
+      "date": "2023-09-21",
+      "is_full": true
+    },
+    {
+      "id": "person_chris_tabb",
+      "name": "Chris Tabb",
+      "type": "person"
+    },
+    {
+      "id": "ep_114",
+      "name": "Tim and Juan Rant from Amsterdam: where is the data budget?",
+      "type": "episode",
+      "date": "2023-09-14",
+      "is_full": true
+    },
+    {
+      "id": "ep_115",
+      "name": "Data that Doesn\u2019t Drive Results is Useless with Alexa Westla",
+      "type": "episode",
+      "date": "2023-09-07",
+      "is_full": true
+    },
+    {
+      "id": "person_alexa_westlake",
+      "name": "Alexa Westlake",
+      "type": "person"
+    },
+    {
+      "id": "org_okta",
+      "name": "Okta",
+      "type": "organization"
+    },
+    {
+      "id": "ep_116",
+      "name": "What does Data Lakehouse, Sports and Generative AI have in c",
+      "type": "episode",
+      "date": "2023-08-31",
+      "is_full": true
+    },
+    {
+      "id": "person_ari_kaplan",
+      "name": "Ari Kaplan",
+      "type": "person"
+    },
+    {
+      "id": "ep_117",
+      "name": "From Technical to Business Data Strategy with Aaron Wilkerso",
+      "type": "episode",
+      "date": "2023-08-24",
+      "is_full": true
+    },
+    {
+      "id": "person_aaron_wilkerson",
+      "name": "Aaron Wilkerson",
+      "type": "person"
+    },
+    {
+      "id": "org_carhartt",
+      "name": "Carhartt",
+      "type": "organization"
+    },
+    {
+      "id": "ep_118",
+      "name": "TAKEAWAYS \u2013 From Technical to Business Data Strategy with Aa",
+      "type": "episode",
+      "date": "2023-08-24",
+      "is_full": false
+    },
+    {
+      "id": "ep_119",
+      "name": "Juan and Tim rant about AI and Chatting with your data",
+      "type": "episode",
+      "date": "2023-08-16",
+      "is_full": true
+    },
+    {
+      "id": "ep_120",
+      "name": "Data Sustainability w Simone Steel",
+      "type": "episode",
+      "date": "2023-08-10",
+      "is_full": true
+    },
+    {
+      "id": "person_simone_steel",
+      "name": "Simone Steel",
+      "type": "person"
+    },
+    {
+      "id": "ep_121",
+      "name": "Data Sustainability w/ Simone Steel",
+      "type": "episode",
+      "date": "2023-08-10",
+      "is_full": true
+    },
+    {
+      "id": "org_nationwide_building_society",
+      "name": "Nationwide Building Society.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_122",
+      "name": "Is Data a First Class Citizen in your Company? w/ Wendy Turn",
+      "type": "episode",
+      "date": "2023-08-03",
+      "is_full": true
+    },
+    {
+      "id": "person_wendy_turner\u2011williams",
+      "name": "Wendy Turner\u2011Williams",
+      "type": "person"
+    },
+    {
+      "id": "org_tableau/salesforce",
+      "name": "Tableau/Salesforce",
+      "type": "organization"
+    },
+    {
+      "id": "ep_123",
+      "name": "Ranting about (lack of) business value by data teams w/ Etha",
+      "type": "episode",
+      "date": "2023-07-27",
+      "is_full": true
+    },
+    {
+      "id": "person_ethan_aaron",
+      "name": "Ethan Aaron",
+      "type": "person"
+    },
+    {
+      "id": "ep_124",
+      "name": "People and Data w/ Tom Redman \u2013 \u201cThe Data Doc\u201d",
+      "type": "episode",
+      "date": "2023-07-20",
+      "is_full": true
+    },
+    {
+      "id": "person_tom_redman",
+      "name": "Tom Redman",
+      "type": "person"
+    },
+    {
+      "id": "ep_125",
+      "name": "Modeling and Semantics are more important than ever, because",
+      "type": "episode",
+      "date": "2023-07-13",
+      "is_full": true
+    },
+    {
+      "id": "person_joe_reis",
+      "name": "Joe Reis",
+      "type": "person"
+    },
+    {
+      "id": "ep_126",
+      "name": "Catalogs & Cocktails Live from Snowflake Summit 2023 in Las ",
+      "type": "episode",
+      "date": "2023-07-06",
+      "is_full": true
+    },
+    {
+      "id": "ep_127",
+      "name": "There is no \u201cI\u201d in Data Governance with Aakriti Agrawal (Ame",
+      "type": "episode",
+      "date": "2023-06-08",
+      "is_full": true
+    },
+    {
+      "id": "person_aakriti_agrawal",
+      "name": "Aakriti Agrawal",
+      "type": "person"
+    },
+    {
+      "id": "org_american_express",
+      "name": "American Express.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_128",
+      "name": "Juan\u2019s on Vacation",
+      "type": "episode",
+      "date": "2023-06-01",
+      "is_full": true
+    },
+    {
+      "id": "ep_129",
+      "name": "UPDATED RELEASE: Automating Data Governance \u2013 it\u2019s the only ",
+      "type": "episode",
+      "date": "2023-05-29",
+      "is_full": true
+    },
+    {
+      "id": "person_ben_clinch",
+      "name": "Ben Clinch",
+      "type": "person"
+    },
+    {
+      "id": "org_bt_group",
+      "name": "BT Group.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_130",
+      "name": "Using data to change the game w/ Maddy Want",
+      "type": "episode",
+      "date": "2023-05-18",
+      "is_full": true
+    },
+    {
+      "id": "person_madeleine_(maddy)_want",
+      "name": "Madeleine (Maddy) Want",
+      "type": "person"
+    },
+    {
+      "id": "org_fanatics_betting_&_gaming",
+      "name": "Fanatics Betting & Gaming",
+      "type": "organization"
+    },
+    {
+      "id": "ep_131",
+      "name": "Live from the Knowledge Graph Conference with Katariina Kari",
+      "type": "episode",
+      "date": "2023-05-11",
+      "is_full": true
+    },
+    {
+      "id": "person_katariina_kari",
+      "name": "Katariina Kari",
+      "type": "person"
+    },
+    {
+      "id": "org_ikea",
+      "name": "IKEA",
+      "type": "organization"
+    },
+    {
+      "id": "ep_132",
+      "name": "Unpacking Responsible AI with Ricardo Baeza\u2011Yates",
+      "type": "episode",
+      "date": "2023-05-04",
+      "is_full": true
+    },
+    {
+      "id": "person_ricardo_baeza\u2011yates",
+      "name": "Ricardo Baeza\u2011Yates",
+      "type": "person"
+    },
+    {
+      "id": "org_northeastern_university\u2019s_institute_for_experiential_ai",
+      "name": "Northeastern University\u2019s Institute for Experiential AI.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_133",
+      "name": "What is the DNA of a data organization? w/ Alex Vayner",
+      "type": "episode",
+      "date": "2023-04-27",
+      "is_full": true
+    },
+    {
+      "id": "person_alex_vayner",
+      "name": "Alex Vayner",
+      "type": "person"
+    },
+    {
+      "id": "org_kpmg",
+      "name": "KPMG.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_134",
+      "name": "KG + LLM = Happily Ever After? w/ Tony Seale",
+      "type": "episode",
+      "date": "2023-04-20",
+      "is_full": true
+    },
+    {
+      "id": "person_tony_seale",
+      "name": "Tony Seale",
+      "type": "person"
+    },
+    {
+      "id": "ep_135",
+      "name": "Do\u2019s and Don\u2019t for the Next Gen Data Leaders w/ Veronika Dur",
+      "type": "episode",
+      "date": "2023-04-13",
+      "is_full": true
+    },
+    {
+      "id": "person_veronika_durgin",
+      "name": "Veronika Durgin",
+      "type": "person"
+    },
+    {
+      "id": "org_saks_fifth_avenue",
+      "name": "Saks Fifth Avenue",
+      "type": "organization"
+    },
+    {
+      "id": "ep_136",
+      "name": "Passing the buck; Business or Data? w/ Benny Benford",
+      "type": "episode",
+      "date": "2023-04-06",
+      "is_full": true
+    },
+    {
+      "id": "person_benny_benford",
+      "name": "Benny Benford",
+      "type": "person"
+    },
+    {
+      "id": "org_jaguar_land_rover",
+      "name": "Jaguar Land Rover.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_137",
+      "name": "SHOW ME THE METRICS w/ Abhi Sivasailam",
+      "type": "episode",
+      "date": "2023-03-30",
+      "is_full": true
+    },
+    {
+      "id": "person_abhi_sivasailam",
+      "name": "Abhi Sivasailam",
+      "type": "person"
+    },
+    {
+      "id": "ep_138",
+      "name": "School of Building Data and Business Relationships w/ Kristi",
+      "type": "episode",
+      "date": "2023-03-16",
+      "is_full": true
+    },
+    {
+      "id": "person_kristin_schooley",
+      "name": "Kristin Schooley",
+      "type": "person"
+    },
+    {
+      "id": "org_learning_care_group_who_established_and_leads_the_business\u2011intelligence_and_data",
+      "name": "Learning Care Group who established and leads the business\u2011intelligence and data",
+      "type": "organization"
+    },
+    {
+      "id": "ep_139",
+      "name": "Data Operations vs. Data Analytics",
+      "type": "episode",
+      "date": "2023-03-09",
+      "is_full": true
+    },
+    {
+      "id": "ep_140",
+      "name": "Catalog & Cocktails: Throwback Elixir",
+      "type": "episode",
+      "date": "2023-03-02",
+      "is_full": true
+    },
+    {
+      "id": "ep_141",
+      "name": "Increasing adoption of data products, by design. w/ Brian T.",
+      "type": "episode",
+      "date": "2023-02-23",
+      "is_full": true
+    },
+    {
+      "id": "person_brian_t_o\u2019neill",
+      "name": "Brian T. O\u2019Neill",
+      "type": "person"
+    },
+    {
+      "id": "ep_142",
+      "name": "Metadata \u2013 is this a graph problem? w/ Mohammad Syed",
+      "type": "episode",
+      "date": "2023-02-16",
+      "is_full": true
+    },
+    {
+      "id": "person_mohammad_syed",
+      "name": "Mohammad Syed",
+      "type": "person"
+    },
+    {
+      "id": "org_capco",
+      "name": "Capco.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_143",
+      "name": "Everywhere you look, there it is \u2013 entity resolution w/ Jeff",
+      "type": "episode",
+      "date": "2023-02-09",
+      "is_full": true
+    },
+    {
+      "id": "person_jeff_jonas",
+      "name": "Jeff Jonas",
+      "type": "person"
+    },
+    {
+      "id": "ep_144",
+      "name": "Is Master Data Management (MDM) dead? w/ Malcolm Hawker",
+      "type": "episode",
+      "date": "2023-02-02",
+      "is_full": true
+    },
+    {
+      "id": "org_profisee_and_former_gartner_analyst",
+      "name": "Profisee and former Gartner analyst.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_145",
+      "name": "Data Modeling: your data isn\u2019t going to model itself w/ Anna",
+      "type": "episode",
+      "date": "2023-01-26",
+      "is_full": true
+    },
+    {
+      "id": "person_anna_abramova",
+      "name": "Anna Abramova",
+      "type": "person"
+    },
+    {
+      "id": "org_sqldbm",
+      "name": "SqlDBM",
+      "type": "organization"
+    },
+    {
+      "id": "ep_146",
+      "name": "Providing data business value and building data teams w/ Jan",
+      "type": "episode",
+      "date": "2023-01-19",
+      "is_full": true
+    },
+    {
+      "id": "person_jane_urban",
+      "name": "Jane Urban",
+      "type": "person"
+    },
+    {
+      "id": "org_takeda_pharmaceuticals",
+      "name": "Takeda Pharmaceuticals.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_147",
+      "name": "A conversation with the father of the data warehouse, Bill I",
+      "type": "episode",
+      "date": "2023-01-12",
+      "is_full": true
+    },
+    {
+      "id": "person_bill_inmon",
+      "name": "Bill Inmon",
+      "type": "person"
+    },
+    {
+      "id": "ep_148",
+      "name": "Season 4 Finale",
+      "type": "episode",
+      "date": "2022-12-15",
+      "is_full": true
+    },
+    {
+      "id": "ep_149",
+      "name": "2022 State of Data Governance",
+      "type": "episode",
+      "date": "2022-12-08",
+      "is_full": true
+    },
+    {
+      "id": "ep_150",
+      "name": "Getting into the Pool without Drowning. w/ Allison Sagraves",
+      "type": "episode",
+      "date": "2022-12-01",
+      "is_full": true
+    },
+    {
+      "id": "person_allison_sagraves",
+      "name": "Allison Sagraves",
+      "type": "person"
+    },
+    {
+      "id": "ep_151",
+      "name": "Are data teams keeping up with AI teams? w/ Theresa Kushner",
+      "type": "episode",
+      "date": "2022-11-17",
+      "is_full": true
+    },
+    {
+      "id": "person_theresa_kushner",
+      "name": "Theresa Kushner",
+      "type": "person"
+    },
+    {
+      "id": "org_ntt_data_services",
+      "name": "NTT DATA Services.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_152",
+      "name": "Where are the semantics in the data dictionary? w/ Dan Benne",
+      "type": "episode",
+      "date": "2022-11-10",
+      "is_full": true
+    },
+    {
+      "id": "person_dan_bennett",
+      "name": "Dan Bennett",
+      "type": "person"
+    },
+    {
+      "id": "org_s&p_global",
+      "name": "S&P Global.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_153",
+      "name": "Put the Business in charge of their own data w/ Gabi Steele ",
+      "type": "episode",
+      "date": "2022-11-03",
+      "is_full": true
+    },
+    {
+      "id": "person_gabi_steele_and_leah_weiss",
+      "name": "Gabi Steele and Leah Weiss",
+      "type": "person"
+    },
+    {
+      "id": "org_wework_and_launched_preql_to_solve_data\u2011transformation_challenges",
+      "name": "WeWork and launched Preql to solve data\u2011transformation challenges.",
+      "type": "organization"
+    },
+    {
+      "id": "ep_154",
+      "name": "Build bridges. Don\u2019t Burn them.",
+      "type": "episode",
+      "date": "2022-08-25",
+      "is_full": true
+    },
+    {
+      "id": "person_vip_parmar",
+      "name": "Vip Parmar",
+      "type": "person"
+    },
+    {
+      "id": "org_wpp",
+      "name": "WPP",
+      "type": "organization"
+    },
+    {
+      "id": "ep_155",
+      "name": "Data Models are Divas",
+      "type": "episode",
+      "date": "2022-06-23",
+      "is_full": true
+    },
+    {
+      "id": "person_ergest_xheblati",
+      "name": "Ergest Xheblati",
+      "type": "person"
+    },
+    {
+      "id": "org_everquote",
+      "name": "EverQuote",
+      "type": "organization"
+    },
+    {
+      "id": "ep_156",
+      "name": "Don\u2019t let good metadata go to waste",
+      "type": "episode",
+      "date": "2022-06-16",
+      "is_full": true
+    },
+    {
+      "id": "person_peter_kapur",
+      "name": "Peter Kapur",
+      "type": "person"
+    },
+    {
+      "id": "org_aig",
+      "name": "AIG",
+      "type": "organization"
+    },
+    {
+      "id": "ep_157",
+      "name": "Getting all meta about data",
+      "type": "episode",
+      "date": "2022-06-09",
+      "is_full": true
+    },
+    {
+      "id": "org_sanjmo;_former_vp_of_big_data_&_advanced_analytics_at_gartner",
+      "name": "SanjMo; former VP of Big Data & Advanced Analytics at Gartner",
+      "type": "organization"
+    },
+    {
+      "id": "ep_158",
+      "name": "Does our understanding of data bias our analytics outcomes?",
+      "type": "episode",
+      "date": "2022-06-02",
+      "is_full": true
+    },
+    {
+      "id": "ep_159",
+      "name": "The Data Entrepreneur\u2019s Essentials",
+      "type": "episode",
+      "date": "2022-05-26",
+      "is_full": true
+    },
+    {
+      "id": "person_brett_hurt",
+      "name": "Brett Hurt",
+      "type": "person"
+    },
+    {
+      "id": "ep_160",
+      "name": "A Roadmap to Data Mesh Success",
+      "type": "episode",
+      "date": "2022-05-19",
+      "is_full": true
+    },
+    {
+      "id": "person_omar_khawaja",
+      "name": "Omar Khawaja",
+      "type": "person"
+    },
+    {
+      "id": "org_givaudan;_previously_led_bi_&_analytics_at_roche",
+      "name": "Givaudan; previously led BI & Analytics at Roche",
+      "type": "organization"
+    },
+    {
+      "id": "ep_161",
+      "name": "Is your Modern Data Stack delivering value?",
+      "type": "episode",
+      "date": "2022-05-12",
+      "is_full": true
+    },
+    {
+      "id": "person_sarah_krasnik",
+      "name": "Sarah Krasnik",
+      "type": "person"
+    },
+    {
+      "id": "org_perpay;_data_&_analytics_writer",
+      "name": "Perpay; data & analytics writer",
+      "type": "organization"
+    },
+    {
+      "id": "ep_162",
+      "name": "Automating the Enterprise: Live from the Knowledge Graph Con",
+      "type": "episode",
+      "date": "2022-05-05",
+      "is_full": true
+    },
+    {
+      "id": "person_fran\u00e7ois_scharffe",
+      "name": "Fran\u00e7ois Scharffe",
+      "type": "person"
+    },
+    {
+      "id": "ep_163",
+      "name": "A layered approach to data meaning and measurement",
+      "type": "episode",
+      "date": "2022-04-28",
+      "is_full": true
+    },
+    {
+      "id": "person_nick_handel",
+      "name": "Nick Handel",
+      "type": "person"
+    },
+    {
+      "id": "ep_164",
+      "name": "Everybody\u2019s an imposter sometimes",
+      "type": "episode",
+      "date": "2022-04-21",
+      "is_full": true
+    },
+    {
+      "id": "person_steve_perry",
+      "name": "Steve Perry",
+      "type": "person"
+    },
+    {
+      "id": "org_genius_sports",
+      "name": "Genius Sports",
+      "type": "organization"
+    },
+    {
+      "id": "ep_165",
+      "name": "Why are we so bad at this modern data stack?",
+      "type": "episode",
+      "date": "2022-04-14",
+      "is_full": true
+    },
+    {
+      "id": "person_chad_sanderson",
+      "name": "Chad Sanderson",
+      "type": "person"
+    },
+    {
+      "id": "org_convoy",
+      "name": "Convoy",
+      "type": "organization"
+    },
+    {
+      "id": "ep_166",
+      "name": "Can data policy drive data productivity?",
+      "type": "episode",
+      "date": "2022-04-07",
+      "is_full": true
+    },
+    {
+      "id": "person_nong_li",
+      "name": "Nong Li",
+      "type": "person"
+    },
+    {
+      "id": "ep_167",
+      "name": "The future of data is knowledge",
+      "type": "episode",
+      "date": "2022-03-31",
+      "is_full": true
+    },
+    {
+      "id": "person_bob_muglia",
+      "name": "Bob Muglia",
+      "type": "person"
+    },
+    {
+      "id": "ep_168",
+      "name": "Agile like a fox, but for data",
+      "type": "episode",
+      "date": "2022-03-17",
+      "is_full": true
+    },
+    {
+      "id": "person_shane_gibson",
+      "name": "Shane Gibson",
+      "type": "person"
+    },
+    {
+      "id": "ep_169",
+      "name": "Your privacy is my currency",
+      "type": "episode",
+      "date": "2022-03-10",
+      "is_full": true
+    },
+    {
+      "id": "person_patricia_thaine",
+      "name": "Patricia Thaine",
+      "type": "person"
+    },
+    {
+      "id": "ep_170",
+      "name": "Are you swimming upstream by not streaming data?",
+      "type": "episode",
+      "date": "2022-03-03",
+      "is_full": true
+    },
+    {
+      "id": "person_arjun_narayan",
+      "name": "Arjun Narayan",
+      "type": "person"
+    },
+    {
+      "id": "ep_171",
+      "name": "Why are data transformations such a big deal? (Live from the",
+      "type": "episode",
+      "date": "2022-02-24",
+      "is_full": true
+    },
+    {
+      "id": "ep_172",
+      "name": "The easiest data is always the hardest to model",
+      "type": "episode",
+      "date": "2022-02-17",
+      "is_full": true
+    },
+    {
+      "id": "person_karen_lopez",
+      "name": "Karen Lopez",
+      "type": "person"
+    },
+    {
+      "id": "org_infoadvisors",
+      "name": "InfoAdvisors",
+      "type": "organization"
+    },
+    {
+      "id": "ep_173",
+      "name": "The three most important letters in data & analytics are W\u2011H",
+      "type": "episode",
+      "date": "2022-02-10",
+      "is_full": true
+    },
+    {
+      "id": "person_luke_slotwinski",
+      "name": "Luke Slotwinski",
+      "type": "person"
+    },
+    {
+      "id": "org_prologis",
+      "name": "Prologis",
+      "type": "organization"
+    },
+    {
+      "id": "ep_174",
+      "name": "Can Agile Practices Disrupt Data Governance?",
+      "type": "episode",
+      "date": "2022-02-03",
+      "is_full": true
+    },
+    {
+      "id": "person_laura_madsen",
+      "name": "Laura Madsen",
+      "type": "person"
+    },
+    {
+      "id": "ep_175",
+      "name": "Can the Data Mesh be Governed?",
+      "type": "episode",
+      "date": "2022-01-27",
+      "is_full": true
+    },
+    {
+      "id": "person_dora_boussias",
+      "name": "Dora Boussias",
+      "type": "person"
+    },
+    {
+      "id": "org_stryker",
+      "name": "Stryker",
+      "type": "organization"
+    },
+    {
+      "id": "ep_176",
+      "name": "What good is a Metrics Layer?",
+      "type": "episode",
+      "date": "2022-01-20",
+      "is_full": true
+    },
+    {
+      "id": "person_benn_stancil",
+      "name": "Benn Stancil",
+      "type": "person"
+    },
+    {
+      "id": "ep_177",
+      "name": "Modern Data Work at Drizly",
+      "type": "episode",
+      "date": "2022-01-13",
+      "is_full": true
+    },
+    {
+      "id": "person_emily_hawkins",
+      "name": "Emily Hawkins",
+      "type": "person"
+    },
+    {
+      "id": "org_drizly",
+      "name": "Drizly",
+      "type": "organization"
+    },
+    {
+      "id": "ep_178",
+      "name": "Will 2022 change how we think about data?",
+      "type": "episode",
+      "date": "2022-01-06",
+      "is_full": true
+    },
+    {
+      "id": "person_sarah_catanzaro",
+      "name": "Sarah Catanzaro",
+      "type": "person"
+    },
+    {
+      "id": "org_amplify_partners",
+      "name": "Amplify Partners",
+      "type": "organization"
+    },
+    {
+      "id": "ep_179",
+      "name": "Please be quiet. The machines are talking.",
+      "type": "episode",
+      "date": "2021-12-16",
+      "is_full": true
+    },
+    {
+      "id": "person_steve_whitla",
+      "name": "Steve Whitla",
+      "type": "person"
+    },
+    {
+      "id": "ep_180",
+      "name": "What happens when everyone is a data worker?",
+      "type": "episode",
+      "date": "2021-12-09",
+      "is_full": true
+    },
+    {
+      "id": "person_kelly_wright",
+      "name": "Kelly Wright",
+      "type": "person"
+    },
+    {
+      "id": "org_gong;_former_evp_at_tableau",
+      "name": "Gong; former EVP at Tableau",
+      "type": "organization"
+    },
+    {
+      "id": "ep_181",
+      "name": "Modern Data Stack: Technology, Methodology, or both?",
+      "type": "episode",
+      "date": "2021-12-02",
+      "is_full": true
+    },
+    {
+      "id": "person_nick_schrock",
+      "name": "Nick Schrock",
+      "type": "person"
+    },
+    {
+      "id": "ep_182",
+      "name": "Long live the monolith?",
+      "type": "episode",
+      "date": "2021-11-18",
+      "is_full": true
+    },
+    {
+      "id": "person_andy_palmer",
+      "name": "Andy Palmer",
+      "type": "person"
+    },
+    {
+      "id": "ep_183",
+      "name": "Is self\u2011service BI the answer?",
+      "type": "episode",
+      "date": "2021-11-11",
+      "is_full": true
+    },
+    {
+      "id": "person_cindi_howson",
+      "name": "Cindi Howson",
+      "type": "person"
+    },
+    {
+      "id": "org_thoughtspot",
+      "name": "ThoughtSpot",
+      "type": "organization"
+    },
+    {
+      "id": "ep_184",
+      "name": "Data tools: the good, the bad, and the ugly",
+      "type": "episode",
+      "date": "2021-11-04",
+      "is_full": true
+    },
+    {
+      "id": "person_erik_bernhardsson",
+      "name": "Erik Bernhardsson",
+      "type": "person"
+    },
+    {
+      "id": "org_bettercom",
+      "name": "Better.com",
+      "type": "organization"
+    },
+    {
+      "id": "ep_185",
+      "name": "Data is the new... Herman Miller Aeron Chair?",
+      "type": "episode",
+      "date": "2021-10-28",
+      "is_full": true
+    },
+    {
+      "id": "person_doug_laney",
+      "name": "Doug Laney",
+      "type": "person"
+    },
+    {
+      "id": "org_west_monroe;_author_and_speaker_on_infonomics",
+      "name": "West Monroe; author and speaker on infonomics",
+      "type": "organization"
+    },
+    {
+      "id": "ep_186",
+      "name": "The Data Mesh Debate",
+      "type": "episode",
+      "date": "2021-10-21",
+      "is_full": true
+    },
+    {
+      "id": "ep_187",
+      "name": "Sure, you\u2019re responsible, but are you ethical?",
+      "type": "episode",
+      "date": "2021-10-14",
+      "is_full": true
+    },
+    {
+      "id": "person_partha_srinivasa",
+      "name": "Partha Srinivasa",
+      "type": "person"
+    },
+    {
+      "id": "org_erie_insurance",
+      "name": "Erie Insurance",
+      "type": "organization"
+    },
+    {
+      "id": "ep_188",
+      "name": "A data analyst, scientist, and engineer walk into a bar...",
+      "type": "episode",
+      "date": "2021-10-07",
+      "is_full": true
+    },
+    {
+      "id": "person_danielle_oberdier",
+      "name": "Danielle Oberdier",
+      "type": "person"
+    },
+    {
+      "id": "ep_189",
+      "name": "Do we have a data infrastructure crisis?",
+      "type": "episode",
+      "date": "2021-09-30",
+      "is_full": true
+    },
+    {
+      "id": "person_mammad_zadeh",
+      "name": "Mammad Zadeh",
+      "type": "person"
+    },
+    {
+      "id": "org_intuit",
+      "name": "Intuit",
+      "type": "organization"
+    },
+    {
+      "id": "ep_190",
+      "name": "Fashion Week...but for data",
+      "type": "episode",
+      "date": "2021-09-23",
+      "is_full": true
+    },
+    {
+      "id": "person_jans_aasman",
+      "name": "Jans Aasman",
+      "type": "person"
+    },
+    {
+      "id": "ep_191",
+      "name": "How to think about data value",
+      "type": "episode",
+      "date": "2021-09-16",
+      "is_full": true
+    },
+    {
+      "id": "person_lars_albertsson",
+      "name": "Lars Albertsson",
+      "type": "person"
+    },
+    {
+      "id": "ep_192",
+      "name": "What\u2019s the deal with Reverse ETL?",
+      "type": "episode",
+      "date": "2021-09-09",
+      "is_full": true
+    },
+    {
+      "id": "person_tejas_manohar",
+      "name": "Tejas Manohar",
+      "type": "person"
+    },
+    {
+      "id": "ep_193",
+      "name": "The Era of Data Usage",
+      "type": "episode",
+      "date": "2021-09-02",
+      "is_full": true
+    },
+    {
+      "id": "person_mike_ferguson",
+      "name": "Mike Ferguson",
+      "type": "person"
+    },
+    {
+      "id": "ep_194",
+      "name": "Can\u2019t spell BUZZWORDS without BS",
+      "type": "episode",
+      "date": "2021-08-26",
+      "is_full": true
+    },
+    {
+      "id": "person_kirk_borne",
+      "name": "Kirk Borne",
+      "type": "person"
+    },
+    {
+      "id": "org_dataprime",
+      "name": "DataPrime",
+      "type": "organization"
+    },
+    {
+      "id": "ep_195",
+      "name": "Free\u2011range, grass\u2011fed, open\u2011source data",
+      "type": "episode",
+      "date": "2021-08-19",
+      "is_full": true
+    },
+    {
+      "id": "person_denise_gosnell",
+      "name": "Denise Gosnell",
+      "type": "person"
+    },
+    {
+      "id": "ep_196",
+      "name": "Documents and Clouds and Graphs, Oh My!",
+      "type": "episode",
+      "date": "2021-08-12",
+      "is_full": true
+    },
+    {
+      "id": "person_emil_eifrem",
+      "name": "Emil Eifrem",
+      "type": "person"
+    },
+    {
+      "id": "ep_197",
+      "name": "SEASON TWO KICKOFF w/ DJ Patil",
+      "type": "episode",
+      "date": "2021-08-04",
+      "is_full": true
+    },
+    {
+      "id": "person_dj_patil",
+      "name": "DJ Patil",
+      "type": "person"
+    },
+    {
+      "id": "ep_198",
+      "name": "Don\u2019t Treat your Data Stack like a Fine Wine \u2013 guest Brandon",
+      "type": "episode",
+      "date": "2021-05-13",
+      "is_full": true
+    },
+    {
+      "id": "person_brandon_chen",
+      "name": "Brandon Chen",
+      "type": "person"
+    },
+    {
+      "id": "org_fivetran",
+      "name": "Fivetran",
+      "type": "organization"
+    },
+    {
+      "id": "ep_199",
+      "name": "Data Organization: Reap what you Sow \u2013 guest Meetesh Karia (",
+      "type": "episode",
+      "date": "2021-05-06",
+      "is_full": true
+    },
+    {
+      "id": "person_meetesh_karia",
+      "name": "Meetesh Karia",
+      "type": "person"
+    },
+    {
+      "id": "org_the_zebra",
+      "name": "The Zebra",
+      "type": "organization"
+    },
+    {
+      "id": "ep_200",
+      "name": "What\u2019s the Secret Recipe for DataOps? \u2013 guest Chris Bergh (D",
+      "type": "episode",
+      "date": "2021-04-29",
+      "is_full": true
+    },
+    {
+      "id": "person_chris_bergh",
+      "name": "Chris Bergh",
+      "type": "person"
+    },
+    {
+      "id": "org_datakitchen;_he_has_over_25_years_of_software_engineering_and_executive_experien",
+      "name": "DataKitchen; he has over 25 years of software engineering and executive experien",
+      "type": "organization"
+    },
+    {
+      "id": "ep_201",
+      "name": "Has Business Intelligence Jumped the Shark? \u2013 guest Peter Ba",
+      "type": "episode",
+      "date": "2021-01-14",
+      "is_full": true
+    },
+    {
+      "id": "person_peter_bailis",
+      "name": "Peter Bailis",
+      "type": "person"
+    },
+    {
+      "id": "org_stanford",
+      "name": "Stanford",
+      "type": "organization"
+    },
+    {
+      "id": "ep_202",
+      "name": "The Future of BI is AI \u2013 hosts Tim Gasper & Juan Sequeda",
+      "type": "episode",
+      "date": "2021-05-27",
+      "is_full": true
+    }
+  ],
+  "links": [
+    {
+      "source": "person_lena_hall",
+      "target": "ep_1",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_lena_hall",
+      "target": "org_akamai",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_lena_hall",
+      "target": "ep_2",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_lena_hall",
+      "target": "org_akamai",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_arielle_rolland",
+      "target": "ep_3",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_arielle_rolland",
+      "target": "ep_4",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_danielle_crop",
+      "target": "ep_5",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_danielle_crop",
+      "target": "ep_6",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jessica_zu\u00f1iga",
+      "target": "ep_7",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jessica_zu\u00f1iga",
+      "target": "org_blueyeti",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_jessica_zu\u00f1iga",
+      "target": "ep_8",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jessica_zu\u00f1iga",
+      "target": "org_blueyeti",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_alex_bertails",
+      "target": "ep_9",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alex_bertails",
+      "target": "org_netflix",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_alex_bertails",
+      "target": "ep_10",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alex_bertails",
+      "target": "org_netflix",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_sanjeev_mohan",
+      "target": "ep_11",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sanjeev_mohan",
+      "target": "ep_12",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_rebecca_o'kill",
+      "target": "ep_15",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_rebecca_o'kill",
+      "target": "ep_16",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_barr_moses",
+      "target": "ep_18",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_barr_moses",
+      "target": "ep_19",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_blake_burch",
+      "target": "ep_21",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_blake_burch",
+      "target": "ep_22",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_hugo_bowne_anderson",
+      "target": "ep_23",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_hugo_bowne_anderson",
+      "target": "ep_24",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_hala_nelson",
+      "target": "ep_25",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_hala_nelson",
+      "target": "ep_26",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_patrick_cuba",
+      "target": "ep_27",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_patrick_cuba",
+      "target": "ep_28",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jean_georges_perrin",
+      "target": "ep_29",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jean_georges_perrin",
+      "target": "ep_30",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_frances_o'rafferty",
+      "target": "ep_31",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_frances_o'rafferty",
+      "target": "org_baringa",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_frances_o'rafferty",
+      "target": "ep_32",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_frances_o'rafferty",
+      "target": "org_baringa",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_winfried_etzel",
+      "target": "ep_35",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_winfried_etzel",
+      "target": "ep_36",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alexander_torrenegra",
+      "target": "ep_37",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alexander_torrenegra",
+      "target": "ep_38",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_olga_maydanchik",
+      "target": "ep_39",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_olga_maydanchik",
+      "target": "ep_40",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_lindsay_murphy",
+      "target": "ep_41",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_lindsay_murphy",
+      "target": "ep_42",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jordan_morrow",
+      "target": "ep_43",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jordan_morrow",
+      "target": "ep_44",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ole_olesen_bagneux",
+      "target": "ep_47",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ole_olesen_bagneux",
+      "target": "ep_48",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_nicola_askham",
+      "target": "ep_49",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_nicola_askham",
+      "target": "ep_50",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ethan_mollick",
+      "target": "ep_51",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ethan_mollick",
+      "target": "org_the_wharton_school_of_the_university_of_pennsylvania",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ethan_mollick",
+      "target": "ep_52",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ethan_mollick",
+      "target": "org_the_wharton_school_of_the_university_of_pennsylvania",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_vinoth_chandar",
+      "target": "ep_53",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_vinoth_chandar",
+      "target": "ep_54",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_malcolm_hawker",
+      "target": "ep_55",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_malcolm_hawker",
+      "target": "org_profisee_and_host_of_cdo_matters_podcast",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_andrea_gioia",
+      "target": "ep_56",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_andrea_gioia",
+      "target": "org_quantyca_and_co_founder_of_blindata",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_andrea_gioia",
+      "target": "ep_57",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_andrea_gioia",
+      "target": "org_quantyca_and_co_founder_of_blindata",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_colleen_tartow_phd",
+      "target": "ep_58",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_colleen_tartow_phd",
+      "target": "org_vast_data",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_colleen_tartow_phd",
+      "target": "ep_59",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_colleen_tartow_phd",
+      "target": "org_vast_data",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_mike_evans",
+      "target": "ep_60",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mike_evans",
+      "target": "org_amplifi",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_mike_evans",
+      "target": "ep_61",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mike_evans",
+      "target": "org_amplifi",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_kevin_hu",
+      "target": "ep_62",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kevin_hu",
+      "target": "ep_63",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dael_williamson",
+      "target": "ep_64",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dael_williamson",
+      "target": "org_databricks",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_dael_williamson",
+      "target": "ep_65",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dael_williamson",
+      "target": "org_databricks",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_mariam_halfhide",
+      "target": "ep_66",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mariam_halfhide",
+      "target": "ep_67",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_amalia_child",
+      "target": "ep_68",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dawn_carter",
+      "target": "ep_69",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dawn_carter",
+      "target": "org_bae_systems",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_tiankai_feng",
+      "target": "ep_70",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_tiankai_feng",
+      "target": "org_thoughtworks_europe_and_author_of_humanizing_data_strategy",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_anna_bergevin",
+      "target": "ep_71",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_anna_bergevin",
+      "target": "org_resmed",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_anna_bergevin",
+      "target": "ep_72",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_anna_bergevin",
+      "target": "org_resmed",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_brandon_gadoci",
+      "target": "ep_74",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_brandon_gadoci",
+      "target": "org_data",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_brandon_gadoci",
+      "target": "ep_75",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_brandon_gadoci",
+      "target": "org_data",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ora_lassila",
+      "target": "ep_77",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ora_lassila",
+      "target": "ep_78",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sol_rashidi",
+      "target": "ep_79",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sol_rashidi",
+      "target": "ep_80",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_bob_van_luijt",
+      "target": "ep_81",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_bob_van_luijt",
+      "target": "ep_82",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_peter_kromhout_and_mariam_halfhide",
+      "target": "ep_83",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_peter_kromhout_and_mariam_halfhide",
+      "target": "ep_84",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_neil_burge",
+      "target": "ep_85",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_neil_burge",
+      "target": "ep_86",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jesse_sedler",
+      "target": "ep_87",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jesse_sedler",
+      "target": "ep_88",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_scott_taylor",
+      "target": "ep_90",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_scott_taylor",
+      "target": "ep_91",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_cris_hadjez",
+      "target": "ep_92",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_amy_raygada",
+      "target": "ep_93",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_amy_raygada",
+      "target": "org_servicenow",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_karen_meppen",
+      "target": "ep_94",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_eva_nahari",
+      "target": "ep_95",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_eva_nahari",
+      "target": "org_vectara",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_paco_nathan",
+      "target": "ep_96",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jessica_talisman",
+      "target": "ep_97",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jessica_talisman",
+      "target": "org_amazon",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_santona_tuli",
+      "target": "ep_98",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_santona_tuli",
+      "target": "org_upsolver",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_samia_rahman",
+      "target": "ep_99",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_samia_rahman",
+      "target": "org_seagen",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_jeremiah_owyang",
+      "target": "ep_100",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jeremiah_owyang",
+      "target": "org_blitzscaling_ventures",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_andrew_jones",
+      "target": "ep_102",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_andrew_jones",
+      "target": "org_gocardless;_inventor_of_data_contracts",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_doris_lee",
+      "target": "ep_103",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dean_allemang_&_bryon_jacob",
+      "target": "ep_104",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dean_allemang_&_bryon_jacob",
+      "target": "org_dataworld",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_kat_greenbrook",
+      "target": "ep_105",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kat_greenbrook",
+      "target": "ep_106",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mike_dillinger",
+      "target": "ep_107",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_krystin_kim",
+      "target": "ep_108",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_krystin_kim",
+      "target": "org_post_holdings",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_jon_cooke",
+      "target": "ep_110",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_various_guests:_peter_norvig_nazneen_rajani_fabiana_clemente_danny_bickson_gev_sogomonian_yujian_tang_patrick_mcfadin_&_ofer_mendelevitch",
+      "target": "ep_112",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_chris_tabb",
+      "target": "ep_113",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alexa_westlake",
+      "target": "ep_115",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alexa_westlake",
+      "target": "org_okta",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ari_kaplan",
+      "target": "ep_116",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ari_kaplan",
+      "target": "org_databricks",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_aaron_wilkerson",
+      "target": "ep_117",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_aaron_wilkerson",
+      "target": "org_carhartt",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_aaron_wilkerson",
+      "target": "ep_118",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_aaron_wilkerson",
+      "target": "org_carhartt",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_simone_steel",
+      "target": "ep_120",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_simone_steel",
+      "target": "ep_121",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_simone_steel",
+      "target": "org_nationwide_building_society",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_wendy_turner\u2011williams",
+      "target": "ep_122",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_wendy_turner\u2011williams",
+      "target": "org_tableau/salesforce",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ethan_aaron",
+      "target": "ep_123",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_tom_redman",
+      "target": "ep_124",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_joe_reis",
+      "target": "ep_125",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_aakriti_agrawal",
+      "target": "ep_127",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_aakriti_agrawal",
+      "target": "org_american_express",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ben_clinch",
+      "target": "ep_129",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ben_clinch",
+      "target": "org_bt_group",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_madeleine_(maddy)_want",
+      "target": "ep_130",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_madeleine_(maddy)_want",
+      "target": "org_fanatics_betting_&_gaming",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_katariina_kari",
+      "target": "ep_131",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_katariina_kari",
+      "target": "org_ikea",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ricardo_baeza\u2011yates",
+      "target": "ep_132",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ricardo_baeza\u2011yates",
+      "target": "org_northeastern_university\u2019s_institute_for_experiential_ai",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_alex_vayner",
+      "target": "ep_133",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_alex_vayner",
+      "target": "org_kpmg",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_tony_seale",
+      "target": "ep_134",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_veronika_durgin",
+      "target": "ep_135",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_veronika_durgin",
+      "target": "org_saks_fifth_avenue",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_benny_benford",
+      "target": "ep_136",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_benny_benford",
+      "target": "org_jaguar_land_rover",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_abhi_sivasailam",
+      "target": "ep_137",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kristin_schooley",
+      "target": "ep_138",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kristin_schooley",
+      "target": "org_learning_care_group_who_established_and_leads_the_business\u2011intelligence_and_data",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_brian_t_o\u2019neill",
+      "target": "ep_141",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mohammad_syed",
+      "target": "ep_142",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mohammad_syed",
+      "target": "org_capco",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_jeff_jonas",
+      "target": "ep_143",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_malcolm_hawker",
+      "target": "ep_144",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_malcolm_hawker",
+      "target": "org_profisee_and_former_gartner_analyst",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_anna_abramova",
+      "target": "ep_145",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_anna_abramova",
+      "target": "org_sqldbm",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_jane_urban",
+      "target": "ep_146",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_jane_urban",
+      "target": "org_takeda_pharmaceuticals",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_bill_inmon",
+      "target": "ep_147",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_allison_sagraves",
+      "target": "ep_150",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_theresa_kushner",
+      "target": "ep_151",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_theresa_kushner",
+      "target": "org_ntt_data_services",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_dan_bennett",
+      "target": "ep_152",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dan_bennett",
+      "target": "org_s&p_global",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_gabi_steele_and_leah_weiss",
+      "target": "ep_153",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_gabi_steele_and_leah_weiss",
+      "target": "org_wework_and_launched_preql_to_solve_data\u2011transformation_challenges",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_vip_parmar",
+      "target": "ep_154",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_vip_parmar",
+      "target": "org_wpp",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_ergest_xheblati",
+      "target": "ep_155",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_ergest_xheblati",
+      "target": "org_everquote",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_peter_kapur",
+      "target": "ep_156",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_peter_kapur",
+      "target": "org_aig",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_sanjeev_mohan",
+      "target": "ep_157",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sanjeev_mohan",
+      "target": "org_sanjmo;_former_vp_of_big_data_&_advanced_analytics_at_gartner",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_brett_hurt",
+      "target": "ep_159",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_omar_khawaja",
+      "target": "ep_160",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_omar_khawaja",
+      "target": "org_givaudan;_previously_led_bi_&_analytics_at_roche",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_sarah_krasnik",
+      "target": "ep_161",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sarah_krasnik",
+      "target": "org_perpay;_data_&_analytics_writer",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_fran\u00e7ois_scharffe",
+      "target": "ep_162",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_nick_handel",
+      "target": "ep_163",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_steve_perry",
+      "target": "ep_164",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_steve_perry",
+      "target": "org_genius_sports",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_chad_sanderson",
+      "target": "ep_165",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_chad_sanderson",
+      "target": "org_convoy",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_nong_li",
+      "target": "ep_166",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_bob_muglia",
+      "target": "ep_167",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_shane_gibson",
+      "target": "ep_168",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_patricia_thaine",
+      "target": "ep_169",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_arjun_narayan",
+      "target": "ep_170",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_karen_lopez",
+      "target": "ep_172",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_karen_lopez",
+      "target": "org_infoadvisors",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_luke_slotwinski",
+      "target": "ep_173",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_luke_slotwinski",
+      "target": "org_prologis",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_laura_madsen",
+      "target": "ep_174",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dora_boussias",
+      "target": "ep_175",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dora_boussias",
+      "target": "org_stryker",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_benn_stancil",
+      "target": "ep_176",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_emily_hawkins",
+      "target": "ep_177",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_emily_hawkins",
+      "target": "org_drizly",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_sarah_catanzaro",
+      "target": "ep_178",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_sarah_catanzaro",
+      "target": "org_amplify_partners",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_steve_whitla",
+      "target": "ep_179",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kelly_wright",
+      "target": "ep_180",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kelly_wright",
+      "target": "org_gong;_former_evp_at_tableau",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_nick_schrock",
+      "target": "ep_181",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_andy_palmer",
+      "target": "ep_182",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_cindi_howson",
+      "target": "ep_183",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_cindi_howson",
+      "target": "org_thoughtspot",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_erik_bernhardsson",
+      "target": "ep_184",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_erik_bernhardsson",
+      "target": "org_bettercom",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_doug_laney",
+      "target": "ep_185",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_doug_laney",
+      "target": "org_west_monroe;_author_and_speaker_on_infonomics",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_partha_srinivasa",
+      "target": "ep_187",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_partha_srinivasa",
+      "target": "org_erie_insurance",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_danielle_oberdier",
+      "target": "ep_188",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mammad_zadeh",
+      "target": "ep_189",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mammad_zadeh",
+      "target": "org_intuit",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_jans_aasman",
+      "target": "ep_190",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_lars_albertsson",
+      "target": "ep_191",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_tejas_manohar",
+      "target": "ep_192",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_mike_ferguson",
+      "target": "ep_193",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kirk_borne",
+      "target": "ep_194",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_kirk_borne",
+      "target": "org_dataprime",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_denise_gosnell",
+      "target": "ep_195",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_emil_eifrem",
+      "target": "ep_196",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_dj_patil",
+      "target": "ep_197",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_brandon_chen",
+      "target": "ep_198",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_brandon_chen",
+      "target": "org_fivetran",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_meetesh_karia",
+      "target": "ep_199",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_meetesh_karia",
+      "target": "org_the_zebra",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_chris_bergh",
+      "target": "ep_200",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_chris_bergh",
+      "target": "org_datakitchen;_he_has_over_25_years_of_software_engineering_and_executive_experien",
+      "type": "AFFILIATED_WITH"
+    },
+    {
+      "source": "person_peter_bailis",
+      "target": "ep_201",
+      "type": "GUEST_ON"
+    },
+    {
+      "source": "person_peter_bailis",
+      "target": "org_stanford",
+      "type": "AFFILIATED_WITH"
+    }
+  ]
+}
