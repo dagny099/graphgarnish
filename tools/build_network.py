@@ -287,9 +287,80 @@ def strip_html(raw: str) -> str:
     return re.sub(r"\s+", " ", txt).strip()
 
 
+START_TAG_RE = re.compile(
+    r"""<([A-Za-z_][\w:.\-]*)((?:\s+[A-Za-z_][\w:.\-]*\s*=\s*(?:"[^"]*"|'[^']*'))+)(\s*/?)>""")
+ATTR_RE = re.compile(r"""([A-Za-z_][\w:.\-]*)\s*=\s*("[^"]*"|'[^']*')""")
+
+
+def dedupe_attributes(xml_text: str) -> str:
+    """Drop repeated attributes from start tags, keeping the first of each.
+
+    Real podcast feeds declare the same namespace twice often enough to matter,
+    and Python's XML parser treats that as fatal ("duplicate attribute") even
+    though every consumer in the wild accepts it."""
+
+    def fix(match):
+        tag, attrs, close = match.groups()
+        seen, kept = set(), []
+        for name, value in ATTR_RE.findall(attrs):
+            if name in seen:
+                continue
+            seen.add(name)
+            kept.append(f'{name}={value}')
+        return f"<{tag}{' ' + ' '.join(kept) if kept else ''}{close}>"
+
+    return START_TAG_RE.sub(fix, xml_text)
+
+
+ITEM_RE = re.compile(r"<item[\s>].*?</item\s*>", re.S | re.I)
+
+
+def _tag_text(block: str, name: str) -> str:
+    m = re.search(rf"<{name}\b[^>]*>(.*?)</{name}\s*>", block, re.S | re.I)
+    if not m:
+        return ""
+    inner = m.group(1)
+    cdata = re.search(r"<!\[CDATA\[(.*?)\]\]>", inner, re.S)
+    return cdata.group(1) if cdata else inner
+
+
+def parse_feed_loosely(xml_text: str) -> list[dict]:
+    """Pull items out with regexes when the document will not parse at all."""
+    items = []
+    for block in ITEM_RE.findall(xml_text):
+        title = strip_html(_tag_text(block, "title"))
+        if not title:
+            continue
+        items.append({
+            "title": title,
+            "date": parse_pubdate(_tag_text(block, "pubDate")),
+            "description": strip_html(_tag_text(block, "description"))
+                           or strip_html(_tag_text(block, "content:encoded")),
+            "url": strip_html(_tag_text(block, "link")),
+        })
+    return items
+
+
 def parse_feed(xml_text: str) -> list[dict]:
-    root = ET.fromstring(xml_text)
-    channel = root.find("channel") or root
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError:
+        try:
+            root = ET.fromstring(dedupe_attributes(xml_text))
+            print("feed had duplicate attributes; parsed after cleaning them",
+                  file=sys.stderr)
+        except ET.ParseError as exc:
+            items = parse_feed_loosely(xml_text)
+            if not items:
+                raise
+            print(f"feed is not well-formed XML ({exc}); "
+                  f"recovered {len(items)} items with the fallback parser",
+                  file=sys.stderr)
+            return items
+
+    channel = root.find("channel")
+    if channel is None:
+        channel = root
     items = []
     for it in channel.findall("item"):
         def txt(tag):
@@ -510,14 +581,25 @@ def main() -> int:
     if args.feed_file:
         items = parse_feed(Path(args.feed_file).read_text(encoding="utf-8"))
     elif args.feed:
+        raw = None
         try:
             raw = fetch_feed(args.feed)
+        except Exception as exc:  # noqa: BLE001 - report and fall back
+            print(f"FEED ERROR: could not fetch {args.feed} ({exc}); continuing offline",
+                  file=sys.stderr)
+        if raw is not None:
             if args.save_feed:
                 args.save_feed.write_text(raw, encoding="utf-8")
                 print(f"saved raw feed to {args.save_feed}", file=sys.stderr)
-            items = parse_feed(raw)
-        except Exception as exc:  # noqa: BLE001 - report and fall back
-            print(f"feed fetch failed ({exc}); continuing offline", file=sys.stderr)
+            try:
+                items = parse_feed(raw)
+            except Exception as exc:  # noqa: BLE001 - report and fall back
+                print(f"FEED ERROR: fetched {len(raw)} bytes but could not parse them "
+                      f"({exc}); continuing offline", file=sys.stderr)
+            else:
+                if not items:
+                    print("FEED ERROR: feed parsed but contained no items; "
+                          "continuing offline", file=sys.stderr)
 
     graph = build(seed, items, taxonomy)
 
