@@ -14,8 +14,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_network import (  # noqa: E402
-    build, clean_org, guests_from_title, load_topics, parse_feed,
-    parse_pubdate, split_people, strip_takeaway_prefix,
+    build, clean_org, dedupe_attributes, guests_from_title, load_topics,
+    parse_feed, parse_feed_loosely, parse_pubdate, split_people,
+    strip_takeaway_prefix,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -106,6 +107,28 @@ check("host-only episodes land in the review queue",
       any("Season 12 Finale" in r["title"] for r in online["meta"]["episodes_needing_review"]))
 check("feed url and summary carried onto episodes",
       any(n.get("url") and n.get("summary") for n in online["nodes"] if n["type"] == "episode"))
+
+print("\nfeed robustness")
+TESTDATA = ROOT / "tools" / "testdata"
+dup_xml = (TESTDATA / "sample_feed_duplicate_attrs.xml").read_text(encoding="utf-8")
+bad_xml = (TESTDATA / "sample_feed_malformed.xml").read_text(encoding="utf-8")
+
+check("duplicate attributes are dropped, first one kept",
+      dedupe_attributes('<rss a="1" a="2" b="3">') == '<rss a="1" b="3">')
+check("self-closing tags survive deduplication",
+      dedupe_attributes('<x a="1" a="2"/>') == '<x a="1"/>')
+check("a feed with a repeated namespace still parses",
+      len(parse_feed(dup_xml)) == len(FIXTURE),
+      f"got {len(parse_feed(dup_xml))} vs {len(FIXTURE)}")
+check("a feed that is not well-formed falls back to the loose parser",
+      len(parse_feed(bad_xml)) == len(FIXTURE),
+      f"got {len(parse_feed(bad_xml))}")
+check("the loose parser recovers titles and dates",
+      any(i["title"] == "Season 12 Finale" and i["date"] == "2026-08-12"
+          for i in parse_feed_loosely(bad_xml)))
+check("recovery paths produce the same graph as a clean feed",
+      len([n for n in build(SEED, parse_feed(dup_xml), TOPICS)["nodes"] if n["type"] == "episode"])
+      == len([n for n in build(SEED, FIXTURE, TOPICS)["nodes"] if n["type"] == "episode"]))
 
 print()
 if failures:

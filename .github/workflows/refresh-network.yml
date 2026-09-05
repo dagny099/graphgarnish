@@ -45,10 +45,11 @@ jobs:
             python3 tools/build_network.py --feed --report 2>&1 | tee build.log
           fi
 
-      - name: Fail if the feed could not be reached
+      - name: Fail if the feed could not be used
         run: |
-          if grep -q "feed fetch failed" build.log; then
-            echo "::error::RSS fetch failed; refusing to commit a feed-less rebuild."
+          if grep -q "FEED ERROR" build.log; then
+            echo "::error::$(grep -m1 'FEED ERROR' build.log)"
+            echo "::error::Refusing to commit a rebuild that did not see the feed."
             exit 1
           fi
 

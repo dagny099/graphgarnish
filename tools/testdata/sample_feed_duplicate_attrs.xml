@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>Catalog &amp; Cocktails</title>
+  <item>
+    <title>Season 11 Premiere: What happened in 2025 and where are we going in 2026?</title>
+    <pubDate>Thu, 08 Jan 2026 10:00:00 -0600</pubDate>
+    <link>https://example.com/ep/s11-premiere</link>
+    <description>&lt;p&gt;Tim and Juan look back at 2025 and ahead to data governance and AI agents in 2026.&lt;/p&gt;</description>
+  </item>
+  <item>
+    <title>Netflix’s Unified Data Architecture: Model Once, Represent Everywhere with Alex Bertails</title>
+    <pubDate>Wed, 19 Nov 2025 10:00:00 -0600</pubDate>
+    <link>https://example.com/ep/netflix</link>
+    <description>&lt;p&gt;Our guest is Alex Bertails, Engineering Manager at Netflix. We dig into knowledge graphs and the semantic layer.&lt;/p&gt;</description>
+  </item>
+  <item>
+    <title>TAKEAWAYS - Netflix’s Unified Data Architecture: Model Once, Represent Everywhere with Alex Bertails</title>
+    <pubDate>Wed, 19 Nov 2025 12:00:00 -0600</pubDate>
+    <link>https://example.com/ep/netflix-ta</link>
+    <description>&lt;p&gt;Short takeaways.&lt;/p&gt;</description>
+  </item>
+  <item>
+    <title>What is Data + AI Observability and Why It's Part of Your AI Strategy</title>
+    <pubDate>Thu, 01 May 2025 10:00:00 -0500</pubDate>
+    <link>https://example.com/ep/observability</link>
+    <description>&lt;p&gt;We are joined by Barr Moses, CEO at Monte Carlo, to talk data quality and observability.&lt;/p&gt;</description>
+  </item>
+  <item>
+    <title>Decision intelligence and context graphs with Priya Raman</title>
+    <pubDate>Fri, 06 Feb 2026 10:00:00 -0600</pubDate>
+    <link>https://example.com/ep/decision-intel</link>
+    <description>&lt;p&gt;Our guest is Priya Raman, Head of Data at Acme Analytics. We discuss knowledge graphs, MCP and agentic workflows.&lt;/p&gt;</description>
+  </item>
+  <item>
+    <title>Rebuilding the semantic layer with Dean Allemang &amp; Bryon Jacob</title>
+    <pubDate>Wed, 18 Mar 2026 10:00:00 -0500</pubDate>
+    <link>https://example.com/ep/semantic</link>
+    <description>&lt;p&gt;Ontologies, RDF and data products.&lt;/p&gt;</description>
+  </item>
+  <item>
+    <title>Season 12 Finale</title>
+    <pubDate>Wed, 12 Aug 2026 10:00:00 -0500</pubDate>
+    <link>https://example.com/ep/s12-finale</link>
+    <description>&lt;p&gt;Tim and Juan wrap the season.&lt;/p&gt;</description>
+  </item>
+</channel>
+</rss>
