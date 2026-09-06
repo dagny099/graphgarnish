@@ -225,6 +225,49 @@ the feed adds beyond them is auto-extracted, and any episode where no guest
 could be identified is listed under `meta.episodes_needing_review` so it can be
 checked by hand rather than silently dropped.
 
+### Provenance
+
+Every node carries a `source`, and every link a `provenance`, so the graph says
+which parts you know and which parts a regex guessed.
+
+| value | meaning |
+| --- | --- |
+| `curated` | from the spreadsheet, or from `data/topics.json` |
+| `verified` | a decision in `data/verified.json` touched it |
+| `feed` | an episode only the RSS feed knows about — a fact, not a guess |
+| `inferred` | read out of a title or description by a heuristic |
+
+A node inherits the **strongest** provenance of any edge that touches it, ranked
+`verified` > `curated` / `feed` > `inferred`. A guest who is curated on one
+episode and guessed on another is a curated person with one guessed edge:
+
+```json
+{ "id": "person_aakriti_agrawal", "name": "Aakriti Agrawal",
+  "type": "person", "source": "curated" }
+
+{ "source": "person_aakriti_agrawal", "target": "ep_20230608_takeaways_with_aakriti_a",
+  "type": "GUEST_ON", "provenance": "inferred" }
+```
+
+The key on a link is `provenance`, not `source` — a link's `source` is its
+origin node and stays that way.
+
+`meta.provenance` and `meta.link_provenance` count it up, and `--report` prints
+it. Link provenance is broken out per type on purpose: lumping it together
+buries how many *guest* edges are known under the topic edges, which are keyword
+matches by design.
+
+```
+  episode          388   curated=202  feed=186
+  organization      98   curated=60  inferred=37  verified=1
+  person           182   curated=141  inferred=38  verified=3
+  topic             22   curated=22
+  AFFILIATED_WITH  103   curated=61  inferred=41  verified=1
+  COVERS           564   inferred=564
+  GUEST_ON         259   curated=146  inferred=110  verified=3
+  TAKEAWAY_OF       62   inferred=62
+```
+
 ### Correcting the data
 
 `data/verified.json` is where human judgement enters the pipeline, and the only

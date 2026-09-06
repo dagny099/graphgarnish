@@ -18,7 +18,7 @@ from build_network import (  # noqa: E402
     episode_drop_is_safe, is_takeaway, next_page_url, strip_takeaway_prefix,
     guests_from_title, load_feed, load_topics, load_verified, normalize_name,
     parse_feed, parse_feed_loosely, parse_pubdate, previous_episode_count,
-    split_people, strip_affiliation, strip_takeaway_prefix,
+    split_people, strip_affiliation, strip_takeaway_prefix, SOURCE_RANK,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -358,6 +358,55 @@ check("an absent verified.json is not an error",
       == build(SEED, FIXTURE, TOPICS))
 check("the shipped verified.json applies cleanly",
       isinstance(build(SEED, FIXTURE, TOPICS, VERIFIED), dict))
+
+print("\nprovenance")
+prov = build(SEED, FIXTURE, TOPICS, DECIDED)
+pnodes = {n["id"]: n for n in prov["nodes"]}
+by_name = {n["name"]: n for n in prov["nodes"]}
+check("every node carries a source",
+      all("source" in n for n in prov["nodes"]),
+      f"{[n['id'] for n in prov['nodes'] if 'source' not in n][:3]}")
+check("every link carries a provenance",
+      all("provenance" in l for l in prov["links"]))
+check("the link key is 'provenance', not 'source'",
+      all(l["source"] in pnodes for l in prov["links"]),
+      "'source' on a link is its origin node and must stay that way")
+check("a spreadsheet guest is curated",
+      by_name["Barr Moses"]["source"] == "curated")
+# Priya Raman appears only in the feed fixture, so her name can only have come
+# from the title parser. Alex Bertails would not do: he is in the spreadsheet.
+check("a guest read out of a title is inferred",
+      {n["name"]: n["source"] for n in build(SEED, FIXTURE, TOPICS)["nodes"]}
+      ["Priya Raman"] == "inferred")
+check("a human decision is verified",
+      by_name["Dean A. Allemang"]["source"] == "verified")
+check("a hand-set employer is verified",
+      by_name["Test Corp"]["source"] == "verified")
+check("topic edges are inferred, topic nodes are curated",
+      all(l["provenance"] == "inferred" for l in prov["links"] if l["type"] == "COVERS")
+      and all(n["source"] == "curated" for n in prov["nodes"] if n["type"] == "topic"))
+check("an episode only the feed knows is marked feed",
+      by_name["Decision intelligence and context graphs with Priya Raman"]["source"] == "feed")
+check("meta reports provenance per node type and per link type",
+      set(prov["meta"]["provenance"]) >= {"person", "organization", "episode"}
+      and "GUEST_ON" in prov["meta"]["link_provenance"])
+check("guest edge counts add up to the guest links",
+      sum(prov["meta"]["link_provenance"]["GUEST_ON"].values())
+      == sum(1 for l in prov["links"] if l["type"] == "GUEST_ON"))
+
+# A person curated on one episode and guessed on another is a curated person.
+MIXED = {
+    "id": "mixed", "nodes": SEED["nodes"] + [
+        {"id": "ep_mixed", "name": "Observability and Why It Matters", "type": "episode",
+         "date": "2026-07-01", "is_full": True}],
+    "links": SEED["links"],
+}
+check("a node keeps the strongest provenance of its edges",
+      max(SOURCE_RANK[l["provenance"]]
+          for l in prov["links"]
+          if l["type"] == "GUEST_ON"
+          and pnodes[l["source"]]["name"] == "Barr Moses")
+      == SOURCE_RANK[by_name["Barr Moses"]["source"]])
 
 print("\ninputs are never outputs")
 from build_network import DEFAULT_SEED, DEFAULT_TOPICS, DEFAULT_VERIFIED, OUTPUTS  # noqa: E402

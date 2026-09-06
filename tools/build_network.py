@@ -646,6 +646,13 @@ def index_seed(seed: dict) -> dict:
     return {"episodes": episodes, "person_org": person_org}
 
 
+# Where a fact came from. Ranked, because a node inherits the strongest
+# provenance of any edge that touches it: a guest who is curated on one
+# episode and guessed on another is a curated person with one guessed edge,
+# and flattening that to "inferred" would understate what you actually know.
+SOURCE_RANK = {"inferred": 1, "feed": 2, "curated": 2, "verified": 3}
+
+
 VERIFIED_KEYS = ("drop_person", "drop_organization", "rename_person",
                  "rename_organization", "person_org", "hosts_only",
                  "hosts_only_patterns")
@@ -692,25 +699,34 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
     hosts_only_res = [re.compile(x, re.I) for x in verified["hosts_only_patterns"]]
     person_org.update(verified_org)
 
-    def clean_guest_list(names: list[str], rec: dict) -> list[str]:
+    def clean_guest_list(names: list[str], rec: dict, base: str) -> list[str]:
         """Turn raw extracted names into people the graph can hold.
 
         Folds spelling variants, splits a trailing employer off into the org
         slot rather than leaving it welded to the name, drops the hosts, and
-        applies the human decisions from verified.json."""
+        applies the human decisions from verified.json.
+
+        `base` is where the names came from: "curated" for the spreadsheet,
+        "inferred" for anything read out of a title or description. A name a
+        human has since ruled on is recorded as "verified" instead."""
         out: list[str] = []
         for raw in names:
-            name = renames.get(normalize_name(raw), normalize_name(raw))
+            key = normalize_name(raw)
+            name = renames.get(key, key)
+            touched = key in renames
             person, org = strip_affiliation(name)
             if not person:
                 continue
-            person = renames.get(person, person)
+            if person in renames:
+                person, touched = renames[person], True
             if person.lower() in HOSTS or person.lower() in dropped_people:
                 continue
             if org and org.lower() not in dropped_orgs:
                 rec.setdefault("guest_orgs", {}).setdefault(person, org)
             if person not in out:
                 out.append(person)
+                source = "verified" if (touched or person in verified_org) else base
+                rec.setdefault("guest_source", {})[person] = source
         return out
 
     # Start from every seed episode, then let feed items overwrite/extend.
@@ -766,11 +782,11 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
         for name in rec["guests"]:
             people = split_people(name)
             expanded.extend(people if people else [name])
-        rec["guests"] = clean_guest_list(expanded, rec)
+        rec["guests"] = clean_guest_list(expanded, rec, "curated")
         if not rec["guests"] and not companion:
             found = (guests_from_title(rec["title"], companion)
                      or guests_from_description(rec["description"]))
-            found = clean_guest_list(found, rec)
+            found = clean_guest_list(found, rec, "inferred")
             if found:
                 rec["guests"] = found
                 rec["inferred"] = True
@@ -784,19 +800,32 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
     nodes, links = [], []
     seen_nodes, seen_links = set(), set()
 
+    by_id: dict[str, dict] = {}
+
     def add_node(node):
-        if node["id"] in seen_nodes:
+        """Add a node, or upgrade the provenance of one already present.
+
+        The same person can be curated on one episode and guessed on another.
+        Keeping the stronger source means the node says what you know at its
+        best, while its edges still say which episode the guess was on."""
+        existing = by_id.get(node["id"])
+        if existing is not None:
+            new_src, old_src = node.get("source"), existing.get("source")
+            if new_src and SOURCE_RANK.get(new_src, 0) > SOURCE_RANK.get(old_src, 0):
+                existing["source"] = new_src
             return node["id"]
         seen_nodes.add(node["id"])
+        by_id[node["id"]] = node
         nodes.append(node)
         return node["id"]
 
-    def add_link(src, tgt, kind):
+    def add_link(src, tgt, kind, source="inferred"):
         sig = (src, tgt, kind)
         if sig in seen_links:
             return
         seen_links.add(sig)
-        links.append({"source": src, "target": tgt, "type": kind})
+        links.append({"source": src, "target": tgt, "type": kind,
+                      "provenance": source})
 
     ordered = sorted(records.items(), key=lambda kv: (kv[1]["date"], kv[1]["title"]))
     node_id: dict[tuple[str, bool], str] = {}
@@ -815,6 +844,9 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
         node = {
             "id": eid, "name": rec["title"], "type": "episode",
             "date": rec["date"], "is_full": full,
+            # "curated" if the spreadsheet knew this episode, "feed" if only
+            # the RSS does. Neither is a guess: both are publisher facts.
+            "source": "curated" if rec["source"].startswith("seed") else "feed",
         }
         # A real episode that Juan and Tim recorded alone. Flagged rather than
         # given an invented guest, and kept out of the review queue.
@@ -841,7 +873,8 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
         hit = prefix_match(key, full_keys)
         if hit:
             parent_of[(key, companion)] = node_id[(hit, False)]
-            add_link(node_id[(key, companion)], node_id[(hit, False)], "TAKEAWAY_OF")
+            add_link(node_id[(key, companion)], node_id[(hit, False)],
+                     "TAKEAWAY_OF", "inferred")
 
     for (key, companion), rec in ordered:
         full = not companion
@@ -853,28 +886,43 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
         if full or parent is None:
             for person in rec["guests"]:
                 pid = "person_" + slug(person)
-                add_node({"id": pid, "name": person, "type": "person"})
-                add_link(pid, target_for_guests, "GUEST_ON")
+                psrc = rec.get("guest_source", {}).get(person, "inferred")
+                add_node({"id": pid, "name": person, "type": "person",
+                          "source": psrc})
+                add_link(pid, target_for_guests, "GUEST_ON", psrc)
                 # Order of preference: person_org (a human decision from
                 # verified.json, else the curated spreadsheet), then the
                 # employer split off the guest's own name, then a guess read
-                # out of the episode description.
-                org = (person_org.get(person)
-                       or rec.get("guest_orgs", {}).get(person)
-                       or org_from_description(rec["description"], person))
+                # out of the episode description. The provenance follows the
+                # step that actually supplied the answer.
+                if person in verified_org:
+                    org, osrc = verified_org[person], "verified"
+                elif person in person_org:
+                    org, osrc = person_org[person], "curated"
+                elif person in rec.get("guest_orgs", {}):
+                    org, osrc = rec["guest_orgs"][person], "inferred"
+                else:
+                    org, osrc = org_from_description(rec["description"], person), "inferred"
                 org = clean_org(org)
-                org = org_renames.get(org.lower(), org)
+                renamed = org_renames.get(org.lower())
+                if renamed:
+                    org, osrc = renamed, "verified"
                 if org and org.lower() not in dropped_orgs:
                     oid = "org_" + slug(org)
-                    add_node({"id": oid, "name": org, "type": "organization"})
-                    add_link(pid, oid, "AFFILIATED_WITH")
+                    add_node({"id": oid, "name": org, "type": "organization",
+                              "source": osrc})
+                    add_link(pid, oid, "AFFILIATED_WITH", osrc)
         # Topics come off the full episode only, so companions don't double-count.
         if full:
             text = rec["title"] + " " + rec["description"]
             for topic in topics_for(text, taxonomy):
                 tid = "topic_" + slug(topic)
-                add_node({"id": tid, "name": topic, "type": "topic"})
-                add_link(eid, tid, "COVERS")
+                # The taxonomy is hand-written, so the topic itself is curated.
+                # Which episodes it lands on is a keyword match, so the edge is
+                # not.
+                add_node({"id": tid, "name": topic, "type": "topic",
+                          "source": "curated"})
+                add_link(eid, tid, "COVERS", "inferred")
 
     # Emission order follows whatever order the seed happened to be in, which
     # changes every time the seed is regenerated. Sort so that identical input
@@ -883,14 +931,26 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
     type_rank = {"episode": 0, "person": 1, "organization": 2, "topic": 3}
     nodes.sort(key=lambda n: (type_rank.get(n["type"], 9),
                               n.get("date", ""), n.get("name", ""), n["id"]))
-    links.sort(key=lambda l: (l["type"], l["source"], l["target"]))
+    links.sort(key=lambda l: (l["type"], l["source"], l["target"], l["provenance"]))
 
     counts = Counter(n["type"] for n in nodes)
+    # How much of the graph is known rather than guessed, per node type.
+    provenance = {t: dict(Counter(n.get("source", "inferred")
+                                  for n in nodes if n["type"] == t))
+                  for t in sorted(counts)}
+    # Broken out per link type on purpose. Lumping them together buries the
+    # number that matters -- how many guest edges are known rather than
+    # guessed -- under the topic edges, which are keyword matches by design.
+    link_provenance = {t: dict(Counter(l["provenance"] for l in links
+                                       if l["type"] == t))
+                       for t in sorted({l["type"] for l in links})}
     return {
         "meta": {
             "generated_by": "tools/build_network.py",
             "source": "seed+feed" if feed_items else "seed only (offline)",
             "counts": dict(counts),
+            "provenance": provenance,
+            "link_provenance": link_provenance,
             "episodes_needing_review": review,
         },
         "nodes": nodes,
@@ -1095,8 +1155,13 @@ def main() -> int:
         print(f"source: {m['source']}", file=sys.stderr)
         print(f"feed items parsed: {len(items)}", file=sys.stderr)
         for k, v in sorted(m["counts"].items()):
-            print(f"  {k:14s} {v}", file=sys.stderr)
-        print(f"  links          {len(graph['links'])}", file=sys.stderr)
+            prov = m["provenance"].get(k, {})
+            detail = "  ".join(f"{s}={n}" for s, n in sorted(prov.items()))
+            print(f"  {k:14s} {v:5d}   {detail}", file=sys.stderr)
+        for k, prov in sorted(m["link_provenance"].items()):
+            total = sum(prov.values())
+            detail = "  ".join(f"{s}={n}" for s, n in sorted(prov.items()))
+            print(f"  {k:14s} {total:5d}   {detail}", file=sys.stderr)
         if m["episodes_needing_review"]:
             print(f"\n{len(m['episodes_needing_review'])} episode(s) need a guest checked:",
                   file=sys.stderr)
