@@ -169,18 +169,25 @@ turns them back on.
 ## 🛠️ Building the Network JSON
 
 `tools/build_network.py` builds `catalog_cocktails.json` and `sample_network.json`.
-It runs in two modes over the same code path.
 
-**Offline** — normalize and enrich whatever is already in the repo. No network
-access needed:
+**Inputs are read-only; outputs are fully derived.** Nothing the builder writes
+is ever read back on a later run, so a name it guessed today cannot be mistaken
+for a curated fact tomorrow. Delete both output files, rebuild, and they come
+back identical.
 
-```bash
-python3 tools/build_network.py --report
+```
+data/seed_curated.json   episodes and guests from the original spreadsheet
+data/verified.json       human corrections, applied last and always
+data/topics.json         the topic taxonomy
+the RSS feed             the full back catalogue, fetched fresh each run
+        │
+        ▼
+catalog_cocktails.json   output
+sample_network.json      output — what the site fetches
 ```
 
-**Online** — additionally pull the podcast RSS feed, repair titles that were
-truncated in the original spreadsheet export, and append everything published
-since:
+To correct something the extractor got wrong, edit `data/verified.json`. Never
+edit the output files: the next run overwrites them.
 
 ```bash
 python3 tools/build_network.py --feed --report          # try the known URLs
@@ -207,14 +214,40 @@ over https, refusing to downgrade the connection or follow an unusual scheme.
 The run log prints `USING FEED: <url>` so the working URL can be pinned.
 
 A rebuild can only add episodes. If one would drop more than a handful, the
-builder refuses to write and exits non-zero rather than overwrite curated data
-with a truncated or unrelated feed.
+builder refuses to write and exits non-zero rather than publish a truncated or
+unrelated feed. The number it compares against is the episode count in the last
+published graph, not the one in the seed — the seed is a small curated file the
+feed has long since grown past, so checking against it would let a truncated
+feed drop most of the back catalogue and still look fine.
 
-The existing JSON is treated as curated ground truth: guest and company links
-that came from the spreadsheet survive the rebuild untouched. Only episodes the
-feed adds beyond it get auto-extracted, and any episode where no guest could be
-identified is listed under `meta.episodes_needing_review` so it can be checked
-by hand rather than silently dropped.
+Guest and company links from the spreadsheet survive every rebuild. Everything
+the feed adds beyond them is auto-extracted, and any episode where no guest
+could be identified is listed under `meta.episodes_needing_review` so it can be
+checked by hand rather than silently dropped.
+
+### Correcting the data
+
+`data/verified.json` is where human judgement enters the pipeline, and the only
+file you should hand-edit. It is applied after extraction on every run, so a
+correction made once stays made.
+
+| key | effect |
+| --- | --- |
+| `drop_person` | an extracted "person" that is really a topic, role or fragment |
+| `drop_organization` | same, for companies |
+| `rename_person` | fold a variant or misspelling into the real name |
+| `rename_organization` | same, for companies |
+| `person_org` | set an employer by hand; beats every guess |
+| `hosts_only` | episodes Juan and Tim recorded alone, by exact title |
+| `hosts_only_patterns` | regexes for the recurring host-only formats |
+
+An episode marked `hosts_only` carries `"hosts_only": true` and no guest, rather
+than an invented guest called "Juan and Tim", and drops out of the review queue.
+The flag only applies when no guest was found, so a pattern can never displace a
+real guest.
+
+Anything under `_unresolved` in that file is a note, not a rule. It is not
+applied.
 
 Guest extraction from a title recovers roughly half of all guests; the rest are
 named only in the episode description. It is a starting point that needs review,
@@ -228,8 +261,8 @@ python3 tools/build_network.py --feed --save-feed /tmp/feed.xml --report
 python3 tools/build_network.py --feed-file /tmp/feed.xml --report
 ```
 
-`data/seed_curated.json` is a frozen copy of the original spreadsheet-derived
-data, kept so the curation can never be lost to a bad rebuild.
+`data/seed_curated.json` is the frozen spreadsheet-derived data and the
+builder's starting point. It is never written to.
 
 Run the checks after changing anything in `tools/`:
 

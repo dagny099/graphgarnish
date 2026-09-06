@@ -1,0 +1,68 @@
+{
+  "_README": [
+    "Human decisions. The builder reads this file and never writes to it.",
+    "Everything here is applied after extraction, on every run, so a",
+    "correction made once stays made. To fix something the extractor got",
+    "wrong, edit this file -- never catalog_cocktails.json or",
+    "sample_network.json, which the next run overwrites.",
+    "",
+    "drop_person          extracted 'people' that are topics, roles or fragments",
+    "drop_organization    extracted 'companies' that are concepts or fragments",
+    "rename_person        fold a misspelling or variant into the real name",
+    "rename_organization  same, for companies",
+    "person_org           set a person's employer by hand; beats every guess",
+    "hosts_only           episodes Juan and Tim recorded alone, by exact title",
+    "hosts_only_patterns  regexes for the recurring host-only formats",
+    "",
+    "Entries under _unresolved are NOT applied. They are open questions."
+  ],
+  "drop_person": [
+    "Knowledge Graphs",
+    "Context Graphs"
+  ],
+  "drop_organization": [
+    "AI",
+    "Catalog",
+    "Data Enablement",
+    "Data Management",
+    "Di",
+    "Evaluation-Driven Development",
+    "Fundamentals",
+    "Futures",
+    "GN",
+    "Governance",
+    "Irina",
+    "Mathematics",
+    "Neil",
+    "O",
+    "Product",
+    "RDF",
+    "Strategy",
+    "The Enterprise Data Catalog",
+    "Tim"
+  ],
+  "rename_person": {
+    "Jesus Barrasa about Ontologies": "Jesus Barrasa",
+    "Mary Lou Pirrera (Senio": "Mary Lou Pirrera",
+    "Maddy Want": "Madeleine Want"
+  },
+  "rename_organization": {
+    "Monte Carlo Data": "Monte Carlo"
+  },
+  "person_org": {},
+  "hosts_only": [],
+  "hosts_only_patterns": [
+    "\\b(juan|tim)\\b[^.]{0,40}\\brant",
+    "\\brant[^.]{0,40}\\b(juan|tim)\\b",
+    "\\bSeason \\d+ (Premiere|Finale)\\b",
+    "\\bwith Tim Gasper\\b",
+    "\\bhosts (Tim Gasper|Juan)\\b",
+    "\\bJuan.{0,3}s on Vacation\\b"
+  ],
+  "_unresolved": {
+    "_note": "Decisions I could not make for you. Move an entry up into the real key above once you have decided, or delete it.",
+    "Valentijn (Vopak)": "Appeared as 'Valentijn of Vopak' and 'Roel and Valentijn'. Both are now dropped, because a single first name cannot be told apart from a job title by any rule. If you know the full names, add them to person_org and I will wire them back in.",
+    "BAML / Elemental / Private AI": "Kept as organizations. They read like real companies to me but I could not confirm from the feed alone. Move to drop_organization if they are concepts.",
+    "the Wharton School of the University of Pennsylvania": "Kept. Real institution, but the name is long and inconsistent with the other org names. Add to rename_organization as 'Wharton' if you want it shortened."
+  }
+}
