@@ -16,12 +16,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_network import (  # noqa: E402
     Payload, build, clean_org, dedupe_attributes, discover_feed_url,
     episode_drop_is_safe, is_takeaway, next_page_url, strip_takeaway_prefix,
-    guests_from_title, load_feed, load_topics, parse_feed, parse_feed_loosely,
-    parse_pubdate, split_people, strip_takeaway_prefix,
+    guests_from_title, load_feed, load_topics, load_verified, normalize_name,
+    parse_feed, parse_feed_loosely, parse_pubdate, previous_episode_count,
+    split_people, strip_affiliation, strip_takeaway_prefix, SOURCE_RANK,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
-SEED = json.loads((ROOT / "catalog_cocktails.json").read_text(encoding="utf-8"))
+# The curated spreadsheet extract, not an output file. Reading an output here
+# would reintroduce exactly the loop the split was made to remove.
+SEED = json.loads((ROOT / "data" / "seed_curated.json").read_text(encoding="utf-8"))
+VERIFIED = load_verified(ROOT / "data" / "verified.json")
 TOPICS = load_topics(ROOT / "data" / "topics.json")
 FIXTURE = parse_feed((ROOT / "tools" / "testdata" / "sample_feed.xml").read_text(encoding="utf-8"))
 
@@ -284,6 +288,139 @@ check("every page of a paginated feed is followed",
       f"got {len(paged)} items, expected {len(omny_items) + len(parse_feed(OMNY2))}")
 check("a page-2 episode reaches the graph",
       "Ethan Mollick" in {n["name"] for n in build(SEED, paged, TOPICS)["nodes"]})
+
+print("\nname and affiliation cleanup")
+check("employer split off a guest name",
+      strip_affiliation("Andy Palmer from Tamr") == ("Andy Palmer", "Tamr"))
+check("'of' and 'at' work the same way",
+      strip_affiliation("Patrick Bangert of Samsung") == ("Patrick Bangert", "Samsung")
+      and strip_affiliation("Bethany Sehon at Capital One") == ("Bethany Sehon", "Capital One"))
+check("a job title is not a person",
+      strip_affiliation("CDO at McKinsey") == ("", "")
+      and strip_affiliation("VP of Product") == ("", ""))
+check("a plain name is left alone",
+      strip_affiliation("Dean Allemang") == ("Dean Allemang", ""))
+check("a name too long for the name test survives if it is name-plus-employer",
+      split_people("Aakriti Agrawal from American Express")
+      == ["Aakriti Agrawal from American Express"],
+      "kept whole here; clean_guest_list splits it and files the employer")
+check("a topic-shaped tail is still not a person",
+      split_people("Reverse ETL?") == [] and split_people("the future of data") == [])
+check("a conjunction of two first names invents nobody",
+      split_people("Juan and Tim") == [] and split_people("Roel and Valentijn") == [])
+check("a single name with an honorific still counts",
+      split_people("Bob Seiner PhD") == ["Bob Seiner"])
+check("the non-breaking hyphen folds to a plain one",
+      normalize_name("Ricardo Baeza\u2011Yates") == "Ricardo Baeza-Yates")
+check("org name stops at a sentence boundary",
+      clean_org("Ternary Data. Join Tim and Juan") == "Ternary Data")
+check("a dotted company name survives",
+      clean_org("AgileData.io") == "AgileData.io" and clean_org("data.world") == "data.world")
+
+print("\nverified.json decisions")
+DECIDED = {
+    "drop_person": ["Priya Raman"],
+    "drop_organization": [],
+    "rename_person": {"Dean Allemang": "Dean A. Allemang"},
+    "rename_organization": {},
+    "person_org": {"Bryon Jacob": "Test Corp"},
+    "hosts_only": ["Season 12 Finale"],
+    "hosts_only_patterns": [],
+}
+decided = build(SEED, FIXTURE, TOPICS, DECIDED)
+dnames = {n["name"] for n in decided["nodes"]}
+check("drop_person removes an extracted person", "Priya Raman" not in dnames)
+check("rename_person folds a name", "Dean A. Allemang" in dnames and "Dean Allemang" not in dnames)
+dnodes = {n["id"]: n for n in decided["nodes"]}
+aff = {dnodes[l["source"]]["name"]: dnodes[l["target"]]["name"]
+       for l in decided["links"] if l["type"] == "AFFILIATED_WITH"}
+check("person_org beats every guess", aff.get("Bryon Jacob") == "Test Corp")
+check("hosts_only flags the episode instead of inventing a guest",
+      any(n.get("hosts_only") for n in decided["nodes"] if n["type"] == "episode"))
+check("a hosts_only episode leaves the review queue",
+      not any("Season 12 Finale" in r["title"]
+              for r in decided["meta"]["episodes_needing_review"]))
+hosts_ids = {n["id"] for n in decided["nodes"] if n.get("hosts_only")}
+check("a hosts_only episode carries no guest link",
+      not any(l["target"] in hosts_ids for l in decided["links"] if l["type"] == "GUEST_ON"))
+
+PATTERNED = dict(DECIDED, hosts_only=[], hosts_only_patterns=[r"\bSeason \d+ Finale\b"])
+check("a hosts_only pattern matches the same episode as the exact title",
+      {n["id"] for n in build(SEED, FIXTURE, TOPICS, PATTERNED)["nodes"] if n.get("hosts_only")}
+      == hosts_ids)
+check("a pattern never overrides a real guest",
+      "Alex Bertails" in {n["name"] for n in build(
+          SEED, FIXTURE, TOPICS,
+          dict(DECIDED, drop_person=[], hosts_only=[],
+               hosts_only_patterns=[r"."]))["nodes"]})
+check("an absent verified.json is not an error",
+      build(SEED, FIXTURE, TOPICS, load_verified(ROOT / "no-such-file.json"))
+      == build(SEED, FIXTURE, TOPICS))
+check("the shipped verified.json applies cleanly",
+      isinstance(build(SEED, FIXTURE, TOPICS, VERIFIED), dict))
+
+print("\nprovenance")
+prov = build(SEED, FIXTURE, TOPICS, DECIDED)
+pnodes = {n["id"]: n for n in prov["nodes"]}
+by_name = {n["name"]: n for n in prov["nodes"]}
+check("every node carries a source",
+      all("source" in n for n in prov["nodes"]),
+      f"{[n['id'] for n in prov['nodes'] if 'source' not in n][:3]}")
+check("every link carries a provenance",
+      all("provenance" in l for l in prov["links"]))
+check("the link key is 'provenance', not 'source'",
+      all(l["source"] in pnodes for l in prov["links"]),
+      "'source' on a link is its origin node and must stay that way")
+check("a spreadsheet guest is curated",
+      by_name["Barr Moses"]["source"] == "curated")
+# Priya Raman appears only in the feed fixture, so her name can only have come
+# from the title parser. Alex Bertails would not do: he is in the spreadsheet.
+check("a guest read out of a title is inferred",
+      {n["name"]: n["source"] for n in build(SEED, FIXTURE, TOPICS)["nodes"]}
+      ["Priya Raman"] == "inferred")
+check("a human decision is verified",
+      by_name["Dean A. Allemang"]["source"] == "verified")
+check("a hand-set employer is verified",
+      by_name["Test Corp"]["source"] == "verified")
+check("topic edges are inferred, topic nodes are curated",
+      all(l["provenance"] == "inferred" for l in prov["links"] if l["type"] == "COVERS")
+      and all(n["source"] == "curated" for n in prov["nodes"] if n["type"] == "topic"))
+check("an episode only the feed knows is marked feed",
+      by_name["Decision intelligence and context graphs with Priya Raman"]["source"] == "feed")
+check("meta reports provenance per node type and per link type",
+      set(prov["meta"]["provenance"]) >= {"person", "organization", "episode"}
+      and "GUEST_ON" in prov["meta"]["link_provenance"])
+check("guest edge counts add up to the guest links",
+      sum(prov["meta"]["link_provenance"]["GUEST_ON"].values())
+      == sum(1 for l in prov["links"] if l["type"] == "GUEST_ON"))
+
+# A person curated on one episode and guessed on another is a curated person.
+MIXED = {
+    "id": "mixed", "nodes": SEED["nodes"] + [
+        {"id": "ep_mixed", "name": "Observability and Why It Matters", "type": "episode",
+         "date": "2026-07-01", "is_full": True}],
+    "links": SEED["links"],
+}
+check("a node keeps the strongest provenance of its edges",
+      max(SOURCE_RANK[l["provenance"]]
+          for l in prov["links"]
+          if l["type"] == "GUEST_ON"
+          and pnodes[l["source"]]["name"] == "Barr Moses")
+      == SOURCE_RANK[by_name["Barr Moses"]["source"]])
+
+print("\ninputs are never outputs")
+from build_network import DEFAULT_SEED, DEFAULT_TOPICS, DEFAULT_VERIFIED, OUTPUTS  # noqa: E402
+check("no input path is also an output path",
+      not ({DEFAULT_SEED, DEFAULT_TOPICS, DEFAULT_VERIFIED} & set(OUTPUTS)),
+      "an output being read back is the loop this split removes")
+check("the previous episode count is read from the published graph",
+      previous_episode_count(OUTPUTS[0]) is None
+      or previous_episode_count(OUTPUTS[0]) > 0)
+check("a missing or unreadable previous graph reports None",
+      previous_episode_count(ROOT / "no-such-file.json") is None)
+check("the guard is measured against the published graph, not the seed",
+      not episode_drop_is_safe(388, 203),
+      "a feed that dropped back to seed size must not pass")
 
 print()
 if failures:

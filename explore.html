@@ -548,6 +548,27 @@
             filter: brightness(1.4) drop-shadow(0 0 8px currentColor);
             stroke-width: 3px;
         }
+
+        /* Provenance. A guessed node is drawn provisionally -- hollowed out and
+           dashed -- so the graph never presents a regex's output with the same
+           confidence as a name from the spreadsheet. Uses fill-opacity rather
+           than opacity so it composes with .dimmed instead of fighting it. */
+        .node.prov-inferred {
+            fill-opacity: 0.4;
+            stroke: rgba(255, 255, 255, 0.5);
+            stroke-dasharray: 3 2;
+        }
+
+        .node.prov-verified {
+            stroke: #ffffff;
+        }
+
+        /* Only guest and affiliation edges are marked. Topic edges are keyword
+           matches by design, and dashing all 564 of them would read as noise
+           rather than as information. */
+        .link.prov-inferred {
+            stroke-dasharray: 4 3;
+        }
         
         .node.selected {
             stroke: #ffc107;
@@ -646,6 +667,7 @@
                     <div class="stat-label">Topics</div>
                 </div>
             </div>
+            <div id="provenance-readout" style="padding: 8px 12px; margin-bottom: 12px; font-size: 12px; color: #4a5568; text-align: center;"></div>
             <div style="padding: 12px; background: rgba(255, 235, 59, 0.15); border-radius: 8px; border-left: 3px solid #ffc107;">
                 <div style="font-size: 13px; color: #5a4a00; line-height: 1.5;">
                     <strong>Click any node</strong> to focus on it and its connections. Click again to deselect.
@@ -748,6 +770,25 @@
                     </div>
                 </div>
 
+                <!-- Filter: Provenance -->
+                <div class="filter-section-title">
+                    <span class="icon">🔎</span>
+                    <span>Data Quality</span>
+                </div>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="show-inferred" checked>
+                        <label for="show-inferred">Include guessed guests &amp; orgs</label>
+                    </div>
+                </div>
+                <div style="padding: 10px 12px; margin: 4px 0 14px; background: rgba(45,55,72,0.05); border-radius: 8px; font-size: 12px; line-height: 1.6; color: #4a5568;">
+                    <div><span style="display:inline-block;width:11px;height:11px;border-radius:50%;background:#4ecdc4;border:2px solid #718096;vertical-align:-1px;"></span>
+                        &nbsp;solid — from the curated spreadsheet</div>
+                    <div style="margin-top:5px;"><span style="display:inline-block;width:11px;height:11px;border-radius:50%;background:rgba(78,205,196,0.35);border:2px dashed #a0aec0;vertical-align:-1px;"></span>
+                        &nbsp;dashed — guessed from a title or description</div>
+                    <div style="margin-top:7px; color:#718096;">Dashed edges are guessed appearances. A curated guest can still have one.</div>
+                </div>
+
                 <!-- Filter: Companion clips -->
                 <div class="filter-section-title">
                     <span class="icon">🎬</span>
@@ -823,6 +864,7 @@
             showOrgs: true,
             showTopics: true,
             fullEpisodesOnly: true,
+            showInferred: true,
             yearStart: 2021,
             yearEnd: 2026,
             minGuestEpisodes: 1,
@@ -1077,6 +1119,11 @@
             applyFilters();
         });
 
+        document.getElementById('show-inferred').addEventListener('change', (e) => {
+            filters.showInferred = e.target.checked;
+            applyFilters();
+        });
+
         document.getElementById('full-episodes-only').addEventListener('change', (e) => {
             filters.fullEpisodesOnly = e.target.checked;
             applyFilters();
@@ -1135,6 +1182,7 @@
             filters.showOrgs = true;
             filters.showTopics = true;
             filters.fullEpisodesOnly = true;
+            filters.showInferred = true;
             filters.yearStart = 2021;
             filters.yearEnd = 2026;
             filters.minGuestEpisodes = 1;
@@ -1148,6 +1196,7 @@
             document.getElementById('show-orgs').checked = true;
             document.getElementById('show-topics').checked = true;
             document.getElementById('full-episodes-only').checked = true;
+            document.getElementById('show-inferred').checked = true;
             document.getElementById('year-start').value = 2021;
             document.getElementById('year-end').value = 2026;
             document.getElementById('min-guest-episodes').value = 1;
@@ -1194,9 +1243,11 @@
                 } else if (node.type === 'person') {
                     ok = filters.showGuests &&
                          (guestEpisodeCounts[node.id] || 0) >= filters.minGuestEpisodes;
+                    if (ok && !filters.showInferred && node.source === 'inferred') ok = false;
                 } else if (node.type === 'organization') {
                     ok = filters.showOrgs &&
                          (orgGuestCounts[node.id] || 0) >= filters.minOrgGuests;
+                    if (ok && !filters.showInferred && node.source === 'inferred') ok = false;
                 } else if (node.type === 'topic') {
                     ok = filters.showTopics;
                 }
@@ -1271,7 +1322,8 @@
                 .map(link => ({
                     source: linkEnd(link.source),
                     target: linkEnd(link.target),
-                    type: link.type
+                    type: link.type,
+                    provenance: link.provenance
                 }));
 
             const countOf = type => filteredNodes.filter(n => n.type === type).length;
@@ -1280,6 +1332,25 @@
             document.getElementById('visible-orgs').textContent = countOf('organization');
             const topicStat = document.getElementById('visible-topics');
             if (topicStat) topicStat.textContent = countOf('topic');
+
+            // How much of what is on screen is actually known. Counted over
+            // people and orgs only: episodes come from the feed and topics from
+            // the taxonomy, so neither is ever a guess.
+            const readout = document.getElementById('provenance-readout');
+            if (readout) {
+                const entities = filteredNodes.filter(n =>
+                    n.type === 'person' || n.type === 'organization');
+                const guessed = entities.filter(n => n.source === 'inferred').length;
+                if (!entities.length) {
+                    readout.textContent = '';
+                } else if (!entities.some(n => n.source)) {
+                    readout.textContent = 'This graph predates provenance tracking.';
+                } else {
+                    const pct = Math.round(100 * (entities.length - guessed) / entities.length);
+                    readout.innerHTML = `${pct}% of visible guests &amp; orgs are curated`
+                        + (guessed ? ` &middot; <span style="opacity:0.8">${guessed} guessed</span>` : '');
+                }
+            }
 
             // Fresh copies so the force simulation never mutates the pristine data.
             createGraph({
@@ -1377,14 +1448,20 @@
                 .selectAll('line')
                 .data(graphData.links)
                 .join('line')
-                .attr('class', 'link');
+                .attr('class', d => 'link' + (
+                    d.provenance === 'inferred'
+                    && (d.type === 'GUEST_ON' || d.type === 'AFFILIATED_WITH')
+                        ? ' prov-inferred' : ''));
             
             // Nodes
             const node = g.append('g')
                 .selectAll('circle')
                 .data(graphData.nodes)
                 .join('circle')
-                .attr('class', 'node')
+                // Older graph files predate the source field. Treating a
+                // missing value as curated would silently overstate them, so
+                // they fall through to no marking at all.
+                .attr('class', d => 'node' + (d.source ? ' prov-' + d.source : ''))
                 .attr('r', d => sizeMap[d.type])
                 .attr('fill', d => colorMap[d.type])
                 .on('click', handleNodeClick)
@@ -1450,6 +1527,28 @@
                     content += `<div class="tooltip-meta">🏷️ ${eps} episode${eps !== 1 ? 's' : ''} in view</div>`;
                 }
                 
+                // Provenance last, as a footer: it qualifies everything above it.
+                const PROV_LABEL = {
+                    curated: '✅ From the curated spreadsheet',
+                    verified: '✅ Confirmed by hand in verified.json',
+                    feed: '📡 From the RSS feed',
+                    inferred: '⚠️ Guessed from a title or description'
+                };
+                if (d.source && PROV_LABEL[d.source]) {
+                    content += `<div class="tooltip-meta">${PROV_LABEL[d.source]}</div>`;
+                }
+                // A curated person can still have guessed appearances. The node
+                // shows the best you know; only the edges show the rest.
+                if (d.type === 'person' && d.source !== 'inferred') {
+                    const guessed = graphData.links.filter(l =>
+                        linkEnd(l.source) === d.id && l.type === 'GUEST_ON'
+                        && l.provenance === 'inferred'
+                    ).length;
+                    if (guessed) {
+                        content += `<div class="tooltip-meta">⚠️ ${guessed} guessed appearance${guessed !== 1 ? 's' : ''}</div>`;
+                    }
+                }
+
                 tooltip.html(content)
                     .style('left', (event.pageX + 15) + 'px')
                     .style('top', (event.pageY - 15) + 'px');
