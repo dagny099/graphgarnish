@@ -300,6 +300,12 @@ check("a job title is not a person",
       and strip_affiliation("VP of Product") == ("", ""))
 check("a plain name is left alone",
       strip_affiliation("Dean Allemang") == ("Dean Allemang", ""))
+check("a name too long for the name test survives if it is name-plus-employer",
+      split_people("Aakriti Agrawal from American Express")
+      == ["Aakriti Agrawal from American Express"],
+      "kept whole here; clean_guest_list splits it and files the employer")
+check("a topic-shaped tail is still not a person",
+      split_people("Reverse ETL?") == [] and split_people("the future of data") == [])
 check("a conjunction of two first names invents nobody",
       split_people("Juan and Tim") == [] and split_people("Roel and Valentijn") == [])
 check("a single name with an honorific still counts",

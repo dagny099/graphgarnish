@@ -250,7 +250,10 @@ def split_people(raw: str) -> list[str]:
     out = []
     for p in parts:
         p = HONORIFIC_TAIL.sub("", p).strip()
-        if looks_like_person(p):
+        # "Aakriti Agrawal from American Express" is too long to pass the name
+        # test, but it is a name with an employer attached rather than a topic.
+        # Keep it whole: clean_guest_list splits it and files the employer.
+        if looks_like_person(p) or (AFFIL_SUFFIX.match(p) and strip_affiliation(p)[0]):
             out.append(p)
     # A single name with a trailing honorific still counts. This fallback is
     # only safe when the split found nothing to split on: "Juan and Tim" splits
