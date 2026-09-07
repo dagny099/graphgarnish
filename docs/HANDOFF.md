@@ -391,7 +391,15 @@ Caveat to design around: `localStorage` is per-browser and per-device, and it ca
 empty. Fine for a convenience layer, wrong for anything the reader would be upset to lose.
 Offer an export.
 
-### 8.4 What NOT to do in that session
+### 8.4 First thing to do
+
+**Open the page.** `explore.html` has not been looked at in a browser since the
+deduplication work — 15 nodes left the graph and one episode changed title. The data
+contract was checked statically (the schema is unchanged, and every field the page reads
+still exists), but that is not the same as looking, and §5 is a list of five bugs of which
+two were only ever caught by looking.
+
+### 8.5 What NOT to do in that session
 
 - Do not touch the builder. It is settled and tested; the UI session is `explore.html`.
 - Do not add a framework. It is one file with d3 and that is a feature for a repo whose
