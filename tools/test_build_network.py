@@ -84,6 +84,50 @@ check("each page parses strictly, not by regex recovery",
       all(len(parse_feed(page)) == 1 for page in split_saved_pages(TWO_PAGES)),
       "a page that only the loose parser can read means the split is wrong")
 
+print("\ntwo feed items under one title")
+# The show ships genuine two-parters under a single identical title -- "Data
+# Storytelling with Kat Greenbrook" is two items with two guids and two audio
+# URLs on 2023-11-02. They normalize to the same key, so the second used to
+# merge into the first, costing one episode its URL.
+TWIN_SEED = {
+    "nodes": [
+        {"id": "ep_twin1", "name": "Data Storytelling with Kat Greenbrook (Episode 1)",
+         "type": "episode", "date": "2023-11-02", "is_full": True},
+        {"id": "ep_twin2", "name": "Data Storytelling with Kat Greenbrook (Episode 2)",
+         "type": "episode", "date": "2023-11-02", "is_full": True},
+    ],
+    "links": [],
+}
+TWIN_FEED = [
+    {"title": "Data Storytelling with Kat Greenbrook", "date": "2023-11-02",
+     "description": "", "url": "https://example.com/twin-a", "guid": "guid-a",
+     "episode_type": "full", "season": "", "number": ""},
+    {"title": "Data Storytelling with Kat Greenbrook", "date": "2023-11-02",
+     "description": "", "url": "https://example.com/twin-b", "guid": "guid-b",
+     "episode_type": "full", "season": "", "number": ""},
+]
+twin = build(TWIN_SEED, TWIN_FEED, TOPICS)
+twin_eps = [n for n in twin["nodes"] if n["type"] == "episode"]
+check("two feed items under one title stay two episodes",
+      len(twin_eps) == 2, f"got {len(twin_eps)}")
+check("each of the pair keeps its own audio URL",
+      {e.get("url") for e in twin_eps}
+      == {"https://example.com/twin-a", "https://example.com/twin-b"},
+      f'got {sorted(e.get("url", "") for e in twin_eps)}')
+check("the spreadsheet titles are kept, since they are the only thing "
+      "telling the pair apart",
+      {e["name"] for e in twin_eps} == {n["name"] for n in TWIN_SEED["nodes"]},
+      f'got {sorted(e["name"] for e in twin_eps)}')
+
+# The fallback is narrow: one feed item and one seed episode still take the
+# feed's untruncated wording, which is the normal case for every other episode.
+SOLO_SEED = {"nodes": [dict(TWIN_SEED["nodes"][0])], "links": []}
+solo = build(SOLO_SEED, TWIN_FEED[:1], TOPICS)
+solo_eps = [n for n in solo["nodes"] if n["type"] == "episode"]
+check("an unambiguous feed title still wins over the spreadsheet",
+      [e["name"] for e in solo_eps] == ["Data Storytelling with Kat Greenbrook"],
+      f'got {[e["name"] for e in solo_eps]}')
+
 print("\nunit: seed/feed episode matching")
 # The ten seed/feed pairs that were landing in the graph as duplicate episodes.
 # In every one the dates are identical and the spreadsheet title is the entire

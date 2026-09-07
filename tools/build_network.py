@@ -773,7 +773,12 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
 
     # Start from every seed episode, then let feed items overwrite/extend.
     records: dict[tuple[str, bool], dict] = {}
+    # The spreadsheet title, kept aside so a feed title that turns out to be
+    # ambiguous can fall back to it. Not part of the record, so it cannot leak
+    # into the output.
+    seed_titles: dict[tuple[str, bool], str] = {}
     for key, ep in seed_eps.items():
+        seed_titles[key] = ep["name"]
         records[key] = {
             "title": ep["name"], "date": ep["date"],
             "description": ep.get("description", ""),
@@ -782,6 +787,13 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
         }
 
     seen_guids: set[str] = set()
+    # A record already merged with one feed item is off the table for the next.
+    # The show ships genuine two-parters under one identical title -- "Data
+    # Storytelling with Kat Greenbrook" is two separate items on 2023-11-02 --
+    # and they normalize to the same key. Without this the second item merged
+    # into the first one's record, so one episode of the pair lost its URL and
+    # the feed's own copy of it vanished from the graph.
+    claimed: dict[tuple[str, bool], str] = {}
     for item in feed_items:
         guid = item.get("guid") or ""
         if guid:
@@ -789,15 +801,22 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
                 continue
             seen_guids.add(guid)
         companion = is_takeaway(item["title"], item.get("episode_type", ""))
-        same_kind = [k for (k, c) in records if c == companion]
+        same_kind = [k for (k, c) in records
+                     if c == companion and (k, c) not in claimed]
         ikey = norm_key(item["title"], companion)
         hit = prefix_match(ikey, same_kind)
         if hit is None:
             # The seed titles came from a spreadsheet and sometimes diverge from
             # the feed's wording before the 60-char cut, so a prefix test misses.
             # Same publication date plus a long shared opening is enough.
-            hit = same_date_match(ikey, item["date"], records, companion)
+            unclaimed = {k: v for k, v in records.items() if k not in claimed}
+            hit = same_date_match(ikey, item["date"], unclaimed, companion)
         key = (hit, companion) if hit else (ikey, companion)
+        # Two feed items that normalize alike and match nothing in the seed still
+        # need separate records, so the later one gets a distinct key.
+        while hit is None and key in claimed:
+            key = (key[0] + "~", companion)
+        claimed[key] = guid or ikey
         rec = records.get(key)
         if rec:
             # Feed wins on title (untruncated) and description; seed wins on guests.
@@ -815,6 +834,22 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
                 "guests": [], "source": "feed",
                 "season": item.get("season", ""), "number": item.get("number", ""),
             }
+
+    # A feed title wins over the truncated spreadsheet one, except where that
+    # would make two episodes indistinguishable. The show ships genuine
+    # two-parters under a single identical title, and the spreadsheet is the
+    # only place the parts are told apart ("... (Episode 2)"). Restoring that
+    # title is better than two nodes a reader cannot tell apart.
+    by_title_date: dict[tuple[str, str], list] = defaultdict(list)
+    for key, rec in records.items():
+        by_title_date[(rec["title"], rec["date"])].append(key)
+    for keys in by_title_date.values():
+        if len(keys) < 2:
+            continue
+        for key in keys:
+            seeded = seed_titles.get(key)
+            if seeded and seeded != records[key]["title"]:
+                records[key]["title"] = seeded
 
     # Expand any seed guest entry that packed several humans into one name,
     # and fill in guests for feed-only episodes.
