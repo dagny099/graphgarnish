@@ -3,14 +3,14 @@
     "generated_by": "tools/build_network.py",
     "source": "seed+feed",
     "counts": {
-      "episode": 388,
+      "episode": 373,
       "person": 184,
       "organization": 103,
       "topic": 22
     },
     "provenance": {
       "episode": {
-        "feed": 186,
+        "feed": 171,
         "curated": 202
       },
       "organization": {
@@ -34,10 +34,10 @@
         "verified": 1
       },
       "COVERS": {
-        "inferred": 885
+        "inferred": 879
       },
       "GUEST_ON": {
-        "inferred": 112,
+        "inferred": 99,
         "curated": 146,
         "verified": 3
       },
@@ -84,6 +84,11 @@
       {
         "date": "2022-02-24",
         "title": "Why are data transformations such a big deal? Live from the dbt Coalesce Happy Hour.",
+        "reason": "no guest found in title or description"
+      },
+      {
+        "date": "2021-05-27",
+        "title": "The Future of BI is AI",
         "reason": "no guest found in title or description"
       },
       {
@@ -134,11 +139,6 @@
       {
         "date": "2021-06-03",
         "title": "SEASON ONE FINALE: Episode 50",
-        "reason": "no guest found in title or description"
-      },
-      {
-        "date": "2021-05-27",
-        "title": "The Future of BI is AI",
         "reason": "no guest found in title or description"
       },
       {
@@ -865,17 +865,9 @@
       "type": "episode",
       "date": "2021-05-27",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/The-Future-of-BI-is-AI-e3650f3",
       "summary": "Business intelligence has come a long way since the early days of IBM’s decision support systems. Today BI is the backbone of many data-driven organizations, and companies often look to BI tools to help them make accurate predictions. In this episode, we take a look into the future of BI itself. Join Tim, Juan, and Ashley Kramer, the Chief Product Officer from Sisense, as they explore the intersec"
-    },
-    {
-      "id": "ep_20210527_the_future_of_bi_is_ai_h",
-      "name": "The Future of BI is AI – hosts Tim Gasper & Juan Sequeda",
-      "type": "episode",
-      "date": "2021-05-27",
-      "is_full": true,
-      "source": "curated"
     },
     {
       "id": "ep_20210603_season_one_finale_episod",
@@ -938,20 +930,12 @@
       "summary": "We all want to get more value from our data, right? So should we wrangle it, prep it, classify it, mine it, or model it? Then once we’ve got our data squared away, should we do prescriptive or predictive analytics? And does that require real-time or just-in-time data? If we had a nickel for every buzzword we hear, we could afford far better podcasting equipment. In this episode, Tim and Juan are j"
     },
     {
-      "id": "ep_20210902_the_era_of_data_usage",
-      "name": "The Era of Data Usage",
-      "type": "episode",
-      "date": "2021-09-02",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
       "id": "ep_20210902_the_era_of_data_usage_w_",
       "name": "The Era of Data Usage w/ Mike Ferguson",
       "type": "episode",
       "date": "2021-09-02",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/The-Era-of-Data-Usage-w-Mike-Ferguson-e3650p0",
       "summary": "You can’t get from your home to the grocery simply by owning a car. You have to actually drive the vehicle to get to a place that delivers value. Sounds obvious right? But we don’t instinctively think this way when it comes to data. We focus so much on tools, processes, and architectures, but we don’t talk enough about actually using the data . This week, Tim and Juan are joined by Mike Ferguson ,"
     },
@@ -967,37 +951,21 @@
     },
     {
       "id": "ep_20210916_how_to_think_about_data_",
-      "name": "How to think about data value",
-      "type": "episode",
-      "date": "2021-09-16",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
-      "id": "ep_20210916_how_to_think_about_data__2",
       "name": "How to think about data value w/ Lars Albertsson",
       "type": "episode",
       "date": "2021-09-16",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/How-to-think-about-data-value-w-Lars-Albertsson-e3650ec",
       "summary": "Don't forget to register for the data.world Fall summit 2021: data.world/events We all strive to be data-driven. And yet we all instinctively know that we’re not very good at it. In fact, if you believe any number of recent surveys, it seems we may actually be getting worse at data. One reason for this is a misalignment on what success looks like. How do you define and measure it? What is the actu"
     },
     {
       "id": "ep_20210923_fashion_week_but_for_dat",
-      "name": "Fashion Week...but for data",
-      "type": "episode",
-      "date": "2021-09-23",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
-      "id": "ep_20210923_fashion_week_but_for_dat_2",
       "name": "Fashion Week...but for data w/ Jans Aasman",
       "type": "episode",
       "date": "2021-09-23",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Fashion-Week---but-for-data-w-Jans-Aasman-e3650fc",
       "summary": "Fall summit 2021 is right around the corner!!!! Join speakers from Nationwide, ThoughtSpot and MANY MORE to discuss hot topics like Data Mesh, DataOps, and the future of data management on Sep. 29: data.world/events/summit ________________ With the hype of graph databases and knowledge graphs, a common (mis)practice is to quickly migrate your existing siloed data into a graph database. But be care"
     },
@@ -1032,20 +1000,12 @@
       "summary": "When we think about good, responsible data stewardship, we often think in terms of compliance and governance. We talk about access, trust, and consumption. But there’s another dimension we must consider if we’re to be truly responsible with data. We simply can’t ignore the role of ethics in data use. Join Tim, Juan and special guest Partha Srinivasa, award-winning CIO/CTO/CDO and current CDO of Ve"
     },
     {
-      "id": "ep_20211021_the_data_mesh_debate",
-      "name": "The Data Mesh Debate",
-      "type": "episode",
-      "date": "2021-10-21",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
       "id": "ep_20211021_the_data_mesh_debate_w_h",
       "name": "The Data Mesh Debate w/ hosts Juan and Tim",
       "type": "episode",
       "date": "2021-10-21",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "hosts_only": true,
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/The-Data-Mesh-Debate-w-hosts-Juan-and-Tim-e3650h1",
       "summary": "“What is a data mesh? ” It’s one of the most frequently asked questions on this podcast, and is almost a microcosm for data and analytics as a whole. It may be the next big thing. It may be yet another passing fad in architectural design. We compared and contrasted it with data fabric in Episode 32 and spoke with Zhamak Dehghani, the founder of the data mesh paradigm in Episode 44 . We even hosted"
@@ -1076,25 +1036,9 @@
       "type": "episode",
       "date": "2021-11-11",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Is-self-service-BI-the-answer--w-Cindi-Howson-e3650c5",
       "summary": "Self-service is great for listening to music, pumping gas, and figuring out what to binge watch on TV. But is self-service really what we want from our analytics? What happens to the business world when everyone is a data analyst? Tim, Juan, and special guest Cindi Howson, chief data strategy officer at ThoughtSpot and host of The Data Chief Podcast explore the positives and potential downsides of"
-    },
-    {
-      "id": "ep_20211111_is_selfservice_bi_the_an",
-      "name": "Is self‑service BI the answer?",
-      "type": "episode",
-      "date": "2021-11-11",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
-      "id": "ep_20211118_long_live_the_monolith",
-      "name": "Long live the monolith?",
-      "type": "episode",
-      "date": "2021-11-18",
-      "is_full": true,
-      "source": "curated"
     },
     {
       "id": "ep_20211118_long_live_the_monolith_w",
@@ -1102,7 +1046,7 @@
       "type": "episode",
       "date": "2021-11-18",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Long-live-the-monolith--w-Andy-Palmer-from-Tamr-e3650g0",
       "summary": "It wasn’t that long ago that enterprise software was dominated by proprietary data architectures from the likes of IBM, Oracle, and SAP. Once you made a selection, you were stuck with it for better or worse, in sickness and in health. But that’s not the case today. The methodical movement towards resilient, open SaaS applications and best-of-breed tools has ushered in the era of DataOps buoyed by "
     },
@@ -1168,19 +1112,11 @@
     },
     {
       "id": "ep_20220113_modern_data_work_at_driz",
-      "name": "Modern Data Work at Drizly",
-      "type": "episode",
-      "date": "2022-01-13",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
-      "id": "ep_20220113_modern_data_work_at_driz_2",
       "name": "Modern Data Work at Drizly w/ Emily Hawkins",
       "type": "episode",
       "date": "2022-01-13",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Modern-Data-Work-at-Drizly-w-Emily-Hawkins-e3650is",
       "summary": "Sure, it’s fun to chat with data executives and thought leaders, but this season, we are focusing on the people who roll up their sleeves and get the data work done. And there’s no better place for a podcast like ours to start than with a data practitioner at Drizly. Special guest Emily Hawkins , analytics and data platform lead, joins Tim and Juan to share how the data team and the data stack wer"
     },
@@ -1206,37 +1142,21 @@
     },
     {
       "id": "ep_20220120_what_good_is_a_metrics_l",
-      "name": "What good is a Metrics Layer?",
-      "type": "episode",
-      "date": "2022-01-20",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
-      "id": "ep_20220120_what_good_is_a_metrics_l_2",
       "name": "What good is a Metrics Layer? w/ Benn Stancil from Mode",
       "type": "episode",
       "date": "2022-01-20",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/What-good-is-a-Metrics-Layer--w-Benn-Stancil-from-Mode-e3650ij",
       "summary": "We all like to measure things: height, weight, company revenue, active users on our SaaS platform. Measurement, and a common understanding of that measure is critical whether you’re a doctor, an athlete, or a business decision maker. Self-service analytics is much easier today, but without shared definitions for the metrics we’re reporting on, trust in analytics is still relatively low. Is it time"
     },
     {
       "id": "ep_20220127_can_the_data_mesh_be_gov",
-      "name": "Can the Data Mesh be Governed?",
-      "type": "episode",
-      "date": "2022-01-27",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
-      "id": "ep_20220127_can_the_data_mesh_be_gov_2",
       "name": "Can the Data Mesh be Governed? w/ Dora Boussias",
       "type": "episode",
       "date": "2022-01-27",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Can-the-Data-Mesh-be-Governed--w-Dora-Boussias-e3650gg",
       "summary": "Data mesh continues to be a hot topic in 2022, and it feels like we’re finally past the definition stage. The big question to resolve this year is: how do you do federated data governance in a decentralized environment? Can you even do it? Join Tim, Juan and special guest Dora Boussias , Director of Enterprise Architecture and Data Strategy, for a live brainstorming session on how to implement dat"
     },
@@ -1352,37 +1272,21 @@
     },
     {
       "id": "ep_20220310_your_privacy_is_my_curre",
-      "name": "Your privacy is my currency",
-      "type": "episode",
-      "date": "2022-03-10",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
-      "id": "ep_20220310_your_privacy_is_my_curre_2",
       "name": "Your privacy is my currency with Patricia Thaine from Private AI",
       "type": "episode",
       "date": "2022-03-10",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Your-privacy-is-my-currency-with-Patricia-Thaine-from-Private-AI-e3650e3",
       "summary": "What does the word, “privacy” mean to you? Is it about being left alone? Being forgotten? In today’s world of ubiquitous digital apps, we think about privacy and utility as a give and get. To get the best experiences from Google, Facebook, and Amazon, I need to give up some measure of privacy. But, is that true? Join Tim, Juan and special guest Patricia Thaine, CEO from Private AI to discuss the s"
     },
     {
       "id": "ep_20220317_agile_like_a_fox_but_for",
-      "name": "Agile like a fox, but for data",
-      "type": "episode",
-      "date": "2022-03-17",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
-      "id": "ep_20220317_agile_like_a_fox_but_for_2",
       "name": "Agile like a fox, but for data. W/ Shane Gibson from AgileData.io",
       "type": "episode",
       "date": "2022-03-17",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Agile-like-a-fox--but-for-data--W-Shane-Gibson-from-AgileData-io-e3650f5",
       "summary": "Agile processes in software development date back to the beginning of the century. We’re now seeing concepts like scrum and sprints make their way into the world of data. data.world is even applying agile to data governance. But what exactly does it mean to be agile in data? What’s the end product, and how do you measure and scale the practice in your organization? Join Tim, Juan and special guest"
     },
@@ -1598,19 +1502,11 @@
     },
     {
       "id": "ep_20220609_getting_all_meta_about_d",
-      "name": "Getting all meta about data",
-      "type": "episode",
-      "date": "2022-06-09",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
-      "id": "ep_20220609_getting_all_meta_about_d_2",
       "name": "Getting all meta about data w/ Sanjeev Mohan",
       "type": "episode",
       "date": "2022-06-09",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Getting-all-meta-about-data-w-Sanjeev-Mohan-e3650i6",
       "summary": "So much of the focus of the analytics and vendor community today is on data. We have solutions for data visualization, warehousing, observability, cataloging, transformations, and more. But data is nothing without context. So why does metadata tend to draw the short straw? In this episode, Tim, Juan, and Sanjeev Mohan, former Gartner analyst and principal at SanjMo, explore how metadata acts as a "
     },
@@ -1645,20 +1541,12 @@
       "summary": "LIVE from the Snowflake Summit in Vegas. The hosts of Catalog & Cocktails sit down with Peter Kapur from WM to explore how we should be getting true value from metadata, data and analytics. This Takeaway episode will feature the summary of the upcoming show. See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20220623_data_models_are_divas",
-      "name": "Data Models are Divas",
-      "type": "episode",
-      "date": "2022-06-23",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
       "id": "ep_20220623_data_models_are_divas_w_",
       "name": "Data Models are Divas w/ Ergest Xheblati",
       "type": "episode",
       "date": "2022-06-23",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Data-Models-are-Divas-w-Ergest-Xheblati-e3650g2",
       "summary": "We live in a data first world. Give me more and more data. But what about the meaning of that data? How should the data be modeled so it can be easily understood and consumed by data scientist and analyst? In this episode, Tim, Juan, and Ergest Xheblati, will live discuss why data modeling should be at the core of an enterprise. This episode will also cover: How data modeling is going to change th"
     },
@@ -1705,19 +1593,11 @@
     },
     {
       "id": "ep_20220825_build_bridges_dont_burn_",
-      "name": "Build bridges. Don’t Burn them.",
-      "type": "episode",
-      "date": "2022-08-25",
-      "is_full": true,
-      "source": "curated"
-    },
-    {
-      "id": "ep_20220825_build_bridges_dont_burn__2",
       "name": "Build bridges. Don’t Burn them. W/ Vip Parmar, WPP",
       "type": "episode",
       "date": "2022-08-25",
       "is_full": true,
-      "source": "feed",
+      "source": "curated",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Build-bridges--Dont-Burn-them--W-Vip-Parmar--WPP-e3650hm",
       "summary": "Catalog & Cocktails is BACK! Tune in for the SEASON FOUR PREMIERE with hosts Juan Sequeda and Tim Gasper ! Bridging the gap between business and IT is an age-old problem. IT doesn’t understand the business. The business doesn’t understand IT. Everyone looks at IT and business as if they were separate and point fingers, when they should actually be together. Join Tim, Juan and Vipul P. , Global Hea"
     },
@@ -7739,12 +7619,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210527_the_future_of_bi_is_ai_h",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210603_season_one_finale_episod",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -7907,55 +7781,55 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210916_how_to_think_about_data__2",
+      "source": "ep_20210916_how_to_think_about_data_",
       "target": "topic_data_products",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210916_how_to_think_about_data__2",
+      "source": "ep_20210916_how_to_think_about_data_",
       "target": "topic_data_strategy",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210916_how_to_think_about_data__2",
+      "source": "ep_20210916_how_to_think_about_data_",
       "target": "topic_industry_field_notes",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210916_how_to_think_about_data__2",
+      "source": "ep_20210916_how_to_think_about_data_",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210923_fashion_week_but_for_dat_2",
+      "source": "ep_20210923_fashion_week_but_for_dat",
       "target": "topic_data_mesh",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210923_fashion_week_but_for_dat_2",
+      "source": "ep_20210923_fashion_week_but_for_dat",
       "target": "topic_data_modeling",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210923_fashion_week_but_for_dat_2",
+      "source": "ep_20210923_fashion_week_but_for_dat",
       "target": "topic_industry_field_notes",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210923_fashion_week_but_for_dat_2",
+      "source": "ep_20210923_fashion_week_but_for_dat",
       "target": "topic_knowledge_graphs",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210923_fashion_week_but_for_dat_2",
+      "source": "ep_20210923_fashion_week_but_for_dat",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8011,12 +7885,6 @@
     {
       "source": "ep_20211014_sure_youre_responsible_b",
       "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20211021_the_data_mesh_debate",
-      "target": "topic_data_mesh",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8089,12 +7957,6 @@
     {
       "source": "ep_20211111_is_self_service_bi_the_a",
       "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20211111_is_selfservice_bi_the_an",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8201,25 +8063,25 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220113_modern_data_work_at_driz_2",
+      "source": "ep_20220113_modern_data_work_at_driz",
       "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220113_modern_data_work_at_driz_2",
+      "source": "ep_20220113_modern_data_work_at_driz",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220113_modern_data_work_at_driz_2",
+      "source": "ep_20220113_modern_data_work_at_driz",
       "target": "topic_data_teams_org",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220113_modern_data_work_at_driz_2",
+      "source": "ep_20220113_modern_data_work_at_driz",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8243,26 +8105,38 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220120_what_good_is_a_metrics_l_2",
+      "source": "ep_20220120_what_good_is_a_metrics_l",
       "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220120_what_good_is_a_metrics_l_2",
+      "source": "ep_20220120_what_good_is_a_metrics_l",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220120_what_good_is_a_metrics_l_2",
+      "source": "ep_20220120_what_good_is_a_metrics_l",
       "target": "topic_data_strategy",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220120_what_good_is_a_metrics_l_2",
+      "source": "ep_20220120_what_good_is_a_metrics_l",
       "target": "topic_privacy_ethics_risk",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220127_can_the_data_mesh_be_gov",
+      "target": "topic_architecture_platforms",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220127_can_the_data_mesh_be_gov",
+      "target": "topic_data_governance",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8273,31 +8147,13 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220127_can_the_data_mesh_be_gov_2",
-      "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220127_can_the_data_mesh_be_gov_2",
-      "target": "topic_data_governance",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220127_can_the_data_mesh_be_gov_2",
-      "target": "topic_data_mesh",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220127_can_the_data_mesh_be_gov_2",
+      "source": "ep_20220127_can_the_data_mesh_be_gov",
       "target": "topic_data_strategy",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220127_can_the_data_mesh_be_gov_2",
+      "source": "ep_20220127_can_the_data_mesh_be_gov",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8495,19 +8351,13 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220310_your_privacy_is_my_curre_2",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220317_agile_like_a_fox_but_for_2",
+      "source": "ep_20220317_agile_like_a_fox_but_for",
       "target": "topic_data_governance",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220317_agile_like_a_fox_but_for_2",
+      "source": "ep_20220317_agile_like_a_fox_but_for",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8843,37 +8693,37 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220609_getting_all_meta_about_d_2",
+      "source": "ep_20220609_getting_all_meta_about_d",
       "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220609_getting_all_meta_about_d_2",
+      "source": "ep_20220609_getting_all_meta_about_d",
       "target": "topic_data_catalogs",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220609_getting_all_meta_about_d_2",
+      "source": "ep_20220609_getting_all_meta_about_d",
       "target": "topic_data_quality",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220609_getting_all_meta_about_d_2",
+      "source": "ep_20220609_getting_all_meta_about_d",
       "target": "topic_industry_field_notes",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220609_getting_all_meta_about_d_2",
+      "source": "ep_20220609_getting_all_meta_about_d",
       "target": "topic_metadata",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220609_getting_all_meta_about_d_2",
+      "source": "ep_20220609_getting_all_meta_about_d",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8947,12 +8797,6 @@
     {
       "source": "ep_20220616_takeaways_with_peter_kap",
       "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220623_data_models_are_divas",
-      "target": "topic_data_modeling",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9011,31 +8855,31 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220825_build_bridges_dont_burn__2",
+      "source": "ep_20220825_build_bridges_dont_burn_",
       "target": "topic_business_value_roi",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220825_build_bridges_dont_burn__2",
+      "source": "ep_20220825_build_bridges_dont_burn_",
       "target": "topic_data_culture_literacy",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220825_build_bridges_dont_burn__2",
+      "source": "ep_20220825_build_bridges_dont_burn_",
       "target": "topic_data_mesh",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220825_build_bridges_dont_burn__2",
+      "source": "ep_20220825_build_bridges_dont_burn_",
       "target": "topic_data_strategy",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220825_build_bridges_dont_burn__2",
+      "source": "ep_20220825_build_bridges_dont_burn_",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
@@ -12258,15 +12102,9 @@
     },
     {
       "source": "person_andy_palmer",
-      "target": "ep_20211118_long_live_the_monolith",
-      "type": "GUEST_ON",
-      "provenance": "curated"
-    },
-    {
-      "source": "person_andy_palmer",
       "target": "ep_20211118_long_live_the_monolith_w",
       "type": "GUEST_ON",
-      "provenance": "inferred"
+      "provenance": "curated"
     },
     {
       "source": "person_anna_abramova",
@@ -12345,12 +12183,6 @@
       "target": "ep_20220120_what_good_is_a_metrics_l",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_benn_stancil",
-      "target": "ep_20220120_what_good_is_a_metrics_l_2",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_benny_benford",
@@ -12494,12 +12326,6 @@
       "source": "person_cindi_howson",
       "target": "ep_20211111_is_self_service_bi_the_a",
       "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_cindi_howson",
-      "target": "ep_20211111_is_selfservice_bi_the_an",
-      "type": "GUEST_ON",
       "provenance": "curated"
     },
     {
@@ -12594,12 +12420,6 @@
     },
     {
       "source": "person_dora_boussias",
-      "target": "ep_20220127_can_the_data_mesh_be_gov_2",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_dora_boussias",
       "target": "ep_20220127_s3e4_takeaways_with_dora",
       "type": "GUEST_ON",
       "provenance": "inferred"
@@ -12636,27 +12456,15 @@
     },
     {
       "source": "person_emily_hawkins",
-      "target": "ep_20220113_modern_data_work_at_driz_2",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_emily_hawkins",
       "target": "ep_20220113_s3e2_takeaways_with_emil",
       "type": "GUEST_ON",
       "provenance": "inferred"
     },
     {
       "source": "person_ergest_xheblati",
-      "target": "ep_20220623_data_models_are_divas",
-      "type": "GUEST_ON",
-      "provenance": "curated"
-    },
-    {
-      "source": "person_ergest_xheblati",
       "target": "ep_20220623_data_models_are_divas_w_",
       "type": "GUEST_ON",
-      "provenance": "inferred"
+      "provenance": "curated"
     },
     {
       "source": "person_ergest_xheblati",
@@ -12783,12 +12591,6 @@
       "target": "ep_20210923_fashion_week_but_for_dat",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_jans_aasman",
-      "target": "ep_20210923_fashion_week_but_for_dat_2",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_jason_doerr",
@@ -13019,12 +12821,6 @@
       "provenance": "curated"
     },
     {
-      "source": "person_lars_albertsson",
-      "target": "ep_20210916_how_to_think_about_data__2",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_laura_ellis",
       "target": "ep_20221013_data_empathy_you_either_",
       "type": "GUEST_ON",
@@ -13188,15 +12984,9 @@
     },
     {
       "source": "person_mike_ferguson",
-      "target": "ep_20210902_the_era_of_data_usage",
-      "type": "GUEST_ON",
-      "provenance": "curated"
-    },
-    {
-      "source": "person_mike_ferguson",
       "target": "ep_20210902_the_era_of_data_usage_w_",
       "type": "GUEST_ON",
-      "provenance": "inferred"
+      "provenance": "curated"
     },
     {
       "source": "person_mohammad_syed",
@@ -13349,12 +13139,6 @@
       "provenance": "curated"
     },
     {
-      "source": "person_patricia_thaine",
-      "target": "ep_20220310_your_privacy_is_my_curre_2",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_patrick_bangert",
       "target": "ep_20221006_ai_ml_where_should_the_f",
       "type": "GUEST_ON",
@@ -13482,12 +13266,6 @@
     },
     {
       "source": "person_sanjeev_mohan",
-      "target": "ep_20220609_getting_all_meta_about_d_2",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_sanjeev_mohan",
       "target": "ep_20220609_takeaways_with_sanjeev_m",
       "type": "GUEST_ON",
       "provenance": "inferred"
@@ -13545,12 +13323,6 @@
       "target": "ep_20220317_agile_like_a_fox_but_for",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_shane_gibson",
-      "target": "ep_20220317_agile_like_a_fox_but_for_2",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_shane_gibson",
@@ -13677,12 +13449,6 @@
       "target": "ep_20220825_build_bridges_dont_burn_",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_vip_parmar",
-      "target": "ep_20220825_build_bridges_dont_burn__2",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_wendy_turner_williams",
