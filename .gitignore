@@ -1,2 +1,15 @@
 __pycache__/
 *.pyc
+
+# Downloaded workflow artifacts, used to test the builder against the real
+# feed offline. See docs/HANDOFF.md section 4.
+feed-raw/
+feed-raw.xml
+feed-raw.zip
+build.log
+
+.DS_Store
+
+# Local scratch renders, not build outputs.
+output/
+tmp/
