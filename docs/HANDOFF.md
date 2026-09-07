@@ -1,6 +1,6 @@
 # GraphGarnish — session handoff
 
-Written 2026-09-07. `main` at `6281bdc`. **Delete this file before making the repo public.**
+Written 2026-09-06, updated 2026-09-07. `main` at `6b5b52f`. **Delete this file before making the repo public.**
 
 Read this, then read `tools/build_network.py`'s module docstring and `data/verified.json`'s
 `_README`. Between the three you have the whole design. Everything below is what those
@@ -10,19 +10,25 @@ files *don't* say.
 
 ## 1. Where things stand
 
-PR #4 merged. The refresh workflow ran clean afterwards. Live counts:
+PR #4 and #5 merged. Counts after the 2026-09-07 dedupe fix (§3.1); the previous
+numbers are in brackets where they changed, and every drop is a duplicate collapsing:
 
 ```
-episode          388   curated=202  feed=186
+episode          373   curated=202  feed=171     [388, feed=186]
 organization     103   curated=60   inferred=42  verified=1
 person           184   curated=141  inferred=40  verified=3
 topic             22   curated=22
 AFFILIATED_WITH  108   curated=61   inferred=46  verified=1
-COVERS           885   inferred=885
-GUEST_ON         261   curated=146  inferred=112  verified=3
+COVERS           879   inferred=879              [885]
+GUEST_ON         248   curated=146  inferred=99  verified=3   [261, inferred=112]
 TAKEAWAY_OF       62   inferred=62
-58 episodes need a guest checked
+58 episodes need a guest checked                 [unchanged]
+1 episode has no URL                             [16]
 ```
+
+The GUEST_ON drop is entirely `inferred` (112 -> 99): a duplicate pair had the guest
+curated on the seed copy and re-guessed on the feed copy, so merging them retires the
+guess and keeps the curated edge. No curated or verified edge moved.
 
 Site is live at https://graph-gist.com/explore.html (GitHub Pages off `main`).
 
@@ -67,7 +73,43 @@ matches a host-only pattern and still keeps Jesus Barrasa.
 
 ## 3. Open threads
 
-### 3.1 BLOCKING — 10 duplicate episodes in the live graph
+### 3.1 DONE (2026-09-07) — duplicate episodes in the live graph
+
+Fixed: `MIN_EXACT_DATE_PREFIX = 12` applies when the publication dates are *exactly*
+equal and one normalized title is a complete prefix of the other. The +/- 1 day window
+still needs the full `MIN_PREFIX`. Tests cover all ten pairs, plus three negative
+controls (neighbouring day, diverging prefix, companion clip).
+
+**The list of 10 below was incomplete — there were 15.** Four more sit at 17-19
+characters (`Data Models are Divas`, `Long live the monolith?`, `The Data Mesh Debate`,
+`The Era of Data Usage`), and one runs the other way, where the *feed* title is the
+shorter one (`The Future of BI is AI` vs the seed's `... – hosts Tim Gasper & Juan
+Sequeda`). All fifteen verified by hand against the feed: same date, exact prefix,
+guest suffix. Every one kept its curated guest and gained a URL.
+
+So the predicted 388 -> 378 and 16 -> 6 were both wrong. Actual: **388 -> 373
+episodes, 16 -> 1 URL-less.** Every seed episode now matches a distinct feed item
+(202 curated + 171 feed-only = 373 = the feed's own item count).
+
+The drop of 15 exceeds the drop guard's tolerance of 7, correctly — the guard cannot
+tell a dedupe fix from a truncated feed. Landed with the new
+`--accept-episode-drop 373`, which names the expected count rather than blanket-forcing:
+any other count still fails. Once this is committed the baseline is 373 and the
+scheduled workflow passes normally again. **If the outputs are not committed, the next
+scheduled run will refuse to commit** — it would see 388 in the published graph.
+
+The one remaining URL-less episode is the hand-decision below, and the feed settles it:
+
+> **`Data Storytelling with Kat Greenbrook (Episode 2)`** — a genuine two-parter. The
+> feed carries *two separate items* under the identical title on 2023-11-02. Because
+> `norm_key` collides them, the second feed item merges into the first record and
+> Episode 2 keeps no URL. Pre-existing, not caused by the prefix fix. Fixing it means
+> falling back to the guid when two feed items normalize the same — left undone.
+
+<details>
+<summary>Original diagnosis, kept for the record</summary>
+
+#### 10 duplicate episodes in the live graph
 
 The same episode appears twice: once from the spreadsheet (short title, no URL, no summary),
 once from the feed (full title with guest).
@@ -113,12 +155,26 @@ drop to 6. Verify both.
 `… (Episode 2)`. Both curated. Genuine two-parter or a spreadsheet duplicate — only Barbara
 knows.
 
-### 3.2 BLOCKING — no CI on pull requests
+</details>
+
+### 3.2 DONE (2026-09-07) — no CI on pull requests
+
+`.github/workflows/tests.yml` runs on `pull_request` and on pushes to `main`: the
+invariant suite, plus a determinism check that builds twice from the checked-in RSS
+fixture and diffs the bytes. No network, and it writes to a scratch path so it never
+touches the published outputs.
+
+<details>
+<summary>Original diagnosis</summary>
+
+#### no CI on pull requests
 
 `.github/workflows/refresh-network.yml` triggers on `schedule` and `workflow_dispatch` only.
 Nothing runs `tools/test_build_network.py` on a PR. That is exactly how the suite sat broken
 across two runs. Add a small workflow with a `pull_request` trigger running the test suite.
 Highest credibility per line of effort on the whole list.
+
+</details>
 
 ### 3.3 Data quality, non-blocking
 
@@ -234,9 +290,9 @@ Cut: the extraction-regex minutiae. Nobody needs the affiliation-suffix splitter
 
 ## 7. Suggested order for the next session
 
-1. Fix the 10 duplicates (§3.1) — biggest visible data-quality win, test set is ready.
-2. Add PR CI (§3.2) — ten lines.
-3. Run the workflow, confirm 378 episodes and 6 URL-less episodes.
+1. ~~Fix the duplicates (§3.1)~~ — done, 15 of them, 388 -> 373.
+2. ~~Add PR CI (§3.2)~~ — done, `.github/workflows/tests.yml`.
+3. ~~Confirm the counts~~ — done: 373 episodes, 1 URL-less. Predictions were off; see §3.1.
 4. `verified.json` pass: 6 recoverable guests, ~8 host-only patterns, 3 `_unresolved` (§3.3).
 5. Repo hygiene (§3.4), including deleting this file.
 6. Topic-over-time (§3.5) if there's appetite — it's the blog post's best visual.
