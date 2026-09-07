@@ -34,7 +34,7 @@
         "verified": 1
       },
       "COVERS": {
-        "inferred": 879
+        "inferred": 880
       },
       "GUEST_ON": {
         "inferred": 99,
@@ -2559,12 +2559,12 @@
     },
     {
       "id": "ep_20231102_data_storytelling_with_k",
-      "name": "Data Storytelling with Kat Greenbrook",
+      "name": "Data Storytelling with Kat Greenbrook (Episode 1)",
       "type": "episode",
       "date": "2023-11-02",
       "is_full": true,
       "source": "curated",
-      "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Data-Storytelling-with-Kat-Greenbrook-e3650f0",
+      "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Data-Storytelling-with-Kat-Greenbrook-e3650gq",
       "summary": "Data Storytelling is a topic that constantly comes up, but do we really know what it is? And what it isn’t? Who best to have this #honestnobs discussion than Kat Greenbrook, author of the upcoming book The Data Storyteller’s Handbook: How to create business impact using data storytelling. See omnystudio.com/listener for privacy information."
     },
     {
@@ -2573,7 +2573,9 @@
       "type": "episode",
       "date": "2023-11-02",
       "is_full": true,
-      "source": "curated"
+      "source": "curated",
+      "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Data-Storytelling-with-Kat-Greenbrook-e3650f0",
+      "summary": "Data Storytelling is a topic that constantly comes up, but do we really know what it is? And what it isn’t? Who best to have this #honestnobs discussion than Kat Greenbrook, author of the upcoming book The Data Storyteller’s Handbook: How to create business impact using data storytelling. See omnystudio.com/listener for privacy information."
     },
     {
       "id": "ep_20231122_making_data_science_more",
@@ -10381,6 +10383,12 @@
     {
       "source": "ep_20231102_data_storytelling_with_k_2",
       "target": "topic_data_culture_literacy",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20231102_data_storytelling_with_k_2",
+      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },

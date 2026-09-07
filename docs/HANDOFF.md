@@ -19,11 +19,11 @@ organization     103   curated=60   inferred=42  verified=1
 person           184   curated=141  inferred=40  verified=3
 topic             22   curated=22
 AFFILIATED_WITH  108   curated=61   inferred=46  verified=1
-COVERS           879   inferred=879              [885]
+COVERS           880   inferred=880              [885]
 GUEST_ON         248   curated=146  inferred=99  verified=3   [261, inferred=112]
 TAKEAWAY_OF       62   inferred=62
 58 episodes need a guest checked                 [unchanged]
-1 episode has no URL                             [16]
+0 episodes have no URL                           [16]
 ```
 
 The GUEST_ON drop is entirely `inferred` (112 -> 99): a duplicate pair had the guest
@@ -98,13 +98,17 @@ any other count still fails. Once this is committed the baseline is 373 and the
 scheduled workflow passes normally again. **If the outputs are not committed, the next
 scheduled run will refuse to commit** — it would see 388 in the published graph.
 
-The one remaining URL-less episode is the hand-decision below, and the feed settles it:
+**The Kat Greenbrook hand-decision is settled and fixed.** The feed carries *two separate
+items* on 2023-11-02 — different guids, different Spotify episode URLs, identical title,
+date and description. A real two-parter the publisher never numbered. Two fixes:
 
-> **`Data Storytelling with Kat Greenbrook (Episode 2)`** — a genuine two-parter. The
-> feed carries *two separate items* under the identical title on 2023-11-02. Because
-> `norm_key` collides them, the second feed item merges into the first record and
-> Episode 2 keeps no URL. Pre-existing, not caused by the prefix fix. Fixing it means
-> falling back to the guid when two feed items normalize the same — left undone.
+- A record already merged with one feed item is off the table for the next, so the second
+  item can no longer swallow the first one's record. Both parts keep their own audio URL.
+- A feed title wins over the truncated spreadsheet one *except* where taking it would
+  leave two episodes indistinguishable. There the spreadsheet title comes back, which is
+  the only place `(Episode 1)` / `(Episode 2)` exists.
+
+**No episode in the graph is now missing a URL.**
 
 <details>
 <summary>Original diagnosis, kept for the record</summary>
@@ -201,6 +205,12 @@ Highest credibility per line of effort on the whole list.
 - **`catalog_cocktails.json` and `sample_network.json` are byte-identical**, 500KB each, and
   only `sample_network.json` is fetched by `explore.html`. Delete one or document why both
   exist. A reviewer will ask.
+- ~~**`--save-feed` writes invalid XML.**~~ Fixed 2026-09-07. `follow_pages` appends each
+  page into one file, so the artifact was several XML documents end to end — every run
+  that read one back printed "feed is not well-formed XML" and fell through to the regex
+  recovery parser. The file is self-describing (`<!-- page: URL -->` markers), so
+  `parse_feed` now splits on them and parses each page strictly. The bytes on disk are
+  still exactly what the server sent, which is the point of keeping the raw response.
 - **`MAX_FEED_PAGES = 40` fails silently.** `follow_pages` stops at the cap with no warning.
   Print one. Currently ~373 items so not hit, but it's a silent failure mode.
 - **`meta.episodes_needing_review` conflates two states** — "we don't know" and "confirmed
@@ -297,4 +307,95 @@ Cut: the extraction-regex minutiae. Nobody needs the affiliation-suffix splitter
 5. Repo hygiene (§3.4), including deleting this file.
 6. Topic-over-time (§3.5) if there's appetite — it's the blog post's best visual.
 
-Steps 1–3 are what make the repo shareable. 4–6 are polish.
+Steps 1–3 are done (2026-09-07). 4–6 are polish, and §8 is the session after that.
+
+---
+
+## 8. The UI session — framing before pixels
+
+**Do not open this session on hover states.** "What should hovering do" and "why would I
+open this on a Tuesday" are different projects, and starting on the first means never
+reaching the second. Settle the habit question first; the interaction details fall out of
+it almost mechanically.
+
+### 8.1 The question worth answering
+
+The graph is not competing with a podcast archive. Spotify already lists every episode.
+What this has that nothing else does is **provenance on every fact** — 99 of 248 guest
+edges are guesses, and the UI already dashes them.
+
+That means the graph can ask the reader something no archive can: *is this right?* A click
+that turns a dashed edge solid leaves the thing better than you found it, and that is a
+reason to come back. `meta.episodes_needing_review` (58 of them) is already the worklist.
+
+Design toward that and the interaction questions answer themselves:
+
+- **Hover** = "what is this and how sure are we?" Name, provenance, and *why* the graph
+  believes it — "guessed from the title", "from the spreadsheet", "you confirmed this".
+  The why is the part that is missing today and the part that makes the dashes mean
+  something.
+- **Click** = "let me act on this." On a confident node, pivot the graph. On a dashed one,
+  the resolve affordance below.
+- **Everything else** is subordinate to those two.
+
+### 8.2 How resolving the queue actually persists
+
+**It does not today.** Nothing in `explore.html` writes anywhere. This is the piece to
+build, and the shape is already decided by the architecture: **inputs are read-only,
+outputs are disposable** (§2). A UI that wrote to `sample_network.json` would reintroduce
+the exact loop this repo exists to demonstrate against. The next rebuild would overwrite
+it, and worse, a human decision would be indistinguishable from a regex guess.
+
+So a decision made in the browser has to land in **`data/verified.json`**, which is an
+input. That file is already the human decision layer — `person_org`, `drop_person`,
+`rename_person`, `hosts_only`. The UI does not need a new persistence mechanism; it needs
+to emit into the one that exists.
+
+The site is static on GitHub Pages, so there is no backend to write to. The buildable loop:
+
+1. Reader clicks a dashed edge, confirms or corrects the guest.
+2. The decision accumulates in `localStorage` — per-viewer, survives reloads, costs
+   nothing.
+3. A "copy corrections" button emits a `verified.json` fragment, already in the shape the
+   builder reads.
+4. That gets pasted into `data/verified.json` and committed — by hand at first, and via a
+   pre-filled GitHub "new issue" or edit URL once the shape is proven.
+5. The weekly workflow rebuilds, and the edge is solid **for every visitor**.
+
+Step 4 is the seam and it is deliberately manual: a public page that could write to the
+repo unattended is a different and much larger project. Manual is also *correct* here —
+these are Barbara's judgement calls, which is exactly what `_unresolved` in
+`data/verified.json` already records.
+
+Worth knowing: steps 1–3 are perhaps an afternoon and deliver the whole feeling of the
+loop. Do not let step 4 block them.
+
+### 8.3 The "listened" signal
+
+Good instinct, and it splits from the above along a clean line. **Two kinds of state, and
+they must not be confused:**
+
+| | example | lives in | who sees it |
+|---|---|---|---|
+| a claim about the world | this guest is Emily Hawkins | `data/verified.json`, via PR | everyone |
+| a fact about the viewer | I listened to this | `localStorage` | just you |
+
+A bare "listened" checkbox is a completionist mechanic and those go stale. What makes it
+worth building is that **the graph already knows the topic edges and the dates**, so it can
+say something a checkbox cannot: *you have heard 12 of the 18 data-mesh episodes, and the
+gap is 2022*. That is a reason to open it on a Tuesday. Combined with §3.5's
+topic-over-time view — still unbuilt, still the strongest visual in the repo — it becomes a
+map of your own listening against six years of the field moving.
+
+Caveat to design around: `localStorage` is per-browser and per-device, and it can come back
+empty. Fine for a convenience layer, wrong for anything the reader would be upset to lose.
+Offer an export.
+
+### 8.4 What NOT to do in that session
+
+- Do not touch the builder. It is settled and tested; the UI session is `explore.html`.
+- Do not add a framework. It is one file with d3 and that is a feature for a repo whose
+  point is that it is readable.
+- Do not make the page write to the output JSON, for the reason in §8.2.
+- Do not skip §4's browser setup. Two of the five bugs in §5 were only ever caught by
+  looking at the rendered page.
