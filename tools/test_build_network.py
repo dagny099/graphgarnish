@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_network import (  # noqa: E402
     Payload, build, clean_org, dedupe_attributes, discover_feed_url,
-    norm_key, same_date_match,
+    norm_key, same_date_match, split_saved_pages,
     episode_drop_is_safe, is_takeaway, next_page_url, strip_takeaway_prefix,
     guests_from_title, load_feed, load_topics, load_verified, normalize_name,
     parse_feed, parse_feed_loosely, parse_pubdate, previous_episode_count,
@@ -61,6 +61,28 @@ check("org trailing punctuation trimmed", clean_org("American Express.") == "Ame
 check("org run-on trimmed", clean_org("Profisee and host of CDO Matters Podcast") == "Profisee")
 check("data.world truncation repaired", clean_org("data") == "data.world")
 check("RFC-822 date parsed", parse_pubdate("Wed, 19 Nov 2025 10:00:00 -0600") == "2025-11-19")
+
+print("\nsaved feed artifacts")
+# --save-feed concatenates every page of a paginated feed into one file, which
+# is several XML documents end to end and not a well-formed document. Reading
+# one back used to fall through to the regex recovery parser.
+ONE_PAGE = """<?xml version="1.0"?><rss version="2.0"><channel>
+<item><title>Alpha</title><pubDate>Tue, 05 Jan 2021 10:00:00 -0600</pubDate>
+<guid>g-alpha</guid></item></channel></rss>"""
+TWO_PAGES = ONE_PAGE + """
+<!-- page: https://example.com/podcast.rss?page=2 -->
+<?xml version="1.0"?><rss version="2.0"><channel>
+<item><title>Beta</title><pubDate>Tue, 12 Jan 2021 10:00:00 -0600</pubDate>
+<guid>g-beta</guid></item></channel></rss>"""
+
+check("a single response is left alone", len(split_saved_pages(ONE_PAGE)) == 1)
+check("a saved artifact splits back into its pages",
+      len(split_saved_pages(TWO_PAGES)) == 2)
+check("every page of a saved artifact is parsed",
+      [i["title"] for i in parse_feed(TWO_PAGES)] == ["Alpha", "Beta"])
+check("each page parses strictly, not by regex recovery",
+      all(len(parse_feed(page)) == 1 for page in split_saved_pages(TWO_PAGES)),
+      "a page that only the loose parser can read means the split is wrong")
 
 print("\nunit: seed/feed episode matching")
 # The ten seed/feed pairs that were landing in the graph as duplicate episodes.

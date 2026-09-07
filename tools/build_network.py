@@ -562,7 +562,35 @@ def parse_atom(root) -> list[dict]:
     return items
 
 
+# follow_pages writes every page of a paginated feed into one --save-feed file,
+# separated by this marker. That file is therefore several XML documents end to
+# end, which is not a well-formed document: feeding it back through --feed-file
+# used to fail the strict parser and land on the regex recovery parser, with a
+# "not well-formed" warning on every run that read one. Splitting on the marker
+# parses each page strictly instead. The bytes on disk stay exactly what the
+# server sent, which is the whole point of keeping the raw response.
+PAGE_MARKER_RE = re.compile(r"^[ \t]*<!-- page: \S+ -->[ \t]*$", re.M)
+
+
+def split_saved_pages(xml_text: str) -> list[str]:
+    """Split a --save-feed artifact back into the pages it concatenates.
+
+    A response straight off the wire carries no marker and comes back as a
+    single page, so this is a no-op everywhere except on a saved artifact."""
+    parts = (part.strip() for part in PAGE_MARKER_RE.split(xml_text))
+    return [part for part in parts if part]
+
+
 def parse_feed(xml_text: str) -> list[dict]:
+    pages = split_saved_pages(xml_text)
+    if len(pages) > 1:
+        items: list[dict] = []
+        for page in pages:
+            items.extend(parse_feed(page))
+        print(f"read {len(pages)} saved feed pages for {len(items)} items",
+              file=sys.stderr)
+        return items
+
     try:
         root = ET.fromstring(xml_text)
     except ET.ParseError:
