@@ -82,6 +82,11 @@ def norm_key(title: str, companion: bool = False) -> str:
 
 
 MIN_PREFIX = 25  # shorter than this and unrelated episodes start colliding
+# On an exact publication date, one normalized title being a *complete* prefix
+# of the other is conclusive however short it is: two different episodes do not
+# ship the same day with one title opening the other verbatim. Fifteen real
+# seed/feed pairs sit at 17-24 characters and were kept apart by MIN_PREFIX alone.
+MIN_EXACT_DATE_PREFIX = 12
 
 
 def common_prefix_len(a: str, b: str) -> int:
@@ -108,7 +113,13 @@ def near_dates(date: str) -> set[str]:
 def same_date_match(key: str, date: str, records: dict, companion: bool) -> str | None:
     """Last-resort match: same publication date (give or take a day), same kind
     of episode, and a long enough shared opening that it cannot plausibly be a
-    different show."""
+    different show.
+
+    The neighbouring-day window needs the full MIN_PREFIX. On the exact same
+    day, a title that is a complete prefix of the other clears at
+    MIN_EXACT_DATE_PREFIX instead -- short spreadsheet titles like
+    "Modern Data Work at Drizly" are the whole opening of the feed's
+    "Modern Data Work at Drizly w/ Emily Hawkins"."""
     if not date:
         return None
     window = near_dates(date)
@@ -117,7 +128,10 @@ def same_date_match(key: str, date: str, records: dict, companion: bool) -> str 
         if cand_companion != companion or rec["date"] not in window:
             continue
         n = common_prefix_len(key, cand)
-        if n >= MIN_PREFIX and n > best_len:
+        floor = MIN_PREFIX
+        if rec["date"] == date and n == min(len(key), len(cand)):
+            floor = MIN_EXACT_DATE_PREFIX
+        if n >= floor and n > best_len:
             best, best_len = cand, n
     return best
 
@@ -1109,6 +1123,13 @@ def main() -> int:
     ap.add_argument("--out", type=Path, action="append",
                     help="output path (repeatable; defaults to both site JSON files)")
     ap.add_argument("--report", action="store_true", help="print a summary to stderr")
+    ap.add_argument("--accept-episode-drop", type=int, metavar="N",
+                    help="allow the episode count to fall past the drop guard, but "
+                         "only to exactly N. A deduplication fix legitimately loses "
+                         "episodes; a truncated feed does too, and the guard cannot "
+                         "tell them apart. Naming the expected number means an "
+                         "operator has checked which episodes go, and a feed that "
+                         "then yields any other count still fails.")
     args = ap.parse_args()
 
     seed = json.loads(args.seed.read_text(encoding="utf-8"))
@@ -1139,12 +1160,20 @@ def main() -> int:
         baseline = sum(1 for n in seed["nodes"] if n["type"] == "episode")
     built_episodes = graph["meta"]["counts"].get("episode", 0)
     if not episode_drop_is_safe(baseline, built_episodes):
-        print(f"FEED ERROR: rebuild produced {built_episodes} episodes but the "
-              f"existing data has {baseline} "
-              f"(tolerance {episode_drop_tolerance(baseline)}). "
-              f"Refusing to overwrite published data. Inspect the feed first.",
-              file=sys.stderr)
-        return 1
+        if args.accept_episode_drop == built_episodes:
+            print(f"note: episode count {baseline} -> {built_episodes}, accepted "
+                  f"explicitly via --accept-episode-drop.", file=sys.stderr)
+        else:
+            print(f"FEED ERROR: rebuild produced {built_episodes} episodes but the "
+                  f"existing data has {baseline} "
+                  f"(tolerance {episode_drop_tolerance(baseline)}). "
+                  f"Refusing to overwrite published data. Inspect the feed first.",
+                  file=sys.stderr)
+            if args.accept_episode_drop is not None:
+                print(f"       --accept-episode-drop said to expect "
+                      f"{args.accept_episode_drop}, not {built_episodes}.",
+                      file=sys.stderr)
+            return 1
 
     payload = json.dumps(graph, indent=2, ensure_ascii=False) + "\n"
     for path in outputs:

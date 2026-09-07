@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_network import (  # noqa: E402
     Payload, build, clean_org, dedupe_attributes, discover_feed_url,
+    norm_key, same_date_match,
     episode_drop_is_safe, is_takeaway, next_page_url, strip_takeaway_prefix,
     guests_from_title, load_feed, load_topics, load_verified, normalize_name,
     parse_feed, parse_feed_loosely, parse_pubdate, previous_episode_count,
@@ -60,6 +61,67 @@ check("org trailing punctuation trimmed", clean_org("American Express.") == "Ame
 check("org run-on trimmed", clean_org("Profisee and host of CDO Matters Podcast") == "Profisee")
 check("data.world truncation repaired", clean_org("data") == "data.world")
 check("RFC-822 date parsed", parse_pubdate("Wed, 19 Nov 2025 10:00:00 -0600") == "2025-11-19")
+
+print("\nunit: seed/feed episode matching")
+# The ten seed/feed pairs that were landing in the graph as duplicate episodes.
+# In every one the dates are identical and the spreadsheet title is the entire
+# opening of the feed title, but at 21-24 normalized characters they fell under
+# MIN_PREFIX and never merged.
+DUPLICATE_PAIRS = [
+    ("2021-09-16", "How to think about data value",
+     "How to think about data value w/ Lars Albertsson"),
+    ("2021-09-23", "Fashion Week...but for data",
+     "Fashion Week...but for data w/ Jans Aasman"),
+    ("2021-11-11", "Is self\u2011service BI the answer?",
+     "Is self-service BI the answer? w/ Cindi Howson"),
+    ("2022-01-13", "Modern Data Work at Drizly",
+     "Modern Data Work at Drizly w/ Emily Hawkins"),
+    ("2022-01-20", "What good is a Metrics Layer?",
+     "What good is a Metrics Layer? w/ Benn Stancil from Mode"),
+    ("2022-01-27", "Can the Data Mesh be Governed?",
+     "Can the Data Mesh be Governed? w/ Dora Boussias"),
+    ("2022-03-10", "Your privacy is my currency",
+     "Your privacy is my currency with Patricia Thaine from Private AI"),
+    ("2022-03-17", "Agile like a fox, but for data",
+     "Agile like a fox, but for data. W/ Shane Gibson from AgileData.io"),
+    ("2022-06-09", "Getting all meta about data",
+     "Getting all meta about data w/ Sanjeev Mohan"),
+    ("2022-08-25", "Build bridges. Don\u2019t Burn them.",
+     "Build bridges. Don\u2019t Burn them. W/ Vip Parmar, WPP"),
+]
+
+matched = []
+for date, seed_title, feed_title in DUPLICATE_PAIRS:
+    seed_key = norm_key(seed_title)
+    records = {(seed_key, False): {"date": date}}
+    hit = same_date_match(norm_key(feed_title), date, records, False)
+    matched.append((seed_title, hit == seed_key))
+check("all ten short-title duplicates now merge",
+      all(ok for _, ok in matched),
+      f"missed: {[t for t, ok in matched if not ok]}")
+check("the duplicates really are shorter than MIN_PREFIX",
+      all(len(norm_key(t)) < 25 for _, t, _ in DUPLICATE_PAIRS),
+      "if these grew past MIN_PREFIX the pairs no longer test the relaxed floor")
+
+# The relaxed floor is bounded by two things: the date must be exact, and one
+# title must be a *complete* prefix of the other.
+check("a neighbouring day still needs the full MIN_PREFIX",
+      same_date_match(norm_key("Modern Data Work at Drizly w/ Emily Hawkins"),
+                      "2022-01-14",
+                      {(norm_key("Modern Data Work at Drizly"), False):
+                       {"date": "2022-01-13"}}, False) is None,
+      "off-by-a-day plus a 22-char opening is not conclusive")
+check("a shared opening that diverges is not a match",
+      same_date_match(norm_key("Data Mesh in practice w/ Zhamak Dehghani"),
+                      "2022-01-27",
+                      {(norm_key("Data Mesh in theory"), False):
+                       {"date": "2022-01-27"}}, False) is None,
+      "'Data Mesh in ' is common to both but neither title is a prefix of the other")
+check("a companion clip never merges into a full episode",
+      same_date_match(norm_key("TAKEAWAYS - Modern Data Work at Drizly", True),
+                      "2022-01-13",
+                      {(norm_key("Modern Data Work at Drizly"), False):
+                       {"date": "2022-01-13"}}, True) is None)
 
 print("\noffline build (seed only)")
 offline = build(SEED, [], TOPICS)
