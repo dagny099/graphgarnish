@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_network import (  # noqa: E402
     Payload, build, clean_org, dedupe_attributes, discover_feed_url,
+    norm_key, same_date_match, split_saved_pages,
     episode_drop_is_safe, is_takeaway, next_page_url, strip_takeaway_prefix,
     guests_from_title, load_feed, load_topics, load_verified, normalize_name,
     parse_feed, parse_feed_loosely, parse_pubdate, previous_episode_count,
@@ -60,6 +61,133 @@ check("org trailing punctuation trimmed", clean_org("American Express.") == "Ame
 check("org run-on trimmed", clean_org("Profisee and host of CDO Matters Podcast") == "Profisee")
 check("data.world truncation repaired", clean_org("data") == "data.world")
 check("RFC-822 date parsed", parse_pubdate("Wed, 19 Nov 2025 10:00:00 -0600") == "2025-11-19")
+
+print("\nsaved feed artifacts")
+# --save-feed concatenates every page of a paginated feed into one file, which
+# is several XML documents end to end and not a well-formed document. Reading
+# one back used to fall through to the regex recovery parser.
+ONE_PAGE = """<?xml version="1.0"?><rss version="2.0"><channel>
+<item><title>Alpha</title><pubDate>Tue, 05 Jan 2021 10:00:00 -0600</pubDate>
+<guid>g-alpha</guid></item></channel></rss>"""
+TWO_PAGES = ONE_PAGE + """
+<!-- page: https://example.com/podcast.rss?page=2 -->
+<?xml version="1.0"?><rss version="2.0"><channel>
+<item><title>Beta</title><pubDate>Tue, 12 Jan 2021 10:00:00 -0600</pubDate>
+<guid>g-beta</guid></item></channel></rss>"""
+
+check("a single response is left alone", len(split_saved_pages(ONE_PAGE)) == 1)
+check("a saved artifact splits back into its pages",
+      len(split_saved_pages(TWO_PAGES)) == 2)
+check("every page of a saved artifact is parsed",
+      [i["title"] for i in parse_feed(TWO_PAGES)] == ["Alpha", "Beta"])
+check("each page parses strictly, not by regex recovery",
+      all(len(parse_feed(page)) == 1 for page in split_saved_pages(TWO_PAGES)),
+      "a page that only the loose parser can read means the split is wrong")
+
+print("\ntwo feed items under one title")
+# The show ships genuine two-parters under a single identical title -- "Data
+# Storytelling with Kat Greenbrook" is two items with two guids and two audio
+# URLs on 2023-11-02. They normalize to the same key, so the second used to
+# merge into the first, costing one episode its URL.
+TWIN_SEED = {
+    "nodes": [
+        {"id": "ep_twin1", "name": "Data Storytelling with Kat Greenbrook (Episode 1)",
+         "type": "episode", "date": "2023-11-02", "is_full": True},
+        {"id": "ep_twin2", "name": "Data Storytelling with Kat Greenbrook (Episode 2)",
+         "type": "episode", "date": "2023-11-02", "is_full": True},
+    ],
+    "links": [],
+}
+TWIN_FEED = [
+    {"title": "Data Storytelling with Kat Greenbrook", "date": "2023-11-02",
+     "description": "", "url": "https://example.com/twin-a", "guid": "guid-a",
+     "episode_type": "full", "season": "", "number": ""},
+    {"title": "Data Storytelling with Kat Greenbrook", "date": "2023-11-02",
+     "description": "", "url": "https://example.com/twin-b", "guid": "guid-b",
+     "episode_type": "full", "season": "", "number": ""},
+]
+twin = build(TWIN_SEED, TWIN_FEED, TOPICS)
+twin_eps = [n for n in twin["nodes"] if n["type"] == "episode"]
+check("two feed items under one title stay two episodes",
+      len(twin_eps) == 2, f"got {len(twin_eps)}")
+check("each of the pair keeps its own audio URL",
+      {e.get("url") for e in twin_eps}
+      == {"https://example.com/twin-a", "https://example.com/twin-b"},
+      f'got {sorted(e.get("url", "") for e in twin_eps)}')
+check("the spreadsheet titles are kept, since they are the only thing "
+      "telling the pair apart",
+      {e["name"] for e in twin_eps} == {n["name"] for n in TWIN_SEED["nodes"]},
+      f'got {sorted(e["name"] for e in twin_eps)}')
+
+# The fallback is narrow: one feed item and one seed episode still take the
+# feed's untruncated wording, which is the normal case for every other episode.
+SOLO_SEED = {"nodes": [dict(TWIN_SEED["nodes"][0])], "links": []}
+solo = build(SOLO_SEED, TWIN_FEED[:1], TOPICS)
+solo_eps = [n for n in solo["nodes"] if n["type"] == "episode"]
+check("an unambiguous feed title still wins over the spreadsheet",
+      [e["name"] for e in solo_eps] == ["Data Storytelling with Kat Greenbrook"],
+      f'got {[e["name"] for e in solo_eps]}')
+
+print("\nunit: seed/feed episode matching")
+# The ten seed/feed pairs that were landing in the graph as duplicate episodes.
+# In every one the dates are identical and the spreadsheet title is the entire
+# opening of the feed title, but at 21-24 normalized characters they fell under
+# MIN_PREFIX and never merged.
+DUPLICATE_PAIRS = [
+    ("2021-09-16", "How to think about data value",
+     "How to think about data value w/ Lars Albertsson"),
+    ("2021-09-23", "Fashion Week...but for data",
+     "Fashion Week...but for data w/ Jans Aasman"),
+    ("2021-11-11", "Is self\u2011service BI the answer?",
+     "Is self-service BI the answer? w/ Cindi Howson"),
+    ("2022-01-13", "Modern Data Work at Drizly",
+     "Modern Data Work at Drizly w/ Emily Hawkins"),
+    ("2022-01-20", "What good is a Metrics Layer?",
+     "What good is a Metrics Layer? w/ Benn Stancil from Mode"),
+    ("2022-01-27", "Can the Data Mesh be Governed?",
+     "Can the Data Mesh be Governed? w/ Dora Boussias"),
+    ("2022-03-10", "Your privacy is my currency",
+     "Your privacy is my currency with Patricia Thaine from Private AI"),
+    ("2022-03-17", "Agile like a fox, but for data",
+     "Agile like a fox, but for data. W/ Shane Gibson from AgileData.io"),
+    ("2022-06-09", "Getting all meta about data",
+     "Getting all meta about data w/ Sanjeev Mohan"),
+    ("2022-08-25", "Build bridges. Don\u2019t Burn them.",
+     "Build bridges. Don\u2019t Burn them. W/ Vip Parmar, WPP"),
+]
+
+matched = []
+for date, seed_title, feed_title in DUPLICATE_PAIRS:
+    seed_key = norm_key(seed_title)
+    records = {(seed_key, False): {"date": date}}
+    hit = same_date_match(norm_key(feed_title), date, records, False)
+    matched.append((seed_title, hit == seed_key))
+check("all ten short-title duplicates now merge",
+      all(ok for _, ok in matched),
+      f"missed: {[t for t, ok in matched if not ok]}")
+check("the duplicates really are shorter than MIN_PREFIX",
+      all(len(norm_key(t)) < 25 for _, t, _ in DUPLICATE_PAIRS),
+      "if these grew past MIN_PREFIX the pairs no longer test the relaxed floor")
+
+# The relaxed floor is bounded by two things: the date must be exact, and one
+# title must be a *complete* prefix of the other.
+check("a neighbouring day still needs the full MIN_PREFIX",
+      same_date_match(norm_key("Modern Data Work at Drizly w/ Emily Hawkins"),
+                      "2022-01-14",
+                      {(norm_key("Modern Data Work at Drizly"), False):
+                       {"date": "2022-01-13"}}, False) is None,
+      "off-by-a-day plus a 22-char opening is not conclusive")
+check("a shared opening that diverges is not a match",
+      same_date_match(norm_key("Data Mesh in practice w/ Zhamak Dehghani"),
+                      "2022-01-27",
+                      {(norm_key("Data Mesh in theory"), False):
+                       {"date": "2022-01-27"}}, False) is None,
+      "'Data Mesh in ' is common to both but neither title is a prefix of the other")
+check("a companion clip never merges into a full episode",
+      same_date_match(norm_key("TAKEAWAYS - Modern Data Work at Drizly", True),
+                      "2022-01-13",
+                      {(norm_key("Modern Data Work at Drizly"), False):
+                       {"date": "2022-01-13"}}, True) is None)
 
 print("\noffline build (seed only)")
 offline = build(SEED, [], TOPICS)

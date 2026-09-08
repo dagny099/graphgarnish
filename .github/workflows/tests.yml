@@ -1,0 +1,44 @@
+name: Tests
+
+# The refresh workflow runs the suite too, but only on a schedule or a manual
+# dispatch -- which is how a broken suite once sat unnoticed across two runs.
+# This runs it on every pull request and every push to main, before anything
+# merges.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # No network: the suite runs against the checked-in seed and the RSS
+      # fixture in tools/testdata, so a slow or unreachable feed can never
+      # make a pull request look broken.
+      - name: Invariant checks
+        run: python3 tools/test_build_network.py
+
+      - name: The build is deterministic
+        # Two builds from identical inputs must produce identical bytes. Runs
+        # against the checked-in RSS fixture and writes to a scratch path, so
+        # it needs no network and never touches the published outputs.
+        run: |
+          set -o pipefail
+          for n in 1 2; do
+            python3 tools/build_network.py \
+              --feed-file tools/testdata/sample_feed.xml \
+              --out "/tmp/build-$n.json"
+          done
+          diff -u /tmp/build-1.json /tmp/build-2.json \
+            && echo "identical"

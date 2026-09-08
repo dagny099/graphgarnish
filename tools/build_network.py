@@ -82,6 +82,11 @@ def norm_key(title: str, companion: bool = False) -> str:
 
 
 MIN_PREFIX = 25  # shorter than this and unrelated episodes start colliding
+# On an exact publication date, one normalized title being a *complete* prefix
+# of the other is conclusive however short it is: two different episodes do not
+# ship the same day with one title opening the other verbatim. Fifteen real
+# seed/feed pairs sit at 17-24 characters and were kept apart by MIN_PREFIX alone.
+MIN_EXACT_DATE_PREFIX = 12
 
 
 def common_prefix_len(a: str, b: str) -> int:
@@ -108,7 +113,13 @@ def near_dates(date: str) -> set[str]:
 def same_date_match(key: str, date: str, records: dict, companion: bool) -> str | None:
     """Last-resort match: same publication date (give or take a day), same kind
     of episode, and a long enough shared opening that it cannot plausibly be a
-    different show."""
+    different show.
+
+    The neighbouring-day window needs the full MIN_PREFIX. On the exact same
+    day, a title that is a complete prefix of the other clears at
+    MIN_EXACT_DATE_PREFIX instead -- short spreadsheet titles like
+    "Modern Data Work at Drizly" are the whole opening of the feed's
+    "Modern Data Work at Drizly w/ Emily Hawkins"."""
     if not date:
         return None
     window = near_dates(date)
@@ -117,7 +128,10 @@ def same_date_match(key: str, date: str, records: dict, companion: bool) -> str 
         if cand_companion != companion or rec["date"] not in window:
             continue
         n = common_prefix_len(key, cand)
-        if n >= MIN_PREFIX and n > best_len:
+        floor = MIN_PREFIX
+        if rec["date"] == date and n == min(len(key), len(cand)):
+            floor = MIN_EXACT_DATE_PREFIX
+        if n >= floor and n > best_len:
             best, best_len = cand, n
     return best
 
@@ -548,7 +562,35 @@ def parse_atom(root) -> list[dict]:
     return items
 
 
+# follow_pages writes every page of a paginated feed into one --save-feed file,
+# separated by this marker. That file is therefore several XML documents end to
+# end, which is not a well-formed document: feeding it back through --feed-file
+# used to fail the strict parser and land on the regex recovery parser, with a
+# "not well-formed" warning on every run that read one. Splitting on the marker
+# parses each page strictly instead. The bytes on disk stay exactly what the
+# server sent, which is the whole point of keeping the raw response.
+PAGE_MARKER_RE = re.compile(r"^[ \t]*<!-- page: \S+ -->[ \t]*$", re.M)
+
+
+def split_saved_pages(xml_text: str) -> list[str]:
+    """Split a --save-feed artifact back into the pages it concatenates.
+
+    A response straight off the wire carries no marker and comes back as a
+    single page, so this is a no-op everywhere except on a saved artifact."""
+    parts = (part.strip() for part in PAGE_MARKER_RE.split(xml_text))
+    return [part for part in parts if part]
+
+
 def parse_feed(xml_text: str) -> list[dict]:
+    pages = split_saved_pages(xml_text)
+    if len(pages) > 1:
+        items: list[dict] = []
+        for page in pages:
+            items.extend(parse_feed(page))
+        print(f"read {len(pages)} saved feed pages for {len(items)} items",
+              file=sys.stderr)
+        return items
+
     try:
         root = ET.fromstring(xml_text)
     except ET.ParseError:
@@ -731,7 +773,12 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
 
     # Start from every seed episode, then let feed items overwrite/extend.
     records: dict[tuple[str, bool], dict] = {}
+    # The spreadsheet title, kept aside so a feed title that turns out to be
+    # ambiguous can fall back to it. Not part of the record, so it cannot leak
+    # into the output.
+    seed_titles: dict[tuple[str, bool], str] = {}
     for key, ep in seed_eps.items():
+        seed_titles[key] = ep["name"]
         records[key] = {
             "title": ep["name"], "date": ep["date"],
             "description": ep.get("description", ""),
@@ -740,6 +787,13 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
         }
 
     seen_guids: set[str] = set()
+    # A record already merged with one feed item is off the table for the next.
+    # The show ships genuine two-parters under one identical title -- "Data
+    # Storytelling with Kat Greenbrook" is two separate items on 2023-11-02 --
+    # and they normalize to the same key. Without this the second item merged
+    # into the first one's record, so one episode of the pair lost its URL and
+    # the feed's own copy of it vanished from the graph.
+    claimed: dict[tuple[str, bool], str] = {}
     for item in feed_items:
         guid = item.get("guid") or ""
         if guid:
@@ -747,15 +801,22 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
                 continue
             seen_guids.add(guid)
         companion = is_takeaway(item["title"], item.get("episode_type", ""))
-        same_kind = [k for (k, c) in records if c == companion]
+        same_kind = [k for (k, c) in records
+                     if c == companion and (k, c) not in claimed]
         ikey = norm_key(item["title"], companion)
         hit = prefix_match(ikey, same_kind)
         if hit is None:
             # The seed titles came from a spreadsheet and sometimes diverge from
             # the feed's wording before the 60-char cut, so a prefix test misses.
             # Same publication date plus a long shared opening is enough.
-            hit = same_date_match(ikey, item["date"], records, companion)
+            unclaimed = {k: v for k, v in records.items() if k not in claimed}
+            hit = same_date_match(ikey, item["date"], unclaimed, companion)
         key = (hit, companion) if hit else (ikey, companion)
+        # Two feed items that normalize alike and match nothing in the seed still
+        # need separate records, so the later one gets a distinct key.
+        while hit is None and key in claimed:
+            key = (key[0] + "~", companion)
+        claimed[key] = guid or ikey
         rec = records.get(key)
         if rec:
             # Feed wins on title (untruncated) and description; seed wins on guests.
@@ -773,6 +834,22 @@ def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
                 "guests": [], "source": "feed",
                 "season": item.get("season", ""), "number": item.get("number", ""),
             }
+
+    # A feed title wins over the truncated spreadsheet one, except where that
+    # would make two episodes indistinguishable. The show ships genuine
+    # two-parters under a single identical title, and the spreadsheet is the
+    # only place the parts are told apart ("... (Episode 2)"). Restoring that
+    # title is better than two nodes a reader cannot tell apart.
+    by_title_date: dict[tuple[str, str], list] = defaultdict(list)
+    for key, rec in records.items():
+        by_title_date[(rec["title"], rec["date"])].append(key)
+    for keys in by_title_date.values():
+        if len(keys) < 2:
+            continue
+        for key in keys:
+            seeded = seed_titles.get(key)
+            if seeded and seeded != records[key]["title"]:
+                records[key]["title"] = seeded
 
     # Expand any seed guest entry that packed several humans into one name,
     # and fill in guests for feed-only episodes.
@@ -1109,6 +1186,13 @@ def main() -> int:
     ap.add_argument("--out", type=Path, action="append",
                     help="output path (repeatable; defaults to both site JSON files)")
     ap.add_argument("--report", action="store_true", help="print a summary to stderr")
+    ap.add_argument("--accept-episode-drop", type=int, metavar="N",
+                    help="allow the episode count to fall past the drop guard, but "
+                         "only to exactly N. A deduplication fix legitimately loses "
+                         "episodes; a truncated feed does too, and the guard cannot "
+                         "tell them apart. Naming the expected number means an "
+                         "operator has checked which episodes go, and a feed that "
+                         "then yields any other count still fails.")
     args = ap.parse_args()
 
     seed = json.loads(args.seed.read_text(encoding="utf-8"))
@@ -1139,12 +1223,20 @@ def main() -> int:
         baseline = sum(1 for n in seed["nodes"] if n["type"] == "episode")
     built_episodes = graph["meta"]["counts"].get("episode", 0)
     if not episode_drop_is_safe(baseline, built_episodes):
-        print(f"FEED ERROR: rebuild produced {built_episodes} episodes but the "
-              f"existing data has {baseline} "
-              f"(tolerance {episode_drop_tolerance(baseline)}). "
-              f"Refusing to overwrite published data. Inspect the feed first.",
-              file=sys.stderr)
-        return 1
+        if args.accept_episode_drop == built_episodes:
+            print(f"note: episode count {baseline} -> {built_episodes}, accepted "
+                  f"explicitly via --accept-episode-drop.", file=sys.stderr)
+        else:
+            print(f"FEED ERROR: rebuild produced {built_episodes} episodes but the "
+                  f"existing data has {baseline} "
+                  f"(tolerance {episode_drop_tolerance(baseline)}). "
+                  f"Refusing to overwrite published data. Inspect the feed first.",
+                  file=sys.stderr)
+            if args.accept_episode_drop is not None:
+                print(f"       --accept-episode-drop said to expect "
+                      f"{args.accept_episode_drop}, not {built_episodes}.",
+                      file=sys.stderr)
+            return 1
 
     payload = json.dumps(graph, indent=2, ensure_ascii=False) + "\n"
     for path in outputs:
