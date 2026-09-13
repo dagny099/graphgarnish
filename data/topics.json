@@ -1,13 +1,14 @@
 {
-  "_comment": "Topic taxonomy for GraphGarnish. Edit freely: add a topic, add or remove match phrases, delete one you don't care about. Matching is case-insensitive substring against episode title + description. 'exclude' phrases veto a match. 'strip' phrases are removed from every episode's text before any topic is matched: use it for boilerplate the host appends to every description, which 'exclude' cannot handle because it vetoes the whole topic. The build fails if any topic covers more than 60% of full episodes. Re-run tools/build_network.py after editing.",
-  "strip": ["see omnystudio.com/listener for privacy information."],
+  "_comment": "Topic taxonomy for GraphGarnish. Edit freely: add a topic, add or remove match phrases, delete one you don't care about. Matching is case-insensitive substring against episode title + description. 'exclude' phrases veto a match. 'strip' phrases are removed from every episode's text before any topic is matched: use it for boilerplate such as the host's footer or the show's own name, which 'exclude' cannot handle because it vetoes the whole topic. The build fails if any topic covers more than 60% of full episodes. Re-run tools/build_network.py after editing.",
+  "strip": ["see omnystudio.com/listener for privacy information.",
+            "catalog & cocktails", "catalogs & cocktails", "catalog and cocktails", "catalog-and-cocktails"],
   "topics": [
     {"name": "AI Agents",            "match": ["ai agent", "agentic", "autonomous agent", "mcp ", "tool use"]},
     {"name": "Generative AI / LLMs", "match": ["llm", "genai", "gen ai", "generative ai", "foundation model", "chatgpt", "gpt-", "prompt engineering", "rag "]},
     {"name": "Data Governance",      "match": ["data governance", "governance", "stewardship", "data policy"]},
     {"name": "Data Products",        "match": ["data product", "data as a product"]},
     {"name": "Data Mesh",            "match": ["data mesh", "decentraliz"]},
-    {"name": "Data Catalogs",        "match": ["data catalog", "catalog"], "exclude": ["catalog & cocktails", "catalog and cocktails"]},
+    {"name": "Data Catalogs",        "match": ["data catalog", "catalog"]},
     {"name": "Master Data Management","match": ["master data", " mdm", "mdm "]},
     {"name": "Knowledge Graphs",     "match": ["knowledge graph", "ontolog", "semantic layer", "semantic web", "rdf", "sparql", "taxonom"]},
     {"name": "Metadata",             "match": ["metadata", "meta grid", "active metadata"]},
@@ -16,12 +17,12 @@
     {"name": "Data Modeling",        "match": ["data model", "dimensional model", "modeling", "schema"]},
     {"name": "Architecture & Platforms","match": ["architect", "lakehouse", "data warehouse", "data lake", "data platform", "data stack", "data fabric"]},
     {"name": "Data Engineering",     "match": ["data engineer", "pipeline", " etl", "elt ", "dbt", "ingestion", "orchestration"]},
-    {"name": "Analytics & BI",       "match": ["analytics", "business intelligence", " bi ", "dashboard", "reporting", "self-service"]},
-    {"name": "Data Teams & Org",     "match": ["data team", "chief data", " cdo", "data office", "operating model", "hiring", "career"]},
+    {"name": "Analytics & BI",       "match": ["analytics engineer", "self-service analytics", "streaming analytics", "real-time analytics", "operational analytics", "predictive analytics", "prescriptive analytics", "business analytics", "sports analytics", "data analytics", "analytics team", "business intelligence", " bi ", "dashboard", "reporting", "self-service"]},
+    {"name": "Data Teams & Org",     "match": ["data team", "chief data", " cdo", "data office", "operating model", "hiring", "career path", "careers"]},
     {"name": "Data Strategy",        "match": ["data strategy", "strategic", "roadmap", "maturity"]},
     {"name": "Data Culture & Literacy","match": ["data culture", "literacy", "change management", "adoption", "storytelling"]},
     {"name": "Business Value & ROI", "match": ["roi", "business value", "business case", "monetiz", "value of data", "cost"]},
-    {"name": "Privacy, Ethics & Risk","match": ["privacy", "ethic", "responsible ai", "bias", "regulat", "compliance", "risk", "security"]},
+    {"name": "Privacy, Ethics & Risk","match": ["privacy", "ethic", "responsible ai", "bias", "regulat", "compliance", "security"]},
     {"name": "Data Sharing & Marketplaces","match": ["data sharing", "data marketplace", "open data", "data exchange", "data collaborat"]},
     {"name": "Industry & Field Notes","match": ["gartner", "field notes", "trends", "predictions", "takeaways from", "live from", "conference", "summit"]}
   ]

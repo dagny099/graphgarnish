@@ -152,7 +152,10 @@ builder.
 Phrases listed under `strip` are removed from every episode's text before
 matching. The host appends "See omnystudio.com/listener for privacy
 information." to every description, and before it was stripped that footer put
-every full episode under *Privacy, Ethics & Risk*. The build now refuses to
+every full episode under *Privacy, Ethics & Risk*. The show's own name is
+stripped the same way: it contains the word "catalog", and as an `exclude` it
+vetoed *Data Catalogs* on every episode that mentioned the show, genuine
+catalog episodes included. The build now refuses to
 publish if any topic covers more than 60% of full episodes, since a topic on
 nearly everything means a phrase is matching boilerplate.
 

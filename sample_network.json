@@ -34,7 +34,7 @@
         "verified": 1
       },
       "COVERS": {
-        "inferred": 595
+        "inferred": 551
       },
       "GUEST_ON": {
         "inferred": 99,
@@ -6806,12 +6806,6 @@
     },
     {
       "source": "ep_20200715_what_the_pandemic_can_te",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200715_what_the_pandemic_can_te",
       "target": "topic_data_governance",
       "type": "COVERS",
       "provenance": "inferred"
@@ -6855,6 +6849,12 @@
     {
       "source": "ep_20200722_stuck_in_the_middle_how_",
       "target": "topic_data_governance",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20200730_get_data_governance_righ",
+      "target": "topic_data_catalogs",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -6914,19 +6914,7 @@
     },
     {
       "source": "ep_20200827_semantic_web_for_the_wor",
-      "target": "topic_data_catalogs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200827_semantic_web_for_the_wor",
       "target": "topic_knowledge_graphs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200904_crowdsource_your_way_to_",
-      "target": "topic_data_catalogs",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -6951,18 +6939,6 @@
     {
       "source": "ep_20200918_hear_from_dj_patil_and_o",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200924_what_we_learned_at_the_f",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200924_what_we_learned_at_the_f",
-      "target": "topic_data_catalogs",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -6998,19 +6974,7 @@
     },
     {
       "source": "ep_20201019_time_for_a_data_culture_",
-      "target": "topic_data_catalogs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20201019_time_for_a_data_culture_",
       "target": "topic_data_culture_literacy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20201023_your_best_data_source_ma",
-      "target": "topic_data_catalogs",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7033,26 +6997,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20201029_the_data_governance_hous",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20201105_documentation_matters",
-      "target": "topic_data_catalogs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20201105_documentation_matters",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20201112_the_data_landscape_is_cr",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7111,12 +7057,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20201210_getting_your_data_bang_f",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20201217_goodbye_2020_hello_2021",
       "target": "topic_data_governance",
       "type": "COVERS",
@@ -7165,12 +7105,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210204_what_can_we_learn_from_m",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210211_do_you_test_your_data",
       "target": "topic_data_quality",
       "type": "COVERS",
@@ -7196,19 +7130,7 @@
     },
     {
       "source": "ep_20210304_do_you_have_data_trust_i",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210304_do_you_have_data_trust_i",
       "target": "topic_data_quality",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210311_a_modern_approach_to_dat",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7245,18 +7167,6 @@
     {
       "source": "ep_20210331_building_a_great_data_te",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210331_building_a_great_data_te",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210407_power_to_the_data",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7526,12 +7436,6 @@
     },
     {
       "source": "ep_20211021_the_data_mesh_debate_w_h",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20211021_the_data_mesh_debate_w_h",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
       "provenance": "inferred"
@@ -7598,19 +7502,7 @@
     },
     {
       "source": "ep_20211209_what_happens_when_everyo",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20211209_what_happens_when_everyo",
       "target": "topic_business_value_roi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220106_will_2022_change_how_we_",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7653,12 +7545,6 @@
     {
       "source": "ep_20220113_modern_data_work_at_driz",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220120_s3e3_takeaways_with_benn",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7718,12 +7604,6 @@
     },
     {
       "source": "ep_20220203_can_agile_practices_disr",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220203_can_agile_practices_disr",
       "target": "topic_data_governance",
       "type": "COVERS",
       "provenance": "inferred"
@@ -7736,25 +7616,7 @@
     },
     {
       "source": "ep_20220203_s3e5_takeways_with_laura",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220203_s3e5_takeways_with_laura",
       "target": "topic_data_governance",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220210_s3e6_takeaways_with_luke",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220210_the_three_most_important",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7767,6 +7629,12 @@
     {
       "source": "ep_20220224_why_are_data_transformat",
       "target": "topic_analytics_bi",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220224_why_are_data_transformat",
+      "target": "topic_data_catalogs",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7898,19 +7766,7 @@
     },
     {
       "source": "ep_20220421_everybodys_an_imposter_s",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220421_everybodys_an_imposter_s",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220421_s3e15_takeaways_with_ste",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8029,26 +7885,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220526_takeaways_with_brett_hur",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220526_the_data_entrepreneurs_e",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220526_the_data_entrepreneurs_e",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220602_does_our_understanding_o",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8061,12 +7899,6 @@
     {
       "source": "ep_20220602_takeaways_with_ciaran_dy",
       "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220609_getting_all_meta_about_d",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8096,12 +7928,6 @@
     },
     {
       "source": "ep_20220609_takeaways_with_sanjeev_m",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220609_takeaways_with_sanjeev_m",
       "target": "topic_industry_field_notes",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8114,12 +7940,6 @@
     },
     {
       "source": "ep_20220616_dont_let_good_metadata_g",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220616_dont_let_good_metadata_g",
       "target": "topic_industry_field_notes",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8127,12 +7947,6 @@
     {
       "source": "ep_20220616_dont_let_good_metadata_g",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220616_takeaways_with_peter_kap",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8343,6 +8157,12 @@
     {
       "source": "ep_20220922_keeping_it_100_about_met",
       "target": "topic_business_value_roi",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220922_keeping_it_100_about_met",
+      "target": "topic_data_catalogs",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8576,6 +8396,12 @@
     },
     {
       "source": "ep_20221215_season_4_finale",
+      "target": "topic_data_catalogs",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20221215_season_4_finale",
       "target": "topic_data_governance",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8619,12 +8445,6 @@
     {
       "source": "ep_20230112_a_conversation_with_the_",
       "target": "topic_data_strategy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230112_a_conversation_with_the_",
-      "target": "topic_data_teams_org",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8978,12 +8798,6 @@
     },
     {
       "source": "ep_20230706_catalogs_cocktails_live_",
-      "target": "topic_data_catalogs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230706_catalogs_cocktails_live_",
       "target": "topic_generative_ai_llms",
       "type": "COVERS",
       "provenance": "inferred"
@@ -9122,12 +8936,6 @@
     },
     {
       "source": "ep_20231005_generative_ai_data_produ",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20231005_generative_ai_data_produ",
       "target": "topic_business_value_roi",
       "type": "COVERS",
       "provenance": "inferred"
@@ -9211,12 +9019,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240111_how_will_ai_impact_2024_",
-      "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240119_the_data_mesh_terclass",
       "target": "topic_data_governance",
       "type": "COVERS",
@@ -9272,12 +9074,6 @@
     },
     {
       "source": "ep_20240208_bridging_innovation_and_",
-      "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240208_bridging_innovation_and_",
       "target": "topic_generative_ai_llms",
       "type": "COVERS",
       "provenance": "inferred"
@@ -9295,12 +9091,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240215_another_sucky_year_for_s",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240226_dont_lift_and_shift_data",
       "target": "topic_data_governance",
       "type": "COVERS",
@@ -9309,12 +9099,6 @@
     {
       "source": "ep_20240311_when_business_goals_and_",
       "target": "topic_data_strategy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240314_gartner_data_and_analyti",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9381,12 +9165,6 @@
     {
       "source": "ep_20240509_everything_you_wanted_to",
       "target": "topic_knowledge_graphs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240517_4_years_of_our_honest_no",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9620,12 +9398,6 @@
     },
     {
       "source": "ep_20250306_gartner_data_and_analyti",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250306_gartner_data_and_analyti",
       "target": "topic_data_catalogs",
       "type": "COVERS",
       "provenance": "inferred"
@@ -9752,12 +9524,6 @@
     },
     {
       "source": "ep_20250515_gartner_data_analytics_s",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250515_gartner_data_analytics_s",
       "target": "topic_data_catalogs",
       "type": "COVERS",
       "provenance": "inferred"
@@ -9789,12 +9555,6 @@
     {
       "source": "ep_20250529_season_9_finale_with_tim",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20251112_fall_2025_data_analytics",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9998,19 +9758,7 @@
     },
     {
       "source": "ep_20260305_pre_gartner_data_analyti",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260305_pre_gartner_data_analyti",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260311_takeaways_from_gartner_d",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10190,12 +9938,6 @@
     },
     {
       "source": "ep_20260819_honest_no_bs_data_podcas",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260819_honest_no_bs_data_podcas",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
       "provenance": "inferred"
@@ -10245,12 +9987,6 @@
     {
       "source": "ep_20260826_data_products_done_right",
       "target": "topic_knowledge_graphs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260903_intelligence_without_act",
-      "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },

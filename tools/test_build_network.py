@@ -399,6 +399,29 @@ check("the stripped build does not trip the guard on Privacy",
       PRIVACY not in {t for t, _, _ in saturated_topics(
           build(EMPTY_SEED, footered, TOPICS))})
 
+# Each false case once put real episodes under a topic they are not about;
+# each true case guards against narrowing a phrase so far it loses genuine
+# matches. Found by reading every match in context, which a count never shows.
+for label, text, topic, expected in [
+    ("the show's name is not a catalog topic",
+     "Catalogs & Cocktails Live from Snowflake Summit", "Data Catalogs", False),
+    ("the show's promo URL is not a catalog topic",
+     "Sign up at data.world/resources/webinars/catalog-and-cocktails/", "Data Catalogs", False),
+    ("a catalog episode that names the show keeps its topic",
+     "From data catalogs to governance, on Catalog & Cocktails", "Data Catalogs", True),
+    ("'listen at your own risk' is not a privacy or risk topic",
+     "Listen at your own risk.", PRIVACY, False),
+    ("a guest's career history is not a data-teams topic",
+     "Throughout his career in networking", "Data Teams & Org", False),
+    ("an episode about career paths keeps its topic",
+     "From career paths to culture changes", "Data Teams & Org", True),
+    ("a job title is not an analytics topic",
+     "VP of Data & Analytics at Prologis", "Analytics & BI", False),
+    ("an analytics-engineering episode keeps its topic",
+     "The future of analytics engineering", "Analytics & BI", True),
+]:
+    check(label, (topic in topics_for(text, TOPICS)) == expected)
+
 print("\nthe real feed's shape")
 OMNY1 = (TESTDATA / "omny_feed_page1.xml").read_text(encoding="utf-8")
 OMNY2 = (TESTDATA / "omny_feed_page2.xml").read_text(encoding="utf-8")
