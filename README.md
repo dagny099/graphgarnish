@@ -149,6 +149,13 @@ episode's title and description. That file is meant to be edited: add a topic,
 add or remove match phrases, delete one you do not care about, then re-run the
 builder.
 
+Phrases listed under `strip` are removed from every episode's text before
+matching. The host appends "See omnystudio.com/listener for privacy
+information." to every description, and before it was stripped that footer put
+every full episode under *Privacy, Ethics & Risk*. The build now refuses to
+publish if any topic covers more than 60% of full episodes, since a topic on
+nearly everything means a phrase is matching boilerplate.
+
 ### Link Types
 
 - `GUEST_ON`: Connects a person to an episode

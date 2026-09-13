@@ -19,7 +19,8 @@ from build_network import (  # noqa: E402
     episode_drop_is_safe, is_takeaway, next_page_url, strip_takeaway_prefix,
     guests_from_title, load_feed, load_topics, load_verified, normalize_name,
     parse_feed, parse_feed_loosely, parse_pubdate, previous_episode_count,
-    split_people, strip_affiliation, strip_takeaway_prefix, SOURCE_RANK,
+    saturated_topics, split_people, strip_affiliation, strip_takeaway_prefix,
+    topics_for, SOURCE_RANK,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -343,6 +344,60 @@ check("output does not depend on the order of the seed",
       and a["links"] == b["links"])
 check("building twice gives an identical result",
       build(SEED, FIXTURE, TOPICS) == build(SEED, FIXTURE, TOPICS))
+
+print("\ntopics")
+# The host appends this to every description. Matched as text, it put every
+# full episode under Privacy, Ethics & Risk.
+FOOTER = " See omnystudio.com/listener for privacy information."
+PRIVACY = "Privacy, Ethics & Risk"
+check("the host footer alone matches no topic",
+      topics_for("An episode" + FOOTER, TOPICS) == [])
+check("stripping the footer is case-insensitive",
+      topics_for("An episode" + FOOTER.upper(), TOPICS) == [])
+check("a genuine privacy episode keeps its topic after the footer is stripped",
+      PRIVACY in topics_for("Your privacy is my currency" + FOOTER, TOPICS))
+
+footered = [dict(it, description=it.get("description", "") + FOOTER) for it in FIXTURE]
+
+
+def covers(graph):
+    return sorted((l["source"], l["target"]) for l in graph["links"] if l["type"] == "COVERS")
+
+
+check("the footer adds no topic edges to a build",
+      covers(build(SEED, footered, TOPICS)) == covers(build(SEED, FIXTURE, TOPICS)))
+
+import tempfile  # noqa: E402
+with tempfile.TemporaryDirectory() as tmp:
+    bare = Path(tmp) / "topics.json"
+    bare.write_text(json.dumps({"topics": [{"name": "X", "match": ["x"]}]}), encoding="utf-8")
+    check("a topics file with no 'strip' key still loads",
+          load_topics(bare) == {"topics": [{"name": "X", "match": ["x"]}], "strip": []})
+
+
+def topic_graph(covered, full=10, companions=5):
+    eps = ([{"id": f"f{i}", "type": "episode", "is_full": True} for i in range(full)]
+           + [{"id": f"c{i}", "type": "episode", "is_full": False} for i in range(companions)])
+    return {"nodes": eps + [{"id": "t", "type": "topic", "name": "T"}],
+            "links": [{"source": f"f{i}", "target": "t", "type": "COVERS"}
+                      for i in range(covered)]}
+
+
+check("a topic on every full episode is flagged",
+      saturated_topics(topic_graph(10)) == [("T", 10, 10)])
+check("a topic on a few episodes is not flagged",
+      saturated_topics(topic_graph(3)) == [])
+check("companion clips are not counted as episodes a topic could cover",
+      saturated_topics(topic_graph(7, companions=50)) == [("T", 7, 10)])
+# End to end: with no strip list, the footer saturates Privacy and the guard
+# sees it. With the real list it does not.
+EMPTY_SEED = {"nodes": [], "links": []}
+check("the guard catches the unstripped footer",
+      PRIVACY in {t for t, _, _ in saturated_topics(
+          build(EMPTY_SEED, footered, dict(TOPICS, strip=[])))})
+check("the stripped build does not trip the guard on Privacy",
+      PRIVACY not in {t for t, _, _ in saturated_topics(
+          build(EMPTY_SEED, footered, TOPICS))})
 
 print("\nthe real feed's shape")
 OMNY1 = (TESTDATA / "omny_feed_page1.xml").read_text(encoding="utf-8")

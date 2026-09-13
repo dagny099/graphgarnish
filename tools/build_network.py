@@ -347,14 +347,21 @@ def org_from_description(desc: str, person: str) -> str:
 
 # ------------------------------------------------------------------ topics
 
-def load_topics(path: Path) -> list[dict]:
-    return json.loads(path.read_text(encoding="utf-8"))["topics"]
+def load_topics(path: Path) -> dict:
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    return {"topics": raw["topics"], "strip": raw.get("strip", [])}
 
 
-def topics_for(text: str, taxonomy: list[dict]) -> list[str]:
+def topics_for(text: str, taxonomy: dict) -> list[str]:
     low = " " + text.lower() + " "
+    # Boilerplate the host appends to every description ("See
+    # omnystudio.com/listener for privacy information.") comes out before
+    # matching. Left in, it put every full episode under Privacy. An 'exclude'
+    # cannot fix that: it vetoes the whole topic, genuine privacy episodes too.
+    for phrase in taxonomy["strip"]:
+        low = low.replace(phrase.lower(), " ")
     hits = []
-    for topic in taxonomy:
+    for topic in taxonomy["topics"]:
         if any(x in low for x in topic.get("exclude", [])):
             continue
         if any(m in low for m in topic["match"]):
@@ -721,7 +728,7 @@ def load_verified(path: Path) -> dict:
     return out
 
 
-def build(seed: dict, feed_items: list[dict], taxonomy: list[dict],
+def build(seed: dict, feed_items: list[dict], taxonomy: dict,
           verified: dict | None = None) -> dict:
     idx = index_seed(seed)
     seed_eps = idx["episodes"]
@@ -1058,6 +1065,25 @@ def episode_drop_is_safe(seed_episodes: int, built_episodes: int) -> bool:
     return built_episodes >= seed_episodes - episode_drop_tolerance(seed_episodes)
 
 
+# A topic on nearly every episode carries no information: it means a match
+# phrase is hitting boilerplate, not content. The largest genuine topic sits
+# near 20% of full episodes; the host footer once put Privacy at 100%.
+MAX_TOPIC_SHARE = 0.6
+
+
+def saturated_topics(graph: dict, limit: float = MAX_TOPIC_SHARE) -> list[tuple[str, int, int]]:
+    """(topic, episodes covered, full episodes) for every topic covering more
+    than `limit` of full episodes. Companion clips carry no topics, so they
+    are left out of the denominator too."""
+    full = {n["id"] for n in graph["nodes"]
+            if n["type"] == "episode" and n.get("is_full")}
+    names = {n["id"]: n["name"] for n in graph["nodes"] if n["type"] == "topic"}
+    covered = Counter(l["target"] for l in graph["links"]
+                      if l["type"] == "COVERS" and l["source"] in full)
+    return sorted((names[t], n, len(full)) for t, n in covered.items()
+                  if n > limit * len(full))
+
+
 def try_payload(payload: Payload, label: str) -> list[dict]:
     """Parse one fetched response, reporting rather than raising on failure."""
     try:
@@ -1237,6 +1263,16 @@ def main() -> int:
                       f"{args.accept_episode_drop}, not {built_episodes}.",
                       file=sys.stderr)
             return 1
+
+    saturated = saturated_topics(graph)
+    if saturated:
+        for name, n, full in saturated:
+            print(f"TOPIC ERROR: '{name}' covers {n} of {full} full episodes "
+                  f"(limit {MAX_TOPIC_SHARE:.0%}). A match phrase is probably "
+                  f"hitting boilerplate; add it to 'strip' in {args.topics}.",
+                  file=sys.stderr)
+        print("Refusing to overwrite published data.", file=sys.stderr)
+        return 1
 
     payload = json.dumps(graph, indent=2, ensure_ascii=False) + "\n"
     for path in outputs:

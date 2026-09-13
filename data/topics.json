@@ -1,5 +1,6 @@
 {
-  "_comment": "Topic taxonomy for GraphGarnish. Edit freely: add a topic, add or remove match phrases, delete one you don't care about. Matching is case-insensitive substring against episode title + description. 'exclude' phrases veto a match. Re-run tools/build_network.py after editing.",
+  "_comment": "Topic taxonomy for GraphGarnish. Edit freely: add a topic, add or remove match phrases, delete one you don't care about. Matching is case-insensitive substring against episode title + description. 'exclude' phrases veto a match. 'strip' phrases are removed from every episode's text before any topic is matched: use it for boilerplate the host appends to every description, which 'exclude' cannot handle because it vetoes the whole topic. The build fails if any topic covers more than 60% of full episodes. Re-run tools/build_network.py after editing.",
+  "strip": ["see omnystudio.com/listener for privacy information."],
   "topics": [
     {"name": "AI Agents",            "match": ["ai agent", "agentic", "autonomous agent", "mcp ", "tool use"]},
     {"name": "Generative AI / LLMs", "match": ["llm", "genai", "gen ai", "generative ai", "foundation model", "chatgpt", "gpt-", "prompt engineering", "rag "]},

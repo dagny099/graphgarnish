@@ -2,7 +2,8 @@ __pycache__/
 *.pyc
 
 # Downloaded workflow artifacts, used to test the builder against the real
-# feed offline. See docs/HANDOFF.md section 4.
+# feed offline: download the feed-raw artifact from a refresh-network run, then
+#   python3 tools/build_network.py --feed-file feed-raw/feed-raw.xml --report
 feed-raw/
 feed-raw.xml
 feed-raw.zip

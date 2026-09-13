@@ -3,14 +3,14 @@
     "generated_by": "tools/build_network.py",
     "source": "seed+feed",
     "counts": {
-      "episode": 375,
-      "person": 185,
+      "episode": 373,
+      "person": 184,
       "organization": 103,
       "topic": 22
     },
     "provenance": {
       "episode": {
-        "feed": 173,
+        "feed": 171,
         "curated": 202
       },
       "organization": {
@@ -20,7 +20,7 @@
       },
       "person": {
         "curated": 141,
-        "inferred": 41,
+        "inferred": 40,
         "verified": 3
       },
       "topic": {
@@ -34,15 +34,15 @@
         "verified": 1
       },
       "COVERS": {
-        "inferred": 885
+        "inferred": 595
       },
       "GUEST_ON": {
-        "inferred": 100,
+        "inferred": 99,
         "curated": 146,
         "verified": 3
       },
       "TAKEAWAY_OF": {
-        "inferred": 63
+        "inferred": 62
       }
     },
     "episodes_needing_review": [
@@ -4211,30 +4211,6 @@
       "episode": "3"
     },
     {
-      "id": "ep_20260909_why_data_teams_fail_and__ta",
-      "name": "TAKEAWAY - Why Data Teams Fail and Succeed with Shachar Meir",
-      "type": "episode",
-      "date": "2026-09-09",
-      "is_full": false,
-      "source": "feed",
-      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/takeaway-why-data-teams-fail-and-succeed-with-shachar-meir",
-      "summary": "This is the takeaway episode with Shachar Meir, who has spent 20 years fixing data teams and understanding why they fail. In this live episode, Shachar joins Juan and Tim to discuss the reason why they fail and what they should be doing in order to succeed. See omnystudio.com/listener for privacy information.",
-      "season": "12",
-      "episode": "4"
-    },
-    {
-      "id": "ep_20260909_why_data_teams_fail_and_",
-      "name": "Why Data Teams Fail and Succeed with Shachar Meir",
-      "type": "episode",
-      "date": "2026-09-09",
-      "is_full": true,
-      "source": "feed",
-      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/why-data-teams-fail-and-succeed-with-shachar-meir",
-      "summary": "Shachar MEIR has spent 20 years fixing data teams and understanding why they fail. In this live episode, Shachar joins Juan and Tim to discuss the reason why they fail and what they should be doing in order to succeed. Shachar argues that data leaders default to what they can control (cough cough technology_ and underinvest in people, process, and culture. A new CDO comes in, migrates legacy datab",
-      "season": "12",
-      "episode": "4"
-    },
-    {
       "id": "person_aakriti_agrawal",
       "name": "Aakriti Agrawal",
       "type": "person",
@@ -5205,12 +5181,6 @@
       "name": "Scott Taylor",
       "type": "person",
       "source": "curated"
-    },
-    {
-      "id": "person_shachar_meir",
-      "name": "Shachar Meir",
-      "type": "person",
-      "source": "inferred"
     },
     {
       "id": "person_shane_gibson",
@@ -6751,12 +6721,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200513_the_future_of_data_manag",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200520_dont_boil_the_ocean_boil",
       "target": "topic_data_catalogs",
       "type": "COVERS",
@@ -6769,32 +6733,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200520_dont_boil_the_ocean_boil",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200527_data_integration_from_th",
       "target": "topic_metadata",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200527_data_integration_from_th",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200610_whos_on_your_data_team",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200610_whos_on_your_data_team",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -6817,12 +6763,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200617_how_does_your_data_team_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200624_whats_the_deal_with_know",
       "target": "topic_data_strategy",
       "type": "COVERS",
@@ -6837,12 +6777,6 @@
     {
       "source": "ep_20200624_whats_the_deal_with_know",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200624_whats_the_deal_with_know",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -6865,20 +6799,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200701_whats_the_story_with_dat",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200708_how_does_data_policy_imp",
       "target": "topic_data_governance",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200708_how_does_data_policy_imp",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -6937,12 +6859,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200722_stuck_in_the_middle_how_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200730_get_data_governance_righ",
       "target": "topic_data_governance",
       "type": "COVERS",
@@ -6961,12 +6877,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200730_get_data_governance_righ",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200806_is_it_time_to_hire_a_dat",
       "target": "topic_data_products",
       "type": "COVERS",
@@ -6975,12 +6885,6 @@
     {
       "source": "ep_20200806_is_it_time_to_hire_a_dat",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200806_is_it_time_to_hire_a_dat",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7003,20 +6907,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200812_a_data_management_chicke",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200820_how_dirty_is_your_data",
       "target": "topic_data_quality",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200820_how_dirty_is_your_data",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7033,20 +6925,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200827_semantic_web_for_the_wor",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200904_crowdsource_your_way_to_",
       "target": "topic_data_catalogs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200904_crowdsource_your_way_to_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7057,20 +6937,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200914_should_we_salute_our_rob",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200917_data_catalog_fight_night",
       "target": "topic_data_catalogs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200917_data_catalog_fight_night",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7083,12 +6951,6 @@
     {
       "source": "ep_20200918_hear_from_dj_patil_and_o",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200918_hear_from_dj_patil_and_o",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7117,20 +6979,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20200924_what_we_learned_at_the_f",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20200930_data_work_is_much_bigger",
       "target": "topic_data_culture_literacy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20200930_data_work_is_much_bigger",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7147,12 +6997,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20201008_95_say_exit_polls_dont_w",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20201019_time_for_a_data_culture_",
       "target": "topic_data_catalogs",
       "type": "COVERS",
@@ -7161,12 +7005,6 @@
     {
       "source": "ep_20201019_time_for_a_data_culture_",
       "target": "topic_data_culture_literacy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20201019_time_for_a_data_culture_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7183,12 +7021,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20201023_your_best_data_source_ma",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20201029_the_data_governance_hous",
       "target": "topic_data_governance",
       "type": "COVERS",
@@ -7219,20 +7051,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20201105_documentation_matters",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20201112_the_data_landscape_is_cr",
       "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20201112_the_data_landscape_is_cr",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7261,18 +7081,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20201119_master_data_management_h",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20201125_the_thanksgiving_special",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20201203_how_airbnb_built_its_int",
       "target": "topic_business_value_roi",
       "type": "COVERS",
@@ -7287,12 +7095,6 @@
     {
       "source": "ep_20201203_how_airbnb_built_its_int",
       "target": "topic_data_culture_literacy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20201203_how_airbnb_built_its_int",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7327,38 +7129,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20201217_goodbye_2020_hello_2021",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20201224_best_of_catalog_cocktail",
       "target": "topic_data_products",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20201224_best_of_catalog_cocktail",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20201231_best_of_catalog_cocktail",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210114_has_business_intelligenc",
       "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210114_has_business_intelligenc",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7375,12 +7153,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210121_is_your_data_fabric_a_me",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210128_does_your_data_governanc",
       "target": "topic_data_governance",
       "type": "COVERS",
@@ -7393,32 +7165,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210128_does_your_data_governanc",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210204_what_can_we_learn_from_m",
       "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210204_what_can_we_learn_from_m",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210211_do_you_test_your_data",
       "target": "topic_data_quality",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210211_do_you_test_your_data",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7441,12 +7195,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210225_what_does_a_chief_data_o",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210304_do_you_have_data_trust_i",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -7455,12 +7203,6 @@
     {
       "source": "ep_20210304_do_you_have_data_trust_i",
       "target": "topic_data_quality",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210304_do_you_have_data_trust_i",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7483,12 +7225,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210311_a_modern_approach_to_dat",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210318_identity_graph_the_new_c",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -7497,18 +7233,6 @@
     {
       "source": "ep_20210318_identity_graph_the_new_c",
       "target": "topic_master_data_management",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210318_identity_graph_the_new_c",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210330_does_your_data_have_a_bo",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7543,18 +7267,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210407_power_to_the_data",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210415_what_do_they_teach_at_yo",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210422_why_its_time_to_mesh_wit",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -7567,12 +7279,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210422_why_its_time_to_mesh_wit",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210429_whats_the_secret_recipe_",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -7585,32 +7291,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210429_whats_the_secret_recipe_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210506_data_organization_reap_w",
       "target": "topic_data_teams_org",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210506_data_organization_reap_w",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210513_dont_treat_your_data_sta",
       "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210513_dont_treat_your_data_sta",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7627,12 +7315,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210520_knowledge_is_power_knowl",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210527_the_future_of_bi_is_ai",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -7641,12 +7323,6 @@
     {
       "source": "ep_20210527_the_future_of_bi_is_ai",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210527_the_future_of_bi_is_ai",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7665,12 +7341,6 @@
     {
       "source": "ep_20210603_season_one_finale_episod",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210603_season_one_finale_episod",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7705,12 +7375,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210706_special_edition_panel_on",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210804_season_two_kickoff_w_dj_",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -7729,20 +7393,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210804_season_two_kickoff_w_dj_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210812_documents_and_clouds_and",
       "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210812_documents_and_clouds_and",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7765,32 +7417,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210819_free_range_grass_fed_ope",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210826_cant_spell_buzzwords_wit",
       "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210826_cant_spell_buzzwords_wit",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210902_the_era_of_data_usage_w_",
       "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210902_the_era_of_data_usage_w_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7803,12 +7437,6 @@
     {
       "source": "ep_20210909_whats_the_deal_with_reve",
       "target": "topic_data_engineering",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20210909_whats_the_deal_with_reve",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7831,12 +7459,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210916_how_to_think_about_data_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210923_fashion_week_but_for_dat",
       "target": "topic_data_mesh",
       "type": "COVERS",
@@ -7861,12 +7483,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210923_fashion_week_but_for_dat",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20210930_do_we_have_a_data_infras",
       "target": "topic_data_culture_literacy",
       "type": "COVERS",
@@ -7879,12 +7495,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20210930_do_we_have_a_data_infras",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20211007_a_data_analyst_scientist",
       "target": "topic_data_engineering",
       "type": "COVERS",
@@ -7893,12 +7503,6 @@
     {
       "source": "ep_20211007_a_data_analyst_scientist",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20211007_a_data_analyst_scientist",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7939,26 +7543,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20211021_the_data_mesh_debate_w_h",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20211028_data_is_the_new_herman_m",
       "target": "topic_business_value_roi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20211028_data_is_the_new_herman_m",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20211104_data_tools_the_good_the_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7999,12 +7585,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20211118_long_live_the_monolith_w",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20211202_modern_data_stack_techno",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -8017,12 +7597,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20211202_modern_data_stack_techno",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20211209_what_happens_when_everyo",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -8031,30 +7605,6 @@
     {
       "source": "ep_20211209_what_happens_when_everyo",
       "target": "topic_business_value_roi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20211209_what_happens_when_everyo",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20211216_please_be_quiet_the_mach",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20211223_season_two_finale",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220106_season_three_premier_tak",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8089,12 +7639,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220106_will_2022_change_how_we_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220113_modern_data_work_at_driz",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -8113,26 +7657,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220113_modern_data_work_at_driz",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220113_s3e2_takeaways_with_emil",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220120_s3e3_takeaways_with_benn",
       "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220120_s3e3_takeaways_with_benn",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8151,12 +7677,6 @@
     {
       "source": "ep_20220120_what_good_is_a_metrics_l",
       "target": "topic_data_strategy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220120_what_good_is_a_metrics_l",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8185,12 +7705,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220127_can_the_data_mesh_be_gov",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220127_s3e4_takeaways_with_dora",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -8203,12 +7717,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220127_s3e4_takeaways_with_dora",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220203_can_agile_practices_disr",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -8239,50 +7747,20 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220203_s3e5_takeways_with_laura",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220210_s3e6_takeaways_with_luke",
       "target": "topic_analytics_bi",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220210_s3e6_takeaways_with_luke",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220210_the_three_most_important",
       "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220210_the_three_most_important",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220217_s3e7_takeaways_with_kare",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
       "source": "ep_20220217_the_easiest_data_is_alwa",
       "target": "topic_data_modeling",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220217_the_easiest_data_is_alwa",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8323,12 +7801,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220224_why_are_data_transformat",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220303_are_you_swimming_upstrea",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -8347,12 +7819,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220303_are_you_swimming_upstrea",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220303_s3e9_takeaways_with_arju",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -8361,12 +7827,6 @@
     {
       "source": "ep_20220303_s3e9_takeaways_with_arju",
       "target": "topic_data_engineering",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220303_s3e9_takeaways_with_arju",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8389,24 +7849,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220317_agile_like_a_fox_but_for",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220317_s3e11_takeaways_with_sha",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220331_s3e12_takeaways_with_bob",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220331_the_future_of_data_is_kn",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -8415,12 +7857,6 @@
     {
       "source": "ep_20220331_the_future_of_data_is_kn",
       "target": "topic_data_governance",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220331_the_future_of_data_is_kn",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8443,26 +7879,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220407_can_data_policy_drive_da",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220407_s3e13_takeaways_with_non",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220414_s3e14_takeaways_with_cha",
       "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220414_s3e14_takeaways_with_cha",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8479,12 +7897,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220414_why_are_we_so_bad_at_thi",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220421_everybodys_an_imposter_s",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -8497,20 +7909,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220421_everybodys_an_imposter_s",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220421_s3e15_takeaways_with_ste",
       "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220421_s3e15_takeaways_with_ste",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8529,18 +7929,6 @@
     {
       "source": "ep_20220428_a_layered_approach_to_da",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220428_a_layered_approach_to_da",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220428_s3e16_takeaways_with_nic",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8569,12 +7957,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220505_automating_the_enterpris",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220505_s3e17_takeaways_with_fra",
       "target": "topic_industry_field_notes",
       "type": "COVERS",
@@ -8583,12 +7965,6 @@
     {
       "source": "ep_20220505_s3e17_takeaways_with_fra",
       "target": "topic_knowledge_graphs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220505_s3e17_takeaways_with_fra",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8605,20 +7981,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220512_is_your_modern_data_stac",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220512_s3e18_takeaways_with_sar",
       "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220512_s3e18_takeaways_with_sar",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8647,12 +8011,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220519_a_roadmap_to_data_mesh_s",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220519_takeaways_with_omar_khaw",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -8671,20 +8029,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220519_takeaways_with_omar_khaw",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220526_takeaways_with_brett_hur",
       "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220526_takeaways_with_brett_hur",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8697,12 +8043,6 @@
     {
       "source": "ep_20220526_the_data_entrepreneurs_e",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220526_the_data_entrepreneurs_e",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8755,12 +8095,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220609_getting_all_meta_about_d",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220609_takeaways_with_sanjeev_m",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -8775,12 +8109,6 @@
     {
       "source": "ep_20220609_takeaways_with_sanjeev_m",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220609_takeaways_with_sanjeev_m",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8803,12 +8131,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220616_dont_let_good_metadata_g",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220616_takeaways_with_peter_kap",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -8823,12 +8145,6 @@
     {
       "source": "ep_20220616_takeaways_with_peter_kap",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220616_takeaways_with_peter_kap",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8839,32 +8155,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220623_data_models_are_divas_w_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220623_takeaways_with_ergest_xh",
       "target": "topic_data_modeling",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220623_takeaways_with_ergest_xh",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220630_season_3_finale",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220714_season_3_bonus_episode_w",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8877,12 +8169,6 @@
     {
       "source": "ep_20220728_bonus_episode_juans_trip",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220728_bonus_episode_juans_trip",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8907,24 +8193,6 @@
     {
       "source": "ep_20220825_build_bridges_dont_burn_",
       "target": "topic_data_strategy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220825_build_bridges_dont_burn_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220825_season_4_premiere_takeaw",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220901_takeways_with_roel_and_v",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -8971,12 +8239,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220901_your_thoughts_become_act",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220903_catalog_cocktails_bonus_",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -8997,12 +8259,6 @@
     {
       "source": "ep_20220903_catalog_cocktails_bonus_",
       "target": "topic_data_products",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220903_catalog_cocktails_bonus_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9037,26 +8293,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220908_data_engineering_where_a",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220908_takeaways_with_joe_reis_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220915_takeaways_with_ole_olese",
       "target": "topic_data_catalogs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220915_takeaways_with_ole_olese",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9093,12 +8331,6 @@
     {
       "source": "ep_20220915_the_future_of_data_catal",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220915_the_future_of_data_catal",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9139,26 +8371,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220922_keeping_it_100_about_met",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220922_takeaways_of_episode_100",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220923_bonus_episode_live_from_",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220923_bonus_episode_live_from_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9181,18 +8395,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220929_struggles_of_setting_up_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220929_takeaways_with_rupal_sum",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20221006_ai_ml_where_should_the_f",
       "target": "topic_generative_ai_llms",
       "type": "COVERS",
@@ -9200,12 +8402,6 @@
     },
     {
       "source": "ep_20221006_ai_ml_where_should_the_f",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221006_takeaways_with_patrick_b",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
@@ -9223,18 +8419,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20221013_data_empathy_you_either_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221013_takeaways_with_laura_ell",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20221020_knowledge_the_missing_pi",
       "target": "topic_data_culture_literacy",
       "type": "COVERS",
@@ -9243,30 +8427,6 @@
     {
       "source": "ep_20221020_knowledge_the_missing_pi",
       "target": "topic_data_engineering",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221020_knowledge_the_missing_pi",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221020_takeaways_with_loris_mar",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221027_ai_no_one_wants_your_mod",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221027_takeaways_with_andrew_ey",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9313,24 +8473,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20221103_put_the_business_in_char",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221103_takeaways_with_gabi_stee",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221110_takeaways_with_dan_benne",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20221110_where_are_the_semantics_",
       "target": "topic_business_value_roi",
       "type": "COVERS",
@@ -9345,12 +8487,6 @@
     {
       "source": "ep_20221110_where_are_the_semantics_",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221110_where_are_the_semantics_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9379,18 +8515,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20221117_are_data_teams_keeping_u",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221117_takeaways_with_theresa_k",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20221201_getting_into_the_pool_wi",
       "target": "topic_data_culture_literacy",
       "type": "COVERS",
@@ -9411,18 +8535,6 @@
     {
       "source": "ep_20221201_getting_into_the_pool_wi",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221201_getting_into_the_pool_wi",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20221201_takeaways_with_allison_s",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9493,12 +8605,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20221215_season_4_finale",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230112_a_conversation_with_the_",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -9523,18 +8629,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230112_a_conversation_with_the_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230112_takeaways_with_bill_inmo",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230119_providing_data_business_",
       "target": "topic_business_value_roi",
       "type": "COVERS",
@@ -9549,18 +8643,6 @@
     {
       "source": "ep_20230119_providing_data_business_",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230119_providing_data_business_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230119_takeaways_with_jane_urba",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9585,18 +8667,6 @@
     {
       "source": "ep_20230126_data_modeling_your_data_",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230126_data_modeling_your_data_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230126_takeaways_with_anna_abra",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9637,18 +8707,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230202_is_master_data_managemen",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230202_takeaways_with_malcolm_h",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230209_everywhere_you_look_ther",
       "target": "topic_business_value_roi",
       "type": "COVERS",
@@ -9679,18 +8737,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230209_everywhere_you_look_ther",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230209_takeaways_with_jeff_jona",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230216_metadata_is_this_a_graph",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -9711,18 +8757,6 @@
     {
       "source": "ep_20230216_metadata_is_this_a_graph",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230216_metadata_is_this_a_graph",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230216_takeaways_with_mohammad_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9751,18 +8785,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230223_increasing_adoption_of_d",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230223_takeaways_with_brian_t_o",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230302_catalog_cocktails_throwb",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -9783,12 +8805,6 @@
     {
       "source": "ep_20230302_catalog_cocktails_throwb",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230302_catalog_cocktails_throwb",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9823,12 +8839,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230309_takeaways_with_bethany_l",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230316_school_of_building_data_",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -9859,12 +8869,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230316_takeaways_with_kristin_s",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230323_takeaways_from_gartner_d",
       "target": "topic_data_governance",
       "type": "COVERS",
@@ -9889,12 +8893,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230323_takeaways_from_gartner_d",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230330_show_me_the_metrics_w_ab",
       "target": "topic_data_teams_org",
       "type": "COVERS",
@@ -9903,42 +8901,6 @@
     {
       "source": "ep_20230330_show_me_the_metrics_w_ab",
       "target": "topic_knowledge_graphs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230330_show_me_the_metrics_w_ab",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230330_takeaways_with_abhi_siva",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230406_passing_the_buck_busines",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230406_takeaways_with_benny_ben",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230413_dos_and_dont_for_the_nex",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230413_takeaways_with_veronika_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -9955,18 +8917,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230420_kg_llm_happily_ever_afte",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230427_takeaways_with_alex_vayn",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230427_what_is_the_dna_of_a_dat",
       "target": "topic_business_value_roi",
       "type": "COVERS",
@@ -9975,18 +8925,6 @@
     {
       "source": "ep_20230427_what_is_the_dna_of_a_dat",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230427_what_is_the_dna_of_a_dat",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230504_takeaways_with_ricardo_b",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10015,56 +8953,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230511_live_from_the_knowledge_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230511_takeaways_with_katariina",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230518_takeaways_with_maddy_wan",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230518_using_data_to_change_the",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230525_takeaways_with_ben_clinc",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230529_updated_release_automati",
       "target": "topic_data_governance",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230529_updated_release_automati",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230601_juans_on_vacation",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230608_takeaways_with_aakriti_a",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10077,12 +8967,6 @@
     {
       "source": "ep_20230608_there_is_no_i_in_data_go",
       "target": "topic_data_governance",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230608_there_is_no_i_in_data_go",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10107,12 +8991,6 @@
     {
       "source": "ep_20230706_catalogs_cocktails_live_",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230706_catalogs_cocktails_live_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10129,12 +9007,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230713_modeling_and_semantics_a",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230719_takeaways_from_people_an",
       "target": "topic_data_teams_org",
       "type": "COVERS",
@@ -10147,12 +9019,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230719_takeaways_from_people_an",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230720_people_and_data_w_tom_re",
       "target": "topic_data_teams_org",
       "type": "COVERS",
@@ -10161,12 +9027,6 @@
     {
       "source": "ep_20230720_people_and_data_w_tom_re",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230720_people_and_data_w_tom_re",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10179,12 +9039,6 @@
     {
       "source": "ep_20230727_ranting_about_lack_of_bu",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230727_ranting_about_lack_of_bu",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10213,32 +9067,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230810_data_sustainability_w_si",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230817_juan_and_tim_rant_about_",
       "target": "topic_generative_ai_llms",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230817_juan_and_tim_rant_about_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230824_from_technical_to_busine",
       "target": "topic_data_strategy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230824_from_technical_to_busine",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10261,24 +9097,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230831_what_does_data_lakehouse",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230907_data_that_doesnt_drive_r",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230914_tim_and_juan_rant_from_a",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230921_business_value_on_the_me",
       "target": "topic_business_value_roi",
       "type": "COVERS",
@@ -10297,20 +9115,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20230921_business_value_on_the_me",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20230928_from_london_to_san_franc",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20230928_from_london_to_san_franc",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10339,12 +9145,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20231005_generative_ai_data_produ",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20231012_data_stewardship_data_pr",
       "target": "topic_data_governance",
       "type": "COVERS",
@@ -10353,12 +9153,6 @@
     {
       "source": "ep_20231012_data_stewardship_data_pr",
       "target": "topic_data_products",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20231012_data_stewardship_data_pr",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10375,12 +9169,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20231024_data_catalogs_the_power_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20231026_llms_retrieval_augmented",
       "target": "topic_generative_ai_llms",
       "type": "COVERS",
@@ -10393,38 +9181,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20231026_llms_retrieval_augmented",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20231102_data_storytelling_with_k",
       "target": "topic_data_culture_literacy",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20231102_data_storytelling_with_k",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20231102_data_storytelling_with_k_2",
       "target": "topic_data_culture_literacy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20231102_data_storytelling_with_k_2",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20231122_making_data_science_more",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10437,12 +9201,6 @@
     {
       "source": "ep_20231122_understanding_the_role_o",
       "target": "topic_knowledge_graphs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20231122_understanding_the_role_o",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10453,26 +9211,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20231201_data_contracts_and_shift",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20231215_season_6_finale_with_tim",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240111_how_will_ai_impact_2024_",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240111_how_will_ai_impact_2024_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10507,12 +9247,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240119_the_data_mesh_terclass",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240130_productivity_is_not_perf",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -10531,20 +9265,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240130_productivity_is_not_perf",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240131_without_information_arch",
       "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240131_without_information_arch",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10567,12 +9289,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240208_bridging_innovation_and_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240215_another_sucky_year_for_s",
       "target": "topic_generative_ai_llms",
       "type": "COVERS",
@@ -10591,20 +9307,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240226_dont_lift_and_shift_data",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240311_when_business_goals_and_",
       "target": "topic_data_strategy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240311_when_business_goals_and_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10627,26 +9331,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240314_gartner_data_and_analyti",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240321_what_data_will_say_when_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240328_live_from_data_council_a",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240328_live_from_data_council_a",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10675,38 +9361,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240411_whos_buying_data_catalog",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240418_crawl_walk_and_run_on_ho",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240425_demystifying_vector_data",
       "target": "topic_generative_ai_llms",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240425_demystifying_vector_data",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240507_leadership_transformatio",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240507_leadership_transformatio",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10723,12 +9385,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240509_everything_you_wanted_to",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240517_4_years_of_our_honest_no",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -10741,32 +9397,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240517_4_years_of_our_honest_no",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240523_what_is_ai_ops_with_bran",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240604_we_need_your_honest_no_b",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240822_who_is_doing_the_data_pr",
       "target": "topic_data_products",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240822_who_is_doing_the_data_pr",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10783,12 +9415,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240829_humanizing_data_strategy",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240905_building_diversity_in_da",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -10801,20 +9427,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240905_building_diversity_in_da",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20240912_the_five_laws_of_data_en",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20240912_the_five_laws_of_data_en",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10825,12 +9439,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20240926_why_data_ai_needs_to_emb",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20241003_data_quality_the_key_to_",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -10855,20 +9463,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20241003_data_quality_the_key_to_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20241010_the_power_of_active_meta",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20241010_the_power_of_active_meta",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10885,18 +9481,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20241017_streamlining_data_value_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20241024_why_we_need_to_focus_on_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20241031_what_is_the_future_of_da",
       "target": "topic_data_catalogs",
       "type": "COVERS",
@@ -10909,20 +9493,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20241031_what_is_the_future_of_da",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20241114_the_truth_about_open_tab",
       "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20241114_the_truth_about_open_tab",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10939,20 +9511,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20241121_we_have_agency_over_ai_w",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20241128_stop_talking_about_data_",
       "target": "topic_data_governance",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20241128_stop_talking_about_data_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10981,20 +9541,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20241205_demystifying_meta_grid_w",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20241212_live_from_dgiq_aigov_wit",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20241212_live_from_dgiq_aigov_wit",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11011,20 +9559,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20241219_season_8_finale_with_tim",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20250116_data_ai_business_literac",
       "target": "topic_data_culture_literacy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250116_data_ai_business_literac",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11041,20 +9577,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20250123_data_teams_are_strategic",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20250130_want_to_be_data_and_ai_d",
       "target": "topic_data_quality",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250130_want_to_be_data_and_ai_d",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11091,12 +9615,6 @@
     {
       "source": "ep_20250220_field_notes_six_data_tre",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250220_field_notes_six_data_tre",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11125,12 +9643,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20250306_gartner_data_and_analyti",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20250313_building_trust_in_your_d",
       "target": "topic_data_quality",
       "type": "COVERS",
@@ -11139,12 +9651,6 @@
     {
       "source": "ep_20250313_building_trust_in_your_d",
       "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250313_building_trust_in_your_d",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11163,12 +9669,6 @@
     {
       "source": "ep_20250320_data_contracts_data_prod",
       "target": "topic_data_products",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250320_data_contracts_data_prod",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11197,26 +9697,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20250328_what_do_data_modeling_da",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250403_digital_twins_and_ai_wit",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20250410_how_to_get_out_of_ai_pro",
       "target": "topic_business_value_roi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250410_how_to_get_out_of_ai_pro",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11239,32 +9721,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20250417_most_data_teams_are_a_wa",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20250424_tim_juan_rant_about_ai_a",
       "target": "topic_industry_field_notes",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20250424_tim_juan_rant_about_ai_a",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20250501_what_is_data_ai_observab",
       "target": "topic_data_quality",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250501_what_is_data_ai_observab",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11283,12 +9747,6 @@
     {
       "source": "ep_20250508_tim_juan_are_on_the_road",
       "target": "topic_knowledge_graphs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20250508_tim_juan_are_on_the_road",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11317,12 +9775,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20250515_gartner_data_analytics_s",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20250529_season_9_finale_with_tim",
       "target": "topic_data_governance",
       "type": "COVERS",
@@ -11341,18 +9793,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20250529_season_9_finale_with_tim",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20251105_season_10_premiere_juan_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20251112_fall_2025_data_analytics",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -11371,12 +9811,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20251112_fall_2025_data_analytics",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20251119_netflixs_unified_data_ar",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
@@ -11395,20 +9829,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20251119_netflixs_unified_data_ar",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20251126_when_is_data_and_ai_gove",
       "target": "topic_data_governance",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20251126_when_is_data_and_ai_gove",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11425,32 +9847,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20251203_ai_isnt_magic_its_math_w",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20251210_how_are_we_over_complica",
       "target": "topic_data_products",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20251210_how_are_we_over_complica",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20251217_building_ai_agents_with_",
       "target": "topic_ai_agents",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20251217_building_ai_agents_with_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11469,12 +9873,6 @@
     {
       "source": "ep_20260108_season_11_premiere_what_",
       "target": "topic_knowledge_graphs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260108_season_11_premiere_what_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11503,44 +9901,14 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20260115_2026_trends_in_the_data_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260116_it_s_friday_juan_and_tim",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20260122_ontologies_arent_new_wit",
       "target": "topic_knowledge_graphs",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
-      "source": "ep_20260122_ontologies_arent_new_wit",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20260129_all_things_data_lineage_",
       "target": "topic_data_governance",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260129_all_things_data_lineage_",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260130_it_s_friday_juan_and_tim",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11571,12 +9939,6 @@
     {
       "source": "ep_20260205_stop_chasing_ai_hype_sta",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260205_stop_chasing_ai_hype_sta",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11593,20 +9955,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20260206_it_s_friday_juan_and_tim",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20260212_the_way_we_build_agents_",
       "target": "topic_ai_agents",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260212_the_way_we_build_agents_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11635,12 +9985,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20260219_shift_left_everything_ho",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20260226_your_data_should_speak_y",
       "target": "topic_data_engineering",
       "type": "COVERS",
@@ -11653,12 +9997,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20260226_your_data_should_speak_y",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20260305_pre_gartner_data_analyti",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -11667,12 +10005,6 @@
     {
       "source": "ep_20260305_pre_gartner_data_analyti",
       "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260305_pre_gartner_data_analyti",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11689,20 +10021,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20260311_takeaways_from_gartner_d",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20260319_the_data_hygienist_with_",
       "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260319_the_data_hygienist_with_",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11721,12 +10041,6 @@
     {
       "source": "ep_20260402_the_wrong_mandate_why_bo",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260402_the_wrong_mandate_why_bo",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11749,18 +10063,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20260405_juan_tim_rant_w_jesus_ba",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260409_the_void_between_data_an",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20260416_think_like_a_librarian_w",
       "target": "topic_data_engineering",
       "type": "COVERS",
@@ -11775,12 +10077,6 @@
     {
       "source": "ep_20260416_think_like_a_librarian_w",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260416_think_like_a_librarian_w",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11809,20 +10105,8 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20260424_it_s_friday_juan_and_tim",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20260501_ai_appetite_is_easy_dige",
       "target": "topic_data_culture_literacy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260501_ai_appetite_is_easy_dige",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11853,12 +10137,6 @@
     {
       "source": "ep_20260515_data_catalyst3_governanc",
       "target": "topic_data_governance",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260515_data_catalyst3_governanc",
-      "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -11905,18 +10183,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20260520_pragmatic_use_case_drive",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260529_6th_year_season_finale_j",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20260819_honest_no_bs_data_podcas",
       "target": "topic_ai_agents",
       "type": "COVERS",
@@ -11983,12 +10249,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20260826_data_products_done_right",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20260903_intelligence_without_act",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -12020,36 +10280,6 @@
     },
     {
       "source": "ep_20260903_intelligence_without_act",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260909_why_data_teams_fail_and_",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260909_why_data_teams_fail_and_",
-      "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260909_why_data_teams_fail_and_",
-      "target": "topic_data_quality",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260909_why_data_teams_fail_and_",
-      "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260909_why_data_teams_fail_and_",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
@@ -13387,12 +11617,6 @@
       "provenance": "curated"
     },
     {
-      "source": "person_shachar_meir",
-      "target": "ep_20260909_why_data_teams_fail_and_",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_shane_gibson",
       "target": "ep_20220317_agile_like_a_fox_but_for",
       "type": "GUEST_ON",
@@ -13917,12 +12141,6 @@
     {
       "source": "ep_20260903_intelligence_without_act_ta",
       "target": "ep_20260903_intelligence_without_act",
-      "type": "TAKEAWAY_OF",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20260909_why_data_teams_fail_and__ta",
-      "target": "ep_20260909_why_data_teams_fail_and_",
       "type": "TAKEAWAY_OF",
       "provenance": "inferred"
     }
