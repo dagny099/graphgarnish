@@ -3,14 +3,14 @@
     "generated_by": "tools/build_network.py",
     "source": "seed+feed",
     "counts": {
-      "episode": 373,
-      "person": 184,
+      "episode": 375,
+      "person": 185,
       "organization": 103,
       "topic": 22
     },
     "provenance": {
       "episode": {
-        "feed": 171,
+        "feed": 173,
         "curated": 202
       },
       "organization": {
@@ -20,7 +20,7 @@
       },
       "person": {
         "curated": 141,
-        "inferred": 40,
+        "inferred": 41,
         "verified": 3
       },
       "topic": {
@@ -34,15 +34,15 @@
         "verified": 1
       },
       "COVERS": {
-        "inferred": 880
+        "inferred": 885
       },
       "GUEST_ON": {
-        "inferred": 99,
+        "inferred": 100,
         "curated": 146,
         "verified": 3
       },
       "TAKEAWAY_OF": {
-        "inferred": 62
+        "inferred": 63
       }
     },
     "episodes_needing_review": [
@@ -4211,6 +4211,30 @@
       "episode": "3"
     },
     {
+      "id": "ep_20260909_why_data_teams_fail_and__ta",
+      "name": "TAKEAWAY - Why Data Teams Fail and Succeed with Shachar Meir",
+      "type": "episode",
+      "date": "2026-09-09",
+      "is_full": false,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/takeaway-why-data-teams-fail-and-succeed-with-shachar-meir",
+      "summary": "This is the takeaway episode with Shachar Meir, who has spent 20 years fixing data teams and understanding why they fail. In this live episode, Shachar joins Juan and Tim to discuss the reason why they fail and what they should be doing in order to succeed. See omnystudio.com/listener for privacy information.",
+      "season": "12",
+      "episode": "4"
+    },
+    {
+      "id": "ep_20260909_why_data_teams_fail_and_",
+      "name": "Why Data Teams Fail and Succeed with Shachar Meir",
+      "type": "episode",
+      "date": "2026-09-09",
+      "is_full": true,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/why-data-teams-fail-and-succeed-with-shachar-meir",
+      "summary": "Shachar MEIR has spent 20 years fixing data teams and understanding why they fail. In this live episode, Shachar joins Juan and Tim to discuss the reason why they fail and what they should be doing in order to succeed. Shachar argues that data leaders default to what they can control (cough cough technology_ and underinvest in people, process, and culture. A new CDO comes in, migrates legacy datab",
+      "season": "12",
+      "episode": "4"
+    },
+    {
       "id": "person_aakriti_agrawal",
       "name": "Aakriti Agrawal",
       "type": "person",
@@ -5181,6 +5205,12 @@
       "name": "Scott Taylor",
       "type": "person",
       "source": "curated"
+    },
+    {
+      "id": "person_shachar_meir",
+      "name": "Shachar Meir",
+      "type": "person",
+      "source": "inferred"
     },
     {
       "id": "person_shane_gibson",
@@ -11995,6 +12025,36 @@
       "provenance": "inferred"
     },
     {
+      "source": "ep_20260909_why_data_teams_fail_and_",
+      "target": "topic_analytics_bi",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20260909_why_data_teams_fail_and_",
+      "target": "topic_architecture_platforms",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20260909_why_data_teams_fail_and_",
+      "target": "topic_data_quality",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20260909_why_data_teams_fail_and_",
+      "target": "topic_data_teams_org",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20260909_why_data_teams_fail_and_",
+      "target": "topic_privacy_ethics_risk",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
       "source": "person_aakriti_agrawal",
       "target": "ep_20230608_takeaways_with_aakriti_a",
       "type": "GUEST_ON",
@@ -13327,6 +13387,12 @@
       "provenance": "curated"
     },
     {
+      "source": "person_shachar_meir",
+      "target": "ep_20260909_why_data_teams_fail_and_",
+      "type": "GUEST_ON",
+      "provenance": "inferred"
+    },
+    {
       "source": "person_shane_gibson",
       "target": "ep_20220317_agile_like_a_fox_but_for",
       "type": "GUEST_ON",
@@ -13851,6 +13917,12 @@
     {
       "source": "ep_20260903_intelligence_without_act_ta",
       "target": "ep_20260903_intelligence_without_act",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20260909_why_data_teams_fail_and__ta",
+      "target": "ep_20260909_why_data_teams_fail_and_",
       "type": "TAKEAWAY_OF",
       "provenance": "inferred"
     }
