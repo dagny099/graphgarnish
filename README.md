@@ -178,11 +178,11 @@ turns them back on.
 
 ## 🛠️ Building the Network JSON
 
-`tools/build_network.py` builds `catalog_cocktails.json` and `sample_network.json`.
+`tools/build_network.py` builds `sample_network.json`, the file the site fetches.
 
 **Inputs are read-only; outputs are fully derived.** Nothing the builder writes
 is ever read back on a later run, so a name it guessed today cannot be mistaken
-for a curated fact tomorrow. Delete both output files, rebuild, and they come
+for a curated fact tomorrow. Delete the output file, rebuild, and it comes
 back identical.
 
 ```
@@ -192,12 +192,11 @@ data/topics.json         the topic taxonomy
 the RSS feed             the full back catalogue, fetched fresh each run
         │
         ▼
-catalog_cocktails.json   output
 sample_network.json      output — what the site fetches
 ```
 
 To correct something the extractor got wrong, edit `data/verified.json`. Never
-edit the output files: the next run overwrites them.
+edit the output file: the next run overwrites it.
 
 ```bash
 python3 tools/build_network.py --feed --report          # try the known URLs
@@ -328,7 +327,20 @@ python3 tools/test_build_network.py
 `.github/workflows/refresh-network.yml` runs the online build weekly and commits
 the result if the graph changed. GitHub's runners have open outbound network
 access, so the site keeps itself current with no local setup. Trigger it by hand
-from the repository's **Actions** tab via **Run workflow**.
+from the repository's **Actions** tab via **Run workflow**. It also runs on any
+push to `main` that changes `data/`, `tools/build_network.py`, or the workflow
+itself, so a fix to the topics or the builder goes live within minutes.
+
+Because the bot commits `sample_network.json` to `main`, your local copy of it
+can clash with the bot's. `.gitattributes` makes that a non-event, once you run
+this in each clone:
+
+```bash
+git config merge.keep-current.driver true   # never stop on sample_network.json
+git config pull.rebase true                 # pull rebases instead of asking
+```
+
+Whichever copy survives the pull, the next rebuild replaces it.
 
 ---
 

@@ -1,0 +1,6 @@
+# sample_network.json is rebuilt from scratch on every run, so a conflict on it
+# never needs resolving by hand: keep whichever copy git is holding and let the
+# next rebuild correct it. Needs, once per clone:
+#   git config merge.keep-current.driver true
+# Without that line git falls back to an ordinary conflict.
+sample_network.json merge=keep-current
