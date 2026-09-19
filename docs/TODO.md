@@ -74,10 +74,6 @@ Still open:
 
 ## Repo hygiene
 
-- **`catalog_cocktails.json` and `sample_network.json` are byte-identical**
-  (501 KB each). The builder writes both (`OUTPUTS` in `tools/build_network.py`)
-  and `explore.html` fetches only `sample_network.json`. Drop one, or document
-  why both exist.
 - **`MAX_FEED_PAGES` fails silently.** `follow_pages` stops after 40 pages
   without a warning. The feed currently spans 4 pages, so the cap is not hit,
   but a catalogue cut off there would look like a clean run. Print a warning

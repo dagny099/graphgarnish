@@ -10,12 +10,11 @@ cannot be mistaken for a curated fact tomorrow.
   data/topics.json         the topic taxonomy
   the RSS feed             the full back catalogue, fetched fresh
 
-  catalog_cocktails.json   output
   sample_network.json      output (what the site fetches)
 
-Delete both outputs, rerun, and they come back identical. To correct
+Delete the output, rerun, and it comes back identical. To correct
 something the extractor got wrong, edit data/verified.json -- never the
-output files, which the next run overwrites.
+output file, which the next run overwrites.
 
 Usage:
     python3 tools/build_network.py --feed                # fetch and rebuild
@@ -55,12 +54,12 @@ DEFAULT_FEED = DEFAULT_FEED_CANDIDATES[0]
 MAX_FEED_PAGES = 40
 # Inputs are read-only. The builder never writes to any of them, so a value it
 # guessed on one run can never be read back as fact on the next. Everything in
-# OUTPUTS is fully derived: delete both files, rebuild, and you get them back
+# OUTPUTS is fully derived: delete the file, rebuild, and you get it back
 # byte for byte.
 DEFAULT_SEED = ROOT / "data" / "seed_curated.json"
 DEFAULT_TOPICS = ROOT / "data" / "topics.json"
 DEFAULT_VERIFIED = ROOT / "data" / "verified.json"
-OUTPUTS = [ROOT / "catalog_cocktails.json", ROOT / "sample_network.json"]
+OUTPUTS = [ROOT / "sample_network.json"]
 
 # ---------------------------------------------------------------- utilities
 
