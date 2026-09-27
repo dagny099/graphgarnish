@@ -19,9 +19,9 @@
    "Steve Whitla"
   ],
   "node_types": {
+   "episode": 352,
    "person": 197,
    "entity": 66,
-   "episode": 352,
    "concept": 219,
    "answer": 179,
    "question": 1

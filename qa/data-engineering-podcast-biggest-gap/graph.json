@@ -16,8 +16,8 @@
    "answer": 95,
    "concept": 114,
    "person": 53,
-   "entity": 43,
    "episode": 120,
+   "entity": 43,
    "question": 1
   },
   "link_types": {
@@ -26,7 +26,7 @@
    "FROM_EPISODE": 95,
    "GAVE": 39,
    "MENTIONS": 62,
-   "ABOUT": 251,
+   "ABOUT": 250,
    "SIMILAR_TO": 11
   }
  },
@@ -4386,7 +4386,7 @@
    "id": "concept_data_engineering",
    "type": "concept",
    "name": "data engineering",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "concept_away",
@@ -7247,12 +7247,6 @@
   {
    "source": "ans_2024-07-21_how-generative-ai-is-impacting-data-engi_34661f",
    "target": "concept_machine_learning",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-07-21_how-generative-ai-is-impacting-data-engi_34661f",
-   "target": "concept_data_engineering",
    "type": "ABOUT",
    "provenance": "tfidf"
   },

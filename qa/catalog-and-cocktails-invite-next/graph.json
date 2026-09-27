@@ -32,8 +32,8 @@
    "Shane Gibson"
   ],
   "node_types": {
-   "person": 291,
    "episode": 352,
+   "person": 291,
    "answer": 168,
    "entity": 78,
    "question": 1
