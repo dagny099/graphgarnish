@@ -8,11 +8,11 @@
       "Tim Gasper"
     ],
     "episodes": {
-      "skip_title_regex": "^\\s*TAKEAWAYS?\\b",
       "skip_types": [
         "trailer",
         "bonus"
-      ]
+      ],
+      "_note": "Companion TAKEAWAYS clips are kept: in some seasons they carry the closing questions. A clip and its episode are merged into one row."
     },
     "transcripts": {
       "sources": [
@@ -44,27 +44,27 @@
         "what's your advice",
         "what is your advice",
         "advice about data",
+        "your final advice",
         "any advice",
-        "one piece of advice"
+        "one piece of advice",
+        "piece of advice for"
       ],
       "answer_cues": [
         "advice",
-        "my advice",
         "i would say",
         "i'd say"
       ],
       "stop_cues": [
         "as far as people",
-        "who should you invite",
-        "who should we invite",
-        "you should invite",
+        "as far as who",
+        "next guest",
         "who haven't you",
-        "you should have on",
         "resources",
         "third question",
         "second question",
         "thank you so much",
         "thanks so much",
+        "thanks for having me",
         "cheers",
         "takeaway"
       ],
@@ -75,38 +75,99 @@
       "id": "invite-next",
       "question": "Who should we invite next?",
       "cues": [
+        "who should we invite",
+        "invite next",
+        "who to invite",
+        "who should invite",
+        "who should we have on",
+        "who should we bring on",
+        "who's on right next"
+      ],
+      "block_cues": [
         "what's your advice",
         "what is your advice",
-        "advice about data",
-        "who should we invite next",
-        "who should we invite",
-        "who should we have on",
-        "what resources do you follow"
+        "what resources do you follow",
+        "three questions",
+        "final questions"
       ],
       "answer_cues": [
         "as far as people",
-        "invite",
+        "as far as who",
+        "next guest",
         "who haven't you",
+        "one person",
+        "i would invite",
+        "i'd invite",
+        "you should invite",
         "you should have",
+        "you should talk",
         "should talk to",
-        "you guys should",
+        "i'd have",
+        "i would have",
+        "i'd love",
+        "i would love",
+        "i'd recommend",
+        "i would recommend",
         "bring on",
         "have on",
-        "should interview",
         "reach out to",
-        "as far as who"
+        "you guys should",
+        "well served"
       ],
       "stop_cues": [
         "resources",
         "third question",
-        "what was the other question",
+        "last question",
         "thank you so much",
         "thanks so much",
+        "thanks for having me",
         "cheers",
         "takeaway"
       ],
       "answer_kind": "people",
-      "max_answer_words": 140
+      "max_answer_words": 140,
+      "answer_search_words": 500
+    },
+    {
+      "id": "resources",
+      "question": "What resources do you follow?",
+      "cues": [
+        "what resources",
+        "resources do you follow",
+        "resources you follow",
+        "the resources you"
+      ],
+      "block_cues": [
+        "what's your advice",
+        "what is your advice",
+        "who should we invite",
+        "three questions",
+        "final questions"
+      ],
+      "answer_cues": [
+        "resources",
+        "i follow",
+        "i read",
+        "i listen",
+        "newsletter",
+        "substack",
+        "podcasts",
+        "books",
+        "i subscribe",
+        "linkedin"
+      ],
+      "stop_cues": [
+        "thank you so much",
+        "thanks so much",
+        "thanks for having me",
+        "cheers",
+        "takeaway",
+        "wrap up",
+        "next week"
+      ],
+      "answer_kind": "open",
+      "max_answer_words": 160,
+      "answer_search_words": 700
     }
   ]
 }

@@ -117,6 +117,11 @@ DEFAULT_QUESTION = {
     # Phrases the host actually says. Matched case- and punctuation-
     # insensitively against each sentence of the transcript.
     "cues": [],
+    # Phrases that mark the wrap-up where this question is usually asked
+    # (its sibling questions, "final questions"). Used only when no cue is
+    # heard, which happens when speech-to-text mangles the question; the
+    # answer must then be found by an answer cue.
+    "block_cues": [],
     # Phrases the guest uses when starting this particular answer ("my
     # advice is", "as far as people"). Needed when several questions are
     # asked in one breath and answered in order: the question's location
@@ -685,9 +690,6 @@ def question_words(text: str) -> set[str]:
     return {w for w in norm(text).split() if w not in QUESTION_STOP}
 
 
-BLOCK_GAP = 12  # sentences
-
-
 def locate(sents: list[Sentence], q: dict, hosts: set[str]) -> Location | None:
     cues = [norm(c) for c in q["cues"] if norm(c)]
     phrasings = [w for w in (question_words(t) for t in [q["question"], *q["cues"]]) if w]
@@ -716,17 +718,17 @@ def locate(sents: list[Sentence], q: dict, hosts: set[str]) -> Location | None:
     if best_method == "fuzzy":
         top = max(h.score for h in pool)
         pool = [h for h in pool if h.score == top]
-    if q["occurrence"] != "last":
-        return pool[0]
-    # Hits close together are one exchange: the host asking, then the guest
-    # repeating the question back ("what was the third one? resources?").
-    # The last exchange starts at its first hit.
-    block_start = pool[-1]
-    for h in reversed(pool[:-1]):
-        if block_start.sentence - h.sentence > BLOCK_GAP:
-            break
-        block_start = h
-    return block_start
+    return pool[-1] if q["occurrence"] == "last" else pool[0]
+
+
+def locate_block(sents: list[Sentence], q: dict) -> Location | None:
+    """The last sentence that sounds like the wrap-up (a sibling question,
+    "final questions"), for when the question itself was not heard."""
+    cues = [norm(c) for c in q["block_cues"] if norm(c)]
+    hits = [i for i, s in enumerate(sents) if any(c in norm(s.text) for c in cues)]
+    if not hits:
+        return None
+    return Location(hits[-1] if q["occurrence"] == "last" else hits[0], "block", 0.5)
 
 
 def is_host(speaker: str, hosts: set[str]) -> bool:
@@ -736,54 +738,99 @@ def is_host(speaker: str, hosts: set[str]) -> bool:
     return any(h == spk or h.split()[0] == spk or spk in h or h in spk for h in hosts)
 
 
-def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str]) -> tuple[str, float | None, str]:
+CONNECTIVE = re.compile(r"^(?:and |so |ok(?:ay)? |all right,? )?(?:first|second|secondly|third|thirdly|"
+                        r"finally|last|lastly|next|quickly|wow|okay|ok|all right|alright|"
+                        r"number (?:one|two|three))\W*$", re.I)
+
+
+def matches(text: str, phrases: list[str]) -> bool:
+    n = norm(text)
+    return any(p in n for p in phrases)
+
+
+def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str],
+                siblings: list[str] | None = None) -> tuple[str, float | None, str]:
     """The guest's words after the question, until the next recurring
     question, a substantial host turn, or the word limit. Returns (text,
     start seconds, why it stopped); empty text when the answer could not be
-    told apart from its neighbours."""
+    told apart from its neighbours.
+
+    siblings are the cues of the other questions this podcast asks. When one
+    of them is asked in the same breath, the guest answers them in order,
+    and this answer starts only where the guest signals it (an answer cue,
+    or the guest repeating the question)."""
     stops = [norm(c) for c in q["stop_cues"] if norm(c)]
-    cues = [norm(c) for c in q["cues"] if norm(c)]
+    own = [norm(c) for c in q["cues"] if norm(c)]
     answer_cues = [norm(c) for c in q["answer_cues"] if norm(c)]
+    siblings = [c for c in (norm(x) for x in (siblings or [])) if c and c not in own]
     labelled = any(s.speaker for s in sents)
-    # Several questions often arrive in one breath ("What's your advice? Who
-    # should we invite next?"). Skip the rest of the asker's turn, or, with
-    # no speaker labels, the run of questions that follows.
-    i = loc.sentence + 1
+
+    def asking(t: str) -> bool:
+        t = t.strip()
+        return CONNECTIVE.match(t) is not None or (t.endswith("?") and (
+            matches(t, own + siblings)
+            or (len(t.split()) <= 10 and not matches(t, answer_cues))))
+
+    # Stacked means another recurring question was asked just before this
+    # one, in the same breath: the guest answers that one first, so this
+    # answer starts only where the guest signals it. A question asked first
+    # in the stack, or on its own, is answered straight away.
+    here = norm(sents[loc.sentence].text)
+    own_at = min((here.find(c) for c in own if c in here), default=len(here))
+    stacked = loc.method == "block" or any(0 <= here.find(c) < own_at for c in siblings)
     asker = sents[loc.sentence].speaker
+    k = loc.sentence - 1
+    while k >= 0 and loc.sentence - k <= 5 and not stacked:
+        prev = sents[k]
+        if labelled and asker:
+            if prev.speaker != asker:
+                break
+        elif not asking(prev.text):
+            break
+        stacked = matches(prev.text, siblings)
+        k -= 1
+
+    # Skip the rest of the asking: the host's turn, or with no speaker
+    # labels, the run of questions and connectives ("Second.") that follows.
+    i = loc.sentence + 1
     if labelled and asker:
         while i < len(sents) and sents[i].speaker == asker:
             i += 1
     else:
-        # Short questions only: a guest's answer often ends in a tag
-        # question ("...your business sponsors, right?").
-        while (i < len(sents) and i - loc.sentence <= 3
-               and sents[i].text.rstrip().endswith("?")
-               and len(sents[i].text.split()) <= 14
-               and not any(c in norm(sents[i].text) for c in answer_cues)):
+        while i < len(sents) and i - loc.sentence <= 5 and asking(sents[i].text):
             i += 1
-    if answer_cues:
-        seen, j = 0, i
-        while j < len(sents) and seen < q["answer_search_words"]:
-            if any(c in norm(sents[j].text) for c in answer_cues) and not (
-                    labelled and is_host(sents[j].speaker, hosts)):
-                break
-            seen += len(sents[j].text.split())
-            j += 1
-        else:
+
+    # Where this answer starts: at an answer cue, or just after the question
+    # is repeated. Required when the questions were stacked; otherwise only
+    # honoured close to the question.
+    limit = q["answer_search_words"] if stacked else 40
+    seen, j, begin = 0, i, None
+    while j < len(sents) and seen < limit:
+        t = sents[j].text
+        host_line = labelled and is_host(sents[j].speaker, hosts)
+        if matches(t, own):
+            begin = j + 1
+            break
+        if not host_line and matches(t, answer_cues) and not matches(t, siblings):
+            begin = j
+            break
+        seen += len(t.split())
+        j += 1
+    if begin is None:
+        if stacked:
             return "", None, "answer cue not found after the question"
-        if j >= len(sents):
-            return "", None, "answer cue not found after the question"
-        i = j
+        begin = i
+    i = begin
+
     words: list[str] = []
     start, reason = None, "end of transcript"
     host_run_words = 0
     while i < len(sents):
         s = sents[i]
-        n = norm(s.text)
-        if words and any(c in n for c in stops):
+        if words and matches(s.text, stops + siblings):
             reason = "stop cue"
             break
-        if words and any(c in n for c in cues) and not any(c in n for c in answer_cues):
+        if words and matches(s.text, own) and not matches(s.text, answer_cues):
             reason = "question asked again"
             break
         if labelled and is_host(s.speaker, hosts):
@@ -833,7 +880,23 @@ PERSON_BEFORE = re.compile(r"\b(?:invite|talk to|ask|have|bring|recommend|follow
                            r"colleague|folks like|people like|someone like)\s*$", re.I)
 
 
-def mentions(text: str, exclude: set[str], known_people: set[str],
+DISTINCT_WORD = re.compile(r"^(?:[A-Z]{2,}\w*|[A-Z]?[a-z]+[A-Z]\w*|\w+\.\w+)$")
+
+
+def snap(name: str, known_people: dict[str, str]) -> str:
+    """A known person's canonical name when name is them, allowing for
+    speech-to-text slips ("Sarah Catanzero" for "Sarah Catanzaro")."""
+    key = norm(name)
+    if key in known_people:
+        return known_people[key]
+    if len(key.split()) < 2:
+        return ""
+    import difflib
+    close = difflib.get_close_matches(key, list(known_people), n=1, cutoff=0.88)
+    return known_people[close[0]] if close else ""
+
+
+def mentions(text: str, exclude: set[str], known_people: dict[str, str],
              answer_kind: str) -> tuple[list[str], list[str]]:
     """Split the capitalised runs in an answer into people and things.
 
@@ -853,15 +916,17 @@ def mentions(text: str, exclude: set[str], known_people: set[str],
             toks = toks[1:]
         if not toks:
             continue
+        toks[-1] = re.sub(r"['\u2019]s$", "", toks[-1])
         run = " ".join(toks).rstrip(".")
-        if len(run) < 3 or run.lower() in exclude:
+        if len(run) < 3 or run.lower() in exclude or toks[0].split("'")[0] in CAP_STOP:
+            continue
+        snapped = snap(run, known_people)
+        if snapped:
+            people.append(snapped)
             continue
         before, after = text[:start], text[m.end():]
         sentence_start = not before.strip() or before.rstrip()[-1] in ".?!:\""
         if len(toks) == 1 and sentence_start:
-            continue
-        if norm(run) in known_people:
-            people.append(run)
             continue
         name_shape = (2 <= len(toks) <= 3 and bn.looks_like_person(run)
                       and all(t[:1].isupper() and not t.isupper() for t in toks)
@@ -870,7 +935,10 @@ def mentions(text: str, exclude: set[str], known_people: set[str],
         cued = PERSON_AFTER.search(after) or PERSON_BEFORE.search(before)
         if name_shape and (answer_kind == "people" or cued):
             people.append(run)
-        elif len(toks) > 1 or not sentence_start:
+        elif len(toks) > 1 or DISTINCT_WORD.match(run):
+            # A lone capitalised word is usually speech-to-text punctuating
+            # mid-sentence ("Take", "Irish"); keep it only when it cannot be
+            # an ordinary word: an acronym or a CamelCase / dotted name.
             things.append(run)
     people = list(dict.fromkeys(people))
     things = [t for t in dict.fromkeys(things) if not any(t in p or p in t for p in people)]
@@ -1224,7 +1292,8 @@ def excerpt_for_llm(sents: list[Sentence], loc: Location | None, words: int = 15
 
 
 def run_question(podcast: dict, q: dict, episodes: list[Episode], store: TranscriptStore,
-                 llm: LLM | None, guest_graph: dict, hosts: set[str]) -> list[dict]:
+                 llm: LLM | None, guest_graph: dict, hosts: set[str],
+                 siblings: list[str] | None = None) -> list[dict]:
     rows, themes = [], Counter()
     guest_exclude = hosts | {h.split()[0] for h in hosts}
     for idx, ep in enumerate(episodes, 1):
@@ -1245,9 +1314,9 @@ def run_question(podcast: dict, q: dict, episodes: list[Episode], store: Transcr
             row["reason"] = "no transcript"
             continue
         sents = sentences(segs)
-        loc = locate(sents, q, hosts)
+        loc = locate(sents, q, hosts) or locate_block(sents, q)
         if loc:
-            text, start, why = answer_span(sents, loc, q, hosts)
+            text, start, why = answer_span(sents, loc, q, hosts, siblings)
             row.update(answer=text, start=start, method=loc.method,
                        confidence=loc.score, reason=why, found=bool(text.strip()))
             if not text.strip() and why == "end of transcript":
@@ -1274,9 +1343,11 @@ def run_question(podcast: dict, q: dict, episodes: list[Episode], store: Transcr
         if idx % 25 == 0:
             print(f"  {idx}/{len(episodes)} episodes", file=sys.stderr)
 
+    merge_companions(rows)
+
     # Second pass, once every episode's guests are known: any guest of the
     # show named in an answer is recognised as a person.
-    known = {norm(g) for r in rows for g in r["guests"]}
+    known = {norm(g): g for r in rows for g in r["guests"]}
     for r in rows:
         if r["found"] and not r["method"].endswith("llm"):
             exclude = {g.lower() for g in r["guests"]} | guest_exclude
@@ -1284,6 +1355,46 @@ def run_question(podcast: dict, q: dict, episodes: list[Episode], store: Transcr
         if r["found"] and not r["quote"]:
             r["quote"] = " ".join(r["answer"].split()[:60])
     return rows
+
+
+COMPANION_RE = re.compile(r"\btakeaways?\b", re.I)
+COMPANION_DAYS = 14
+
+
+def merge_companions(rows: list[dict]) -> None:
+    """A show that publishes a short companion clip ("TAKEAWAYS - ...") next
+    to each episode can ask its closing questions in either one. Keep one
+    answer per guest appearance: rows with the same guests published within
+    two weeks are one appearance, and the full episode wins a tie."""
+    from datetime import date
+
+    def day(r):
+        try:
+            return date.fromisoformat(r["date"])
+        except ValueError:
+            return None
+
+    groups: dict[frozenset, list[dict]] = defaultdict(list)
+    for r in rows:
+        if r["guests"] and day(r):
+            groups[frozenset(g.lower() for g in r["guests"])].append(r)
+    for same in groups.values():
+        same.sort(key=day)
+        clusters, current = [], [same[0]]
+        for r in same[1:]:
+            if (day(r) - day(current[-1])).days <= COMPANION_DAYS:
+                current.append(r)
+            else:
+                clusters.append(current)
+                current = [r]
+        clusters.append(current)
+        for cluster in clusters:
+            if len(cluster) < 2:
+                continue
+            keep = sorted(cluster, key=lambda r: (not r["found"], bool(COMPANION_RE.search(r["title"]))))[0]
+            for r in cluster:
+                if r is not keep:
+                    r.update(found=False, reason=f"same appearance as {keep['title']!r}")
 
 
 def write_outputs(out_dir: Path, graph: dict, rows: list[dict]) -> None:
@@ -1386,7 +1497,8 @@ def main(argv=None) -> int:
     guest_graph = load_guest_graph(podcast["guests"]["graph"])
 
     for q in questions:
-        rows = run_question(podcast, q, episodes, store, llm, guest_graph, hosts)
+        siblings = [c for other in questions if other is not q for c in other["cues"]]
+        rows = run_question(podcast, q, episodes, store, llm, guest_graph, hosts, siblings)
         graph = build_graph(podcast, q, rows, hosts)
         out_dir = args.out_dir if (args.out_dir and len(questions) == 1) else \
             (args.out_dir or QA_DIR) / f"{podcast['id']}-{q['id']}"

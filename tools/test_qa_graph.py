@@ -108,14 +108,60 @@ cc = json.loads((ROOT / "podcasts" / "catalog-and-cocktails.json").read_text())[
 cc = {q["id"]: qa.deep_merge(qa.DEFAULT_QUESTION, q) for q in cc}
 for qid, want, not_want in (("advice", "get close to your business sponsors", "output trap"),
                             ("invite-next", "output trap", "business sponsors")):
-    loc = qa.locate(stacked, cc[qid], {"juan sequeda", "tim gasper"})
-    text = qa.answer_span(stacked, loc, cc[qid], {"juan sequeda", "tim gasper"})[0] if loc else ""
+    sib = [c for other in cc.values() if other is not cc[qid] for c in other["cues"]]
+    loc = qa.locate(stacked, cc[qid], set()) or qa.locate_block(stacked, cc[qid])
+    text = qa.answer_span(stacked, loc, cc[qid], set(), sib)[0] if loc else ""
     check(f"stacked: the {qid} answer is its own part of the reply",
           want in text and not_want not in text and "Substack" not in text, repr(text))
 bare = qa.deep_merge(cc["invite-next"], {"answer_cues": ["zzz never said"]})
-loc = qa.locate(stacked, bare, set())
-check("with answer cues set and none said, the episode is unanswered, not given its neighbour's answer",
-      qa.answer_span(stacked, loc, bare, set())[0] == "")
+loc = qa.locate(stacked, bare, set()) or qa.locate_block(stacked, bare)
+check("a question speech-to-text mangled ('Who's doing right next?') is still located",
+      loc and stacked[loc.sentence].text == "Who's doing right next?")
+others = cc["advice"]["cues"] + cc["resources"]["cues"]
+check("stacked, with answer cues set and none said: unanswered, not given its neighbour's answer",
+      qa.answer_span(stacked, loc, bare, set(), others)[0] == "")
+block_only = qa.sentences([{"text": t, "speaker": ""} for t in [
+    "Three final questions.", "What's your advice?", "Who's on mumble mumble?", "What resources do you follow?",
+    "My advice is ship small.", "And I would invite Ada Park.", "Resources, I read Locally Optimistic."]])
+loc = qa.locate(block_only, cc["invite-next"], set()) or qa.locate_block(block_only, cc["invite-next"])
+check("with the question unheard, its sibling questions mark the block", loc and loc.method == "block")
+check("...and the answer cue finds this answer inside it",
+      qa.answer_span(block_only, loc, cc["invite-next"], set(), others)[0] == "And I would invite Ada Park.")
+
+print("real speech-to-text excerpts from the sample run")
+REAL = {
+    # Stacked, the guest answers only the first, the host re-asks alone.
+    "perry": ["So back to you.", "Two questions.", "What's your advice?", "We went through a lot.",
+              "But what's your final advice about data, about life, whatever, and second?",
+              "Who should invite next?", "Yeah, I guess this is relevant to data and life.",
+              "But change always takes much longer than you think.", "Love that.", "Another great quote.",
+              "So, who should we invite next?", "So, I don't have anyone specific, but more practitioners.",
+              "I'm Juan at data.world, very simple."],
+    # Asked alone, answered without any answer cue.
+    "bailis": ["Peter thank you so much but one last question to you who should we invite next to be part of cataloging cocktails.",
+               "So, I'll be honest you have a pretty amazing lineup of people.",
+               "One person I don't think is in the lineup yet is a fellow academic."],
+    # Stacked; the guest repeats the invite question, mangled.
+    "tabb": ["Quickly.", "What's your advice about data, about life?", "Second.", "Who should invite next?", "Third.",
+             "What are the resources you buy?", "So, my advice.", "Don't do a job you don't like.",
+             "Who's on right next?", "I'd have to have my data value Wingman.", "Matt Hounsley.",
+             "And finally, what resources do you follow?", "People."],
+    # Stacked in one sentence; the guest repeats the question and answers.
+    "erik": ["What's your advice and who should we invite next?", "Wow.",
+             "What's my advice is keep a curious mind.", "That's great advice.",
+             "Who do you invite next?", "So I was going to say Sarah Catanzaro.", "Thank you so much."],
+}
+want = {("perry", "advice"): "change always takes", ("perry", "invite-next"): "more practitioners",
+        ("bailis", "invite-next"): "One person", ("tabb", "advice"): "Don't do a job",
+        ("tabb", "invite-next"): "Matt Hounsley", ("tabb", "resources"): "People.",
+        ("erik", "advice"): "curious mind", ("erik", "invite-next"): "Sarah Catanzaro"}
+for (ep, qid), expect in want.items():
+    sents = qa.sentences([{"text": t, "speaker": ""} for t in REAL[ep]])
+    sib = [c for other in cc.values() if other is not cc[qid] for c in other["cues"]]
+    loc = qa.locate(sents, cc[qid], set()) or qa.locate_block(sents, cc[qid])
+    got = qa.answer_span(sents, loc, cc[qid], set(), sib)[0] if loc else ""
+    others = [v for (e, q2), v in want.items() if e == ep and q2 != qid]
+    check(f"{ep}: the {qid} answer", expect in got and not any(o in got for o in others), repr(got))
 
 print("the full pipeline on the fixture feed")
 tmp, out = run_fixture()
@@ -192,6 +238,29 @@ if anthropic:
     check("the request asks for schema-constrained JSON", req.get("output_config", {}).get("format", {}).get("type") == "json_schema")
     check("the request opts into default refusal fallbacks", req.get("fallbacks") == "default")
     check("themes already used are offered back to the model", "semantics" in req["messages"][0]["content"])
+
+print("companions and names")
+rows = [
+    {"title": "Takeaways with Steve Perry", "date": "2022-04-21", "guests": ["Steve Perry"], "found": True, "reason": ""},
+    {"title": "Is anyone a data expert? w/ Steve Perry", "date": "2022-04-20", "guests": ["Steve Perry"], "found": False, "reason": "question not found"},
+    {"title": "Steve Perry returns", "date": "2024-01-10", "guests": ["Steve Perry"], "found": True, "reason": ""},
+]
+qa.merge_companions(rows)
+check("an episode and its companion clip are one appearance; the clip's answer is kept",
+      rows[0]["found"] and rows[1]["reason"].startswith("same appearance"))
+check("the same guest two years later is a separate appearance", rows[2]["found"])
+both = [{"title": "TAKEAWAYS - X with Ann Lee", "date": "2025-01-02", "guests": ["Ann Lee"], "found": True, "reason": ""},
+        {"title": "X with Ann Lee", "date": "2025-01-01", "guests": ["Ann Lee"], "found": True, "reason": ""}]
+qa.merge_companions(both)
+check("when both answer, the full episode wins", both[1]["found"] and not both[0]["found"])
+known = {qa.norm("Sarah Catanzaro"): "Sarah Catanzaro"}
+check("a near-miss transcription snaps to a known guest", qa.snap("Sarah Catanzero", known) == "Sarah Catanzaro")
+check("an unrelated name does not snap", qa.snap("Sarah Connor", known) == "")
+people, things = qa.mentions("I'd have to say Sarah Catanzero's work. Take a look at dbt and Snowflake, the Irish team at LinkedIn.",
+                             set(), known, "people")
+check("possessives are stripped and names snapped", people == ["Sarah Catanzaro"], str(people))
+check("lone capitalised words are dropped unless distinctive", "LinkedIn" in things and "Irish" not in things
+      and "Take" not in things and "Snowflake" not in things, str(things))
 
 print("cache")
 cached = list((tmp / "cache" / "test-show" / "transcripts").glob("*.json"))

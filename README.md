@@ -380,7 +380,7 @@ publishes one. Catalog & Cocktails does not (Omny reports
 `HasPublishedTranscript: false`, and the show site carries descriptions only),
 so its config falls back to local speech-to-text with faster-whisper, run on
 the last 20 minutes of each episode, where the closing questions live.
-`.github/workflows/qa-graph.yml` does this on 12 parallel runners and keeps
+`.github/workflows/qa-graph.yml` does this on 16 parallel runners and keeps
 the transcripts in the Actions cache, so a weekly run transcribes only new
 episodes. Transcripts can also come from a folder or a per-episode web page.
 
