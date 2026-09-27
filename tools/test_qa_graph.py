@@ -163,6 +163,14 @@ for (ep, qid), expect in want.items():
     others = [v for (e, q2), v in want.items() if e == ep and q2 != qid]
     check(f"{ep}: the {qid} answer", expect in got and not any(o in got for o in others), repr(got))
 
+hints = qa.near_misses(qa.sentences([{"text": t, "speaker": ""} for t in [
+    "Great chat.", "So who do you reckon we get on the show next?", "Thanks everyone."]]), cc["invite-next"])
+check("an unanswered episode records the sentences closest to the question",
+      hints and hints[0]["text"].startswith("So who do you reckon"))
+check("answer cues count only near the start of a sentence",
+      qa.opens_with("As far as people, invite Ada.", ["as far as people"])
+      and not qa.opens_with("I think it matters a great deal, you should have a plan.", ["you should have"]))
+
 print("the full pipeline on the fixture feed")
 tmp, out = run_fixture()
 invite, invite_rows = out["invite-next"]
@@ -247,7 +255,7 @@ rows = [
 ]
 qa.merge_companions(rows)
 check("an episode and its companion clip are one appearance; the clip's answer is kept",
-      rows[0]["found"] and rows[1]["reason"].startswith("same appearance"))
+      rows[0]["found"] and rows[1]["merged_into"] == rows[0]["title"])
 check("the same guest two years later is a separate appearance", rows[2]["found"])
 both = [{"title": "TAKEAWAYS - X with Ann Lee", "date": "2025-01-02", "guests": ["Ann Lee"], "found": True, "reason": ""},
         {"title": "X with Ann Lee", "date": "2025-01-01", "guests": ["Ann Lee"], "found": True, "reason": ""}]

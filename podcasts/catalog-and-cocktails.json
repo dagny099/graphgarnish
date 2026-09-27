@@ -66,7 +66,9 @@
         "thanks so much",
         "thanks for having me",
         "cheers",
-        "takeaway"
+        "takeaway",
+        "who should have on",
+        "who should we have"
       ],
       "answer_kind": "open",
       "max_answer_words": 200
@@ -81,7 +83,9 @@
         "who should invite",
         "who should we have on",
         "who should we bring on",
-        "who's on right next"
+        "who's on right next",
+        "who should have on",
+        "who should we have"
       ],
       "block_cues": [
         "what's your advice",

@@ -47,8 +47,8 @@ carry speaker labels, which the answer cutter relies on.
 | key | meaning |
 | --- | --- |
 | `id`, `question` | the question as you would write it |
-| `cues` | phrases the host says when asking. Matched after lowercasing and dropping punctuation. A reworded question with enough of the same words is also found (`fuzzy_threshold`, default 0.6) |
-| `answer_cues` | phrases the guest says when starting *this* answer. Use them when the host asks several questions in one breath and the guest answers in order. When set and none is heard, the episode is reported unanswered rather than given the neighbouring answer |
+| `cues` | phrases the host says when asking. Matched after lowercasing and dropping punctuation. A reworded question sharing enough of its words is also found (`fuzzy_threshold`, default 0.75), but only on episodes with a known guest: on the full Catalog & Cocktails run, matches below 0.75 or on guestless episodes were mostly the hosts talking among themselves |
+| `answer_cues` | phrases the guest says when starting *this* answer, counted only in a sentence's first six words ("As far as people, ..."). Use them when the host asks several questions in one breath and the guest answers in order. When set and none is heard, the episode is reported unanswered rather than given the neighbouring answer |
 | `stop_cues` | phrases that end the answer: the next answer's opening, the next question, the sign-off |
 | `answer_kind` | `people` when the answer names people ("who should we invite next?"). Names become person nodes with `RECOMMENDS` links from the guest; a named person who was also a guest is one node with both roles |
 | `occurrence` | `last` (default) or `first`, when the cue appears more than once |
@@ -61,7 +61,7 @@ carry speaker labels, which the answer cutter relies on.
 
 | reason | what to change |
 | --- | --- |
-| `question not found` | add the host's actual wording to `cues`. Speech-to-text mishears: Whisper wrote "Who's doing right next?" for "Who should we invite next?", so list the neighbouring questions too |
+| `question not found` | read the row's `hints`: the three transcript sentences closest to the question, with times. Add the host's actual wording to `cues`. Speech-to-text mishears: Whisper wrote "Who's doing right next?" for "Who should we invite next?", so list the neighbouring questions too |
 | `answer cue not found after the question` | add the guest's wording to `answer_cues` |
 | `stop cue` / `host took over` / `word limit` | the answer was cut here; check that it ended in the right place |
 | `no transcript` | no source produced one |

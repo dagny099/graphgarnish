@@ -143,7 +143,7 @@ DEFAULT_QUESTION = {
     # A host turn at least this long ends the guest's answer.
     "host_break_words": 30,
     # Word-overlap threshold for the fuzzy fallback when no cue matches.
-    "fuzzy_threshold": 0.6,
+    "fuzzy_threshold": 0.75,
     "graph": {
         "concepts_per_answer": 5,
         "concept_min_answers": 2,
@@ -721,6 +721,21 @@ def locate(sents: list[Sentence], q: dict, hosts: set[str]) -> Location | None:
     return pool[-1] if q["occurrence"] == "last" else pool[0]
 
 
+def near_misses(sents: list[Sentence], q: dict, n: int = 3) -> list[dict]:
+    """The sentences that came closest to the question, for tuning cues
+    without opening the transcript: speech-to-text often writes the question
+    in a form no cue anticipated."""
+    phrasings = [w for w in (question_words(t) for t in [q["question"], *q["cues"]]) if w]
+    scored = []
+    for s in sents:
+        words = question_words(s.text)
+        score = max((len(p & words) / len(p) for p in phrasings), default=0.0)
+        if score > 0:
+            scored.append((score, s.text.rstrip().endswith("?"), s))
+    scored.sort(key=lambda x: (x[0], x[1]), reverse=True)
+    return [{"score": round(sc, 2), "start": s.start, "text": s.text[:200]} for sc, _, s in scored[:n]]
+
+
 def locate_block(sents: list[Sentence], q: dict) -> Location | None:
     """The last sentence that sounds like the wrap-up (a sibling question,
     "final questions"), for when the question itself was not heard."""
@@ -746,6 +761,18 @@ CONNECTIVE = re.compile(r"^(?:and |so |ok(?:ay)? |all right,? )?(?:first|second|
 def matches(text: str, phrases: list[str]) -> bool:
     n = norm(text)
     return any(p in n for p in phrases)
+
+
+def opens_with(text: str, phrases: list[str], within: int = 6) -> bool:
+    """A phrase within the first few words: how a guest turns to the next
+    answer ("As far as people, ...", "So my advice is ..."). The same words
+    mid-sentence are usually not a transition."""
+    n = norm(text)
+    for p in phrases:
+        at = n.find(p)
+        if at >= 0 and len(n[:at].split()) <= within:
+            return True
+    return False
 
 
 def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str],
@@ -811,7 +838,7 @@ def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str],
         if matches(t, own):
             begin = j + 1
             break
-        if not host_line and matches(t, answer_cues) and not matches(t, siblings):
+        if not host_line and opens_with(t, answer_cues) and not opens_with(t, siblings):
             begin = j
             break
         seen += len(t.split())
@@ -857,7 +884,7 @@ def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str],
 
 ENTITY_RE = re.compile(
     r"\b[A-Z][\w&.'\u2019-]*[A-Za-z0-9]"
-    r"(?:\s+(?:(?:of|the|and|&|for|de|van|von|da|del)\s+)?[A-Z][\w&.'\u2019-]*[A-Za-z0-9]){0,5}")
+    r"(?:\s+(?:(?:of|the|&|for|de|van|von|da|del)\s+)?[A-Z][\w&.'\u2019-]*[A-Za-z0-9]){0,5}")
 CAP_STOP = set("""I I'm I've I'd I'll The A An And But So Or If When What Who Why How Where This That
 These Those There Then Yeah Yes No Oh Okay Ok Well Like Also Because Just Really Actually My Our
 Your We You He She They It It's Its Um Uh Hey Thanks Thank Absolutely Definitely Honestly Great
@@ -865,7 +892,8 @@ Good Right Sure Maybe Probably Mr Mrs Ms Dr Monday Tuesday Wednesday Thursday Fr
 January February March April May June July August September October November December Invite Talk
 Ask Get Check Try Have Bring Read Follow Call Reach Look Listen Watch Go Hmm Wow Love Awesome Cool
 Fantastic Anyone Everyone Somebody Someone Folks Start Stop Keep Don't Do Make Be Find Learn Think
-Know Remember Always Never Please Let Let's Obviously Interesting Nice""".split())
+Know Remember Always Never Please Let Let's Obviously Interesting Nice Since Does Did Is Are Was
+Were Can Could Would Should Will Here There's Here's Dr PhD""".split())
 # A run containing one of these is an organisation or a thing, not a person.
 ORG_WORDS = set("""Inc Inc. LLC Ltd Corp Corporation Company Co Labs Lab Group Guild Institute
 University College School Foundation Association Society Council Agency Bank Capital Partners
@@ -1315,15 +1343,22 @@ def run_question(podcast: dict, q: dict, episodes: list[Episode], store: Transcr
             continue
         sents = sentences(segs)
         loc = locate(sents, q, hosts) or locate_block(sents, q)
+        if loc and loc.method != "cue" and not guests:
+            # Without a known guest, a reworded match is usually the hosts
+            # talking among themselves (host-only and panel episodes).
+            loc = None
+            row["reason"] = "reworded match on an episode with no known guest"
         if loc:
             text, start, why = answer_span(sents, loc, q, hosts, siblings)
             row.update(answer=text, start=start, method=loc.method,
                        confidence=loc.score, reason=why, found=bool(text.strip()))
             if not text.strip() and why == "end of transcript":
                 row["reason"] = "question found, no answer after it"
-        else:
+        elif not row["reason"]:
             row["reason"] = "question not found"
 
+        if not row["found"]:
+            row["hints"] = near_misses(sents, q)
         exclude = {g.lower() for g in guests} | guest_exclude
         if llm:
             got = llm.extract(q, ep, guests, excerpt_for_llm(sents, loc), sorted(themes, key=lambda t: -themes[t]))
@@ -1394,7 +1429,8 @@ def merge_companions(rows: list[dict]) -> None:
             keep = sorted(cluster, key=lambda r: (not r["found"], bool(COMPANION_RE.search(r["title"]))))[0]
             for r in cluster:
                 if r is not keep:
-                    r.update(found=False, reason=f"same appearance as {keep['title']!r}")
+                    r.update(found=False, reason="merged with its companion episode",
+                             merged_into=keep["title"])
 
 
 def write_outputs(out_dir: Path, graph: dict, rows: list[dict]) -> None:
