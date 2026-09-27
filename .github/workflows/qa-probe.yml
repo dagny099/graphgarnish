@@ -9,24 +9,19 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Look for transcripts in the feed
+      - name: Look for transcripts on Omny and the show site
         run: |
-          FEED='https://www.omnycontent.com/d/playlist/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/46398967-49a1-45c7-9af5-b387002de875/podcast.rss'
-          curl -sSL -A 'GraphGarnish/1.0' "$FEED" -o feed.xml
-          wc -c feed.xml
-          echo '--- namespaces'; grep -oE 'xmlns:[a-z]+="[^"]+"' feed.xml | sort -u
-          echo '--- podcast:* tags'; grep -oE '<podcast:[a-zA-Z]+' feed.xml | sort | uniq -c
-          echo '--- transcript tags'; grep -oE '<podcast:transcript[^>]*>' feed.xml | head -8
-          echo '--- first item'; python3 - <<'PY'
-          import re
-          t=open('feed.xml',encoding='utf-8').read()
-          m=re.search(r'<item[\s>].*?</item>',t,re.S)
-          print(m.group(0)[:4000] if m else 'no item')
-          PY
-          for fmt in $(grep -oE '<podcast:transcript[^>]*>' feed.xml | grep -oE 'type="[^"]+"' | sort -u); do echo "type: $fmt"; done
-          URL=$(grep -oE '<podcast:transcript[^>]*>' feed.xml | head -1 | grep -oE 'url="[^"]+"' | cut -d'"' -f2 | sed 's/&amp;/\&/g')
-          echo "--- fetching $URL"
-          if [ -n "$URL" ]; then
-            curl -sSL "$URL" -o t1.txt; wc -c t1.txt; echo '--- head'; head -c 3000 t1.txt; echo; echo '--- tail'; tail -c 6000 t1.txt
-          fi
-          echo '--- item links'; grep -oE '<link>[^<]+</link>' feed.xml | head -3
+          EP='https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/ai-inherits-the-business-choices-you-never-made-with-david-krauza'
+          CLIP=99e1d43a-cf27-4d90-9ae3-b4d000c2150a
+          ORG=922e0f19-2d84-4485-835c-a83f00036b00
+          try() { code=$(curl -sSL -A 'Mozilla/5.0 GraphGarnish' -o out.bin -w '%{http_code} %{content_type}' "$1"); echo "== $code  $(wc -c < out.bin)B  $1"; head -c ${2:-600} out.bin | tr '\n' ' '; echo; }
+          try "$EP/transcript" 1500
+          try "$EP/transcript?format=TextWithTimestamps" 1500
+          try "$EP/transcript?format=WebVTT" 800
+          try "$EP/transcript?format=SubRip" 800
+          try "https://api.omny.fm/orgs/$ORG/clips/$CLIP" 3000
+          try "https://omny.fm/api/orgs/$ORG/clips/$CLIP" 1500
+          curl -sSL -A 'Mozilla/5.0' "$EP" -o ep.html; echo "episode page $(wc -c < ep.html)B"; grep -oiE '.{80}transcript.{120}' ep.html | head -10
+          curl -sSL -A 'Mozilla/5.0' https://honestnobsdata.com/ -o site.html; echo "site $(wc -c < site.html)B"; grep -oiE '.{60}transcript.{100}' site.html | head -5; grep -oE 'href="[^"]+"' site.html | sort -u | head -40
+          echo '--- full transcript tail if any'
+          curl -sSL -A 'Mozilla/5.0' "$EP/transcript?format=TextWithTimestamps" -o t.txt; wc -c t.txt; tail -c 5000 t.txt
