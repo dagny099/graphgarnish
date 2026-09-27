@@ -768,9 +768,7 @@
   "people": [
    "Roman Stanek"
   ],
-  "entities": [
-   "CEO of Good Data"
-  ],
+  "entities": [],
   "themes": []
  },
  {
@@ -5385,8 +5383,7 @@
   "start": 3380.7,
   "people": [
    "Tyler Cowan",
-   "George Mason",
-   "Harvard PhD"
+   "George Mason"
   ],
   "entities": [
    "Eric Weinstein"
@@ -6957,8 +6954,7 @@
   "start": 2969.3,
   "people": [
    "Ethan Aaron",
-   "Chad Sanderson",
-   "Now I've"
+   "Chad Sanderson"
   ],
   "entities": [
    "LinkedIn"

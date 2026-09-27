@@ -1,0 +1,1590 @@
+{
+ "meta": {
+  "podcast": "Data Engineering Podcast",
+  "podcast_id": "data-engineering-podcast",
+  "question_id": "biggest-gap",
+  "question": "What do you see as the biggest gap in the tooling or technology for data management today?",
+  "answer_kind": "open",
+  "episodes": 120,
+  "with_transcript": 120,
+  "answered": 0,
+  "methods": {},
+  "people_named_and_later_guests": [],
+  "node_types": {
+   "person": 17,
+   "episode": 120,
+   "question": 1
+  },
+  "link_types": {
+   "GUEST_ON": 17
+  }
+ },
+ "nodes": [
+  {
+   "id": "question",
+   "type": "question",
+   "name": "What do you see as the biggest gap in the tooling or technology for data management today?",
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-12-12_update-your-model-s-view-of-the-world-in_dc1b93",
+   "type": "episode",
+   "name": "Update Your Model's View Of The World In Real Time With Streaming Machine Learning Using River",
+   "date": "2022-12-12",
+   "url": "https://www.pythonpodcast.com/river-streaming-machine-learning-episode-388",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-12-05_declarative-machine-learning-for-high-pe_153a63",
+   "type": "episode",
+   "name": "Declarative Machine Learning For High Performance Deep Learning Models With Predibase",
+   "date": "2022-12-05",
+   "url": "https://www.pythonpodcast.com/predibase-declarative-machine-learning-episode-387",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-11-28_build-better-machine-learning-models-wit_cfe1ba",
+   "type": "episode",
+   "name": "Build Better Machine Learning Models With Confidence By Adding Validation With Deepchecks",
+   "date": "2022-11-28",
+   "url": "https://www.pythonpodcast.com/deepchecks-machine-learning-validation-episode-386",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-11-21_build-a-full-stack-ml-powered-app-in-an_d7b615",
+   "type": "episode",
+   "name": "Build A Full Stack ML Powered App In An Afternoon With Baseten",
+   "date": "2022-11-21",
+   "url": "https://www.pythonpodcast.com/baseten-full-stack-ml-app-episode-385",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-11-07_skip-straight-to-the-fun-part-of-your-pr_7d51e9",
+   "type": "episode",
+   "name": "Skip Straight To The Fun Part Of Your Project With PyScaffold",
+   "date": "2022-11-07",
+   "url": "https://www.pythonpodcast.com/pyscaffold-project-template-boilerplate-episode-384",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-10-30_add-configuration-best-practices-to-your_aadb99",
+   "type": "episode",
+   "name": "Add Configuration Best Practices To Your Application In An Afternoon With Dynaconf",
+   "date": "2022-10-30",
+   "url": "https://www.pythonpodcast.com/dynaconf-application-configuration-management-episode-383",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-10-23_take-a-tour-of-the-hidden-language-of-ha_8bb669",
+   "type": "episode",
+   "name": "Take A Tour Of The Hidden Language Of Hardware And How It Powers Your Code",
+   "date": "2022-10-23",
+   "url": "https://www.pythonpodcast.com/code-hidden-language-second-edition-episode-382",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-10-16_take-control-of-your-electrical-systems_a3da72",
+   "type": "episode",
+   "name": "Take Control Of Your Electrical Systems With The Open Source FlexMeasures Energy Management System",
+   "date": "2022-10-16",
+   "url": "https://www.pythonpodcast.com/flexmeasures-energy-management-system-episode-381",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-10-10_how-and-why-to-build-effective-teams-as_81254c",
+   "type": "episode",
+   "name": "How And Why To Build Effective Teams As An Engineering Leader",
+   "date": "2022-10-10",
+   "url": "https://www.pythonpodcast.com/effective-engineering-teams-jigar-desai-episode-380",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-10-03_complete-your-hardware-weekend-projects_19d28c",
+   "type": "episode",
+   "name": "Complete Your Hardware \"Weekend Projects\" In An Actual Weekend With Belay",
+   "date": "2022-10-03",
+   "url": "https://www.pythonpodcast.com/belay-micropython-hardware-helper-episode-379",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-09-19_catching-up-with-pyre-a-fast-type-checke_74fb43",
+   "type": "episode",
+   "name": "Catching Up With Pyre, A Fast Type Checker For Python",
+   "date": "2022-09-19",
+   "url": "https://www.pythonpodcast.com/pyre-type-checker-episode-378",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-09-13_standardizing-on-python-for-all-software_9c7b71",
+   "type": "episode",
+   "name": "Standardizing On Python For All Software Projects At Ascend.io",
+   "date": "2022-09-13",
+   "url": "https://www.pythonpodcast.com/ascend-python-standardization-episode-377",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-09-05_exploring-the-process-and-practice-of-bu_2049cc",
+   "type": "episode",
+   "name": "Exploring The Process And Practice Of Building Better Software Through Code Reviews",
+   "date": "2022-09-05",
+   "url": "https://www.pythonpodcast.com/code-review-for-better-software-episode-376",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-08-28_ship-with-confidence-by-automating-quali_659134",
+   "type": "episode",
+   "name": "Ship With Confidence By Automating Quality Assurance",
+   "date": "2022-08-28",
+   "url": "https://www.pythonpodcast.com/keysight-quality-assurance-automation-episode-375",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-08-14_remove-roadblocks-and-let-your-developer_751d96",
+   "type": "episode",
+   "name": "Remove Roadblocks And Let Your Developers Ship Faster With Self-Serve Infrastructure",
+   "date": "2022-08-14",
+   "url": "https://www.pythonpodcast.com/quali-self-serve-infrastructure-episode-374",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_self_serve_infrastructure",
+   "type": "person",
+   "name": "Self-Serve Infrastructure",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2022-07-31_the-benefits-of-python-and-django-for-go_146197",
+   "type": "episode",
+   "name": "The Benefits Of Python And Django For Going From Zero To MVP At Speed",
+   "date": "2022-07-31",
+   "url": "https://www.pythonpodcast.com/planeks-python-mvp-development-episode-373",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-07-25_powering-the-next-generation-of-applicat_73e1ab",
+   "type": "episode",
+   "name": "Powering The Next Generation Of Application Architectures With Web Assembly And The Fermyon Platform",
+   "date": "2022-07-25",
+   "url": "https://www.pythonpodcast.com/fermyon-web-assembly-application-architecture-episode-372",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_web_assembly",
+   "type": "person",
+   "name": "Web Assembly",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2022-07-17_gain-a-deeper-understanding-of-what-your_99dfaf",
+   "type": "episode",
+   "name": "Gain A Deeper Understanding Of What Your Code Is Doing And Where It Spends Its Time With VizTracer",
+   "date": "2022-07-17",
+   "url": "https://www.pythonpodcast.com/viztracer-visual-python-profiling-episode-371",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-07-10_stream-processing-in-real-time-and-at-sc_8a791f",
+   "type": "episode",
+   "name": "Stream Processing In Real Time And At Scale In Pure Python With Bytewax",
+   "date": "2022-07-10",
+   "url": "https://www.pythonpodcast.com/bytewax-python-stream-processing-episode-370",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-07-03_tetra-a-full-stack-web-framework-that-do_435334",
+   "type": "episode",
+   "name": "Tetra: A Full Stack Web Framework That Doesn't Make You Write Everything Twice",
+   "date": "2022-07-03",
+   "url": "https://www.pythonpodcast.com/tetra-full-stack-component-web-framework-episode-369",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-06-27_design-real-world-objects-in-python-with_1c350c",
+   "type": "episode",
+   "name": "Design Real-World Objects In Python With CadQuery",
+   "date": "2022-06-27",
+   "url": "https://www.pythonpodcast.com/cadquery-python-programmatic-cad-episode-368",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-06-15_intelligent-dependency-resolution-for-op_154b78",
+   "type": "episode",
+   "name": "Intelligent Dependency Resolution For Optimal Compatibility And Security With Project Thoth",
+   "date": "2022-06-15",
+   "url": "https://www.pythonpodcast.com/thoth-dependency-resolution-episode-367",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_project_thoth",
+   "type": "person",
+   "name": "Project Thoth",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2022-05-30_take-a-deep-dive-on-how-code-completion_b50bb5",
+   "type": "episode",
+   "name": "Take A Deep Dive On How Code Completion Works And How To Customize It",
+   "date": "2022-05-30",
+   "url": "https://www.pythonpodcast.com/code-completion-deep-dive-episode-366",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-05-24_hunting-black-swans-with-bees-catching-u_fe1c95",
+   "type": "episode",
+   "name": "Hunting Black Swans With Bees: Catching Up With The Inimitable Russell Keith-Magee",
+   "date": "2022-05-24",
+   "url": "https://www.pythonpodcast.com/beeware-revisited-episode-365",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-05-16_take-control-of-your-digital-photos-by-r_d974b0",
+   "type": "episode",
+   "name": "Take Control Of Your Digital Photos By Running Your Own Smart Library Manager With LibrePhotos",
+   "date": "2022-05-16",
+   "url": "https://www.pythonpodcast.com/librephotos-digital-photo-management-episode-364",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-05-10_making-investment-data-easy-to-access-an_6da91e",
+   "type": "episode",
+   "name": "Making Investment Data Easy To Access And Analyze With The OpenBB Terminal",
+   "date": "2022-05-10",
+   "url": "https://www.pythonpodcast.com/openbb-terminal-investment-data-framework-episode-363",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-05-02_accelerate-your-machine-learning-experim_f83d88",
+   "type": "episode",
+   "name": "Accelerate Your Machine Learning Experimentation With Automatic Checkpoints Using FLOR",
+   "date": "2022-05-02",
+   "url": "https://www.pythonpodcast.com/flor-machine-learning-experiment-episode-362",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_automatic_checkpoints_using_flor",
+   "type": "person",
+   "name": "Automatic Checkpoints Using FLOR",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2022-04-25_automatically-enforce-software-structure_ef9d32",
+   "type": "episode",
+   "name": "Automatically Enforce Software Structures With Powerful Code Modifications Powered By LibCST",
+   "date": "2022-04-25",
+   "url": "https://www.pythonpodcast.com/libcst-automated-code-modification-episode-361",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-04-19_cloud-native-networking-for-developers-w_b6d57c",
+   "type": "episode",
+   "name": "Cloud Native Networking For Developers With The Gloo Platform",
+   "date": "2022-04-19",
+   "url": "https://www.pythonpodcast.com/solo-gloo-cloud-native-networking-episode-360",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-04-11_accelerate-and-simplify-cloud-native-dev_5850e5",
+   "type": "episode",
+   "name": "Accelerate And Simplify Cloud Native Development For Kubernetes Environments With Gefyra",
+   "date": "2022-04-11",
+   "url": "https://www.pythonpodcast.com/gefyra-cloud-native-development-episode-359",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-03-28_building-a-community-and-technology-stac_8ff66e",
+   "type": "episode",
+   "name": "Building A Community And Technology Stack For Scalable Big Data Geoscience At Pangeo",
+   "date": "2022-03-28",
+   "url": "https://www.pythonpodcast.com/pangeo-big-data-geoscience-episode-358",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-03-20_automating-application-lifecycles-for-de_4d515f",
+   "type": "episode",
+   "name": "Automating Application Lifecycles For Developer Happiness At Wayfair",
+   "date": "2022-03-20",
+   "url": "https://www.pythonpodcast.com/wayfair-application-lifecycle-automation-episode-357",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-03-14_run-your-applications-reliably-on-kubern_3e6baf",
+   "type": "episode",
+   "name": "Run Your Applications Reliably On Kubernetes Without Losing Sleep With Robusta",
+   "date": "2022-03-14",
+   "url": "https://www.pythonpodcast.com/robusta-kubernetes-application-maintenance-episode-356",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-03-06_accelerate-the-development-and-delivery_1dc04c",
+   "type": "episode",
+   "name": "Accelerate The Development And Delivery Of Your Machine Learning Applications Using Ray And Deploy It At Anyscale",
+   "date": "2022-03-06",
+   "url": "https://www.pythonpodcast.com/anyscale-machine-learning-applications-episode-355",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-02-28_see-the-structure-of-your-software-at-a_303651",
+   "type": "episode",
+   "name": "See The Structure Of Your Software At A Glance With Call Graphs From Code2Flow",
+   "date": "2022-02-28",
+   "url": "https://www.pythonpodcast.com/code2flow-call-graph-episode-354",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_call_graphs_from_code2flow",
+   "type": "person",
+   "name": "Call Graphs From Code2Flow",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2022-02-21_scaling-knowledge-management-for-technic_87b784",
+   "type": "episode",
+   "name": "Scaling Knowledge Management For Technical Teams With Knowledge Repo",
+   "date": "2022-02-21",
+   "url": "https://www.pythonpodcast.com/knowledge-repo-open-source-knowledge-management-episode-353",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_knowledge_repo",
+   "type": "person",
+   "name": "Knowledge Repo",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2022-02-14_simplify-and-scale-your-software-develop_b93de8",
+   "type": "episode",
+   "name": "Simplify And Scale Your Software Development Cycles By Putting On Pants (Build Tool)",
+   "date": "2022-02-14",
+   "url": "https://www.pythonpodcast.com/pants-software-development-lifecycle-tool-episode-352",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-02-06_achieve-repeatable-builds-of-your-softwa_21e208",
+   "type": "episode",
+   "name": "Achieve Repeatable Builds Of Your Software On Any Machine With Earthly",
+   "date": "2022-02-06",
+   "url": "https://www.pythonpodcast.com/earthly-repeatable-build-tool-episode-351",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-01-31_building-a-detailed-view-of-your-softwar_66d930",
+   "type": "episode",
+   "name": "Building A Detailed View Of Your Software Delivery Process With The Eiffel Protocol",
+   "date": "2022-01-31",
+   "url": "https://www.pythonpodcast.com/eiffel-protocol-software-delivery-process-visibility-episode-350",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-01-24_improve-your-productivity-by-investing-i_c201af",
+   "type": "episode",
+   "name": "Improve Your Productivity By Investing In Developer Experience Design For Your Projects",
+   "date": "2022-01-24",
+   "url": "https://www.pythonpodcast.com/developer-experience-episode-349",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2022-01-15_an-exploration-of-effective-pandas-pract_63b4cb",
+   "type": "episode",
+   "name": "An Exploration Of Effective Pandas Practices With Matt Harrison",
+   "date": "2022-01-15",
+   "url": "https://www.pythonpodcast.com/effective-pandas-book-episode-348",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_matt_harrison",
+   "type": "person",
+   "name": "Matt Harrison",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2022-01-13_generate-your-text-files-with-python-usi_4cf6a2",
+   "type": "episode",
+   "name": "Generate Your Text Files With Python Using Cog",
+   "date": "2022-01-13",
+   "url": "https://www.pythonpodcast.com/cog-python-text-generation-episode-347",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_python_using_cog",
+   "type": "person",
+   "name": "Python Using Cog",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2022-01-02_a-friendly-approach-to-regression-models_072609",
+   "type": "episode",
+   "name": "A Friendly Approach To Regression Models For Programmers",
+   "date": "2022-01-02",
+   "url": "https://www.pythonpodcast.com/regression-models-friendly-guide-episode-346",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-12-27_fast-flexible-and-incremental-task-autom_da32de",
+   "type": "episode",
+   "name": "Fast, Flexible, and Incremental Task Automation With doit",
+   "date": "2021-12-27",
+   "url": "https://www.pythonpodcast.com/doit-software-task-automation-episode-345",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-12-20_the-technological-business-and-sales-cha_4150fa",
+   "type": "episode",
+   "name": "The Technological, Business, and Sales Challenges Of Building The Ethical Ads Network",
+   "date": "2021-12-20",
+   "url": "https://www.pythonpodcast.com/ethical-ads-network-episode-344",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-12-12_accidentally-building-a-business-with-py_c3d726",
+   "type": "episode",
+   "name": "Accidentally Building A Business With Python At Listen Notes",
+   "date": "2021-12-12",
+   "url": "https://www.pythonpodcast.com/listen-notes-python-business-podcast-api-episode-343",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_python_at_listen_notes",
+   "type": "person",
+   "name": "Python At Listen Notes",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2021-11-27_making-orbital-mechanics-more-accessible_619d5c",
+   "type": "episode",
+   "name": "Making Orbital Mechanics More Accessible With Poliastro",
+   "date": "2021-11-27",
+   "url": "https://www.pythonpodcast.com/poliastro-python-orbital-mechanics-episode-342",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-11-22_declarative-deep-learning-from-your-lapt_2bcf14",
+   "type": "episode",
+   "name": "Declarative Deep Learning From Your Laptop To Production With Ludwig and Horovod",
+   "date": "2021-11-22",
+   "url": "https://www.pythonpodcast.com/ludwig-horovod-distributed-declarative-deep-learning-episode-341",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-11-22_build-better-analytics-and-models-with-a_0b2860",
+   "type": "episode",
+   "name": "Build Better Analytics And Models With A Focus On The Data Experience",
+   "date": "2021-11-22",
+   "url": "https://www.pythonpodcast.com/modern-data-experience-episode-340",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-11-06_building-conversational-ai-to-augment-sa_741230",
+   "type": "episode",
+   "name": "Building Conversational AI to Augment Sales Teams at Structurely",
+   "date": "2021-11-06",
+   "url": "https://www.pythonpodcast.com/structurely-conversational-ai-sales-episode-339",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-10-31_build-composable-and-reusable-feature-en_52d39e",
+   "type": "episode",
+   "name": "Build Composable And Reusable Feature Engineering Pipelines with Feature-Engine",
+   "date": "2021-10-31",
+   "url": "https://www.pythonpodcast.com/feature-engine-feature-engineering-pipelines-episode-338",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-10-25_speed-up-your-python-data-applications-b_4b7e65",
+   "type": "episode",
+   "name": "Speed Up Your Python Data Applications By Parallelizing Them With Bodo",
+   "date": "2021-10-25",
+   "url": "https://www.pythonpodcast.com/bodo-parallel-python-hpc-episode-337",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-10-16_an-exploration-of-financial-exchange-ris_1ff9a8",
+   "type": "episode",
+   "name": "An Exploration Of Financial Exchange Risk Management Strategies",
+   "date": "2021-10-16",
+   "url": "https://www.pythonpodcast.com/fx-risk-management-strategies-episode-33",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-10-09_build-better-machine-learning-models-by_5abb99",
+   "type": "episode",
+   "name": "Build Better Machine Learning Models By Understanding Their Decisions With SHAP",
+   "date": "2021-10-09",
+   "url": "https://www.pythonpodcast.com/shap-explainable-machine-learning-episode-335",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-09-30_accelerating-drug-discovery-using-machin_cba71d",
+   "type": "episode",
+   "name": "Accelerating Drug Discovery Using Machine Learning With TorchDrug",
+   "date": "2021-09-30",
+   "url": "https://www.pythonpodcast.com/torchdrug-drug-discovery-machine-learning-episode-334",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-09-26_an-exploration-of-automated-speech-recog_7c8c32",
+   "type": "episode",
+   "name": "An Exploration Of Automated Speech Recognition",
+   "date": "2021-09-26",
+   "url": "https://www.pythonpodcast.com/automated-speech-recognition-episode-333",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-09-19_experimenting-with-reinforcement-learnin_6f3162",
+   "type": "episode",
+   "name": "Experimenting With Reinforcement Learning Using MushroomRL",
+   "date": "2021-09-19",
+   "url": "https://www.pythonpodcast.com/mushroomrl-reinforcement-learning-library-episode-332",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_reinforcement_learning_using_mushroomrl",
+   "type": "person",
+   "name": "Reinforcement Learning Using MushroomRL",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2021-09-10_doing-dask-powered-data-science-in-the-s_8f2e77",
+   "type": "episode",
+   "name": "Doing Dask Powered Data Science In The Saturn Cloud",
+   "date": "2021-09-10",
+   "url": "https://www.pythonpodcast.com/saturn-cloud-scaling-open-source-python-data-science-episode-331",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-09-03_monitor-the-health-of-your-machine-learn_837bdb",
+   "type": "episode",
+   "name": "Monitor The Health Of Your Machine Learning Products In Production With Evidently",
+   "date": "2021-09-03",
+   "url": "https://www.pythonpodcast.com/evidently-machine-learning-monitoring-episode-330",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-08-25_making-automated-machine-learning-more-a_a52500",
+   "type": "episode",
+   "name": "Making Automated Machine Learning More Accessible With EvalML",
+   "date": "2021-08-25",
+   "url": "https://www.pythonpodcast.com/evalml-automated-machine-learning-episode-329",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-08-19_growing-and-supporting-the-data-science_deab9b",
+   "type": "episode",
+   "name": "Growing And Supporting The Data Science Community At Anaconda",
+   "date": "2021-08-19",
+   "url": "https://www.pythonpodcast.com/anaconda-python-data-science-episode-328",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-08-15_network-analysis-at-the-speed-of-c-with_1bd248",
+   "type": "episode",
+   "name": "Network Analysis At The Speed Of C With The Power Of Python Using NetworKit",
+   "date": "2021-08-15",
+   "url": "https://www.pythonpodcast.com/networkit-efficient-network-analysis-episode-327",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-08-04_delivering-deep-learning-powered-speech_372d43",
+   "type": "episode",
+   "name": "Delivering Deep Learning Powered Speech Recognition As A Service For Developers At AssemblyAI",
+   "date": "2021-08-04",
+   "url": "https://www.pythonpodcast.com/assemblyai-deep-learning-speech-recognition-episode-326",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-07-28_taking-aim-at-the-legacy-of-sql-with-the_dac87c",
+   "type": "episode",
+   "name": "Taking Aim At The Legacy Of SQL With The Preql Relational Language",
+   "date": "2021-07-28",
+   "url": "https://www.pythonpodcast.com/preql-relational-algebra-sql-replacement-episode-325",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-07-22_unleash-the-power-of-dataframes-at-any-s_9e3852",
+   "type": "episode",
+   "name": "Unleash The Power Of Dataframes At Any Scale With Modin",
+   "date": "2021-07-22",
+   "url": "https://www.pythonpodcast.com/modin-parallel-dataframe-episode-324",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-07-14_exploring-the-speechbrain-toolkit-for-sp_bd96c6",
+   "type": "episode",
+   "name": "Exploring The SpeechBrain Toolkit For Speech Processing",
+   "date": "2021-07-14",
+   "url": "https://www.pythonpodcast.com/speechbrain-deep-learning-speech-toolkit-episode-323",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-07-07_fast-and-educational-exploration-and-ana_aec7d2",
+   "type": "episode",
+   "name": "Fast And Educational Exploration And Analysis Of Graph Data Structures With graph-tool",
+   "date": "2021-07-07",
+   "url": "https://www.pythonpodcast.com/graph-tool-graph-data-analysis-episode-322",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-06-30_lightening-the-load-for-deep-learning-wi_9c9848",
+   "type": "episode",
+   "name": "Lightening The Load For Deep Learning With Sparse Networks Using Neural Magic",
+   "date": "2021-06-30",
+   "url": "https://www.pythonpodcast.com/neural-magic-deep-learning-sparse-networks-episode-321",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-06-23_finding-the-core-of-python-for-a-bright_bb6ea2",
+   "type": "episode",
+   "name": "Finding The Core Of Python For A Bright Future With Brett Cannon",
+   "date": "2021-06-23",
+   "url": "https://www.pythonpodcast.com/modern-python-brett-cannon-episode-320",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_brett_cannon",
+   "type": "person",
+   "name": "Brett Cannon",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2021-06-16_traversing-the-challenges-and-promise-of_9a9355",
+   "type": "episode",
+   "name": "Traversing The Challenges And Promise Of Graph Machine Learning",
+   "date": "2021-06-16",
+   "url": "https://www.pythonpodcast.com/graph-machine-learning-episode-319",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-06-09_keep-your-analytics-lint-free-with-sqlfl_f960ee",
+   "type": "episode",
+   "name": "Keep Your Analytics Lint Free With SQLFluff",
+   "date": "2021-06-09",
+   "url": "https://www.pythonpodcast.com/sqlfluff-sql-linter-episode-318",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-06-02_exploring-the-patterns-and-practices-for_27ddd2",
+   "type": "episode",
+   "name": "Exploring The Patterns And Practices For Deep Learning With Andrew Ferlitsch",
+   "date": "2021-06-02",
+   "url": "https://www.pythonpodcast.com/deep-learning-patterns-and-practices-episode-317",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_andrew_ferlitsch",
+   "type": "person",
+   "name": "Andrew Ferlitsch",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2021-05-25_automatically-generate-your-unit-tests-f_b1570c",
+   "type": "episode",
+   "name": "Automatically Generate Your Unit Tests From Scratch With Pynguin",
+   "date": "2021-05-25",
+   "url": "https://www.pythonpodcast.com/pynguin-automatic-python-unit-tests-episode-316",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-05-18_leveling-up-natural-language-processing_5eb065",
+   "type": "episode",
+   "name": "Leveling Up Natural Language Processing with Transfer Learning",
+   "date": "2021-05-18",
+   "url": "https://www.pythonpodcast.com/paul-azunre-transfer-learning-for-natural-language-processing-episode-315",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_transfer_learning",
+   "type": "person",
+   "name": "Transfer Learning",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2021-05-11_federated-learning-for-all-with-flower_e05779",
+   "type": "episode",
+   "name": "Federated Learning For All With Flower",
+   "date": "2021-05-11",
+   "url": "https://www.pythonpodcast.com/flower-federated-learning-episode-314",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-05-04_data-exploration-and-visualization-made_f91758",
+   "type": "episode",
+   "name": "Data Exploration and Visualization Made Effortless with Lux",
+   "date": "2021-05-04",
+   "url": "https://www.pythonpodcast.com/lux-data-exploration-episode-313",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-04-27_extensible-open-source-authorization-for_abb942",
+   "type": "episode",
+   "name": "Extensible Open Source Authorization For Your Applications With Oso",
+   "date": "2021-04-27",
+   "url": "https://www.pythonpodcast.com/oso-open-source-authorization-episode-312",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-04-20_teaching-geeks-the-value-and-skills-of-p_760744",
+   "type": "episode",
+   "name": "Teaching Geeks The Value And Skills Of Public Speaking",
+   "date": "2021-04-20",
+   "url": "https://www.pythonpodcast.com/neil-thompson-public-speaking-episode-311",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-04-13_let-the-robots-do-the-work-using-robotic_ad524c",
+   "type": "episode",
+   "name": "Let The Robots Do The Work Using Robotic Process Automation with Robocorp",
+   "date": "2021-04-13",
+   "url": "https://www.pythonpodcast.com/robocorp-robotic-process-automation-episode-310",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-04-06_keep-your-code-clean-and-maintainable-us_d86f2c",
+   "type": "episode",
+   "name": "Keep Your Code Clean And Maintainable Using Static Analysis With Flake8",
+   "date": "2021-04-06",
+   "url": "https://www.pythonpodcast.com/flake8-static-analysis-episode-309",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-03-30_make-your-code-more-readable-with-the-ma_acdff6",
+   "type": "episode",
+   "name": "Make Your Code More Readable With The Magic Of Refactoring Using Sourcery",
+   "date": "2021-03-30",
+   "url": "https://www.pythonpodcast.com/sourcery-automated-python-refactoring-episode-308",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-03-22_be-data-driven-at-any-scale-with-superse_bdd357",
+   "type": "episode",
+   "name": "Be Data Driven At Any Scale With Superset",
+   "date": "2021-03-22",
+   "url": "https://www.pythonpodcast.com/superset-data-driven-episode-207",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-03-16_practical-advice-on-using-python-to-powe_29e999",
+   "type": "episode",
+   "name": "Practical Advice On Using Python To Power A Business",
+   "date": "2021-03-16",
+   "url": "https://www.pythonpodcast.com/practical-business-python-episode-306",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-03-09_analyzing-the-ecosystem-of-python-data-c_c6b099",
+   "type": "episode",
+   "name": "Analyzing The Ecosystem of Python Data Companies With Tony Liu",
+   "date": "2021-03-09",
+   "url": "https://www.pythonpodcast.com/tony-liu-python-venture-investing-episode-305",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_tony_liu",
+   "type": "person",
+   "name": "Tony Liu",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2021-03-02_go-from-notebook-to-pipeline-for-your-da_ce9a5a",
+   "type": "episode",
+   "name": "Go From Notebook To Pipeline For Your Data Science Projects With Orchest",
+   "date": "2021-03-02",
+   "url": "https://www.pythonpodcast.com/orchest-data-science-ide-episode-304",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-02-23_write-your-python-scripts-in-a-flow-base_0880ba",
+   "type": "episode",
+   "name": "Write Your Python Scripts In A Flow Based Visual Editor With Ryven",
+   "date": "2021-02-23",
+   "url": "https://www.pythonpodcast.com/ryven-flow-based-visual-scripting-episode-303",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-02-16_crosshair-your-automatic-pair-programmer_c7bb50",
+   "type": "episode",
+   "name": "CrossHair: Your Automatic Pair Programmer",
+   "date": "2021-02-16",
+   "url": "https://www.pythonpodcast.com/crosshair-automated-bug-finder-episode-302",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-02-09_giving-your-data-science-projects-and-te_00ee8b",
+   "type": "episode",
+   "name": "Giving Your Data Science Projects And Teams A Home At DagsHub",
+   "date": "2021-02-09",
+   "url": "https://www.pythonpodcast.com/dagshub-data-science-collaboration-episode-301",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-02-02_exploring-literate-programming-for-pytho_3e7a09",
+   "type": "episode",
+   "name": "Exploring Literate Programming For Python Projects With nbdev",
+   "date": "2021-02-02",
+   "url": "https://www.pythonpodcast.com/nbdev-literate-programming-episode-300",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-01-26_making-the-sans-i-o-ideal-a-reality-for_f7706c",
+   "type": "episode",
+   "name": "Making The Sans I/O Ideal A Reality For The Websockets Library",
+   "date": "2021-01-26",
+   "url": "https://www.pythonpodcast.com/websockets-sans-io-episode-299",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-01-19_driving-toward-a-faster-python-interpret_392ddc",
+   "type": "episode",
+   "name": "Driving Toward A Faster Python Interpreter With Pyston",
+   "date": "2021-01-19",
+   "url": "https://www.pythonpodcast.com/pyston-fast-python-interpreter-episode-298",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-01-12_project-scaffolding-that-evolves-with-yo_83f4e3",
+   "type": "episode",
+   "name": "Project Scaffolding That Evolves With Your Software Using Copier",
+   "date": "2021-01-12",
+   "url": "https://www.pythonpodcast.com/copier-project-scaffolding-episode-297",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2021-01-05_how-python-s-evolution-impacts-your-flue_b55cb9",
+   "type": "episode",
+   "name": "How Python's Evolution Impacts Your Fluency With Luciano Ramalho",
+   "date": "2021-01-05",
+   "url": "https://www.pythonpodcast.com/luciano-ramalho-python-evolution-episode-296",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_luciano_ramalho",
+   "type": "person",
+   "name": "Luciano Ramalho",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2020-12-28_making-content-management-a-smooth-exper_bc280d",
+   "type": "episode",
+   "name": "Making Content Management A Smooth Experience With A Headless CMS",
+   "date": "2020-12-28",
+   "url": "https://www.pythonpodcast.com/buttercms-headless-cms-episode-295",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-12-21_turning-notebooks-into-collaborative-and_a35ed1",
+   "type": "episode",
+   "name": "Turning Notebooks Into Collaborative And Dynamic Data Applications With Hex",
+   "date": "2020-12-21",
+   "url": "https://www.pythonpodcast.com/hex-collaborative-notebooks-episode-294",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-12-15_add-anomaly-detection-to-your-time-serie_3be80c",
+   "type": "episode",
+   "name": "Add Anomaly Detection To Your Time Series Data With Luminaire",
+   "date": "2020-12-15",
+   "url": "https://www.pythonpodcast.com/luminaire-anomaly-detection-episode-293",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-12-07_building-big-data-pipelines-for-audio-wi_42b63c",
+   "type": "episode",
+   "name": "Building Big Data Pipelines For Audio With Klio",
+   "date": "2020-12-07",
+   "url": "https://www.pythonpodcast.com/klio-big-data-audio-pipelines-episode-292",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-12-01_open-sourcing-the-anvil-full-stack-pytho_12e0ef",
+   "type": "episode",
+   "name": "Open Sourcing The Anvil Full Stack Python Web App Platform",
+   "date": "2020-12-01",
+   "url": "https://www.pythonpodcast.com/anvil-open-source-web-app-server-episode-291",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-11-23_pants-has-got-your-python-monorepo-cover_272a18",
+   "type": "episode",
+   "name": "Pants Has Got Your Python Monorepo Covered",
+   "date": "2020-11-23",
+   "url": "https://www.pythonpodcast.com/pants-monorepo-build-tool-episode-290",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-11-17_scale-your-data-science-teams-with-machi_1d2cc0",
+   "type": "episode",
+   "name": "Scale Your Data Science Teams With Machine Learning Operations Principles",
+   "date": "2020-11-17",
+   "url": "https://www.pythonpodcast.com/machine-learning-operations-episode-289",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_machine_learning_operations_principles",
+   "type": "person",
+   "name": "Machine Learning Operations Principles",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2020-11-10_making-the-case-for-a-semi-formal-specif_dc4405",
+   "type": "episode",
+   "name": "Making The Case For A (Semi) Formal Specification Of CPython",
+   "date": "2020-11-10",
+   "url": "https://www.pythonpodcast.com/cpython-formal-specification-episode-288",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-11-03_bringing-artificial-intelligence-project_a7da56",
+   "type": "episode",
+   "name": "Bringing Artificial Intelligence Projects From Idea To Production",
+   "date": "2020-11-03",
+   "url": "https://www.pythonpodcast.com/henrik-landgren-artificial-intelligence-episode-287",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-10-26_power-up-your-java-using-python-with-jpy_4ccd3c",
+   "type": "episode",
+   "name": "Power Up Your Java Using Python With JPype",
+   "date": "2020-10-26",
+   "url": "https://www.pythonpodcast.com/jpype-java-python-bridge-episode-286",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-10-19_the-journey-to-replace-python-s-parser-a_bd150d",
+   "type": "episode",
+   "name": "The Journey To Replace Python's Parser And What It Means For The Future",
+   "date": "2020-10-19",
+   "url": "https://www.pythonpodcast.com/cpython-parser-replacement-episode-285",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-10-12_cloud-native-application-delivery-using_54d035",
+   "type": "episode",
+   "name": "Cloud Native Application Delivery Using GitOps",
+   "date": "2020-10-12",
+   "url": "https://www.pythonpodcast.com/gitops-cloud-native-operations-episode-284",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-10-06_threading-the-needle-of-interesting-and_327c66",
+   "type": "episode",
+   "name": "Threading The Needle Of Interesting And Informative While You Learn To Code",
+   "date": "2020-10-06",
+   "url": "https://www.pythonpodcast.com/steven-lott-learn-to-code-episode-283",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-09-29_solving-python-package-creation-for-end_d82f1f",
+   "type": "episode",
+   "name": "Solving Python Package Creation For End User Applications With PyOxidizer",
+   "date": "2020-09-29",
+   "url": "https://www.pythonpodcast.com/pyoxidizer-python-package-creation-episode-282",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-09-22_flexible-network-security-detection-and_147c4b",
+   "type": "episode",
+   "name": "Flexible Network Security Detection And Response With Grapl",
+   "date": "2020-09-22",
+   "url": "https://www.pythonpodcast.com/grapl-network-security-episode-282",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-09-15_simplified-data-extraction-and-analysis_5ba193",
+   "type": "episode",
+   "name": "Simplified Data Extraction And Analysis For Current Events With Newspaper",
+   "date": "2020-09-15",
+   "url": "https://www.pythonpodcast.com/newspaper-data-extraction-episode-280",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-09-07_digging-into-dagster-an-opinionated-open_ab4785",
+   "type": "episode",
+   "name": "Digging Into Dagster: An Opinionated Open Source Framework For Data Orchestration",
+   "date": "2020-09-07",
+   "url": "https://www.pythonpodcast.com/dagster-data-orchestration-episode-279",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-09-01_when-why-and-how-to-use-web-scraping-in_fecd36",
+   "type": "episode",
+   "name": "When, Why, and How To Use Web Scraping In A Nutshell",
+   "date": "2020-09-01",
+   "url": "https://www.pythonpodcast.com/web-scraping-essentials-episode-278",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-08-25_working-in-the-code-mines-mining-softwar_4d69fd",
+   "type": "episode",
+   "name": "Working In The Code Mines: Mining Software Repositories With PyDriller",
+   "date": "2020-08-25",
+   "url": "https://www.pythonpodcast.com/pydriller-mining-software-repositories-episode-277",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-08-17_building-the-open-data-ecosystem-for-mus_369a6f",
+   "type": "episode",
+   "name": "Building The Open Data Ecosystem For Music And More At Metabrainz",
+   "date": "2020-08-17",
+   "url": "https://www.pythonpodcast.com/metabrainz-open-data-episode-276",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-08-10_growing-dask-to-make-scaling-python-data_ca4f38",
+   "type": "episode",
+   "name": "Growing Dask To Make Scaling Python Data Science Easier At Coiled",
+   "date": "2020-08-10",
+   "url": "https://www.pythonpodcast.com/coiled-dask-python-data-science-episode-275",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-08-04_supporting-the-full-lifecycle-of-machine_962b45",
+   "type": "episode",
+   "name": "Supporting The Full Lifecycle Of Machine Learning Projects With Metaflow",
+   "date": "2020-08-04",
+   "url": "https://www.pythonpodcast.com/metaflow-machine-learning-operations-episode-274",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-07-28_learning-to-program-by-building-tiny-pyt_8bbf32",
+   "type": "episode",
+   "name": "Learning To Program By Building Tiny Python Projects",
+   "date": "2020-07-28",
+   "url": "https://www.pythonpodcast.com/tiny-python-projects-book-episode-273",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-07-21_idiomatic-functional-programming-with-dr_124d56",
+   "type": "episode",
+   "name": "Idiomatic Functional Programming With DRY Python",
+   "date": "2020-07-21",
+   "url": "https://www.pythonpodcast.com/dry-python-functional-programming-episode-272",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 1
+  },
+  {
+   "id": "person_dry_python",
+   "type": "person",
+   "name": "DRY Python",
+   "roles": [
+    "guest"
+   ],
+   "degree": 1
+  },
+  {
+   "id": "ep_2020-07-13_the-past-present-and-future-of-the-flufl_e8db50",
+   "type": "episode",
+   "name": "The Past, Present, And Future Of The FLUFL: Barry Warsaw Shares His History With Python",
+   "date": "2020-07-13",
+   "url": "https://www.pythonpodcast.com/barry-warsaw-the-flufl-episode-271",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-07-06_pure-python-configuration-management-wit_3dc5e1",
+   "type": "episode",
+   "name": "Pure Python Configuration Management With PyInfra",
+   "date": "2020-07-06",
+   "url": "https://www.pythonpodcast.com/pyinfra-configuration-management-episode-270",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  },
+  {
+   "id": "ep_2020-06-30_build-your-own-domain-specific-language_a5a3fb",
+   "type": "episode",
+   "name": "Build Your Own Domain Specific Language in Python With textX",
+   "date": "2020-06-30",
+   "url": "https://www.pythonpodcast.com/textx-domain-specific-language-episode-269",
+   "is_full": true,
+   "has_transcript": true,
+   "answered": false,
+   "degree": 0
+  }
+ ],
+ "links": [
+  {
+   "source": "person_self_serve_infrastructure",
+   "target": "ep_2022-08-14_remove-roadblocks-and-let-your-developer_751d96",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_web_assembly",
+   "target": "ep_2022-07-25_powering-the-next-generation-of-applicat_73e1ab",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_project_thoth",
+   "target": "ep_2022-06-15_intelligent-dependency-resolution-for-op_154b78",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_automatic_checkpoints_using_flor",
+   "target": "ep_2022-05-02_accelerate-your-machine-learning-experim_f83d88",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_call_graphs_from_code2flow",
+   "target": "ep_2022-02-28_see-the-structure-of-your-software-at-a_303651",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_knowledge_repo",
+   "target": "ep_2022-02-21_scaling-knowledge-management-for-technic_87b784",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_matt_harrison",
+   "target": "ep_2022-01-15_an-exploration-of-effective-pandas-pract_63b4cb",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_python_using_cog",
+   "target": "ep_2022-01-13_generate-your-text-files-with-python-usi_4cf6a2",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_python_at_listen_notes",
+   "target": "ep_2021-12-12_accidentally-building-a-business-with-py_c3d726",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_reinforcement_learning_using_mushroomrl",
+   "target": "ep_2021-09-19_experimenting-with-reinforcement-learnin_6f3162",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_brett_cannon",
+   "target": "ep_2021-06-23_finding-the-core-of-python-for-a-bright_bb6ea2",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_andrew_ferlitsch",
+   "target": "ep_2021-06-02_exploring-the-patterns-and-practices-for_27ddd2",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_transfer_learning",
+   "target": "ep_2021-05-18_leveling-up-natural-language-processing_5eb065",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_tony_liu",
+   "target": "ep_2021-03-09_analyzing-the-ecosystem-of-python-data-c_c6b099",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_luciano_ramalho",
+   "target": "ep_2021-01-05_how-python-s-evolution-impacts-your-flue_b55cb9",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_machine_learning_operations_principles",
+   "target": "ep_2020-11-17_scale-your-data-science-teams-with-machi_1d2cc0",
+   "type": "GUEST_ON"
+  },
+  {
+   "source": "person_dry_python",
+   "target": "ep_2020-07-21_idiomatic-functional-programming-with-dr_124d56",
+   "type": "GUEST_ON"
+  }
+ ]
+}

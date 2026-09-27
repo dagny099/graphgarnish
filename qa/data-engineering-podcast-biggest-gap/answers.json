@@ -1,0 +1,4716 @@
+[
+ {
+  "key": "2022-12-12_update-your-model-s-view-of-the-world-in_dc1b93",
+  "title": "Update Your Model's View Of The World In Real Time With Streaming Machine Learning Using River",
+  "date": "2022-12-12",
+  "link": "https://www.pythonpodcast.com/river-streaming-machine-learning-episode-388",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525317176043721c28514a7-bc3b-406a-8f90-c43980a2f075v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 827.545,
+    "text": "more logical approach or what the decision factors look like for somebody deciding, do I go with a batch oriented process where I'm going to have this large set of tooling available to me, or do I wan"
+   },
+   {
+    "score": 0.5,
+    "start": 4358.48,
+    "text": "And as the final question, I'd like to get your perspective on what you see as being the biggest barrier to adoption for machine learning today."
+   },
+   {
+    "score": 0.33,
+    "start": 845.315,
+    "text": "plugging into this ecosystem of tooling?"
+   }
+  ]
+ },
+ {
+  "key": "2022-12-05_declarative-machine-learning-for-high-pe_153a63",
+  "title": "Declarative Machine Learning For High Performance Deep Learning Models With Predibase",
+  "date": "2022-12-05",
+  "link": "https://www.pythonpodcast.com/predibase-declarative-machine-learning-episode-387",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530795181045788ddc136-a325-44b9-a3cb-8eb9559d09b3v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 3365.365,
+    "text": "And as a final question, I'd like to get your perspective on what you see as being the biggest barrier to adoption for machine learning today."
+   },
+   {
+    "score": 0.33,
+    "start": 173.5,
+    "text": "But there just wasn't a lot of good tooling available at the time to do that."
+   },
+   {
+    "score": 0.33,
+    "start": 173.5,
+    "text": "So what I realized was that if I wanted to solve it all problems, I really need to start with the and all tooling and infrastructure."
+   }
+  ]
+ },
+ {
+  "key": "2022-11-28_build-better-machine-learning-models-wit_cfe1ba",
+  "title": "Build Better Machine Learning Models With Confidence By Adding Validation With Deepchecks",
+  "date": "2022-11-28",
+  "link": "https://www.pythonpodcast.com/deepchecks-machine-learning-validation-episode-386",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385252989984677738508bf9c-fe9c-4110-be81-24595ce00869v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2693.64,
+    "text": "And as a final question, I'd like to get your perspectives on what you see as being the biggest barrier to adoption for machine learning today."
+   },
+   {
+    "score": 0.33,
+    "start": 1407.19,
+    "text": "I think what's really interesting, like, for us, at least, as, you know, maintainers of package is kind of, you know, the API or how you call these different functions and what they look at, but"
+   },
+   {
+    "score": 0.33,
+    "start": 2453.0,
+    "text": "And, you know, there's definitely a price to pay for it, but, you know, we think that's that's something that's unique about our users or about the data scientists who are what we're aiming for."
+   }
+  ]
+ },
+ {
+  "key": "2022-11-21_build-a-full-stack-ml-powered-app-in-an_d7b615",
+  "title": "Build A Full Stack ML Powered App In An Afternoon With Baseten",
+  "date": "2022-11-21",
+  "link": "https://www.pythonpodcast.com/baseten-full-stack-ml-app-episode-385",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525320661718767a3ff1388-7a43-48d7-adc9-de535e27b837v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2612.74,
+    "text": "I'd like to get your perspective on what you see as being the biggest barrier to adoption for machine learning today."
+   },
+   {
+    "score": 0.33,
+    "start": 939.875,
+    "text": "where, you know, we're trying to build the tooling that allows you to combine humans with machine learning models and make decisions."
+   },
+   {
+    "score": 0.33,
+    "start": 2163.415,
+    "text": "And I'm wondering if you can talk through some of the ways that different model types or some of the different frameworks that somebody will use to build a model will influence the integration points "
+   }
+  ]
+ },
+ {
+  "key": "2022-11-07_skip-straight-to-the-fun-part-of-your-pr_7d51e9",
+  "title": "Skip Straight To The Fun Part Of Your Project With PyScaffold",
+  "date": "2022-11-07",
+  "link": "https://www.pythonpodcast.com/pyscaffold-project-template-boilerplate-episode-384",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525322327757965db1b3659-52a3-45a0-9705-fb7cc7356763v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 983.6,
+    "text": "and kind of bridges the gap between"
+   },
+   {
+    "score": 0.33,
+    "start": 1538.279,
+    "text": "I think the biggest 1 was"
+   },
+   {
+    "score": 0.25,
+    "start": 1317.434,
+    "text": "Who knows if we later gonna adopt something or not?"
+   }
+  ]
+ },
+ {
+  "key": "2022-10-30_add-configuration-best-practices-to-your_aadb99",
+  "title": "Add Configuration Best Practices To Your Application In An Afternoon With Dynaconf",
+  "date": "2022-10-30",
+  "link": "https://www.pythonpodcast.com/dynaconf-application-configuration-management-episode-383",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253078128727670df6935e-9a31-4af6-9e11-8e041d890b38v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 3451.825,
+    "text": "And as you continue to build and maintain and evolve the Dynacont project, you mentioned a little bit of the work that is kind of in process, but I'm wondering what do you have planned for the near to"
+   },
+   {
+    "score": 0.33,
+    "start": 1287.005,
+    "text": "And I'm wondering what are some of the, I guess, antipatterns that you see people develop as they build their own homegrown systems for"
+   },
+   {
+    "score": 0.33,
+    "start": 2383.745,
+    "text": "So you're gonna have tooling that will"
+   }
+  ]
+ },
+ {
+  "key": "2022-10-23_take-a-tour-of-the-hidden-language-of-ha_8bb669",
+  "title": "Take A Tour Of The Hidden Language Of Hardware And How It Powers Your Code",
+  "date": "2022-10-23",
+  "link": "https://www.pythonpodcast.com/code-hidden-language-second-edition-episode-382",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525300627971718b4bc24d6-06bf-4344-aee1-397abf68b23bv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 991.685,
+    "text": "And And I'm wondering what you see as the benefit for that group of people to be able to have at least some conceptual understanding of what computers are doing and how."
+   },
+   {
+    "score": 0.25,
+    "start": 1418.14,
+    "text": "coded yourself, and I'm wondering if you can maybe talk to some of the process of how you decided to embark on actually writing the code to generate the circuit diagrams versus just, you know, drawing"
+   },
+   {
+    "score": 0.25,
+    "start": 1640.64,
+    "text": "And, you know, why did you write your own language or write your own code for it versus just use something that was off the shelf?"
+   }
+  ]
+ },
+ {
+  "key": "2022-10-16_take-control-of-your-electrical-systems_a3da72",
+  "title": "Take Control Of Your Electrical Systems With The Open Source FlexMeasures Energy Management System",
+  "date": "2022-10-16",
+  "link": "https://www.pythonpodcast.com/flexmeasures-energy-management-system-episode-381",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525306276101439db6a3724-4fcf-4cba-b432-7a3c4b8b57f1v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 57.085,
+    "text": "The biggest challenge with modern data systems is understanding what data you have, where it is located, and who is using it."
+   },
+   {
+    "score": 0.33,
+    "start": 298.38,
+    "text": "I'm wondering if you can just give a bit more of an overview of what the space looks like for these energy management systems and if there are any kind of alternatives to flex measures or if it's some"
+   },
+   {
+    "score": 0.33,
+    "start": 538.48,
+    "text": "So anything in the the built environment, those are 2 huge sectors of the energy sector, which in itself is 1 of the biggest"
+   }
+  ]
+ },
+ {
+  "key": "2022-10-10_how-and-why-to-build-effective-teams-as_81254c",
+  "title": "How And Why To Build Effective Teams As An Engineering Leader",
+  "date": "2022-10-10",
+  "link": "https://www.pythonpodcast.com/effective-engineering-teams-jigar-desai-episode-380",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530051389237400fc6456-659e-4000-abdb-383d04d766dfv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 3032.714,
+    "text": "and there is a talent gap or there is a skill gap?"
+   },
+   {
+    "score": 0.33,
+    "start": 169.6,
+    "text": "As far as the topic at hand, in terms of the question of building effective engineering teams, I'm curious what you have found throughout your career to be some of the central challenges involved in b"
+   },
+   {
+    "score": 0.33,
+    "start": 13.165,
+    "text": "The biggest challenge with modern data systems is understanding what data you have, where it is located, and who is using it."
+   }
+  ]
+ },
+ {
+  "key": "2022-10-03_complete-your-hardware-weekend-projects_19d28c",
+  "title": "Complete Your Hardware \"Weekend Projects\" In An Actual Weekend With Belay",
+  "date": "2022-10-03",
+  "link": "https://www.pythonpodcast.com/belay-micropython-hardware-helper-episode-379",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530680505643744ec71c2-aa70-44d8-b7f9-833f5c89a848v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 57.715,
+    "text": "The biggest challenge with modern data systems is understanding what data you have, where it is located, and who is using it."
+   },
+   {
+    "score": 0.33,
+    "start": 717.34,
+    "text": "And so if you think print debugging is not efficient, the biggest issue is the long iteration cycles."
+   },
+   {
+    "score": 0.33,
+    "start": 2306.525,
+    "text": "the biggest driver of what your upstream code on your computer will be running."
+   }
+  ]
+ },
+ {
+  "key": "2022-09-19_catching-up-with-pyre-a-fast-type-checke_74fb43",
+  "title": "Catching Up With Pyre, A Fast Type Checker For Python",
+  "date": "2022-09-19",
+  "link": "https://www.pythonpodcast.com/pyre-type-checker-episode-378",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253212137252476736a41d-4ecc-4b97-990e-eb5e78c96a7cv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2149.52,
+    "text": "adoption and availability of tooling and support?"
+   },
+   {
+    "score": 0.33,
+    "start": 50.23,
+    "text": "The biggest challenge with modern data systems is understanding what data you have, where it is located, and who is using it."
+   },
+   {
+    "score": 0.33,
+    "start": 376.4,
+    "text": "typically the biggest names in the type checking space for Python."
+   }
+  ]
+ },
+ {
+  "key": "2022-09-13_standardizing-on-python-for-all-software_9c7b71",
+  "title": "Standardizing On Python For All Software Projects At Ascend.io",
+  "date": "2022-09-13",
+  "link": "https://www.pythonpodcast.com/ascend-python-standardization-episode-377",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525316158645446c666b8d1-4385-4171-9a8e-b4beed199c24v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 56.475,
+    "text": "The biggest challenge with modern data systems is understanding what data you have, where it is located, and who is using it."
+   },
+   {
+    "score": 0.33,
+    "start": 1490.37,
+    "text": "a stumbling block as people start to work in new language ecosystems is the question of the developer tooling and the developer experience of being able to actually work with the code in their local e"
+   },
+   {
+    "score": 0.33,
+    "start": 1509.27,
+    "text": "You know, for us, we've been using a lot of Python in our own tooling, but think of like our own command line interfaces and tools and and so on that we've been using just to deploy code and run CICD,"
+   }
+  ]
+ },
+ {
+  "key": "2022-09-05_exploring-the-process-and-practice-of-bu_2049cc",
+  "title": "Exploring The Process And Practice Of Building Better Software Through Code Reviews",
+  "date": "2022-09-05",
+  "link": "https://www.pythonpodcast.com/code-review-for-better-software-episode-376",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525300391952298672bc6db-db9d-429a-a267-37bddbe81939v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 327.035,
+    "text": "But as for the subtleties of code review, I think the biggest"
+   },
+   {
+    "score": 0.33,
+    "start": 1688.22,
+    "text": "and, I mean, this is probably the biggest paradox of software engineering."
+   },
+   {
+    "score": 0.33,
+    "start": 1817.925,
+    "text": "1 of the biggest complexity I find with bots"
+   }
+  ]
+ },
+ {
+  "key": "2022-08-28_ship-with-confidence-by-automating-quali_659134",
+  "title": "Ship With Confidence By Automating Quality Assurance",
+  "date": "2022-08-28",
+  "link": "https://www.pythonpodcast.com/keysight-quality-assurance-automation-episode-375",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525304208245843b13edb1e-c389-4902-8b5a-59242ca5c1d1v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1539.705,
+    "text": "creating payloads for APIs that they know work and not have every single type of, you know, account and, you know, country or whatever else you need in there is actually it's as important to have test"
+   },
+   {
+    "score": 0.25,
+    "start": 730.55,
+    "text": "Is it code or is it the team?"
+   },
+   {
+    "score": 0.25,
+    "start": 774.565,
+    "text": "How do we realize that we should spend more money or spend more time before releasing a product out to market?"
+   }
+  ]
+ },
+ {
+  "key": "2022-08-14_remove-roadblocks-and-let-your-developer_751d96",
+  "title": "Remove Roadblocks And Let Your Developers Ship Faster With Self-Serve Infrastructure",
+  "date": "2022-08-14",
+  "link": "https://www.pythonpodcast.com/quali-self-serve-infrastructure-episode-374",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525321530647688ba97d72d-02ea-4351-bb1d-eebb87b6222ev1.mp3",
+  "guests": [
+   "Self-Serve Infrastructure"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 3422.815,
+    "text": "As you continue to build and iterate on the quality product, what are some of the things you have planned for the near to medium term, or any particular projects or problem areas that excited to explo"
+   },
+   {
+    "score": 0.33,
+    "start": 1702.845,
+    "text": "you know, we call this in quality, it's called the skills gap."
+   },
+   {
+    "score": 0.33,
+    "start": 3105.01,
+    "text": "That's my biggest challenge"
+   }
+  ]
+ },
+ {
+  "key": "2022-07-31_the-benefits-of-python-and-django-for-go_146197",
+  "title": "The Benefits Of Python And Django For Going From Zero To MVP At Speed",
+  "date": "2022-07-31",
+  "link": "https://www.pythonpodcast.com/planeks-python-mvp-development-episode-373",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525322079513624c61dbab3-03ff-4a6b-a133-f637c4a4f5c0v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.25,
+    "start": 1830.215,
+    "text": "and for getting startups off the ground and some of the potential challenges or risks that you have seen as an outcome of choosing Python?"
+   },
+   {
+    "score": 0.25,
+    "start": 1985.435,
+    "text": "companies or teams that are looking to use Python to get started, what are some of the cases where you might steer them away from it and into a different language or maybe if they are within Python, m"
+   },
+   {
+    "score": 0.25,
+    "start": 2137.875,
+    "text": "What are some of the most interesting or unexpected or challenging lessons that you've learned?"
+   }
+  ]
+ },
+ {
+  "key": "2022-07-25_powering-the-next-generation-of-applicat_73e1ab",
+  "title": "Powering The Next Generation Of Application Architectures With Web Assembly And The Fermyon Platform",
+  "date": "2022-07-25",
+  "link": "https://www.pythonpodcast.com/fermyon-web-assembly-application-architecture-episode-372",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525315746683654f98fa3b2-2ae0-4137-ad88-ac4d4d6f0ce4v1.mp3",
+  "guests": [
+   "Web Assembly"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 2478.6,
+    "text": "what do you see as the evolution in tooling and frameworks for being able to do something like, I have a Django application."
+   },
+   {
+    "score": 0.33,
+    "start": 1549.905,
+    "text": "And furthermore, the the microservice architecture was a compelling thing, but that a lot of the tooling and paradigms kinda got in the way."
+   },
+   {
+    "score": 0.33,
+    "start": 1871.41,
+    "text": "The first is tooling for developers."
+   }
+  ]
+ },
+ {
+  "key": "2022-07-17_gain-a-deeper-understanding-of-what-your_99dfaf",
+  "title": "Gain A Deeper Understanding Of What Your Code Is Doing And Where It Spends Its Time With VizTracer",
+  "date": "2022-07-17",
+  "link": "https://www.pythonpodcast.com/viztracer-visual-python-profiling-episode-371",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525322044203938a366a0ab-eae7-4fe5-a4e9-f5ceadb4bcb8v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 874.2,
+    "text": "As far as the overall design and approach that you've taken with VizTracer, I'm wondering what are some of the ways that it has changed or evolved as you started working on it and digging deeper into "
+   },
+   {
+    "score": 0.33,
+    "start": 2225.714,
+    "text": "So they have to repeat that, do a for loop or a while loop, and repeat that for a thousand times and using a profiler to see what is slow."
+   },
+   {
+    "score": 0.25,
+    "start": 214.495,
+    "text": "Now that you've started the project, you've been using it, other people are using it to solve their own problems, what are some of the core areas of focus or the main that you have with the continued "
+   }
+  ]
+ },
+ {
+  "key": "2022-07-10_stream-processing-in-real-time-and-at-sc_8a791f",
+  "title": "Stream Processing In Real Time And At Scale In Pure Python With Bytewax",
+  "date": "2022-07-10",
+  "link": "https://www.pythonpodcast.com/bytewax-python-stream-processing-episode-370",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253145885910569366e4f5-2ec5-4a3d-87ac-98a8556de64fv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 1708.105,
+    "text": "learn as we go there and be able to add some additional tooling or some integrations to help with that observability"
+   },
+   {
+    "score": 0.33,
+    "start": 362.005,
+    "text": "Or for the case where maybe they're doing a greenfield project with it, what are some of the alternative structures that they were considering before they settled on bite wax as the solution to their "
+   },
+   {
+    "score": 0.33,
+    "start": 2263.05,
+    "text": "And as you continue to iterate on the project and the business, what are some of the things you have planned for the near to medium term or any particular problem areas that you're excited to dig into"
+   }
+  ]
+ },
+ {
+  "key": "2022-07-03_tetra-a-full-stack-web-framework-that-do_435334",
+  "title": "Tetra: A Full Stack Web Framework That Doesn't Make You Write Everything Twice",
+  "date": "2022-07-03",
+  "link": "https://www.pythonpodcast.com/tetra-full-stack-component-web-framework-episode-369",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525302635485005054ea084-f61f-498f-ba10-3dca3f0cf020v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 705.065,
+    "text": "front end tooling just to build a simple website, which seems to be the default now."
+   },
+   {
+    "score": 0.33,
+    "start": 722.505,
+    "text": "and all sorts of other build tooling, which just makes it so much harder."
+   },
+   {
+    "score": 0.33,
+    "start": 761.24,
+    "text": "tooling that enables you to do that"
+   }
+  ]
+ },
+ {
+  "key": "2022-06-27_design-real-world-objects-in-python-with_1c350c",
+  "title": "Design Real-World Objects In Python With CadQuery",
+  "date": "2022-06-27",
+  "link": "https://www.pythonpodcast.com/cadquery-python-programmatic-cad-episode-368",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852531593340006323d84ca8-ffc3-4f83-a952-b02ce2b35a9fv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 166.505,
+    "text": "Before we get too much further into the discussion about the Cadbury project itself, I'm wondering if you can just give a bit of an overview for people who aren't familiar with what CAT is and some of"
+   },
+   {
+    "score": 0.33,
+    "start": 2234.065,
+    "text": "As you continue to use and maintain the cab query package, what are some of the things you have planned for the near to medium term or any particular"
+   },
+   {
+    "score": 0.25,
+    "start": 1286.285,
+    "text": "some specific export format so that I can download that into a 3 d printer or send it to a manufacturer for being able to actually construct these, you know, widgets or whatever it is that you're buil"
+   }
+  ]
+ },
+ {
+  "key": "2022-06-15_intelligent-dependency-resolution-for-op_154b78",
+  "title": "Intelligent Dependency Resolution For Optimal Compatibility And Security With Project Thoth",
+  "date": "2022-06-15",
+  "link": "https://www.pythonpodcast.com/thoth-dependency-resolution-episode-367",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525307775872736c7b18aa0-23ba-4206-bb85-8c95686853cev1.mp3",
+  "guests": [
+   "Project Thoth"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 402.4,
+    "text": "TOT's tooling aggregates information about client's environment, where clients"
+   },
+   {
+    "score": 0.33,
+    "start": 478.115,
+    "text": "aggregated by client's tooling"
+   },
+   {
+    "score": 0.33,
+    "start": 948.045,
+    "text": "For example, if you use CUDA, tooling will store CUDA information in the"
+   }
+  ]
+ },
+ {
+  "key": "2022-05-30_take-a-deep-dive-on-how-code-completion_b50bb5",
+  "title": "Take A Deep Dive On How Code Completion Works And How To Customize It",
+  "date": "2022-05-30",
+  "link": "https://www.pythonpodcast.com/code-completion-deep-dive-episode-366",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852529755829201596d3d037-9bbc-4873-bbcc-0b9a17f70bc8v2.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2387.694,
+    "text": "probably the biggest surprise is how well cheating works."
+   },
+   {
+    "score": 0.33,
+    "start": 3052.48,
+    "text": "By far, the biggest surprise is how well cheating works."
+   },
+   {
+    "score": 0.33,
+    "start": 3475.065,
+    "text": "that turns it into a pretty good time series database that you can use with all the Postgres tooling that you've become familiar with."
+   }
+  ]
+ },
+ {
+  "key": "2022-05-24_hunting-black-swans-with-bees-catching-u_fe1c95",
+  "title": "Hunting Black Swans With Bees: Catching Up With The Inimitable Russell Keith-Magee",
+  "date": "2022-05-24",
+  "link": "https://www.pythonpodcast.com/beeware-revisited-episode-365",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525299596929981fdf781e0-44f2-4649-a1ec-2c2340a8fc8av1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2397.57,
+    "text": "that have either proven to be dead ends in their own right or have been obviated by other advancements or evolutions in the ecosystem and the technology landscape?"
+   },
+   {
+    "score": 0.33,
+    "start": 272.165,
+    "text": "and checking back in about the kind of current state of what you see as the, you know, potential black swan events for the Python language and community."
+   },
+   {
+    "score": 0.33,
+    "start": 312.09,
+    "text": "And be wary as they try and fill that gap to make it as easy to develop a mobile application"
+   }
+  ]
+ },
+ {
+  "key": "2022-05-16_take-control-of-your-digital-photos-by-r_d974b0",
+  "title": "Take Control Of Your Digital Photos By Running Your Own Smart Library Manager With LibrePhotos",
+  "date": "2022-05-16",
+  "link": "https://www.pythonpodcast.com/librephotos-digital-photo-management-episode-364",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525303380887056ce9e8108-72bd-4a11-8ee3-4b704a0cbf0dv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 634.395,
+    "text": "What do you see as the key decision points that will lead somebody to saying, Libre photos is the right choice for me versus I actually wanna go and use, you know, Digicam or what have you?"
+   },
+   {
+    "score": 0.33,
+    "start": 1420.575,
+    "text": "The biggest issue that you currently have with, like, machine learning is that mostly researcher write this code,"
+   },
+   {
+    "score": 0.33,
+    "start": 1619.21,
+    "text": "The biggest complaints are basically about image size currently."
+   }
+  ]
+ },
+ {
+  "key": "2022-05-10_making-investment-data-easy-to-access-an_6da91e",
+  "title": "Making Investment Data Easy To Access And Analyze With The OpenBB Terminal",
+  "date": "2022-05-10",
+  "link": "https://www.pythonpodcast.com/openbb-terminal-investment-data-framework-episode-363",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525307318114606cf0664cf-54e9-4bf4-958e-87f31fddc9e8v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 1604.14,
+    "text": "And that's actually very, very nice for people such as, like, data scientists or mathematicians or even economists that want to understand, like, a broader p picture of what the economy is doing and c"
+   },
+   {
+    "score": 0.33,
+    "start": 888.485,
+    "text": "And as far as I know, you know, there is no other platform that allows for putting as much data as an input of, like, a machine learning AI model and then, you know, put it into, like, a report along "
+   },
+   {
+    "score": 0.33,
+    "start": 2300.53,
+    "text": "I'll say that the biggest 1 is, like, market data is a huge, huge pain."
+   }
+  ]
+ },
+ {
+  "key": "2022-05-02_accelerate-your-machine-learning-experim_f83d88",
+  "title": "Accelerate Your Machine Learning Experimentation With Automatic Checkpoints Using FLOR",
+  "date": "2022-05-02",
+  "link": "https://www.pythonpodcast.com/flor-machine-learning-experiment-episode-362",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253164401911737d95f61d-3a77-4acb-bc8a-b7f8472505ccv1.mp3",
+  "guests": [
+   "Automatic Checkpoints Using FLOR"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 427.225,
+    "text": "that's kind of where we started, and then the journey changed pretty drastically from there to answer the question, what's the most tooling or what's the most support we can provide to a model develop"
+   },
+   {
+    "score": 0.33,
+    "start": 455.4,
+    "text": "And 1 of the first area lines of of research of floor involve program instrumentation to be able to provide this kind of tooling"
+   },
+   {
+    "score": 0.33,
+    "start": 587.269,
+    "text": "So it was 1 of those things where the execution is long running enough and the data is valuable enough that we need to have some tooling to recover it."
+   }
+  ]
+ },
+ {
+  "key": "2022-04-25_automatically-enforce-software-structure_ef9d32",
+  "title": "Automatically Enforce Software Structures With Powerful Code Modifications Powered By LibCST",
+  "date": "2022-04-25",
+  "link": "https://www.pythonpodcast.com/libcst-automated-code-modification-episode-361",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852531634025305368294dfb-b18f-4dec-8dca-b6e799fe2ce3v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1426.37,
+    "text": "the biggest gaping hole in terms of the type safety"
+   },
+   {
+    "score": 0.33,
+    "start": 1533.335,
+    "text": "And 1 of the challenges about answering this question is there's lots and lots of internal tooling at Meta"
+   },
+   {
+    "score": 0.33,
+    "start": 1563.9,
+    "text": "around LibCST is all the open source tooling."
+   }
+  ]
+ },
+ {
+  "key": "2022-04-19_cloud-native-networking-for-developers-w_b6d57c",
+  "title": "Cloud Native Networking For Developers With The Gloo Platform",
+  "date": "2022-04-19",
+  "link": "https://www.pythonpodcast.com/solo-gloo-cloud-native-networking-episode-360",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530455496950965a1b5d7-20d0-4d6c-815d-5fdbec42dda0v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2389.869,
+    "text": "And so for people who are in the process of either selecting an API gateway or ingress controller or they're evaluating service mesh solutions, what are the cases where glue is the wrong choice and th"
+   },
+   {
+    "score": 0.5,
+    "start": 1986.945,
+    "text": "Every time that there is, you know, a very interesting or exciting technology, there will be a lot of you know, it's very hard for everybody to agree, and everybody else wanted to create, you know, th"
+   },
+   {
+    "score": 0.33,
+    "start": 194.27,
+    "text": "I think that the biggest thing that happened in that market in that point was the fact that everybody recognized that they need to rearchitect"
+   }
+  ]
+ },
+ {
+  "key": "2022-04-11_accelerate-and-simplify-cloud-native-dev_5850e5",
+  "title": "Accelerate And Simplify Cloud Native Development For Kubernetes Environments With Gefyra",
+  "date": "2022-04-11",
+  "link": "https://www.pythonpodcast.com/gefyra-cloud-native-development-episode-359",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525314663138677818c9077-bea5-415f-9c67-98ef41399ecdv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1552.485,
+    "text": "What are some of the other challenges that you see developers run into as they're starting to build in a cloud native model and just some of the other concepts or challenges that they encounter?"
+   },
+   {
+    "score": 0.33,
+    "start": 1653.325,
+    "text": "I think 1 of the biggest learnings I had implementing Jfira was creating an operator"
+   },
+   {
+    "score": 0.33,
+    "start": 1967.76,
+    "text": "1 of the biggest"
+   }
+  ]
+ },
+ {
+  "key": "2022-03-28_building-a-community-and-technology-stac_8ff66e",
+  "title": "Building A Community And Technology Stack For Scalable Big Data Geoscience At Pangeo",
+  "date": "2022-03-28",
+  "link": "https://www.pythonpodcast.com/pangeo-big-data-geoscience-episode-358",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852531656252867379d0cb36-7b45-49a9-bed1-b9c58fa9fea5v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2046.03,
+    "text": "as science moves into the cloud to build out that type of tooling, but focused on this more complex data model that we deal with in scientific research."
+   },
+   {
+    "score": 0.33,
+    "start": 2087.424,
+    "text": "as maybe vaguely comparable to what something like Airbyte or Fivetran or Stitch does in terms of connecting data sources,"
+   },
+   {
+    "score": 0.33,
+    "start": 2148.75,
+    "text": "we found that 1 of the hardest and biggest pain points is"
+   }
+  ]
+ },
+ {
+  "key": "2022-03-20_automating-application-lifecycles-for-de_4d515f",
+  "title": "Automating Application Lifecycles For Developer Happiness At Wayfair",
+  "date": "2022-03-20",
+  "link": "https://www.pythonpodcast.com/wayfair-application-lifecycle-automation-episode-357",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525314874752767593c1e49-12af-480c-971f-9d3ea95a9fc1v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 1391.195,
+    "text": "And an app generated today might look great, but 3 years from now might not be reflective of, you know, the desired tooling or standards or even dependencies."
+   },
+   {
+    "score": 0.33,
+    "start": 888.425,
+    "text": "selection of language and ecosystem and tooling for being able to provide to other members of the engineering org?"
+   },
+   {
+    "score": 0.33,
+    "start": 310.29,
+    "text": "setting up, you know, containers, the application, Python best practices, testing, linting, we got a lot of great feedback on our tooling."
+   }
+  ]
+ },
+ {
+  "key": "2022-03-14_run-your-applications-reliably-on-kubern_3e6baf",
+  "title": "Run Your Applications Reliably On Kubernetes Without Losing Sleep With Robusta",
+  "date": "2022-03-14",
+  "link": "https://www.pythonpodcast.com/robusta-kubernetes-application-maintenance-episode-356",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525299758298277318bd180-a52f-4d87-8790-2d96ad386c89v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2648.724,
+    "text": "sort of cluster level constraints, what are the cases where Robusta is the wrong choice and maybe they're better suited building some of their own in house tooling or relying on some other open source"
+   },
+   {
+    "score": 0.42,
+    "start": 304.939,
+    "text": "for people who are writing applications and running them in production, what do you see as the heuristic or the litmus test of when it makes sense to actually explore"
+   },
+   {
+    "score": 0.33,
+    "start": 846.545,
+    "text": "Here's the biggest file."
+   }
+  ]
+ },
+ {
+  "key": "2022-03-06_accelerate-the-development-and-delivery_1dc04c",
+  "title": "Accelerate The Development And Delivery Of Your Machine Learning Applications Using Ray And Deploy It At Anyscale",
+  "date": "2022-03-06",
+  "link": "https://www.pythonpodcast.com/anyscale-machine-learning-applications-episode-355",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253054519038594a552bb2-2829-41a3-94c3-6c05f523fc12v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2247.315,
+    "text": "grow the business and the technology stack around AnyScale and Ray, what are some of the things you have planned for the near to medium term or any projects or initiatives that you're excited to dig i"
+   },
+   {
+    "score": 0.33,
+    "start": 1163.165,
+    "text": "So for example, say you're doing training, but as you're doing the training or between training at Box, you want to shuffle your data."
+   },
+   {
+    "score": 0.33,
+    "start": 1781.665,
+    "text": "As far as the road map for the Ray project, I'm wondering what you see as being the main"
+   }
+  ]
+ },
+ {
+  "key": "2022-02-28_see-the-structure-of-your-software-at-a_303651",
+  "title": "See The Structure Of Your Software At A Glance With Call Graphs From Code2Flow",
+  "date": "2022-02-28",
+  "link": "https://www.pythonpodcast.com/code2flow-call-graph-episode-354",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253033210041816012236c-3f17-42cb-9fb0-4ac7f4dcd571v1.mp3",
+  "guests": [
+   "Call Graphs From Code2Flow"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.25,
+    "start": 206.145,
+    "text": "to help with that endeavor or if it's some other skill set that you have that you're using to apply down there or if it's just abundance of goodwill and energy?"
+   },
+   {
+    "score": 0.25,
+    "start": 797.665,
+    "text": "versus this visual representation and just some of the differences in terms of the utilities or the use cases that each of those approaches might provide?"
+   },
+   {
+    "score": 0.25,
+    "start": 868.955,
+    "text": "refactoring or further exploration and just some of the sort of next steps somebody might take after they have that initial visual exploration of the project?"
+   }
+  ]
+ },
+ {
+  "key": "2022-02-21_scaling-knowledge-management-for-technic_87b784",
+  "title": "Scaling Knowledge Management For Technical Teams With Knowledge Repo",
+  "date": "2022-02-21",
+  "link": "https://www.pythonpodcast.com/knowledge-repo-open-source-knowledge-management-episode-353",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253158061763944d21fc33-2455-42cc-b974-acd330eba3eev1.mp3",
+  "guests": [
+   "Knowledge Repo"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1575.615,
+    "text": "Like, I'm working on an experimentation platform right now, and I actually think that experimentation is 1 of the biggest knowledge generating"
+   },
+   {
+    "score": 0.33,
+    "start": 1657.7,
+    "text": "as a result of great tooling that then generates a lot of knowledge, and then you wanna index it somewhere."
+   },
+   {
+    "score": 0.33,
+    "start": 1870.309,
+    "text": "no 1 has a view of the underlying story that's only visible by data except for data teams, and so you should see what we can do to make space to do these underlying"
+   }
+  ]
+ },
+ {
+  "key": "2022-02-14_simplify-and-scale-your-software-develop_b93de8",
+  "title": "Simplify And Scale Your Software Development Cycles By Putting On Pants (Build Tool)",
+  "date": "2022-02-14",
+  "link": "https://www.pythonpodcast.com/pants-software-development-lifecycle-tool-episode-352",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525302519831322f3b9dfbe-b7cb-4950-92bb-3d1590b2b235v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 3104.36,
+    "text": "discrete tooling or some homegrown solution or something built into their CI framework, etcetera?"
+   },
+   {
+    "score": 0.5,
+    "start": 2854.395,
+    "text": "push the boundaries of what you're meant to do with a piece of software or technology or anything, really."
+   },
+   {
+    "score": 0.33,
+    "start": 2192.955,
+    "text": "Go already has really strong tooling."
+   }
+  ]
+ },
+ {
+  "key": "2022-02-06_achieve-repeatable-builds-of-your-softwa_21e208",
+  "title": "Achieve Repeatable Builds Of Your Software On Any Machine With Earthly",
+  "date": "2022-02-06",
+  "link": "https://www.pythonpodcast.com/earthly-repeatable-build-tool-episode-351",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525303037149970397bd93b-026c-4b4c-bd3f-44fdb8aec54bv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 1003.825,
+    "text": "or the dependencies you might have installed on your computer that maybe interact with the build or not, or any sort of programming language specific tooling, like, you know, which version of Python y"
+   },
+   {
+    "score": 0.5,
+    "start": 2993.845,
+    "text": "using a different type of CI tooling or building their own homegrown system."
+   },
+   {
+    "score": 0.33,
+    "start": 310.92,
+    "text": "world of tooling that, you know, the open source ecosystem isn't quite used to."
+   }
+  ]
+ },
+ {
+  "key": "2022-01-31_building-a-detailed-view-of-your-softwar_66d930",
+  "title": "Building A Detailed View Of Your Software Delivery Process With The Eiffel Protocol",
+  "date": "2022-01-31",
+  "link": "https://www.pythonpodcast.com/eiffel-protocol-software-delivery-process-visibility-episode-350",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253165294234524c0b3fce-4a9a-43f3-a1ac-b9744f895050v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2766.91,
+    "text": "or out of the box tooling that people can use to get started with ifle?"
+   },
+   {
+    "score": 0.5,
+    "start": 544.6,
+    "text": "I'm curious what the kind of broad personas are and how that helps to inform where you're spending your time and energy on enhancing the protocol or building reference implementations or building tool"
+   },
+   {
+    "score": 0.33,
+    "start": 122.53,
+    "text": "So the tooling around that was written in Python."
+   }
+  ]
+ },
+ {
+  "key": "2022-01-24_improve-your-productivity-by-investing-i_c201af",
+  "title": "Improve Your Productivity By Investing In Developer Experience Design For Your Projects",
+  "date": "2022-01-24",
+  "link": "https://www.pythonpodcast.com/developer-experience-episode-349",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253067106507414109dbf2-16f3-4f35-be3a-7f51789aad61v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 1273.285,
+    "text": "the kind of Python tooling or"
+   },
+   {
+    "score": 0.5,
+    "start": 1531.15,
+    "text": "keep up to date with the available options for tooling or practices,"
+   },
+   {
+    "score": 0.33,
+    "start": 1127.45,
+    "text": "gives data and that for every single 1 of your database tables, it has populated 1 row or that table is marked as, oh, we can't populate this logically."
+   }
+  ]
+ },
+ {
+  "key": "2022-01-15_an-exploration-of-effective-pandas-pract_63b4cb",
+  "title": "An Exploration Of Effective Pandas Practices With Matt Harrison",
+  "date": "2022-01-15",
+  "link": "https://www.pythonpodcast.com/effective-pandas-book-episode-348",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525303689774980425b152c-a541-42b2-935e-5096fd6087fev1.mp3",
+  "guests": [
+   "Matt Harrison"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 2780.905,
+    "text": "set of API standards for working with data in Python so that you can abstract over the specific library that's being used, whether it's NumPy or Pandas or if you're working with Dask or Modin or what "
+   },
+   {
+    "score": 0.33,
+    "start": 1979.78,
+    "text": "Some people are using it just for data exploration purposes to see here's a big CSV file or here's a table from the database."
+   },
+   {
+    "score": 0.25,
+    "start": 627.819,
+    "text": "Or they're And it's sort of like, oh, here's a wart, and why wasn't I exposed to this?"
+   }
+  ]
+ },
+ {
+  "key": "2022-01-13_generate-your-text-files-with-python-usi_4cf6a2",
+  "title": "Generate Your Text Files With Python Using Cog",
+  "date": "2022-01-13",
+  "link": "https://www.pythonpodcast.com/cog-python-text-generation-episode-347",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525299971605042727bd9c0-76ba-4a0f-b71b-317172b9cf23v1.mp3",
+  "guests": [
+   "Python Using Cog"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.25,
+    "start": 642.625,
+    "text": "Or what is that gonna do?"
+   },
+   {
+    "score": 0.25,
+    "start": 1192.48,
+    "text": "just like last month or the month before, and I thought, why do I have to say out l?"
+   },
+   {
+    "score": 0.25,
+    "start": 2448.615,
+    "text": "I'm curious what are some of the other interesting interesting or innovative or unexpected ways that you've seen it applied?"
+   }
+  ]
+ },
+ {
+  "key": "2022-01-02_a-friendly-approach-to-regression-models_072609",
+  "title": "A Friendly Approach To Regression Models For Programmers",
+  "date": "2022-01-02",
+  "link": "https://www.pythonpodcast.com/regression-models-friendly-guide-episode-346",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525314309413238a6b3b499-17c9-4b0e-80db-951cab92095ev1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 642.915,
+    "text": "And so I'm trying to sort of, again, bridge that gap."
+   },
+   {
+    "score": 0.33,
+    "start": 930.72,
+    "text": "The other biggest pitfall I've I've ran into is people are way too quick to want to build some complicated model,"
+   },
+   {
+    "score": 0.33,
+    "start": 987.895,
+    "text": "So I think knowing what kind of data you actually have and respecting that data and then being too quick to go for something complicated when something simple will do, those are the 2 biggest things I"
+   }
+  ]
+ },
+ {
+  "key": "2021-12-27_fast-flexible-and-incremental-task-autom_da32de",
+  "title": "Fast, Flexible, and Incremental Task Automation With doit",
+  "date": "2021-12-27",
+  "link": "https://www.pythonpodcast.com/doit-software-task-automation-episode-345",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525305565138200acc66675-fde2-46a2-bba8-6e1619a8d2ccv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2198.74,
+    "text": "As you continue to maintain the duet project and use it for your own work, what are some of the things you have planned for the near to medium term or any areas where you're looking for help or contri"
+   },
+   {
+    "score": 0.25,
+    "start": 1076.645,
+    "text": "impacted the work that you're doing on DoIT and some of the types of features that you want to build into it or use cases that you want to enable?"
+   },
+   {
+    "score": 0.25,
+    "start": 1237.29,
+    "text": "And for people who are using DoIT, I'm wondering if you can talk to the overall workflow for getting started with it, starting to integrate it into the development process or being able to define diff"
+   }
+  ]
+ },
+ {
+  "key": "2021-12-20_the-technological-business-and-sales-cha_4150fa",
+  "title": "The Technological, Business, and Sales Challenges Of Building The Ethical Ads Network",
+  "date": "2021-12-20",
+  "link": "https://www.pythonpodcast.com/ethical-ads-network-episode-344",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525299835383119989fc3bd-58a2-4c3d-b617-2ee3e3a3db73v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2702.615,
+    "text": "And in terms of either the ad network itself or the technology that you're using to power it, what are some of the most interesting or innovative or unexpected ways that you've seen it all used?"
+   },
+   {
+    "score": 0.5,
+    "start": 2839.845,
+    "text": "In your own experience of building the technology and building the network for ethical ads, what are some of the most interesting or unexpected or challenging lessons that you've learned in the proces"
+   },
+   {
+    "score": 0.33,
+    "start": 1877.559,
+    "text": "the 2 biggest things that it decides on is, like, what's the content of the page and what's the geography?"
+   }
+  ]
+ },
+ {
+  "key": "2021-12-12_accidentally-building-a-business-with-py_c3d726",
+  "title": "Accidentally Building A Business With Python At Listen Notes",
+  "date": "2021-12-12",
+  "link": "https://www.pythonpodcast.com/listen-notes-python-business-podcast-api-episode-343",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852531681930458348e6e9d7-4207-4cdd-be69-bc1ba54511abv1.mp3",
+  "guests": [
+   "Python At Listen Notes"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 637.04,
+    "text": "And as far as being able to actually build a search engine around podcasts, what are the different sources of information that are available for being able to extract some of the useful information th"
+   },
+   {
+    "score": 0.33,
+    "start": 1567.44,
+    "text": "either both you know, whether for your own purposes of being able to see what are people's listening habits or being able to provide back to podcast producers"
+   },
+   {
+    "score": 0.25,
+    "start": 396.55,
+    "text": "and why people might want to use this capability in listen notes versus just a feed aggregator, like like FeedBurner or something like that?"
+   }
+  ]
+ },
+ {
+  "key": "2021-11-27_making-orbital-mechanics-more-accessible_619d5c",
+  "title": "Making Orbital Mechanics More Accessible With Poliastro",
+  "date": "2021-11-27",
+  "link": "https://www.pythonpodcast.com/poliastro-python-orbital-mechanics-episode-342",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253179781305267091e8be-be85-462b-bd41-ce41f8f51628v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.25,
+    "start": 1916.775,
+    "text": "useful or interesting types of questions that can be answered by using these datasets and combining it with the simulation capabilities of Polyastro?"
+   },
+   {
+    "score": 0.25,
+    "start": 2471.22,
+    "text": "And so as you have built and maintained and worked with the Polyastro community, what are some of the most interesting or innovative or unexpected ways that you've seen it used?"
+   },
+   {
+    "score": 0.25,
+    "start": 2584.905,
+    "text": "In your own experience of building the project, what are some of the most interesting or unexpected or challenging lessons that you've learned in the process?"
+   }
+  ]
+ },
+ {
+  "key": "2021-11-22_declarative-deep-learning-from-your-lapt_2bcf14",
+  "title": "Declarative Deep Learning From Your Laptop To Production With Ludwig and Horovod",
+  "date": "2021-11-22",
+  "link": "https://www.pythonpodcast.com/ludwig-horovod-distributed-declarative-deep-learning-episode-341",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385252973946875634212f091-5b05-4fc8-ac6d-0ab2b1ffdce9v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 758.7,
+    "text": "The other type of user that we often see is what I would call more of the citizen data scientist or even like a software engineer, more strictly speaking."
+   },
+   {
+    "score": 0.33,
+    "start": 3019.944,
+    "text": "the biggest barrier at the moment, which is thankfully being rapidly addressed, is on the data infrastructure side."
+   },
+   {
+    "score": 0.33,
+    "start": 3457.58,
+    "text": "So I would say we're the biggest"
+   }
+  ]
+ },
+ {
+  "key": "2021-11-22_build-better-analytics-and-models-with-a_0b2860",
+  "title": "Build Better Analytics And Models With A Focus On The Data Experience",
+  "date": "2021-11-22",
+  "link": "https://www.pythonpodcast.com/modern-data-experience-episode-340",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530314701389872e32fba-38be-4e15-bf0d-46810eebacf6v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 1738.75,
+    "text": "I'm wondering what you see is some of the potential pitfalls and shortcomings of taking this technology first approach to the data experience and some of the ways that thinking about the desired end g"
+   },
+   {
+    "score": 0.42,
+    "start": 2178.02,
+    "text": "And, eventually, it doesn't mean you're gonna build exactly what they want or whatever, but it means that that, like, you need to treat that as something that they get better than you do even if you s"
+   },
+   {
+    "score": 0.33,
+    "start": 240.599,
+    "text": "what you see as being the kind of main frustrating elements that come up in an organization when you're trying to work with data, you know, in your day to day, and just some of the main pain points an"
+   }
+  ]
+ },
+ {
+  "key": "2021-11-06_building-conversational-ai-to-augment-sa_741230",
+  "title": "Building Conversational AI to Augment Sales Teams at Structurely",
+  "date": "2021-11-06",
+  "link": "https://www.pythonpodcast.com/structurely-conversational-ai-sales-episode-339",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525303544472556b45c2083-a42d-4efa-aaa3-4e6f04b45ab4v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2692.445,
+    "text": "So I would say that was my biggest learning, and I'm excited, like I said, to see where conversational design as a whole goes because I think there's a lot more that could be done there."
+   },
+   {
+    "score": 0.25,
+    "start": 303.365,
+    "text": "Or is it something where you would potentially want to have it masquerade as the eventual person that you're actually to be communicating with in person?"
+   },
+   {
+    "score": 0.25,
+    "start": 572.28,
+    "text": "Like, what are some of the complexities or challenges or sort of backing capabilities that you've had to design?"
+   }
+  ]
+ },
+ {
+  "key": "2021-10-31_build-composable-and-reusable-feature-en_52d39e",
+  "title": "Build Composable And Reusable Feature Engineering Pipelines with Feature-Engine",
+  "date": "2021-10-31",
+  "link": "https://www.pythonpodcast.com/feature-engine-feature-engineering-pipelines-episode-338",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525297292974549d0d63e7e-5902-4957-892d-0a22c00e584cv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.4,
+    "start": 375.03,
+    "text": "main complexity or 1 of the biggest challenges"
+   },
+   {
+    "score": 0.33,
+    "start": 2918.87,
+    "text": "And as you continue to work on and use the feature engine project, what are some of the things that you have planned for the near to medium term, and what are some of the types of help or contribution"
+   },
+   {
+    "score": 0.33,
+    "start": 89.85,
+    "text": "So when I was looking for what was needed to become a data scientist, I quickly learned that I needed to learn either r or Python and ideally both."
+   }
+  ]
+ },
+ {
+  "key": "2021-10-25_speed-up-your-python-data-applications-b_4b7e65",
+  "title": "Speed Up Your Python Data Applications By Parallelizing Them With Bodo",
+  "date": "2021-10-25",
+  "link": "https://www.pythonpodcast.com/bodo-parallel-python-hpc-episode-337",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525298537440682db6e137c-01b0-498a-9a14-1bba7d076b26v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 2520.565,
+    "text": "You've mentioned a few times the use of Bodo for data engineering workflows, and I'm wondering what are the opportunities for being able to apply it to machine learning or deep learning projects using"
+   },
+   {
+    "score": 0.33,
+    "start": 828.43,
+    "text": "And I'm wondering what are the sort of deciding factors where somebody might go with Dask or Ray as compared to the use cases that Bodo is uniquely suited for?"
+   },
+   {
+    "score": 0.33,
+    "start": 2615.25,
+    "text": "In terms of being able to integrate with something like a workflow orchestrator such as Daxter or Airflow, what is the process for being able to use 1 of those tools to be able to drive the execution "
+   }
+  ]
+ },
+ {
+  "key": "2021-10-16_an-exploration-of-financial-exchange-ris_1ff9a8",
+  "title": "An Exploration Of Financial Exchange Risk Management Strategies",
+  "date": "2021-10-16",
+  "link": "https://www.pythonpodcast.com/fx-risk-management-strategies-episode-33",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525305082670094cb3b99d3-5a43-412e-8dda-6639887c4373v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 548.47,
+    "text": "So I would say that that's probably the biggest 1, and I've spent quite a while"
+   },
+   {
+    "score": 0.33,
+    "start": 580.06,
+    "text": "Those are probably the biggest ones."
+   },
+   {
+    "score": 0.33,
+    "start": 585.425,
+    "text": "No scikit learn and scipy are probably the biggest ones that, you know, outside of the normal NumPy and Panda stuff that I use."
+   }
+  ]
+ },
+ {
+  "key": "2021-10-09_build-better-machine-learning-models-by_5abb99",
+  "title": "Build Better Machine Learning Models By Understanding Their Decisions With SHAP",
+  "date": "2021-10-09",
+  "link": "https://www.pythonpodcast.com/shap-explainable-machine-learning-episode-335",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525315043935912c9b7136e-51c2-4baf-a984-a05eea2460f0v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 764.735,
+    "text": "In there, I would say that the some of the biggest challenges for these neural net models is the fact that they are best."
+   },
+   {
+    "score": 0.25,
+    "start": 347.815,
+    "text": "How does that affect model output, kind of partial dependence kind of views, or or global measurements?"
+   },
+   {
+    "score": 0.25,
+    "start": 1440.015,
+    "text": "How could we potentially improve that, or or what's different?"
+   }
+  ]
+ },
+ {
+  "key": "2021-09-30_accelerating-drug-discovery-using-machin_cba71d",
+  "title": "Accelerating Drug Discovery Using Machine Learning With TorchDrug",
+  "date": "2021-09-30",
+  "link": "https://www.pythonpodcast.com/torchdrug-drug-discovery-machine-learning-episode-334",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525307111336226b269542e-d0b8-42e0-92cf-86b61375b1f3v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1768.88,
+    "text": "In terms of the sort of technical aspects of the foundation that you've chosen for the Torch Drug Project, I'm wondering what was the decision process and some of the sort of aspects that you were loo"
+   },
+   {
+    "score": 0.33,
+    "start": 72.08,
+    "text": "which is a research institute focused on machine learning, artificial intelligence on the by the tooling award winner Yoshua Banjo."
+   },
+   {
+    "score": 0.33,
+    "start": 2001.524,
+    "text": "the sort of drug discovery research and some of the complexities that are there, I'm wondering what are some of the biggest open questions in that area"
+   }
+  ]
+ },
+ {
+  "key": "2021-09-26_an-exploration-of-automated-speech-recog_7c8c32",
+  "title": "An Exploration Of Automated Speech Recognition",
+  "date": "2021-09-26",
+  "link": "https://www.pythonpodcast.com/automated-speech-recognition-episode-333",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385252989198148514ffc1abf-c548-4dfb-b93e-208d872fa047v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2928.055,
+    "text": "of working in the space of ASR and building a business around that technology, what are some of the most interesting or unexpected or challenging lessons that you've learned in the process?"
+   },
+   {
+    "score": 0.33,
+    "start": 3017.45,
+    "text": "you know, you just can't iterate as quick as a pure software company because you have this huge data science or machine learning component of your business that is at the core of what you do."
+   },
+   {
+    "score": 0.33,
+    "start": 3017.45,
+    "text": "As you continue to build out the assembly product and continue to invest in research for ASR, I'm wondering what are some of the overall trends in the research or in industry that you're keeping an ey"
+   }
+  ]
+ },
+ {
+  "key": "2021-09-19_experimenting-with-reinforcement-learnin_6f3162",
+  "title": "Experimenting With Reinforcement Learning Using MushroomRL",
+  "date": "2021-09-19",
+  "link": "https://www.pythonpodcast.com/mushroomrl-reinforcement-learning-library-episode-332",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525315700819545c536aea5-c8fe-47c9-8c87-ac3fb99102bfv1.mp3",
+  "guests": [
+   "Reinforcement Learning Using MushroomRL"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1791.409,
+    "text": "Of course, this creates very strong gap between reality and simulation"
+   },
+   {
+    "score": 0.25,
+    "start": 290.78,
+    "text": "other machine learning approaches either in terms of the sort of cost of execution or development or just its overall capability to be able to learn and adapt to the environment?"
+   },
+   {
+    "score": 0.25,
+    "start": 2102.835,
+    "text": "What are some of the most interesting or innovative or unexpected applications of it that you've seen?"
+   }
+  ]
+ },
+ {
+  "key": "2021-09-10_doing-dask-powered-data-science-in-the-s_8f2e77",
+  "title": "Doing Dask Powered Data Science In The Saturn Cloud",
+  "date": "2021-09-10",
+  "link": "https://www.pythonpodcast.com/saturn-cloud-scaling-open-source-python-data-science-episode-331",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525321895199976e5acc27d-3f16-4f01-8865-f3afebee9e59v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 1619.855,
+    "text": "Dask community and the sort of visibility in the overall Python ecosystem, I'm wondering what your sense has been as far as the level of awareness that it has gained for people who are building machin"
+   },
+   {
+    "score": 0.33,
+    "start": 1569.145,
+    "text": "Python native tooling."
+   },
+   {
+    "score": 0.25,
+    "start": 250.915,
+    "text": "most common approach and workflow for being able to maybe do some sort of deep learning training or some complex aspect of their overall workflow, flow, sort of how that factors into what you're build"
+   }
+  ]
+ },
+ {
+  "key": "2021-09-03_monitor-the-health-of-your-machine-learn_837bdb",
+  "title": "Monitor The Health Of Your Machine Learning Products In Production With Evidently",
+  "date": "2021-09-03",
+  "link": "https://www.pythonpodcast.com/evidently-machine-learning-monitoring-episode-330",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525318267199815180c2ef8-cdd6-4b26-aa54-d1bbd4706c78v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1924.63,
+    "text": "the biggest amount of time into scheduling the"
+   },
+   {
+    "score": 0.33,
+    "start": 2148.14,
+    "text": "or something of that nature versus a deep learning model and what you see as being some of the"
+   },
+   {
+    "score": 0.25,
+    "start": 240.025,
+    "text": "And I'm wondering if you can just give a bit of an overview about the types of metrics that you're focusing on when you're monitoring machine learning and how that might compare to sort of traditional"
+   }
+  ]
+ },
+ {
+  "key": "2021-08-25_making-automated-machine-learning-more-a_a52500",
+  "title": "Making Automated Machine Learning More Accessible With EvalML",
+  "date": "2021-08-25",
+  "link": "https://www.pythonpodcast.com/evalml-automated-machine-learning-episode-329",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525296573138513b12fa7e3-8385-44dc-a097-00630be329a7v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 1918.45,
+    "text": "for what we call natural language or text data, or how should we handle NANDs for categorical data, and there's some intricacies on not only how we should handle them so that models run, but so that m"
+   },
+   {
+    "score": 0.42,
+    "start": 2043.785,
+    "text": "So, yeah, I definitely agree that data checks is something people should leverage more, but I guess like another point to call out is like some of our model understanding tools, so shout out what we d"
+   },
+   {
+    "score": 0.33,
+    "start": 1386.145,
+    "text": "I think 1 of the biggest"
+   }
+  ]
+ },
+ {
+  "key": "2021-08-19_growing-and-supporting-the-data-science_deab9b",
+  "title": "Growing And Supporting The Data Science Community At Anaconda",
+  "date": "2021-08-19",
+  "link": "https://www.pythonpodcast.com/anaconda-python-data-science-episode-328",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253006469530470c517385-3776-479a-8842-39ec2e4d8738v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.67,
+    "start": 744.475,
+    "text": "What do you see as being the biggest challenges that data scientists are facing today, whether it be in terms of this technology or the organizational aspects or"
+   },
+   {
+    "score": 0.33,
+    "start": 811.69,
+    "text": "I think that's 1 of the biggest challenges"
+   },
+   {
+    "score": 0.33,
+    "start": 833.99,
+    "text": "So I think that's 1 of the biggest challenges for practitioners"
+   }
+  ]
+ },
+ {
+  "key": "2021-08-15_network-analysis-at-the-speed-of-c-with_1bd248",
+  "title": "Network Analysis At The Speed Of C With The Power Of Python Using NetworKit",
+  "date": "2021-08-15",
+  "link": "https://www.pythonpodcast.com/networkit-efficient-network-analysis-episode-327",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525320630918185ced13637-c148-41cb-8a27-de3e515dc71fv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 533.87,
+    "text": "this gap."
+   },
+   {
+    "score": 0.25,
+    "start": 158.48,
+    "text": "comparison or what what your motivations are for using NetworkKit instead of GraphQL?"
+   },
+   {
+    "score": 0.25,
+    "start": 1441.325,
+    "text": "You've given this graph for, you know, purposes of building a web app or something?"
+   }
+  ]
+ },
+ {
+  "key": "2021-08-04_delivering-deep-learning-powered-speech_372d43",
+  "title": "Delivering Deep Learning Powered Speech Recognition As A Service For Developers At AssemblyAI",
+  "date": "2021-08-04",
+  "link": "https://www.pythonpodcast.com/assemblyai-deep-learning-speech-recognition-episode-326",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253079960006515de9161a-9595-48e1-b800-909ff42a1446v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 294.194,
+    "text": "or what vendors there are out there that we can buy this technology from."
+   },
+   {
+    "score": 0.5,
+    "start": 815.93,
+    "text": "or wouldn't even consider were options to use the technology for, but people are just super creative and have all these ideas."
+   },
+   {
+    "score": 0.33,
+    "start": 558.39,
+    "text": "what you see as some of the motivating factors for the recent growth in the overall industry for speech recognition."
+   }
+  ]
+ },
+ {
+  "key": "2021-07-28_taking-aim-at-the-legacy-of-sql-with-the_dac87c",
+  "title": "Taking Aim At The Legacy Of SQL With The Preql Relational Language",
+  "date": "2021-07-28",
+  "link": "https://www.pythonpodcast.com/preql-relational-algebra-sql-replacement-episode-325",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253225077761754151d7b4-adcc-46fa-b008-fed5dd8d8d84v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 470.335,
+    "text": "I think the biggest issue, though, in my opinion, is the lack of functions,"
+   },
+   {
+    "score": 0.33,
+    "start": 1285.275,
+    "text": "In terms of tooling, you can use it direct in the shell, but you can also write it in Jupyter Notebook."
+   },
+   {
+    "score": 0.33,
+    "start": 1414.01,
+    "text": "Currently, I think the biggest obstacle for me is that SQL doesn't have a standard way to report errors."
+   }
+  ]
+ },
+ {
+  "key": "2021-07-22_unleash-the-power-of-dataframes-at-any-s_9e3852",
+  "title": "Unleash The Power Of Dataframes At Any Scale With Modin",
+  "date": "2021-07-22",
+  "link": "https://www.pythonpodcast.com/modin-parallel-dataframe-episode-324",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852529833148096723cbeb51-59f8-4d63-8f7f-12336142c7b8v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2035.879,
+    "text": "As you continue to work with Modin and do more research and progress through your PhD program, I'm curious what you have planned for the near to medium term future of the project, either in terms of a"
+   },
+   {
+    "score": 0.33,
+    "start": 785.56,
+    "text": "close to the user is actually 1 of the biggest challenges."
+   },
+   {
+    "score": 0.33,
+    "start": 1746.955,
+    "text": "the biggest lessons that I've had,"
+   }
+  ]
+ },
+ {
+  "key": "2021-07-14_exploring-the-speechbrain-toolkit-for-sp_bd96c6",
+  "title": "Exploring The SpeechBrain Toolkit For Speech Processing",
+  "date": "2021-07-14",
+  "link": "https://www.pythonpodcast.com/speechbrain-deep-learning-speech-toolkit-episode-323",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525321924010054f183298e-d305-490e-ae42-f3f2eee51096v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 68.955,
+    "text": "Mila is the biggest"
+   },
+   {
+    "score": 0.25,
+    "start": 308.05,
+    "text": "the ideas that you had for how and why somebody might use it as it compares to when you started and where you're at today?"
+   },
+   {
+    "score": 0.25,
+    "start": 1567.465,
+    "text": "really evident or powerful as you combine different elements of the system that you think are worth calling out?"
+   }
+  ]
+ },
+ {
+  "key": "2021-07-07_fast-and-educational-exploration-and-ana_aec7d2",
+  "title": "Fast And Educational Exploration And Analysis Of Graph Data Structures With graph-tool",
+  "date": "2021-07-07",
+  "link": "https://www.pythonpodcast.com/graph-tool-graph-data-analysis-episode-322",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253174761861990447500a-d982-44bd-9bc6-c70efd2211dav1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 502.03,
+    "text": "Another way that I've seen a lot of people interacting with graph networks and graph data structures is with an actual graph oriented database, such as things like Neo 4J or d graph, and there are a n"
+   },
+   {
+    "score": 0.33,
+    "start": 2090.68,
+    "text": "The biggest complaint"
+   },
+   {
+    "score": 0.33,
+    "start": 2341.67,
+    "text": "There are some things I would like to do, but this depends a little bit on external tooling."
+   }
+  ]
+ },
+ {
+  "key": "2021-06-30_lightening-the-load-for-deep-learning-wi_9c9848",
+  "title": "Lightening The Load For Deep Learning With Sparse Networks Using Neural Magic",
+  "date": "2021-06-30",
+  "link": "https://www.pythonpodcast.com/neural-magic-deep-learning-sparse-networks-episode-321",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525298198287624a5ea2962-0233-4fe2-9d30-106a8aaf6074v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2656.135,
+    "text": "And as you continue to build and execute on neural magic, what do you have planned for the near to medium term in terms of business direction or features or new products that you're planning on launch"
+   },
+   {
+    "score": 0.33,
+    "start": 1404.965,
+    "text": "Every model comes with a transfer learning recipe, and we also have tooling for taking your network that that I've never seen before and sparsifying"
+   },
+   {
+    "score": 0.33,
+    "start": 1559.78,
+    "text": "All the tooling is right there."
+   }
+  ]
+ },
+ {
+  "key": "2021-06-23_finding-the-core-of-python-for-a-bright_bb6ea2",
+  "title": "Finding The Core Of Python For A Bright Future With Brett Cannon",
+  "date": "2021-06-23",
+  "link": "https://www.pythonpodcast.com/modern-python-brett-cannon-episode-320",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525306006115112fca5d23b-01a0-439c-a69b-759cddefea50v1.mp3",
+  "guests": [
+   "Brett Cannon"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1363.9,
+    "text": "getting wheels on the right platforms and all that does typically help make this a bit easier because then at least use all the tooling to pull everything together and have that wheel,"
+   },
+   {
+    "score": 0.33,
+    "start": 2980.505,
+    "text": "And for me, the biggest hole we have is people who need to be in the browser and people who need to be on mobile."
+   },
+   {
+    "score": 0.33,
+    "start": 3022.57,
+    "text": "To this day, the biggest surprise still is the bug I found in CPython."
+   }
+  ]
+ },
+ {
+  "key": "2021-06-16_traversing-the-challenges-and-promise-of_9a9355",
+  "title": "Traversing The Challenges And Promise Of Graph Machine Learning",
+  "date": "2021-06-16",
+  "link": "https://www.pythonpodcast.com/graph-machine-learning-episode-319",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852532027904296612d760a5-0307-4dc2-80b9-d5cb0245df63v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2376.74,
+    "text": "decide not to use them and instead lean on a different set of tooling or technologies?"
+   },
+   {
+    "score": 0.5,
+    "start": 2507.665,
+    "text": "what are some of the areas that you're excited to work on either by extending your existing libraries or building out new tooling or just doing your own research in the space?"
+   },
+   {
+    "score": 0.33,
+    "start": 2130.56,
+    "text": "and doing research on machine learning with networked datasets, I'm curious what are some of the most interesting or unexpected or challenging lessons that you learned in the process as well as for bu"
+   }
+  ]
+ },
+ {
+  "key": "2021-06-09_keep-your-analytics-lint-free-with-sqlfl_f960ee",
+  "title": "Keep Your Analytics Lint Free With SQLFluff",
+  "date": "2021-06-09",
+  "link": "https://www.pythonpodcast.com/sqlfluff-sql-linter-episode-318",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525298581991340bc917a1d-4606-4147-8fee-1bf1e0d7e4cfv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 3690.01,
+    "text": "And so for people who are considering SQL fluff and they're working with a SQL code base, what are the cases where SQL fluff is the wrong choice and they might be better suited with some other set of "
+   },
+   {
+    "score": 0.33,
+    "start": 3916.645,
+    "text": "And as you continue to work on and use SQL fluff, what are some of the things that you have planned for the near to medium term or any particular areas of help that you're looking for?"
+   },
+   {
+    "score": 0.33,
+    "start": 228.45499999999998,
+    "text": "at least infrastructure self sufficient, and that starts a ball rolling of that ended up with a team of data engineers that we have now that starts with automating and making sure that we've got the i"
+   }
+  ]
+ },
+ {
+  "key": "2021-06-02_exploring-the-patterns-and-practices-for_27ddd2",
+  "title": "Exploring The Patterns And Practices For Deep Learning With Andrew Ferlitsch",
+  "date": "2021-06-02",
+  "link": "https://www.pythonpodcast.com/deep-learning-patterns-and-practices-episode-317",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525303252636912838563df-e6ce-48f7-8eb2-4a849f2eac55v1.mp3",
+  "guests": [
+   "Andrew Ferlitsch"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2102.66,
+    "text": "what are some of the aspect of deep learning and machine learning and data management that are, you know, requisite for building these models that you see as being continuing challenges that you would"
+   },
+   {
+    "score": 0.33,
+    "start": 1796.915,
+    "text": "what types of problem domains are applicable to some of the decision factors or signals that go into identifying when to use which problems or, you know, how you decided to break them down and which p"
+   },
+   {
+    "score": 0.33,
+    "start": 1383.86,
+    "text": "tooling"
+   }
+  ]
+ },
+ {
+  "key": "2021-05-25_automatically-generate-your-unit-tests-f_b1570c",
+  "title": "Automatically Generate Your Unit Tests From Scratch With Pynguin",
+  "date": "2021-05-25",
+  "link": "https://www.pythonpodcast.com/pynguin-automatic-python-unit-tests-episode-316",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525302566091714f073506f-8de4-4e5c-9dd5-3d22eb8209aev1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 405.495,
+    "text": "so I think this is 1 of the, the biggest problems and there to combine these, calling the right methods with the right parameter values"
+   },
+   {
+    "score": 0.33,
+    "start": 1741.195,
+    "text": "And then as far as actually getting started with using Penguin on your existing project, I'm wondering if you can just talk through the process of setting it up or determining what are some useful ini"
+   },
+   {
+    "score": 0.33,
+    "start": 3191.8,
+    "text": "I would suggest to everybody is to use as much tooling as possible"
+   }
+  ]
+ },
+ {
+  "key": "2021-05-18_leveling-up-natural-language-processing_5eb065",
+  "title": "Leveling Up Natural Language Processing with Transfer Learning",
+  "date": "2021-05-18",
+  "link": "https://www.pythonpodcast.com/paul-azunre-transfer-learning-for-natural-language-processing-episode-315",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525322013054463014ae2db-4542-412e-921c-f5a7eeded025v1.mp3",
+  "guests": [
+   "Transfer Learning"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 1744.525,
+    "text": "I'm just wondering if you can give your sense of what the current state of the ecosystem looks like for being able to use transfer learning in the NLP domain and what the current strengths are in any "
+   },
+   {
+    "score": 0.33,
+    "start": 2495.095,
+    "text": "And as you continue to work in this space, what are some of the trends or techniques or new areas of research that you're keeping an eye on or that you're most excited for?"
+   },
+   {
+    "score": 0.33,
+    "start": 724.435,
+    "text": "applications of transfer learning, 1 case is for these low resource languages as you put it, you know, languages that don't have enough of readily available textual data for being able to train models"
+   }
+  ]
+ },
+ {
+  "key": "2021-05-11_federated-learning-for-all-with-flower_e05779",
+  "title": "Federated Learning For All With Flower",
+  "date": "2021-05-11",
+  "link": "https://www.pythonpodcast.com/flower-federated-learning-episode-314",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530344476828979745b64-54a7-4919-bcc9-4e19905f943bv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 1606.42,
+    "text": "or some other kind of communication technology,"
+   },
+   {
+    "score": 0.33,
+    "start": 479.169,
+    "text": "So we started to look at existing tooling, for example, in order to build such workloads,"
+   },
+   {
+    "score": 0.33,
+    "start": 490.265,
+    "text": "and it turned out that none of the tooling that was available"
+   }
+  ]
+ },
+ {
+  "key": "2021-05-04_data-exploration-and-visualization-made_f91758",
+  "title": "Data Exploration and Visualization Made Effortless with Lux",
+  "date": "2021-05-04",
+  "link": "https://www.pythonpodcast.com/lux-data-exploration-episode-313",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385252970660321758f5222cb-91fc-4b56-9716-05dc1880930av1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1841.55,
+    "text": "In terms of your own experience of working on Lux and using it for your data analysis, I'm curious how it has impacted the way that you think about approaching a problem or the specifics as to, you kn"
+   },
+   {
+    "score": 0.33,
+    "start": 216.535,
+    "text": "And digging into that, we'll get to Lux in a moment, but you mentioned that your overarching goal was to be able to improve the overall ecosystem of tooling to make it easier for these different"
+   },
+   {
+    "score": 0.25,
+    "start": 57.66,
+    "text": "Are you bored with writing scripts to move data into SaaS tools like Salesforce, Marketo, or Facebook Ads?"
+   }
+  ]
+ },
+ {
+  "key": "2021-04-27_extensible-open-source-authorization-for_abb942",
+  "title": "Extensible Open Source Authorization For Your Applications With Oso",
+  "date": "2021-04-27",
+  "link": "https://www.pythonpodcast.com/oso-open-source-authorization-episode-312",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852532223577826261260431-434a-4437-875f-f8ce56cc55bcv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 503.2,
+    "text": "I think that's, like, 1 of the biggest ones for me and, like, the the user facing side of things from, like, the products is making your authorization so complex that it takes people ages to understan"
+   },
+   {
+    "score": 0.33,
+    "start": 1493.83,
+    "text": "So I think the biggest 1, which I kinda referred to at the beginning, was that we restarted out with the sort of the most powerful OSO, the policy language that allows you to do anything."
+   },
+   {
+    "score": 0.25,
+    "start": 57.579,
+    "text": "Are you bored with writing scripts to move data into SaaS tools like Salesforce, Marketo, or Facebook Ads?"
+   }
+  ]
+ },
+ {
+  "key": "2021-04-20_teaching-geeks-the-value-and-skills-of-p_760744",
+  "title": "Teaching Geeks The Value And Skills Of Public Speaking",
+  "date": "2021-04-20",
+  "link": "https://www.pythonpodcast.com/neil-thompson-public-speaking-episode-311",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253205984444070cb14254-1257-47c1-9782-dd7baa84b031v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1335.22,
+    "text": "the number of roles available for developer advocates in different companies because these are people who are trying to bridge the gap between"
+   },
+   {
+    "score": 0.33,
+    "start": 1415.4,
+    "text": "I think the the biggest benefit is that you're better understood."
+   },
+   {
+    "score": 0.33,
+    "start": 1741.76,
+    "text": "It's 1 of the biggest fears out there."
+   }
+  ]
+ },
+ {
+  "key": "2021-04-13_let-the-robots-do-the-work-using-robotic_ad524c",
+  "title": "Let The Robots Do The Work Using Robotic Process Automation with Robocorp",
+  "date": "2021-04-13",
+  "link": "https://www.pythonpodcast.com/robocorp-robotic-process-automation-episode-310",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525298637802995360a40cc-5f93-45cc-a754-1ca0d4686b8bv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 247.775,
+    "text": "time investment and usability and sort of who the audience is for the tooling?"
+   },
+   {
+    "score": 0.33,
+    "start": 264.09,
+    "text": "You know, they started to become more sophisticated, and now we're seeing something like Robo Club where we are actually starting to take Python based tooling and apply it for RPA."
+   },
+   {
+    "score": 0.33,
+    "start": 516.67,
+    "text": "tooling."
+   }
+  ]
+ },
+ {
+  "key": "2021-04-06_keep-your-code-clean-and-maintainable-us_d86f2c",
+  "title": "Keep Your Code Clean And Maintainable Using Static Analysis With Flake8",
+  "date": "2021-04-06",
+  "link": "https://www.pythonpodcast.com/flake8-static-analysis-episode-309",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525304397807404bdc1bb87-9fc9-4acb-b793-5ef44df2ffb3v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.4,
+    "start": 2228.47,
+    "text": "I think the biggest thing or like the places where flake 8 has had the most breakage is in these"
+   },
+   {
+    "score": 0.33,
+    "start": 810.185,
+    "text": "They're they're the biggest, as far as I understand, the biggest collection of Fleek8 plugins in the ecosystem right now."
+   },
+   {
+    "score": 0.33,
+    "start": 1497.635,
+    "text": "It would be really nice if the standard library provided a CST out of the box because you could build a lot more powerful tooling on top of it and have a better understanding of the source code."
+   }
+  ]
+ },
+ {
+  "key": "2021-03-30_make-your-code-more-readable-with-the-ma_acdff6",
+  "title": "Make Your Code More Readable With The Magic Of Refactoring Using Sourcery",
+  "date": "2021-03-30",
+  "link": "https://www.pythonpodcast.com/sourcery-automated-python-refactoring-episode-308",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525304474940310b2f22638-4b03-432e-8c9d-5fa10d328a19v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2539.509,
+    "text": "That was the biggest change"
+   },
+   {
+    "score": 0.33,
+    "start": 2964.105,
+    "text": "what happens in the code quality and developer tooling space to see if there's an opportunity to coalesce on."
+   },
+   {
+    "score": 0.25,
+    "start": 1471.155,
+    "text": "would this code be better pulled out of this method into another 1 or moved into a different place?"
+   }
+  ]
+ },
+ {
+  "key": "2021-03-22_be-data-driven-at-any-scale-with-superse_bdd357",
+  "title": "Be Data Driven At Any Scale With Superset",
+  "date": "2021-03-22",
+  "link": "https://www.pythonpodcast.com/superset-data-driven-episode-207",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525298878851358ab6abc6c-12fb-47ff-aa9b-1f69ad33008dv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1147.615,
+    "text": "But, yeah, so Flask Gap Builder over time allowed us to get these CRUD forms very quickly and get started quickly with some NVC code."
+   },
+   {
+    "score": 0.25,
+    "start": 311.21,
+    "text": "And what are some of the tools or platforms that you had worked with before that led you to the decision that there was a need or an opportunity for something new to fulfill this particular use case?"
+   },
+   {
+    "score": 0.25,
+    "start": 1278.425,
+    "text": "And if you were to start over today, what are some of the things that you might do differently either in terms of language choice or system architecture?"
+   }
+  ]
+ },
+ {
+  "key": "2021-03-16_practical-advice-on-using-python-to-powe_29e999",
+  "title": "Practical Advice On Using Python To Power A Business",
+  "date": "2021-03-16",
+  "link": "https://www.pythonpodcast.com/practical-business-python-episode-306",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253031102804251454f708-c514-4946-8c45-4624258e06aav1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1988.91,
+    "text": "As far as some of the kind of common roadblocks that everybody who uses Python runs into, what do you see as some of the biggest sticking points?"
+   },
+   {
+    "score": 0.33,
+    "start": 453.115,
+    "text": "the people who are coming to your blog and who you interact with, what are some of the biggest problems that they are"
+   },
+   {
+    "score": 0.33,
+    "start": 704.85,
+    "text": "It's a really good question, and I think that is 1 of the biggest challenges."
+   }
+  ]
+ },
+ {
+  "key": "2021-03-09_analyzing-the-ecosystem-of-python-data-c_c6b099",
+  "title": "Analyzing The Ecosystem of Python Data Companies With Tony Liu",
+  "date": "2021-03-09",
+  "link": "https://www.pythonpodcast.com/tony-liu-python-venture-investing-episode-305",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525306766929730d5158598-12d9-4a90-a294-7fe1302aa2bcv1.mp3",
+  "guests": [
+   "Tony Liu"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 464.675,
+    "text": "What do you see as being the major strengths of Python in the current landscape for data and analytics?"
+   },
+   {
+    "score": 0.33,
+    "start": 1905.71,
+    "text": "as right for opportunity or that you would like to see companies try to tackle that aren't currently being addressed?"
+   },
+   {
+    "score": 0.33,
+    "start": 575.74,
+    "text": "more tooling coming out to make Python, more robust, like, data engineering platform,"
+   }
+  ]
+ },
+ {
+  "key": "2021-03-02_go-from-notebook-to-pipeline-for-your-da_ce9a5a",
+  "title": "Go From Notebook To Pipeline For Your Data Science Projects With Orchest",
+  "date": "2021-03-02",
+  "link": "https://www.pythonpodcast.com/orchest-data-science-ide-episode-304",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525318312064941c2c0fd60-de9f-46dd-8658-d4338e63e77av1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 1902.36,
+    "text": "I think that's really the power of open source project where if the company does not end up surviving or sticking around for long enough, you as a user of that technology are not negatively impacted b"
+   },
+   {
+    "score": 0.33,
+    "start": 1685.665,
+    "text": "or being able to hook it into various data sources such as your application databases or your cloud data warehouse for being able to pull in the data that you're running these experiments against?"
+   },
+   {
+    "score": 0.33,
+    "start": 293.165,
+    "text": "And we felt that these kinds of abstractions in process of data scientists needed to be built in terms of tooling as well."
+   }
+  ]
+ },
+ {
+  "key": "2021-02-23_write-your-python-scripts-in-a-flow-base_0880ba",
+  "title": "Write Your Python Scripts In A Flow Based Visual Editor With Ryven",
+  "date": "2021-02-23",
+  "link": "https://www.pythonpodcast.com/ryven-flow-based-visual-scripting-episode-303",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525303718873532a9159a95-84d0-473d-9144-50d83cc85033v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 569.635,
+    "text": "If you can implement some real time access to your data, for example, if you have, like, a web API or you have some network system that is basically projected as a graph"
+   },
+   {
+    "score": 0.33,
+    "start": 1362.019,
+    "text": "and with the last 1, with the biggest 1, I took part in the youth science competition in Germany, and this was a very great experience."
+   },
+   {
+    "score": 0.33,
+    "start": 2299.115,
+    "text": "obviously is the biggest software project that I did so far."
+   }
+  ]
+ },
+ {
+  "key": "2021-02-16_crosshair-your-automatic-pair-programmer_c7bb50",
+  "title": "CrossHair: Your Automatic Pair Programmer",
+  "date": "2021-02-16",
+  "link": "https://www.pythonpodcast.com/crosshair-automated-bug-finder-episode-302",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852531442355164581fe6a9b-3e9f-4a8f-81a9-95ff402b7ecev1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2359.685,
+    "text": "And as you continue to build Crosshair and use it in your own work, what are some of the additional features or capabilities or improvements you have planned for the future of the project that we have"
+   },
+   {
+    "score": 0.33,
+    "start": 1579.33,
+    "text": "The biggest difference is that almost all the other contract libraries you find out there will be"
+   },
+   {
+    "score": 0.25,
+    "start": 150.355,
+    "text": "Can you give a bit of an example of the types of use cases that it enables or some of the ways that it fits into the overall development flow and maybe some of the other tools in the Python ecosystem "
+   }
+  ]
+ },
+ {
+  "key": "2021-02-09_giving-your-data-science-projects-and-te_00ee8b",
+  "title": "Giving Your Data Science Projects And Teams A Home At DagsHub",
+  "date": "2021-02-09",
+  "link": "https://www.pythonpodcast.com/dagshub-data-science-collaboration-episode-301",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525297618126819d6c1c8c9-77a2-4c5b-9911-0bbbf6654ecev2.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 394.275,
+    "text": "to close this story because there's still a lot of tooling around that."
+   },
+   {
+    "score": 0.33,
+    "start": 663.584,
+    "text": "So we want to provide the tooling that enables that to happen and help the people that are working on these projects work more effectively."
+   },
+   {
+    "score": 0.33,
+    "start": 975.274,
+    "text": "do it not as often as they should, and they built a lot of custom tooling and lot of ad hoc solutions for this."
+   }
+  ]
+ },
+ {
+  "key": "2021-02-02_exploring-literate-programming-for-pytho_3e7a09",
+  "title": "Exploring Literate Programming For Python Projects With nbdev",
+  "date": "2021-02-02",
+  "link": "https://www.pythonpodcast.com/nbdev-literate-programming-episode-300",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852531553275568896439787-86f0-4b1d-8701-a84cae11da83v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2222.744,
+    "text": "building the project, but also taking advantage of the the rest of the developer tooling that exists for people using Python and building Python projects?"
+   },
+   {
+    "score": 0.33,
+    "start": 2637.285,
+    "text": "as you can imagine, I'm in love with tooling"
+   },
+   {
+    "score": 0.33,
+    "start": 2641.46,
+    "text": "since I invest so much in tooling."
+   }
+  ]
+ },
+ {
+  "key": "2021-01-26_making-the-sans-i-o-ideal-a-reality-for_f7706c",
+  "title": "Making The Sans I/O Ideal A Reality For The Websockets Library",
+  "date": "2021-01-26",
+  "link": "https://www.pythonpodcast.com/websockets-sans-io-episode-299",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385252998809916195abcff57-611d-42fa-82e9-2f0da0fb9cf8v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.25,
+    "start": 1206.925,
+    "text": "complexities or challenges or shortcomings that you may have experienced in the process?"
+   },
+   {
+    "score": 0.25,
+    "start": 1770.7,
+    "text": "And in terms of your experience of building the project initially and then going through this conversion of extracting the core protocol layers, I'm wondering what are the most interesting or unexpect"
+   },
+   {
+    "score": 0.25,
+    "start": 1881.46,
+    "text": "Are there any notable features or improvements that you have planned for the future of the project or anything that you're particularly interested in digging into?"
+   }
+  ]
+ },
+ {
+  "key": "2021-01-19_driving-toward-a-faster-python-interpret_392ddc",
+  "title": "Driving Toward A Faster Python Interpreter With Pyston",
+  "date": "2021-01-19",
+  "link": "https://www.pythonpodcast.com/pyston-fast-python-interpreter-episode-298",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530748146675433d45c03-bd5b-41c0-9840-88f38b5a63f7v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.42,
+    "start": 1758.855,
+    "text": "I'm wondering what you see as being the biggest challenges that you have experienced so far and some of the potential roadblocks that you foresee coming up in the, you know, months as far as the overa"
+   },
+   {
+    "score": 0.33,
+    "start": 337.955,
+    "text": "and the areas of improvement that you're have been able to see the biggest gains."
+   },
+   {
+    "score": 0.33,
+    "start": 491.21,
+    "text": "but has actually been 1 of our biggest wins is making attributes way faster to access."
+   }
+  ]
+ },
+ {
+  "key": "2021-01-12_project-scaffolding-that-evolves-with-yo_83f4e3",
+  "title": "Project Scaffolding That Evolves With Your Software Using Copier",
+  "date": "2021-01-12",
+  "link": "https://www.pythonpodcast.com/copier-project-scaffolding-episode-297",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525321294748296eba0417b-616a-45b4-9500-ebe76b9664f3v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 675.32,
+    "text": "alternatives, although these 2 are the biggest ones."
+   },
+   {
+    "score": 0.33,
+    "start": 1146.63,
+    "text": "tooling for my configuration."
+   },
+   {
+    "score": 0.33,
+    "start": 1478.06,
+    "text": "any tooling you want."
+   }
+  ]
+ },
+ {
+  "key": "2021-01-05_how-python-s-evolution-impacts-your-flue_b55cb9",
+  "title": "How Python's Evolution Impacts Your Fluency With Luciano Ramalho",
+  "date": "2021-01-05",
+  "link": "https://www.pythonpodcast.com/luciano-ramalho-python-evolution-episode-296",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530648570577978ef1636-4c60-4903-a552-7d66e16ebacav1.mp3",
+  "guests": [
+   "Luciano Ramalho"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 3155.54,
+    "text": "technology or some of the technology they developed over the years to do that."
+   },
+   {
+    "score": 0.33,
+    "start": 1069.995,
+    "text": "biggest changes that have occurred in the Python language and community in recent years, and I'll let you determine what that range actually is."
+   },
+   {
+    "score": 0.33,
+    "start": 1092.15,
+    "text": "And the biggest change that happened was actually in Python 3.5, which is was the addition of"
+   }
+  ]
+ },
+ {
+  "key": "2020-12-28_making-content-management-a-smooth-exper_bc280d",
+  "title": "Making Content Management A Smooth Experience With A Headless CMS",
+  "date": "2020-12-28",
+  "link": "https://www.pythonpodcast.com/buttercms-headless-cms-episode-295",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525314737814479b71fc959-047e-4dbc-8243-9bbe4f72af5cv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1492.06,
+    "text": "Python has become the default language for working with data, whether as a data scientist, data engineer, data analyst, or machine learning engineer."
+   },
+   {
+    "score": 0.33,
+    "start": 2143.49,
+    "text": "So the biggest surprise is just the breadth of industries."
+   },
+   {
+    "score": 0.25,
+    "start": 157.56,
+    "text": "Before we get too far into Butter CMS specifically, can you start by giving a bit of an overview about what a headless CMS is and how the use case and user experience differ for that as compared to tr"
+   }
+  ]
+ },
+ {
+  "key": "2020-12-21_turning-notebooks-into-collaborative-and_a35ed1",
+  "title": "Turning Notebooks Into Collaborative And Dynamic Data Applications With Hex",
+  "date": "2020-12-21",
+  "link": "https://www.pythonpodcast.com/hex-collaborative-notebooks-episode-294",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525299691147194949d3d0e-7bb2-4780-8d24-2ccfcba4aa77v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2013.769,
+    "text": "what are the trends in the tooling or capabilities or use cases for notebooks that you're keeping an eye on and that you're most excited for?"
+   },
+   {
+    "score": 0.5,
+    "start": 2168.9,
+    "text": "And in your experience of building the business and building the technology for it, what are some of the most interesting or unexpected or challenging lessons that you've learned in the process?"
+   },
+   {
+    "score": 0.33,
+    "start": 463.854,
+    "text": "And I really think that's sort of the gap"
+   }
+  ]
+ },
+ {
+  "key": "2020-12-15_add-anomaly-detection-to-your-time-serie_3be80c",
+  "title": "Add Anomaly Detection To Your Time Series Data With Luminaire",
+  "date": "2020-12-15",
+  "link": "https://www.pythonpodcast.com/luminaire-anomaly-detection-episode-293",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530624041038075e5a859-41b3-4acd-b6f4-79fc865c7877v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 2868.175,
+    "text": "As you look to the future of the project, what are some of the plans that you have for the near to medium term or any areas of contribution that you're looking for help from the community?"
+   },
+   {
+    "score": 0.25,
+    "start": 742.7,
+    "text": "And I'm wondering if you can maybe dig into some of the complexities that are inherent to anomaly detection that are not obvious at first glance and that are difficult to overcome or that are importan"
+   },
+   {
+    "score": 0.25,
+    "start": 1869.59,
+    "text": "common patterns that you've seen either internal to Zillow or from users of the open source project as to ways that it's being integrated and some of the sort of main use cases that people have been a"
+   }
+  ]
+ },
+ {
+  "key": "2020-12-07_building-big-data-pipelines-for-audio-wi_42b63c",
+  "title": "Building Big Data Pipelines For Audio With Klio",
+  "date": "2020-12-07",
+  "link": "https://www.pythonpodcast.com/klio-big-data-audio-pipelines-episode-292",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525305387211012f5eaa4fc-5ece-46b5-a9b3-69bd9fac50e2v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 174.685,
+    "text": "a lot of infrastructure tooling for developers to use for the language."
+   },
+   {
+    "score": 0.33,
+    "start": 189.105,
+    "text": "And so you mentioned that you've been responsible for a lot of the internal tooling."
+   },
+   {
+    "score": 0.33,
+    "start": 886.63,
+    "text": "There are some JVM based tooling"
+   }
+  ]
+ },
+ {
+  "key": "2020-12-01_open-sourcing-the-anvil-full-stack-pytho_12e0ef",
+  "title": "Open Sourcing The Anvil Full Stack Python Web App Platform",
+  "date": "2020-12-01",
+  "link": "https://www.pythonpodcast.com/anvil-open-source-web-app-server-episode-291",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530056826990595d01d1e-602f-4335-9c98-3847cbd0dc49v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1281.25,
+    "text": "Python has become the default language for working with data, whether as a data scientist, data engineer, data analyst, or machine learning engineer."
+   },
+   {
+    "score": 0.33,
+    "start": 2709.51,
+    "text": "in order to get as far as hello world on the world's biggest application platform."
+   },
+   {
+    "score": 0.25,
+    "start": 512.075,
+    "text": "integrating Streamlit into Anvil or what the sort of Venn diagram is between those tools and maybe some of the things that Streamlit doesn't solve for that Anvil is able to cover?"
+   }
+  ]
+ },
+ {
+  "key": "2020-11-23_pants-has-got-your-python-monorepo-cover_272a18",
+  "title": "Pants Has Got Your Python Monorepo Covered",
+  "date": "2020-11-23",
+  "link": "https://www.pythonpodcast.com/pants-monorepo-build-tool-episode-290",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525320785268340fdce5158-4c57-4174-af4a-e3a051940338v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 670.83,
+    "text": "scale at which you think it makes sense to use something like pants for actually managing your build tooling versus just using setup dot py or poetry or,"
+   },
+   {
+    "score": 0.33,
+    "start": 319.205,
+    "text": "The need for monorepo build tooling has become more obvious."
+   },
+   {
+    "score": 0.33,
+    "start": 564.91,
+    "text": "I think monorepos require good tooling."
+   }
+  ]
+ },
+ {
+  "key": "2020-11-17_scale-your-data-science-teams-with-machi_1d2cc0",
+  "title": "Scale Your Data Science Teams With Machine Learning Operations Principles",
+  "date": "2020-11-17",
+  "link": "https://www.pythonpodcast.com/machine-learning-operations-episode-289",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525317226330403a28ab3ba-400c-4ba9-9318-c469d3133ce6v1.mp3",
+  "guests": [
+   "Machine Learning Operations Principles"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 403.57,
+    "text": "There's a fairly robust set of tooling available for traditional application delivery for somebody who wants to put a web app into production or"
+   },
+   {
+    "score": 0.33,
+    "start": 2803.16,
+    "text": "And so as you look to the future of the work that you're doing on Tekton, what are some of the features that you have planned for that or direction that you wanna take the business?"
+   },
+   {
+    "score": 0.33,
+    "start": 225.575,
+    "text": "It's definitely interesting how the early generations of data tooling and capabilities"
+   }
+  ]
+ },
+ {
+  "key": "2020-11-10_making-the-case-for-a-semi-formal-specif_dc4405",
+  "title": "Making The Case For A (Semi) Formal Specification Of CPython",
+  "date": "2020-11-10",
+  "link": "https://www.pythonpodcast.com/cpython-formal-specification-episode-288",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525315866478482b56812e0-69d7-455b-bb4f-aea953dadd77v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 489.88,
+    "text": "the actual act of specifying a language, I'm wondering if you can give some context of other ecosystems and other run times that do have a more formalized specification and what you see as being the o"
+   },
+   {
+    "score": 0.33,
+    "start": 1722.01,
+    "text": "things such as with RFCs, where there are specific meanings around should or must, what your thoughts are on the level of detail and level of rigor that's necessary for this document?"
+   },
+   {
+    "score": 0.33,
+    "start": 426.889,
+    "text": "And I'm wondering if you can just talk through some of the potential benefits of what the specification might provide for people who are working on the CPython virtual machine and people who are worki"
+   }
+  ]
+ },
+ {
+  "key": "2020-11-03_bringing-artificial-intelligence-project_a7da56",
+  "title": "Bringing Artificial Intelligence Projects From Idea To Production",
+  "date": "2020-11-03",
+  "link": "https://www.pythonpodcast.com/henrik-landgren-artificial-intelligence-episode-287",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852532149540059879d78509-f974-4d25-b474-eeb01cdfc959v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 865.155,
+    "text": "or the the tooling, I would actually think about it as for the operators in the team"
+   },
+   {
+    "score": 0.4,
+    "start": 2164.435,
+    "text": "And I'm wondering what you have seen as some of the biggest or most interesting failures of AI that you're aware of."
+   },
+   {
+    "score": 0.33,
+    "start": 1614.945,
+    "text": "for instance, with Spotify, as you mentioned, you're collecting all of the event data from users of the platform where it's fairly clear cut that you're trying to understand what are some useful recom"
+   }
+  ]
+ },
+ {
+  "key": "2020-10-26_power-up-your-java-using-python-with-jpy_4ccd3c",
+  "title": "Power Up Your Java Using Python With JPype",
+  "date": "2020-10-26",
+  "link": "https://www.pythonpodcast.com/jpype-java-python-bridge-episode-286",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852531808038083179f84426-fd43-47d2-9883-cf1dd53a35bbv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1602.605,
+    "text": "Of course, the biggest difficulty with operating something where you've got these 2 virtual machines is gonna be memory management."
+   },
+   {
+    "score": 0.33,
+    "start": 2200.43,
+    "text": "But perhaps the biggest challenge that I had was just trying to basically add a Java slot"
+   },
+   {
+    "score": 0.25,
+    "start": 1814.03,
+    "text": "of how and when to start the JVM, are there any other potential pitfalls or sharp edges that users of J Pipe should be aware of?"
+   }
+  ]
+ },
+ {
+  "key": "2020-10-19_the-journey-to-replace-python-s-parser-a_bd150d",
+  "title": "The Journey To Replace Python's Parser And What It Means For The Future",
+  "date": "2020-10-19",
+  "link": "https://www.pythonpodcast.com/cpython-parser-replacement-episode-285",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253059353543314c264646-cba5-44a4-9883-7462a12d65b6v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.25,
+    "start": 896.325,
+    "text": "that might have been too difficult or too cumbersome or too daunting to do before this parser replacement?"
+   },
+   {
+    "score": 0.25,
+    "start": 1559.135,
+    "text": "very good collection of, you know, testing and exercising syntax errors, you know, some some strings and says, okay, is this invalid or is this sort of invalid?"
+   },
+   {
+    "score": 0.25,
+    "start": 1729.405,
+    "text": "To peg or to something different?"
+   }
+  ]
+ },
+ {
+  "key": "2020-10-12_cloud-native-application-delivery-using_54d035",
+  "title": "Cloud Native Application Delivery Using GitOps",
+  "date": "2020-10-12",
+  "link": "https://www.pythonpodcast.com/gitops-cloud-native-operations-episode-284",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525320687888449728b5a02-4a04-46ad-b83a-de90fcdf2126v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 1923.46,
+    "text": "downstream consumers of the tooling that you write or the work that you're doing as your customer helps to"
+   },
+   {
+    "score": 0.33,
+    "start": 234.65,
+    "text": "As you mentioned, now a lot of your attention is on the practices and tooling around GitOps."
+   },
+   {
+    "score": 0.33,
+    "start": 1404.135,
+    "text": "I'm using only Kubernetes as example because that's probably the biggest pain point right now, But that equally applies to anything else."
+   }
+  ]
+ },
+ {
+  "key": "2020-10-06_threading-the-needle-of-interesting-and_327c66",
+  "title": "Threading The Needle Of Interesting And Informative While You Learn To Code",
+  "date": "2020-10-06",
+  "link": "https://www.pythonpodcast.com/steven-lott-learn-to-code-episode-283",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525300294402600a0363290-facb-4700-89ce-374070b05a93v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2800.099,
+    "text": "there's a giant gap because there's very little technology on sailboats."
+   },
+   {
+    "score": 0.33,
+    "start": 201.405,
+    "text": "1 of the biggest ones that I wrestled with"
+   },
+   {
+    "score": 0.33,
+    "start": 481.78,
+    "text": "there's a a sort of a gap here because I'm not a real data scientist and I'm sometimes not even qualified to talk about the difference between a mean and a median because I'll get those things confuse"
+   }
+  ]
+ },
+ {
+  "key": "2020-09-29_solving-python-package-creation-for-end_d82f1f",
+  "title": "Solving Python Package Creation For End User Applications With PyOxidizer",
+  "date": "2020-09-29",
+  "link": "https://www.pythonpodcast.com/pyoxidizer-python-package-creation-episode-282",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253042528345197f3f7e41-7098-4d53-8a20-59ec75919479v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 972.605,
+    "text": "What is the overall workflow for getting started with packaging and building the binary and any of the potential edge cases or special considerations that they should be aware of as they're building t"
+   },
+   {
+    "score": 0.33,
+    "start": 415.21500000000003,
+    "text": "I think that the biggest challenge that exists in the Python ecosystem right now is that problem of being able"
+   },
+   {
+    "score": 0.33,
+    "start": 1079.04,
+    "text": "So 1 of the biggest hurdles for people who wish to use PyOxidvisor"
+   }
+  ]
+ },
+ {
+  "key": "2020-09-22_flexible-network-security-detection-and_147c4b",
+  "title": "Flexible Network Security Detection And Response With Grapl",
+  "date": "2020-09-22",
+  "link": "https://www.pythonpodcast.com/grapl-network-security-episode-282",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525299919063939d6f6f2c8-8a56-4560-94e2-3016c2384dafv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2703.975,
+    "text": "technology choices along the way, learning about graph databases or even graph algorithms, and that sort of thing was just really interesting and challenging."
+   },
+   {
+    "score": 0.33,
+    "start": 418.82,
+    "text": "And what was lacking in the existing ecosystem of tooling for this problem space that necessitated you building this entirely new system?"
+   },
+   {
+    "score": 0.33,
+    "start": 1223.785,
+    "text": "of what that functionality is, such as maybe the open FaaS for a Lambda replacement or just a generic queuing system for replacement of SQS and things like that?"
+   }
+  ]
+ },
+ {
+  "key": "2020-09-15_simplified-data-extraction-and-analysis_5ba193",
+  "title": "Simplified Data Extraction And Analysis For Current Events With Newspaper",
+  "date": "2020-09-15",
+  "link": "https://www.pythonpodcast.com/newspaper-data-extraction-episode-280",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385252977559478665e23ebe3-ee79-4511-8336-0d41ff2068a3v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.25,
+    "start": 453.105,
+    "text": "Digging more into the newspaper library itself, what are some of the main use cases that it was designed for and some of the ways that people are using it now that it's been released as open source?"
+   },
+   {
+    "score": 0.25,
+    "start": 945.765,
+    "text": "or should we just have better web standards?"
+   },
+   {
+    "score": 0.25,
+    "start": 1359.235,
+    "text": "or PyTorch or whatever it is that you're working with?"
+   }
+  ]
+ },
+ {
+  "key": "2020-09-07_digging-into-dagster-an-opinionated-open_ab4785",
+  "title": "Digging Into Dagster: An Opinionated Open Source Framework For Data Orchestration",
+  "date": "2020-09-07",
+  "link": "https://www.pythonpodcast.com/dagster-data-orchestration-episode-279",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525321328221431422492b4-cdbc-4464-8f5f-ec9f344fd13bv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 3500.285,
+    "text": "or, like, code style wars and just solving it with tooling is really important."
+   },
+   {
+    "score": 0.42,
+    "start": 352.675,
+    "text": "are running into and the conversations that you were having as you were deciding what to build next, what were some of the biggest challenges or most common issues that they were running into when try"
+   },
+   {
+    "score": 0.33,
+    "start": 245.17,
+    "text": "So I had this experience in developer tooling and when I left Facebook, I"
+   }
+  ]
+ },
+ {
+  "key": "2020-09-01_when-why-and-how-to-use-web-scraping-in_fecd36",
+  "title": "When, Why, and How To Use Web Scraping In A Nutshell",
+  "date": "2020-09-01",
+  "link": "https://www.pythonpodcast.com/web-scraping-essentials-episode-278",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530504911082819a8f6b9-b83c-4fdb-9201-659144445217v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 284.275,
+    "text": "can you give a bit more of a description about what it is and some of the reasons that you might want to use web scraping as opposed to using an API or pulling data from some sort of data dump or data"
+   },
+   {
+    "score": 0.33,
+    "start": 1822.125,
+    "text": "particularly with Scrapy, but also just in the general case, what are some of the common pitfalls or sharp edges that they're likely to run into for building the scraper, collecting the data, and also"
+   },
+   {
+    "score": 0.25,
+    "start": 464.139,
+    "text": "what was it that first got you involved in web scraping and that keeps you interested in the space to the point where you're acting as a technical evangelist for a company that is built entirely aroun"
+   }
+  ]
+ },
+ {
+  "key": "2020-08-25_working-in-the-code-mines-mining-softwar_4d69fd",
+  "title": "Working In The Code Mines: Mining Software Repositories With PyDriller",
+  "date": "2020-08-25",
+  "link": "https://www.pythonpodcast.com/pydriller-mining-software-repositories-episode-277",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525321837084924c6bbfd7d-ae7c-41b4-9d88-f37135d2825av1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2086.185,
+    "text": "to the code base itself or ways that you plan on using it for conducting your own research or building additional tooling on top of it or with it?"
+   },
+   {
+    "score": 0.33,
+    "start": 363.505,
+    "text": "So that that's I think it's that that it's the big advantage of of Pydriller, I think, and and the biggest difference with other tools."
+   },
+   {
+    "score": 0.25,
+    "start": 667.235,
+    "text": "the content that's stored in the repository itself to be able to gain any deeper insights or do some research that covers ground that isn't directly related to the specific code itself, but the ways t"
+   }
+  ]
+ },
+ {
+  "key": "2020-08-17_building-the-open-data-ecosystem-for-mus_369a6f",
+  "title": "Building The Open Data Ecosystem For Music And More At Metabrainz",
+  "date": "2020-08-17",
+  "link": "https://www.pythonpodcast.com/metabrainz-open-data-episode-276",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385253038107242572016ee5b-bb09-4dad-a6f0-52804ec5a06cv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1568.545,
+    "text": "tooling that you're using to help maintain some of that consistency"
+   },
+   {
+    "score": 0.33,
+    "start": 1689.73,
+    "text": "and it's it's really hard to displace it for any kind of tooling that we really need to build, and I don't really see that changing anytime soon."
+   },
+   {
+    "score": 0.33,
+    "start": 1713.075,
+    "text": "the development tooling and just some of the work that goes on to keep that relatively consistent with the other programs."
+   }
+  ]
+ },
+ {
+  "key": "2020-08-10_growing-dask-to-make-scaling-python-data_ca4f38",
+  "title": "Growing Dask To Make Scaling Python Data Science Easier At Coiled",
+  "date": "2020-08-10",
+  "link": "https://www.pythonpodcast.com/coiled-dask-python-data-science-episode-275",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525305974405911487c074d-e050-454c-bd19-754042ed1d5cv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.4,
+    "start": 2619.785,
+    "text": "I think the biggest 1 being that we can hand off, stuff to each other at the end of my day, and vice versa, and then when I get up, Matt or whoever else has has has worked a lot on it, and and I can m"
+   },
+   {
+    "score": 0.33,
+    "start": 1074.149,
+    "text": "of tooling in the JVM world."
+   },
+   {
+    "score": 0.33,
+    "start": 1128.795,
+    "text": "but I I do think there are huge gains to be made with the amount of data we we we have out there, and but we just don't have the tooling to deal with it."
+   }
+  ]
+ },
+ {
+  "key": "2020-08-04_supporting-the-full-lifecycle-of-machine_962b45",
+  "title": "Supporting The Full Lifecycle Of Machine Learning Projects With Metaflow",
+  "date": "2020-08-04",
+  "link": "https://www.pythonpodcast.com/metaflow-machine-learning-operations-episode-274",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525315444906498c3469e3c-1111-487b-b1ca-a74b1ee1b472v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2235.76,
+    "text": "what are the cases where Metaflow is the wrong choice and they would be better suited either using an existing off the shelf tool or building their own internal tooling?"
+   },
+   {
+    "score": 0.5,
+    "start": 196.535,
+    "text": "And as far as the infrastructure, are you talking about things like the underlying e c 2 instances that they're running on and some or some of the tooling that they rely on."
+   },
+   {
+    "score": 0.5,
+    "start": 779.73,
+    "text": "in terms of what specific machine learning tooling you are using or, any sort of, like, specific data store that you are interacting"
+   }
+  ]
+ },
+ {
+  "key": "2020-07-28_learning-to-program-by-building-tiny-pyt_8bbf32",
+  "title": "Learning To Program By Building Tiny Python Projects",
+  "date": "2020-07-28",
+  "link": "https://www.pythonpodcast.com/tiny-python-projects-book-episode-273",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852530736224489143e38c36-3b55-49b6-ab87-880c1bcfd0dfv1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.33,
+    "start": 1135.309,
+    "text": "of the students that you're working with and any early reviewers of your book, what are some of the types of problems that you see them run into as they're being introduced to these tools for testing "
+   },
+   {
+    "score": 0.33,
+    "start": 2094.27,
+    "text": "The the biggest 1 is object oriented programming."
+   },
+   {
+    "score": 0.33,
+    "start": 2369.155,
+    "text": "But I guess the biggest thing is is that I do completely stay away from objects."
+   }
+  ]
+ },
+ {
+  "key": "2020-07-21_idiomatic-functional-programming-with-dr_124d56",
+  "title": "Idiomatic Functional Programming With DRY Python",
+  "date": "2020-07-21",
+  "link": "https://www.pythonpodcast.com/dry-python-functional-programming-episode-272",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63852531794240142089d2debc-066d-4811-a6d5-ce3c6d06f418v1.mp3",
+  "guests": [
+   "DRY Python"
+  ],
+  "guest_source": "title",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.25,
+    "start": 367.724,
+    "text": "what are some of the notable elements and some of the reasons that you tend to take a more functional or domain driven approach to building your projects?"
+   },
+   {
+    "score": 0.25,
+    "start": 725.7,
+    "text": "what have you found to be some of the initial challenges or points of confusion that they experience?"
+   },
+   {
+    "score": 0.25,
+    "start": 1938.03,
+    "text": "why you feel that auto formatter such as YAPF or black are sort of doing a disservice to the developer and why that responsibility should lie with the person writing the code and just following the gu"
+   }
+  ]
+ },
+ {
+  "key": "2020-07-13_the-past-present-and-future-of-the-flufl_e8db50",
+  "title": "The Past, Present, And Future Of The FLUFL: Barry Warsaw Shares His History With Python",
+  "date": "2020-07-13",
+  "link": "https://www.pythonpodcast.com/barry-warsaw-the-flufl-episode-271",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525297238063017a91d3c73-5d05-438b-9d5b-09ee6636a3d8v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 2833.3,
+    "text": "So are there any other aspects of your work in Python or in technology as a whole or your engagement with the Python community or its impact on your life and career that we didn't discuss that you'd l"
+   },
+   {
+    "score": 0.33,
+    "start": 361.1,
+    "text": "I remember 1 of the biggest impetuses for that was,"
+   },
+   {
+    "score": 0.33,
+    "start": 1448.08,
+    "text": "council, and that is definitely 1 of the biggest shifts in recent memory for the language with Guido stepping down as the benevolent dictator and deferring to this new community structure that there w"
+   }
+  ]
+ },
+ {
+  "key": "2020-07-06_pure-python-configuration-management-wit_3dc5e1",
+  "title": "Pure Python Configuration Management With PyInfra",
+  "date": "2020-07-06",
+  "link": "https://www.pythonpodcast.com/pyinfra-configuration-management-episode-270",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525317757986664611ad6f0-fbec-4aec-bc3f-ccea1d4e8331v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 363.129,
+    "text": "And I'm wondering what your major pain points are in terms of dealing with the infrastructure that you're working on and some of the shortcomings that you see in terms of just the overall approach to "
+   },
+   {
+    "score": 0.33,
+    "start": 1616.105,
+    "text": "For people who are adopting Pyenvra, for, what are some of the edge cases or points of confusion that they should be aware of or that you see them commonly experience?"
+   },
+   {
+    "score": 0.33,
+    "start": 1675.765,
+    "text": "Historically, there's been a whole bunch of cultures, particularly with there was like, the ordering of the operations, I think, was the the biggest culture ever."
+   }
+  ]
+ },
+ {
+  "key": "2020-06-30_build-your-own-domain-specific-language_a5a3fb",
+  "title": "Build Your Own Domain Specific Language in Python With textX",
+  "date": "2020-06-30",
+  "link": "https://www.pythonpodcast.com/textx-domain-specific-language-episode-269",
+  "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638525302459444048dd689e93-9fe5-43f1-aaa6-3c05259de569v1.mp3",
+  "guests": [],
+  "guest_source": "",
+  "has_transcript": true,
+  "transcript_source": "feed",
+  "found": false,
+  "reason": "question not found",
+  "method": "",
+  "confidence": 0.0,
+  "answer": "",
+  "summary": "",
+  "quote": "",
+  "start": null,
+  "people": [],
+  "entities": [],
+  "themes": [],
+  "hints": [
+   {
+    "score": 0.5,
+    "start": 1178.71,
+    "text": "needs as far as tooling or overall ecosystem"
+   },
+   {
+    "score": 0.33,
+    "start": 1892.29,
+    "text": "I'm curious what your experience has been as far as how frequently people will actually go that extra mile to build additional ecosystem tooling for their languages and and just the overall need for i"
+   },
+   {
+    "score": 0.33,
+    "start": 440.94,
+    "text": "It's built into the the the tooling platform into the compiler that enables"
+   }
+  ]
+ }
+]

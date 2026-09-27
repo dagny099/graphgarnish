@@ -28,5 +28,15 @@
   "episodes": 352,
   "with_transcript": 350,
   "answered": 133
+ },
+ {
+  "path": "data-engineering-podcast-biggest-gap/graph.json",
+  "podcast": "Data Engineering Podcast",
+  "podcast_id": "data-engineering-podcast",
+  "question_id": "biggest-gap",
+  "question": "What do you see as the biggest gap in the tooling or technology for data management today?",
+  "episodes": 120,
+  "with_transcript": 120,
+  "answered": 0
  }
 ]
