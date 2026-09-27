@@ -32,10 +32,10 @@
    "Shane Gibson"
   ],
   "node_types": {
-   "episode": 352,
-   "person": 295,
    "answer": 168,
-   "entity": 93,
+   "episode": 352,
+   "entity": 78,
+   "person": 291,
    "question": 1
   },
   "link_types": {
@@ -43,9 +43,9 @@
    "ANSWERS": 168,
    "FROM_EPISODE": 168,
    "GAVE": 156,
-   "MENTIONS": 254,
-   "RECOMMENDS": 123,
-   "SIMILAR_TO": 11
+   "MENTIONS": 229,
+   "RECOMMENDS": 118,
+   "SIMILAR_TO": 51
   }
  },
  "nodes": [
@@ -303,7 +303,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/26bf6323-6060-458c-aabf-b459002cdd96/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 2
+   "degree": 3
   },
   {
    "id": "ep_2026-05-20_pragmatic-use-case-driven-data-governanc_dd9a60",
@@ -358,7 +358,7 @@
    "type": "entity",
    "name": "LinkedIn",
    "kind": "other",
-   "degree": 17
+   "degree": 12
   },
   {
    "id": "ep_2026-05-15_data-catalyst-governance-change-manageme_e68eaf",
@@ -397,7 +397,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3684f78f-3baf-4fd4-8b1e-b44b018116fb/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "person_tony_shaw",
@@ -437,15 +437,15 @@
    "guests": [
     "Victoria Gamerman"
    ],
-   "text": "Next guest, goodness, geez. Maybe some folks who are really in the space of or someone who has used AI to actually extract that knowledge and has caption and invisible process. But I have a feeling that we're all still on that journey. And advice, I think, Tim, at the start of this, you had mentioned the word curiosity and learning. And I think to me, that's really where we are. We're learning. Things are remix. And so that is the opportunity for us to sort of stay curious and stay open. And I think we have to be cautious. But in a way, it's no longer, if we use AI in our world, it's really how we use it best. That's it. Victoria, such a pleasure. I'm looking forward to doing a part two of this because there's so",
+   "text": "Next guest, goodness, geez. Maybe some folks who are really in the space of or someone who has used AI to actually extract that knowledge and has caption and invisible process. But I have a feeling that we're all still on that journey.",
    "summary": "",
-   "quote": "Next guest, goodness, geez. Maybe some folks who are really in the space of or someone who has used AI to actually extract that knowledge and has caption and invisible process. But I have a feeling that we're all still on that journey. And advice, I think, Tim, at the start of this, you had mentioned the word curiosity and",
+   "quote": "Next guest, goodness, geez. Maybe some folks who are really in the space of or someone who has used AI to actually extract that knowledge and has caption and invisible process. But I have a feeling that we're all still on that journey.",
    "start": 2382.6,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/69e0f5de-04fa-4897-a599-b443010ddd4d/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 4
   },
   {
    "id": "ep_2026-05-01_ai-appetite-is-easy-digestion-is-hard-wi_4c2ca5",
@@ -518,15 +518,15 @@
     "Amalia Child",
     "Jenna Jordan"
    ],
-   "text": "advice uh i'll do uh three quick things do what gives you joy find and build community and then my personal motto that i feel like i have to remind myself of always is check all assumptions that's love that that's that that's a t-shirt right there check i think my advice which is also a resource maybe um and then i'll hand it off to Jennifer recommendation for the pod is if you are not a LinkedIn person and i'm not uh do check out sub stack i think it's been really nice to engage differently with a lot of the same voices who have a lot to say in more maybe long form um i know i think one you're on there uh a lot of the big names are and in data that you might want to",
+   "text": "advice uh i'll do uh three quick things do what gives you joy find and build community and then my personal motto that i feel like i have to remind myself of always is check all assumptions that's love that that's that that's a t-shirt right there check",
    "summary": "",
-   "quote": "advice uh i'll do uh three quick things do what gives you joy find and build community and then my personal motto that i feel like i have to remind myself of always is check all assumptions that's love that that's that that's a t-shirt right there check i think my advice which is also a resource maybe um and",
+   "quote": "advice uh i'll do uh three quick things do what gives you joy find and build community and then my personal motto that i feel like i have to remind myself of always is check all assumptions that's love that that's that that's a t-shirt right there check",
    "start": 2955.5,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2f4d708d-d0d4-4e97-99b7-b42a016d88c6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2026-04-09_the-void-between-data-and-decisions-with_b0cca6",
@@ -727,7 +727,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3b46cb96-305f-4790-85d9-b40a0118fdba/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "person_dila_nanderson",
@@ -854,7 +854,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/105df32d-f6e7-48c7-a0e6-b3f6004f1d2c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 5
   },
   {
    "id": "ep_2026-02-12_the-way-we-build-agents-today-is-dumb-wi_dade2e",
@@ -905,7 +905,7 @@
    "roles": [
     "guest"
    ],
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "ans_2026-02-05_stop-chasing-ai-hype-start-counting-doll_0d54cc",
@@ -916,24 +916,15 @@
    "guests": [
     "Juan Gorricho"
    ],
-   "text": "It's a people organization problem. So the better you are at that in terms of having the empathy to build relationships with your stakeholders and your leaders and your teams, you're going to be more. That's the advice I gave, like young data people who reach out to me for advice, like the tech stuff is the easy part is the people stuff is the heart, like you're successful via people person, right? Who should you invite? I don't know if you guys know Roman Stanek, CEO of Good Data. He's awesome. Roman's great. Can I talk a lot? Good data is a very interesting company. He's been in the BI, AI space. So, but the way he thinks about this stuff is very similar to what we've talked about. So I would encourage you to invite Roman next",
+   "text": "It's a people organization problem. So the better you are at that in terms of having the empathy to build relationships with your stakeholders and your leaders and your teams, you're going to be more.",
    "summary": "",
-   "quote": "It's a people organization problem. So the better you are at that in terms of having the empathy to build relationships with your stakeholders and your leaders and your teams, you're going to be more. That's the advice I gave, like young data people who reach out to me for advice, like the tech stuff is the easy part is",
+   "quote": "It's a people organization problem. So the better you are at that in terms of having the empathy to build relationships with your stakeholders and your leaders and your teams, you're going to be more.",
    "start": 3169.1,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4db5e719-2c96-471a-a3e7-b3e70162dd89/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
    "degree": 4
-  },
-  {
-   "id": "person_roman_stanek",
-   "type": "person",
-   "name": "Roman Stanek",
-   "roles": [
-    "mentioned"
-   ],
-   "degree": 2
   },
   {
    "id": "ep_2026-01-30_it-s-friday-juan-and-tim-rant-with-data_50cff1",
@@ -964,7 +955,7 @@
    "roles": [
     "guest"
    ],
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ans_2026-01-29_all-things-data-lineage-with-dr-irina-st_236309",
@@ -975,7 +966,7 @@
    "guests": [
     "Dr. Irina Steenbeek"
    ],
-   "text": "You know, I would recommend you to invite Christina Haskell. She's my colleague from years. I can share with you the name later. She is a very famous or well-known specialist in AI governance and also AI culture. And I think it would be nice if you'd like to continue the AI story. I would really provide you with the name and they really would recommend you to contact her. That would be great, man. My sources, oh, it's interesting. Mainly LinkedIn, yes, or finally, but I do on LinkedIn, so simply review what happens in the industry. Inside gems, it's also something that I follow up. Do I read books? I can take a book, yeah, but honestly, maybe not. For me, one of the biggest sources of all of my developments is talking to professionals. It's really what",
+   "text": "You know, I would recommend you to invite Christina Haskell. She's my colleague from years. I can share with you the name later. She is a very famous or well-known specialist in AI governance and also AI culture. And I think it would be nice if you'd like to continue the AI story. I would really provide you with the name and they really would recommend you to contact her. That would be great, man. My sources, oh, it's interesting.",
    "summary": "",
    "quote": "You know, I would recommend you to invite Christina Haskell. She's my colleague from years. I can share with you the name later. She is a very famous or well-known specialist in AI governance and also AI culture. And I think it would be nice if you'd like to continue the AI story. I would really provide you with the",
    "start": 3350.3,
@@ -989,15 +980,6 @@
    "id": "person_christina_haskell",
    "type": "person",
    "name": "Christina Haskell",
-   "roles": [
-    "mentioned"
-   ],
-   "degree": 2
-  },
-  {
-   "id": "person_mainly_linkedin",
-   "type": "person",
-   "name": "Mainly LinkedIn",
    "roles": [
     "mentioned"
    ],
@@ -1098,7 +1080,7 @@
    "type": "entity",
    "name": "IBM",
    "kind": "other",
-   "degree": 2
+   "degree": 1
   },
   {
    "id": "ep_2026-01-08_season-11-premiere-what-happened-in-2025_f46dc2",
@@ -1148,7 +1130,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f8e54f68-a4c2-4030-9509-b3b600881696/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "person_simon_willison",
@@ -1189,7 +1171,7 @@
    "guests": [
     "Arielle Rolland"
    ],
-   "text": "my good friend Alex Gonshi he has a longer than last name but then he's been a lot on data product and and data measurements he's my technical partner in crime in the space so even if we are mostly friends we tend to geek out on data mesh and data product he's a great guy to talk to then my advice is who lately as i've been i've been looking a lot on the metadata model and i think here i think my advice would be i would kick off with building your metadata model as soon as you can so then if you want to be ready to enable i guess data product at scale and then start to be AI ready with your con i guess what they call you know the contextual contextual data then i",
+   "text": "my good friend Alex Gonshi he has a longer than last name but then he's been a lot on data product and and data measurements he's my technical partner in crime in the space so even if we are mostly friends we tend to geek out on data mesh and data product he's a great guy to talk to then my advice is who lately as i've been i've been looking a lot on the metadata model and i think here",
    "summary": "",
    "quote": "my good friend Alex Gonshi he has a longer than last name but then he's been a lot on data product and and data measurements he's my technical partner in crime in the space so even if we are mostly friends we tend to geek out on data mesh and data product he's a great guy to talk to then",
    "start": 3151.1,
@@ -1332,7 +1314,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d00f2590-58d3-44e4-b81b-b3930032fc03/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 6
   },
   {
    "id": "ent_dbt",
@@ -1604,7 +1586,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/aeb35abf-6ad5-48a7-a4eb-b387002e2556/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 6
   },
   {
    "id": "ent_nasa",
@@ -1675,7 +1657,7 @@
    "type": "entity",
    "name": "LLM",
    "kind": "other",
-   "degree": 1
+   "degree": 2
   },
   {
    "id": "ent_gpt",
@@ -1832,7 +1814,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/ce717454-40be-4ffb-8799-b387002e30c2/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 6
   },
   {
    "id": "person_eric_broda",
@@ -2032,7 +2014,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d23b1553-0d42-478c-8993-b387002e3a02/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "person_dave_wells",
@@ -2103,7 +2085,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/7cae9586-1b2f-4322-a3bd-b387002e5c0b/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 4
   },
   {
    "id": "ep_2025-01-16_takeaways-data-ai-business-literacy-with_01b951",
@@ -2237,15 +2219,15 @@
    "guests": [
     "Nicola Askham"
    ],
-   "text": "She's great fun. Or Dr. Joe Perez that I was talking about, they would both be very good, I'm sure. And what do I follow? There's so much stuff out there. I think Dharma as an organization is, I was on the Dharma UK board for 13 years, so I'm somewhat biased, but I do think Dharma is a good one. Join your local chapter, get along to events and meet people through that. I think that's very good. You don't have to join the one in your country, so Dharma UK does actually do quite a lot of good content and things on LinkedIn, so follow them anyway. I think data verstities always been really good. I've always liked their content. Conferences is a hard one, there are so many of them these days, but I would just make",
+   "text": "She's great fun. Or Dr. Joe Perez that I was talking about, they would both be very good, I'm sure.",
    "summary": "",
-   "quote": "She's great fun. Or Dr. Joe Perez that I was talking about, they would both be very good, I'm sure. And what do I follow? There's so much stuff out there. I think Dharma as an organization is, I was on the Dharma UK board for 13 years, so I'm somewhat biased, but I do think Dharma is a good",
+   "quote": "She's great fun. Or Dr. Joe Perez that I was talking about, they would both be very good, I'm sure.",
    "start": 3243.7,
    "method": "fuzzy",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/65f4b24d-48ef-4ff0-86ac-b387002e6619/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_joe_perez",
@@ -2255,13 +2237,6 @@
     "mentioned"
    ],
    "degree": 2
-  },
-  {
-   "id": "ent_dharma_uk",
-   "type": "entity",
-   "name": "Dharma UK",
-   "kind": "other",
-   "degree": 1
   },
   {
    "id": "ep_2024-11-27_takeaways-stop-talking-about-data-govern_e6ce0f",
@@ -2311,7 +2286,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/65e6eef9-4aad-4386-8411-b387002e7519/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 6
   },
   {
    "id": "person_matthew_bean",
@@ -2447,7 +2422,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/53392e31-1cf1-41b9-99fd-b387002e9e34/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "ent_jb_bloom",
@@ -2485,7 +2460,7 @@
    "roles": [
     "guest"
    ],
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2024-10-17_streamlining-data-value-with-colleen-tar_e7bad1",
@@ -2501,44 +2476,21 @@
   {
    "id": "ans_2024-10-17_streamlining-data-value-with-colleen-tar_e7bad1",
    "type": "answer",
-   "name": "Okay, so who should you have on? I don't think you've had Lindsey Murphy on. I would say L",
+   "name": "Okay, so who should you have on? I don't think you've had Lindsey Murphy on.",
    "date": "2024-10-17",
    "episode": "Streamlining Data Value with Colleen Tartow, Ph.D.",
    "guests": [
     "Colleen Tartow"
    ],
-   "text": "Okay, so who should you have on? I don't think you've had Lindsey Murphy on. I would say Lindsey Murphy. Most of my like nerding out with Monica Miller is amazing. I think she's actually, I think I saw her make a comment. Yeah, she actually left a comment that's awesome. Yeah, she's awesome. Who else? Selena Wong is really amazing. She is the CEO of Data Culture. She sees a lot of different industries through her consulting work. Yeah, there's three for you. Perfect. Love it. Thank you. And so I've been following Lindsey. So definitely, so Lindsey, if you're listening or we can set this episode. Selena, I've met her in passing at the conferences in culture. And Monica, if you're listening, we'll reach out to you soon. So cool. Awesome.",
+   "text": "Okay, so who should you have on? I don't think you've had Lindsey Murphy on.",
    "summary": "",
-   "quote": "Okay, so who should you have on? I don't think you've had Lindsey Murphy on. I would say Lindsey Murphy. Most of my like nerding out with Monica Miller is amazing. I think she's actually, I think I saw her make a comment. Yeah, she actually left a comment that's awesome. Yeah, she's awesome. Who else? Selena Wong is really",
+   "quote": "Okay, so who should you have on? I don't think you've had Lindsey Murphy on.",
    "start": 3216.7,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/20b70bb3-edf5-43bc-a395-b387002ea53a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
-  },
-  {
-   "id": "person_selena_wong",
-   "type": "person",
-   "name": "Selena Wong",
-   "roles": [
-    "mentioned"
-   ],
-   "degree": 2
-  },
-  {
-   "id": "ent_monica_miller",
-   "type": "entity",
-   "name": "Monica Miller",
-   "kind": "other",
-   "degree": 1
-  },
-  {
-   "id": "ent_ceo_of_data_culture",
-   "type": "entity",
-   "name": "CEO of Data Culture",
-   "kind": "other",
-   "degree": 1
+   "degree": 4
   },
   {
    "id": "ep_2024-10-10_the-power-of-active-metadata-with-mike-e_5c1865",
@@ -2694,15 +2646,15 @@
    "guests": [
     "Dael Williamson"
    ],
-   "text": "and I don't know how you're going to get him on, but if you did, it would be like gangster, is Bill Gurley. So he's like amazing. I listen to quite a lot of his talks and stuff, but it's, he belongs to like the Santa Fe Institute, and he's very much into the sort of complexity theory stuff as a biochemistry. I really appreciate that stuff.",
+   "text": "and I don't know how you're going to get him on, but if you did, it would be like gangster, is Bill Gurley. So he's like amazing.",
    "summary": "",
-   "quote": "and I don't know how you're going to get him on, but if you did, it would be like gangster, is Bill Gurley. So he's like amazing. I listen to quite a lot of his talks and stuff, but it's, he belongs to like the Santa Fe Institute, and he's very much into the sort of complexity theory stuff as",
+   "quote": "and I don't know how you're going to get him on, but if you did, it would be like gangster, is Bill Gurley. So he's like amazing.",
    "start": 3191.6,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/9173e55c-8cb1-4c3d-bb69-b387002ec470/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_bill_gurley",
@@ -2712,13 +2664,6 @@
     "mentioned"
    ],
    "degree": 2
-  },
-  {
-   "id": "ent_santa_fe_institute",
-   "type": "entity",
-   "name": "Santa Fe Institute",
-   "kind": "other",
-   "degree": 1
   },
   {
    "id": "ep_2024-09-26_takeaways-why-data-ai-needs-to-embrace-i_18bcd6",
@@ -2801,9 +2746,9 @@
    "guests": [
     "Amalia Child"
    ],
-   "text": "Okay, two pieces of advice. One, it came from this exercise, which is like read the whole book. It's never served me wrong to just actually go read the whole book and do that homework. And a lot of like historical and technical books tend to be, I'm sorry, I'm the light of my house is shifting. Historical and technical books tend to be more entertaining and have like more personality than you'd expect. And this is one example of those. And then my other piece of advice is more life advice. And all my friends, if they listened to this, will laugh at me, but try weightlifting if you haven't already. I'm doing it to prevent osteoporosis. Honestly. Try with lifting. Yeah, that's where I'm late. I need to go to my gym right now to go do that.",
+   "text": "Okay, two pieces of advice. One, it came from this exercise, which is like read the whole book. It's never served me wrong to just actually go read the whole book and do that homework. And a lot of like historical and technical books tend to be, I'm sorry, I'm the light of my house is shifting.",
    "summary": "",
-   "quote": "Okay, two pieces of advice. One, it came from this exercise, which is like read the whole book. It's never served me wrong to just actually go read the whole book and do that homework. And a lot of like historical and technical books tend to be, I'm sorry, I'm the light of my house is shifting. Historical and technical",
+   "quote": "Okay, two pieces of advice. One, it came from this exercise, which is like read the whole book. It's never served me wrong to just actually go read the whole book and do that homework. And a lot of like historical and technical books tend to be, I'm sorry, I'm the light of my house is shifting.",
    "start": 3850.4,
    "method": "cue",
    "confidence": 1.0,
@@ -2829,7 +2774,7 @@
    "roles": [
     "guest"
    ],
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ans_2024-09-05_building-diversity-in-data-with-dawn-car_b36e51",
@@ -2840,7 +2785,7 @@
    "guests": [
     "Dawn Carter"
    ],
-   "text": "I would recommend anyone from a company called Hertility to come and talk about some of the great work that they are doing around females, female reproductive systems, the lack of data around female medical health. It's just phenomenal the work that they are doing. But from an electricity perspective and getting people to talk about data and really being open about what data is and not scaling people. I'd recommend Greg Freeman from the Data Electricity Academy and to shout out to the work that Greg's doing in our organization and things to follow. I'm a big advocate of women in data, so go and follow them. But also some of the other podcasts like Let's Talk Data, I was fortunate enough to be on one of their podcasts earlier on this year. But the work that Mirai Talon",
+   "text": "I would recommend anyone from a company called Hertility to come and talk about some of the great work that they are doing around females, female reproductive systems, the lack of data around female medical health. It's just phenomenal the work that they are doing. But from an electricity perspective and getting people to talk about data and really being open about what data is and not scaling people. I'd recommend Greg Freeman from the Data Electricity Academy and to shout out to the work that Greg's doing in our organization and things to follow. I'm a big advocate of women in data, so go and follow them. But also some of the other",
    "summary": "",
    "quote": "I would recommend anyone from a company called Hertility to come and talk about some of the great work that they are doing around females, female reproductive systems, the lack of data around female medical health. It's just phenomenal the work that they are doing. But from an electricity perspective and getting people to talk about data and really being",
    "start": 3580.8,
@@ -2854,15 +2799,6 @@
    "id": "person_greg_freeman",
    "type": "person",
    "name": "Greg Freeman",
-   "roles": [
-    "mentioned"
-   ],
-   "degree": 2
-  },
-  {
-   "id": "person_mirai_talon",
-   "type": "person",
-   "name": "Mirai Talon",
    "roles": [
     "mentioned"
    ],
@@ -2904,9 +2840,9 @@
    "guests": [
     "Tiankai Feng"
    ],
-   "text": "I would have two people from Germany who might be good. One is Marco Goyer, he is a data strategy expert as well. And Jonas Rochaidi, though they are pretty, I would say present in the German data management community. But I think they could deserve that space also on the more international space. Thank you for calling them out.",
+   "text": "I would have two people from Germany who might be good. One is Marco Goyer, he is a data strategy expert as well. And Jonas Rochaidi, though they are pretty,",
    "summary": "",
-   "quote": "I would have two people from Germany who might be good. One is Marco Goyer, he is a data strategy expert as well. And Jonas Rochaidi, though they are pretty, I would say present in the German data management community. But I think they could deserve that space also on the more international space. Thank you for calling them out.",
+   "quote": "I would have two people from Germany who might be good. One is Marco Goyer, he is a data strategy expert as well. And Jonas Rochaidi, though they are pretty,",
    "start": 2991.0,
    "method": "cue",
    "confidence": 1.0,
@@ -2956,42 +2892,21 @@
   {
    "id": "ans_2024-08-22_who-is-doing-the-data-product-management_5c79df",
    "type": "answer",
-   "name": "And what resources do you follow? Oh, okay. What's my advice? My advice is to to use writi",
+   "name": "And what resources do you follow? Oh, okay.",
    "date": "2024-08-22",
    "episode": "Who is doing the Data Product Management work? with Anna Bergevin",
    "guests": [
     "Anna Bergevin"
    ],
-   "text": "And what resources do you follow? Oh, okay. What's my advice? My advice is to to use writing to clarify your ideas before you start building anything. I said I use JNI to write PRDs. But like, it's a very conversational, like it's not just me going, imagine this solution and build a thing. And then I often have to edit what the PRD gets written. I think often when I go to write something out, that's when it clarifies for me. What's missing? What assumptions are people not talking about? Hey, this doesn't make sense. Even if that artifact is just for me, even if it never suits the light of day. And even with all the ways I use AI to shortcut things, I still end up writing and and rewriting. Even if I use AI to assist",
+   "text": "And what resources do you follow? Oh, okay.",
    "summary": "",
-   "quote": "And what resources do you follow? Oh, okay. What's my advice? My advice is to to use writing to clarify your ideas before you start building anything. I said I use JNI to write PRDs. But like, it's a very conversational, like it's not just me going, imagine this solution and build a thing. And then I often have to",
+   "quote": "And what resources do you follow? Oh, okay.",
    "start": 3736.0,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/48408a79-eb10-4262-b3f1-b387002f2128/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
-  },
-  {
-   "id": "ent_jni",
-   "type": "entity",
-   "name": "JNI",
-   "kind": "other",
-   "degree": 1
-  },
-  {
-   "id": "ent_prds",
-   "type": "entity",
-   "name": "PRDs",
-   "kind": "other",
-   "degree": 1
-  },
-  {
-   "id": "ent_prd",
-   "type": "entity",
-   "name": "PRD",
-   "kind": "other",
-   "degree": 1
+   "degree": 3
   },
   {
    "id": "ep_2024-08-22_takeaways-who-is-doing-the-data-product_d4bf0a",
@@ -3402,7 +3317,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/15a9b132-eaf6-4e54-ab57-b387002f70e6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "person_sada_griazzi",
@@ -3574,7 +3489,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2ef244c6-07b6-40f8-8a85-b387002f99a3/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 6
   },
   {
    "id": "ep_2024-02-26_don-t-lift-and-shift-data-governance-to_e078c2",
@@ -3808,7 +3723,7 @@
    "roles": [
     "mentioned"
    ],
-   "degree": 5
+   "degree": 3
   },
   {
    "id": "person_from_australia",
@@ -3856,7 +3771,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/9ade05ba-0920-40f4-9c07-b387002fc4ff/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "person_gary_cretchmar",
@@ -4125,15 +4040,15 @@
    "guests": [
     "Mike Dillinger"
    ],
-   "text": "Advice. Chase down the meanings. Don't rely on strings. We really want to make, need to make sure that the machine knows what things mean, not just us. So that's the advice. Who should we talk to next? I'll have to get back through on that one. How about topics? Any topics? Yeah, topics Yeah, there are lots of, there are some good topics. I think we need more research into the different ways that we can leverage knowledge graphs. And there's a huge amount of research that I haven't been able to synthesize yet on how we can build knowledge graphs. I think it's clear from the things that I've been reading that there's a growing consensus that knowledge graphs are going to play a very important role. And then the next question is, how do we figure out",
+   "text": "Advice. Chase down the meanings. Don't rely on strings. We really want to make, need to make sure that the machine knows what things mean, not just us.",
    "summary": "",
-   "quote": "Advice. Chase down the meanings. Don't rely on strings. We really want to make, need to make sure that the machine knows what things mean, not just us. So that's the advice. Who should we talk to next? I'll have to get back through on that one. How about topics? Any topics? Yeah, topics Yeah, there are lots of, there",
+   "quote": "Advice. Chase down the meanings. Don't rely on strings. We really want to make, need to make sure that the machine knows what things mean, not just us.",
    "start": 3799.2,
    "method": "fuzzy",
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2d430592-e74c-49a3-8053-b387003003b3/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 4
   },
   {
    "id": "ep_2023-10-24_data-catalogs-the-power-of-collaboration_3c8d00",
@@ -4166,7 +4081,7 @@
    "degree": 4
   },
   {
-   "id": "ent_data_storytellers",
+   "id": "ent_data_storyteller",
    "type": "entity",
    "name": "Data Storytellers",
    "kind": "other",
@@ -4362,7 +4277,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4102476f-e087-4b20-8531-b38700305f31/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 6
   },
   {
    "id": "ep_2023-09-14_tim-and-juan-rant-from-amsterdam-where-i_c5ef85",
@@ -4412,7 +4327,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/fb35c53f-e8a3-41e6-bb25-b387003068eb/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 7
   },
   {
    "id": "person_chad_sanderson",
@@ -4537,7 +4452,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d6b19e82-6cd2-4edc-84ce-b38700307b74/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 8
   },
   {
    "id": "ent_samaya_raman",
@@ -4590,7 +4505,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/fe644968-f237-4797-b287-b3870030797a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 8
   },
   {
    "id": "ep_2023-08-17_juan-and-tim-rant-about-ai-and-chatting_603b85",
@@ -4671,7 +4586,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/45e58d1e-a4dc-494a-ba86-b38700308f7a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 12
   },
   {
    "id": "person_mulvam_rov",
@@ -4732,7 +4647,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/028ce088-ab6e-4cdd-a07b-b38700309520/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 12
   },
   {
    "id": "person_moham_arif",
@@ -4831,7 +4746,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/206d01c9-5342-4a20-8f00-b3870030a6d1/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 10
+   "degree": 11
   },
   {
    "id": "person_john_zachman",
@@ -4927,7 +4842,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/359be594-4c8b-45c3-a48e-b3870030b531/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 8
   },
   {
    "id": "ep_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
@@ -4947,7 +4862,7 @@
    "roles": [
     "guest"
    ],
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
@@ -4958,7 +4873,7 @@
    "guests": [
     "Joe Reis"
    ],
-   "text": "I think Ethan Aaron and Kevin, who and those guys would be amazing to have along. That's coming soon. Cool. Yeah, there's a lot of people. And yeah, I'm sure I'll have some more. I'm about to start another world tour a few weeks. So I'm sure I'll be able to recommend a lot more people that I want to I want to recommend people off the beaten path. I think there's like the LinkedIn kind of filter bubble, but there's a lot of interesting people I meet who you probably haven't heard of before. A guy, John Giles, would be fascinating for you to have on the show. His last name is G-E-I-L-E-S. Yes, he's not Australia. He's amazing. He's like Yoda when it comes to data modeling. You would love him. I think he lives in rural Australia",
+   "text": "I think Ethan Aaron and Kevin, who and those guys would be amazing to have along. That's coming soon. Cool. Yeah, there's a lot of people. And yeah, I'm sure I'll have some more. I'm about to start another world tour a few weeks. So I'm sure I'll be able to recommend a lot more people that I want to I want to recommend people off the beaten path. I think there's like",
    "summary": "",
    "quote": "I think Ethan Aaron and Kevin, who and those guys would be amazing to have along. That's coming soon. Cool. Yeah, there's a lot of people. And yeah, I'm sure I'll have some more. I'm about to start another world tour a few weeks. So I'm sure I'll be able to recommend a lot more people that I want to",
    "start": 3793.6,
@@ -4966,7 +4881,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/b7d16be2-f0b7-42ed-84b1-b3870030b46f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "ep_2023-07-06_catalogs-cocktails-live-from-snowflake-s_0de617",
@@ -5111,7 +5026,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3b7c97a7-3436-4664-ad47-b3870030c6ef/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 4
   },
   {
    "id": "ep_2023-05-25_takeaways-with-ben-clinch-from-bt-group_a9e7e0",
@@ -5312,7 +5227,7 @@
    "guests": [
     "Alex Vayner"
    ],
-   "text": "So the most, this is gonna be challenge one. On the most interesting man in the world in my opinion is Tyler Cowan, he's a professor of economics and George Mason and he has a podcast as well. He's an economist and, you know, he has, he's just a brilliant, brilliant person. So he's not a data scientist and a little professional, but if you can get him on, I would recommend, I follow him religiously. This is kind of leading to the next question, what do I read or listen to, whatever. So Tyler's podcast is number one. I used to be a big fan of Eric Weinstein when he ran the portal. I don't know if you're familiar with him. He's a Harvard PhD mathematician that used to work for Beertile, Beertile as an MD in his venture",
+   "text": "So the most, this is gonna be challenge one. On the most interesting man in the world in my opinion is Tyler Cowan, he's a professor of economics and George Mason and he has a podcast as well. He's an economist and, you know, he has, he's just a brilliant, brilliant person. So he's not a data scientist and a little professional, but if you can get him on, I would recommend,",
    "summary": "",
    "quote": "So the most, this is gonna be challenge one. On the most interesting man in the world in my opinion is Tyler Cowan, he's a professor of economics and George Mason and he has a podcast as well. He's an economist and, you know, he has, he's just a brilliant, brilliant person. So he's not a data scientist and a",
    "start": 3380.7,
@@ -5339,13 +5254,6 @@
     "mentioned"
    ],
    "degree": 2
-  },
-  {
-   "id": "ent_eric_weinstein",
-   "type": "entity",
-   "name": "Eric Weinstein",
-   "kind": "other",
-   "degree": 1
   },
   {
    "id": "ep_2023-04-27_takeaways-with-alex-vayner-from-kpmg-us_3a7e06",
@@ -5395,7 +5303,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/c18788c8-9664-459a-abfd-b38700310adb/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 8
   },
   {
    "id": "person_michael_bronstein",
@@ -5576,13 +5484,6 @@
     "mentioned"
    ],
    "degree": 2
-  },
-  {
-   "id": "ent_llms",
-   "type": "entity",
-   "name": "LLMs",
-   "kind": "other",
-   "degree": 1
   },
   {
    "id": "ep_2023-03-30_show-me-the-metrics-w-abhi-sivasailam_471819",
@@ -5830,7 +5731,7 @@
    "type": "entity",
    "name": "CDO",
    "kind": "other",
-   "degree": 3
+   "degree": 4
   },
   {
    "id": "ep_2023-02-09_takeaways-with-jeff-jonas_57e8fe",
@@ -6009,7 +5910,7 @@
    "degree": 2
   },
   {
-   "id": "ent_sacs",
+   "id": "ent_sac",
    "type": "entity",
    "name": "SACS",
    "kind": "other",
@@ -6233,7 +6134,7 @@
    "guests": [
     "Allison Sagraves"
    ],
-   "text": "I'm at a really, well, certainly there are people listening to the show that I think you should invite. And I want to mention a person that I met in Silicon Valley in September. I don't know if Cassie, cause her cough has been on your show. She's the chief decision scientist at Google. She moderated a panel at a conference that I was at. I moderated the CDO panel. She moderated the data science panel. We had a fascinating conversation. She, do you know Cassie? I do not. He has, so first of all, I would encourage, so when you ask like, who do I follow? I follow her. She's got a YouTube channel. She's very active on LinkedIn. She's just really, really brilliant and go to person. So, a really interesting person outside of data as well. So",
+   "text": "I'm at a really, well, certainly there are people listening to the show that I think you should invite. And I want to mention a person that I met in Silicon Valley in September. I don't know if Cassie, cause her cough has been on your show. She's the chief decision scientist at Google. She moderated a panel at a conference that I was at. I moderated the CDO panel. She moderated the data science panel. We had a fascinating conversation. She, do you know Cassie? I do not. He has, so first of all, I would encourage, so when you ask like, who do I follow?",
    "summary": "",
    "quote": "I'm at a really, well, certainly there are people listening to the show that I think you should invite. And I want to mention a person that I met in Silicon Valley in September. I don't know if Cassie, cause her cough has been on your show. She's the chief decision scientist at Google. She moderated a panel at a",
    "start": 3592.2,
@@ -6241,7 +6142,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/38e7129d-ea08-4529-a82f-b3870031e194/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 5
   },
   {
    "id": "ent_silicon_valley",
@@ -6249,13 +6150,6 @@
    "name": "Silicon Valley",
    "kind": "other",
    "degree": 1
-  },
-  {
-   "id": "ent_youtube",
-   "type": "entity",
-   "name": "YouTube",
-   "kind": "other",
-   "degree": 2
   },
   {
    "id": "ep_2022-11-17_takeaways-with-theresa-kushner_e919b3",
@@ -6297,15 +6191,15 @@
    "guests": [
     "Theresa Kushner"
    ],
-   "text": "I'm gonna tell you, if you haven't already had her, you need to invite Maria Valar. Maria Valar is the head of data for SAP. She manages and teaches a masterclass in data. She's great. So that might be someone that you wanna talk to. What do I read? You know, I read everything. So I think the best solutions for today's problems come from understanding everything that's happening in the world, not just what's happening in the technical world. And so the technical world, I do a lot of reading of, I think that the newsletters that come across, TechCrunch and some of those, I do that. So I try and keep up with that. But then I read a lot of technical papers too. We're a member of the MIT organization. So I read a lot of research",
+   "text": "I'm gonna tell you, if you haven't already had her, you need to invite Maria Valar. Maria Valar is the head of data for SAP. She manages and teaches a masterclass in data. She's great. So that might be someone that you wanna talk to.",
    "summary": "",
-   "quote": "I'm gonna tell you, if you haven't already had her, you need to invite Maria Valar. Maria Valar is the head of data for SAP. She manages and teaches a masterclass in data. She's great. So that might be someone that you wanna talk to. What do I read? You know, I read everything. So I think the best solutions",
+   "quote": "I'm gonna tell you, if you haven't already had her, you need to invite Maria Valar. Maria Valar is the head of data for SAP. She manages and teaches a masterclass in data. She's great. So that might be someone that you wanna talk to.",
    "start": 3545.5,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/bbf2aa48-72c8-4508-b3cd-b3870031ecb1/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 5
   },
   {
    "id": "person_maria_valar",
@@ -6320,20 +6214,6 @@
    "id": "ent_sap",
    "type": "entity",
    "name": "SAP",
-   "kind": "other",
-   "degree": 1
-  },
-  {
-   "id": "ent_techcrunch",
-   "type": "entity",
-   "name": "TechCrunch",
-   "kind": "other",
-   "degree": 1
-  },
-  {
-   "id": "ent_mit",
-   "type": "entity",
-   "name": "MIT",
    "kind": "other",
    "degree": 1
   },
@@ -6374,7 +6254,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/5a52c677-1a76-49eb-ade0-b38700320784/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 7
   },
   {
    "id": "person_giuseppe_sultini",
@@ -6386,7 +6266,7 @@
    "degree": 2
   },
   {
-   "id": "ent_thomson_lloyders",
+   "id": "ent_thomson_lloyder",
    "type": "entity",
    "name": "Thomson Lloyders",
    "kind": "other",
@@ -6504,15 +6384,15 @@
    "guests": [
     "Andrew Eye"
    ],
-   "text": "And again, I'd love to see you guys kind of focusing on stuff that has a real big impact and meaning. Eric Topal is an amazing speaker and wrote the book, many books on the topic. So I think Eric's an amazing potential guest for you guys.",
+   "text": "And again, I'd love to see you guys kind of focusing on stuff that has a real big impact and meaning. Eric Topal is an amazing speaker and wrote the book,",
    "summary": "",
-   "quote": "And again, I'd love to see you guys kind of focusing on stuff that has a real big impact and meaning. Eric Topal is an amazing speaker and wrote the book, many books on the topic. So I think Eric's an amazing potential guest for you guys.",
+   "quote": "And again, I'd love to see you guys kind of focusing on stuff that has a real big impact and meaning. Eric Topal is an amazing speaker and wrote the book,",
    "start": 3170.5,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/db368703-7fec-4924-a155-b3870032151f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 6
   },
   {
    "id": "person_eric_topal",
@@ -6638,7 +6518,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/5e8aba2d-ab75-4ab7-a7de-b3870032399a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "person_caitlin_houden",
@@ -6689,15 +6569,15 @@
    "guests": [
     "Patrick Bangert"
    ],
-   "text": "Well, there are numerous other companies who have really, really great people. I can certainly give you a few names later. Some people that come to mind is Andy Hawk from Cerebrous Systems, or Leeron's Reebel from Weka, I.O. These are really good people that have phenomenal understanding of the market. What do I follow? I am mostly on YouTube and LinkedIn as a consumer where I listen to the latest opinions there. You will never see me on Instagram and Twitter",
+   "text": "Well, there are numerous other companies who have really, really great people. I can certainly give you a few names later. Some people that come to mind is Andy Hawk from Cerebrous Systems, or Leeron's Reebel from Weka, I.O. These are really good people that have phenomenal understanding of the market.",
    "summary": "",
-   "quote": "Well, there are numerous other companies who have really, really great people. I can certainly give you a few names later. Some people that come to mind is Andy Hawk from Cerebrous Systems, or Leeron's Reebel from Weka, I.O. These are really good people that have phenomenal understanding of the market. What do I follow? I am mostly on YouTube",
+   "quote": "Well, there are numerous other companies who have really, really great people. I can certainly give you a few names later. Some people that come to mind is Andy Hawk from Cerebrous Systems, or Leeron's Reebel from Weka, I.O. These are really good people that have phenomenal understanding of the market.",
    "start": 4019.9,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a89d339b-154d-46e8-afce-b38700324df2/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
+   "degree": 7
   },
   {
    "id": "person_andy_hawk",
@@ -6718,7 +6598,7 @@
    "degree": 2
   },
   {
-   "id": "ent_cerebrous_systems",
+   "id": "ent_cerebrous_system",
    "type": "entity",
    "name": "Cerebrous Systems",
    "kind": "other",
@@ -6852,7 +6732,7 @@
    "degree": 4
   },
   {
-   "id": "ent_hacker_news",
+   "id": "ent_hacker_new",
    "type": "entity",
    "name": "Hacker News",
    "kind": "other",
@@ -6970,15 +6850,15 @@
    "guests": [
     "John Kutay"
    ],
-   "text": "I would recommend her. Ethan Aaron, are you following him on LinkedIn? He's, he has some very, very cool takes. I know you have Chad Sanderson in the past. Those are all the people I've probably, you're already on top of that. And Aaron's, the LinkedIn has a lot of great insights and a very contrarian view on topics which I love to hear and, you know, I think we, in the data industry, we sometimes get a little trapped and hide in mind with people like Aaron to, you know, keep us on our toes and really question some of the assumptions out there. Yeah. All right. Well, Ethan, if you're listening, we'll definitely invite you over. This is great. Now I've been following a lot of this stuff and I think they had a, they were chatting with,",
+   "text": "I would recommend her. Ethan Aaron, are you following him on LinkedIn? He's, he has some very, very cool takes. I know you have Chad Sanderson in the past. Those are all the people I've probably, you're already on top of that.",
    "summary": "",
-   "quote": "I would recommend her. Ethan Aaron, are you following him on LinkedIn? He's, he has some very, very cool takes. I know you have Chad Sanderson in the past. Those are all the people I've probably, you're already on top of that. And Aaron's, the LinkedIn has a lot of great insights and a very contrarian view on topics which",
+   "quote": "I would recommend her. Ethan Aaron, are you following him on LinkedIn? He's, he has some very, very cool takes. I know you have Chad Sanderson in the past. Those are all the people I've probably, you're already on top of that.",
    "start": 2969.3,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3fa5b281-b818-4214-89ec-b3870032b377/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 11
   },
   {
    "id": "ep_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
@@ -7091,7 +6971,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/0713e7bb-e626-4b84-a97e-b3870032c8f9/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 4
   },
   {
    "id": "ep_2022-08-25_build-bridges-don-t-burn-them-w-vip-parm_1204fc",
@@ -7130,7 +7010,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3e0de4ef-0877-43c4-943c-b3870032c224/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "ep_2022-07-28_bonus-episode-juan-s-trip-takeaways-from_7d4afe",
@@ -7214,7 +7094,7 @@
    "guests": [
     "Ergest Xheblati"
    ],
-   "text": "Oh man, I don't have a list of all the folks that you have actually had on the call on this podcast. I personally would like to see Lars run back of anchor modeling, fame. And he's come up with this idea of a singular model based on entity relationship, six normal form where you explode everything into tables. I'm fascinated by the idea. I'd like to see what he thinks and what he's up to these days. Awesome. And then finally, what is, what things do you follow? What are you reading newsletters or conferences or anything you're going to? I follow a bunch of newsletters. The one from DBT Labs is the one newsletter that I really like that gives me kind of an update of where the industry, what the industry is up to, what they're up",
+   "text": "Oh man, I don't have a list of all the folks that you have actually had on the call on this podcast. I personally would like to see Lars run back of anchor modeling, fame. And he's come up with this idea of a singular model based on entity relationship, six normal form where you explode everything into tables. I'm fascinated by the idea. I'd like to see what he thinks and what he's up to these days. Awesome. And then finally, what is, what things do you follow? What are you reading newsletters or conferences or anything you're going to?",
    "summary": "",
    "quote": "Oh man, I don't have a list of all the folks that you have actually had on the call on this podcast. I personally would like to see Lars run back of anchor modeling, fame. And he's come up with this idea of a singular model based on entity relationship, six normal form where you explode everything into tables. I'm",
    "start": 3887.6,
@@ -7222,14 +7102,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/7ce5c7ff-a225-4c41-b8a3-b3870032d4b6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
-  },
-  {
-   "id": "ent_dbt_labs",
-   "type": "entity",
-   "name": "DBT Labs",
-   "kind": "other",
-   "degree": 2
+   "degree": 3
   },
   {
    "id": "ep_2022-06-16_takeaways-with-peter-kapur_843f1c",
@@ -7358,7 +7231,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f5b8d968-0638-47f6-9fae-b3870032fe1f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 2
+   "degree": 3
   },
   {
    "id": "ep_2022-05-26_the-data-entrepreneur-s-essentials-w-bre_1aefdc",
@@ -7400,11 +7273,11 @@
    "degree": 5
   },
   {
-   "id": "ent_ceos",
+   "id": "ent_ceo",
    "type": "entity",
    "name": "CEOs",
    "kind": "other",
-   "degree": 1
+   "degree": 2
   },
   {
    "id": "ep_2022-05-26_takeaways-with-brett-hurt_db40d8",
@@ -7457,7 +7330,7 @@
    "guests": [
     "Omar Khawaja"
    ],
-   "text": "I would love to hear fellow practitioners. I am not, my team cannot be the only ones. So I want others, I would encourage people to come speak, share their experiences, community effort, data mesh learning community is one of the best I've seen out there. Scott and teams doing an amazing job. I love the passion you're bringing in. What am I reading? I'm just about to finish the remaining chapters of Inspire which have been pending for a long time. Thanks to you, Omar. My knowledge for our book is here. So I've got to read that afterwards. That's on the list. And I love that COVID has made me books once again, but I'm a big reader of a lot of blogs on medium, for example. I read a lot of articles being published on things like",
+   "text": "I would love to hear fellow practitioners. I am not, my team cannot be the only ones. So I want others, I would encourage people to come speak, share their experiences, community effort, data mesh learning community is one of the best I've seen out there. Scott and teams doing an amazing job. I love the passion you're bringing in.",
    "summary": "",
    "quote": "I would love to hear fellow practitioners. I am not, my team cannot be the only ones. So I want others, I would encourage people to come speak, share their experiences, community effort, data mesh learning community is one of the best I've seen out there. Scott and teams doing an amazing job. I love the passion you're bringing in.",
    "start": 3735.8,
@@ -7466,13 +7339,6 @@
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/78495501-3d29-4234-86f6-b38700332550/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
    "degree": 4
-  },
-  {
-   "id": "ent_covid",
-   "type": "entity",
-   "name": "COVID",
-   "kind": "other",
-   "degree": 1
   },
   {
    "id": "ep_2022-05-12_s3e18-takeaways-with-sarah-krasnik_b76a81",
@@ -7583,7 +7449,7 @@
    "guests": [
     "François Scharffe"
    ],
-   "text": "Jamie Taylor was the main architect of three days. Three days became the Google knowledge graph. And that was the first knowledge graph or actually the first thing to be called a knowledge graph because they have coined the term. I like that idea. And Jamie is great. He is. Well, Francois, it has been a pleasure. Just a reminder next week. We are have Sarah Krasnik from she's a data engineer. She publishes a lot of great stuff on LinkedIn and look following our LinkedIn and Twitter to be making a lot of great posts. And we're just going to be talking about data and value and how to get value with all the tools and everything. So that's next week.",
+   "text": "Jamie Taylor was the main architect of three days. Three days became the Google knowledge graph. And that was the first knowledge graph or actually the first thing to be called a knowledge graph because they have coined the term. I like that idea. And Jamie is great. He is. Well, Francois, it has been a pleasure. Just a reminder next week. We are have Sarah Krasnik from she's a data engineer. She publishes a lot of great stuff on LinkedIn and look following",
    "summary": "",
    "quote": "Jamie Taylor was the main architect of three days. Three days became the Google knowledge graph. And that was the first knowledge graph or actually the first thing to be called a knowledge graph because they have coined the term. I like that idea. And Jamie is great. He is. Well, Francois, it has been a pleasure. Just a reminder",
    "start": 3220.2,
@@ -7591,7 +7457,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/befb8eca-2d82-46c8-8763-b3870033470a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 10
   },
   {
    "id": "person_jamie_taylor",
@@ -7750,7 +7616,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/ae375005-5cb4-48f4-9091-b38700338ae1/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 10
   },
   {
    "id": "ent_knowledge_graph_conference",
@@ -7915,7 +7781,7 @@
    "degree": 2
   },
   {
-   "id": "ent_ralph_hughes",
+   "id": "ent_ralph_hughe",
    "type": "entity",
    "name": "Ralph Hughes",
    "kind": "other",
@@ -8025,9 +7891,9 @@
    "guests": [
     "Arjun Narayan"
    ],
-   "text": "You should have, so I guess these answers are tied. You reminded me, you should have Spencer, the CEO of Cockroach on the show. I worked at Cockroach Labs, working on CockroachDB before starting materialized. And advice, this is tied to advice, which is find great people and mentors, and go hang out with them. So when choosing a job or choosing, I think, so when I did my PhD in computer science, this was also the advice I got, which was, you're not really choosing a topic. You're not really choosing a school. You're choosing an advisor. You're choosing a person, a human being who is going to teach you things. And I think, Juan, I don't know how your experience was, but by the end of my PhD, you know, I love my advisor. My advisor is my",
+   "text": "You should have, so I guess these answers are tied. You reminded me, you should have Spencer, the CEO of Cockroach on the show. I worked at Cockroach Labs, working on CockroachDB before starting materialized.",
    "summary": "",
-   "quote": "You should have, so I guess these answers are tied. You reminded me, you should have Spencer, the CEO of Cockroach on the show. I worked at Cockroach Labs, working on CockroachDB before starting materialized. And advice, this is tied to advice, which is find great people and mentors, and go hang out with them. So when choosing a job",
+   "quote": "You should have, so I guess these answers are tied. You reminded me, you should have Spencer, the CEO of Cockroach on the show. I worked at Cockroach Labs, working on CockroachDB before starting materialized.",
    "start": 3293.9,
    "method": "cue",
    "confidence": 1.0,
@@ -8043,7 +7909,7 @@
    "degree": 1
   },
   {
-   "id": "ent_cockroach_labs",
+   "id": "ent_cockroach_lab",
    "type": "entity",
    "name": "Cockroach Labs",
    "kind": "other",
@@ -8403,6 +8269,13 @@
    "degree": 2
   },
   {
+   "id": "ent_dbt_lab",
+   "type": "entity",
+   "name": "DBT Labs",
+   "kind": "other",
+   "degree": 1
+  },
+  {
    "id": "ep_2022-01-06_will-2022-change-how-we-think-about-data_afb04f",
    "type": "episode",
    "name": "Will 2022 change how we think about data? w/ Sarah Catanzaro",
@@ -8439,7 +8312,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/5765b1f4-c76c-4cdb-b0f3-b38700344f61/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 7
   },
   {
    "id": "ep_2022-01-06_season-three-premier-takeaways-with-sara_7d1a08",
@@ -8548,15 +8421,15 @@
   {
    "id": "ans_2021-12-09_what-happens-when-everyone-is-a-data-wor_5f1fe0",
    "type": "answer",
-   "name": "Yes. Well, my advice, you know, often in these, we talk about all these things, data, real",
+   "name": "Yes.",
    "date": "2021-12-09",
    "episode": "What happens when everyone is a data worker? w/ Kelly Wright from Gong",
    "guests": [
     "Kelly Wright"
    ],
-   "text": "Yes. Well, my advice, you know, often in these, we talk about all these things, data, reality, autonomous, AI, sales, all these different things. But I think a lot of it does come back to one thing I mentioned earlier is just how are we thinking about our people as our greatest asset and then empowering those people, empowering our people to be able to thrive, hiring the best people, allowing them to do their best work, bring their authentic self, and everyone's always focusing so much on operational efficiencies. How are we thinking about our people? And as we think about our people, so much of helping our people be empowered and thrive is about allowing them to get those tools to help them be better, to work on their growth mindset, to continue to grow and develop, to",
+   "text": "Yes.",
    "summary": "",
-   "quote": "Yes. Well, my advice, you know, often in these, we talk about all these things, data, reality, autonomous, AI, sales, all these different things. But I think a lot of it does come back to one thing I mentioned earlier is just how are we thinking about our people as our greatest asset and then empowering those people, empowering our",
+   "quote": "Yes.",
    "start": 3457.7,
    "method": "fuzzy",
    "confidence": 0.75,
@@ -8782,16 +8655,9 @@
    "degree": 6
   },
   {
-   "id": "ent_cios",
+   "id": "ent_cio",
    "type": "entity",
    "name": "CIOs",
-   "kind": "other",
-   "degree": 1
-  },
-  {
-   "id": "ent_cdos",
-   "type": "entity",
-   "name": "CDOs",
    "kind": "other",
    "degree": 1
   },
@@ -8945,7 +8811,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d3f019b6-a8de-4305-977b-b3870034b846/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 7
   },
   {
    "id": "person_irene_gonsfalves",
@@ -9122,7 +8988,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d87b5cea-8eb5-47d1-a58b-b3870034fb55/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 7
   },
   {
    "id": "person_kate_strachneon",
@@ -9169,7 +9035,7 @@
    "guests": [
     "Denise Gosnell"
    ],
-   "text": "Yeah, so my advice about life is take a sabbatical. Well, in all honesty, the take a sabbatical comment is coming from the theme that Tim was just recapping with developer empathy. If you want to be able to have empathy for other people, first start with understanding what empathy looks like for yourself. I think a lot of people forget to make sure that they're capable of monitoring their own ups and downs sometimes. And if it's going to be really hard to be empathetic for others when they're going through the myriad of open source software tools that are out there and how to use them when you don't fully understand what that looks like. So that's my advice. And who I would invite hold in, I'm going to make sure that I send a tweet out to",
+   "text": "Yeah, so my advice about life is take a sabbatical. Well, in all honesty, the take a sabbatical comment is coming from the theme that Tim was just recapping with developer empathy. If you want to be able to have empathy for other people, first start with understanding what empathy looks like for yourself. I think a lot of people forget to make sure that they're capable of monitoring their own ups and downs sometimes. And if it's going to be really hard to be empathetic for others when they're going through the myriad of open source software tools that are out there and how to use them when you don't fully understand what that looks like.",
    "summary": "",
    "quote": "Yeah, so my advice about life is take a sabbatical. Well, in all honesty, the take a sabbatical comment is coming from the theme that Tim was just recapping with developer empathy. If you want to be able to have empathy for other people, first start with understanding what empathy looks like for yourself. I think a lot of people",
    "start": 3415.8,
@@ -9202,21 +9068,21 @@
   {
    "id": "ans_2021-08-12_documents-and-clouds-and-graphs-oh-my-w_d266ac",
    "type": "answer",
-   "name": "You should invite Jeff Jonas from Sensing. If you haven't had him on, like, you know, you ",
+   "name": "You should invite Jeff Jonas from Sensing. If you haven't had him on, like, you know,",
    "date": "2021-08-12",
    "episode": "Documents and Clouds and Graphs, Oh My! w/ Emil Eifrem, CEO of Neo4j",
    "guests": [
     "Emil Eifrem"
    ],
-   "text": "You should invite Jeff Jonas from Sensing. If you haven't had him on, like, you know, you know that I listen to many episodes of this podcast, even before you invited me, I would listen to all of them. So I don't think you've had him on, but I don't know. But Jeff Jonas is a founder of a company called Sensing. He's one of the main thought leaders. It's not the main thought leader in ER entity resolution. I think he's the only IBM fellow to ever leave IBM. I think that's true. And it's just like one of the smartest people ever in data. Get Jeff on the show. Awesome. Well, a pleasure.",
+   "text": "You should invite Jeff Jonas from Sensing. If you haven't had him on, like, you know,",
    "summary": "",
-   "quote": "You should invite Jeff Jonas from Sensing. If you haven't had him on, like, you know, you know that I listen to many episodes of this podcast, even before you invited me, I would listen to all of them. So I don't think you've had him on, but I don't know. But Jeff Jonas is a founder of a company",
+   "quote": "You should invite Jeff Jonas from Sensing. If you haven't had him on, like, you know,",
    "start": 3474.1,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/7a724d7a-1c46-496a-85e4-b387003507eb/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
@@ -9241,21 +9107,21 @@
   {
    "id": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
    "type": "answer",
-   "name": "Yeah. Well, the first is I think the thing I would recommend is the advice I have is just ",
+   "name": "Yeah. Well, the first is I think the thing I would recommend",
    "date": "2021-08-04",
    "episode": "SEASON TWO KICKOFF w/ DJ PATIL",
    "guests": [
     "DJ Patil"
    ],
-   "text": "Yeah. Well, the first is I think the thing I would recommend is the advice I have is just work with amazing people. And if you're not working with people who are amazing, move on, honestly, move on. And what do I mean by amazing? People are gonna kick your ass every day. People are gonna laugh with you, make you cry, make you so much better. And where in a year, just like, how could I have lived without these people? Find those people. It'll be hard. It'll be intense, but find those people. They will make you so much better. And then who next to have? You know, I'm gonna go with the authors of my book. So I'm just gonna go with my tracker to breaking rules and saying more things here. So it's, I'm gonna recommend",
+   "text": "Yeah. Well, the first is I think the thing I would recommend",
    "summary": "",
-   "quote": "Yeah. Well, the first is I think the thing I would recommend is the advice I have is just work with amazing people. And if you're not working with people who are amazing, move on, honestly, move on. And what do I mean by amazing? People are gonna kick your ass every day. People are gonna laugh with you, make",
+   "quote": "Yeah. Well, the first is I think the thing I would recommend",
    "start": 3378.5,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3f311723-cc1c-4d00-81ed-b38700350d3c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 8
   },
   {
    "id": "ep_2021-07-06_special-edition-panel-on-data-architectu_dcd439",
@@ -9319,7 +9185,7 @@
    "degree": 4
   },
   {
-   "id": "ent_ceo_of_intelligent_business_strategies",
+   "id": "ent_ceo_of_intelligent_business_strategy",
    "type": "entity",
    "name": "CEO of Intelligent Business Strategies",
    "kind": "other",
@@ -9647,7 +9513,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/42c11404-d499-4ea2-b9d4-b38700361eb2/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "ent_iab_tech_lab",
@@ -9824,7 +9690,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3787a42b-d8b8-4ac1-b8d7-b387003635e8/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 6
   },
   {
    "id": "person_rashma_sheikh",
@@ -9970,13 +9836,6 @@
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/8875758f-d299-4d29-b6c0-b38700365ec5/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
    "degree": 5
-  },
-  {
-   "id": "ent_ceo",
-   "type": "entity",
-   "name": "CEO",
-   "kind": "other",
-   "degree": 1
   },
   {
    "id": "ent_university_of_wisconsin",
@@ -10671,11 +10530,6 @@
    "type": "GAVE"
   },
   {
-   "source": "ans_2026-04-16_think-like-a-librarian-why-the-reference_481d0d",
-   "target": "ent_linkedin",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_pete_williams",
    "target": "ep_2026-04-09_the-void-between-data-and-decisions-with_b0cca6",
    "type": "GUEST_ON"
@@ -10885,17 +10739,6 @@
    "type": "GAVE"
   },
   {
-   "source": "ans_2026-02-05_stop-chasing-ai-hype-start-counting-doll_0d54cc",
-   "target": "person_roman_stanek",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "person_juan_gorricho",
-   "target": "person_roman_stanek",
-   "type": "RECOMMENDS",
-   "date": "2026-02-05"
-  },
-  {
    "source": "person_dr_irina_steenbeek",
    "target": "ep_2026-01-29_all-things-data-lineage-with-dr-irina-st_236309",
    "type": "GUEST_ON"
@@ -10923,17 +10766,6 @@
   {
    "source": "person_dr_irina_steenbeek",
    "target": "person_christina_haskell",
-   "type": "RECOMMENDS",
-   "date": "2026-01-29"
-  },
-  {
-   "source": "ans_2026-01-29_all-things-data-lineage-with-dr-irina-st_236309",
-   "target": "person_mainly_linkedin",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "person_dr_irina_steenbeek",
-   "target": "person_mainly_linkedin",
    "type": "RECOMMENDS",
    "date": "2026-01-29"
   },
@@ -11606,16 +11438,6 @@
    "date": "2024-11-28"
   },
   {
-   "source": "ans_2024-11-28_stop-talking-about-data-governance-and-j_f957d9",
-   "target": "ent_dharma_uk",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2024-11-28_stop-talking-about-data-governance-and-j_f957d9",
-   "target": "ent_linkedin",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_nicola_askham",
    "target": "ep_2024-11-27_takeaways-stop-talking-about-data-govern_e6ce0f",
    "type": "GUEST_ON"
@@ -11758,27 +11580,6 @@
    "date": "2024-10-17"
   },
   {
-   "source": "ans_2024-10-17_streamlining-data-value-with-colleen-tar_e7bad1",
-   "target": "person_selena_wong",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "person_colleen_tartow",
-   "target": "person_selena_wong",
-   "type": "RECOMMENDS",
-   "date": "2024-10-17"
-  },
-  {
-   "source": "ans_2024-10-17_streamlining-data-value-with-colleen-tar_e7bad1",
-   "target": "ent_monica_miller",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2024-10-17_streamlining-data-value-with-colleen-tar_e7bad1",
-   "target": "ent_ceo_of_data_culture",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_mike_evans",
    "target": "ep_2024-10-10_the-power-of-active-metadata-with-mike-e_5c1865",
    "type": "GUEST_ON"
@@ -11887,11 +11688,6 @@
    "date": "2024-09-26"
   },
   {
-   "source": "ans_2024-09-26_why-data-ai-needs-to-embrace-interoperab_6f3c4e",
-   "target": "ent_santa_fe_institute",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_dael_williamson",
    "target": "ep_2024-09-26_takeaways-why-data-ai-needs-to-embrace-i_18bcd6",
    "type": "GUEST_ON"
@@ -11974,17 +11770,6 @@
   },
   {
    "source": "ans_2024-09-05_building-diversity-in-data-with-dawn-car_b36e51",
-   "target": "person_mirai_talon",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "person_dawn_carter",
-   "target": "person_mirai_talon",
-   "type": "RECOMMENDS",
-   "date": "2024-09-05"
-  },
-  {
-   "source": "ans_2024-09-05_building-diversity-in-data-with-dawn-car_b36e51",
    "target": "ent_data_electricity_academy",
    "type": "MENTIONS"
   },
@@ -12049,21 +11834,6 @@
    "source": "person_anna_bergevin",
    "target": "ans_2024-08-22_who-is-doing-the-data-product-management_5c79df",
    "type": "GAVE"
-  },
-  {
-   "source": "ans_2024-08-22_who-is-doing-the-data-product-management_5c79df",
-   "target": "ent_jni",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2024-08-22_who-is-doing-the-data-product-management_5c79df",
-   "target": "ent_prds",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2024-08-22_who-is-doing-the-data-product-management_5c79df",
-   "target": "ent_prd",
-   "type": "MENTIONS"
   },
   {
    "source": "person_anna_bergevin",
@@ -12764,7 +12534,7 @@
   },
   {
    "source": "ans_2023-10-24_data-catalogs-the-power-of-collaboration_3c8d00",
-   "target": "ent_data_storytellers",
+   "target": "ent_data_storyteller",
    "type": "MENTIONS"
   },
   {
@@ -13289,22 +13059,6 @@
    "date": "2023-07-13"
   },
   {
-   "source": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
-   "target": "person_john_giles",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "person_joe_reis",
-   "target": "person_john_giles",
-   "type": "RECOMMENDS",
-   "date": "2023-07-13"
-  },
-  {
-   "source": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
-   "target": "ent_linkedin",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_aakriti_agrawal",
    "target": "ep_2023-06-08_there-is-no-i-in-data-governance-with-aa_ea433a",
    "type": "GUEST_ON"
@@ -13532,11 +13286,6 @@
    "date": "2023-04-27"
   },
   {
-   "source": "ans_2023-04-27_what-is-the-dna-of-a-data-organization-w_ce5664",
-   "target": "ent_eric_weinstein",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_alex_vayner",
    "target": "ep_2023-04-27_takeaways-with-alex-vayner-from-kpmg-us_3a7e06",
    "type": "GUEST_ON"
@@ -13686,7 +13435,7 @@
   },
   {
    "source": "ans_2023-03-30_takeaways-with-abhi-sivasailam_3c6211",
-   "target": "ent_llms",
+   "target": "ent_llm",
    "type": "MENTIONS"
   },
   {
@@ -13927,7 +13676,7 @@
   },
   {
    "source": "ans_2023-01-26_data-modeling-your-data-isn-t-going-to-m_2a9417",
-   "target": "ent_sacs",
+   "target": "ent_sac",
    "type": "MENTIONS"
   },
   {
@@ -14069,16 +13818,6 @@
    "type": "MENTIONS"
   },
   {
-   "source": "ans_2022-12-01_getting-into-the-pool-without-drowning-w_aa8a35",
-   "target": "ent_youtube",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2022-12-01_getting-into-the-pool-without-drowning-w_aa8a35",
-   "target": "ent_linkedin",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_theresa_kushner",
    "target": "ep_2022-11-17_takeaways-with-theresa-kushner_e919b3",
    "type": "GUEST_ON"
@@ -14120,16 +13859,6 @@
    "type": "MENTIONS"
   },
   {
-   "source": "ans_2022-11-17_are-data-teams-keeping-up-with-ai-teams_0c0213",
-   "target": "ent_techcrunch",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2022-11-17_are-data-teams-keeping-up-with-ai-teams_0c0213",
-   "target": "ent_mit",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_dan_bennett",
    "target": "ep_2022-11-10_where-are-the-semantics-in-the-data-dict_b68636",
    "type": "GUEST_ON"
@@ -14162,7 +13891,7 @@
   },
   {
    "source": "ans_2022-11-10_where-are-the-semantics-in-the-data-dict_b68636",
-   "target": "ent_thomson_lloyders",
+   "target": "ent_thomson_lloyder",
    "type": "MENTIONS"
   },
   {
@@ -14361,22 +14090,12 @@
   },
   {
    "source": "ans_2022-10-06_ai-ml-where-should-the-focus-be-w-patric_c7518d",
-   "target": "ent_cerebrous_systems",
+   "target": "ent_cerebrous_system",
    "type": "MENTIONS"
   },
   {
    "source": "ans_2022-10-06_ai-ml-where-should-the-focus-be-w-patric_c7518d",
    "target": "ent_i_o",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2022-10-06_ai-ml-where-should-the-focus-be-w-patric_c7518d",
-   "target": "ent_youtube",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2022-10-06_ai-ml-where-should-the-focus-be-w-patric_c7518d",
-   "target": "ent_linkedin",
    "type": "MENTIONS"
   },
   {
@@ -14442,7 +14161,7 @@
   },
   {
    "source": "ans_2022-09-22_keeping-it-100-about-metadata-the-data-s_c5302f",
-   "target": "ent_hacker_news",
+   "target": "ent_hacker_new",
    "type": "MENTIONS"
   },
   {
@@ -14681,11 +14400,6 @@
    "type": "GAVE"
   },
   {
-   "source": "ans_2022-06-23_data-models-are-divas-w-ergest-xheblati_766666",
-   "target": "ent_dbt_labs",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_peter_kapur",
    "target": "ep_2022-06-16_takeaways-with-peter-kapur_843f1c",
    "type": "GUEST_ON"
@@ -14779,7 +14493,7 @@
   },
   {
    "source": "ans_2022-05-26_the-data-entrepreneur-s-essentials-w-bre_1aefdc",
-   "target": "ent_ceos",
+   "target": "ent_ceo",
    "type": "MENTIONS"
   },
   {
@@ -14811,11 +14525,6 @@
    "source": "person_omar_khawaja",
    "target": "ans_2022-05-19_a-roadmap-to-data-mesh-success-w-omar-kh_fec187",
    "type": "GAVE"
-  },
-  {
-   "source": "ans_2022-05-19_a-roadmap-to-data-mesh-success-w-omar-kh_fec187",
-   "target": "ent_covid",
-   "type": "MENTIONS"
   },
   {
    "source": "person_sarah_krasnik",
@@ -15105,7 +14814,7 @@
   },
   {
    "source": "ans_2022-03-17_agile-like-a-fox-but-for-data-w-shane-gi_7e2ec4",
-   "target": "ent_ralph_hughes",
+   "target": "ent_ralph_hughe",
    "type": "MENTIONS"
   },
   {
@@ -15175,7 +14884,7 @@
   },
   {
    "source": "ans_2022-03-03_are-you-swimming-upstream-by-not-streami_fcf792",
-   "target": "ent_cockroach_labs",
+   "target": "ent_cockroach_lab",
    "type": "MENTIONS"
   },
   {
@@ -15391,7 +15100,7 @@
   },
   {
    "source": "ans_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
-   "target": "ent_dbt_labs",
+   "target": "ent_dbt_lab",
    "type": "MENTIONS"
   },
   {
@@ -15604,12 +15313,12 @@
   },
   {
    "source": "ans_2021-10-14_sure-you-re-responsible-but-are-you-ethi_d63ea9",
-   "target": "ent_cios",
+   "target": "ent_cio",
    "type": "MENTIONS"
   },
   {
    "source": "ans_2021-10-14_sure-you-re-responsible-but-are-you-ethi_d63ea9",
-   "target": "ent_cdos",
+   "target": "ent_cdo",
    "type": "MENTIONS"
   },
   {
@@ -15890,11 +15599,6 @@
    "date": "2021-08-12"
   },
   {
-   "source": "ans_2021-08-12_documents-and-clouds-and-graphs-oh-my-w_d266ac",
-   "target": "ent_ibm",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_dj_patil",
    "target": "ep_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
    "type": "GUEST_ON"
@@ -15931,7 +15635,7 @@
   },
   {
    "source": "ans_2021-05-20_knowledge-is-power-knowledge-management_f97d7c",
-   "target": "ent_ceo_of_intelligent_business_strategies",
+   "target": "ent_ceo_of_intelligent_business_strategy",
    "type": "MENTIONS"
   },
   {
@@ -16329,70 +16033,310 @@
    "type": "GUEST_ON"
   },
   {
+   "source": "ans_2026-05-29_6th-year-season-finale-juan-and-tim-rant_730829",
+   "target": "ans_2026-05-07_ai-governance-isn-t-compliance-it-s-abou_3125fd",
+   "type": "SIMILAR_TO",
+   "weight": 0.21
+  },
+  {
+   "source": "ans_2026-05-15_data-catalyst-governance-change-manageme_e68eaf",
+   "target": "ans_2022-06-02_does-our-understanding-of-data-bias-our_ecd185",
+   "type": "SIMILAR_TO",
+   "weight": 0.175
+  },
+  {
    "source": "ans_2026-04-02_the-wrong-mandate-why-boards-set-data-ai_d103e7",
    "target": "ans_2021-12-16_please-be-quiet-the-machines-are-talking_83b762",
    "type": "SIMILAR_TO",
-   "weight": 0.162
+   "weight": 0.186
+  },
+  {
+   "source": "ans_2026-03-19_the-data-hygienist-with-thais-cooke_0655ef",
+   "target": "ans_2025-01-23_data-teams-are-strategic-not-just-techni_9ff3a5",
+   "type": "SIMILAR_TO",
+   "weight": 0.161
+  },
+  {
+   "source": "ans_2026-02-19_shift-left-everything-how-ontology-event_e56a7c",
+   "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
+   "type": "SIMILAR_TO",
+   "weight": 0.211
+  },
+  {
+   "source": "ans_2026-02-19_shift-left-everything-how-ontology-event_e56a7c",
+   "target": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
+   "type": "SIMILAR_TO",
+   "weight": 0.209
+  },
+  {
+   "source": "ans_2026-02-05_stop-chasing-ai-hype-start-counting-doll_0d54cc",
+   "target": "ans_2022-08-25_season-4-premiere-takeaways_c3f6df",
+   "type": "SIMILAR_TO",
+   "weight": 0.169
+  },
+  {
+   "source": "ans_2026-01-29_all-things-data-lineage-with-dr-irina-st_236309",
+   "target": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
+   "type": "SIMILAR_TO",
+   "weight": 0.247
+  },
+  {
+   "source": "ans_2025-12-17_building-ai-agents-with-lena-hall_519a55",
+   "target": "ans_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
+   "type": "SIMILAR_TO",
+   "weight": 0.203
+  },
+  {
+   "source": "ans_2025-11-19_netflix-s-unified-data-architecture-mode_f9adb1",
+   "target": "ans_2024-11-21_we-have-agency-over-ai-with-ethan-mollic_76ddb4",
+   "type": "SIMILAR_TO",
+   "weight": 0.177
+  },
+  {
+   "source": "ans_2025-04-17_most-data-teams-are-a-waste-of-resources_1a38c6",
+   "target": "ans_2024-11-28_stop-talking-about-data-governance-and-j_f957d9",
+   "type": "SIMILAR_TO",
+   "weight": 0.165
+  },
+  {
+   "source": "ans_2025-04-17_most-data-teams-are-a-waste-of-resources_1a38c6",
+   "target": "ans_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
+   "type": "SIMILAR_TO",
+   "weight": 0.152
+  },
+  {
+   "source": "ans_2025-03-20_data-contracts-data-products-data-mesh-w_59074e",
+   "target": "ans_2022-10-27_ai-no-one-wants-your-models-w-andrew-eye_3e9d31",
+   "type": "SIMILAR_TO",
+   "weight": 0.191
+  },
+  {
+   "source": "ans_2025-03-20_data-contracts-data-products-data-mesh-w_59074e",
+   "target": "ans_2021-09-16_how-to-think-about-data-value-w-lars-alb_b73064",
+   "type": "SIMILAR_TO",
+   "weight": 0.164
+  },
+  {
+   "source": "ans_2025-01-30_want-to-be-data-and-ai-driven-start-with_b0e089",
+   "target": "ans_2024-03-11_when-business-goals-and-data-strategies_ad11b8",
+   "type": "SIMILAR_TO",
+   "weight": 0.159
+  },
+  {
+   "source": "ans_2024-10-24_why-we-need-to-focus-on-knowledge-manage_4679c2",
+   "target": "ans_2023-04-27_what-is-the-dna-of-a-data-organization-w_ce5664",
+   "type": "SIMILAR_TO",
+   "weight": 0.156
+  },
+  {
+   "source": "ans_2024-09-05_building-diversity-in-data-with-dawn-car_b36e51",
+   "target": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
+   "type": "SIMILAR_TO",
+   "weight": 0.152
+  },
+  {
+   "source": "ans_2024-04-04_data-security-and-ai-how-to-get-them-on_f9f836",
+   "target": "ans_2021-03-18_identity-graph-the-new-customer-360_91ce16",
+   "type": "SIMILAR_TO",
+   "weight": 0.15
   },
   {
    "source": "ans_2024-03-11_when-business-goals-and-data-strategies_ad11b8",
    "target": "ans_2023-01-26_data-modeling-your-data-isn-t-going-to-m_2a9417",
    "type": "SIMILAR_TO",
-   "weight": 0.184
+   "weight": 0.298
   },
   {
-   "source": "ans_2024-01-30_productivity-is-not-performance-with-san_bef991",
-   "target": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
+   "source": "ans_2024-03-11_when-business-goals-and-data-strategies_ad11b8",
+   "target": "ans_2022-08-25_build-bridges-don-t-burn-them-w-vip-parm_1204fc",
    "type": "SIMILAR_TO",
-   "weight": 0.16
+   "weight": 0.289
   },
   {
    "source": "ans_2024-01-30_productivity-is-not-performance-with-san_bef991",
    "target": "ans_2023-07-13_takeaways-modeling-and-semantics-are-mor_934e29",
    "type": "SIMILAR_TO",
-   "weight": 0.156
+   "weight": 0.27
+  },
+  {
+   "source": "ans_2024-01-30_productivity-is-not-performance-with-san_bef991",
+   "target": "ans_2023-07-20_people-and-data-w-tom-redman-the-data-do_c61d0c",
+   "type": "SIMILAR_TO",
+   "weight": 0.155
+  },
+  {
+   "source": "ans_2024-01-19_the-data-mesh-terclass_995cfc",
+   "target": "ans_2022-05-19_a-roadmap-to-data-mesh-success-w-omar-kh_fec187",
+   "type": "SIMILAR_TO",
+   "weight": 0.153
+  },
+  {
+   "source": "ans_2023-10-26_llms-retrieval-augmented-generation-know_7c42fc",
+   "target": "ans_2022-10-27_ai-no-one-wants-your-models-w-andrew-eye_3e9d31",
+   "type": "SIMILAR_TO",
+   "weight": 0.154
+  },
+  {
+   "source": "ans_2023-09-21_business-value-on-the-meandatastreets-wi_52645e",
+   "target": "ans_2023-08-24_from-technical-to-business-data-strategy_e3736f",
+   "type": "SIMILAR_TO",
+   "weight": 0.153
+  },
+  {
+   "source": "ans_2023-09-21_business-value-on-the-meandatastreets-wi_52645e",
+   "target": "ans_2023-08-24_takeaways-from-technical-to-business-dat_522e13",
+   "type": "SIMILAR_TO",
+   "weight": 0.151
+  },
+  {
+   "source": "ans_2023-09-07_data-that-doesn-t-drive-results-is-usele_dcde17",
+   "target": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
+   "type": "SIMILAR_TO",
+   "weight": 0.333
   },
   {
    "source": "ans_2023-09-07_data-that-doesn-t-drive-results-is-usele_dcde17",
    "target": "ans_2022-01-06_will-2022-change-how-we-think-about-data_afb04f",
    "type": "SIMILAR_TO",
-   "weight": 0.162
+   "weight": 0.288
   },
   {
    "source": "ans_2023-08-24_takeaways-from-technical-to-business-dat_522e13",
    "target": "ans_2023-08-24_from-technical-to-business-data-strategy_e3736f",
    "type": "SIMILAR_TO",
-   "weight": 0.983
+   "weight": 0.99
   },
   {
    "source": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
    "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
    "type": "SIMILAR_TO",
-   "weight": 0.916
+   "weight": 0.931
+  },
+  {
+   "source": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
+   "target": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
+   "type": "SIMILAR_TO",
+   "weight": 0.25
+  },
+  {
+   "source": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
+   "target": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
+   "type": "SIMILAR_TO",
+   "weight": 0.252
   },
   {
    "source": "ans_2023-07-13_takeaways-modeling-and-semantics-are-mor_934e29",
    "target": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
    "type": "SIMILAR_TO",
-   "weight": 0.884
+   "weight": 0.605
+  },
+  {
+   "source": "ans_2023-07-13_takeaways-modeling-and-semantics-are-mor_934e29",
+   "target": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
+   "type": "SIMILAR_TO",
+   "weight": 0.256
+  },
+  {
+   "source": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
+   "target": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
+   "type": "SIMILAR_TO",
+   "weight": 0.278
+  },
+  {
+   "source": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
+   "target": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
+   "type": "SIMILAR_TO",
+   "weight": 0.266
+  },
+  {
+   "source": "ans_2023-05-29_updated-release-automating-data-governan_e48f12",
+   "target": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
+   "type": "SIMILAR_TO",
+   "weight": 0.17
+  },
+  {
+   "source": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
+   "target": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
+   "type": "SIMILAR_TO",
+   "weight": 0.243
+  },
+  {
+   "source": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
+   "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
+   "type": "SIMILAR_TO",
+   "weight": 0.209
+  },
+  {
+   "source": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
+   "target": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
+   "type": "SIMILAR_TO",
+   "weight": 0.207
+  },
+  {
+   "source": "ans_2022-11-10_where-are-the-semantics-in-the-data-dict_b68636",
+   "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
+   "type": "SIMILAR_TO",
+   "weight": 0.156
+  },
+  {
+   "source": "ans_2022-11-10_where-are-the-semantics-in-the-data-dict_b68636",
+   "target": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
+   "type": "SIMILAR_TO",
+   "weight": 0.155
   },
   {
    "source": "ans_2022-10-20_takeaways-with-loris-marini_b8a55a",
    "target": "ans_2022-10-20_knowledge-the-missing-piece-to-understan_035962",
    "type": "SIMILAR_TO",
-   "weight": 0.87
+   "weight": 0.92
+  },
+  {
+   "source": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
+   "target": "ans_2022-01-06_will-2022-change-how-we-think-about-data_afb04f",
+   "type": "SIMILAR_TO",
+   "weight": 0.387
   },
   {
    "source": "ans_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
    "target": "ans_2022-09-01_takeways-with-roel-and-valentijn_890a19",
    "type": "SIMILAR_TO",
-   "weight": 0.79
+   "weight": 0.847
   },
   {
    "source": "ans_2022-08-25_season-4-premiere-takeaways_c3f6df",
    "target": "ans_2022-08-25_build-bridges-don-t-burn-them-w-vip-parm_1204fc",
    "type": "SIMILAR_TO",
-   "weight": 0.298
+   "weight": 0.229
+  },
+  {
+   "source": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
+   "target": "ans_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
+   "type": "SIMILAR_TO",
+   "weight": 0.243
+  },
+  {
+   "source": "ans_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
+   "target": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
+   "type": "SIMILAR_TO",
+   "weight": 0.175
+  },
+  {
+   "source": "ans_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
+   "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
+   "type": "SIMILAR_TO",
+   "weight": 0.169
+  },
+  {
+   "source": "ans_2021-08-26_can-t-spell-buzzwords-without-bs-w-kirk_44d43e",
+   "target": "ans_2021-02-11_do-you-test-your-data_2a680c",
+   "type": "SIMILAR_TO",
+   "weight": 0.215
+  },
+  {
+   "source": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
+   "target": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
+   "type": "SIMILAR_TO",
+   "weight": 0.185
   }
  ]
 }
