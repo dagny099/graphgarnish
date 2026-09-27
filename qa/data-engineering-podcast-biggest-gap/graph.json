@@ -14,10 +14,10 @@
   "people_named_and_later_guests": [],
   "node_types": {
    "episode": 120,
-   "answer": 95,
-   "person": 53,
    "concept": 101,
+   "answer": 95,
    "entity": 44,
+   "person": 53,
    "question": 1
   },
   "link_types": {

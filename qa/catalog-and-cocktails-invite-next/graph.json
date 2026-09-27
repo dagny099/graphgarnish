@@ -32,11 +32,10 @@
    "Shane Gibson"
   ],
   "node_types": {
-   "person": 296,
-   "answer": 168,
    "episode": 352,
-   "entity": 94,
-   "concept": 18,
+   "person": 295,
+   "answer": 168,
+   "entity": 93,
    "question": 1
   },
   "link_types": {
@@ -44,9 +43,8 @@
    "ANSWERS": 168,
    "FROM_EPISODE": 168,
    "GAVE": 156,
-   "MENTIONS": 259,
-   "RECOMMENDS": 125,
-   "ABOUT": 39,
+   "MENTIONS": 254,
+   "RECOMMENDS": 123,
    "SIMILAR_TO": 11
   }
  },
@@ -94,7 +92,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/99e1d43a-cf27-4d90-9ae3-b4d000c2150a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2026-09-16_harvest-now-decrypt-later-why-quantum-is_fbc3e5",
@@ -153,7 +151,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2f04b5a3-32bd-4aff-8205-b4c001211e56/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_edo_bronstein",
@@ -218,7 +216,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/9bb74e04-9d26-4f67-aaca-b4ba0101448c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_fed_cdos",
@@ -266,7 +264,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/ef99a3c6-2722-49fc-b8d2-b4b200ff78b4/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2026-08-19_honest-no-bs-data-podcast-7th-year-and-s_da9664",
@@ -305,7 +303,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/26bf6323-6060-458c-aabf-b459002cdd96/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "ep_2026-05-20_pragmatic-use-case-driven-data-governanc_dd9a60",
@@ -344,7 +342,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/95c98f4c-6cee-4771-a849-b450014e6578/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_mina_holland",
@@ -399,7 +397,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3684f78f-3baf-4fd4-8b1e-b44b018116fb/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_tony_shaw",
@@ -447,7 +445,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/69e0f5de-04fa-4897-a599-b443010ddd4d/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2026-05-01_ai-appetite-is-easy-digestion-is-hard-wi_4c2ca5",
@@ -528,7 +526,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2f4d708d-d0d4-4e97-99b7-b42a016d88c6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "ep_2026-04-09_the-void-between-data-and-decisions-with_b0cca6",
@@ -558,7 +556,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/b4b0412a-58e7-486d-ba71-b427005d967c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_barry_penay",
@@ -633,7 +631,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/59f3b232-f0e9-4298-8bb1-b420015961ee/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_davin_crowley",
@@ -681,7 +679,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/936250be-0ee6-491e-8597-b419015e6f78/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_change_management",
@@ -729,7 +727,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3b46cb96-305f-4790-85d9-b40a0118fdba/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_dila_nanderson",
@@ -817,7 +815,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/92a9fd9a-0ba8-4dbf-830d-b3fd01065339/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2026-02-19_shift-left-everything-how-ontology-event_e56a7c",
@@ -856,7 +854,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/105df32d-f6e7-48c7-a0e6-b3f6004f1d2c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2026-02-12_the-way-we-build-agents-today-is-dumb-wi_dade2e",
@@ -926,7 +924,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4db5e719-2c96-471a-a3e7-b3e70162dd89/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_roman_stanek",
@@ -985,7 +983,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/eedb7e21-2568-4d4c-aa16-b3e0015f30e0/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_christina_haskell",
@@ -1055,7 +1053,7 @@
     "guest",
     "mentioned"
    ],
-   "degree": 12
+   "degree": 9
   },
   {
    "id": "person_tony_baer",
@@ -1084,7 +1082,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/369c3704-0569-4d3e-9769-b3d201853b8d/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_bruno_azizo",
@@ -1150,7 +1148,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f8e54f68-a4c2-4030-9509-b3b600881696/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_simon_willison",
@@ -1199,7 +1197,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4d22ecf0-1550-4587-874b-b3ae0177bacc/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_alex_gonshi",
@@ -1247,7 +1245,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/ba7a082a-ae1a-42d3-929e-b3a800eca588/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_graham_brooks",
@@ -1295,7 +1293,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/6a722bf3-84e1-4098-85fa-b3a1001fea00/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2025-11-19_netflix-s-unified-data-architecture-mode_f9adb1",
@@ -1334,7 +1332,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d00f2590-58d3-44e4-b81b-b3930032fc03/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "ent_dbt",
@@ -1371,7 +1369,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/780518b8-8ffd-4721-b863-b39201789b51/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_john_george",
@@ -1468,7 +1466,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/31a13c6f-26cd-4398-87c8-b387002e151d/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2025-05-08_tim-juan-are-on-the-road-again-rants-abo_5d86e4",
@@ -1518,7 +1516,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/6f832c4d-fb32-4733-bb4e-b387002e14db/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_mike_weiss",
@@ -1606,7 +1604,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/aeb35abf-6ad5-48a7-a4eb-b387002e2556/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_nasa",
@@ -1663,7 +1661,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/53fcaac2-003d-4dbf-aee3-b387002e254c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "ent_sebastian_rushka",
@@ -1723,7 +1721,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d53fde4f-caa3-47cb-b746-b387002e2513/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2025-04-02_takeaways-digital-twins-and-ai-with-hala_2b6f6b",
@@ -1773,7 +1771,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3be8ce9d-913e-4d2e-81f7-b387002e258a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2025-03-28_takeaways-what-do-data-modeling-data-vau_715048",
@@ -1834,7 +1832,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/ce717454-40be-4ffb-8799-b387002e30c2/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_eric_broda",
@@ -1893,7 +1891,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/00387cf6-d369-43f5-8344-b387002e2f55/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2025-03-06_gartner-data-and-analytics-2025-takeaway_30f5ad",
@@ -2034,7 +2032,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d23b1553-0d42-478c-8993-b387002e3a02/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_dave_wells",
@@ -2105,7 +2103,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/7cae9586-1b2f-4322-a3bd-b387002e5c0b/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2025-01-16_takeaways-data-ai-business-literacy-with_01b951",
@@ -2208,7 +2206,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/7d9beea0-6c69-4681-a014-b387002e5dca/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2024-11-28_stop-talking-about-data-governance-and-j_f957d9",
@@ -2247,7 +2245,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/65f4b24d-48ef-4ff0-86ac-b387002e6619/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_joe_perez",
@@ -2313,7 +2311,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/65e6eef9-4aad-4386-8411-b387002e7519/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_matthew_bean",
@@ -2379,7 +2377,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/e6ed54c5-0d3f-46b9-94db-b387002e82d0/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2024-11-14_takeaways-the-truth-about-open-table-for_fbbc0d",
@@ -2449,7 +2447,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/53392e31-1cf1-41b9-99fd-b387002e9e34/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_jb_bloom",
@@ -2517,7 +2515,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/20b70bb3-edf5-43bc-a395-b387002ea53a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_selena_wong",
@@ -2579,7 +2577,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/ce77dd9e-8bdf-4192-a91a-b387002ebfc5/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_stuart_squires",
@@ -2649,7 +2647,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/59e1f852-ac72-406a-8a6e-b387002ec016/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_ian_macomer",
@@ -2704,7 +2702,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/9173e55c-8cb1-4c3d-bb69-b387002ec470/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_bill_gurley",
@@ -2762,15 +2760,15 @@
    "guests": [
     "Mariam Halfhide"
    ],
-   "text": "with this man i got inspired by him during the gartner summit he was giving a very interesting session about ethical dilemmas and how to resolve them and that's from bite and like he's Dutch but yeah yeah and that would be a person i would recommend that yeah i'm talking to him next week",
+   "text": "with this man i got inspired by him during the gartner summit he was giving a very interesting session about ethical dilemmas and how to resolve them and that's from bite and like he's Dutch but yeah yeah and that would be a person i would",
    "summary": "",
-   "quote": "with this man i got inspired by him during the gartner summit he was giving a very interesting session about ethical dilemmas and how to resolve them and that's from bite and like he's Dutch but yeah yeah and that would be a person i would recommend that yeah i'm talking to him next week",
+   "quote": "with this man i got inspired by him during the gartner summit he was giving a very interesting session about ethical dilemmas and how to resolve them and that's from bite and like he's Dutch but yeah yeah and that would be a person i would",
    "start": 3403.4,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/35e69532-2d19-4b46-8846-b387002ef3c0/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2024-09-18_takeaways-responsible-ai-with-mariam-hal_7802d9",
@@ -2811,7 +2809,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3922bc4b-b1c4-4c00-a580-b387002ef714/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2024-09-05_building-diversity-in-data-with-dawn-car_b36e51",
@@ -2850,7 +2848,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4592b662-8962-49c0-a7c5-b387002f02d2/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_greg_freeman",
@@ -2914,7 +2912,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/324a6609-aafa-4dd5-9b60-b387002f19d6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_marco_goyer",
@@ -2972,7 +2970,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/48408a79-eb10-4262-b3f1-b387002f2128/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "ent_jni",
@@ -3099,15 +3097,15 @@
    "guests": [
     "Ora Lassila"
    ],
-   "text": "well should you invite some academic next you know and see what's going on and the you know like what's coming over the horizon for for enterprise all right yeah well or thank you so much we went through I think most of the questions that we wanted we were grouping them together quick writer next week Tim and I will both be live and gartner we're going to be actually in London all next week and we are going to figure out well we're going to probably have a live moment I don't know what we're going to figure out next week but the coolest thing is that next week it's actually our four year anniversary of doing Catalan cocktails so folks listening to us we are going to be in London and so Friday next Friday the 17th",
+   "text": "well should you invite some academic next you know and see what's going on and the you know like what's coming over the horizon for for enterprise all right yeah well or thank you so much we went through I think most of the questions that we wanted we were grouping them together",
    "summary": "",
-   "quote": "well should you invite some academic next you know and see what's going on and the you know like what's coming over the horizon for for enterprise all right yeah well or thank you so much we went through I think most of the questions that we wanted we were grouping them together quick writer next week Tim and I",
+   "quote": "well should you invite some academic next you know and see what's going on and the you know like what's coming over the horizon for for enterprise all right yeah well or thank you so much we went through I think most of the questions that we wanted we were grouping them together",
    "start": 3284.0,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/539f09c1-4a56-4df4-8c8d-b387002f3d65/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2024-05-07_takeaways-leadership-transformation-in-t_a7cbcf",
@@ -3157,7 +3155,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a9f89a38-5f38-4353-b32f-b387002f489e/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_owen_rogers",
@@ -3232,7 +3230,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3f8b3536-1d3e-4bce-b304-b387002f560f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_paul_grove",
@@ -3281,7 +3279,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a1b61397-b046-4cd1-a30d-b387002f58a3/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "ent_duckdb",
@@ -3338,7 +3336,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/472bf4c2-4356-414f-9755-b387002f6b53/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_samir_sharma",
@@ -3404,7 +3402,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/15a9b132-eaf6-4e54-ab57-b387002f70e6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_sada_griazzi",
@@ -3474,7 +3472,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f6eeebcb-0bd9-4cfa-b6a7-b387002f885f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_jake_sanders",
@@ -3576,7 +3574,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2ef244c6-07b6-40f8-8a85-b387002f99a3/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2024-02-26_don-t-lift-and-shift-data-governance-to_e078c2",
@@ -3615,7 +3613,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/5fefd60d-6fa4-456a-91cf-b387002fa54e/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_shane_gibson",
@@ -3671,7 +3669,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/34bd693c-7b44-4a50-bc83-b387002fa6c8/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_bert_hartson",
@@ -3753,7 +3751,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/822438a4-7567-4a04-8d10-b387002fbd5f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_mary_bates",
@@ -3801,7 +3799,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f907aa42-e86f-4eb9-ba47-b387002fc2ff/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_john_giles",
@@ -3858,7 +3856,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/9ade05ba-0920-40f4-9c07-b387002fc4ff/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_gary_cretchmar",
@@ -3906,7 +3904,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d5873546-1a5f-4861-979d-b387002fd1ba/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_chris_ye",
@@ -3988,7 +3986,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d14e507a-46bb-4568-a9af-b387002fe67d/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_amy_vergada",
@@ -4085,7 +4083,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f445145a-204e-4857-a6c0-b387002ffefa/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2023-11-02_data-storytelling-with-kat-greenbrook_9a96aa",
@@ -4135,7 +4133,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2d430592-e74c-49a3-8053-b387003003b3/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2023-10-24_data-catalogs-the-power-of-collaboration_3c8d00",
@@ -4165,7 +4163,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f32aec9c-3e94-4b90-ab36-b38700301981/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_data_storytellers",
@@ -4222,7 +4220,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/827b1bdf-d687-44a1-8776-b38700304610/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_brian_tionil",
@@ -4364,7 +4362,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4102476f-e087-4b20-8531-b38700305f31/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2023-09-14_tim-and-juan-rant-from-amsterdam-where-i_c5ef85",
@@ -4414,7 +4412,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/fb35c53f-e8a3-41e6-bb25-b387003068eb/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_chad_sanderson",
@@ -4470,7 +4468,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/641b5982-fec0-4367-ae74-b38700306ba8/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_holly_smith",
@@ -4539,7 +4537,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d6b19e82-6cd2-4edc-84ce-b38700307b74/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "ent_samaya_raman",
@@ -4592,7 +4590,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/fe644968-f237-4797-b287-b3870030797a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "ep_2023-08-17_juan-and-tim-rant-about-ai-and-chatting_603b85",
@@ -4673,7 +4671,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/45e58d1e-a4dc-494a-ba86-b38700308f7a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
+   "degree": 8
   },
   {
    "id": "person_mulvam_rov",
@@ -4734,7 +4732,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/028ce088-ab6e-4cdd-a07b-b38700309520/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_moham_arif",
@@ -4794,7 +4792,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/0fa66bef-a979-4372-bf48-b38700309e54/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2023-07-20_people-and-data-w-tom-redman-the-data-do_c61d0c",
@@ -4833,7 +4831,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/206d01c9-5342-4a20-8f00-b3870030a6d1/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 11
+   "degree": 10
   },
   {
    "id": "person_john_zachman",
@@ -4929,7 +4927,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/359be594-4c8b-45c3-a48e-b3870030b531/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "ep_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
@@ -4968,7 +4966,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/b7d16be2-f0b7-42ed-84b1-b3870030b46f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
+   "degree": 8
   },
   {
    "id": "ep_2023-07-06_catalogs-cocktails-live-from-snowflake-s_0de617",
@@ -5029,7 +5027,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/9b08a036-97b4-4e82-afe2-b3870030c22f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_val_calvo",
@@ -5113,7 +5111,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3b7c97a7-3436-4664-ad47-b3870030c6ef/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2023-05-25_takeaways-with-ben-clinch-from-bt-group_a9e7e0",
@@ -5163,7 +5161,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/7e649316-50ac-4b46-9cb7-b3870030d2a9/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2023-05-18_takeaways-with-maddy-want-from-fanatics_ab866d",
@@ -5224,7 +5222,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2a0828ac-7945-4030-a849-b3870030e8bb/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2023-05-04_unpacking-responsible-ai-with-ricardo-ba_d83928",
@@ -5263,7 +5261,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2076f738-410b-4a67-95bc-b3870030f574/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_jansu_janja",
@@ -5322,7 +5320,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/b9ed5c1b-e91a-42ae-bb7b-b38700310173/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_tyler_cowan",
@@ -5397,7 +5395,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/c18788c8-9664-459a-abfd-b38700310adb/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_michael_bronstein",
@@ -5456,7 +5454,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/51882c36-b66b-479d-a349-b38700311596/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_sidel_neely",
@@ -5499,7 +5497,7 @@
    "roles": [
     "guest"
    ],
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2023-04-06_passing-the-buck-business-or-data_59a501",
@@ -5521,31 +5519,15 @@
    "guests": [
     "Benny Benford"
    ],
-   "text": "So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn two way medium. I've met so many amazing people with that. And with that, actually next week, one of the people who are one of our guests next week is going to be Veronica Durgan, who's a VP of data at SACS, who I've also met through LinkedIn and we've chatted through that. And we're actually going to be live from Boston because next week we're going to be a Boston for our honest No BS dinner over there. So she's one of our guests, so we're going to figure that one out how to do the whole life thing.",
+   "text": "So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn two way medium. I've met so many amazing people with that.",
    "summary": "",
-   "quote": "So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn two way medium. I've met so many amazing people with that. And with that, actually next week, one of the people who are one of our guests next week is going to be Veronica Durgan, who's",
+   "quote": "So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn two way medium. I've met so many amazing people with that.",
    "start": 3446.9,
    "method": "fuzzy",
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/bbbeae26-2177-4022-b41b-b38700312b1e/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
-  },
-  {
-   "id": "person_veronica_durgan",
-   "type": "person",
-   "name": "Veronica Durgan",
-   "roles": [
-    "mentioned"
-   ],
-   "degree": 2
-  },
-  {
-   "id": "ent_sacs",
-   "type": "entity",
-   "name": "SACS",
-   "kind": "other",
-   "degree": 2
+   "degree": 4
   },
   {
    "id": "ep_2023-03-30_takeaways-with-abhi-sivasailam_3c6211",
@@ -5584,7 +5566,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4a41d73b-8246-4d69-9982-b3870031361e/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_anand_paco",
@@ -5672,7 +5654,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/91f13045-b4d4-4d13-bf17-b38700314901/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2023-03-09_takeaways-with-bethany-lyons_1b81a1",
@@ -5764,7 +5746,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/e340ab1c-f13c-4029-994f-b38700315a96/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_omar_kewaj",
@@ -5832,7 +5814,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a89404c3-2021-440a-84a5-b38700316dd0/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_sam_sharma",
@@ -5899,7 +5881,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/02237adf-7691-4cf5-89f6-b38700317e32/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_danny_hillis",
@@ -5965,7 +5947,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/95e3d3bd-c4f6-4005-ac28-b38700319769/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2023-01-26_takeaways-with-anna-abramova_3af13b",
@@ -6015,7 +5997,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4e446743-d1ee-4ff4-888e-b3870031b155/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_veronica_durgen",
@@ -6025,6 +6007,13 @@
     "mentioned"
    ],
    "degree": 2
+  },
+  {
+   "id": "ent_sacs",
+   "type": "entity",
+   "name": "SACS",
+   "kind": "other",
+   "degree": 1
   },
   {
    "id": "ep_2023-01-19_takeaways-with-jane-urban_bab798",
@@ -6074,7 +6063,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/9e7c79d4-19aa-430e-8108-b3870031cfd7/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2023-01-12_takeaways-with-bill-inmon_bdcc93",
@@ -6125,7 +6114,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a481c496-5e8d-40af-9573-b3870031d25d/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_brad_pitt",
@@ -6193,7 +6182,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/0a3f73bc-8848-4b34-817b-b3870031dc5b/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_steve_mclaughlin",
@@ -6252,7 +6241,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/38e7129d-ea08-4529-a82f-b3870031e194/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "ent_silicon_valley",
@@ -6316,7 +6305,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/bbf2aa48-72c8-4508-b3cd-b3870031ecb1/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_maria_valar",
@@ -6385,7 +6374,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/5a52c677-1a76-49eb-ade0-b38700320784/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_giuseppe_sultini",
@@ -6523,7 +6512,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/db368703-7fec-4924-a155-b3870032151f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_eric_topal",
@@ -6571,7 +6560,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/578fbbf7-9522-434f-b80c-b38700322274/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2022-10-20_knowledge-the-missing-piece-to-understan_035962",
@@ -6599,7 +6588,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f4791c1d-c8fb-4307-8f8b-b38700321d56/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2022-10-13_takeaways-with-laura-ellis-from-rapid7_ebbdf6",
@@ -6649,7 +6638,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/5e8aba2d-ab75-4ab7-a7de-b3870032399a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_caitlin_houden",
@@ -6708,7 +6697,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a89d339b-154d-46e8-afce-b38700324df2/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 10
+   "degree": 9
   },
   {
    "id": "person_andy_hawk",
@@ -6790,7 +6779,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/855585ce-cec0-4729-b120-b38700325567/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_nicola_askin",
@@ -6860,7 +6849,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3a5a4aec-c95b-4cd0-b801-b387003259b4/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_hacker_news",
@@ -6897,7 +6886,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/9d0c16f3-5d9f-4cbd-8d4a-b38700327b30/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2022-09-15_takeaways-with-ole-olesen-bagneux_0e7ea9",
@@ -6939,7 +6928,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/496bb8d7-28e2-471c-a219-b3870032afcf/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "ep_2022-09-08_data-engineering-where-are-we-and-where_ce3ad4",
@@ -6989,7 +6978,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3fa5b281-b818-4214-89ec-b3870032b377/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "ep_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
@@ -7009,7 +6998,7 @@
    "roles": [
     "guest"
    ],
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ans_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
@@ -7020,7 +7009,7 @@
    "guests": [
     "Valentijn of Vopak"
    ],
-   "text": "can invite Christian Mazzbierch he is he is a person that also wrote a very interesting book he started Humanities and he has a consultancy firm that does a lot of well consultancy jobs with a lot of data and he wrote this great book of how you can kind of blends data with you humanities what is the thing that data is good at and what is the thing that we as humans still still need to do so if you can get him for the show that would be great interesting interesting give a suggestion I've no suggestion for you but I'll let you know all right well this was a fantastic conversation next week we're gonna be alive with Joe Rice and Matt Hoosley they're from Terrainier data they also have their more Monday morning data chats",
+   "text": "can invite Christian Mazzbierch he is he is a person that also wrote a very interesting book he started Humanities and he has a consultancy firm that does a lot of well consultancy jobs with a lot of data and he wrote this great book of how you can kind of blends data with you humanities what is the thing that data is good at and what is the thing that we as humans still still need to do so if you can get him for the show that would be great interesting interesting give a suggestion I've no suggestion for you but I'll let you know all right well",
    "summary": "",
    "quote": "can invite Christian Mazzbierch he is he is a person that also wrote a very interesting book he started Humanities and he has a consultancy firm that does a lot of well consultancy jobs with a lot of data and he wrote this great book of how you can kind of blends data with you humanities what is the thing",
    "start": 3506.8,
@@ -7028,7 +7017,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/8800685b-72df-42bd-baaf-b3870032b47c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 5
   },
   {
    "id": "person_christian_mazzbierch",
@@ -7057,7 +7046,7 @@
    "date": "2022-09-01",
    "episode": "Takeways with Roel and Valentijn",
    "guests": [],
-   "text": "I hope that you can invite Christian Mosbier. He is a person that also wrote a very interesting book. He started Humanities, and he has a consultancy firm that does a lot of, well, consultancy jobs with a lot of data. And he wrote this great book of how you can kind of blend data with humanities. What is the thing that data is good at, and what is the thing that we as humans still need to do? So if you can get him for the show, that would be great. Interesting. Do you have a suggestion? I've no suggestion for you, but I'll let you know. Right. All right. Well, this was a fantastic conversation. Next week, we're going to be live with Joe Rice and Matt Huesley. They are from Terrainier Data. They also have their more",
+   "text": "I hope that you can invite Christian Mosbier. He is a person that also wrote a very interesting book. He started Humanities, and he has a consultancy firm that does a lot of, well, consultancy jobs with a lot of data. And he wrote this great book of how you can kind of blend data with humanities. What is the thing that data is good at, and what is the thing that we as humans still need to do? So if you can get him for the show, that would be great. Interesting. Do you have a suggestion? I've no suggestion for you, but I'll let you know. Right. All right. Well, this was a fantastic conversation.",
    "summary": "",
    "quote": "I hope that you can invite Christian Mosbier. He is a person that also wrote a very interesting book. He started Humanities, and he has a consultancy firm that does a lot of, well, consultancy jobs with a lot of data. And he wrote this great book of how you can kind of blend data with humanities. What is the",
    "start": 822.5,
@@ -7065,7 +7054,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/65e89599-245f-477d-ad8b-b3870032bac5/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 4
   },
   {
    "id": "person_christian_mosbier",
@@ -7074,13 +7063,6 @@
    "roles": [
     "mentioned"
    ],
-   "degree": 1
-  },
-  {
-   "id": "ent_terrainier_data",
-   "type": "entity",
-   "name": "Terrainier Data",
-   "kind": "other",
    "degree": 1
   },
   {
@@ -7109,7 +7091,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/0713e7bb-e626-4b84-a97e-b3870032c8f9/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2022-08-25_build-bridges-don-t-burn-them-w-vip-parm_1204fc",
@@ -7148,7 +7130,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3e0de4ef-0877-43c4-943c-b3870032c224/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2022-07-28_bonus-episode-juan-s-trip-takeaways-from_7d4afe",
@@ -7240,7 +7222,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/7ce5c7ff-a225-4c41-b8a3-b3870032d4b6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_dbt_labs",
@@ -7297,7 +7279,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2d1d89d2-1f4a-4a99-8fcc-b3870032e1a7/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_russ_lebanc",
@@ -7376,7 +7358,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f5b8d968-0638-47f6-9fae-b3870032fe1f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "ep_2022-05-26_the-data-entrepreneur-s-essentials-w-bre_1aefdc",
@@ -7415,7 +7397,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d6c96bae-2464-45d5-bd41-b38700331aa4/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "ent_ceos",
@@ -7483,7 +7465,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/78495501-3d29-4234-86f6-b38700332550/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_covid",
@@ -7541,7 +7523,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/87b40472-088c-4a04-ad7c-b3870033382f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_lenny_rochitsky",
@@ -7609,7 +7591,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/befb8eca-2d82-46c8-8763-b3870033470a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_jamie_taylor",
@@ -7657,7 +7639,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/ba1928ee-ba09-4f88-8ef7-b38700335746/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_aaron_keys",
@@ -7727,7 +7709,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/367692b0-09d3-4292-b779-b38700337478/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2022-04-14_why-are-we-so-bad-at-this-modern-data-st_a467f8",
@@ -7768,7 +7750,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/ae375005-5cb4-48f4-9091-b38700338ae1/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "ent_knowledge_graph_conference",
@@ -7839,7 +7821,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/81a91c4d-7ba8-41ae-b3e2-b387003390f6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2022-03-31_the-future-of-data-is-knowledge-w-bob-mu_1698d3",
@@ -7869,7 +7851,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/17e12542-d480-414b-995f-b3870033b7ad/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2022-03-31_s3e12-takeaways-with-bob-muglia_187a21",
@@ -7921,7 +7903,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/445fb509-8d05-4914-89d1-b3870033cc96/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_lawrence_core",
@@ -7983,7 +7965,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/7ce4ad73-607e-4916-a4ce-b3870033d6b6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_karina_sabani",
@@ -8051,7 +8033,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/77ac719c-a195-42e0-9acf-b3870033e087/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "ent_ceo_of_cockroach",
@@ -8122,7 +8104,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/87e59842-0b8c-4c40-b495-b3870033f3b1/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_lynn_silverston",
@@ -8181,7 +8163,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/43b0757c-fd89-486c-aff0-b38700340c62/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2022-02-10_s3e6-takeaways-with-luke-slotwinski_cee502",
@@ -8273,7 +8255,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/02a1db91-d6b2-41fe-a00b-b38700342b60/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_anthony_altman",
@@ -8321,7 +8303,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/44c9b69f-3049-4485-8222-b38700343847/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "person_caitlin_houdon",
@@ -8409,7 +8391,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2f2e4f77-90fc-498f-ab92-b38700344cc9/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_jason_gans",
@@ -8457,7 +8439,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/5765b1f4-c76c-4cdb-b0f3-b38700344f61/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "ep_2022-01-06_season-three-premier-takeaways-with-sara_7d1a08",
@@ -8518,7 +8500,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/674fc252-046a-48ad-9dde-b38700346b94/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
+   "degree": 8
   },
   {
    "id": "person_evil_village_cough",
@@ -8580,7 +8562,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a413f754-b503-4091-9423-b38700346c6e/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2021-12-02_modern-data-stack-technology-methodology_d06cfc",
@@ -8620,7 +8602,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2d33537d-3693-489e-b7bf-b38700346fe6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_david_wallace",
@@ -8668,7 +8650,7 @@
    "confidence": 0.75,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a3cf6a71-d84a-433d-b57c-b38700347bff/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2021-11-11_is-self-service-bi-the-answer-w-cindi-ho_06ca8f",
@@ -8707,7 +8689,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/b3a0e95b-639c-4e0f-8881-b3870034800e/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2021-11-04_data-tools-the-good-the-bad-and-the-ugly_7592c9",
@@ -8797,7 +8779,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/db7edb67-9cd4-4be4-b8ca-b38700348cfe/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "ent_cios",
@@ -8850,7 +8832,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/66d39784-1b92-4263-b68b-b38700348ef1/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2021-09-30_do-we-have-a-data-infrastructure-crisis_02771f",
@@ -8889,7 +8871,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/994c3c69-8506-4016-a807-b3870034a559/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "ent_aws",
@@ -8963,7 +8945,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d3f019b6-a8de-4305-977b-b3870034b846/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_irene_gonsfalves",
@@ -9029,7 +9011,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/81154002-3b2e-4385-a532-b3870034eb86/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_isn_t_frank",
@@ -9085,7 +9067,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/e985f117-feaa-46a4-93c4-b3870034f186/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_donald_farmer",
@@ -9140,7 +9122,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d87b5cea-8eb5-47d1-a58b-b3870034fb55/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 6
   },
   {
    "id": "person_kate_strachneon",
@@ -9195,7 +9177,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/13572ee7-a714-4038-802f-b3870034fbfc/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2021-08-12_documents-and-clouds-and-graphs-oh-my-w_d266ac",
@@ -9234,7 +9216,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/7a724d7a-1c46-496a-85e4-b387003507eb/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "ep_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
@@ -9273,7 +9255,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3f311723-cc1c-4d00-81ed-b38700350d3c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2021-07-06_special-edition-panel-on-data-architectu_dcd439",
@@ -9334,7 +9316,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/934aa633-b519-4a95-bb4d-b3870035591f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_ceo_of_intelligent_business_strategies",
@@ -9380,7 +9362,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4edb77ba-e94a-4e67-ab78-b38700359dc5/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "ent_denise_person",
@@ -9433,7 +9415,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/69b686df-fdf8-4834-b41b-b38700359fa5/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "ep_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
@@ -9472,7 +9454,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f8746096-3e2e-4941-a5a4-b3870035a411/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2021-04-22_why-it-s-time-to-mesh-with-your-data-arc_5bdf77",
@@ -9500,7 +9482,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d3faf92b-558a-4fb3-b4d1-b3870035a802/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "ep_2021-04-15_what-do-they-teach-at-your-data-science_d4ee13",
@@ -9528,7 +9510,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2be849ec-ed57-4a51-a945-b3870035b32a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "ep_2021-04-07_power-to-the-data_c81d2d",
@@ -9556,7 +9538,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/acb558a8-e340-4793-ad54-b3870035bba2/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "ep_2021-03-31_building-a-great-data-team-mission-im-po_5a9c13",
@@ -9584,7 +9566,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/75bbe42e-4685-45c2-885d-b3870035ca6a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "person_david_barsham_shah",
@@ -9621,7 +9603,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/94447a18-5d95-490e-a7a1-b387003615f2/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_dave_perucci",
@@ -9665,7 +9647,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/42c11404-d499-4ea2-b9d4-b38700361eb2/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_iab_tech_lab",
@@ -9700,7 +9682,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/faeb1f07-d630-4cc3-9bdb-b3870036255e/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ep_2021-03-04_do-you-have-data-trust-issues_0e8caa",
@@ -9739,7 +9721,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/97af3ca6-a221-48c7-aad6-b38700362a7b/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_niha_narkede",
@@ -9794,7 +9776,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2c799bb4-ee07-4275-9d9f-b38700363039/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_dan_mccreary",
@@ -9842,7 +9824,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3787a42b-d8b8-4ac1-b8d7-b387003635e8/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_rashma_sheikh",
@@ -9886,7 +9868,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/b3acf963-5924-434a-943e-b38700363a16/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_california_consumer_protection_act",
@@ -9928,7 +9910,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f70fd6a9-b595-47dc-b46d-b38700363e4b/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "person_fabio_alvarez",
@@ -9987,7 +9969,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/8875758f-d299-4d29-b6c0-b38700365ec5/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "ent_ceo",
@@ -10430,114 +10412,6 @@
    "has_transcript": true,
    "answered": false,
    "degree": 0
-  },
-  {
-   "id": "concept_future",
-   "type": "concept",
-   "name": "future",
-   "degree": 2
-  },
-  {
-   "id": "concept_name",
-   "type": "concept",
-   "name": "name",
-   "degree": 2
-  },
-  {
-   "id": "concept_eric",
-   "type": "concept",
-   "name": "eric",
-   "degree": 2
-  },
-  {
-   "id": "concept_selena",
-   "type": "concept",
-   "name": "selena",
-   "degree": 2
-  },
-  {
-   "id": "concept_data_architecture",
-   "type": "concept",
-   "name": "data architecture",
-   "degree": 2
-  },
-  {
-   "id": "concept_data_management",
-   "type": "concept",
-   "name": "data management",
-   "degree": 2
-  },
-  {
-   "id": "concept_week",
-   "type": "concept",
-   "name": "week",
-   "degree": 2
-  },
-  {
-   "id": "concept_data_mesh",
-   "type": "concept",
-   "name": "data mesh",
-   "degree": 2
-  },
-  {
-   "id": "concept_founder",
-   "type": "concept",
-   "name": "founder",
-   "degree": 2
-  },
-  {
-   "id": "concept_three_questions",
-   "type": "concept",
-   "name": "three questions",
-   "degree": 2
-  },
-  {
-   "id": "concept_semantics_knowledge",
-   "type": "concept",
-   "name": "semantics knowledge",
-   "degree": 2
-  },
-  {
-   "id": "concept_ethan",
-   "type": "concept",
-   "name": "ethan",
-   "degree": 2
-  },
-  {
-   "id": "concept_knowledge_graph",
-   "type": "concept",
-   "name": "knowledge graph",
-   "degree": 3
-  },
-  {
-   "id": "concept_snowflake",
-   "type": "concept",
-   "name": "snowflake",
-   "degree": 3
-  },
-  {
-   "id": "concept_wrote_book",
-   "type": "concept",
-   "name": "wrote book",
-   "degree": 3
-  },
-  {
-   "id": "concept_it_d",
-   "type": "concept",
-   "name": "it'd",
-   "degree": 2
-  },
-  {
-   "id": "concept_invite_recommend",
-   "type": "concept",
-   "name": "invite recommend",
-   "degree": 2
-  },
-  {
-   "id": "concept_knows_data",
-   "type": "concept",
-   "name": "knows data",
-   "degree": 2
   }
  ],
  "links": [
@@ -13776,23 +13650,7 @@
   },
   {
    "source": "ans_2023-04-06_passing-the-buck-business-or-data_59a501",
-   "target": "person_veronica_durgan",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "person_benny_benford",
-   "target": "person_veronica_durgan",
-   "type": "RECOMMENDS",
-   "date": "2023-04-06"
-  },
-  {
-   "source": "ans_2023-04-06_passing-the-buck-business-or-data_59a501",
    "target": "ent_linkedin",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2023-04-06_passing-the-buck-business-or-data_59a501",
-   "target": "ent_sacs",
    "type": "MENTIONS"
   },
   {
@@ -14748,17 +14606,6 @@
    "date": "2022-09-01"
   },
   {
-   "source": "ans_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
-   "target": "person_matt_housley",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "person_valentijn_of_vopak",
-   "target": "person_matt_housley",
-   "type": "RECOMMENDS",
-   "date": "2022-09-01"
-  },
-  {
    "source": "ans_2022-09-01_takeways-with-roel-and-valentijn_890a19",
    "target": "question",
    "type": "ANSWERS"
@@ -14771,16 +14618,6 @@
   {
    "source": "ans_2022-09-01_takeways-with-roel-and-valentijn_890a19",
    "target": "person_christian_mosbier",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2022-09-01_takeways-with-roel-and-valentijn_890a19",
-   "target": "person_matt_housley",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2022-09-01_takeways-with-roel-and-valentijn_890a19",
-   "target": "ent_terrainier_data",
    "type": "MENTIONS"
   },
   {
@@ -16492,240 +16329,6 @@
    "type": "GUEST_ON"
   },
   {
-   "source": "ans_2026-02-19_shift-left-everything-how-ontology-event_e56a7c",
-   "target": "concept_future",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-01-29_all-things-data-lineage-with-dr-irina-st_236309",
-   "target": "concept_name",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-03-20_data-contracts-data-products-data-mesh-w_59074e",
-   "target": "concept_eric",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-01-23_data-teams-are-strategic-not-just-techni_9ff3a5",
-   "target": "concept_selena",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-11-14_the-truth-about-open-table-formats-with_bacb67",
-   "target": "concept_data_architecture",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-10-24_why-we-need-to-focus-on-knowledge-manage_4679c2",
-   "target": "concept_data_management",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-10-17_streamlining-data-value-with-colleen-tar_e7bad1",
-   "target": "concept_selena",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-05-09_everything-you-wanted-to-know-about-know_949352",
-   "target": "concept_week",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-05-07_leadership-transformation-in-this-data-a_128a40",
-   "target": "concept_name",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-01-19_the-data-mesh-terclass_995cfc",
-   "target": "concept_data_mesh",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-01-11_how-will-ai-impact-2024-and-beyond_25ae3c",
-   "target": "concept_founder",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-08-24_takeaways-from-technical-to-business-dat_522e13",
-   "target": "concept_three_questions",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-08-24_from-technical-to-business-data-strategy_e3736f",
-   "target": "concept_three_questions",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
-   "target": "concept_semantics_knowledge",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
-   "target": "concept_semantics_knowledge",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-07-13_takeaways-modeling-and-semantics-are-mor_934e29",
-   "target": "concept_ethan",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
-   "target": "concept_knowledge_graph",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-04-13_do-s-and-don-t-for-the-next-gen-data-lea_ed05ed",
-   "target": "concept_snowflake",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-04-06_passing-the-buck-business-or-data_59a501",
-   "target": "concept_week",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-02-09_everywhere-you-look-there-it-is-entity-r_a80668",
-   "target": "concept_future",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-02-02_is-master-data-management-mdm-dead-w-mal_dba3f3",
-   "target": "concept_data_management",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-10-27_ai-no-one-wants-your-models-w-andrew-eye_3e9d31",
-   "target": "concept_wrote_book",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-10-20_takeaways-with-loris-marini_b8a55a",
-   "target": "concept_it_d",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-10-20_knowledge-the-missing-piece-to-understan_035962",
-   "target": "concept_it_d",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-09-08_takeaways-with-joe-reis-and-matt-housley_148395",
-   "target": "concept_invite_recommend",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
-   "target": "concept_ethan",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
-   "target": "concept_wrote_book",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-09-01_takeways-with-roel-and-valentijn_890a19",
-   "target": "concept_wrote_book",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
-   "target": "concept_knowledge_graph",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
-   "target": "concept_knowledge_graph",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-03-10_your-privacy-is-my-currency-with-patrici_afe9e5",
-   "target": "concept_knows_data",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-02-10_the-three-most-important-letters-in-data_a4c310",
-   "target": "concept_snowflake",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-09-16_how-to-think-about-data-value-w-lars-alb_b73064",
-   "target": "concept_eric",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-09-09_what-s-the-deal-with-reverse-etl-w-tejas_c66ca8",
-   "target": "concept_founder",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-05-13_don-t-treat-your-data-stack-like-a-fine_1a35aa",
-   "target": "concept_snowflake",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
-   "target": "concept_data_architecture",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-03-04_do-you-have-data-trust-issues_0e8caa",
-   "target": "concept_knows_data",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-02-04_what-can-we-learn-from-messy-insurance-d_5fb151",
-   "target": "concept_invite_recommend",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-01-28_does-your-data-governance-strategy-need_7ea19c",
-   "target": "concept_data_mesh",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2026-04-02_the-wrong-mandate-why-boards-set-data-ai_d103e7",
    "target": "ans_2021-12-16_please-be-quiet-the-machines-are-talking_83b762",
    "type": "SIMILAR_TO",
@@ -16777,13 +16380,13 @@
    "source": "ans_2022-10-20_takeaways-with-loris-marini_b8a55a",
    "target": "ans_2022-10-20_knowledge-the-missing-piece-to-understan_035962",
    "type": "SIMILAR_TO",
-   "weight": 0.869
+   "weight": 0.87
   },
   {
    "source": "ans_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
    "target": "ans_2022-09-01_takeways-with-roel-and-valentijn_890a19",
    "type": "SIMILAR_TO",
-   "weight": 0.71
+   "weight": 0.79
   },
   {
    "source": "ans_2022-08-25_season-4-premiere-takeaways_c3f6df",

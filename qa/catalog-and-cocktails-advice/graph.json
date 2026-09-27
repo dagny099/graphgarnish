@@ -20,11 +20,11 @@
    "Steve Whitla"
   ],
   "node_types": {
-   "person": 203,
-   "answer": 179,
    "episode": 352,
-   "entity": 101,
-   "concept": 227,
+   "person": 203,
+   "concept": 224,
+   "answer": 179,
+   "entity": 100,
    "question": 1
   },
   "link_types": {
@@ -32,9 +32,9 @@
    "ANSWERS": 179,
    "FROM_EPISODE": 179,
    "GAVE": 165,
-   "MENTIONS": 127,
-   "ABOUT": 526,
-   "SIMILAR_TO": 23
+   "MENTIONS": 126,
+   "ABOUT": 519,
+   "SIMILAR_TO": 24
   }
  },
  "nodes": [
@@ -2032,21 +2032,21 @@
   {
    "id": "ans_2025-01-30_want-to-be-data-and-ai-driven-start-with_b0e089",
    "type": "answer",
-   "name": "In terms of advice, I'd say don't put up things that you're thinking doing. Don't put them",
+   "name": "In terms of advice, I'd say don't put up things that you're thinking doing.",
    "date": "2025-01-30",
    "episode": "Want to Be Data and AI-Driven? Start with the Basics...a Glossary! with Olga Maydanchik",
    "guests": [
     "Olga Maydanchik"
    ],
-   "text": "In terms of advice, I'd say don't put up things that you're thinking doing. Don't put them up for the next week or whatever, live in the moment. That's mean if you want to travel somewhere, travel it tomorrow. If you need to implement something at your work, the best times start now. If you wanted to do general lose weight, exercise more, just right after this podcast, go start doing it literally. And even if you aren't happy with your job right now, it doesn't matter, it is your job, it's your current job, so start leaving in the moment, start leaving this. That would be probably not my advice, but this is how I try to leave my way.",
+   "text": "In terms of advice, I'd say don't put up things that you're thinking doing.",
    "summary": "",
-   "quote": "In terms of advice, I'd say don't put up things that you're thinking doing. Don't put them up for the next week or whatever, live in the moment. That's mean if you want to travel somewhere, travel it tomorrow. If you need to implement something at your work, the best times start now. If you wanted to do general lose",
+   "quote": "In terms of advice, I'd say don't put up things that you're thinking doing.",
    "start": 3803.6,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d23b1553-0d42-478c-8993-b387002e3a02/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 5
   },
   {
    "id": "ep_2025-01-30_takeaways-want-to-be-data-and-ai-driven_152c19",
@@ -7369,7 +7369,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/81a91c4d-7ba8-41ae-b3e2-b387003390f6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 9
   },
   {
    "id": "ep_2022-03-31_the-future-of-data-is-knowledge-w-bob-mu_1698d3",
@@ -8660,7 +8660,7 @@
    "guests": [
     "Kirk Borne"
    ],
-   "text": "Well, my advice ties right back to our toast at the beginning. And that is about education, start of the school year. So I have ice is to stay a lifelong learner. No matter where you are, what you're doing, always be in learning mode. I mean, I think my background's physics and astronomy with learn physics and I did colliding galaxies and black hole accretion of this, if any of that makes any sense to people years ago. And now I'm advising companies and medicine and cybersecurity and behavior analytics and all kinds of stuff. And it's because that I'm any kind of special person, but I just never stop learning. As always, it was learning new things. It's open the doors for many opportunities in my life. And I encourage people to always do that, just be in the lookout for new things to learn because the door might open not this week or next week, but many years later. So I started learning about machine learning in 1997, 24 years ago. And I started my own data leadership group LLC four months ago. So sometimes it takes a little while. But now I work as a startup",
+   "text": "Well, my advice ties right back to our toast at the beginning. And that is about education, start of the school year. So I have ice is to stay a lifelong learner. No matter where you are, what you're doing, always be in learning mode. I mean, I think my background's physics and astronomy with learn physics and I did colliding galaxies and black hole accretion of this, if any of that makes any sense to people years ago. And now I'm advising companies and medicine and cybersecurity and behavior analytics and all kinds of stuff. And it's because that I'm any kind of special person, but I just never stop learning. As always, it was learning new things. It's open the doors for many opportunities in my life. And I encourage people to always do that, just be in the lookout",
    "summary": "",
    "quote": "Well, my advice ties right back to our toast at the beginning. And that is about education, start of the school year. So I have ice is to stay a lifelong learner. No matter where you are, what you're doing, always be in learning mode. I mean, I think my background's physics and astronomy with learn physics and I did",
    "start": 3314.2,
@@ -8668,14 +8668,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d87b5cea-8eb5-47d1-a58b-b3870034fb55/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
-  },
-  {
-   "id": "ent_llc",
-   "type": "entity",
-   "name": "LLC",
-   "kind": "other",
-   "degree": 1
+   "degree": 8
   },
   {
    "id": "ep_2021-08-19_free-range-grass-fed-open-source-data-w_a610cb",
@@ -10328,27 +10321,21 @@
    "degree": 3
   },
   {
-   "id": "concept_job",
-   "type": "concept",
-   "name": "job",
-   "degree": 4
-  },
-  {
    "id": "concept_terms_advice",
    "type": "concept",
    "name": "terms advice",
    "degree": 4
   },
   {
-   "id": "concept_implement",
-   "type": "concept",
-   "name": "implement",
-   "degree": 2
-  },
-  {
    "id": "concept_lean",
    "type": "concept",
    "name": "lean",
+   "degree": 2
+  },
+  {
+   "id": "concept_sometimes",
+   "type": "concept",
+   "name": "sometimes",
    "degree": 2
   },
   {
@@ -10664,12 +10651,6 @@
    "degree": 4
   },
   {
-   "id": "concept_suggest",
-   "type": "concept",
-   "name": "suggest",
-   "degree": 2
-  },
-  {
    "id": "concept_outcome",
    "type": "concept",
    "name": "outcome",
@@ -10704,6 +10685,12 @@
    "type": "concept",
    "name": "learning",
    "degree": 6
+  },
+  {
+   "id": "concept_job",
+   "type": "concept",
+   "name": "job",
+   "degree": 3
   },
   {
    "id": "concept_data_teams",
@@ -10871,18 +10858,6 @@
    "id": "concept_invited",
    "type": "concept",
    "name": "invited",
-   "degree": 2
-  },
-  {
-   "id": "concept_might_open",
-   "type": "concept",
-   "name": "might open",
-   "degree": 2
-  },
-  {
-   "id": "concept_ago",
-   "type": "concept",
-   "name": "ago",
    "degree": 2
   },
   {
@@ -11060,12 +11035,6 @@
    "degree": 2
   },
   {
-   "id": "concept_week",
-   "type": "concept",
-   "name": "week",
-   "degree": 2
-  },
-  {
    "id": "concept_advice_add",
    "type": "concept",
    "name": "advice add",
@@ -11093,6 +11062,12 @@
    "id": "concept_general_advice",
    "type": "concept",
    "name": "general advice",
+   "degree": 2
+  },
+  {
+   "id": "concept_kinds",
+   "type": "concept",
+   "name": "kinds",
    "degree": 2
   },
   {
@@ -15538,11 +15513,6 @@
    "type": "GAVE"
   },
   {
-   "source": "ans_2021-08-26_can-t-spell-buzzwords-without-bs-w-kirk_44d43e",
-   "target": "ent_llc",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_denise_gosnell",
    "target": "ep_2021-08-19_free-range-grass-fed-open-source-data-w_a610cb",
    "type": "GUEST_ON"
@@ -16490,19 +16460,7 @@
   },
   {
    "source": "ans_2025-01-30_want-to-be-data-and-ai-driven-start-with_b0e089",
-   "target": "concept_job",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-01-30_want-to-be-data-and-ai-driven-start-with_b0e089",
    "target": "concept_terms_advice",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-01-30_want-to-be-data-and-ai-driven-start-with_b0e089",
-   "target": "concept_implement",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -16515,6 +16473,12 @@
   {
    "source": "ans_2025-01-23_data-teams-are-strategic-not-just-techni_9ff3a5",
    "target": "concept_lean",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-01-23_data-teams-are-strategic-not-just-techni_9ff3a5",
+   "target": "concept_sometimes",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -16993,12 +16957,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2024-01-30_productivity-is-not-performance-with-san_bef991",
-   "target": "concept_implement",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2024-01-19_the-data-mesh-terclass_995cfc",
    "target": "concept_drive_value",
    "type": "ABOUT",
@@ -17025,12 +16983,6 @@
   {
    "source": "ans_2024-01-11_how-will-ai-impact-2024-and-beyond_25ae3c",
    "target": "concept_listening",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-01-11_how-will-ai-impact-2024-and-beyond_25ae3c",
-   "target": "concept_suggest",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17564,13 +17516,7 @@
   },
   {
    "source": "ans_2023-02-23_increasing-adoption-of-data-products-by_c4b6c4",
-   "target": "concept_might_open",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-02-23_increasing-adoption-of-data-products-by_c4b6c4",
-   "target": "concept_ago",
+   "target": "concept_sometimes",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17588,13 +17534,13 @@
   },
   {
    "source": "ans_2023-02-16_metadata-is-this-a-graph-problem-w-moham_b723bb",
-   "target": "concept_data_advice",
+   "target": "concept_job",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2023-02-16_metadata-is-this-a-graph-problem-w-moham_b723bb",
-   "target": "concept_job",
+   "target": "concept_data_advice",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18122,12 +18068,6 @@
   },
   {
    "source": "ans_2022-06-09_getting-all-meta-about-data-w-sanjeev-mo_8d9f54",
-   "target": "concept_week",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-06-09_getting-all-meta-about-data-w-sanjeev-mo_8d9f54",
    "target": "concept_analytics_engineering",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -18218,6 +18158,12 @@
   },
   {
    "source": "ans_2022-04-28_a-layered-approach-to-data-meaning-and-m_ef157d",
+   "target": "concept_kinds",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2022-04-28_a-layered-approach-to-data-meaning-and-m_ef157d",
    "target": "concept_open",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -18297,12 +18243,6 @@
   {
    "source": "ans_2022-03-17_agile-like-a-fox-but-for-data-w-shane-gi_7e2ec4",
    "target": "concept_life_data",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-03-17_agile-like-a-fox-but-for-data-w-shane-gi_7e2ec4",
-   "target": "concept_suggest",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18686,19 +18626,7 @@
   },
   {
    "source": "ans_2021-08-26_can-t-spell-buzzwords-without-bs-w-kirk_44d43e",
-   "target": "concept_ago",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-08-26_can-t-spell-buzzwords-without-bs-w-kirk_44d43e",
-   "target": "concept_week",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-08-26_can-t-spell-buzzwords-without-bs-w-kirk_44d43e",
-   "target": "concept_might_open",
+   "target": "concept_kinds",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19042,19 +18970,25 @@
    "source": "ans_2026-02-12_the-way-we-build-agents-today-is-dumb-wi_dade2e",
    "target": "ans_2022-09-22_keeping-it-100-about-metadata-the-data-s_c5302f",
    "type": "SIMILAR_TO",
-   "weight": 0.165
+   "weight": 0.164
   },
   {
    "source": "ans_2026-02-12_the-way-we-build-agents-today-is-dumb-wi_dade2e",
    "target": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
    "type": "SIMILAR_TO",
-   "weight": 0.165
+   "weight": 0.164
   },
   {
    "source": "ans_2025-04-10_how-to-get-out-of-ai-proof-of-concept-pu_0b6da4",
    "target": "ans_2022-10-13_takeaways-with-laura-ellis-from-rapid7_ebbdf6",
    "type": "SIMILAR_TO",
    "weight": 0.16
+  },
+  {
+   "source": "ans_2025-01-30_want-to-be-data-and-ai-driven-start-with_b0e089",
+   "target": "ans_2022-04-07_can-data-policy-drive-data-productivity_0ab90a",
+   "type": "SIMILAR_TO",
+   "weight": 0.151
   },
   {
    "source": "ans_2023-08-24_takeaways-from-technical-to-business-dat_522e13",

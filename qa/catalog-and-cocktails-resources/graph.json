@@ -22,10 +22,10 @@
    "Shane Gibson"
   ],
   "node_types": {
-   "person": 199,
-   "answer": 133,
    "episode": 352,
+   "person": 199,
    "concept": 178,
+   "answer": 133,
    "entity": 134,
    "question": 1
   },

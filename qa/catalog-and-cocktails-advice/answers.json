@@ -2023,9 +2023,9 @@
   "reason": "stop cue",
   "method": "cue",
   "confidence": 1.0,
-  "answer": "In terms of advice, I'd say don't put up things that you're thinking doing. Don't put them up for the next week or whatever, live in the moment. That's mean if you want to travel somewhere, travel it tomorrow. If you need to implement something at your work, the best times start now. If you wanted to do general lose weight, exercise more, just right after this podcast, go start doing it literally. And even if you aren't happy with your job right now, it doesn't matter, it is your job, it's your current job, so start leaving in the moment, start leaving this. That would be probably not my advice, but this is how I try to leave my way.",
+  "answer": "In terms of advice, I'd say don't put up things that you're thinking doing.",
   "summary": "",
-  "quote": "In terms of advice, I'd say don't put up things that you're thinking doing. Don't put them up for the next week or whatever, live in the moment. That's mean if you want to travel somewhere, travel it tomorrow. If you need to implement something at your work, the best times start now. If you wanted to do general lose",
+  "quote": "In terms of advice, I'd say don't put up things that you're thinking doing.",
   "start": 3803.6,
   "people": [],
   "entities": [],
@@ -8485,17 +8485,15 @@
   "has_transcript": true,
   "transcript_source": "whisper",
   "found": true,
-  "reason": "word limit",
+  "reason": "stop cue",
   "method": "cue",
   "confidence": 1.0,
-  "answer": "Well, my advice ties right back to our toast at the beginning. And that is about education, start of the school year. So I have ice is to stay a lifelong learner. No matter where you are, what you're doing, always be in learning mode. I mean, I think my background's physics and astronomy with learn physics and I did colliding galaxies and black hole accretion of this, if any of that makes any sense to people years ago. And now I'm advising companies and medicine and cybersecurity and behavior analytics and all kinds of stuff. And it's because that I'm any kind of special person, but I just never stop learning. As always, it was learning new things. It's open the doors for many opportunities in my life. And I encourage people to always do that, just be in the lookout for new things to learn because the door might open not this week or next week, but many years later. So I started learning about machine learning in 1997, 24 years ago. And I started my own data leadership group LLC four months ago. So sometimes it takes a little while. But now I work as a startup",
+  "answer": "Well, my advice ties right back to our toast at the beginning. And that is about education, start of the school year. So I have ice is to stay a lifelong learner. No matter where you are, what you're doing, always be in learning mode. I mean, I think my background's physics and astronomy with learn physics and I did colliding galaxies and black hole accretion of this, if any of that makes any sense to people years ago. And now I'm advising companies and medicine and cybersecurity and behavior analytics and all kinds of stuff. And it's because that I'm any kind of special person, but I just never stop learning. As always, it was learning new things. It's open the doors for many opportunities in my life. And I encourage people to always do that, just be in the lookout",
   "summary": "",
   "quote": "Well, my advice ties right back to our toast at the beginning. And that is about education, start of the school year. So I have ice is to stay a lifelong learner. No matter where you are, what you're doing, always be in learning mode. I mean, I think my background's physics and astronomy with learn physics and I did",
   "start": 3314.2,
   "people": [],
-  "entities": [
-   "LLC"
-  ],
+  "entities": [],
   "themes": []
  },
  {

@@ -3062,9 +3062,9 @@
   "reason": "stop cue",
   "method": "cue",
   "confidence": 1.0,
-  "answer": "with this man i got inspired by him during the gartner summit he was giving a very interesting session about ethical dilemmas and how to resolve them and that's from bite and like he's Dutch but yeah yeah and that would be a person i would recommend that yeah i'm talking to him next week",
+  "answer": "with this man i got inspired by him during the gartner summit he was giving a very interesting session about ethical dilemmas and how to resolve them and that's from bite and like he's Dutch but yeah yeah and that would be a person i would",
   "summary": "",
-  "quote": "with this man i got inspired by him during the gartner summit he was giving a very interesting session about ethical dilemmas and how to resolve them and that's from bite and like he's Dutch but yeah yeah and that would be a person i would recommend that yeah i'm talking to him next week",
+  "quote": "with this man i got inspired by him during the gartner summit he was giving a very interesting session about ethical dilemmas and how to resolve them and that's from bite and like he's Dutch but yeah yeah and that would be a person i would",
   "start": 3403.4,
   "people": [],
   "entities": [],
@@ -3461,12 +3461,12 @@
   "has_transcript": true,
   "transcript_source": "whisper",
   "found": true,
-  "reason": "word limit",
+  "reason": "stop cue",
   "method": "cue",
   "confidence": 1.0,
-  "answer": "well should you invite some academic next you know and see what's going on and the you know like what's coming over the horizon for for enterprise all right yeah well or thank you so much we went through I think most of the questions that we wanted we were grouping them together quick writer next week Tim and I will both be live and gartner we're going to be actually in London all next week and we are going to figure out well we're going to probably have a live moment I don't know what we're going to figure out next week but the coolest thing is that next week it's actually our four year anniversary of doing Catalan cocktails so folks listening to us we are going to be in London and so Friday next Friday the 17th",
+  "answer": "well should you invite some academic next you know and see what's going on and the you know like what's coming over the horizon for for enterprise all right yeah well or thank you so much we went through I think most of the questions that we wanted we were grouping them together",
   "summary": "",
-  "quote": "well should you invite some academic next you know and see what's going on and the you know like what's coming over the horizon for for enterprise all right yeah well or thank you so much we went through I think most of the questions that we wanted we were grouping them together quick writer next week Tim and I",
+  "quote": "well should you invite some academic next you know and see what's going on and the you know like what's coming over the horizon for for enterprise all right yeah well or thank you so much we went through I think most of the questions that we wanted we were grouping them together",
   "start": 3284.0,
   "people": [],
   "entities": [],
@@ -5512,7 +5512,7 @@
   "reason": "merged with its companion episode",
   "method": "fuzzy",
   "confidence": 0.75,
-  "answer": "So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn, the two-way medium. I've met so many people with that. And with that, actually, next week, one of the people who are guests next week is going to be Veronica Durgan, who's a VP of data at SACS, who I've also met through LinkedIn, and we've chatted through that. And we're actually going to be live from Boston, because next week we're going to be a Boston for our honest, no BS dinner over there. So she's one of our guests. So we're going to figure that one out how to do the whole life thing.",
+  "answer": "So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn, the two-way medium. I've met so many people with that.",
   "summary": "",
   "quote": "",
   "start": 730.4,
@@ -5537,16 +5537,13 @@
   "reason": "stop cue",
   "method": "fuzzy",
   "confidence": 0.75,
-  "answer": "So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn two way medium. I've met so many amazing people with that. And with that, actually next week, one of the people who are one of our guests next week is going to be Veronica Durgan, who's a VP of data at SACS, who I've also met through LinkedIn and we've chatted through that. And we're actually going to be live from Boston because next week we're going to be a Boston for our honest No BS dinner over there. So she's one of our guests, so we're going to figure that one out how to do the whole life thing.",
+  "answer": "So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn two way medium. I've met so many amazing people with that.",
   "summary": "",
-  "quote": "So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn two way medium. I've met so many amazing people with that. And with that, actually next week, one of the people who are one of our guests next week is going to be Veronica Durgan, who's",
+  "quote": "So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn two way medium. I've met so many amazing people with that.",
   "start": 3446.9,
-  "people": [
-   "Veronica Durgan"
-  ],
+  "people": [],
   "entities": [
-   "LinkedIn",
-   "SACS"
+   "LinkedIn"
   ],
   "themes": []
  },
@@ -6974,20 +6971,17 @@
   "has_transcript": true,
   "transcript_source": "whisper",
   "found": true,
-  "reason": "word limit",
+  "reason": "stop cue",
   "method": "cue",
   "confidence": 1.0,
-  "answer": "can invite Christian Mazzbierch he is he is a person that also wrote a very interesting book he started Humanities and he has a consultancy firm that does a lot of well consultancy jobs with a lot of data and he wrote this great book of how you can kind of blends data with you humanities what is the thing that data is good at and what is the thing that we as humans still still need to do so if you can get him for the show that would be great interesting interesting give a suggestion I've no suggestion for you but I'll let you know all right well this was a fantastic conversation next week we're gonna be alive with Joe Rice and Matt Hoosley they're from Terrainier data they also have their more Monday morning data chats",
+  "answer": "can invite Christian Mazzbierch he is he is a person that also wrote a very interesting book he started Humanities and he has a consultancy firm that does a lot of well consultancy jobs with a lot of data and he wrote this great book of how you can kind of blends data with you humanities what is the thing that data is good at and what is the thing that we as humans still still need to do so if you can get him for the show that would be great interesting interesting give a suggestion I've no suggestion for you but I'll let you know all right well",
   "summary": "",
   "quote": "can invite Christian Mazzbierch he is he is a person that also wrote a very interesting book he started Humanities and he has a consultancy firm that does a lot of well consultancy jobs with a lot of data and he wrote this great book of how you can kind of blends data with you humanities what is the thing",
   "start": 3506.8,
   "people": [
-   "Christian Mazzbierch",
-   "Matt Housley"
+   "Christian Mazzbierch"
   ],
-  "entities": [
-   "Joe Rice"
-  ],
+  "entities": [],
   "themes": []
  },
  {
@@ -7001,21 +6995,17 @@
   "has_transcript": true,
   "transcript_source": "whisper",
   "found": true,
-  "reason": "word limit",
+  "reason": "stop cue",
   "method": "cue",
   "confidence": 1.0,
-  "answer": "I hope that you can invite Christian Mosbier. He is a person that also wrote a very interesting book. He started Humanities, and he has a consultancy firm that does a lot of, well, consultancy jobs with a lot of data. And he wrote this great book of how you can kind of blend data with humanities. What is the thing that data is good at, and what is the thing that we as humans still need to do? So if you can get him for the show, that would be great. Interesting. Do you have a suggestion? I've no suggestion for you, but I'll let you know. Right. All right. Well, this was a fantastic conversation. Next week, we're going to be live with Joe Rice and Matt Huesley. They are from Terrainier Data. They also have their more",
+  "answer": "I hope that you can invite Christian Mosbier. He is a person that also wrote a very interesting book. He started Humanities, and he has a consultancy firm that does a lot of, well, consultancy jobs with a lot of data. And he wrote this great book of how you can kind of blend data with humanities. What is the thing that data is good at, and what is the thing that we as humans still need to do? So if you can get him for the show, that would be great. Interesting. Do you have a suggestion? I've no suggestion for you, but I'll let you know. Right. All right. Well, this was a fantastic conversation.",
   "summary": "",
   "quote": "I hope that you can invite Christian Mosbier. He is a person that also wrote a very interesting book. He started Humanities, and he has a consultancy firm that does a lot of, well, consultancy jobs with a lot of data. And he wrote this great book of how you can kind of blend data with humanities. What is the",
   "start": 822.5,
   "people": [
-   "Christian Mosbier",
-   "Matt Housley"
+   "Christian Mosbier"
   ],
-  "entities": [
-   "Joe Rice",
-   "Terrainier Data"
-  ],
+  "entities": [],
   "themes": []
  },
  {
@@ -7586,7 +7576,7 @@
   "reason": "merged with its companion episode",
   "method": "cue",
   "confidence": 1.0,
-  "answer": "Jamie Taylor was the main architect of three days. Three days became the Google Knowledge Graph and that was the first Knowledge Graph or actually the first thing to be called a Knowledge Graph because they kind of coined the term. I like that idea. And Jamie is great. He is. Well, Francois, it has been a pleasure. Just to remind her next week, we have Sarah Krasnick from, she's a data engineer. She publishes a lot of great stuff on LinkedIn. I love following her on LinkedIn and Twitter. She's been making a lot of great posts and we're just gonna be talking about data and value and how to get value with a bunch of tools and everything. So that's next week.",
+  "answer": "Jamie Taylor was the main architect of three days. Three days became the Google Knowledge Graph and that was the first Knowledge Graph or actually the first thing to be called a Knowledge Graph because they kind of coined the term. I like that idea. And Jamie is great. He is. Well, Francois, it has been a pleasure.",
   "summary": "",
   "quote": "",
   "start": 635.4,
