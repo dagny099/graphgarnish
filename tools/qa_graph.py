@@ -117,9 +117,18 @@ DEFAULT_QUESTION = {
     # Phrases the host actually says. Matched case- and punctuation-
     # insensitively against each sentence of the transcript.
     "cues": [],
+    # Phrases the guest uses when starting this particular answer ("my
+    # advice is", "as far as people"). Needed when several questions are
+    # asked in one breath and answered in order: the question's location
+    # then marks the block, and this marks where this answer begins. When
+    # set and none match, the episode is reported unanswered rather than
+    # given its neighbour's answer.
+    "answer_cues": [],
     # Phrases that mean the answer is over (usually the next recurring
-    # question, or the sign-off).
+    # question or answer, or the sign-off).
     "stop_cues": [],
+    # How far past the question block to look for an answer cue, in words.
+    "answer_search_words": 350,
     # "people" when the answer names people (who should we invite next?);
     # names found in it become person nodes and RECOMMENDS links.
     "answer_kind": "open",
@@ -341,7 +350,7 @@ VOICE_RE = re.compile(r"<v(?:\.[^ >]*)?\s+([^>]+)>")
 TAG_RE = re.compile(r"<[^>]+>")
 SPEAKER_PREFIX_RE = re.compile(
     rf"^\s*(?:\[?(?P<t1>{TIME_RE})\]?\s*)?"
-    rf"(?P<spk>[A-Z][\w.'\- ]{{0,38}}?)\s*(?:\(?\[?(?P<t2>{TIME_RE})\]?\)?)?\s*:\s+(?P<rest>.*)$")
+    rf"(?P<spk>[A-Z][\w.'\- ]{{0,38}}?)\s*(?:\(?\[?(?P<t2>{TIME_RE})\]?\)?)?\s*:(?:\s+(?P<rest>.*))?$")
 BARE_TIME_RE = re.compile(rf"^\s*\[?\(?(?P<t>{TIME_RE})\)?\]?\s*(?P<rest>.*)$")
 NOT_SPEAKER = re.compile(r"^(?:note|http|https|www|transcript|chapter|see|and|but|so|q|a)$", re.I)
 
@@ -363,7 +372,7 @@ def parse_cue_blocks(text: str) -> list[Segment]:
         body = html.unescape(TAG_RE.sub("", body)).strip()
         if not speaker:
             sm = SPEAKER_PREFIX_RE.match(body)
-            if sm and not NOT_SPEAKER.match(sm.group("spk")):
+            if sm and sm.group("rest") and not NOT_SPEAKER.match(sm.group("spk")):
                 speaker, body = sm.group("spk").strip(), sm.group("rest")
         if body:
             segs.append(Segment(body, speaker, start))
@@ -416,8 +425,9 @@ def parse_plain(text: str) -> list[Segment]:
         m = SPEAKER_PREFIX_RE.match(line)
         if m and not NOT_SPEAKER.match(m.group("spk")) and len(m.group("spk").split()) <= 4:
             t = to_seconds(m.group("t1") or m.group("t2") or "")
-            if m.group("rest").strip():
-                segs.append(Segment(m.group("rest").strip(), m.group("spk").strip(), t))
+            rest = (m.group("rest") or "").strip()
+            if rest:
+                segs.append(Segment(rest, m.group("spk").strip(), t))
             else:
                 pending_speaker, pending_time = m.group("spk").strip(), t
             continue
@@ -446,7 +456,7 @@ def html_to_text(raw: str, start: str = "", end: str = "") -> str:
             raw = raw[: m.start()]
     raw = re.sub(r"<(script|style|nav|header|footer)\b.*?</\1>", " ", raw, flags=re.S | re.I)
     raw = re.sub(r"<br\s*/?>|</p>|</div>|</li>|</h\d>|<cite\b[^>]*>", "\n", raw, flags=re.I)
-    raw = re.sub(r"</cite>", ": ", raw, flags=re.I)
+    raw = re.sub(r":?\s*</cite>", ": ", raw, flags=re.I)
     text = html.unescape(TAG_RE.sub(" ", raw))
     return "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in text.split("\n"))
 
@@ -490,9 +500,13 @@ class TranscriptStore:
         self._whisper = None
 
     def get(self, ep: Episode) -> dict | None:
+        """{"source", "url", "segments"} or None. The cache holds what was
+        fetched (raw text, or speech-to-text segments), never a parse of it,
+        so an improved parser applies to every cached episode on the next
+        run. Local files are read fresh each time."""
         path = self.dir / f"{ep.key}.json"
         if path.exists():
-            return json.loads(path.read_text(encoding="utf-8"))
+            return self.parsed(json.loads(path.read_text(encoding="utf-8")))
         errors = []
         for source in self.cfg["sources"]:
             try:
@@ -500,17 +514,29 @@ class TranscriptStore:
             except Exception as exc:  # noqa: BLE001 - try the next source
                 errors.append(f"{source}: {exc}")
                 continue
-            if got and got["segments"]:
-                path.write_text(json.dumps(got, ensure_ascii=False), encoding="utf-8")
-                return got
+            if not got:
+                continue
+            parsed = self.parsed(got)
+            if parsed["segments"]:
+                if source != "dir":
+                    path.write_text(json.dumps(got, ensure_ascii=False), encoding="utf-8")
+                return parsed
         if errors:
             print(f"  no transcript for {ep.title[:60]!r}: {'; '.join(errors)}", file=sys.stderr)
         return None
 
+    def parsed(self, got: dict) -> dict:
+        if "raw" in got:
+            segs = [asdict(s) for s in parse_transcript(
+                got["raw"], got.get("mime", ""), self.cfg.get("html_start", ""),
+                self.cfg.get("html_end", ""))]
+        else:
+            segs = got["segments"]
+        return {"source": got["source"], "url": got["url"], "segments": segs}
+
     def fetch(self, source: str, ep: Episode) -> dict | None:
-        def packed(segs, where, kind, window_start=0.0):
-            return {"source": kind, "url": where, "window_start": window_start,
-                    "segments": [asdict(s) for s in segs]}
+        def raw(text, mime, where, kind):
+            return {"source": kind, "url": where, "mime": mime, "raw": text}
 
         if source == "feed":
             if not ep.transcripts or self.offline:
@@ -519,8 +545,8 @@ class TranscriptStore:
             best = sorted(ep.transcripts, key=lambda t: next(
                 (i for i, r in enumerate(rank) if r in t[1]), len(rank)))
             url, mime = best[0]
-            raw, ctype = http_get(url)
-            return packed(parse_transcript(raw, mime or ctype), url, "feed")
+            text, ctype = http_get(url)
+            return raw(text, mime or ctype, url, "feed")
 
         if source == "dir":
             folder = Path(self.cfg.get("dir") or "")
@@ -529,10 +555,9 @@ class TranscriptStore:
             stems = {ep.key, slug(ep.title), slug(ep.guid) if ep.guid else "", ep.guid}
             for f in sorted(folder.iterdir()):
                 if f.stem in stems or slug(f.stem) in stems:
-                    raw = f.read_text(encoding="utf-8", errors="replace")
                     mime = {".vtt": "text/vtt", ".srt": "application/x-subrip",
                             ".json": "application/json", ".html": "text/html"}.get(f.suffix.lower(), "")
-                    return packed(parse_transcript(raw, mime), str(f), "dir")
+                    return raw(f.read_text(encoding="utf-8", errors="replace"), mime, str(f), "dir")
             return None
 
         if source == "url_template":
@@ -541,15 +566,15 @@ class TranscriptStore:
                 return None
             url = tmpl.format(title_slug=slug(ep.title, 200), guid=ep.guid, link=ep.link,
                               link_slug=ep.link.rstrip("/").rsplit("/", 1)[-1])
-            raw, ctype = http_get(url)
-            return packed(parse_transcript(raw, ctype, self.cfg.get("html_start", ""),
-                                           self.cfg.get("html_end", "")), url, "url_template")
+            text, ctype = http_get(url)
+            return raw(text, ctype, url, "url_template")
 
         if source == "whisper":
             if not ep.audio_url or self.offline:
                 return None
             segs, offset = self.transcribe(ep.audio_url)
-            return packed(segs, ep.audio_url, "whisper", offset)
+            return {"source": "whisper", "url": ep.audio_url, "window_start": offset,
+                    "model": self.cfg["whisper"]["model"], "segments": [asdict(s) for s in segs]}
 
         raise ValueError(f"unknown transcript source {source!r}")
 
@@ -650,20 +675,34 @@ class Location:
     score: float
 
 
+# Fuzzy matching compares question words, so it keeps "who", "should" and
+# "next", which the concept stoplist throws away.
+QUESTION_STOP = set("""a an the so and but um uh like well okay ok you your we us our i me my do does
+did to of on in at is are be it that this just really think know gonna going if then""".split())
+
+
+def question_words(text: str) -> set[str]:
+    return {w for w in norm(text).split() if w not in QUESTION_STOP}
+
+
+BLOCK_GAP = 12  # sentences
+
+
 def locate(sents: list[Sentence], q: dict, hosts: set[str]) -> Location | None:
     cues = [norm(c) for c in q["cues"] if norm(c)]
-    qwords = set(content_words(q["question"])) | {w for c in q["cues"] for w in content_words(c)}
+    phrasings = [w for w in (question_words(t) for t in [q["question"], *q["cues"]]) if w]
     hits: list[Location] = []
     for i, s in enumerate(sents):
         n = norm(s.text)
         if any(c in n for c in cues):
             hits.append(Location(i, "cue", 1.0))
             continue
-        words = set(content_words(s.text))
-        if qwords and words and s.text.rstrip().endswith("?"):
-            overlap = len(qwords & words) / len(qwords)
-            if overlap >= q["fuzzy_threshold"]:
-                hits.append(Location(i, "fuzzy", round(overlap, 2)))
+        if not s.text.rstrip().endswith("?"):
+            continue
+        words = question_words(s.text)
+        overlap = max((len(p & words) / len(p) for p in phrasings), default=0.0)
+        if overlap >= q["fuzzy_threshold"]:
+            hits.append(Location(i, "fuzzy", round(overlap, 2)))
     if not hits:
         return None
     # Prefer exact cues, and a host asking over a guest repeating the question.
@@ -677,7 +716,17 @@ def locate(sents: list[Sentence], q: dict, hosts: set[str]) -> Location | None:
     if best_method == "fuzzy":
         top = max(h.score for h in pool)
         pool = [h for h in pool if h.score == top]
-    return pool[-1] if q["occurrence"] == "last" else pool[0]
+    if q["occurrence"] != "last":
+        return pool[0]
+    # Hits close together are one exchange: the host asking, then the guest
+    # repeating the question back ("what was the third one? resources?").
+    # The last exchange starts at its first hit.
+    block_start = pool[-1]
+    for h in reversed(pool[:-1]):
+        if block_start.sentence - h.sentence > BLOCK_GAP:
+            break
+        block_start = h
+    return block_start
 
 
 def is_host(speaker: str, hosts: set[str]) -> bool:
@@ -690,41 +739,63 @@ def is_host(speaker: str, hosts: set[str]) -> bool:
 def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str]) -> tuple[str, float | None, str]:
     """The guest's words after the question, until the next recurring
     question, a substantial host turn, or the word limit. Returns (text,
-    start seconds, why it stopped)."""
+    start seconds, why it stopped); empty text when the answer could not be
+    told apart from its neighbours."""
     stops = [norm(c) for c in q["stop_cues"] if norm(c)]
     cues = [norm(c) for c in q["cues"] if norm(c)]
+    answer_cues = [norm(c) for c in q["answer_cues"] if norm(c)]
     labelled = any(s.speaker for s in sents)
     # Several questions often arrive in one breath ("What's your advice? Who
-    # should we invite next?"). Skip the rest of the asker's turn.
+    # should we invite next?"). Skip the rest of the asker's turn, or, with
+    # no speaker labels, the run of questions that follows.
     i = loc.sentence + 1
     asker = sents[loc.sentence].speaker
     if labelled and asker:
         while i < len(sents) and sents[i].speaker == asker:
             i += 1
+    else:
+        # Short questions only: a guest's answer often ends in a tag
+        # question ("...your business sponsors, right?").
+        while (i < len(sents) and i - loc.sentence <= 3
+               and sents[i].text.rstrip().endswith("?")
+               and len(sents[i].text.split()) <= 14
+               and not any(c in norm(sents[i].text) for c in answer_cues)):
+            i += 1
+    if answer_cues:
+        seen, j = 0, i
+        while j < len(sents) and seen < q["answer_search_words"]:
+            if any(c in norm(sents[j].text) for c in answer_cues) and not (
+                    labelled and is_host(sents[j].speaker, hosts)):
+                break
+            seen += len(sents[j].text.split())
+            j += 1
+        else:
+            return "", None, "answer cue not found after the question"
+        if j >= len(sents):
+            return "", None, "answer cue not found after the question"
+        i = j
     words: list[str] = []
     start, reason = None, "end of transcript"
-    host_run, host_run_words = [], 0
+    host_run_words = 0
     while i < len(sents):
         s = sents[i]
         n = norm(s.text)
         if words and any(c in n for c in stops):
             reason = "stop cue"
             break
-        if words and any(c in n for c in cues):
+        if words and any(c in n for c in cues) and not any(c in n for c in answer_cues):
             reason = "question asked again"
             break
         if labelled and is_host(s.speaker, hosts):
-            host_run.append(s.text)
             host_run_words += len(s.text.split())
             if words and host_run_words >= q["host_break_words"]:
                 reason = "host took over"
                 break
             i += 1
             continue
-        if host_run and words:
-            # A short host interjection ("Ha, great pick") stays out of the
-            # answer but does not end it.
-            host_run, host_run_words = [], 0
+        # A short host interjection ("Ha, great pick") stays out of the
+        # answer but does not end it.
+        host_run_words = 0
         if start is None:
             start = s.start
         words.extend(s.text.split())
@@ -737,53 +808,73 @@ def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str]) 
 
 # ----------------------------------------------------------------- extract
 
-NAME_TOKEN = r"(?:[A-Z][a-z]+(?:[-'][A-Z]?[a-z]+)?|[A-Z]{2,}|[A-Z]\.)"
-NAME_RE = re.compile(rf"\b{NAME_TOKEN}(?:\s+(?:de|van|von|da|del|la|le|di)?\s*{NAME_TOKEN}){{1,2}}\b")
-ENTITY_RE = re.compile(r"\b(?:[A-Z][\w&.'-]*[A-Za-z0-9])(?:\s+(?:of|the|and|&|for|de)?\s*[A-Z][\w&.'-]*[A-Za-z0-9]){0,4}")
+ENTITY_RE = re.compile(
+    r"\b[A-Z][\w&.'\u2019-]*[A-Za-z0-9]"
+    r"(?:\s+(?:(?:of|the|and|&|for|de|van|von|da|del)\s+)?[A-Z][\w&.'\u2019-]*[A-Za-z0-9]){0,5}")
 CAP_STOP = set("""I I'm I've I'd I'll The A An And But So Or If When What Who Why How Where This That
 These Those There Then Yeah Yes No Oh Okay Ok Well Like Also Because Just Really Actually My Our
 Your We You He She They It It's Its Um Uh Hey Thanks Thank Absolutely Definitely Honestly Great
 Good Right Sure Maybe Probably Mr Mrs Ms Dr Monday Tuesday Wednesday Thursday Friday Saturday Sunday
-January February March April May June July August September October November December Catalog
-Cocktails Honest Podcast Episode Season Juan Tim""".split())
+January February March April May June July August September October November December Invite Talk
+Ask Get Check Try Have Bring Read Follow Call Reach Look Listen Watch Go Hmm Wow Love Awesome Cool
+Fantastic Anyone Everyone Somebody Someone Folks Start Stop Keep Don't Do Make Be Find Learn Think
+Know Remember Always Never Please Let Let's Obviously Interesting Nice""".split())
+# A run containing one of these is an organisation or a thing, not a person.
+ORG_WORDS = set("""Inc Inc. LLC Ltd Corp Corporation Company Co Labs Lab Group Guild Institute
+University College School Foundation Association Society Council Agency Bank Capital Partners
+Technologies Technology Systems Software Solutions Analytics Data Graph Graphs Cloud AI Network
+Networks Media Studio Studios Press Journal Review Podcast Show Summit Conference Consulting Health
+Insurance Airlines Motors Energy Foundation Project Service Services Platform Academy""".split())
+# "from Acme Graph", "at Stripe", "read Thinking Fast" introduce things.
+THING_BEFORE = re.compile(r"\b(?:from|at|of|with|by|on|in|about|called|read|reading|using|use|"
+                          r"the|book|paper|company|podcast|newsletter)\s*$", re.I)
+PERSON_AFTER = re.compile(r"^[\s,]*(?:he|she|they|who|is a|was a|has|'s|\u2019s)\b", re.I)
+PERSON_BEFORE = re.compile(r"\b(?:invite|talk to|ask|have|bring|recommend|follow|friend|"
+                           r"colleague|folks like|people like|someone like)\s*$", re.I)
 
 
-def candidate_names(text: str, exclude: set[str]) -> list[str]:
-    """Two- or three-token capitalised runs that look like a person."""
-    out = []
-    for m in NAME_RE.finditer(text):
-        name = m.group(0).strip()
-        toks = name.split()
-        if toks[0] in CAP_STOP or any(t.upper() == t and len(t) > 1 for t in toks):
-            continue
-        if not bn.looks_like_person(name):
-            continue
-        if name.lower() in exclude:
-            continue
-        out.append(name)
-    return list(dict.fromkeys(out))
+def mentions(text: str, exclude: set[str], known_people: set[str],
+             answer_kind: str) -> tuple[list[str], list[str]]:
+    """Split the capitalised runs in an answer into people and things.
 
-
-def candidate_entities(text: str, exclude: set[str]) -> list[str]:
-    """Capitalised runs that are not at the start of a sentence: books,
-    companies, products, frameworks. Single words qualify when they appear
-    mid-sentence, which filters most sentence-initial noise."""
-    out = []
+    No NER model: a run is a person when it is already known to be one (any
+    guest of the show), or when it has the shape of a name, carries no
+    organisation word, and is not introduced as a thing ("from Acme Graph").
+    In an answer to a people question ("who should we invite?") that shape
+    is enough; elsewhere it also needs a person cue next to it ("she",
+    "talk to"). Everything else is an entity. The LLM pass replaces this
+    when it runs."""
+    people, things = [], []
     for m in ENTITY_RE.finditer(text):
-        ent = m.group(0).strip(" .,'")
-        first = ent.split()[0]
-        if first in CAP_STOP:
-            ent = " ".join(ent.split()[1:])
-            if not ent:
-                continue
-        before = text[: m.start()].rstrip()
-        sentence_start = not before or before[-1] in ".?!\""
-        if sentence_start and len(ent.split()) == 1:
+        toks = m.group(0).strip(" .,'").split()
+        start = m.start()
+        while toks and toks[0] in CAP_STOP:
+            start = text.index(toks[0], start) + len(toks[0])
+            toks = toks[1:]
+        if not toks:
             continue
-        if len(ent) < 3 or ent.lower() in exclude or ent in CAP_STOP:
+        run = " ".join(toks).rstrip(".")
+        if len(run) < 3 or run.lower() in exclude:
             continue
-        out.append(ent)
-    return list(dict.fromkeys(out))
+        before, after = text[:start], text[m.end():]
+        sentence_start = not before.strip() or before.rstrip()[-1] in ".?!:\""
+        if len(toks) == 1 and sentence_start:
+            continue
+        if norm(run) in known_people:
+            people.append(run)
+            continue
+        name_shape = (2 <= len(toks) <= 3 and bn.looks_like_person(run)
+                      and all(t[:1].isupper() and not t.isupper() for t in toks)
+                      and not any(t in ORG_WORDS for t in toks)
+                      and not THING_BEFORE.search(before))
+        cued = PERSON_AFTER.search(after) or PERSON_BEFORE.search(before)
+        if name_shape and (answer_kind == "people" or cued):
+            people.append(run)
+        elif len(toks) > 1 or not sentence_start:
+            things.append(run)
+    people = list(dict.fromkeys(people))
+    things = [t for t in dict.fromkeys(things) if not any(t in p or p in t for p in people)]
+    return people, things
 
 
 LLM_SCHEMA = {
@@ -1159,7 +1250,7 @@ def run_question(podcast: dict, q: dict, episodes: list[Episode], store: Transcr
             text, start, why = answer_span(sents, loc, q, hosts)
             row.update(answer=text, start=start, method=loc.method,
                        confidence=loc.score, reason=why, found=bool(text.strip()))
-            if not text.strip():
+            if not text.strip() and why == "end of transcript":
                 row["reason"] = "question found, no answer after it"
         else:
             row["reason"] = "question not found"
@@ -1180,14 +1271,18 @@ def run_question(podcast: dict, q: dict, episodes: list[Episode], store: Transcr
             elif got is not None and not got.get("found") and row["found"] and loc and loc.method == "fuzzy":
                 # A fuzzy match the model reads as not-an-answer is dropped.
                 row.update(found=False, reason="fuzzy match rejected by LLM")
-        if row["found"] and not row["people"] and not row["entities"]:
-            row["people"] = candidate_names(row["answer"], exclude)
-            row["entities"] = [e for e in candidate_entities(row["answer"], exclude)
-                               if not any(e in p or p in e for p in row["people"])]
-        if row["found"] and not row["quote"]:
-            row["quote"] = " ".join(row["answer"].split()[:60])
         if idx % 25 == 0:
             print(f"  {idx}/{len(episodes)} episodes", file=sys.stderr)
+
+    # Second pass, once every episode's guests are known: any guest of the
+    # show named in an answer is recognised as a person.
+    known = {norm(g) for r in rows for g in r["guests"]}
+    for r in rows:
+        if r["found"] and not r["people"] and not r["entities"]:
+            exclude = {g.lower() for g in r["guests"]} | guest_exclude
+            r["people"], r["entities"] = mentions(r["answer"], exclude, known, q["answer_kind"])
+        if r["found"] and not r["quote"]:
+            r["quote"] = " ".join(r["answer"].split()[:60])
     return rows
 
 
@@ -1247,6 +1342,7 @@ def main(argv=None) -> int:
     ap.add_argument("--stop-cue", action="append", help="phrase that ends an answer (repeatable)")
     ap.add_argument("--answer-kind", choices=["open", "people"])
     ap.add_argument("--limit", type=int, help="only the N most recent episodes")
+    ap.add_argument("--sample", type=int, help="N episodes spread evenly across the catalogue")
     ap.add_argument("--sources", help="comma-separated transcript sources, overriding the config")
     ap.add_argument("--shard", help="K/N: fetch transcripts for every Nth episode only, then stop")
     ap.add_argument("--offline", action="store_true", help="use cached transcripts only")
@@ -1266,6 +1362,11 @@ def main(argv=None) -> int:
     hosts = {h.lower() for h in podcast["hosts"]}
 
     episodes = load_episodes(podcast, args.feed_file, args.save_feed)
+    if args.sample and args.sample < len(episodes):
+        # Spread across the catalogue, so a config is tried on old and new
+        # episodes before a full run.
+        step = len(episodes) / args.sample
+        episodes = [episodes[int(i * step)] for i in range(args.sample)]
     store = TranscriptStore(podcast, args.cache_dir, offline=args.offline)
 
     if args.shard:

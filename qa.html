@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🍸 GraphGarnish - Recurring Question Explorer</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 100vh; overflow: hidden; color: #2d3436;
+}
+#app { display: grid; grid-template-columns: 340px 1fr 380px; height: 100vh; gap: 16px; padding: 16px; }
+.panel {
+  background: rgba(255,255,255,0.96); border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  padding: 20px; overflow-y: auto; min-height: 0;
+}
+#graph-wrap { position: relative; border-radius: 15px; overflow: hidden; background: rgba(255,255,255,0.08); min-height: 0; }
+#graph { width: 100%; height: 100%; display: block; }
+h1 { font-size: 20px; margin-bottom: 4px; }
+h2 { font-size: 15px; margin: 18px 0 8px; color: #555; text-transform: uppercase; letter-spacing: .04em; }
+.question { font-size: 18px; font-weight: 600; color: #5a4bb5; margin: 10px 0 4px; line-height: 1.3; }
+.sub { font-size: 13px; color: #666; }
+select, input[type=search] {
+  width: 100%; padding: 8px 10px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; margin-top: 6px;
+}
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
+.stat { background: #f4f2ff; border-radius: 10px; padding: 8px; text-align: center; }
+.stat b { display: block; font-size: 20px; color: #5a4bb5; }
+.stat span { font-size: 11px; color: #666; }
+label.toggle { display: flex; align-items: center; gap: 8px; font-size: 14px; margin: 6px 0; cursor: pointer; }
+.dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; flex: none; }
+.note { font-size: 12px; color: #777; line-height: 1.45; margin-top: 8px; }
+.tabs { display: flex; gap: 6px; margin-bottom: 12px; }
+.tabs button {
+  flex: 1; padding: 8px; border: none; border-radius: 8px; background: #eee; cursor: pointer; font-size: 13px; font-weight: 600;
+}
+.tabs button.on { background: #5a4bb5; color: white; }
+.card { border-left: 4px solid #ff9f43; padding: 8px 10px; margin-bottom: 10px; background: #fafafa; border-radius: 0 8px 8px 0; cursor: pointer; }
+.card:hover { background: #f1efff; }
+.card .meta { font-size: 12px; color: #777; margin-bottom: 4px; }
+.card .quote { font-size: 14px; line-height: 1.4; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: #eee; cursor: pointer; }
+.detail-title { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+.detail p { font-size: 14px; line-height: 1.5; margin: 8px 0; }
+blockquote { border-left: 3px solid #5a4bb5; padding: 4px 10px; margin: 10px 0; font-style: italic; font-size: 15px; line-height: 1.45; }
+a { color: #5a4bb5; }
+.muted { color: #999; font-size: 13px; }
+#tooltip {
+  position: absolute; pointer-events: none; background: rgba(20,20,30,.9); color: white; padding: 6px 10px;
+  border-radius: 8px; font-size: 12px; max-width: 280px; opacity: 0; transition: opacity .15s;
+}
+text.label { font-size: 11px; fill: white; pointer-events: none; paint-order: stroke; stroke: rgba(40,20,80,.8); stroke-width: 3px; }
+#empty { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px; text-align: center; padding: 40px; }
+@media (max-width: 1100px) {
+  body { overflow: auto; height: auto; }
+  #app { grid-template-columns: 1fr; height: auto; }
+  #graph-wrap { height: 70vh; }
+  .panel { max-height: none; }
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="panel" id="left">
+    <h1>🍸 Recurring Question</h1>
+    <div class="sub">One question, every episode, every answer. <a href="explore.html">Guest network →</a></div>
+    <select id="picker" aria-label="Choose a podcast and question"></select>
+    <div class="question" id="q-text">Loading…</div>
+    <div class="sub" id="q-podcast"></div>
+    <div class="stats">
+      <div class="stat"><b id="s-eps">–</b><span>episodes</span></div>
+      <div class="stat"><b id="s-tr">–</b><span>transcribed</span></div>
+      <div class="stat"><b id="s-ans">–</b><span>answered</span></div>
+    </div>
+    <input type="search" id="search" placeholder="Search answers, people, ideas…">
+    <h2>Show</h2>
+    <div id="toggles"></div>
+    <h2>Link answers by</h2>
+    <label class="toggle"><input type="checkbox" id="t-sim" checked> similar wording</label>
+    <label class="toggle"><input type="checkbox" id="t-rec" checked> guest → person they named</label>
+    <p class="note" id="method-note"></p>
+    <h2>Load your own</h2>
+    <input type="file" id="file" accept=".json">
+    <p class="note">Any <code>graph.json</code> written by <code>tools/qa_graph.py</code>.</p>
+  </div>
+  <div id="graph-wrap">
+    <svg id="graph"></svg>
+    <div id="tooltip"></div>
+    <div id="empty" hidden></div>
+  </div>
+  <div class="panel" id="right">
+    <div class="tabs">
+      <button id="tab-list" class="on">All answers</button>
+      <button id="tab-detail">Selected</button>
+    </div>
+    <div id="list"></div>
+    <div id="detail" class="detail" hidden><p class="muted">Click a node or an answer.</p></div>
+  </div>
+</div>
+<script>
+const COLORS = {
+  question: '#2d3436', answer: '#ff9f43', episode: '#ff6b6b', person: '#4ecdc4',
+  concept: '#b197fc', entity: '#ffe66d'
+};
+const LABELS = { answer: 'Answers', person: 'People', concept: 'Shared ideas', entity: 'Things named', episode: 'Episodes', question: 'The question' };
+const DEFAULT_ON = { answer: true, person: true, concept: true, entity: true, episode: false, question: false };
+const RADIUS = { question: 18, answer: 7, episode: 5, person: 8, concept: 9, entity: 6 };
+
+let graph = null, byId = new Map(), visible = { ...DEFAULT_ON }, selected = null, sim = null;
+const params = new URLSearchParams(location.search);
+
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const mmss = t => t == null ? '' : `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+
+async function init() {
+  let index = [];
+  try { index = await (await fetch('qa/index.json')).json(); } catch (e) { /* no index yet */ }
+  const picker = document.getElementById('picker');
+  picker.innerHTML = index.map(e => `<option value="qa/${esc(e.path)}">${esc(e.podcast)}: ${esc(e.question)}</option>`).join('')
+    || '<option value="">No graphs built yet</option>';
+  picker.onchange = () => load(picker.value);
+  const start = params.get('graph') || (index[0] && `qa/${index[0].path}`);
+  if (start) { picker.value = start; load(start); }
+  else showEmpty('No graphs yet. Run tools/qa_graph.py, or load a graph.json.');
+}
+
+async function load(url) {
+  if (!url) return;
+  try { setGraph(await (await fetch(url)).json()); }
+  catch (e) { showEmpty(`Could not load ${esc(url)}`); }
+}
+
+document.getElementById('file').onchange = ev => {
+  const f = ev.target.files[0];
+  if (!f) return;
+  f.text().then(t => setGraph(JSON.parse(t))).catch(() => showEmpty('That file is not a graph.json.'));
+};
+
+function showEmpty(msg) {
+  const el = document.getElementById('empty');
+  el.hidden = !msg; el.innerHTML = esc(msg || '');
+}
+
+function setGraph(g) {
+  graph = g;
+  byId = new Map(g.nodes.map(n => [n.id, n]));
+  const m = g.meta;
+  document.getElementById('q-text').textContent = `“${m.question}”`;
+  document.getElementById('q-podcast').textContent = m.podcast;
+  document.getElementById('s-eps').textContent = m.episodes;
+  document.getElementById('s-tr').textContent = m.with_transcript;
+  document.getElementById('s-ans').textContent = m.answered;
+  const methods = Object.entries(m.methods || {}).map(([k, v]) => `${v} by ${k}`).join(', ');
+  document.getElementById('method-note').innerHTML =
+    `Answers were located ${esc(methods || '—')}. <b>cue</b> = the host's exact phrasing, ` +
+    `<b>fuzzy</b> = a reworded question, <b>+llm</b> = refined by Claude. ` +
+    `Shared ideas are recurring words and phrases unless Claude named them.`;
+  document.getElementById('t-rec').parentElement.style.display = m.answer_kind === 'people' ? '' : 'none';
+  const counts = {};
+  g.nodes.forEach(n => counts[n.type] = (counts[n.type] || 0) + 1);
+  document.getElementById('toggles').innerHTML = Object.keys(LABELS).filter(t => counts[t]).map(t =>
+    `<label class="toggle"><input type="checkbox" data-type="${t}" ${visible[t] ? 'checked' : ''}>
+     <span class="dot" style="background:${COLORS[t]}"></span>${LABELS[t]} <span class="muted">(${counts[t]})</span></label>`).join('');
+  document.querySelectorAll('#toggles input').forEach(cb => cb.onchange = () => { visible[cb.dataset.type] = cb.checked; draw(); });
+  showEmpty(m.answered ? '' : 'No answers found yet: see answers.json for the reason on each episode.');
+  renderList();
+  selected = null;
+  draw();
+}
+
+['t-sim', 't-rec'].forEach(id => document.getElementById(id).onchange = () => draw());
+document.getElementById('search').oninput = () => { renderList(); highlight(); };
+
+function answers() {
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  return graph.nodes.filter(n => n.type === 'answer')
+    .filter(a => !q || [a.text, a.summary, a.episode, ...(a.guests || []), ...mentionsOf(a.id).map(n => n.name)]
+      .join(' ').toLowerCase().includes(q))
+    .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+}
+
+function mentionsOf(answerId) {
+  return graph.links.filter(l => l.source === answerId || l.source.id === answerId)
+    .filter(l => ['MENTIONS', 'ABOUT'].includes(l.type))
+    .map(l => byId.get(l.target.id || l.target)).filter(Boolean);
+}
+
+function card(a) {
+  const chips = mentionsOf(a.id).map(n =>
+    `<span class="chip" style="background:${COLORS[n.type]}55" data-id="${esc(n.id)}">${esc(n.name)}</span>`).join('');
+  return `<div class="card" data-id="${esc(a.id)}">
+    <div class="meta">${esc(a.date)} · <b>${esc((a.guests || []).join(', ') || 'guest unknown')}</b></div>
+    <div class="quote">${esc(a.summary || a.quote)}</div>
+    <div class="chips">${chips}</div></div>`;
+}
+
+function renderList() {
+  const list = answers();
+  const el = document.getElementById('list');
+  el.innerHTML = list.length ? list.map(card).join('') : '<p class="muted">No answers match.</p>';
+  bindCards(el);
+}
+
+function bindCards(el) {
+  el.querySelectorAll('.chip').forEach(c => c.onclick = ev => { ev.stopPropagation(); select(c.dataset.id); });
+  el.querySelectorAll('.card').forEach(c => c.onclick = () => select(c.dataset.id));
+}
+
+function tab(which) {
+  document.getElementById('tab-list').classList.toggle('on', which === 'list');
+  document.getElementById('tab-detail').classList.toggle('on', which === 'detail');
+  document.getElementById('list').hidden = which !== 'list';
+  document.getElementById('detail').hidden = which !== 'detail';
+}
+document.getElementById('tab-list').onclick = () => tab('list');
+document.getElementById('tab-detail').onclick = () => tab('detail');
+
+function neighbours(id, type) {
+  return graph.links.filter(l => (!type || l.type === type))
+    .filter(l => (l.source.id || l.source) === id || (l.target.id || l.target) === id)
+    .map(l => byId.get((l.source.id || l.source) === id ? (l.target.id || l.target) : (l.source.id || l.source)));
+}
+
+function select(id) {
+  selected = id;
+  const n = byId.get(id);
+  const el = document.getElementById('detail');
+  let body = '';
+  if (n.type === 'answer') {
+    const listen = n.audio_url && n.start != null
+      ? `<p><a href="${esc(n.audio_url)}#t=${Math.floor(n.start)}" target="_blank" rel="noopener">▶ Listen from ${mmss(n.start)}</a></p>` : '';
+    const similar = neighbours(id, 'SIMILAR_TO').filter(Boolean);
+    body = `<div class="detail-title">${esc((n.guests || []).join(', ') || 'Guest unknown')}</div>
+      <div class="muted">${esc(n.date)} · ${esc(n.episode)}</div>
+      ${n.summary ? `<p>${esc(n.summary)}</p>` : ''}
+      <blockquote>${esc(n.quote)}</blockquote>${listen}
+      <h2>Full answer</h2><p>${esc(n.text)}</p>
+      <p class="muted">Located by ${esc(n.method)} · transcript from ${esc(n.transcript_source)}</p>
+      ${similar.length ? `<h2>Answers worded alike</h2>${similar.map(card).join('')}` : ''}`;
+  } else {
+    const ans = neighbours(id).filter(x => x && x.type === 'answer');
+    const gave = n.type === 'person' ? neighbours(id, 'GAVE').filter(Boolean) : [];
+    const named = n.type === 'person' ? graph.links.filter(l => l.type === 'MENTIONS' && (l.target.id || l.target) === id)
+      .map(l => byId.get(l.source.id || l.source)) : ans;
+    const recBy = neighbours(id, 'RECOMMENDS').filter(x => x && (graph.links.some(l => l.type === 'RECOMMENDS'
+      && (l.source.id || l.source) === x.id && (l.target.id || l.target) === id)));
+    body = `<div class="detail-title">${esc(n.name)}</div>
+      <div class="muted">${n.type === 'person' ? esc((n.roles || []).join(' + ')) : esc(n.kind || n.type)}</div>
+      ${recBy.length ? `<p>Named by ${recBy.map(p => `<a href="#" data-id="${esc(p.id)}">${esc(p.name)}</a>`).join(', ')}</p>` : ''}
+      ${gave.length ? `<h2>Their answer</h2>${gave.map(card).join('')}` : ''}
+      ${named.length ? `<h2>${n.type === 'person' ? 'Named in' : 'Answers'} (${named.length})</h2>${named.map(card).join('')}` : ''}`;
+  }
+  el.innerHTML = body;
+  bindCards(el);
+  el.querySelectorAll('a[data-id]').forEach(a => a.onclick = ev => { ev.preventDefault(); select(a.dataset.id); });
+  tab('detail');
+  highlight();
+}
+
+function highlight() {
+  if (!graph) return;
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  const near = new Set();
+  if (selected) { near.add(selected); neighbours(selected).forEach(n => n && near.add(n.id)); }
+  d3.selectAll('circle.node').attr('opacity', d => {
+    if (selected) return near.has(d.id) ? 1 : 0.15;
+    if (q) return (d.name + ' ' + (d.text || '')).toLowerCase().includes(q) ? 1 : 0.15;
+    return 1;
+  }).attr('stroke', d => d.id === selected ? '#fff' : 'rgba(255,255,255,.6)')
+    .attr('stroke-width', d => d.id === selected ? 3 : 1);
+  d3.selectAll('line.link').attr('stroke-opacity', l => !selected ? 0.35
+    : (l.source.id === selected || l.target.id === selected) ? 0.9 : 0.05);
+}
+
+function draw() {
+  if (!graph) return;
+  const svg = d3.select('#graph');
+  svg.selectAll('*').remove();
+  const { width, height } = svg.node().getBoundingClientRect();
+  const showSim = document.getElementById('t-sim').checked, showRec = document.getElementById('t-rec').checked;
+  const nodes = graph.nodes.filter(n => visible[n.type]).map(n => Object.assign(n, {}));
+  const ids = new Set(nodes.map(n => n.id));
+  const links = graph.links
+    .map(l => ({ ...l, source: l.source.id || l.source, target: l.target.id || l.target }))
+    .filter(l => ids.has(l.source) && ids.has(l.target))
+    .filter(l => l.type !== 'SIMILAR_TO' || showSim)
+    .filter(l => l.type !== 'RECOMMENDS' || showRec)
+    .filter(l => l.type !== 'GUEST_ON' || visible.episode);
+  // Drop isolated concept/entity nodes left behind by a filter.
+  const deg = new Map();
+  links.forEach(l => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); });
+  const shown = nodes.filter(n => deg.get(n.id) || n.type === 'answer' || n.type === 'question');
+
+  const g = svg.append('g');
+  svg.call(d3.zoom().scaleExtent([0.1, 6]).on('zoom', ev => g.attr('transform', ev.transform)));
+  svg.on('click', ev => { if (ev.target === svg.node()) { selected = null; highlight(); } });
+
+  const link = g.append('g').selectAll('line').data(links).join('line').attr('class', 'link')
+    .attr('stroke', l => l.type === 'RECOMMENDS' ? '#4ecdc4' : l.type === 'SIMILAR_TO' ? '#ffd8a8' : '#fff')
+    .attr('stroke-width', l => l.type === 'SIMILAR_TO' ? 1 + 4 * (l.weight || 0) : l.type === 'RECOMMENDS' ? 2 : 1)
+    .attr('stroke-dasharray', l => l.type === 'SIMILAR_TO' ? '3 3' : null)
+    .attr('stroke-opacity', 0.35);
+
+  const size = d => RADIUS[d.type] + (['concept', 'entity', 'person'].includes(d.type) ? Math.min(14, Math.sqrt(deg.get(d.id) || 1) * 2) : 0);
+  const node = g.append('g').selectAll('circle').data(shown).join('circle').attr('class', 'node')
+    .attr('r', size).attr('fill', d => COLORS[d.type]).attr('stroke', 'rgba(255,255,255,.6)')
+    .style('cursor', 'pointer')
+    .on('click', (ev, d) => { ev.stopPropagation(); select(d.id); })
+    .on('mouseover', (ev, d) => {
+      const tip = document.getElementById('tooltip');
+      tip.innerHTML = d.type === 'answer'
+        ? `<b>${esc((d.guests || []).join(', '))}</b> · ${esc(d.date)}<br>${esc((d.summary || d.quote || '').slice(0, 160))}`
+        : `<b>${esc(d.name)}</b><br>${esc(d.type)} · ${deg.get(d.id) || 0} links`;
+      tip.style.opacity = 1;
+    })
+    .on('mousemove', ev => {
+      const tip = document.getElementById('tooltip'), box = document.getElementById('graph-wrap').getBoundingClientRect();
+      tip.style.left = (ev.clientX - box.left + 12) + 'px'; tip.style.top = (ev.clientY - box.top + 12) + 'px';
+    })
+    .on('mouseout', () => document.getElementById('tooltip').style.opacity = 0)
+    .call(d3.drag()
+      .on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
+      .on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+
+  const label = g.append('g').selectAll('text')
+    .data(shown.filter(d => ['concept', 'person', 'entity', 'question'].includes(d.type) && (deg.get(d.id) || 0) >= 2))
+    .join('text').attr('class', 'label').attr('text-anchor', 'middle').text(d => d.name.length > 28 ? d.name.slice(0, 26) + '…' : d.name);
+
+  if (sim) sim.stop();
+  sim = d3.forceSimulation(shown)
+    .force('link', d3.forceLink(links).id(d => d.id)
+      .distance(l => l.type === 'SIMILAR_TO' ? 60 : l.type === 'GAVE' ? 25 : 80)
+      .strength(l => l.type === 'SIMILAR_TO' ? 0.2 * (l.weight || 0.2) * 5 : 0.5))
+    .force('charge', d3.forceManyBody().strength(d => d.type === 'concept' ? -260 : -90))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('x', d3.forceX(width / 2).strength(0.04)).force('y', d3.forceY(height / 2).strength(0.04))
+    .force('collide', d3.forceCollide().radius(d => size(d) + 3))
+    .on('tick', () => {
+      link.attr('x1', l => l.source.x).attr('y1', l => l.source.y).attr('x2', l => l.target.x).attr('y2', l => l.target.y);
+      node.attr('cx', d => d.x).attr('cy', d => d.y);
+      label.attr('x', d => d.x).attr('y', d => d.y - size(d) - 4);
+    });
+  highlight();
+}
+
+window.addEventListener('resize', () => draw());
+init();
+</script>
+</body>
+</html>
