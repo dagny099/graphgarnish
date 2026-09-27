@@ -120,3 +120,9 @@ inherits whatever noise the match phrases in `data/topics.json` carry.
   with structured output, the code retries without fallbacks.
 - **Panel episodes have several guests answering in turn.** The answer is cut
   from the first guest to answer; later panellists' answers are lost.
+- **Guests are missing for shows whose titles do not name them.** The Data
+  Engineering Podcast run found the guest for 47 of 120 episodes, all from
+  transcript speaker labels or titles. Its descriptions name guests in prose
+  ("In this episode ... talks with ..."), which `guests_from_description` does
+  not parse. Answers without a guest still join the graph through shared
+  ideas and similarity, but carry no GAVE link.
