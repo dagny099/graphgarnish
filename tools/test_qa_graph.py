@@ -208,6 +208,8 @@ check("a people question links guest to recommended person", ("Ada Park", "Ben O
       and ("Dev Rao", "Ben Ortiz") in recs)
 check("the report names people recommended who were also guests",
       invite["meta"]["people_named_and_later_guests"] == ["Ada Park", "Ben Ortiz", "Cleo Diaz"])
+check("a people question makes no concept nodes by default",
+      not any(n["type"] == "concept" for n in invite["nodes"]))
 check("an open question makes no RECOMMENDS links",
       not any(l["type"] == "RECOMMENDS" for l in advice["links"]))
 concepts = {n["name"] for n in advice["nodes"] if n["type"] == "concept"}

@@ -68,7 +68,11 @@
         "cheers",
         "takeaway",
         "who should have on",
-        "who should we have"
+        "who should we have",
+        "next week",
+        "quick reminders",
+        "before we say goodbye",
+        "season finale"
       ],
       "answer_kind": "open",
       "max_answer_words": 200
@@ -126,7 +130,11 @@
         "thanks so much",
         "thanks for having me",
         "cheers",
-        "takeaway"
+        "takeaway",
+        "next week",
+        "quick reminders",
+        "before we say goodbye",
+        "season finale"
       ],
       "answer_kind": "people",
       "max_answer_words": 140,
@@ -167,7 +175,10 @@
         "cheers",
         "takeaway",
         "wrap up",
-        "next week"
+        "next week",
+        "quick reminders",
+        "before we say goodbye",
+        "season finale"
       ],
       "answer_kind": "open",
       "max_answer_words": 160,

@@ -1279,7 +1279,7 @@ def build_graph(podcast: dict, q: dict, rows: list[dict], hosts: set[str]) -> di
 
     # TF-IDF concepts for answers the LLM did not theme.
     for r, vec in zip(answered, vecs):
-        if r["themes"]:
+        if r["themes"] or gcfg["concepts_per_answer"] <= 0:
             continue
         # A two-word phrase ("data governance") says more than either word.
         ranked = sorted(((w * (1.5 if " " in t else 1.0), t) for t, w in vec.items()
