@@ -1,0 +1,43 @@
+{
+  "podcast": {
+    "id": "catalog-and-cocktails",
+    "name": "Catalog & Cocktails",
+    "feed": "https://www.omnycontent.com/d/playlist/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/46398967-49a1-45c7-9af5-b387002de875/podcast.rss",
+    "hosts": ["Juan Sequeda", "Tim Gasper"],
+    "episodes": {
+      "skip_title_regex": "^\\s*TAKEAWAYS?\\b",
+      "skip_types": ["trailer", "bonus"]
+    },
+    "transcripts": {
+      "sources": ["feed", "dir", "whisper"],
+      "dir": "../transcripts/catalog-and-cocktails",
+      "whisper": {"model": "base.en", "compute_type": "int8", "from_end_minutes": 12}
+    },
+    "guests": {
+      "from": ["graph", "title", "description"],
+      "graph": "../sample_network.json"
+    }
+  },
+  "questions": [
+    {
+      "id": "invite-next",
+      "question": "Who should we invite next?",
+      "cues": ["who should we invite next", "who should we invite", "who should we have on next",
+               "who should we bring on", "who should we talk to next"],
+      "stop_cues": ["what resources do you follow", "what resources", "thank you so much",
+                    "thanks so much", "cheers", "thank you for joining"],
+      "answer_kind": "people",
+      "max_answer_words": 120
+    },
+    {
+      "id": "advice",
+      "question": "What's your advice about data, about life?",
+      "cues": ["what's your advice", "what is your advice", "any advice", "advice about data",
+               "one piece of advice"],
+      "stop_cues": ["who should we invite", "what resources do you follow", "thank you so much",
+                    "thanks so much"],
+      "answer_kind": "open",
+      "max_answer_words": 220
+    }
+  ]
+}

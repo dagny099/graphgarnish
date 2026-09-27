@@ -2,44 +2,24 @@ name: QA probe (temporary)
 on:
   push:
     branches: ["claude/**"]
-    paths: [".github/workflows/qa-probe.yml"]
+    paths: [".github/workflows/qa-probe.yml", "tools/qa_graph.py"]
 permissions:
   contents: read
 jobs:
-  site:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Show site episode page
-        run: |
-          curl -sSL -A 'Mozilla/5.0' https://honestnobsdata.com/episodes/ai-inherits-the-business-choices-you-never-made-with-david-krauza/ -o ep.html
-          wc -c ep.html; grep -oiE '.{100}transcript.{200}' ep.html | head -5
-          python3 -c "import re,html;t=open('ep.html').read();t=re.sub(r'<script.*?</script>|<style.*?</style>','',t,flags=re.S);t=html.unescape(re.sub(r'<[^>]+>',' ',t));t=re.sub(r'\s+',' ',t);print(len(t));print(t[:1500]);print('...');print(t[-2500:])"
-          curl -sSL -A 'Mozilla/5.0' https://honestnobsdata.com/rss.xml -o site-rss.xml; wc -c site-rss.xml; grep -c '<item' site-rss.xml; grep -oE '<[a-z]+:transcript[^>]*>' site-rss.xml | head -3
-  youtube:
-    runs-on: ubuntu-latest
-    steps:
-      - name: YouTube captions via yt-dlp
-        continue-on-error: true
-        run: |
-          pip install -q yt-dlp
-          yt-dlp --flat-playlist --print '%(id)s %(title)s' 'https://www.youtube.com/playlist?list=PLkGSnjw5y2U4wmrBDc_urhGwk1Z_E0Xao' 2>&1 | head -8
-          ID=$(yt-dlp --flat-playlist --print '%(id)s' 'https://www.youtube.com/playlist?list=PLkGSnjw5y2U4wmrBDc_urhGwk1Z_E0Xao' 2>/dev/null | sed -n 3p)
-          yt-dlp --skip-download --write-auto-subs --sub-langs en --sub-format vtt -o 'yt.%(ext)s' "https://www.youtube.com/watch?v=$ID" 2>&1 | tail -5
-          ls -la; f=$(ls yt*.vtt 2>/dev/null | head -1); [ -n "$f" ] && tail -c 3000 "$f"
   whisper:
     runs-on: ubuntu-latest
     steps:
-      - name: Transcribe the last 12 minutes with faster-whisper
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q faster-whisper
+      - name: Transcribe three episode tails and run the pipeline
         run: |
-          pip install -q faster-whisper
-          curl -sSL -o ep.mp3 'https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/99e1d43a-cf27-4d90-9ae3-b4d000c2150a/audio.mp3'
-          ls -la ep.mp3; ffprobe -v error -show_entries format=duration -of csv=p=0 ep.mp3
-          ffmpeg -v error -sseof -720 -i ep.mp3 -ac 1 -ar 16000 tail.wav
           nproc
-          time python3 - <<'PY'
-          from faster_whisper import WhisperModel
-          m = WhisperModel("base.en", device="cpu", compute_type="int8")
-          segs, info = m.transcribe("tail.wav", vad_filter=True)
-          for s in segs:
-              print(f"[{s.start:7.1f}] {s.text.strip()}")
-          PY
+          time python3 tools/qa_graph.py podcasts/catalog-and-cocktails.json --limit 3 --report --out-dir /tmp/qa --no-llm
+      - name: Show the transcript tails
+        run: |
+          for f in .cache/qa/catalog-and-cocktails/transcripts/*.json; do
+            echo "=== $f"
+            python3 -c "import json,sys;d=json.load(open(sys.argv[1]));[print(f\"[{s['start']:7.1f}] {s['text']}\") for s in d['segments']]" "$f"
+          done
