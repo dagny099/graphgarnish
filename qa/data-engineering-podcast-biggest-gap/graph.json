@@ -15,18 +15,18 @@
   "node_types": {
    "answer": 95,
    "concept": 114,
-   "person": 53,
-   "episode": 120,
    "entity": 43,
+   "episode": 120,
+   "person": 53,
    "question": 1
   },
   "link_types": {
-   "GUEST_ON": 53,
+   "ABOUT": 250,
    "ANSWERS": 95,
    "FROM_EPISODE": 95,
    "GAVE": 39,
+   "GUEST_ON": 53,
    "MENTIONS": 62,
-   "ABOUT": 250,
    "SIMILAR_TO": 11
   }
  },

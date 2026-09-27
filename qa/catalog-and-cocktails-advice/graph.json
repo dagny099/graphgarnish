@@ -19,20 +19,20 @@
    "Steve Whitla"
   ],
   "node_types": {
+   "answer": 179,
+   "concept": 219,
+   "entity": 66,
    "episode": 352,
    "person": 197,
-   "entity": 66,
-   "concept": 219,
-   "answer": 179,
    "question": 1
   },
   "link_types": {
-   "GUEST_ON": 289,
+   "ABOUT": 509,
    "ANSWERS": 179,
    "FROM_EPISODE": 179,
    "GAVE": 165,
+   "GUEST_ON": 289,
    "MENTIONS": 83,
-   "ABOUT": 509,
    "SIMILAR_TO": 77
   }
  },

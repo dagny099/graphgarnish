@@ -32,6 +32,19 @@ jobs:
       - name: Recurring-question pipeline checks
         run: python3 tools/test_qa_graph.py
 
+      - name: The recurring-question graphs are deterministic
+        # Rebuild every committed graph from its answers under two hash
+        # seeds. Any set-ordered output shows up as a diff, and would make
+        # every scheduled run commit a no-op change.
+        run: |
+          for n in 1 2; do
+            rm -rf "/tmp/qa-$n" && cp -r qa "/tmp/qa-$n"
+            for c in podcasts/*.json; do
+              PYTHONHASHSEED=$n python3 tools/qa_graph.py "$c" --regraph --qa-dir "/tmp/qa-$n" 2>/dev/null
+            done
+          done
+          diff -r /tmp/qa-1 /tmp/qa-2 && echo identical
+
       - name: The build is deterministic
         # Two builds from identical inputs must produce identical bytes. Runs
         # against the checked-in RSS fixture and writes to a scratch path, so

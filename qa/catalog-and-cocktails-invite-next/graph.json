@@ -32,17 +32,17 @@
    "Shane Gibson"
   ],
   "node_types": {
-   "episode": 352,
-   "person": 291,
    "answer": 168,
    "entity": 78,
+   "episode": 352,
+   "person": 291,
    "question": 1
   },
   "link_types": {
-   "GUEST_ON": 289,
    "ANSWERS": 168,
    "FROM_EPISODE": 168,
    "GAVE": 156,
+   "GUEST_ON": 289,
    "MENTIONS": 229,
    "RECOMMENDS": 118,
    "SIMILAR_TO": 50

@@ -1232,7 +1232,9 @@ def tfidf(docs: list[list[str]]) -> tuple[list[dict[str, float]], Counter]:
     for d in docs:
         tf = Counter(d)
         v = {t: (c / len(d)) * math.log((1 + n) / (1 + df[t])) for t, c in tf.items()} if d else {}
-        norm_ = math.sqrt(sum(x * x for x in v.values())) or 1.0
+        # fsum is exactly rounded: plain sum() changed its float algorithm
+        # in Python 3.12, which flipped near-ties between versions.
+        norm_ = math.sqrt(math.fsum(x * x for x in v.values())) or 1.0
         vecs.append({t: x / norm_ for t, x in v.items()})
     return vecs, df
 
@@ -1240,7 +1242,7 @@ def tfidf(docs: list[list[str]]) -> tuple[list[dict[str, float]], Counter]:
 def cosine(a: dict, b: dict) -> float:
     if len(a) > len(b):
         a, b = b, a
-    return sum(x * b.get(t, 0.0) for t, x in a.items())
+    return math.fsum(x * b.get(t, 0.0) for t, x in a.items())
 
 
 def node_id(prefix: str, name: str) -> str:
@@ -1393,10 +1395,10 @@ def build_graph(podcast: dict, q: dict, rows: list[dict], hosts: set[str]) -> di
             "episodes": len(rows),
             "with_transcript": with_transcript,
             "answered": len(answered),
-            "methods": dict(Counter(r["method"] for r in answered)),
+            "methods": dict(sorted(Counter(r["method"] for r in answered).items())),
             "people_named_and_later_guests": recommended_then_guest,
-            "node_types": dict(Counter(nodes[k]["type"] for k in keep)),
-            "link_types": dict(Counter(l["type"] for l in links)),
+            "node_types": dict(sorted(Counter(nodes[k]["type"] for k in keep).items())),
+            "link_types": dict(sorted(Counter(l["type"] for l in links).items())),
         },
         "nodes": [nodes[k] for k in nodes if k in keep],
         "links": links,
@@ -1599,11 +1601,15 @@ def main(argv=None) -> int:
     ap.add_argument("--offline", action="store_true", help="use cached transcripts only")
     ap.add_argument("--no-llm", action="store_true")
     ap.add_argument("--cache-dir", type=Path, default=CACHE_DIR)
+    ap.add_argument("--qa-dir", type=Path, help="where graphs live (default: qa/)")
     ap.add_argument("--out-dir", type=Path, help="default: qa/<podcast>-<question>")
     ap.add_argument("--report", action="store_true")
     ap.add_argument("--regraph", action="store_true",
                     help="rebuild graph.json from the existing answers.json, without transcripts")
     args = ap.parse_args(argv)
+    global QA_DIR
+    if args.qa_dir:
+        QA_DIR = args.qa_dir
 
     podcast, questions = load_config(args.config, args)
     if args.limit is not None:

@@ -9,8 +9,8 @@
   "with_transcript": 350,
   "answered": 133,
   "methods": {
-   "cue": 115,
    "block": 12,
+   "cue": 115,
    "fuzzy": 6
   },
   "people_named_and_later_guests": [
@@ -22,20 +22,20 @@
    "Shane Gibson"
   ],
   "node_types": {
+   "answer": 133,
+   "concept": 191,
+   "entity": 121,
    "episode": 352,
    "person": 199,
-   "entity": 121,
-   "concept": 191,
-   "answer": 133,
    "question": 1
   },
   "link_types": {
-   "GUEST_ON": 289,
+   "ABOUT": 422,
    "ANSWERS": 133,
    "FROM_EPISODE": 133,
    "GAVE": 133,
+   "GUEST_ON": 289,
    "MENTIONS": 193,
-   "ABOUT": 422,
    "SIMILAR_TO": 31
   }
  },
