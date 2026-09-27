@@ -163,6 +163,36 @@ check("every concept connects at least two answers", all(
     for n in advice["nodes"] if n["type"] == "concept"))
 check("similar answers are linked", any(l["type"] == "SIMILAR_TO" for l in advice["links"]))
 
+print("LLM pass (mocked transport; skipped without the anthropic SDK)")
+try:
+    import anthropic
+    import httpx2 as httpx  # anthropic 1.x speaks httpx2, the maintained httpx fork
+except ImportError:
+    anthropic = None
+    print("  skip  anthropic SDK not installed")
+if anthropic:
+    sent = []
+
+    def handler(request):
+        sent.append(json.loads(request.content))
+        body = {"answer_summary": "Invite Ben Ortiz.", "found": True, "quote": "You should invite Ben Ortiz.",
+                "people": ["Ben Ortiz", "Juan Sequeda"], "entities": [{"name": "Acme Graph", "kind": "organization"}],
+                "themes": ["Semantics"]}
+        return httpx.Response(200, json={
+            "id": "msg_1", "type": "message", "role": "assistant", "model": "claude-opus-5",
+            "content": [{"type": "text", "text": json.dumps(body)}], "stop_reason": "end_turn",
+            "stop_sequence": None, "usage": {"input_tokens": 10, "output_tokens": 10}})
+
+    llm = qa.LLM.__new__(qa.LLM)
+    llm.anthropic, llm.model, llm.effort, llm.use_fallbacks = anthropic, "claude-opus-5", "low", True
+    llm.client = anthropic.Anthropic(api_key="test", http_client=httpx.Client(transport=httpx.MockTransport(handler)))
+    got = llm.extract(q, qa.Episode(key="k", title="T", date="2026-01-01"), ["Ada Park"], "excerpt", ["semantics"])
+    check("the LLM reply is parsed", got and got["people"][0] == "Ben Ortiz")
+    req = sent[0] if sent else {}
+    check("the request asks for schema-constrained JSON", req.get("output_config", {}).get("format", {}).get("type") == "json_schema")
+    check("the request opts into default refusal fallbacks", req.get("fallbacks") == "default")
+    check("themes already used are offered back to the model", "semantics" in req["messages"][0]["content"])
+
 print("cache")
 cached = list((tmp / "cache" / "test-show" / "transcripts").glob("*.json"))
 check("local transcript files are read fresh, not cached", cached == [])

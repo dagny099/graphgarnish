@@ -1278,7 +1278,7 @@ def run_question(podcast: dict, q: dict, episodes: list[Episode], store: Transcr
     # show named in an answer is recognised as a person.
     known = {norm(g) for r in rows for g in r["guests"]}
     for r in rows:
-        if r["found"] and not r["people"] and not r["entities"]:
+        if r["found"] and not r["method"].endswith("llm"):
             exclude = {g.lower() for g in r["guests"]} | guest_exclude
             r["people"], r["entities"] = mentions(r["answer"], exclude, known, q["answer_kind"])
         if r["found"] and not r["quote"]:

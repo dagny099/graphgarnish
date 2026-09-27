@@ -344,6 +344,70 @@ Whichever copy survives the pull, the next rebuild replaces it.
 
 ---
 
+## 🎙️ Recurring Questions
+
+Many shows ask every guest the same closing question. Catalog & Cocktails asks
+three in one breath: *what's your advice, who should we invite next, and what
+resources do you follow?* Read across the whole catalogue, the answers form a
+second network: guests recommending other guests (some of whom later came on
+the show), and the same advice given years apart.
+
+`tools/qa_graph.py` builds that network for any podcast and any question.
+`qa.html` explores it.
+
+```
+podcasts/<show>.json     the feed, the hosts, where transcripts come from,
+                         and the questions (see podcasts/README.md)
+        │
+        ▼  episodes → transcripts → locate the question → cut the answer → graph
+        │
+qa/<show>-<question>/    graph.json    answers, guests, people and things named,
+                                       shared ideas, similar answers
+                         answers.json  one row per episode, with the reason
+                                       when no answer was found
+                         answers.csv   the same, for a spreadsheet
+```
+
+```bash
+python3 tools/qa_graph.py podcasts/catalog-and-cocktails.json --sample 8 --report
+python3 tools/qa_graph.py podcasts/catalog-and-cocktails.json --question invite-next
+python3 tools/qa_graph.py --feed <URL> --ask "What are you reading?" --cue "what are you reading"
+python3 tools/test_qa_graph.py
+```
+
+**Transcripts.** A `<podcast:transcript>` in the feed is used when the show
+publishes one. Catalog & Cocktails does not (Omny reports
+`HasPublishedTranscript: false`, and the show site carries descriptions only),
+so its config falls back to local speech-to-text with faster-whisper, run on
+the last 20 minutes of each episode, where the closing questions live.
+`.github/workflows/qa-graph.yml` does this on 12 parallel runners and keeps
+the transcripts in the Actions cache, so a weekly run transcribes only new
+episodes. Transcripts can also come from a folder or a per-episode web page.
+
+**Answers.** The host's phrasing (`cues`) finds the question. When several
+questions are asked together and answered in order, the guest's own phrasing
+(`answer_cues`: "my advice is", "as far as people") finds where each answer
+starts. Speaker labels, when the transcript has them, end an answer at the
+next substantial host turn.
+
+**Graph.** Node types are `question`, `episode`, `person`, `answer`, `entity`
+(organisations, books, products) and `concept`. Links are `ANSWERS`,
+`FROM_EPISODE`, `GUEST_ON`, `GAVE` (guest → answer), `MENTIONS`, `ABOUT`
+(answer → concept), `SIMILAR_TO` (answer ↔ answer, weighted) and, for a
+people question, `RECOMMENDS` (guest → named person). Concepts are words and
+word pairs that recur across answers without being in most of them (TF-IDF,
+dropping any that link fewer than two answers). Similarity is cosine on the
+same vectors.
+
+**Optional Claude pass.** With `ANTHROPIC_API_KEY` set (locally, or as a
+repository secret for the workflow) and `pip install anthropic`, each answer
+is re-read by Claude, which returns a summary, a verbatim quote, typed names,
+and short themes. Themes already used are passed back in, so one idea keeps
+one label across episodes. Without a key, names and concepts come from the
+heuristics above; every answer records which path produced it (`method`).
+
+---
+
 ## 📊 Use Cases
 
 ### 1. **Guest Network Analysis**

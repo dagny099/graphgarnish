@@ -29,6 +29,9 @@ jobs:
       - name: Invariant checks
         run: python3 tools/test_build_network.py
 
+      - name: Recurring-question pipeline checks
+        run: python3 tools/test_qa_graph.py
+
       - name: The build is deterministic
         # Two builds from identical inputs must produce identical bytes. Runs
         # against the checked-in RSS fixture and writes to a scratch path, so
