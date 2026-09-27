@@ -82,6 +82,7 @@ text.label { font-size: 11px; fill: white; pointer-events: none; paint-order: st
     <h2>Link answers by</h2>
     <label class="toggle"><input type="checkbox" id="t-sim" checked> similar wording</label>
     <label class="toggle"><input type="checkbox" id="t-rec" checked> guest → person they named</label>
+    <label class="toggle"><input type="checkbox" id="t-bridge"> only what links answers together</label>
     <p class="note" id="method-note"></p>
     <h2>Load your own</h2>
     <input type="file" id="file" accept=".json">
@@ -160,6 +161,9 @@ function setGraph(g) {
     `<b>fuzzy</b> = a reworded question, <b>+llm</b> = refined by Claude. ` +
     `Shared ideas are recurring words and phrases unless Claude named them.`;
   document.getElementById('t-rec').parentElement.style.display = m.answer_kind === 'people' ? '' : 'none';
+  // Large graphs open on their cross-episode structure; one-off mentions
+  // are a click away.
+  document.getElementById('t-bridge').checked = g.nodes.length > 400;
   const counts = {};
   g.nodes.forEach(n => counts[n.type] = (counts[n.type] || 0) + 1);
   document.getElementById('toggles').innerHTML = Object.keys(LABELS).filter(t => counts[t]).map(t =>
@@ -172,7 +176,7 @@ function setGraph(g) {
   draw();
 }
 
-['t-sim', 't-rec'].forEach(id => document.getElementById(id).onchange = () => draw());
+['t-sim', 't-rec', 't-bridge'].forEach(id => document.getElementById(id).onchange = () => draw());
 document.getElementById('search').oninput = () => { renderList(); highlight(); };
 
 function answers() {
@@ -290,16 +294,53 @@ function draw() {
     .filter(l => l.type !== 'SIMILAR_TO' || showSim)
     .filter(l => l.type !== 'RECOMMENDS' || showRec)
     .filter(l => l.type !== 'GUEST_ON' || visible.episode);
-  // Drop isolated concept/entity nodes left behind by a filter.
+  let keepLinks = links, keepNodes = nodes;
+  if (document.getElementById('t-bridge').checked) {
+    // A person, thing or idea bridges when two or more answers reach it
+    // (or it is a guest who was also named). Answers stay if they touch one.
+    const answersOf = new Map();
+    graph.links.forEach(l => {
+      const s = l.source.id || l.source, t = l.target.id || l.target;
+      if (['MENTIONS', 'ABOUT', 'GAVE'].includes(l.type)) {
+        const [a, x] = l.type === 'GAVE' ? [t, s] : [s, t];
+        if (!answersOf.has(x)) answersOf.set(x, new Set());
+        answersOf.get(x).add(a);
+      }
+    });
+    const bridge = new Set(nodes.filter(n => ['person', 'entity', 'concept'].includes(n.type) && (
+      (answersOf.get(n.id) || new Set()).size >= 2 || (n.roles || []).length > 1)).map(n => n.id));
+    const touched = new Set();
+    links.forEach(l => {
+      if (bridge.has(l.source)) touched.add(l.target);
+      if (bridge.has(l.target)) touched.add(l.source);
+    });
+    keepNodes = nodes.filter(n => bridge.has(n.id) || (n.type === 'answer' && touched.has(n.id))
+      || n.type === 'question' || n.type === 'episode');
+    const keepIds = new Set(keepNodes.map(n => n.id));
+    keepLinks = links.filter(l => keepIds.has(l.source) && keepIds.has(l.target));
+  }
+  // Drop nodes a filter left with no links.
   const deg = new Map();
-  links.forEach(l => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); });
-  const shown = nodes.filter(n => deg.get(n.id) || n.type === 'answer' || n.type === 'question');
+  keepLinks.forEach(l => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); });
+  const shown = keepNodes.filter(n => deg.get(n.id) || n.type === 'answer' || n.type === 'question');
 
   const g = svg.append('g');
-  svg.call(d3.zoom().scaleExtent([0.1, 6]).on('zoom', ev => g.attr('transform', ev.transform)));
+  const zoom = d3.zoom().scaleExtent([0.05, 6]).on('zoom', ev => g.attr('transform', ev.transform));
+  svg.call(zoom);
+  let fitted = false;
+  // Frame the whole graph once the layout has mostly settled; a thousand
+  // nodes spread far past the viewport otherwise.
+  const fit = () => {
+    if (!shown.length) return;
+    const xs = shown.map(d => d.x), ys = shown.map(d => d.y);
+    const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+    const k = Math.min(2, 0.9 / Math.max((x1 - x0) / width, (y1 - y0) / height, 1e-3));
+    svg.transition().duration(600).call(zoom.transform,
+      d3.zoomIdentity.translate(width / 2, height / 2).scale(k).translate(-(x0 + x1) / 2, -(y0 + y1) / 2));
+  };
   svg.on('click', ev => { if (ev.target === svg.node()) { selected = null; highlight(); } });
 
-  const link = g.append('g').selectAll('line').data(links).join('line').attr('class', 'link')
+  const link = g.append('g').selectAll('line').data(keepLinks).join('line').attr('class', 'link')
     .attr('stroke', l => l.type === 'RECOMMENDS' ? '#4ecdc4' : l.type === 'SIMILAR_TO' ? '#ffd8a8' : '#fff')
     .attr('stroke-width', l => l.type === 'SIMILAR_TO' ? 1 + 4 * (l.weight || 0) : l.type === 'RECOMMENDS' ? 2 : 1)
     .attr('stroke-dasharray', l => l.type === 'SIMILAR_TO' ? '3 3' : null)
@@ -333,7 +374,7 @@ function draw() {
 
   if (sim) sim.stop();
   sim = d3.forceSimulation(shown)
-    .force('link', d3.forceLink(links).id(d => d.id)
+    .force('link', d3.forceLink(keepLinks).id(d => d.id)
       .distance(l => l.type === 'SIMILAR_TO' ? 60 : l.type === 'GAVE' ? 25 : 80)
       .strength(l => l.type === 'SIMILAR_TO' ? 0.2 * (l.weight || 0.2) * 5 : 0.5))
     .force('charge', d3.forceManyBody().strength(d => d.type === 'concept' ? -260 : -90))
@@ -344,6 +385,7 @@ function draw() {
       link.attr('x1', l => l.source.x).attr('y1', l => l.source.y).attr('x2', l => l.target.x).attr('y2', l => l.target.y);
       node.attr('cx', d => d.x).attr('cy', d => d.y);
       label.attr('x', d => d.x).attr('y', d => d.y - size(d) - 4);
+      if (!fitted && sim.alpha() < 0.12) { fitted = true; fit(); }
     });
   highlight();
 }

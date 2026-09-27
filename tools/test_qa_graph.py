@@ -288,6 +288,9 @@ qa.http_get = lambda url, timeout=60: (json.dumps({"results": [
 try:
     check("the directory result whose title matches the name wins",
           qa.lookup_feed("Data Engineering Podcast") == "https://x/right.xml")
+    qa.http_get = lambda url, timeout=60: (json.dumps({"results": [
+        {"collectionName": "The Python Podcast.__init__", "feedUrl": "https://x/python.xml"}]}), "")
+    check("a different show by the same host is refused, not picked", qa.lookup_feed("Data Engineering Podcast") == "")
 finally:
     qa.http_get = real_get
 

@@ -291,23 +291,27 @@ def parse_items(xml_text: str) -> list[Episode]:
     return out
 
 
-ITUNES_SEARCH = "https://itunes.apple.com/search?media=podcast&entity=podcast&limit=5&term="
+ITUNES_SEARCH = "https://itunes.apple.com/search?media=podcast&entity=podcast&limit=25&term="
 
 
 def lookup_feed(name: str) -> str:
     """A podcast's RSS feed from its name, via Apple's public podcast
-    directory. The closest title wins; the choice is printed so it can be
-    pinned in the config."""
+    directory. Only a title that matches the name is accepted: the
+    directory ranks a host's other shows alongside, and a near neighbour is
+    a different podcast. The choice is printed so it can be pinned."""
     raw, _ = http_get(ITUNES_SEARCH + urllib.parse.quote(name))
     results = [r for r in json.loads(raw).get("results", []) if r.get("feedUrl")]
-    if not results:
-        return ""
     want = norm(name)
-    best = max(results, key=lambda r: (norm(r.get("collectionName", "")) == want,
-                                       want in norm(r.get("collectionName", ""))))
-    print(f"FEED LOOKUP: {name!r} -> {best.get('collectionName')!r} {best['feedUrl']} "
+    exact = [r for r in results if norm(r.get("collectionName", "")) == want]
+    close = [r for r in results if want in norm(r.get("collectionName", ""))]
+    pick = (exact or close or [None])[0]
+    if pick is None:
+        seen = "; ".join(r.get("collectionName", "?") for r in results[:8]) or "nothing"
+        print(f"FEED LOOKUP: no podcast titled {name!r} (directory returned: {seen})", file=sys.stderr)
+        return ""
+    print(f"FEED LOOKUP: {name!r} -> {pick.get('collectionName')!r} {pick['feedUrl']} "
           f"(pin this as podcast.feed)", file=sys.stderr)
-    return best["feedUrl"]
+    return pick["feedUrl"]
 
 
 def load_episodes(podcast: dict, feed_file: Path | None, save_feed: Path | None) -> list[Episode]:
