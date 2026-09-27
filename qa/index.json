@@ -7,7 +7,7 @@
   "question": "What's your advice about data, about life?",
   "episodes": 352,
   "with_transcript": 350,
-  "answered": 200
+  "answered": 179
  },
  {
   "path": "catalog-and-cocktails-invite-next/graph.json",
@@ -17,7 +17,7 @@
   "question": "Who should we invite next?",
   "episodes": 352,
   "with_transcript": 350,
-  "answered": 187
+  "answered": 168
  },
  {
   "path": "catalog-and-cocktails-resources/graph.json",
@@ -27,6 +27,6 @@
   "question": "What resources do you follow?",
   "episodes": 352,
   "with_transcript": 350,
-  "answered": 143
+  "answered": 133
  }
 ]

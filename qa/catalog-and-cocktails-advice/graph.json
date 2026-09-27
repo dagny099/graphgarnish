@@ -7,35 +7,34 @@
   "answer_kind": "open",
   "episodes": 352,
   "with_transcript": 350,
-  "answered": 200,
+  "answered": 179,
   "methods": {
-   "cue": 177,
-   "fuzzy": 23
+   "cue": 176,
+   "fuzzy": 3
   },
   "people_named_and_later_guests": [
    "Bethany Lyons",
    "Jenna Jordan",
    "Jessica Talisman",
-   "Lars Albertsson",
    "Lindsay Murphy",
    "Steve Whitla"
   ],
   "node_types": {
-   "episode": 352,
+   "answer": 179,
    "person": 203,
-   "answer": 200,
-   "concept": 231,
-   "entity": 118,
+   "concept": 209,
+   "entity": 103,
+   "episode": 352,
    "question": 1
   },
   "link_types": {
    "GUEST_ON": 289,
-   "ANSWERS": 200,
-   "FROM_EPISODE": 200,
-   "GAVE": 171,
-   "MENTIONS": 146,
-   "ABOUT": 562,
-   "SIMILAR_TO": 20
+   "ANSWERS": 179,
+   "FROM_EPISODE": 179,
+   "GAVE": 165,
+   "MENTIONS": 129,
+   "ABOUT": 499,
+   "SIMILAR_TO": 26
   }
  },
  "nodes": [
@@ -43,7 +42,7 @@
    "id": "question",
    "type": "question",
    "name": "What's your advice about data, about life?",
-   "degree": 200
+   "degree": 179
   },
   {
    "id": "ep_2026-09-25_ai-inherits-the-business-choices-you-nev_c15962",
@@ -435,7 +434,7 @@
    "type": "entity",
    "name": "LinkedIn",
    "kind": "other",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "ep_2026-05-01_ai-appetite-is-easy-digestion-is-hard-wi_4c2ca5",
@@ -521,25 +520,8 @@
    "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/its-friday-juan-and-tim-rant-about-ai-agents-and-the-uncomfortable-truth-about-datas-new-center-of-gravity",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2026-04-24_it-s-friday-juan-and-tim-rant-about-ai-a_65bd27",
-   "type": "answer",
-   "name": "You need to reference librarians. I think that's something that is that is a very, it's ve",
-   "date": "2026-04-24",
-   "episode": "It's Friday: Juan and Tim rant about AI, Agents, and the Uncomfortable Truth About Data's New Center of Gravity",
-   "guests": [],
-   "text": "You need to reference librarians. I think that's something that is that is a very, it's very inspiring to think about to think their approaches and how combine all the stuff that was happening. At the end of the day, like, what I mean about work is like, you're you're at an organization and there's objectives that your organization was trying to accomplish. I mean, and these are, and these, this is a human thing, right? That's why humans get together to build a company. So there's a human, there's goals that are established by people. And if we have part of that, we live in a capitalist world, want to make money and save money, let's talk this up. So these objectives need to be defined. And what we're, and then all these work that needs to happen, we need to take decisions to make that work happen, such that we get accomplished with the objective of the organization. So I think like the more we get to wonder, and I think this kind of elevates back to our humanity is like, we get to get focused more on the why are we all here together to make at",
-   "summary": "",
-   "quote": "You need to reference librarians. I think that's something that is that is a very, it's very inspiring to think about to think their approaches and how combine all the stuff that was happening. At the end of the day, like, what I mean about work is like, you're you're at an organization and there's objectives that your organization was",
-   "start": 1756.3,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a2d11bc1-ba6a-48a6-8bad-b436015fe25f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2026-04-16_think-like-a-librarian-why-the-reference_481d0d",
@@ -599,7 +581,7 @@
     "mentioned",
     "guest"
    ],
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "ent_hanalee_golden",
@@ -645,7 +627,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/b4b0412a-58e7-486d-ba71-b427005d967c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
+   "degree": 10
   },
   {
    "id": "ep_2026-04-05_juan-tim-rant-w-jesus-barrasa-about-onto_4239c0",
@@ -963,25 +945,8 @@
    "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/its-friday-juan-and-tim-rant-about-decisions-context-mcp-and-maturity-models",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2026-02-06_it-s-friday-juan-and-tim-rant-about-deci_7c5151",
-   "type": "answer",
-   "name": "I mean, obviously, like. Oh, this is legal people that I mean. This is a good one. So this",
-   "date": "2026-02-06",
-   "episode": "It's Friday, Juan and Tim rant about Decisions, Context, MCP and Maturity Models",
-   "guests": [],
-   "text": "I mean, obviously, like. Oh, this is legal people that I mean. This is a good one. So this is what we're talking about. All right, let's go to this. I don't want you to care about context, right? Like, is it a cheat data officer? Like, what conversation are we having where they're like, is the cheat data officer, are they waking up in the middle and I'd be like, I have a context problem. Yeah, so this brings up like another, another rant. I mean, you do, but like, yeah. But companies don't have a data problem. They don't have really, I mean, they think they have, they do have an AI problem, but they have problems that really, it's not really their focus. Like, they have a work problem. I just need to get our work done. I need to get more work done. I need to be more efficient with the way I get work done. Like, that's what organizations are trying to do. How do I do more with less? It's a work problem. So the question is, what do we do sets that we can be more effective with the work that needs to",
-   "summary": "",
-   "quote": "I mean, obviously, like. Oh, this is legal people that I mean. This is a good one. So this is what we're talking about. All right, let's go to this. I don't want you to care about context, right? Like, is it a cheat data officer? Like, what conversation are we having where they're like, is the cheat data officer,",
-   "start": 1089.9,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/6928fc09-41b0-43a3-9ea8-b3e9015e2e44/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2026-02-05_stop-chasing-ai-hype-start-counting-doll_0d54cc",
@@ -1130,32 +1095,8 @@
    "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/its-friday-juan-and-tim-rant-about-data-and-context-graphs",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2026-01-16_it-s-friday-juan-and-tim-rant-about-data_5532fc",
-   "type": "answer",
-   "name": "Like that really depends on the type of company that you are. If you, the data strategy yo",
-   "date": "2026-01-16",
-   "episode": "It's Friday! Juan and Tim rant about data and context graphs",
-   "guests": [],
-   "text": "Like that really depends on the type of company that you are. If you, the data strategy you have as a tech company where you are, you own your, you're, you are, I don't know, like, you're an e-commerce retail company, right? And you built and you manage your entire software of how you built them, then that your strategy there is very different from, I sell, I sell things. I sell these water bottles, right? Physical things. Physical things. And I use this ERP system and that system and that system and I'm going to consume that, like, that you may have a completely different strategy there. And also very different strategy if you actually sell data. So I think because a lot of the stuff that you go read and talk to people, they kind of like one generic type of strategies or stuff that people talk about. Like everybody should have it very differently. And I think your starting points are different. Your end points are actually going to be different. Anyways, that's a lot of what was on my mind. Yeah, no, I think that's great. And, you know, that triggers for me, I think one",
-   "summary": "",
-   "quote": "Like that really depends on the type of company that you are. If you, the data strategy you have as a tech company where you are, you own your, you're, you are, I don't know, like, you're an e-commerce retail company, right? And you built and you manage your entire software of how you built them, then that your strategy",
-   "start": 847.4,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4e12c7fe-8625-4d23-b867-b3d401669de2/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
-  },
-  {
-   "id": "ent_erp",
-   "type": "entity",
-   "name": "ERP",
-   "kind": "other",
-   "degree": 1
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2026-01-15_2026-trends-in-the-data-world-with-tony_002f13",
@@ -1214,32 +1155,8 @@
    "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/season-11-premiere-what-happened-in-2025-and-where-are-we-going-in-2026",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2026-01-08_season-11-premiere-what-happened-in-2025_f46dc2",
-   "type": "answer",
-   "name": "Here's how here's a simple example to go do things in Python. Like, I think we're going to",
-   "date": "2026-01-08",
-   "episode": "Season 11 Premiere: What happened in 2025 and where are we going in 2026",
-   "guests": [],
-   "text": "Here's how here's a simple example to go do things in Python. Like, I think we're going to start seeing more and more of that and just kind of get the data people to learn more about the knowledge side. And I think that is going to just flourish because I think the combination of those two things, that is, that's another one plus one is greater than two. Yeah, I like that. That makes a lot of sense. One last thing. Maybe I'll say on context is that, you know, I'm really curious to see over the course of 2026, where a lot of the context management needs to happen. Right. Like, you know, where, where, you know, going back to what we said earlier, like, you know, systems of record versus systems of action versus systems of analytics. That's one angle, right, or one lens. Another lens, though, is what should be part of the LLM or the AI model itself, right? I won't say LLM, the AI model, right? What should be part of the AI model versus what should be part of the AI app or agent, right, where the prompt engineering, for example, right, is",
-   "summary": "",
-   "quote": "Here's how here's a simple example to go do things in Python. Like, I think we're going to start seeing more and more of that and just kind of get the data people to learn more about the knowledge side. And I think that is going to just flourish because I think the combination of those two things, that is,",
-   "start": 2465.1,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/9d073444-98c3-471e-ace7-b3cc002d8d9a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
-  },
-  {
-   "id": "ent_llm",
-   "type": "entity",
-   "name": "LLM",
-   "kind": "other",
-   "degree": 2
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2025-12-17_building-ai-agents-with-lena-hall_519a55",
@@ -1481,25 +1398,8 @@
    "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/season-10-premiere-juan-and-tim-revist-5-years-of-data",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2025-11-05_season-10-premiere-juan-and-tim-revisit_9786cb",
-   "type": "answer",
-   "name": "I think that's been a little bit annoying. Ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha,",
-   "date": "2025-11-05",
-   "episode": "Season 10 Premiere: Juan and Tim revisit 5+ years of Data",
-   "guests": [],
-   "text": "I think that's been a little bit annoying. Ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, oh gosh, so, it's probably what, nine out of 10 times when we walk into some of your like, so data products, so what do you mean by a data product? Everybody just laughs, it's like, yeah, nobody knows. Get a group of people together. Are they reusable? Does everybody agree? Data products are reusable, all right, cool, reusable, all right. Are they governed? Does it have to be governed? I don't know, does it have to be governed? And then the other thing out of this too is the whole lately, now these data contracts, which I think at the end of the day, it's just part of like, what is the agreement, right? You have a product, I'm gonna go sell you something and you require something and you agree this up? I think that's part of that whole notion of the data products. Right, for something to be a product, right? If you're gonna, like going back to the Amazon analogy, right, you've got the return policy, right? It's something you would depend on.",
-   "summary": "",
-   "quote": "I think that's been a little bit annoying. Ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, oh gosh, so, it's probably what, nine out of 10 times when we walk into some of your like, so data products, so what do you mean by a data product? Everybody just laughs, it's like, yeah,",
-   "start": 2731.0,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/e68c5cf0-e2e9-4a63-8d9e-b38c000b62b9/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2025-05-29_season-9-finale-with-tim-gasper-and-juan_4ff883",
@@ -2379,6 +2279,13 @@
    "degree": 11
   },
   {
+   "id": "ent_llm",
+   "type": "entity",
+   "name": "LLM",
+   "kind": "other",
+   "degree": 1
+  },
+  {
    "id": "ent_joe_perez",
    "type": "entity",
    "name": "Joe Perez",
@@ -3056,25 +2963,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/We-need-your-Honest-No-BS-Feedback--What-should-we-do-next-e3650d4",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2024-06-04_we-need-your-honest-no-bs-feedback-what_bd1531",
-   "type": "answer",
-   "name": "Would you like us to hit more on AI or less on AI? So let us know, you know, what topics s",
-   "date": "2024-06-04",
-   "episode": "We need your Honest No-BS Feedback! What should we do next?",
-   "guests": [],
-   "text": "Would you like us to hit more on AI or less on AI? So let us know, you know, what topics should we dive into, you know, and also, you know, should we have some different formats? Do you like the typical sort of guests that we have on? We kind of do that conversational, honest, no BS conversation? Or should we have a debate, more debates? Should we have a panel where we have a few different experts on a topic at the same time? So anything and everything is possible, we're curious about your feedback. The only thing that has to stay true is honest, no BS. Exactly. And also send us your feedback on who would you like to see? And if you want to nominate yourself, feel free to go do that. And if you do, honest, no BS, why do you think, what is your honest, no BS take on things? So we really want to kind of figure out what we're going to go do. Like we started this over four years ago, not knowing that it was going to be four years and I don't know what we're going to go to. I",
-   "summary": "",
-   "quote": "Would you like us to hit more on AI or less on AI? So let us know, you know, what topics should we dive into, you know, and also, you know, should we have some different formats? Do you like the typical sort of guests that we have on? We kind of do that conversational, honest, no BS conversation? Or",
-   "start": 136.8,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/ddf7474c-8601-4f37-bdd9-b387002f230a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2024-05-23_what-is-ai-ops-with-brandon-gadoci_b69bde",
@@ -3795,27 +3685,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Without-information-architecture--there-is-no-AI-with-Jessica-Talisman-e3650eo",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 2
-  },
-  {
-   "id": "ans_2024-01-31_without-information-architecture-there-i_e82764",
-   "type": "answer",
-   "name": "I try to to lend, lend, you know, that advice. And it is very abstract. I'll have book clu",
-   "date": "2024-01-31",
-   "episode": "Without information architecture, there is no AI with Jessica Talisman",
-   "guests": [
-    "Jessica Talisman"
-   ],
-   "text": "I try to to lend, lend, you know, that advice. And it is very abstract. I'll have book clubs.",
-   "summary": "",
-   "quote": "I try to to lend, lend, you know, that advice. And it is very abstract. I'll have book clubs.",
-   "start": 3996.1,
-   "method": "cue",
-   "confidence": 1.0,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/822438a4-7567-4a04-8d10-b387002fbd5f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "answered": false,
+   "degree": 1
   },
   {
    "id": "ep_2024-01-30_productivity-is-not-performance-with-san_bef991",
@@ -3988,25 +3859,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Season-6-Finale-with-Tim-Gasper-and-Juan-Sequeda-e3650oa",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2023-12-15_season-6-finale-with-tim-gasper-and-juan_6849cb",
-   "type": "answer",
-   "name": "You push strings in and you're trying to associate strings with strings, but this breaks d",
-   "date": "2023-12-15",
-   "episode": "Season 6 Finale with Tim Gasper and Juan Sequeda",
-   "guests": [],
-   "text": "You push strings in and you're trying to associate strings with strings, but this breaks down because you can say, hey, wine and cheese, those two things go together, but that doesn't mean that they're in the same food group. Doctors and nurses, those are related, but they're not, it's not, it's in industry together, right? So this is good things to go break down. So there's some inherent limitations when you focus just on the strings and this is where knowledge graphs come in because it provides that context that gives you and that distinguishes all these different things. And the knowledge graphs are for bringing you the accuracy, which is critical for any type of enterprise applications you wanna go do. I think if you're creating applications that are not for the enterprise, yeah, this is fun and it's okay if we have mistakes or stuff. But for the enterprise, accuracy is critical explainability even more because it's gonna provide trust and at the end you want governance around all of this. So what does the rag architecture look like? And I like how it puts it up. Look, you have a query, you have this background that",
-   "summary": "",
-   "quote": "You push strings in and you're trying to associate strings with strings, but this breaks down because you can say, hey, wine and cheese, those two things go together, but that doesn't mean that they're in the same food group. Doctors and nurses, those are related, but they're not, it's not, it's in industry together, right? So this is good",
-   "start": 3099.8,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2ac7d7ff-93e2-4adb-a5f2-b387002fd948/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2023-12-01_data-contracts-and-shift-responsibility_e206c2",
@@ -4859,7 +4713,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/b7d16be2-f0b7-42ed-84b1-b3870030b46f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 8
   },
   {
    "id": "ep_2023-07-06_catalogs-cocktails-live-from-snowflake-s_0de617",
@@ -5149,13 +5003,6 @@
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2076f738-410b-4a67-95bc-b3870030f574/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
    "degree": 9
-  },
-  {
-   "id": "ent_twitter_and_linkedin",
-   "type": "entity",
-   "name": "Twitter and LinkedIn",
-   "kind": "other",
-   "degree": 1
   },
   {
    "id": "ep_2023-05-04_takeaways-with-ricardo-baeza-yates_1fea1b",
@@ -5453,9 +5300,9 @@
    "degree": 9
   },
   {
-   "id": "ent_ai_and_llms",
+   "id": "ent_llms",
    "type": "entity",
-   "name": "AI and LLMs",
+   "name": "LLMs",
    "kind": "other",
    "degree": 1
   },
@@ -5467,25 +5314,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-from-Gartner-DA-with-Juan-and-Tim-e3650g7",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2023-03-23_takeaways-from-gartner-d-a-with-juan-and_9cddc3",
-   "type": "answer",
-   "name": "Absolutely. So I think that what we're really seeing is the realization of data democratiz",
-   "date": "2023-03-23",
-   "episode": "Takeaways from Gartner D&A with Juan and Tim",
-   "guests": [],
-   "text": "Absolutely. So I think that what we're really seeing is the realization of data democratization. And that can mean a lot of things to different companies. But this idea of self-service data access, self-service access for data analysts and really achieve and access to data that they're trying to get in touch with is really becoming more reality. And that's not necessarily on the part of the vendors. It takes a lot of heroics on the customer side, scaffolding that they have to build. But I think we're seeing customers approaching that in a much more mature and smart manner in terms of rolling out those capabilities. What I'd say is specifically at this show, a lot of confusion. Data mesh, data fabric, data ops. Again, these are all things that are people processing technology. And so it really requires a whole lot of intellectual tribal knowledge to execute those things for a healthcare company or a financial services company that are super specific to how you actually work as a company. And so I think what we're really cutting through at this show is people understanding that they can build data ops, they can build a data mesh, but",
-   "summary": "",
-   "quote": "Absolutely. So I think that what we're really seeing is the realization of data democratization. And that can mean a lot of things to different companies. But this idea of self-service data access, self-service access for data analysts and really achieve and access to data that they're trying to get in touch with is really becoming more reality. And that's",
-   "start": 1099.3,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/e0a51ae6-4028-4cf3-b230-b387003146b4/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2023-03-16_takeaways-with-kristin-schooley_231f99",
@@ -5775,7 +5605,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/02237adf-7691-4cf5-89f6-b38700317e32/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 13
+   "degree": 12
   },
   {
    "id": "ent_geoend_conference",
@@ -5790,13 +5620,6 @@
    "name": "Danny Hillis",
    "kind": "other",
    "degree": 1
-  },
-  {
-   "id": "ent_phd",
-   "type": "entity",
-   "name": "PhD",
-   "kind": "other",
-   "degree": 2
   },
   {
    "id": "ent_dan_maranker",
@@ -6001,16 +5824,16 @@
   {
    "id": "ans_2023-01-12_a-conversation-with-the-father-of-the-da_3bfa75",
    "type": "answer",
-   "name": "And what I tell them, I give this piece of advice. I say get as close to the decision maki",
+   "name": "Well, okay. I get asked a question by young college students all the time. What should I d",
    "date": "2023-01-12",
    "episode": "A conversation with the father of the data warehouse, Bill Inmon",
    "guests": [
     "Bill Inmon"
    ],
-   "text": "And what I tell them, I give this piece of advice. I say get as close to the decision making of a corporation as you can. Because when it comes time for layoffs, who's the last person to get laid off in a corporation? And that's the person that is closest to the decision making. If you are working in a clerical function, in a regulatory function, we need people like that. But you are open and open in yourself and your family to lay off. So if I have one more advice to give young people is get as close to decision making as you can. Bravo. Bravo. Bravo. Bravo. Yes.",
+   "text": "Well, okay. I get asked a question by young college students all the time. What should I do? And what I tell them, I give this piece of advice. I say get as close to the decision making of a corporation as you can. Because when it comes time for layoffs, who's the last person to get laid off in a corporation? And that's the person that is closest to the decision making. If you are working in a clerical function, in a regulatory function, we need people like that. But you are open and open in yourself and your family to lay off. So if I have one more advice to give young people is get as close to decision making as you can. Bravo. Bravo. Bravo. Bravo. Yes.",
    "summary": "",
-   "quote": "And what I tell them, I give this piece of advice. I say get as close to the decision making of a corporation as you can. Because when it comes time for layoffs, who's the last person to get laid off in a corporation? And that's the person that is closest to the decision making. If you are working in",
-   "start": 3884.6,
+   "quote": "Well, okay. I get asked a question by young college students all the time. What should I do? And what I tell them, I give this piece of advice. I say get as close to the decision making of a corporation as you can. Because when it comes time for layoffs, who's the last person to get laid off in",
+   "start": 3879.0,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
@@ -6267,17 +6090,17 @@
   {
    "id": "ans_2022-11-03_put-the-business-in-charge-of-their-own_80e97c",
    "type": "answer",
-   "name": "I've also wanted to say, okay, my advice, we also, we teach a lot of young people when we ",
+   "name": "Okay, Gabby, you think about if you didn't invite. I've also wanted to say, okay, my advic",
    "date": "2022-11-03",
    "episode": "Put the Business in charge of their own data w/ Gabi Steele and Leah Weiss of Preql",
    "guests": [
     "Gabi Steele",
     "Leah Weiss"
    ],
-   "text": "I've also wanted to say, okay, my advice, we also, we teach a lot of young people when we have the opportunity, which is really the favorite thing that we've been able to do in our careers. But my advice is always just follow your curiosity. These technical skills are ways of being better at whatever you want to do. But it's often, you know, a means of solving a problem. It's not sort of the goal in and of itself. So any problem that's exciting to you, learn the skills, you'll be motivated to learn the skills that you need in order to solve them. Yeah, no, totally echo that. And just gives me more ideas of people we should invite some of our young scholars who did our data science would be amazing. Like bringing more voices into the space of data science and engineering has been super important to us from the beginning and felt like a responsibility in being a part of this world. So yeah, we have always been telling and the fact that data touches everything. So there are so many ways that you can bring your personal passions into the work. And we've",
+   "text": "Okay, Gabby, you think about if you didn't invite. I've also wanted to say, okay, my advice, we also, we teach a lot of young people when we have the opportunity, which is really the favorite thing that we've been able to do in our careers. But my advice is always just follow your curiosity. These technical skills are ways of being better at whatever you want to do. But it's often, you know, a means of solving a problem. It's not sort of the goal in and of itself. So any problem that's exciting to you, learn the skills, you'll be motivated to learn the skills that you need in order to solve them. Yeah, no, totally echo that. And just gives me more ideas of people we should invite some of our young scholars who did our data science would be amazing. Like bringing more voices into the space of data science and engineering has been super important to us from the beginning and felt like a responsibility in being a part of this world. So yeah, we have always been telling and the fact that data touches everything. So there are so many ways that you can",
    "summary": "",
-   "quote": "I've also wanted to say, okay, my advice, we also, we teach a lot of young people when we have the opportunity, which is really the favorite thing that we've been able to do in our careers. But my advice is always just follow your curiosity. These technical skills are ways of being better at whatever you want to do.",
-   "start": 3708.6,
+   "quote": "Okay, Gabby, you think about if you didn't invite. I've also wanted to say, okay, my advice, we also, we teach a lot of young people when we have the opportunity, which is really the favorite thing that we've been able to do in our careers. But my advice is always just follow your curiosity. These technical skills are ways",
+   "start": 3705.6,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
@@ -6409,8 +6232,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Laura-Ellis-from-Rapid7-e36509t",
    "is_full": true,
    "has_transcript": true,
-   "answered": false,
-   "degree": 1
+   "answered": true,
+   "degree": 2
   },
   {
    "id": "person_laura_ellis",
@@ -6422,6 +6245,25 @@
    "degree": 3
   },
   {
+   "id": "ans_2022-10-13_takeaways-with-laura-ellis-from-rapid7_ebbdf6",
+   "type": "answer",
+   "name": "So advice, this is life data advice, right? So my advice is to build people up around you.",
+   "date": "2022-10-13",
+   "episode": "Takeaways with Laura Ellis from Rapid7",
+   "guests": [
+    "Laura Ellis"
+   ],
+   "text": "So advice, this is life data advice, right? So my advice is to build people up around you. So build up your team, build up your peers, build up your peer pluses, build up your friends, your family, you know, build people up around you, invest in them. There is more than enough sunshine for everyone, right? Like, it's important to know that giving to other people and making them feel good will like only give back to you, right? It never takes away from you. So that's, everyone advice? I love that.",
+   "summary": "",
+   "quote": "So advice, this is life data advice, right? So my advice is to build people up around you. So build up your team, build up your peers, build up your peer pluses, build up your friends, your family, you know, build people up around you, invest in them. There is more than enough sunshine for everyone, right? Like, it's important",
+   "start": 652.9,
+   "method": "cue",
+   "confidence": 1.0,
+   "transcript_source": "whisper",
+   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/0254d3af-7a9b-4b99-8494-b38700324976/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
+   "degree": 8
+  },
+  {
    "id": "ep_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
    "type": "episode",
    "name": "Data empathy; you either got it or you don’t w/ Laura Ellis from Rapid7",
@@ -6429,27 +6271,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Data-empathy-you-either-got-it-or-you-dont-w-Laura-Ellis-from-Rapid7-e3650g8",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 2
-  },
-  {
-   "id": "ans_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
-   "type": "answer",
-   "name": "So my advice is to build people up around you. So build up your team, build up your peers,",
-   "date": "2022-10-13",
-   "episode": "Data empathy; you either got it or you don’t w/ Laura Ellis from Rapid7",
-   "guests": [
-    "Laura Ellis"
-   ],
-   "text": "So my advice is to build people up around you. So build up your team, build up your peers, build up your peer pluses, build up your friends, your family, you know, build people up around you, invest in them. There is more than enough sunshine for everyone, right? Like, it's important to know that giving to other people and making them feel good will like only give back to you, right? It never takes away from you. So that's, everyone advice? I love that. Second.",
-   "summary": "",
-   "quote": "So my advice is to build people up around you. So build up your team, build up your peers, build up your peer pluses, build up your friends, your family, you know, build people up around you, invest in them. There is more than enough sunshine for everyone, right? Like, it's important to know that giving to other people and",
-   "start": 3263.1,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/5e8aba2d-ab75-4ab7-a7de-b3870032399a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "answered": false,
+   "degree": 1
   },
   {
    "id": "ep_2022-10-06_takeaways-with-patrick-bangert-vp-of-ai_681506",
@@ -6617,7 +6440,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3a5a4aec-c95b-4cd0-b801-b387003259b4/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 8
   },
   {
    "id": "ep_2022-09-15_the-future-of-data-catalogs-w-ole-olesen_7f4add",
@@ -6692,17 +6515,17 @@
   {
    "id": "ans_2022-09-08_data-engineering-where-are-we-and-where_ce3ad4",
    "type": "answer",
-   "name": "obviously go get your book but what else Matt do you want to give the advice part yeah I'l",
+   "name": "next and third what resources do you follow people blogs newsletters books obviously go ge",
    "date": "2022-09-08",
    "episode": "Data Engineering: where are we and where are we going? w/ Joe Reis and Matt Housley of Ternary Data",
    "guests": [
     "Joe Reis",
     "Matt Housley"
    ],
-   "text": "obviously go get your book but what else Matt do you want to give the advice part yeah I'll actually give some I'll just give advice first buyer data engineers and goes back to an internal conversation that we had a Turner data this morning we were talking about lifelong learning and how you really have to be a self learner and a lifelong learner to succeed in data engineering and so going back to the conversation that we were just having about people in process I feel like if you want to be a successful data engineer you start buggling in the people and process stuff which hopefully you can learn from our book now this is what I'll tell you our book will not teach you data engineering right that's truly bizarre for book it's about the fundamentals rather it's meant to give you foundation so you can start that lifelong learning journey and get into the profession so learn about people in process learn the big picture and then embark on the journey of actually learning the technology learning the practices to be successful if that's what you'd like to do as far as who you invite",
+   "text": "next and third what resources do you follow people blogs newsletters books obviously go get your book but what else Matt do you want to give the advice part yeah I'll actually give some I'll just give advice first buyer data engineers and goes back to an internal conversation that we had a Turner data this morning we were talking about lifelong learning and how you really have to be a self learner and a lifelong learner to succeed in data engineering and so going back to the conversation that we were just having about people in process I feel like if you want to be a successful data engineer you start buggling in the people and process stuff which hopefully you can learn from our book now this is what I'll tell you our book will not teach you data engineering right that's truly bizarre for book it's about the fundamentals rather it's meant to give you foundation so you can start that lifelong learning journey and get into the profession so learn about people in process learn the big picture and then embark on the journey of actually learning the technology learning the practices to be successful if",
    "summary": "",
-   "quote": "obviously go get your book but what else Matt do you want to give the advice part yeah I'll actually give some I'll just give advice first buyer data engineers and goes back to an internal conversation that we had a Turner data this morning we were talking about lifelong learning and how you really have to be a self",
-   "start": 3988.4,
+   "quote": "next and third what resources do you follow people blogs newsletters books obviously go get your book but what else Matt do you want to give the advice part yeah I'll actually give some I'll just give advice first buyer data engineers and goes back to an internal conversation that we had a Turner data this morning we were talking",
+   "start": 3983.8,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
@@ -6778,16 +6601,16 @@
   {
    "id": "ans_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
    "type": "answer",
-   "name": "conference whatever and third who should we write next so advice I have some advice maybe ",
+   "name": "I have some advice maybe in perfect and for the data and in life or jobs in general I'd sa",
    "date": "2022-09-01",
    "episode": "Your thoughts become action; going from Thought Leadership to Practice w/ Roel and Valentijn of Vopak",
    "guests": [
     "Valentijn of Vopak"
    ],
-   "text": "conference whatever and third who should we write next so advice I have some advice maybe in perfect and for the data and in life or jobs in general I'd say and especially if you hear all these buzzwords and whatever you try to do I'd say that's perfect or being perfect that's the enemy of just good so if you can have a good idea obvious you believe something is good go for it don't wait a little to be perfect you can shape it out later I think it's sometimes you're just blocking yourself if you're looking for something perfect sage advice and useful in the data world too yeah yeah it applies to many areas you see a good bar don't waste finding the perfect bar go for that fun settle down that's a good one how much time are we wasting looking for a bar then they all closed they all closed get that on the good one what what helps me a lot and my job is showing a bit of empathy and really trying to understand that other person that you that you're talking to right if you really try to understand his concerns",
+   "text": "I have some advice maybe in perfect and for the data and in life or jobs in general I'd say and especially if you hear all these buzzwords and whatever you try to do I'd say that's perfect or being perfect that's the enemy of just good so if you can have a good idea obvious you believe something is good go for it don't wait a little to be perfect you can shape it out later I think it's sometimes you're just blocking yourself if you're looking for something perfect sage advice and useful in the data world too yeah yeah it applies to many areas you see a good bar don't waste finding the perfect bar go for that fun settle down that's a good one how much time are we wasting looking for a bar then they all closed they all closed get that on the good one what what helps me a lot and my job is showing a bit of empathy and really trying to understand that other person that you that you're talking to right if you really try to understand his concerns even if maybe you think you might completely disagree with this",
    "summary": "",
-   "quote": "conference whatever and third who should we write next so advice I have some advice maybe in perfect and for the data and in life or jobs in general I'd say and especially if you hear all these buzzwords and whatever you try to do I'd say that's perfect or being perfect that's the enemy of just good so if",
-   "start": 3300.2,
+   "quote": "I have some advice maybe in perfect and for the data and in life or jobs in general I'd say and especially if you hear all these buzzwords and whatever you try to do I'd say that's perfect or being perfect that's the enemy of just good so if you can have a good idea obvious you believe something is",
+   "start": 3305.8,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
@@ -7396,7 +7219,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/dbe1bf7a-6df0-42f6-91c2-b38700335794/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 11
+   "degree": 10
   },
   {
    "id": "ent_aaron_keys",
@@ -7460,7 +7283,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/367692b0-09d3-4292-b779-b38700337478/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
+   "degree": 10
   },
   {
    "id": "ep_2022-04-14_why-are-we-so-bad-at-this-modern-data-st_a467f8",
@@ -7499,14 +7322,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/7357b3a5-11c4-48b9-a407-b387003385a9/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
-  },
-  {
-   "id": "ent_chet_and_sharma",
-   "type": "entity",
-   "name": "Chet and Sharma",
-   "kind": "other",
-   "degree": 1
+   "degree": 8
   },
   {
    "id": "ep_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
@@ -7659,43 +7475,15 @@
    "guests": [
     "Shane Gibson"
    ],
-   "text": "So my advice, if you're not having fun, you're doing it wrong. So either change what you're doing or how you're doing it. And that can apply in your personal life as well as in the data world. So that's the advice I suggest. Who should have on? So when I started my journey, there are a couple of books I read. One of them was written by Ralph Hughes and one by King Connea, which were the first books I could find that mashed up data in each old. But that was a long time ago. And I'd be really interested to see if they're still playing in the space and whether they're iterated on their work. But the one, the other person that I really would like to see on the show is Lawrence Core. So Lawrence, again, wrote a book that I used from day one called Theme. It's all about understanding how to understand a core business process using the Who Does What and mapping it from a data point of view. And it's a pattern that I've used for the last eight years incessantly. I encourage every team I work with to use it and",
+   "text": "So my advice, if you're not having fun, you're doing it wrong. So either change what you're doing or how you're doing it. And that can apply in your personal life as well as in the data world. So that's the advice I suggest.",
    "summary": "",
-   "quote": "So my advice, if you're not having fun, you're doing it wrong. So either change what you're doing or how you're doing it. And that can apply in your personal life as well as in the data world. So that's the advice I suggest. Who should have on? So when I started my journey, there are a couple of books",
+   "quote": "So my advice, if you're not having fun, you're doing it wrong. So either change what you're doing or how you're doing it. And that can apply in your personal life as well as in the data world. So that's the advice I suggest.",
    "start": 3303.4,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/445fb509-8d05-4914-89d1-b3870033cc96/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 12
-  },
-  {
-   "id": "ent_ralph_hughes",
-   "type": "entity",
-   "name": "Ralph Hughes",
-   "kind": "other",
-   "degree": 1
-  },
-  {
-   "id": "ent_king_connea",
-   "type": "entity",
-   "name": "King Connea",
-   "kind": "other",
-   "degree": 1
-  },
-  {
-   "id": "ent_lawrence_core",
-   "type": "entity",
-   "name": "Lawrence Core",
-   "kind": "other",
-   "degree": 1
-  },
-  {
-   "id": "ent_does_what",
-   "type": "entity",
-   "name": "Does What",
-   "kind": "other",
-   "degree": 1
+   "degree": 8
   },
   {
    "id": "ep_2022-03-10_your-privacy-is-my-currency-with-patrici_afe9e5",
@@ -7795,7 +7583,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/77ac719c-a195-42e0-9acf-b3870033e087/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 12
+   "degree": 11
   },
   {
    "id": "ent_ceo_of_cockroach",
@@ -8137,7 +7925,7 @@
    "roles": [
     "guest"
    ],
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "ep_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
@@ -8147,33 +7935,7 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Modern-Data-Work-at-Drizly-w-Emily-Hawkins-e3650is",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 2
-  },
-  {
-   "id": "ans_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
-   "type": "answer",
-   "name": "Oh, my advice. I would say, I don't know, don't be scared to try something new. A year ago",
-   "date": "2022-01-13",
-   "episode": "Modern Data Work at Drizly w/ Emily Hawkins",
-   "guests": [
-    "Emily Hawkins"
-   ],
-   "text": "Oh, my advice. I would say, I don't know, don't be scared to try something new. A year ago, I never thought I would know how to build a DAGS or pipeline. And now I do, just because I did it. Like I tried it and I failed a couple times. And now I kind of know what I'm doing. So, yeah, don't be afraid to just like suck at something.",
-   "summary": "",
-   "quote": "Oh, my advice. I would say, I don't know, don't be scared to try something new. A year ago, I never thought I would know how to build a DAGS or pipeline. And now I do, just because I did it. Like I tried it and I failed a couple times. And now I kind of know what I'm doing.",
-   "start": 3460.0,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2f2e4f77-90fc-498f-ab92-b38700344cc9/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
-  },
-  {
-   "id": "ent_dags",
-   "type": "entity",
-   "name": "DAGS",
-   "kind": "other",
+   "answered": false,
    "degree": 1
   },
   {
@@ -8252,7 +8014,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/18926f46-c447-48e4-9564-b38700346be0/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "ep_2021-12-16_please-be-quiet-the-machines-are-talking_83b762",
@@ -8647,21 +8409,21 @@
   {
    "id": "ans_2021-10-07_a-data-analyst-scientist-and-engineer-wa_6386b2",
    "type": "answer",
-   "name": "All right, well, first, you don't want my advice on life. And if I gave that to you, it pr",
+   "name": "Broad about data, about life, whatever.",
    "date": "2021-10-07",
    "episode": "A data analyst, scientist, and engineer walk into a bar...w/ Danielle Oberdier",
    "guests": [
     "Danielle Oberdier"
    ],
-   "text": "All right, well, first, you don't want my advice on life. And if I gave that to you, it probably would make sense anyway. But I will say about networking, I'm glad that we got to talk about that, because that wasn't in our plan. But really, like, I just needed all of you to take home that be authentic, be genuine, share pictures of, you know, like your cat, I have a cat. I like, be a person first when you network, and there's never going to be a problem for you, because people will want to know you, you get their contact naturally, you tell jokes, you have inside jokes, and then later they sponsor your podcast. So I really think, and you can't be, you can't be, it's not going to work if you are authentic, like, vaguely authentic, it's not a thing, trying to look authentic when really you just want something out of somebody. You have to genuinely, really want to talk to this person. And that's why I said, you know, you're not getting along with this person who could help you to the next stage in your career. Well, there's somebody else with",
+   "text": "Broad about data, about life, whatever.",
    "summary": "",
-   "quote": "All right, well, first, you don't want my advice on life. And if I gave that to you, it probably would make sense anyway. But I will say about networking, I'm glad that we got to talk about that, because that wasn't in our plan. But really, like, I just needed all of you to take home that be authentic,",
-   "start": 3396.0,
+   "quote": "Broad about data, about life, whatever.",
+   "start": 3391.2,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/66d39784-1b92-4263-b68b-b38700348ef1/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 10
   },
   {
    "id": "ep_2021-09-30_do-we-have-a-data-infrastructure-crisis_02771f",
@@ -8757,10 +8519,9 @@
    "type": "person",
    "name": "Lars Albertsson",
    "roles": [
-    "guest",
-    "mentioned"
+    "guest"
    ],
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "ans_2021-09-16_how-to-think-about-data-value-w-lars-alb_b73064",
@@ -9045,14 +8806,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3f311723-cc1c-4d00-81ed-b38700350d3c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
-  },
-  {
-   "id": "ent_tara_and_hannah_and_jer",
-   "type": "entity",
-   "name": "Tara and Hannah and Jer",
-   "kind": "other",
-   "degree": 1
+   "degree": 8
   },
   {
    "id": "ep_2021-07-06_special-edition-panel-on-data-architectu_dcd439",
@@ -9062,32 +8816,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Special-Edition-Panel-on-Data-Architecture-at-the-Knowledge-Graph-Conference-e3650gj",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2021-07-06_special-edition-panel-on-data-architectu_dcd439",
-   "type": "answer",
-   "name": "There's data products which are native to the raw data, more intelligent products that are",
-   "date": "2021-07-06",
-   "episode": "Special Edition: Panel on Data Architecture at the Knowledge Graph Conference",
-   "guests": [],
-   "text": "There's data products which are native to the raw data, more intelligent products that are coming from the derived. They should be complete, clean, documented. I can should be able to report issues. And don't forget, your data needs to have a heartbeat. So how was that? A good summary? Wow. Hi, awesome. So we're gonna close up with something that Shamok actually started at our podcast, which is a lightning round, the Honest No BS lightning round. So they got four questions and you can only, and it's only yes and no, only yes and no. And then we'll see what time we can probably, we could, that could probably start another discussion. So question number one, do we need to unify all the data with an organization? Yes. Yes. Okay, we unify it with, do we need to unify? He's distracting me. He's cheering us from the sideline with such good comments. So he's just distracting us from the sideline. Do we need to unify all the data within an organization? We're waiting for your answers, Shamok. The question is loaded. I can improve on so many different things. Yes and no, yes and no. But Teresa and",
-   "summary": "",
-   "quote": "There's data products which are native to the raw data, more intelligent products that are coming from the derived. They should be complete, clean, documented. I can should be able to report issues. And don't forget, your data needs to have a heartbeat. So how was that? A good summary? Wow. Hi, awesome. So we're gonna close up with something",
-   "start": 3301.0,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/88d471c3-d9a5-41ce-992b-b38700352615/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
-  },
-  {
-   "id": "ent_honest_no_bs",
-   "type": "entity",
-   "name": "Honest No BS",
-   "kind": "other",
-   "degree": 1
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2021-06-03_season-one-finale-episode-50_889b31",
@@ -9256,8 +8986,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Whats-the-Secret-Recipe-for-DataOps-e3650iu",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 2
+   "answered": false,
+   "degree": 1
   },
   {
    "id": "person_chris_bergh",
@@ -9266,26 +8996,7 @@
    "roles": [
     "guest"
    ],
-   "degree": 2
-  },
-  {
-   "id": "ans_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
-   "type": "answer",
-   "name": "So that, that's sort of a old guy advice. On who to do next, there's a guy in Sweden, Lars",
-   "date": "2021-04-29",
-   "episode": "What’s the Secret Recipe for DataOps?",
-   "guests": [
-    "Chris Bergh"
-   ],
-   "text": "So that, that's sort of a old guy advice. On who to do next, there's a guy in Sweden, Lars Elbertson, who talks about data ops and data architecture. I just think it's really good. And he, he's on Twitter. He has a really good feed and he's kind of an influencer on himself. And I think you should talk to him because he's just like, he's, he's wicked smart. Nice. Awesome. Love it. Awesome.",
-   "summary": "",
-   "quote": "So that, that's sort of a old guy advice. On who to do next, there's a guy in Sweden, Lars Elbertson, who talks about data ops and data architecture. I just think it's really good. And he, he's on Twitter. He has a really good feed and he's kind of an influencer on himself. And I think you should talk",
-   "start": 2405.7,
-   "method": "cue",
-   "confidence": 1.0,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f8746096-3e2e-4941-a5a4-b3870035a411/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
+   "degree": 1
   },
   {
    "id": "ep_2021-04-22_why-it-s-time-to-mesh-with-your-data-arc_5bdf77",
@@ -9495,7 +9206,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/faeb1f07-d630-4cc3-9bdb-b3870036255e/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 6
   },
   {
    "id": "ep_2021-03-04_do-you-have-data-trust-issues_0e8caa",
@@ -9598,28 +9309,21 @@
   {
    "id": "ans_2021-02-11_do-you-test-your-data_2a680c",
    "type": "answer",
-   "name": "Okay, so I thought a lot about like advice. And the thing that's like top of my mind right",
+   "name": "It could be about data, could be about life, whatever.",
    "date": "2021-02-11",
    "episode": "Do you test your data?",
    "guests": [
     "Sam Bail"
    ],
-   "text": "Okay, so I thought a lot about like advice. And the thing that's like top of my mind right now is if you're biking in wet weather, make sure you know what kind of breaks and what kind of rims you have, because steel rims and bad break paths do not break at all in wet conditions. That's that's my advice. Be aware of that if you're biking this winter. And I'm saying that because at least in New York City, the number of bikers has increased massively during 2020. And I'm sure there's a lot of new bikers who are not aware of that. So steel rims, danger zone. That's my advice.",
+   "text": "It could be about data, could be about life, whatever.",
    "summary": "",
-   "quote": "Okay, so I thought a lot about like advice. And the thing that's like top of my mind right now is if you're biking in wet weather, make sure you know what kind of breaks and what kind of rims you have, because steel rims and bad break paths do not break at all in wet conditions. That's that's my",
-   "start": 2121.2,
+   "quote": "It could be about data, could be about life, whatever.",
+   "start": 2111.0,
    "method": "cue",
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/3787a42b-d8b8-4ac1-b8d7-b387003635e8/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
-  },
-  {
-   "id": "ent_new_york_city",
-   "type": "entity",
-   "name": "New York City",
-   "kind": "other",
-   "degree": 1
+   "degree": 10
   },
   {
    "id": "ep_2021-02-04_what-can-we-learn-from-messy-insurance-d_5fb151",
@@ -9671,25 +9375,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Does-your-data-governance-strategy-need-a-therapy-session-e3650go",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2021-01-28_does-your-data-governance-strategy-need_7ea19c",
-   "type": "answer",
-   "name": "Maybe that'd be another way to go kind of crowdsource and catalog the needs that people wi",
-   "date": "2021-01-28",
-   "episode": "Does your data governance strategy need a therapy session?",
-   "guests": [],
-   "text": "Maybe that'd be another way to go kind of crowdsource and catalog the needs that people will have. Yeah, I love that. I think most of the time, the folks that I've worked with, not just where I'm at now, but in previous roles, they don't have to know what the name of the place is. They just say, I use the spreadsheet that everybody else uses. This is the title of that spreadsheet. They don't really know. They don't realize that the spreadsheet's not the data. That's just where people put the data for you to work on. Yeah, totally. I'm getting worse. So he's just thinking about that stuff, getting your cataloging based on the spreadsheet names and version one point one, and then it's by the email. It's like, oh, remember, it's the email on this date and then they have so many threads in the email, right? Like, oh my God. Oh, and yeah, I haven't read there's some kind of auto scripting and someone accidentally puts an extra return and deletes everything. That was something I was working for a nonprofit very early in my career. And we had scripting that was automatically grabbing things",
-   "summary": "",
-   "quote": "Maybe that'd be another way to go kind of crowdsource and catalog the needs that people will have. Yeah, I love that. I think most of the time, the folks that I've worked with, not just where I'm at now, but in previous roles, they don't have to know what the name of the place is. They just say, I",
-   "start": 1518.7,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/f70fd6a9-b595-47dc-b46d-b38700363e4b/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2021-01-21_is-your-data-fabric-a-mesh_c176f9",
@@ -9752,25 +9439,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Goodbye-2020--hello-2021-e3650gu",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2020-12-17_goodbye-2020-hello-2021_e3b13a",
-   "type": "answer",
-   "name": "We had this one conversation about the data landscape is crazy about you I mean you see th",
-   "date": "2020-12-17",
-   "episode": "Goodbye 2020, hello 2021",
-   "guests": [],
-   "text": "We had this one conversation about the data landscape is crazy about you I mean you see that data landscape chart that comes out every year. There's like I don't know hundreds of tools in there Like how do you grasp how do you start? Yeah, it's looking more and more like the the marketing landscape Because I've always looked at that one and been like oh my god There's like 8,000 tools on there the data ones catching up There's just so much stuff out there like you have no idea how to go start So I mean things to go start is well Let me go find kind of the logos that I'm aware and see where they show up and look at other new companies around those old those kind of Traditional logos that I know and see what's out there. We're seeing a lot of Modernization people going tools going to the cloud and so forth And then you're kind of your the the traditional aspects tools you expect like we talked about data quality data lineage Master data management. I love your definition. It's fancy data integration Yeah Yeah, but I like I like it",
-   "summary": "",
-   "quote": "We had this one conversation about the data landscape is crazy about you I mean you see that data landscape chart that comes out every year. There's like I don't know hundreds of tools in there Like how do you grasp how do you start? Yeah, it's looking more and more like the the marketing landscape Because I've always looked",
-   "start": 982.2,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/8798e301-7032-410a-a29e-b387003677a4/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2020-12-10_getting-your-data-bang-for-your-catalog_155440",
@@ -9844,8 +9514,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Documentation-matters-e3650np",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 2
+   "answered": false,
+   "degree": 1
   },
   {
    "id": "person_will_briggs",
@@ -9854,32 +9524,6 @@
    "roles": [
     "guest"
    ],
-   "degree": 2
-  },
-  {
-   "id": "ans_2020-11-05_documentation-matters_797931",
-   "type": "answer",
-   "name": "Like, that's where you have, you start talking about, you know, data about world or some o",
-   "date": "2020-11-05",
-   "episode": "Documentation matters",
-   "guests": [
-    "Will Briggs"
-   ],
-   "text": "Like, that's where you have, you start talking about, you know, data about world or some other vendor, and you have that data and it's stored, you know, in the same, it's connected to the data. Even if it's not physically connected to the data, at least whatever your cataloging, it's in the logical representation, it's all right there. So in an ideal world, we should be really pushing the documentation down to the actual description fields of columns and databases, right? Which, how many times people actually do that? I mean, I think I can literally count on one hand a amount of times I have seen, extracted the SQL DDL of a database, and you'll actually get a comment, a comment that people that whoever's written there, one. And second, if there is, you completely doubt it, because you don't know when, I mean, you don't know who did it, when did it, if it's actually two or not. So part of me is like, yes, it makes sense to try to push the documentation closer to the data, but even like the data systems themselves are not prepared for that. Yes, I can go add descriptions in",
-   "summary": "",
-   "quote": "Like, that's where you have, you start talking about, you know, data about world or some other vendor, and you have that data and it's stored, you know, in the same, it's connected to the data. Even if it's not physically connected to the data, at least whatever your cataloging, it's in the logical representation, it's all right there. So",
-   "start": 1598.3,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a051756c-e846-4596-8bd4-b38700369b77/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
-  },
-  {
-   "id": "ent_sql_ddl",
-   "type": "entity",
-   "name": "SQL DDL",
-   "kind": "other",
    "degree": 1
   },
   {
@@ -9921,25 +9565,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Time-for-a-data-culture-makeover-e3650cc",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2020-10-19_time-for-a-data-culture-makeover_0a909e",
-   "type": "answer",
-   "name": "What happens when you want to go acquire open data on the web? The US census data, for exa",
-   "date": "2020-10-19",
-   "episode": "Time for a data culture makeover",
-   "guests": [],
-   "text": "What happens when you want to go acquire open data on the web? The US census data, for example, or a third party data. How do you do that? How do you buy data? How do you find it? How do you manage data? What are all the other obstacles that are encountered there? So we're going to have a great guest next week. And it's going to be a really fun, interesting conversation. So keep tuned in for next week of cataloging cocktails. Yeah, tune in for that. It'll be Jeremy boxed from Accential. So it'll be a really, really interesting conversation. So he's actually been on the buyer side and on the seller side on both sides of data. And he, I believe correctly, he was at Bloomberg, one of the main folks on acquiring data. So it's going to be really fun, that fantastic conversation. Awesome. All right.",
-   "summary": "",
-   "quote": "What happens when you want to go acquire open data on the web? The US census data, for example, or a third party data. How do you do that? How do you buy data? How do you find it? How do you manage data? What are all the other obstacles that are encountered there? So we're going to have a",
-   "start": 1965.9,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4550d018-30c9-414d-adb9-b3870036a66c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2020-10-08_95-say-exit-polls-don-t-work-15-say-they_ffd5f9",
@@ -9971,25 +9598,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/What-we-learned-at-the-first-ever-data-world-summit-e3650em",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2020-09-24_what-we-learned-at-the-first-ever-data-w_191d90",
-   "type": "answer",
-   "name": "And sometimes we'll have experts on, sometimes we'll do debates last week, me and Juan. We",
-   "date": "2020-09-24",
-   "episode": "What we learned at the first ever data.world summit",
-   "guests": [],
-   "text": "And sometimes we'll have experts on, sometimes we'll do debates last week, me and Juan. We fought it out where I was talking about, you got to buy a data management platform, he was to build it, and he was still doing buy. So we talk about all sorts of topics. You put your questions in along the way, just like you're doing now. And then we spend actually the last 30 minutes all just hanging out. We turn our cameras on, we stop the recording, and we all hang out, and it's like hanging out after a conference talk. And you get to chat, you get to hang out in the hallway. It's a great networking opportunity, and a great way to sort of brainstorm and work together. We've got some great talks coming up as well. Yeah, go ahead Juan. Yeah, so next week we're gonna be, as I mentioned, we're gonna be talking about data, sorry, data cultures. And then after that, we're actually gonna have a great episode with our friends from the AP, right? Next, the following week, we're gonna kick off an entire conversation. We're gonna have Dwayne from the director of corporate news,",
-   "summary": "",
-   "quote": "And sometimes we'll have experts on, sometimes we'll do debates last week, me and Juan. We fought it out where I was talking about, you got to buy a data management platform, he was to build it, and he was still doing buy. So we talk about all sorts of topics. You put your questions in along the way, just",
-   "start": 1857.8,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/a9ee20c0-38af-4213-bf0b-b3870036bf6c/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2020-09-18_hear-from-dj-patil-and-other-leading-thi_0c4fe3",
@@ -10074,8 +9684,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/A-data-management-chicken-and-egg-e3650bd",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 2
+   "answered": false,
+   "degree": 1
   },
   {
    "id": "person_jon_loyens",
@@ -10084,26 +9694,7 @@
    "roles": [
     "guest"
    ],
-   "degree": 2
-  },
-  {
-   "id": "ans_2020-08-12_a-data-management-chicken-and-egg_efe03c",
-   "type": "answer",
-   "name": "When we were talking last time, we want to have your data stewards. We're actually documen",
-   "date": "2020-08-12",
-   "episode": "A data management chicken and egg",
-   "guests": [
-    "Jon Loyens"
-   ],
-   "text": "When we were talking last time, we want to have your data stewards. We're actually documenting people. So I mean, you're not what scientists are figuring out what that calculations are. I think that's also very crucial part of that whole team, whole team that's involved in that whole process. Yeah, I think the documentation aspect here is very interesting as part of the process. Like at, at data. Outworld when we created our data warehouse, right? We, uh, you know, hook it up to data. Outworld. And then now we're creating a data set. We're kind of populating that data dictionary, um, you know, creating a glossary. And now we have a glossary internally at data. Outworld that everyone's using obviously this is kind of looking at it from our perspective, but it feels like this model extends to a lot of our customers as well. You know, and we do that though in real time, right? Like, I mean, Tim, you, one, you guys know, as well as anybody, you know, we have other data world people here, right? Like, you know, we get an asset live and then we immediately run metrics and analytics against it, right?",
-   "summary": "",
-   "quote": "When we were talking last time, we want to have your data stewards. We're actually documenting people. So I mean, you're not what scientists are figuring out what that calculations are. I think that's also very crucial part of that whole team, whole team that's involved in that whole process. Yeah, I think the documentation aspect here is very interesting",
-   "start": 1232.7,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d5496798-6f5c-4247-a0e6-b3870036d969/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 1
   },
   {
    "id": "ep_2020-08-06_is-it-time-to-hire-a-data-product-manage_d08cc7",
@@ -10146,32 +9737,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/What-the-pandemic-can-teach-us-about-data-governance-e3650d9",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2020-07-15_what-the-pandemic-can-teach-us-about-dat_7bf134",
-   "type": "answer",
-   "name": "It's not sexy at all. And we're talking to whatever colleagues do it, right? It's like, no",
-   "date": "2020-07-15",
-   "episode": "What the pandemic can teach us about data governance",
-   "guests": [],
-   "text": "It's not sexy at all. And we're talking to whatever colleagues do it, right? It's like, nobody celebrates all the plan didn't crash, right? Nobody does this. Like everybody's like, Oh, it's all we want to go sell very positive things. They'll be very excited about kind of the annoying things, right? Or like the like the stuff that we have to deal with day to day. So, but when you think about it, like from people who are analyzing data and we're taking COVID as an example, is they're not thinking with governance, kind of with this annoying point of view, right? They're thinking about we need governance to make sure that I know where my data come from because I want to go trust it, right? Well, you mentioned it, but you want to have this trustworthy kind of data supply chain. Like for you, it's like I want to think about governance as more of not being actually not even the annoying thing is like the positive. Like I want to make sure that I have I govern my data such that all these great things happen while traditionally in the enterprise is I govern my data",
-   "summary": "",
-   "quote": "It's not sexy at all. And we're talking to whatever colleagues do it, right? It's like, nobody celebrates all the plan didn't crash, right? Nobody does this. Like everybody's like, Oh, it's all we want to go sell very positive things. They'll be very excited about kind of the annoying things, right? Or like the like the stuff that we",
-   "start": 767.8,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/453e207c-4ac8-4150-9f20-b3870036ed0d/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
-  },
-  {
-   "id": "ent_covid",
-   "type": "entity",
-   "name": "COVID",
-   "kind": "other",
-   "degree": 1
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2020-07-08_how-does-data-policy-impact-you_2985f0",
@@ -10192,8 +9759,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Whats-the-story-with-data-lineage-e3650oc",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 2
+   "answered": false,
+   "degree": 1
   },
   {
    "id": "person_ernie_ostic",
@@ -10202,32 +9769,6 @@
    "roles": [
     "guest"
    ],
-   "degree": 2
-  },
-  {
-   "id": "ans_2020-07-01_what-s-the-story-with-data-lineage_ca335b",
-   "type": "answer",
-   "name": "Has a couple of intersecting use cases. It's got a, you know, very practical IT use case f",
-   "date": "2020-07-01",
-   "episode": "What’s the story with data lineage?",
-   "guests": [
-    "Ernie Ostic"
-   ],
-   "text": "Has a couple of intersecting use cases. It's got a, you know, very practical IT use case for the persona of those people supporting their applications. The DBAs, the developers, the programmers, the people that have to change a particular stored procedure. What are they going to break downstream if they make this change? What the impact is going to be if accidentally, you know, they remove a column that happens to be critical for a report or data mart or some other calculation. And it blows the whole thing up. You know, by the same token, right? So we have a more IT specialist that's looking at that downstream concern. We're seeing folks that are getting into the data privacy world who they want to see the downstream because they want to know where the data is being peppered to. You know, people have been creating extract files all over the place forever. Well, if I can now trace that lineage, I can see more places where my exposure might be. And that is going to be the risk compliance. Yeah, I like both of those use cases as an interesting contrast to people that are maybe a little",
-   "summary": "",
-   "quote": "Has a couple of intersecting use cases. It's got a, you know, very practical IT use case for the persona of those people supporting their applications. The DBAs, the developers, the programmers, the people that have to change a particular stored procedure. What are they going to break downstream if they make this change? What the impact is going to",
-   "start": 728.6,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/05bbc052-ecee-42ee-a30a-b3870036ef9f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 9
-  },
-  {
-   "id": "ent_dbas",
-   "type": "entity",
-   "name": "DBAs",
-   "kind": "other",
    "degree": 1
   },
   {
@@ -10282,25 +9823,8 @@
    "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Dont-boil-the-ocean--Boil-a-fishbowl-e3650ef",
    "is_full": true,
    "has_transcript": true,
-   "answered": true,
-   "degree": 1
-  },
-  {
-   "id": "ans_2020-05-20_don-t-boil-the-ocean-boil-a-fishbowl_f3bcec",
-   "type": "answer",
-   "name": "Or, you know, the data itself. So here I see this retail order table, right? And so I migh",
-   "date": "2020-05-20",
-   "episode": "Don’t boil the ocean. Boil a fishbowl.",
-   "guests": [],
-   "text": "Or, you know, the data itself. So here I see this retail order table, right? And so I might click on that and now I'm not getting metadata sort of on the term, on the business concept. But here now we're looking at metadata for an actual data asset. This is a table in Snowflake, our data warehouse where we're looking at, you know, okay, this is, this is order data. It's been approved. I can see sort of the different columns that are part of this. So this is all part of that sort of that crawl step that metadata access step. Even things like lineage, right? What's the high level lineage of that given thing? So this is- Yeah, this is all that lineage is about metadata step. We should talk, we should talk one day about lineage. This is another interesting thing. Like everybody's talking about lineage. And people, everybody wants lineage and everybody wants to see cool graph about it. But it's interesting to see what people actually want, what are the problems they want to go solve for lineage. But so I'm just, this reminder, making note, we should talk spend one day talking about",
-   "summary": "",
-   "quote": "Or, you know, the data itself. So here I see this retail order table, right? And so I might click on that and now I'm not getting metadata sort of on the term, on the business concept. But here now we're looking at metadata for an actual data asset. This is a table in Snowflake, our data warehouse where we're",
-   "start": 1328.5,
-   "method": "fuzzy",
-   "confidence": 0.67,
-   "transcript_source": "whisper",
-   "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/2542dbd9-fd1b-405e-8aa7-b387003722c6/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "answered": false,
+   "degree": 0
   },
   {
    "id": "ep_2020-05-13_the-future-of-data-management_c56d16",
@@ -10312,6 +9836,18 @@
    "has_transcript": true,
    "answered": false,
    "degree": 0
+  },
+  {
+   "id": "concept_close",
+   "type": "concept",
+   "name": "close",
+   "degree": 2
+  },
+  {
+   "id": "concept_arts",
+   "type": "concept",
+   "name": "arts",
+   "degree": 2
   },
   {
    "id": "concept_moving",
@@ -10329,6 +9865,12 @@
    "id": "concept_journey",
    "type": "concept",
    "name": "journey",
+   "degree": 2
+  },
+  {
+   "id": "concept_steve",
+   "type": "concept",
+   "name": "steve",
    "degree": 2
   },
   {
@@ -10359,18 +9901,12 @@
    "id": "concept_start",
    "type": "concept",
    "name": "start",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "concept_kids",
    "type": "concept",
    "name": "kids",
-   "degree": 2
-  },
-  {
-   "id": "concept_use_cases",
-   "type": "concept",
-   "name": "use cases",
    "degree": 2
   },
   {
@@ -10383,7 +9919,7 @@
    "id": "concept_governance",
    "type": "concept",
    "name": "governance",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "concept_listening",
@@ -10401,12 +9937,6 @@
    "id": "concept_stuck",
    "type": "concept",
    "name": "stuck",
-   "degree": 2
-  },
-  {
-   "id": "concept_open_mind",
-   "type": "concept",
-   "name": "open mind",
    "degree": 2
   },
   {
@@ -10428,30 +9958,6 @@
    "degree": 2
   },
   {
-   "id": "concept_better",
-   "type": "concept",
-   "name": "better",
-   "degree": 2
-  },
-  {
-   "id": "concept_organization",
-   "type": "concept",
-   "name": "organization",
-   "degree": 2
-  },
-  {
-   "id": "concept_money",
-   "type": "concept",
-   "name": "money",
-   "degree": 2
-  },
-  {
-   "id": "concept_together",
-   "type": "concept",
-   "name": "together",
-   "degree": 3
-  },
-  {
    "id": "concept_check",
    "type": "concept",
    "name": "check",
@@ -10464,16 +9970,16 @@
    "degree": 2
   },
   {
-   "id": "concept_tried",
+   "id": "concept_talked_data",
    "type": "concept",
-   "name": "tried",
+   "name": "talked data",
    "degree": 2
   },
   {
    "id": "concept_try",
    "type": "concept",
    "name": "try",
-   "degree": 6
+   "degree": 4
   },
   {
    "id": "concept_message",
@@ -10482,16 +9988,16 @@
    "degree": 2
   },
   {
-   "id": "concept_third_resources",
+   "id": "concept_home",
    "type": "concept",
-   "name": "third resources",
-   "degree": 2
+   "name": "home",
+   "degree": 3
   },
   {
    "id": "concept_afraid",
    "type": "concept",
    "name": "afraid",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "concept_technologies",
@@ -10509,7 +10015,7 @@
    "id": "concept_problem_trying",
    "type": "concept",
    "name": "problem trying",
-   "degree": 2
+   "degree": 3
   },
   {
    "id": "concept_trying_solve",
@@ -10524,28 +10030,10 @@
    "degree": 5
   },
   {
-   "id": "concept_help_better",
-   "type": "concept",
-   "name": "help better",
-   "degree": 2
-  },
-  {
-   "id": "concept_knowledge_graphs",
-   "type": "concept",
-   "name": "knowledge graphs",
-   "degree": 2
-  },
-  {
-   "id": "concept_resources_follow",
-   "type": "concept",
-   "name": "resources follow",
-   "degree": 2
-  },
-  {
    "id": "concept_problem",
    "type": "concept",
    "name": "problem",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "concept_ever",
@@ -10554,21 +10042,9 @@
    "degree": 2
   },
   {
-   "id": "concept_work",
+   "id": "concept_hardest",
    "type": "concept",
-   "name": "work",
-   "degree": 3
-  },
-  {
-   "id": "concept_done",
-   "type": "concept",
-   "name": "done",
-   "degree": 2
-  },
-  {
-   "id": "concept_officer",
-   "type": "concept",
-   "name": "officer",
+   "name": "hardest",
    "degree": 2
   },
   {
@@ -10608,52 +10084,10 @@
    "degree": 4
   },
   {
-   "id": "concept_strategy",
-   "type": "concept",
-   "name": "strategy",
-   "degree": 2
-  },
-  {
-   "id": "concept_system",
-   "type": "concept",
-   "name": "system",
-   "degree": 2
-  },
-  {
-   "id": "concept_different",
-   "type": "concept",
-   "name": "different",
-   "degree": 4
-  },
-  {
-   "id": "concept_company",
-   "type": "concept",
-   "name": "company",
-   "degree": 2
-  },
-  {
    "id": "concept_skills",
    "type": "concept",
    "name": "skills",
-   "degree": 3
-  },
-  {
-   "id": "concept_versus",
-   "type": "concept",
-   "name": "versus",
-   "degree": 2
-  },
-  {
-   "id": "concept_llm",
-   "type": "concept",
-   "name": "llm",
-   "degree": 2
-  },
-  {
-   "id": "concept_lens",
-   "type": "concept",
-   "name": "lens",
-   "degree": 2
+   "degree": 4
   },
   {
    "id": "concept_rely",
@@ -10668,15 +10102,15 @@
    "degree": 2
   },
   {
-   "id": "concept_data_modeling",
-   "type": "concept",
-   "name": "data modeling",
-   "degree": 2
-  },
-  {
    "id": "concept_modern_data",
    "type": "concept",
    "name": "modern data",
+   "degree": 2
+  },
+  {
+   "id": "concept_lately",
+   "type": "concept",
+   "name": "lately",
    "degree": 2
   },
   {
@@ -10695,7 +10129,7 @@
    "id": "concept_fun",
    "type": "concept",
    "name": "fun",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "concept_ready",
@@ -10707,7 +10141,7 @@
    "id": "concept_learn",
    "type": "concept",
    "name": "learn",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "concept_curious",
@@ -10740,39 +10174,27 @@
    "degree": 2
   },
   {
-   "id": "concept_matters",
+   "id": "concept_world",
    "type": "concept",
-   "name": "matters",
-   "degree": 2
-  },
-  {
-   "id": "concept_product",
-   "type": "concept",
-   "name": "product",
-   "degree": 2
-  },
-  {
-   "id": "concept_agree",
-   "type": "concept",
-   "name": "agree",
-   "degree": 2
-  },
-  {
-   "id": "concept_whole",
-   "type": "concept",
-   "name": "whole",
-   "degree": 3
-  },
-  {
-   "id": "concept_part",
-   "type": "concept",
-   "name": "part",
+   "name": "world",
    "degree": 4
+  },
+  {
+   "id": "concept_recording",
+   "type": "concept",
+   "name": "recording",
+   "degree": 2
   },
   {
    "id": "concept_relationships",
    "type": "concept",
    "name": "relationships",
+   "degree": 2
+  },
+  {
+   "id": "concept_data_understand",
+   "type": "concept",
+   "name": "data understand",
    "degree": 2
   },
   {
@@ -10803,6 +10225,12 @@
    "id": "concept_build",
    "type": "concept",
    "name": "build",
+   "degree": 2
+  },
+  {
+   "id": "concept_part",
+   "type": "concept",
+   "name": "part",
    "degree": 2
   },
   {
@@ -10839,7 +10267,7 @@
    "id": "concept_talk",
    "type": "concept",
    "name": "talk",
-   "degree": 2
+   "degree": 3
   },
   {
    "id": "concept_guess",
@@ -10851,7 +10279,7 @@
    "id": "concept_question",
    "type": "concept",
    "name": "question",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "concept_life",
@@ -10890,6 +10318,12 @@
    "degree": 2
   },
   {
+   "id": "concept_together",
+   "type": "concept",
+   "name": "together",
+   "degree": 3
+  },
+  {
    "id": "concept_number",
    "type": "concept",
    "name": "number",
@@ -10899,7 +10333,7 @@
    "id": "concept_metadata",
    "type": "concept",
    "name": "metadata",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "concept_stay",
@@ -10917,12 +10351,6 @@
    "id": "concept_open",
    "type": "concept",
    "name": "open",
-   "degree": 3
-  },
-  {
-   "id": "concept_table",
-   "type": "concept",
-   "name": "table",
    "degree": 2
   },
   {
@@ -10944,12 +10372,6 @@
    "degree": 2
   },
   {
-   "id": "concept_comment",
-   "type": "concept",
-   "name": "comment",
-   "degree": 2
-  },
-  {
    "id": "concept_amazing",
    "type": "concept",
    "name": "amazing",
@@ -10959,7 +10381,7 @@
    "id": "concept_awesome",
    "type": "concept",
    "name": "awesome",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "concept_usb_cable",
@@ -10980,12 +10402,6 @@
    "degree": 2
   },
   {
-   "id": "concept_outside",
-   "type": "concept",
-   "name": "outside",
-   "degree": 2
-  },
-  {
    "id": "concept_raise",
    "type": "concept",
    "name": "raise",
@@ -10995,19 +10411,19 @@
    "id": "concept_tend",
    "type": "concept",
    "name": "tend",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "concept_books",
    "type": "concept",
    "name": "books",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "concept_book",
    "type": "concept",
    "name": "book",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "concept_responsible",
@@ -11034,15 +10450,15 @@
    "degree": 2
   },
   {
-   "id": "concept_home",
-   "type": "concept",
-   "name": "home",
-   "degree": 2
-  },
-  {
    "id": "concept_empathy",
    "type": "concept",
    "name": "empathy",
+   "degree": 2
+  },
+  {
+   "id": "concept_realized",
+   "type": "concept",
+   "name": "realized",
    "degree": 2
   },
   {
@@ -11058,21 +10474,15 @@
    "degree": 2
   },
   {
-   "id": "concept_honest",
-   "type": "concept",
-   "name": "honest",
-   "degree": 3
-  },
-  {
-   "id": "concept_years",
-   "type": "concept",
-   "name": "years",
-   "degree": 4
-  },
-  {
    "id": "concept_ton",
    "type": "concept",
    "name": "ton",
+   "degree": 2
+  },
+  {
+   "id": "concept_phenomenal",
+   "type": "concept",
+   "name": "phenomenal",
    "degree": 2
   },
   {
@@ -11100,6 +10510,12 @@
    "degree": 2
   },
   {
+   "id": "concept_honest",
+   "type": "concept",
+   "name": "honest",
+   "degree": 2
+  },
+  {
    "id": "concept_idea",
    "type": "concept",
    "name": "idea",
@@ -11109,18 +10525,18 @@
    "id": "concept_read",
    "type": "concept",
    "name": "read",
-   "degree": 3
-  },
-  {
-   "id": "concept_wants",
-   "type": "concept",
-   "name": "wants",
-   "degree": 2
+   "degree": 4
   },
   {
    "id": "concept_music",
    "type": "concept",
    "name": "music",
+   "degree": 2
+  },
+  {
+   "id": "concept_reality",
+   "type": "concept",
+   "name": "reality",
    "degree": 2
   },
   {
@@ -11160,12 +10576,6 @@
    "degree": 2
   },
   {
-   "id": "concept_person",
-   "type": "concept",
-   "name": "person",
-   "degree": 2
-  },
-  {
    "id": "concept_share",
    "type": "concept",
    "name": "share",
@@ -11176,12 +10586,6 @@
    "type": "concept",
    "name": "important",
    "degree": 3
-  },
-  {
-   "id": "concept_critical",
-   "type": "concept",
-   "name": "critical",
-   "degree": 2
   },
   {
    "id": "concept_outcome",
@@ -11208,16 +10612,22 @@
    "degree": 2
   },
   {
+   "id": "concept_years",
+   "type": "concept",
+   "name": "years",
+   "degree": 3
+  },
+  {
    "id": "concept_getting",
    "type": "concept",
    "name": "getting",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "concept_ago",
    "type": "concept",
    "name": "ago",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "concept_relationship_advice",
@@ -11259,12 +10669,6 @@
    "id": "concept_advice_join",
    "type": "concept",
    "name": "advice join",
-   "degree": 2
-  },
-  {
-   "id": "concept_world",
-   "type": "concept",
-   "name": "world",
    "degree": 2
   },
   {
@@ -11346,28 +10750,16 @@
    "degree": 2
   },
   {
-   "id": "concept_change",
-   "type": "concept",
-   "name": "change",
-   "degree": 2
-  },
-  {
    "id": "concept_already",
    "type": "concept",
    "name": "already",
    "degree": 3
   },
   {
-   "id": "concept_ops",
-   "type": "concept",
-   "name": "ops",
-   "degree": 2
-  },
-  {
    "id": "concept_team",
    "type": "concept",
    "name": "team",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "concept_working_data",
@@ -11400,6 +10792,12 @@
    "degree": 2
   },
   {
+   "id": "concept_trust",
+   "type": "concept",
+   "name": "trust",
+   "degree": 2
+  },
+  {
    "id": "concept_weeks",
    "type": "concept",
    "name": "weeks",
@@ -11412,6 +10810,12 @@
    "degree": 2
   },
   {
+   "id": "concept_conference",
+   "type": "concept",
+   "name": "conference",
+   "degree": 2
+  },
+  {
    "id": "concept_tool",
    "type": "concept",
    "name": "tool",
@@ -11421,13 +10825,13 @@
    "id": "concept_step",
    "type": "concept",
    "name": "step",
-   "degree": 3
+   "degree": 2
   },
   {
    "id": "concept_keep",
    "type": "concept",
    "name": "keep",
-   "degree": 4
+   "degree": 3
   },
   {
    "id": "concept_energy",
@@ -11442,9 +10846,9 @@
    "degree": 2
   },
   {
-   "id": "concept_weather",
+   "id": "concept_young",
    "type": "concept",
-   "name": "weather",
+   "name": "young",
    "degree": 2
   },
   {
@@ -11484,22 +10888,34 @@
    "degree": 2
   },
   {
-   "id": "concept_life_whatever",
+   "id": "concept_different",
    "type": "concept",
-   "name": "life whatever",
+   "name": "different",
    "degree": 2
   },
   {
-   "id": "concept_prepared",
+   "id": "concept_life_whatever",
    "type": "concept",
-   "name": "prepared",
+   "name": "life whatever",
+   "degree": 4
+  },
+  {
+   "id": "concept_work",
+   "type": "concept",
+   "name": "work",
    "degree": 2
   },
   {
    "id": "concept_process",
    "type": "concept",
    "name": "process",
-   "degree": 3
+   "degree": 2
+  },
+  {
+   "id": "concept_minutes",
+   "type": "concept",
+   "name": "minutes",
+   "degree": 2
   },
   {
    "id": "concept_perfect",
@@ -11517,12 +10933,6 @@
    "id": "concept_closed",
    "type": "concept",
    "name": "closed",
-   "degree": 2
-  },
-  {
-   "id": "concept_whatever",
-   "type": "concept",
-   "name": "whatever",
    "degree": 2
   },
   {
@@ -11562,16 +10972,10 @@
    "degree": 2
   },
   {
-   "id": "concept_pushing",
-   "type": "concept",
-   "name": "pushing",
-   "degree": 2
-  },
-  {
    "id": "concept_week",
    "type": "concept",
    "name": "week",
-   "degree": 4
+   "degree": 2
   },
   {
    "id": "concept_show",
@@ -11595,6 +10999,24 @@
    "id": "concept_trying",
    "type": "concept",
    "name": "trying",
+   "degree": 4
+  },
+  {
+   "id": "concept_thinking",
+   "type": "concept",
+   "name": "thinking",
+   "degree": 2
+  },
+  {
+   "id": "concept_data_life",
+   "type": "concept",
+   "name": "data life",
+   "degree": 3
+  },
+  {
+   "id": "concept_problems",
+   "type": "concept",
+   "name": "problems",
    "degree": 2
   },
   {
@@ -11604,15 +11026,9 @@
    "degree": 2
   },
   {
-   "id": "concept_world_advice",
+   "id": "concept_advice_fun",
    "type": "concept",
-   "name": "world advice",
-   "degree": 2
-  },
-  {
-   "id": "concept_buy",
-   "type": "concept",
-   "name": "buy",
+   "name": "advice fun",
    "degree": 2
   },
   {
@@ -11652,21 +11068,15 @@
    "degree": 2
   },
   {
+   "id": "concept_broad",
+   "type": "concept",
+   "name": "broad",
+   "degree": 2
+  },
+  {
    "id": "concept_others",
    "type": "concept",
    "name": "others",
-   "degree": 2
-  },
-  {
-   "id": "concept_it_ll",
-   "type": "concept",
-   "name": "it'll",
-   "degree": 2
-  },
-  {
-   "id": "concept_thought_advice",
-   "type": "concept",
-   "name": "thought advice",
    "degree": 2
   },
   {
@@ -11676,27 +11086,9 @@
    "degree": 2
   },
   {
-   "id": "concept_winter",
-   "type": "concept",
-   "name": "winter",
-   "degree": 2
-  },
-  {
    "id": "concept_design",
    "type": "concept",
    "name": "design",
-   "degree": 2
-  },
-  {
-   "id": "concept_that_d",
-   "type": "concept",
-   "name": "that'd",
-   "degree": 2
-  },
-  {
-   "id": "concept_stored",
-   "type": "concept",
-   "name": "stored",
    "degree": 2
   }
  ],
@@ -11947,16 +11339,6 @@
    "type": "MENTIONS"
   },
   {
-   "source": "ans_2026-04-24_it-s-friday-juan-and-tim-rant-about-ai-a_65bd27",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2026-04-24_it-s-friday-juan-and-tim-rant-about-ai-a_65bd27",
-   "target": "ep_2026-04-24_it-s-friday-juan-and-tim-rant-about-ai-a_65bd27",
-   "type": "FROM_EPISODE"
-  },
-  {
    "source": "person_amalia_child",
    "target": "ep_2026-04-16_think-like-a-librarian-why-the-reference_481d0d",
    "type": "GUEST_ON"
@@ -12167,16 +11549,6 @@
    "type": "GAVE"
   },
   {
-   "source": "ans_2026-02-06_it-s-friday-juan-and-tim-rant-about-deci_7c5151",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2026-02-06_it-s-friday-juan-and-tim-rant-about-deci_7c5151",
-   "target": "ep_2026-02-06_it-s-friday-juan-and-tim-rant-about-deci_7c5151",
-   "type": "FROM_EPISODE"
-  },
-  {
    "source": "person_juan_gorricho",
    "target": "ep_2026-02-05_stop-chasing-ai-hype-start-counting-doll_0d54cc",
    "type": "GUEST_ON"
@@ -12247,21 +11619,6 @@
    "type": "GUEST_ON"
   },
   {
-   "source": "ans_2026-01-16_it-s-friday-juan-and-tim-rant-about-data_5532fc",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2026-01-16_it-s-friday-juan-and-tim-rant-about-data_5532fc",
-   "target": "ep_2026-01-16_it-s-friday-juan-and-tim-rant-about-data_5532fc",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "ans_2026-01-16_it-s-friday-juan-and-tim-rant-about-data_5532fc",
-   "target": "ent_erp",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_matt_housley",
    "target": "ep_2026-01-15_2026-trends-in-the-data-world-with-tony_002f13",
    "type": "GUEST_ON"
@@ -12290,21 +11647,6 @@
    "source": "person_tony_baer",
    "target": "ans_2026-01-15_2026-trends-in-the-data-world-with-tony_002f13",
    "type": "GAVE"
-  },
-  {
-   "source": "ans_2026-01-08_season-11-premiere-what-happened-in-2025_f46dc2",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2026-01-08_season-11-premiere-what-happened-in-2025_f46dc2",
-   "target": "ep_2026-01-08_season-11-premiere-what-happened-in-2025_f46dc2",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "ans_2026-01-08_season-11-premiere-what-happened-in-2025_f46dc2",
-   "target": "ent_llm",
-   "type": "MENTIONS"
   },
   {
    "source": "person_lena_hall",
@@ -12435,16 +11777,6 @@
    "source": "person_sanjeev_mohan",
    "target": "ans_2025-11-12_fall-2025-data-analytics-trends-with-san_aa7ba8",
    "type": "GAVE"
-  },
-  {
-   "source": "ans_2025-11-05_season-10-premiere-juan-and-tim-revisit_9786cb",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2025-11-05_season-10-premiere-juan-and-tim-revisit_9786cb",
-   "target": "ep_2025-11-05_season-10-premiere-juan-and-tim-revisit_9786cb",
-   "type": "FROM_EPISODE"
   },
   {
    "source": "person_rebecca_o_kill",
@@ -13217,16 +12549,6 @@
    "type": "GUEST_ON"
   },
   {
-   "source": "ans_2024-06-04_we-need-your-honest-no-bs-feedback-what_bd1531",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2024-06-04_we-need-your-honest-no-bs-feedback-what_bd1531",
-   "target": "ep_2024-06-04_we-need-your-honest-no-bs-feedback-what_bd1531",
-   "type": "FROM_EPISODE"
-  },
-  {
    "source": "person_brandon_gadoci",
    "target": "ep_2024-05-23_what-is-ai-ops-with-brandon-gadoci_b69bde",
    "type": "GUEST_ON"
@@ -13612,21 +12934,6 @@
    "type": "GUEST_ON"
   },
   {
-   "source": "ans_2024-01-31_without-information-architecture-there-i_e82764",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2024-01-31_without-information-architecture-there-i_e82764",
-   "target": "ep_2024-01-31_without-information-architecture-there-i_e82764",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "person_jessica_talisman",
-   "target": "ans_2024-01-31_without-information-architecture-there-i_e82764",
-   "type": "GAVE"
-  },
-  {
    "source": "person_santona_tuli",
    "target": "ep_2024-01-30_productivity-is-not-performance-with-san_bef991",
    "type": "GUEST_ON"
@@ -13715,16 +13022,6 @@
    "source": "ans_2024-01-11_how-will-ai-impact-2024-and-beyond_25ae3c",
    "target": "ent_altimeter_group",
    "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2023-12-15_season-6-finale-with-tim-gasper-and-juan_6849cb",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2023-12-15_season-6-finale-with-tim-gasper-and-juan_6849cb",
-   "target": "ep_2023-12-15_season-6-finale-with-tim-gasper-and-juan_6849cb",
-   "type": "FROM_EPISODE"
   },
   {
    "source": "person_andrew_jones",
@@ -14268,7 +13565,7 @@
   },
   {
    "source": "ans_2023-05-04_unpacking-responsible-ai-with-ricardo-ba_d83928",
-   "target": "ent_twitter_and_linkedin",
+   "target": "ent_linkedin",
    "type": "MENTIONS"
   },
   {
@@ -14433,18 +13730,8 @@
   },
   {
    "source": "ans_2023-03-30_show-me-the-metrics-w-abhi-sivasailam_471819",
-   "target": "ent_ai_and_llms",
+   "target": "ent_llms",
    "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2023-03-23_takeaways-from-gartner-d-a-with-juan-and_9cddc3",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2023-03-23_takeaways-from-gartner-d-a-with-juan-and_9cddc3",
-   "target": "ep_2023-03-23_takeaways-from-gartner-d-a-with-juan-and_9cddc3",
-   "type": "FROM_EPISODE"
   },
   {
    "source": "person_kristin_schooley",
@@ -14599,11 +13886,6 @@
   {
    "source": "ans_2023-02-09_everywhere-you-look-there-it-is-entity-r_a80668",
    "target": "ent_danny_hillis",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2023-02-09_everywhere-you-look-there-it-is-entity-r_a80668",
-   "target": "ent_phd",
    "type": "MENTIONS"
   },
   {
@@ -14927,24 +14209,24 @@
    "type": "GUEST_ON"
   },
   {
-   "source": "person_laura_ellis",
-   "target": "ep_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
-   "type": "GUEST_ON"
-  },
-  {
-   "source": "ans_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
+   "source": "ans_2022-10-13_takeaways-with-laura-ellis-from-rapid7_ebbdf6",
    "target": "question",
    "type": "ANSWERS"
   },
   {
-   "source": "ans_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
-   "target": "ep_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
+   "source": "ans_2022-10-13_takeaways-with-laura-ellis-from-rapid7_ebbdf6",
+   "target": "ep_2022-10-13_takeaways-with-laura-ellis-from-rapid7_ebbdf6",
    "type": "FROM_EPISODE"
   },
   {
    "source": "person_laura_ellis",
-   "target": "ans_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
+   "target": "ans_2022-10-13_takeaways-with-laura-ellis-from-rapid7_ebbdf6",
    "type": "GAVE"
+  },
+  {
+   "source": "person_laura_ellis",
+   "target": "ep_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
+   "type": "GUEST_ON"
   },
   {
    "source": "person_patrick_bangert",
@@ -15482,11 +14764,6 @@
    "type": "GAVE"
   },
   {
-   "source": "ans_2022-04-14_why-are-we-so-bad-at-this-modern-data-st_a467f8",
-   "target": "ent_chet_and_sharma",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_chad_sanderson",
    "target": "ep_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
    "type": "GUEST_ON"
@@ -15567,26 +14844,6 @@
    "type": "GAVE"
   },
   {
-   "source": "ans_2022-03-17_agile-like-a-fox-but-for-data-w-shane-gi_7e2ec4",
-   "target": "ent_ralph_hughes",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2022-03-17_agile-like-a-fox-but-for-data-w-shane-gi_7e2ec4",
-   "target": "ent_king_connea",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2022-03-17_agile-like-a-fox-but-for-data-w-shane-gi_7e2ec4",
-   "target": "ent_lawrence_core",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2022-03-17_agile-like-a-fox-but-for-data-w-shane-gi_7e2ec4",
-   "target": "ent_does_what",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_patricia_thaine",
    "target": "ep_2022-03-10_your-privacy-is-my-currency-with-patrici_afe9e5",
    "type": "GUEST_ON"
@@ -15649,11 +14906,6 @@
   {
    "source": "ans_2022-03-03_are-you-swimming-upstream-by-not-streami_fcf792",
    "target": "ent_cockroachdb",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2022-03-03_are-you-swimming-upstream-by-not-streami_fcf792",
-   "target": "ent_phd",
    "type": "MENTIONS"
   },
   {
@@ -15820,26 +15072,6 @@
    "source": "person_emily_hawkins",
    "target": "ep_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
    "type": "GUEST_ON"
-  },
-  {
-   "source": "ans_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
-   "target": "ep_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "person_emily_hawkins",
-   "target": "ans_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
-   "type": "GAVE"
-  },
-  {
-   "source": "ans_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
-   "target": "ent_dags",
-   "type": "MENTIONS"
   },
   {
    "source": "person_sarah_catanzaro",
@@ -16287,26 +15519,6 @@
    "type": "GAVE"
   },
   {
-   "source": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
-   "target": "ent_tara_and_hannah_and_jer",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2021-07-06_special-edition-panel-on-data-architectu_dcd439",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2021-07-06_special-edition-panel-on-data-architectu_dcd439",
-   "target": "ep_2021-07-06_special-edition-panel-on-data-architectu_dcd439",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "ans_2021-07-06_special-edition-panel-on-data-architectu_dcd439",
-   "target": "ent_honest_no_bs",
-   "type": "MENTIONS"
-  },
-  {
    "source": "ans_2021-05-27_the-future-of-bi-is-ai_9e2a7c",
    "target": "question",
    "type": "ANSWERS"
@@ -16380,26 +15592,6 @@
    "source": "person_chris_bergh",
    "target": "ep_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
    "type": "GUEST_ON"
-  },
-  {
-   "source": "ans_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
-   "target": "ep_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "person_chris_bergh",
-   "target": "ans_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
-   "type": "GAVE"
-  },
-  {
-   "source": "ans_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
-   "target": "person_lars_albertsson",
-   "type": "MENTIONS"
   },
   {
    "source": "ans_2021-04-22_why-it-s-time-to-mesh-with-your-data-arc_5bdf77",
@@ -16547,11 +15739,6 @@
    "type": "GAVE"
   },
   {
-   "source": "ans_2021-02-11_do-you-test-your-data_2a680c",
-   "target": "ent_new_york_city",
-   "type": "MENTIONS"
-  },
-  {
    "source": "ans_2021-02-04_what-can-we-learn-from-messy-insurance-d_5fb151",
    "target": "question",
    "type": "ANSWERS"
@@ -16572,29 +15759,9 @@
    "type": "MENTIONS"
   },
   {
-   "source": "ans_2021-01-28_does-your-data-governance-strategy-need_7ea19c",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2021-01-28_does-your-data-governance-strategy-need_7ea19c",
-   "target": "ep_2021-01-28_does-your-data-governance-strategy-need_7ea19c",
-   "type": "FROM_EPISODE"
-  },
-  {
    "source": "person_peter_bailis",
    "target": "ep_2021-01-14_has-business-intelligence-jumped-the-sha_e49f0c",
    "type": "GUEST_ON"
-  },
-  {
-   "source": "ans_2020-12-17_goodbye-2020-hello-2021_e3b13a",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2020-12-17_goodbye-2020-hello-2021_e3b13a",
-   "target": "ep_2020-12-17_goodbye-2020-hello-2021_e3b13a",
-   "type": "FROM_EPISODE"
   },
   {
    "source": "person_jeff_feng",
@@ -16607,49 +15774,9 @@
    "type": "GUEST_ON"
   },
   {
-   "source": "ans_2020-11-05_documentation-matters_797931",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2020-11-05_documentation-matters_797931",
-   "target": "ep_2020-11-05_documentation-matters_797931",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "person_will_briggs",
-   "target": "ans_2020-11-05_documentation-matters_797931",
-   "type": "GAVE"
-  },
-  {
-   "source": "ans_2020-11-05_documentation-matters_797931",
-   "target": "ent_sql_ddl",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_jeremy_baksht",
    "target": "ep_2020-10-23_your-best-data-source-may-be-outside-you_91c3bd",
    "type": "GUEST_ON"
-  },
-  {
-   "source": "ans_2020-10-19_time-for-a-data-culture-makeover_0a909e",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2020-10-19_time-for-a-data-culture-makeover_0a909e",
-   "target": "ep_2020-10-19_time-for-a-data-culture-makeover_0a909e",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "ans_2020-09-24_what-we-learned-at-the-first-ever-data-w_191d90",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2020-09-24_what-we-learned-at-the-first-ever-data-w_191d90",
-   "target": "ep_2020-09-24_what-we-learned-at-the-first-ever-data-w_191d90",
-   "type": "FROM_EPISODE"
   },
   {
    "source": "person_dean_allemang",
@@ -16667,69 +15794,21 @@
    "type": "GUEST_ON"
   },
   {
-   "source": "ans_2020-08-12_a-data-management-chicken-and-egg_efe03c",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2020-08-12_a-data-management-chicken-and-egg_efe03c",
-   "target": "ep_2020-08-12_a-data-management-chicken-and-egg_efe03c",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "person_jon_loyens",
-   "target": "ans_2020-08-12_a-data-management-chicken-and-egg_efe03c",
-   "type": "GAVE"
-  },
-  {
-   "source": "ans_2020-07-15_what-the-pandemic-can-teach-us-about-dat_7bf134",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2020-07-15_what-the-pandemic-can-teach-us-about-dat_7bf134",
-   "target": "ep_2020-07-15_what-the-pandemic-can-teach-us-about-dat_7bf134",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "ans_2020-07-15_what-the-pandemic-can-teach-us-about-dat_7bf134",
-   "target": "ent_covid",
-   "type": "MENTIONS"
-  },
-  {
    "source": "person_ernie_ostic",
    "target": "ep_2020-07-01_what-s-the-story-with-data-lineage_ca335b",
    "type": "GUEST_ON"
   },
   {
-   "source": "ans_2020-07-01_what-s-the-story-with-data-lineage_ca335b",
-   "target": "question",
-   "type": "ANSWERS"
+   "source": "ans_2026-09-25_ai-inherits-the-business-choices-you-nev_c15962",
+   "target": "concept_close",
+   "type": "ABOUT",
+   "provenance": "tfidf"
   },
   {
-   "source": "ans_2020-07-01_what-s-the-story-with-data-lineage_ca335b",
-   "target": "ep_2020-07-01_what-s-the-story-with-data-lineage_ca335b",
-   "type": "FROM_EPISODE"
-  },
-  {
-   "source": "person_ernie_ostic",
-   "target": "ans_2020-07-01_what-s-the-story-with-data-lineage_ca335b",
-   "type": "GAVE"
-  },
-  {
-   "source": "ans_2020-07-01_what-s-the-story-with-data-lineage_ca335b",
-   "target": "ent_dbas",
-   "type": "MENTIONS"
-  },
-  {
-   "source": "ans_2020-05-20_don-t-boil-the-ocean-boil-a-fishbowl_f3bcec",
-   "target": "question",
-   "type": "ANSWERS"
-  },
-  {
-   "source": "ans_2020-05-20_don-t-boil-the-ocean-boil-a-fishbowl_f3bcec",
-   "target": "ep_2020-05-20_don-t-boil-the-ocean-boil-a-fishbowl_f3bcec",
-   "type": "FROM_EPISODE"
+   "source": "ans_2026-09-25_ai-inherits-the-business-choices-you-nev_c15962",
+   "target": "concept_arts",
+   "type": "ABOUT",
+   "provenance": "tfidf"
   },
   {
    "source": "ans_2026-09-25_ai-inherits-the-business-choices-you-nev_c15962",
@@ -16746,6 +15825,12 @@
   {
    "source": "ans_2026-09-16_harvest-now-decrypt-later-why-quantum-is_fbc3e5",
    "target": "concept_journey",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2026-09-16_harvest-now-decrypt-later-why-quantum-is_fbc3e5",
+   "target": "concept_steve",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -16786,12 +15871,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2026-08-26_data-products-done-right-lessons-from-ca_70cff6",
-   "target": "concept_use_cases",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2026-05-20_pragmatic-use-case-driven-data-governanc_dd9a60",
    "target": "concept_simple",
    "type": "ABOUT",
@@ -16822,12 +15901,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2026-05-15_data-catalyst-governance-change-manageme_e68eaf",
-   "target": "concept_open_mind",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2026-05-07_ai-governance-isn-t-compliance-it-s-abou_3125fd",
    "target": "concept_follow",
    "type": "ABOUT",
@@ -16852,30 +15925,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2026-05-01_ai-appetite-is-easy-digestion-is-hard-wi_4c2ca5",
-   "target": "concept_better",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-04-24_it-s-friday-juan-and-tim-rant-about-ai-a_65bd27",
-   "target": "concept_organization",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-04-24_it-s-friday-juan-and-tim-rant-about-ai-a_65bd27",
-   "target": "concept_money",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-04-24_it-s-friday-juan-and-tim-rant-about-ai-a_65bd27",
-   "target": "concept_together",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2026-04-16_think-like-a-librarian-why-the-reference_481d0d",
    "target": "concept_check",
    "type": "ABOUT",
@@ -16889,7 +15938,7 @@
   },
   {
    "source": "ans_2026-04-09_the-void-between-data-and-decisions-with_b0cca6",
-   "target": "concept_tried",
+   "target": "concept_talked_data",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -16907,7 +15956,7 @@
   },
   {
    "source": "ans_2026-04-02_the-wrong-mandate-why-boards-set-data-ai_d103e7",
-   "target": "concept_third_resources",
+   "target": "concept_home",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -16948,24 +15997,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2026-02-26_your-data-should-speak-your-language-wit_acdc92",
-   "target": "concept_help_better",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-02-26_your-data-should-speak-your-language-wit_acdc92",
-   "target": "concept_knowledge_graphs",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-02-26_your-data-should-speak-your-language-wit_acdc92",
-   "target": "concept_resources_follow",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2026-02-19_shift-left-everything-how-ontology-event_e56a7c",
    "target": "concept_problem",
    "type": "ABOUT",
@@ -16984,26 +16015,8 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2026-02-06_it-s-friday-juan-and-tim-rant-about-deci_7c5151",
-   "target": "concept_problem",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-02-06_it-s-friday-juan-and-tim-rant-about-deci_7c5151",
-   "target": "concept_work",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-02-06_it-s-friday-juan-and-tim-rant-about-deci_7c5151",
-   "target": "concept_done",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-02-06_it-s-friday-juan-and-tim-rant-about-deci_7c5151",
-   "target": "concept_officer",
+   "source": "ans_2026-02-12_the-way-we-build-agents-today-is-dumb-wi_dade2e",
+   "target": "concept_hardest",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17050,30 +16063,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2026-01-16_it-s-friday-juan-and-tim-rant-about-data_5532fc",
-   "target": "concept_strategy",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-01-16_it-s-friday-juan-and-tim-rant-about-data_5532fc",
-   "target": "concept_system",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-01-16_it-s-friday-juan-and-tim-rant-about-data_5532fc",
-   "target": "concept_different",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-01-16_it-s-friday-juan-and-tim-rant-about-data_5532fc",
-   "target": "concept_company",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2026-01-15_2026-trends-in-the-data-world-with-tony_002f13",
    "target": "concept_governance",
    "type": "ABOUT",
@@ -17082,24 +16071,6 @@
   {
    "source": "ans_2026-01-15_2026-trends-in-the-data-world-with-tony_002f13",
    "target": "concept_skills",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-01-08_season-11-premiere-what-happened-in-2025_f46dc2",
-   "target": "concept_versus",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-01-08_season-11-premiere-what-happened-in-2025_f46dc2",
-   "target": "concept_llm",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-01-08_season-11-premiere-what-happened-in-2025_f46dc2",
-   "target": "concept_lens",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17116,12 +16087,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2025-12-17_building-ai-agents-with-lena-hall_519a55",
-   "target": "concept_data_modeling",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2025-12-10_how-are-we-over-complicating-data-produc_c11dcb",
    "target": "concept_resource",
    "type": "ABOUT",
@@ -17130,6 +16095,12 @@
   {
    "source": "ans_2025-12-10_how-are-we-over-complicating-data-produc_c11dcb",
    "target": "concept_modern_data",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-12-10_how-are-we-over-complicating-data-produc_c11dcb",
+   "target": "concept_lately",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17207,37 +16178,13 @@
   },
   {
    "source": "ans_2025-11-12_fall-2025-data-analytics-trends-with-san_aa7ba8",
-   "target": "concept_open_mind",
+   "target": "concept_world",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2025-11-12_fall-2025-data-analytics-trends-with-san_aa7ba8",
-   "target": "concept_matters",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-11-05_season-10-premiere-juan-and-tim-revisit_9786cb",
-   "target": "concept_product",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-11-05_season-10-premiere-juan-and-tim-revisit_9786cb",
-   "target": "concept_agree",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-11-05_season-10-premiere-juan-and-tim-revisit_9786cb",
-   "target": "concept_whole",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-11-05_season-10-premiere-juan-and-tim-revisit_9786cb",
-   "target": "concept_part",
+   "target": "concept_recording",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17255,7 +16202,7 @@
   },
   {
    "source": "ans_2025-05-15_gartner-data-analytics-summit-uk-2025-ta_8a42f9",
-   "target": "concept_lens",
+   "target": "concept_data_understand",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17422,14 +16369,20 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2025-01-16_data-ai-business-literacy-with-jordan-mo_0b1570",
-   "target": "concept_number",
+   "source": "ans_2025-01-23_data-teams-are-strategic-not-just-techni_9ff3a5",
+   "target": "concept_hardest",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2025-01-16_data-ai-business-literacy-with-jordan-mo_0b1570",
    "target": "concept_together",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-01-16_data-ai-business-literacy-with-jordan-mo_0b1570",
+   "target": "concept_number",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17464,12 +16417,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2024-11-28_stop-talking-about-data-governance-and-j_f957d9",
-   "target": "concept_llm",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2024-11-21_we-have-agency-over-ai-with-ethan-mollic_76ddb4",
    "target": "concept_information",
    "type": "ABOUT",
@@ -17496,12 +16443,6 @@
   {
    "source": "ans_2024-11-14_the-truth-about-open-table-formats-with_bacb67",
    "target": "concept_open",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-11-14_the-truth-about-open-table-formats-with_bacb67",
-   "target": "concept_table",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17537,12 +16478,6 @@
   },
   {
    "source": "ans_2024-10-17_streamlining-data-value-with-colleen-tar_e7bad1",
-   "target": "concept_comment",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-10-17_streamlining-data-value-with-colleen-tar_e7bad1",
    "target": "concept_amazing",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -17573,6 +16508,12 @@
   },
   {
    "source": "ans_2024-10-10_the-power-of-active-metadata-with-mike-e_5c1865",
+   "target": "concept_talked_data",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-10-10_the-power-of-active-metadata-with-mike-e_5c1865",
    "target": "concept_heart",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -17586,12 +16527,6 @@
   {
    "source": "ans_2024-09-26_why-data-ai-needs-to-embrace-interoperab_6f3c4e",
    "target": "concept_thinks",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-09-26_why-data-ai-needs-to-embrace-interoperab_6f3c4e",
-   "target": "concept_outside",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17632,12 +16567,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2024-09-12_the-five-laws-of-data-enablement-with-am_68791b",
-   "target": "concept_whole",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2024-09-05_building-diversity-in-data-with-dawn-car_b36e51",
    "target": "concept_responsible",
    "type": "ABOUT",
@@ -17646,12 +16575,6 @@
   {
    "source": "ans_2024-09-05_building-diversity-in-data-with-dawn-car_b36e51",
    "target": "concept_accept",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-09-05_building-diversity-in-data-with-dawn-car_b36e51",
-   "target": "concept_done",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17680,6 +16603,12 @@
    "provenance": "tfidf"
   },
   {
+   "source": "ans_2024-08-29_humanizing-data-strategy-with-tiankai-fe_4cc014",
+   "target": "concept_realized",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
    "source": "ans_2024-08-22_who-is-doing-the-data-product-management_5c79df",
    "target": "concept_use",
    "type": "ABOUT",
@@ -17692,26 +16621,14 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2024-06-04_we-need-your-honest-no-bs-feedback-what_bd1531",
-   "target": "concept_honest",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-06-04_we-need-your-honest-no-bs-feedback-what_bd1531",
-   "target": "concept_years",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-06-04_we-need-your-honest-no-bs-feedback-what_bd1531",
-   "target": "concept_different",
+   "source": "ans_2024-05-23_what-is-ai-ops-with-brandon-gadoci_b69bde",
+   "target": "concept_ton",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2024-05-23_what-is-ai-ops-with-brandon-gadoci_b69bde",
-   "target": "concept_ton",
+   "target": "concept_phenomenal",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17795,7 +16712,7 @@
   },
   {
    "source": "ans_2024-04-11_who-s-buying-data-catalogs-and-why-with_e8cf4a",
-   "target": "concept_wants",
+   "target": "concept_data_understand",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17826,6 +16743,12 @@
   {
    "source": "ans_2024-03-14_gartner-data-and-analytics-2024-takeaway_11c561",
    "target": "concept_put",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-03-14_gartner-data-and-analytics-2024-takeaway_11c561",
+   "target": "concept_reality",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17884,26 +16807,8 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2024-01-31_without-information-architecture-there-i_e82764",
-   "target": "concept_book",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-01-31_without-information-architecture-there-i_e82764",
-   "target": "concept_try",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2024-01-30_productivity-is-not-performance-with-san_bef991",
    "target": "concept_asking",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-01-30_productivity-is-not-performance-with-san_bef991",
-   "target": "concept_person",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -17944,24 +16849,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2023-12-15_season-6-finale-with-tim-gasper-and-juan_6849cb",
-   "target": "concept_knowledge_graphs",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-12-15_season-6-finale-with-tim-gasper-and-juan_6849cb",
-   "target": "concept_critical",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-12-15_season-6-finale-with-tim-gasper-and-juan_6849cb",
-   "target": "concept_together",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2023-12-01_data-contracts-and-shift-responsibility_e206c2",
    "target": "concept_outcome",
    "type": "ABOUT",
@@ -17981,7 +16868,7 @@
   },
   {
    "source": "ans_2023-11-02_data-storytelling-with-kat-greenbrook_fc1b23",
-   "target": "concept_agree",
+   "target": "concept_skills",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18023,13 +16910,13 @@
   },
   {
    "source": "ans_2023-09-21_business-value-on-the-meandatastreets-wi_52645e",
-   "target": "concept_learning",
+   "target": "concept_getting",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2023-09-21_business-value-on-the-meandatastreets-wi_52645e",
-   "target": "concept_getting",
+   "target": "concept_learning",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18244,12 +17131,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2023-05-29_updated-release-automating-data-governan_e48f12",
-   "target": "concept_resources_follow",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2023-05-18_using-data-to-change-the-game-w-maddy-wa_0cdbfe",
    "target": "concept_best",
    "type": "ABOUT",
@@ -18258,6 +17139,12 @@
   {
    "source": "ans_2023-05-18_using-data-to-change-the-game-w-maddy-wa_0cdbfe",
    "target": "concept_rest",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2023-05-18_using-data-to-change-the-game-w-maddy-wa_0cdbfe",
+   "target": "concept_realized",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18282,6 +17169,12 @@
   {
    "source": "ans_2023-05-11_live-from-the-knowledge-graph-conference_83ad59",
    "target": "concept_technologies",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2023-05-11_live-from-the-knowledge-graph-conference_83ad59",
+   "target": "concept_arts",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18335,12 +17228,6 @@
   },
   {
    "source": "ans_2023-04-13_do-s-and-don-t-for-the-next-gen-data-lea_ed05ed",
-   "target": "concept_money",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-04-13_do-s-and-don-t-for-the-next-gen-data-lea_ed05ed",
    "target": "concept_easy",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -18365,19 +17252,13 @@
   },
   {
    "source": "ans_2023-04-06_passing-the-buck-business-or-data_59a501",
-   "target": "concept_change",
+   "target": "concept_read",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2023-04-06_passing-the-buck-business-or-data_59a501",
    "target": "concept_already",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-04-06_passing-the-buck-business-or-data_59a501",
-   "target": "concept_read",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18400,26 +17281,14 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2023-03-23_takeaways-from-gartner-d-a-with-juan-and_9cddc3",
-   "target": "concept_company",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-03-23_takeaways-from-gartner-d-a-with-juan-and_9cddc3",
-   "target": "concept_ops",
+   "source": "ans_2023-03-16_school-of-building-data-and-business-rel_7a3737",
+   "target": "concept_team",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2023-03-16_school-of-building-data-and-business-rel_7a3737",
    "target": "concept_listening",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-03-16_school-of-building-data-and-business-rel_7a3737",
-   "target": "concept_team",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18438,12 +17307,6 @@
   {
    "source": "ans_2023-03-09_takeaways-with-bethany-lyons_1b81a1",
    "target": "concept_value_data",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-03-09_takeaways-with-bethany-lyons_1b81a1",
-   "target": "concept_strategy",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18490,6 +17353,12 @@
    "provenance": "tfidf"
   },
   {
+   "source": "ans_2023-02-23_increasing-adoption-of-data-products-by_c4b6c4",
+   "target": "concept_trust",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
    "source": "ans_2023-02-16_metadata-is-this-a-graph-problem-w-moham_b723bb",
    "target": "concept_job",
    "type": "ABOUT",
@@ -18510,6 +17379,12 @@
   {
    "source": "ans_2023-02-09_everywhere-you-look-there-it-is-entity-r_a80668",
    "target": "concept_funny",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2023-02-09_everywhere-you-look-there-it-is-entity-r_a80668",
+   "target": "concept_conference",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18580,8 +17455,14 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2023-01-19_providing-data-business-value-and-buildi_da985b",
-   "target": "concept_weather",
+   "source": "ans_2023-01-12_a-conversation-with-the-father-of-the-da_3bfa75",
+   "target": "concept_close",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2023-01-12_a-conversation-with-the-father-of-the-da_3bfa75",
+   "target": "concept_young",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18592,8 +17473,8 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2023-01-12_a-conversation-with-the-father-of-the-da_3bfa75",
-   "target": "concept_open",
+   "source": "ans_2022-12-08_2022-state-of-data-governance_9b54ab",
+   "target": "concept_recording",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18606,18 +17487,6 @@
   {
    "source": "ans_2022-12-08_2022-state-of-data-governance_9b54ab",
    "target": "concept_complexity",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-12-08_2022-state-of-data-governance_9b54ab",
-   "target": "concept_try",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-12-08_2022-state-of-data-governance_9b54ab",
-   "target": "concept_tend",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18683,13 +17552,19 @@
   },
   {
    "source": "ans_2022-11-03_put-the-business-in-charge-of-their-own_80e97c",
-   "target": "concept_ways",
+   "target": "concept_young",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2022-11-03_put-the-business-in-charge-of-their-own_80e97c",
    "target": "concept_problem",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2022-11-03_put-the-business-in-charge-of-their-own_80e97c",
+   "target": "concept_ways",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18766,7 +17641,7 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
+   "source": "ans_2022-10-13_takeaways-with-laura-ellis-from-rapid7_ebbdf6",
    "target": "concept_build",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -18785,6 +17660,12 @@
   },
   {
    "source": "ans_2022-10-06_ai-ml-where-should-the-focus-be-w-patric_c7518d",
+   "target": "concept_read",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2022-10-06_ai-ml-where-should-the-focus-be-w-patric_c7518d",
    "target": "concept_unless",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -18797,13 +17678,13 @@
   },
   {
    "source": "ans_2022-09-29_struggles-of-setting-up-a-data-governanc_212326",
-   "target": "concept_everything",
+   "target": "concept_different",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2022-09-29_struggles-of-setting-up-a-data-governanc_212326",
-   "target": "concept_different",
+   "target": "concept_everything",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18838,12 +17719,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2022-09-15_the-future-of-data-catalogs-w-ole-olesen_7f4add",
-   "target": "concept_prepared",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2022-09-08_data-engineering-where-are-we-and-where_ce3ad4",
    "target": "concept_lifelong",
    "type": "ABOUT",
@@ -18863,13 +17738,13 @@
   },
   {
    "source": "ans_2022-09-08_data-engineering-where-are-we-and-where_ce3ad4",
-   "target": "concept_learning",
+   "target": "concept_process",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2022-09-08_data-engineering-where-are-we-and-where_ce3ad4",
-   "target": "concept_process",
+   "target": "concept_learning",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18881,7 +17756,7 @@
   },
   {
    "source": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
-   "target": "concept_better",
+   "target": "concept_minutes",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -18900,12 +17775,6 @@
   {
    "source": "ans_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
    "target": "concept_closed",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
-   "target": "concept_whatever",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19048,12 +17917,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2022-06-16_don-t-let-good-metadata-go-to-waste-w-pe_71e52a",
-   "target": "concept_pushing",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2022-06-09_getting-all-meta-about-data-w-sanjeev-mo_8d9f54",
    "target": "concept_week",
    "type": "ABOUT",
@@ -19074,12 +17937,6 @@
   {
    "source": "ans_2022-06-02_takeaways-with-ciaran-dynes_ce4dcb",
    "target": "concept_cockroach",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-06-02_takeaways-with-ciaran-dynes_ce4dcb",
-   "target": "concept_product",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19108,8 +17965,8 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2022-05-19_a-roadmap-to-data-mesh-success-w-omar-kh_fec187",
-   "target": "concept_third_resources",
+   "source": "ans_2022-06-02_does-our-understanding-of-data-bias-our_ecd185",
+   "target": "concept_trying",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19133,7 +17990,7 @@
   },
   {
    "source": "ans_2022-05-12_is-your-modern-data-stack-delivering-val_30ae92",
-   "target": "concept_versus",
+   "target": "concept_problem_trying",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19150,6 +18007,18 @@
    "provenance": "tfidf"
   },
   {
+   "source": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
+   "target": "concept_conference",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2022-04-28_a-layered-approach-to-data-meaning-and-m_ef157d",
+   "target": "concept_thinking",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
    "source": "ans_2022-04-28_a-layered-approach-to-data-meaning-and-m_ef157d",
    "target": "concept_try",
    "type": "ABOUT",
@@ -19162,8 +18031,14 @@
    "provenance": "tfidf"
   },
   {
+   "source": "ans_2022-04-21_everybody-s-an-imposter-sometimes-w-stev_d0b548",
+   "target": "concept_data_life",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
    "source": "ans_2022-04-14_why-are-we-so-bad-at-this-modern-data-st_a467f8",
-   "target": "concept_system",
+   "target": "concept_problems",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19205,19 +18080,7 @@
   },
   {
    "source": "ans_2022-03-17_agile-like-a-fox-but-for-data-w-shane-gi_7e2ec4",
-   "target": "concept_books",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-03-17_agile-like-a-fox-but-for-data-w-shane-gi_7e2ec4",
-   "target": "concept_world_advice",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-03-10_your-privacy-is-my-currency-with-patrici_afe9e5",
-   "target": "concept_buy",
+   "target": "concept_advice_fun",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19276,12 +18139,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2022-02-17_the-easiest-data-is-always-the-hardest-t_a4bc5b",
-   "target": "concept_data_modeling",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2022-02-10_the-three-most-important-letters-in-data_a4c310",
    "target": "concept_lean",
    "type": "ABOUT",
@@ -19313,13 +18170,13 @@
   },
   {
    "source": "ans_2022-02-03_s3e5-takeways-with-laura-madsen_ba762d",
-   "target": "concept_tied",
+   "target": "concept_together",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2022-02-03_s3e5-takeways-with-laura-madsen_ba762d",
-   "target": "concept_keep",
+   "target": "concept_tied",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19331,13 +18188,13 @@
   },
   {
    "source": "ans_2022-01-27_can-the-data-mesh-be-governed-w-dora-bou_e48932",
-   "target": "concept_process",
+   "target": "concept_context",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2022-01-27_can-the-data-mesh-be-governed-w-dora-bou_e48932",
-   "target": "concept_context",
+   "target": "concept_process",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19350,24 +18207,6 @@
   {
    "source": "ans_2022-01-27_can-the-data-mesh-be-governed-w-dora-bou_e48932",
    "target": "concept_business",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
-   "target": "concept_tried",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
-   "target": "concept_afraid",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2022-01-13_modern-data-work-at-drizly-w-emily-hawki_33302f",
-   "target": "concept_ago",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19403,12 +18242,6 @@
   },
   {
    "source": "ans_2021-12-16_please-be-quiet-the-machines-are-talking_83b762",
-   "target": "concept_officer",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-12-16_please-be-quiet-the-machines-are-talking_83b762",
    "target": "concept_chief",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -19427,7 +18260,13 @@
   },
   {
    "source": "ans_2021-12-09_what-happens-when-everyone-is-a-data-wor_5f1fe0",
-   "target": "concept_help_better",
+   "target": "concept_thinking",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2021-12-09_what-happens-when-everyone-is-a-data-wor_5f1fe0",
+   "target": "concept_reality",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19446,6 +18285,12 @@
   {
    "source": "ans_2021-12-02_modern-data-stack-technology-methodology_d06cfc",
    "target": "concept_tool",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2021-12-02_modern-data-stack-technology-methodology_d06cfc",
+   "target": "concept_problems",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19535,25 +18380,31 @@
   },
   {
    "source": "ans_2021-10-14_sure-you-re-responsible-but-are-you-ethi_d63ea9",
-   "target": "concept_learn",
+   "target": "concept_talk",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2021-10-07_a-data-analyst-scientist-and-engineer-wa_6386b2",
-   "target": "concept_person",
+   "target": "concept_broad",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2021-10-07_a-data-analyst-scientist-and-engineer-wa_6386b2",
+   "target": "concept_life_whatever",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2021-10-07_a-data-analyst-scientist-and-engineer-wa_6386b2",
+   "target": "concept_data_life",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2021-09-30_do-we-have-a-data-infrastructure-crisis_02771f",
-   "target": "concept_matters",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-09-30_do-we-have-a-data-infrastructure-crisis_02771f",
-   "target": "concept_whatever",
+   "target": "concept_advice_fun",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19655,12 +18506,6 @@
   },
   {
    "source": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
-   "target": "concept_it_ll",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
    "target": "concept_amazing",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -19678,14 +18523,8 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2021-07-06_special-edition-panel-on-data-architectu_dcd439",
-   "target": "concept_organization",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-07-06_special-edition-panel-on-data-architectu_dcd439",
-   "target": "concept_question",
+   "source": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
+   "target": "concept_phenomenal",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19738,14 +18577,20 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2021-05-13_don-t-treat-your-data-stack-like-a-fine_1a35aa",
-   "target": "concept_hours",
+   "source": "ans_2021-05-20_knowledge-is-power-knowledge-management_f97d7c",
+   "target": "concept_trying",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2021-05-06_data-organization-reap-what-you-sow_23c017",
-   "target": "concept_thought_advice",
+   "source": "ans_2021-05-13_don-t-treat-your-data-stack-like-a-fine_1a35aa",
+   "target": "concept_minutes",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2021-05-13_don-t-treat-your-data-stack-like-a-fine_1a35aa",
+   "target": "concept_hours",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19758,24 +18603,6 @@
   {
    "source": "ans_2021-05-06_data-organization-reap-what-you-sow_23c017",
    "target": "concept_question_guess",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
-   "target": "concept_awesome",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-04-29_what-s-the-secret-recipe-for-dataops_e82655",
-   "target": "concept_ops",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-04-22_why-it-s-time-to-mesh-with-your-data-arc_5bdf77",
-   "target": "concept_critical",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19793,6 +18620,12 @@
   },
   {
    "source": "ans_2021-04-22_why-it-s-time-to-mesh-with-your-data-arc_5bdf77",
+   "target": "concept_together",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2021-04-22_why-it-s-time-to-mesh-with-your-data-arc_5bdf77",
    "target": "concept_advise",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -19805,19 +18638,13 @@
   },
   {
    "source": "ans_2021-04-15_what-do-they-teach-at-your-data-science_d4ee13",
-   "target": "concept_advise",
+   "target": "concept_lately",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2021-04-15_what-do-they-teach-at-your-data-science_d4ee13",
-   "target": "concept_outside",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-04-07_power-to-the-data_c81d2d",
-   "target": "concept_winter",
+   "target": "concept_advise",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19835,7 +18662,13 @@
   },
   {
    "source": "ans_2021-04-07_power-to-the-data_c81d2d",
-   "target": "concept_world_advice",
+   "target": "concept_world",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2021-04-07_power-to-the-data_c81d2d",
+   "target": "concept_steve",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19883,6 +18716,12 @@
   },
   {
    "source": "ans_2021-03-11_a-modern-approach-to-data-transformation_4c628f",
+   "target": "concept_broad",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2021-03-11_a-modern-approach-to-data-transformation_4c628f",
    "target": "concept_open",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -19890,6 +18729,12 @@
   {
    "source": "ans_2021-03-11_a-modern-approach-to-data-transformation_4c628f",
    "target": "concept_question",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2021-03-04_do-you-have-data-trust-issues_0e8caa",
+   "target": "concept_trust",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19925,19 +18770,13 @@
   },
   {
    "source": "ans_2021-02-11_do-you-test-your-data_2a680c",
-   "target": "concept_winter",
+   "target": "concept_life_whatever",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2021-02-11_do-you-test-your-data_2a680c",
-   "target": "concept_weather",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-02-11_do-you-test-your-data_2a680c",
-   "target": "concept_thought_advice",
+   "target": "concept_data_life",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -19949,189 +18788,39 @@
   },
   {
    "source": "ans_2021-02-04_what-can-we-learn-from-messy-insurance-d_5fb151",
-   "target": "concept_that_d",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-02-04_what-can-we-learn-from-messy-insurance-d_5fb151",
    "target": "concept_raise",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2021-01-28_does-your-data-governance-strategy-need_7ea19c",
-   "target": "concept_getting",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2021-01-28_does-your-data-governance-strategy-need_7ea19c",
-   "target": "concept_that_d",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-12-17_goodbye-2020-hello-2021_e3b13a",
-   "target": "concept_start",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-11-05_documentation-matters_797931",
-   "target": "concept_comment",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-11-05_documentation-matters_797931",
-   "target": "concept_stored",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-11-05_documentation-matters_797931",
-   "target": "concept_pushing",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-11-05_documentation-matters_797931",
-   "target": "concept_prepared",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-10-19_time-for-a-data-culture-makeover_0a909e",
-   "target": "concept_it_ll",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-10-19_time-for-a-data-culture-makeover_0a909e",
-   "target": "concept_week",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-10-19_time-for-a-data-culture-makeover_0a909e",
-   "target": "concept_fun",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-09-24_what-we-learned-at-the-first-ever-data-w_191d90",
-   "target": "concept_week",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-09-24_what-we-learned-at-the-first-ever-data-w_191d90",
-   "target": "concept_buy",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-08-12_a-data-management-chicken-and-egg_efe03c",
-   "target": "concept_whole",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-08-12_a-data-management-chicken-and-egg_efe03c",
-   "target": "concept_process",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-08-12_a-data-management-chicken-and-egg_efe03c",
-   "target": "concept_team",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-08-12_a-data-management-chicken-and-egg_efe03c",
-   "target": "concept_part",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-07-15_what-the-pandemic-can-teach-us-about-dat_7bf134",
-   "target": "concept_governance",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-07-01_what-s-the-story-with-data-lineage_ca335b",
-   "target": "concept_use_cases",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-07-01_what-s-the-story-with-data-lineage_ca335b",
-   "target": "concept_change",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-07-01_what-s-the-story-with-data-lineage_ca335b",
-   "target": "concept_stored",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-05-20_don-t-boil-the-ocean-boil-a-fishbowl_f3bcec",
-   "target": "concept_metadata",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-05-20_don-t-boil-the-ocean-boil-a-fishbowl_f3bcec",
-   "target": "concept_step",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-05-20_don-t-boil-the-ocean-boil-a-fishbowl_f3bcec",
-   "target": "concept_wants",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2020-05-20_don-t-boil-the-ocean-boil-a-fishbowl_f3bcec",
-   "target": "concept_table",
-   "type": "ABOUT",
-   "provenance": "tfidf"
+   "source": "ans_2026-04-09_the-void-between-data-and-decisions-with_b0cca6",
+   "target": "ans_2021-02-11_do-you-test-your-data_2a680c",
+   "type": "SIMILAR_TO",
+   "weight": 0.159
   },
   {
    "source": "ans_2026-04-09_the-void-between-data-and-decisions-with_b0cca6",
    "target": "ans_2022-04-21_everybody-s-an-imposter-sometimes-w-stev_d0b548",
    "type": "SIMILAR_TO",
-   "weight": 0.172
+   "weight": 0.159
   },
   {
    "source": "ans_2026-03-19_the-data-hygienist-with-thais-cooke_0655ef",
    "target": "ans_2023-07-27_ranting-about-lack-of-business-value-by_5c108c",
    "type": "SIMILAR_TO",
-   "weight": 0.155
+   "weight": 0.158
   },
   {
    "source": "ans_2026-02-12_the-way-we-build-agents-today-is-dumb-wi_dade2e",
    "target": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
    "type": "SIMILAR_TO",
-   "weight": 0.163
-  },
-  {
-   "source": "ans_2024-06-04_we-need-your-honest-no-bs-feedback-what_bd1531",
-   "target": "ans_2021-12-23_season-two-finale_2177b5",
-   "type": "SIMILAR_TO",
-   "weight": 0.164
+   "weight": 0.151
   },
   {
    "source": "ans_2023-08-31_what-does-data-lakehouse-sports-and-gene_3f78f9",
    "target": "ans_2023-01-26_data-modeling-your-data-isn-t-going-to-m_2a9417",
    "type": "SIMILAR_TO",
-   "weight": 0.205
+   "weight": 0.201
   },
   {
    "source": "ans_2023-08-24_takeaways-from-technical-to-business-dat_522e13",
@@ -20143,37 +18832,43 @@
    "source": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
    "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
    "type": "SIMILAR_TO",
-   "weight": 0.715
+   "weight": 0.727
   },
   {
    "source": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
    "target": "ans_2022-09-22_keeping-it-100-about-metadata-the-data-s_c5302f",
    "type": "SIMILAR_TO",
-   "weight": 0.361
+   "weight": 0.359
+  },
+  {
+   "source": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
+   "target": "ans_2021-02-11_do-you-test-your-data_2a680c",
+   "type": "SIMILAR_TO",
+   "weight": 0.3
   },
   {
    "source": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
    "target": "ans_2022-04-21_everybody-s-an-imposter-sometimes-w-stev_d0b548",
    "type": "SIMILAR_TO",
-   "weight": 0.302
+   "weight": 0.3
   },
   {
    "source": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
    "target": "ans_2021-09-23_fashion-week-but-for-data-w-jans-aasman_029a23",
    "type": "SIMILAR_TO",
-   "weight": 0.299
+   "weight": 0.309
   },
   {
    "source": "ans_2023-03-09_data-operations-vs-data-analytics_4f391e",
    "target": "ans_2022-01-06_will-2022-change-how-we-think-about-data_afb04f",
    "type": "SIMILAR_TO",
-   "weight": 0.311
+   "weight": 0.309
   },
   {
    "source": "ans_2023-01-26_data-modeling-your-data-isn-t-going-to-m_2a9417",
    "target": "ans_2021-10-14_sure-you-re-responsible-but-are-you-ethi_d63ea9",
    "type": "SIMILAR_TO",
-   "weight": 0.176
+   "weight": 0.175
   },
   {
    "source": "ans_2022-10-20_takeaways-with-loris-marini_b8a55a",
@@ -20183,15 +18878,27 @@
   },
   {
    "source": "ans_2022-09-22_keeping-it-100-about-metadata-the-data-s_c5302f",
+   "target": "ans_2021-02-11_do-you-test-your-data_2a680c",
+   "type": "SIMILAR_TO",
+   "weight": 0.836
+  },
+  {
+   "source": "ans_2022-09-22_keeping-it-100-about-metadata-the-data-s_c5302f",
    "target": "ans_2022-04-21_everybody-s-an-imposter-sometimes-w-stev_d0b548",
    "type": "SIMILAR_TO",
-   "weight": 0.839
+   "weight": 0.836
+  },
+  {
+   "source": "ans_2022-09-22_keeping-it-100-about-metadata-the-data-s_c5302f",
+   "target": "ans_2021-10-07_a-data-analyst-scientist-and-engineer-wa_6386b2",
+   "type": "SIMILAR_TO",
+   "weight": 0.539
   },
   {
    "source": "ans_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
    "target": "ans_2022-09-01_takeways-with-roel-and-valentijn_890a19",
    "type": "SIMILAR_TO",
-   "weight": 0.817
+   "weight": 0.82
   },
   {
    "source": "ans_2022-08-25_season-4-premiere-takeaways_c3f6df",
@@ -20203,13 +18910,19 @@
    "source": "ans_2022-06-02_takeaways-with-ciaran-dynes_ce4dcb",
    "target": "ans_2022-06-02_does-our-understanding-of-data-bias-our_ecd185",
    "type": "SIMILAR_TO",
-   "weight": 0.586
+   "weight": 0.587
   },
   {
-   "source": "ans_2022-04-28_a-layered-approach-to-data-meaning-and-m_ef157d",
-   "target": "ans_2022-04-21_everybody-s-an-imposter-sometimes-w-stev_d0b548",
+   "source": "ans_2022-04-21_everybody-s-an-imposter-sometimes-w-stev_d0b548",
+   "target": "ans_2021-02-11_do-you-test-your-data_2a680c",
    "type": "SIMILAR_TO",
-   "weight": 0.159
+   "weight": 1.0
+  },
+  {
+   "source": "ans_2022-04-21_everybody-s-an-imposter-sometimes-w-stev_d0b548",
+   "target": "ans_2021-10-07_a-data-analyst-scientist-and-engineer-wa_6386b2",
+   "type": "SIMILAR_TO",
+   "weight": 0.644
   },
   {
    "source": "ans_2022-02-03_s3e5-takeways-with-laura-madsen_ba762d",
@@ -20221,7 +18934,19 @@
    "source": "ans_2022-01-06_will-2022-change-how-we-think-about-data_afb04f",
    "target": "ans_2021-03-04_do-you-have-data-trust-issues_0e8caa",
    "type": "SIMILAR_TO",
-   "weight": 0.155
+   "weight": 0.153
+  },
+  {
+   "source": "ans_2021-10-07_a-data-analyst-scientist-and-engineer-wa_6386b2",
+   "target": "ans_2021-02-11_do-you-test-your-data_2a680c",
+   "type": "SIMILAR_TO",
+   "weight": 0.644
+  },
+  {
+   "source": "ans_2021-03-11_a-modern-approach-to-data-transformation_4c628f",
+   "target": "ans_2021-10-07_a-data-analyst-scientist-and-engineer-wa_6386b2",
+   "type": "SIMILAR_TO",
+   "weight": 0.211
   }
  ]
 }
