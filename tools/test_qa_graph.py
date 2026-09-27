@@ -222,6 +222,9 @@ check("shared ideas become concept nodes", {"knowledge graph", "governance"} <= 
 toks = qa.tokens_for_tfidf("My advice: tell stories with knowledge graphs. Nobody funds a graph.", {"advice"})
 check("word pairs never span a full stop, and plurals fold", "knowledge graph" in toks and "story" in toks
       and not any(t.startswith("graph nobody") for t in toks) and "advice" not in toks, str(toks))
+toks = qa.tokens_for_tfidf("I read about data mesh. I invited Ada.", {"data", "invite"})
+check("a dropped question word still anchors a phrase, and its inflections go too",
+      "data mesh" in toks and "data" not in toks and "invited" not in toks, str(toks))
 check("every concept connects at least two answers", all(
     sum(1 for l in advice["links"] if l["target"] == n["id"]) >= 2
     for n in advice["nodes"] if n["type"] == "concept"))

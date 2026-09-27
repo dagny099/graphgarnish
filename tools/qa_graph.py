@@ -715,6 +715,7 @@ real really true yes okay awesome amazing wonderful interesting cool nice love l
 guess seen saw see sees looking look looks looked hard easy things thing kind sort part whole
 whether together single share shares shared question questions answer answers stuff anybody
 understand already way ways one two three solve possible source topic topics follow listen learn
+second third fourth last final
 anyone someone probably maybe actually certainly especially usually generally basically particular
 somebody everybody person yeah yep nope gosh wow huh hmm oops sort sorts lots bunch couple
 """.split())
@@ -1194,6 +1195,13 @@ def fold(word: str) -> str:
     return word
 
 
+def dropped_word(word: str, drop: set[str]) -> bool:
+    """word is one of drop, or an inflection of one ("invited", "inviting")."""
+    if word in drop or fold(word) in drop:
+        return True
+    return any(len(d) >= 5 and word.startswith(d[:-1]) and len(word) - len(d) <= 3 for d in drop)
+
+
 CLAUSE_SPLIT = re.compile(r"[.,;:!?()\u2014\u2013]+|\s-\s")
 
 
@@ -1204,11 +1212,14 @@ def tokens_for_tfidf(text: str, drop: set[str] = frozenset()) -> list[str]:
     words, pairs = [], []
     for clause in CLAUSE_SPLIT.split(text):
         raw = [re.sub(r"'s?$", "", w) for w in norm(clause).split()]
-        keep = [w not in STOPWORDS and fold(w) not in STOPWORDS and len(w) > 2
-                and w not in drop and fold(w) not in drop for w in raw]
-        words += [fold(w) for w, k in zip(raw, keep) if k]
-        pairs += [f"{fold(a)} {fold(b)}" for a, b, ka, kb in zip(raw, raw[1:], keep, keep[1:])
-                  if ka and kb and fold(a) != fold(b)]
+        keep = [w not in STOPWORDS and fold(w) not in STOPWORDS and len(w) > 2 for w in raw]
+        # The question's words go as single words ("advice", "invited") but
+        # may sit inside a phrase ("data mesh" survives dropping "data").
+        dropped = [dropped_word(w, drop) for w in raw]
+        words += [fold(w) for w, k, d in zip(raw, keep, dropped) if k and not d]
+        pairs += [f"{fold(a)} {fold(b)}" for a, b, ka, kb, da, db
+                  in zip(raw, raw[1:], keep, keep[1:], dropped, dropped[1:])
+                  if ka and kb and not (da and db) and fold(a) != fold(b)]
     return words + pairs
 
 

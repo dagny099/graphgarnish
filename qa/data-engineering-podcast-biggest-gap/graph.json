@@ -13,11 +13,11 @@
   },
   "people_named_and_later_guests": [],
   "node_types": {
-   "concept": 112,
    "answer": 95,
-   "episode": 120,
-   "entity": 43,
+   "concept": 114,
    "person": 53,
+   "entity": 43,
+   "episode": 120,
    "question": 1
   },
   "link_types": {
@@ -26,8 +26,8 @@
    "FROM_EPISODE": 95,
    "GAVE": 39,
    "MENTIONS": 62,
-   "ABOUT": 246,
-   "SIMILAR_TO": 10
+   "ABOUT": 251,
+   "SIMILAR_TO": 11
   }
  },
  "nodes": [
@@ -1090,7 +1090,7 @@
    "confidence": 1.0,
    "transcript_source": "feed",
    "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638983160301766546433fb150-92e7-42a5-a006-aacb4f6fee76.mp3",
-   "degree": 9
+   "degree": 8
   },
   {
    "id": "ep_2025-11-02_bridging-the-ai-data-gap-collect-curate_47d6eb",
@@ -1862,7 +1862,7 @@
    "confidence": 1.0,
    "transcript_source": "feed",
    "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6388276829373381210933150c-485f-4de3-9b92-a55c182eba0av1.mp3",
-   "degree": 7
+   "degree": 8
   },
   {
    "id": "ep_2025-05-05_starrocks-bridging-lakehouse-and-olap-fo_493c40",
@@ -2172,7 +2172,7 @@
    "confidence": 1.0,
    "transcript_source": "feed",
    "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638723265960041421f2b85bcd-afb2-41c1-af85-66688f413049v1.mp3",
-   "degree": 9
+   "degree": 10
   },
   {
    "id": "ent_pdf",
@@ -2387,7 +2387,7 @@
    "confidence": 1.0,
    "transcript_source": "feed",
    "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/63866876139517163514501319-6c97-4b53-b856-60fce51fd44bv1.mp3",
-   "degree": 7
+   "degree": 9
   },
   {
    "id": "ep_2024-11-04_feldera-bridging-batch-and-streaming-wit_9153b5",
@@ -2465,7 +2465,7 @@
    "confidence": 1.0,
    "transcript_source": "feed",
    "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638650584512899170f618e274-10a6-4455-9dba-1ae4aab0fe60v1.mp3",
-   "degree": 9
+   "degree": 8
   },
   {
    "id": "ent_data_fusion",
@@ -2990,7 +2990,7 @@
    "confidence": 1.0,
    "transcript_source": "feed",
    "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638557933894971332415e9505-a3a8-4437-956b-4d2ce99b269ev1.mp3",
-   "degree": 7
+   "degree": 8
   },
   {
    "id": "ep_2024-05-27_data-migration-strategies-for-large-scal_3c2137",
@@ -3268,7 +3268,7 @@
    "confidence": 1.0,
    "transcript_source": "feed",
    "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385579512539003951344eee6-8666-4582-acca-bd3a60dc294dv1.mp3",
-   "degree": 9
+   "degree": 10
   },
   {
    "id": "ent_gpt",
@@ -3651,7 +3651,7 @@
    "confidence": 1.0,
    "transcript_source": "feed",
    "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/638557940587809343f77aaf99-86a2-471b-b178-74d7d66cdb6ev1.mp3",
-   "degree": 9
+   "degree": 8
   },
   {
    "id": "ep_2023-12-04_designing-data-transfer-systems-that-sca_f9b618",
@@ -3746,7 +3746,7 @@
    "confidence": 1.0,
    "transcript_source": "feed",
    "audio_url": "https://op3.dev/e/dts.podtrac.com/redirect.mp3/serve.podhome.fm/episode/f6ff0caa-931b-4c08-bfdd-08dc7f5cd336/6385579530704714378dcc9a25-11b6-42cd-b705-d7096ee2cab1v1.mp3",
-   "degree": 9
+   "degree": 8
   },
   {
    "id": "ep_2023-11-13_enhancing-the-abilities-of-software-engi_4128fa",
@@ -3855,6 +3855,12 @@
    "degree": 2
   },
   {
+   "id": "concept_data_platform",
+   "type": "concept",
+   "name": "data platform",
+   "degree": 3
+  },
+  {
    "id": "concept_picture",
    "type": "concept",
    "name": "picture",
@@ -3951,15 +3957,15 @@
    "degree": 2
   },
   {
-   "id": "concept_build",
+   "id": "concept_infra_team",
    "type": "concept",
-   "name": "build",
+   "name": "infra team",
    "degree": 2
   },
   {
-   "id": "concept_weird",
+   "id": "concept_build",
    "type": "concept",
-   "name": "weird",
+   "name": "build",
    "degree": 2
   },
   {
@@ -4005,6 +4011,12 @@
    "degree": 2
   },
   {
+   "id": "concept_existing_data",
+   "type": "concept",
+   "name": "existing data",
+   "degree": 2
+  },
+  {
    "id": "concept_type",
    "type": "concept",
    "name": "type",
@@ -4021,6 +4033,12 @@
    "type": "concept",
    "name": "language",
    "degree": 4
+  },
+  {
+   "id": "concept_data_access",
+   "type": "concept",
+   "name": "data access",
+   "degree": 2
   },
   {
    "id": "concept_change",
@@ -4071,15 +4089,15 @@
    "degree": 2
   },
   {
-   "id": "concept_based_approach",
-   "type": "concept",
-   "name": "based approach",
-   "degree": 2
-  },
-  {
    "id": "concept_practice",
    "type": "concept",
    "name": "practice",
+   "degree": 3
+  },
+  {
+   "id": "concept_data_team",
+   "type": "concept",
+   "name": "data team",
    "degree": 3
   },
   {
@@ -4101,27 +4119,21 @@
    "degree": 2
   },
   {
-   "id": "concept_point_solution",
-   "type": "concept",
-   "name": "point solution",
-   "degree": 3
-  },
-  {
    "id": "concept_ability",
    "type": "concept",
    "name": "ability",
    "degree": 2
   },
   {
+   "id": "concept_data_quality",
+   "type": "concept",
+   "name": "data quality",
+   "degree": 4
+  },
+  {
    "id": "concept_trust",
    "type": "concept",
    "name": "trust",
-   "degree": 2
-  },
-  {
-   "id": "concept_problem",
-   "type": "concept",
-   "name": "problem",
    "degree": 2
   },
   {
@@ -4167,28 +4179,40 @@
    "degree": 2
   },
   {
+   "id": "concept_data_space",
+   "type": "concept",
+   "name": "data space",
+   "degree": 2
+  },
+  {
+   "id": "concept_data_engineer",
+   "type": "concept",
+   "name": "data engineer",
+   "degree": 4
+  },
+  {
+   "id": "concept_technology_stack",
+   "type": "concept",
+   "name": "technology stack",
+   "degree": 2
+  },
+  {
    "id": "concept_choose",
    "type": "concept",
    "name": "choose",
    "degree": 2
   },
   {
-   "id": "concept_stack",
+   "id": "concept_biggest_challenge",
    "type": "concept",
-   "name": "stack",
-   "degree": 6
+   "name": "biggest challenge",
+   "degree": 2
   },
   {
    "id": "concept_innovation",
    "type": "concept",
    "name": "innovation",
    "degree": 2
-  },
-  {
-   "id": "concept_quality",
-   "type": "concept",
-   "name": "quality",
-   "degree": 5
   },
   {
    "id": "concept_developer",
@@ -4203,27 +4227,21 @@
    "degree": 2
   },
   {
+   "id": "concept_process_data",
+   "type": "concept",
+   "name": "process data",
+   "degree": 2
+  },
+  {
    "id": "concept_machine_learning",
    "type": "concept",
    "name": "machine learning",
    "degree": 3
   },
   {
-   "id": "concept_startup",
-   "type": "concept",
-   "name": "startup",
-   "degree": 2
-  },
-  {
    "id": "concept_cloud",
    "type": "concept",
    "name": "cloud",
-   "degree": 2
-  },
-  {
-   "id": "concept_lineage",
-   "type": "concept",
-   "name": "lineage",
    "degree": 2
   },
   {
@@ -4236,13 +4254,13 @@
    "id": "concept_team",
    "type": "concept",
    "name": "team",
-   "degree": 3
+   "degree": 2
   },
   {
-   "id": "concept_wrong",
+   "id": "concept_data_observability",
    "type": "concept",
-   "name": "wrong",
-   "degree": 2
+   "name": "data observability",
+   "degree": 3
   },
   {
    "id": "concept_tough",
@@ -4269,15 +4287,15 @@
    "degree": 2
   },
   {
-   "id": "concept_governance",
-   "type": "concept",
-   "name": "governance",
-   "degree": 2
-  },
-  {
    "id": "concept_governance_side",
    "type": "concept",
    "name": "governance side",
+   "degree": 2
+  },
+  {
+   "id": "concept_data_governance",
+   "type": "concept",
+   "name": "data governance",
    "degree": 2
   },
   {
@@ -4311,16 +4329,22 @@
    "degree": 3
   },
   {
-   "id": "concept_process",
+   "id": "concept_point_solution",
    "type": "concept",
-   "name": "process",
+   "name": "point solution",
    "degree": 2
   },
   {
-   "id": "concept_enterprise",
+   "id": "concept_modern_data",
    "type": "concept",
-   "name": "enterprise",
+   "name": "modern data",
    "degree": 2
+  },
+  {
+   "id": "concept_data_stack",
+   "type": "concept",
+   "name": "data stack",
+   "degree": 4
   },
   {
    "id": "concept_excited",
@@ -4329,9 +4353,9 @@
    "degree": 3
   },
   {
-   "id": "concept_unstructured",
+   "id": "concept_unstructured_data",
    "type": "concept",
-   "name": "unstructured",
+   "name": "unstructured data",
    "degree": 2
   },
   {
@@ -4357,6 +4381,12 @@
    "type": "concept",
    "name": "code",
    "degree": 2
+  },
+  {
+   "id": "concept_data_engineering",
+   "type": "concept",
+   "name": "data engineering",
+   "degree": 3
   },
   {
    "id": "concept_away",
@@ -4389,33 +4419,15 @@
    "degree": 2
   },
   {
-   "id": "concept_engineer",
-   "type": "concept",
-   "name": "engineer",
-   "degree": 2
-  },
-  {
    "id": "concept_usage",
    "type": "concept",
    "name": "usage",
    "degree": 2
   },
   {
-   "id": "concept_result",
+   "id": "concept_stack",
    "type": "concept",
-   "name": "result",
-   "degree": 2
-  },
-  {
-   "id": "concept_application",
-   "type": "concept",
-   "name": "application",
-   "degree": 2
-  },
-  {
-   "id": "concept_platform",
-   "type": "concept",
-   "name": "platform",
+   "name": "stack",
    "degree": 2
   },
   {
@@ -4425,9 +4437,15 @@
    "degree": 2
   },
   {
-   "id": "concept_catalog",
+   "id": "concept_data_catalog",
    "type": "concept",
-   "name": "catalog",
+   "name": "data catalog",
+   "degree": 2
+  },
+  {
+   "id": "concept_data_infrastructure",
+   "type": "concept",
+   "name": "data infrastructure",
    "degree": 2
   },
   {
@@ -4455,15 +4473,9 @@
    "degree": 2
   },
   {
-   "id": "concept_happy",
+   "id": "concept_modular_system",
    "type": "concept",
-   "name": "happy",
-   "degree": 2
-  },
-  {
-   "id": "concept_pipeline",
-   "type": "concept",
-   "name": "pipeline",
+   "name": "modular system",
    "degree": 2
   },
   {
@@ -6250,6 +6262,12 @@
   },
   {
    "source": "ans_2026-08-27_specialized-ai-for-data-engineers-inside_c1f76b",
+   "target": "concept_data_platform",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2026-08-27_specialized-ai-for-data-engineers-inside_c1f76b",
    "target": "concept_picture",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -6369,6 +6387,12 @@
    "provenance": "tfidf"
   },
   {
+   "source": "ans_2026-05-06_maximizing-gpu-utilization-heterogeneous_9f09ac",
+   "target": "concept_infra_team",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
    "source": "ans_2026-04-07_the-ai-first-data-engineer-10-50x-produc_61ebc7",
    "target": "concept_build",
    "type": "ABOUT",
@@ -6377,12 +6401,6 @@
   {
    "source": "ans_2026-04-07_the-ai-first-data-engineer-10-50x-produc_61ebc7",
    "target": "concept_agent",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2026-04-07_the-ai-first-data-engineer-10-50x-produc_61ebc7",
-   "target": "concept_weird",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6435,6 +6453,12 @@
    "provenance": "tfidf"
   },
   {
+   "source": "ans_2026-03-08_orion-at-gravity-trustworthy-ai-analysts_ec7780",
+   "target": "concept_existing_data",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
    "source": "ans_2026-02-22_from-data-models-to-mind-models-designin_12ab74",
    "target": "concept_type",
    "type": "ABOUT",
@@ -6449,6 +6473,12 @@
   {
    "source": "ans_2026-02-22_from-data-models-to-mind-models-designin_12ab74",
    "target": "concept_language",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2026-02-22_from-data-models-to-mind-models-designin_12ab74",
+   "target": "concept_data_access",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6519,12 +6549,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2025-12-21_from-context-to-semantics-how-metadata-p_509c87",
-   "target": "concept_based_approach",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2025-12-14_from-data-engineering-to-ai-engineering_6c9e69",
    "target": "concept_practice",
    "type": "ABOUT",
@@ -6533,6 +6557,12 @@
   {
    "source": "ans_2025-11-16_state-scale-and-signals-rethinking-orche_5ce212",
    "target": "concept_etcetera",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-11-09_the-ai-data-paradox-high-trust-in-models_ca8925",
+   "target": "concept_data_team",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6555,12 +6585,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2025-11-09_the-ai-data-paradox-high-trust-in-models_ca8925",
-   "target": "concept_point_solution",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2025-11-02_bridging-the-ai-data-gap-collect-curate_47d6eb",
    "target": "concept_ability",
    "type": "ABOUT",
@@ -6573,14 +6597,14 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2025-10-27_beyond-the-perimeter-practical-patterns_bbd8dc",
-   "target": "concept_trust",
+   "source": "ans_2025-11-02_bridging-the-ai-data-gap-collect-curate_47d6eb",
+   "target": "concept_data_quality",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2025-10-27_beyond-the-perimeter-practical-patterns_bbd8dc",
-   "target": "concept_problem",
+   "target": "concept_trust",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6599,6 +6623,12 @@
   {
    "source": "ans_2025-10-05_the-data-model-that-captures-your-busine_cc5cd8",
    "target": "concept_build",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-10-05_the-data-model-that-captures-your-busine_cc5cd8",
+   "target": "concept_data_team",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6651,6 +6681,24 @@
    "provenance": "tfidf"
   },
   {
+   "source": "ans_2025-09-01_aligning-business-and-data-the-essential_78f785",
+   "target": "concept_data_space",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-09-01_aligning-business-and-data-the-essential_78f785",
+   "target": "concept_data_engineer",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-08-26_from-academia-to-industry-bridging-data_f0014a",
+   "target": "concept_technology_stack",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
    "source": "ans_2025-08-26_from-academia-to-industry-bridging-data_f0014a",
    "target": "concept_choose",
    "type": "ABOUT",
@@ -6658,13 +6706,13 @@
   },
   {
    "source": "ans_2025-08-26_from-academia-to-industry-bridging-data_f0014a",
-   "target": "concept_stack",
+   "target": "concept_difficult",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2025-08-26_from-academia-to-industry-bridging-data_f0014a",
-   "target": "concept_difficult",
+   "target": "concept_biggest_challenge",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6677,12 +6725,6 @@
   {
    "source": "ans_2025-08-18_high-performance-and-low-overhead-graphs_a82b96",
    "target": "concept_innovation",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-08-18_high-performance-and-low-overhead-graphs_a82b96",
-   "target": "concept_quality",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6706,31 +6748,19 @@
   },
   {
    "source": "ans_2025-07-28_revolutionizing-python-notebooks-with-ma_c71b53",
+   "target": "concept_process_data",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-07-28_revolutionizing-python-notebooks-with-ma_c71b53",
    "target": "concept_machine_learning",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-07-28_revolutionizing-python-notebooks-with-ma_c71b53",
-   "target": "concept_weird",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-07-28_revolutionizing-python-notebooks-with-ma_c71b53",
-   "target": "concept_startup",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2025-07-15_streamlining-data-pipelines-with-mcp-ser_49e302",
    "target": "concept_cloud",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-07-06_foundational-data-engineering-at-two-sig_691c11",
-   "target": "concept_lineage",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6748,13 +6778,13 @@
   },
   {
    "source": "ans_2025-06-29_enabling-agents-in-the-enterprise-with-a_b0a252",
-   "target": "concept_team",
+   "target": "concept_data_space",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2025-06-29_enabling-agents-in-the-enterprise-with-a_b0a252",
-   "target": "concept_wrong",
+   "target": "concept_team",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6779,6 +6809,12 @@
   {
    "source": "ans_2025-06-11_ai-and-the-lakehouse-how-starburst-is-pi_3094ce",
    "target": "concept_understanding",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-06-11_ai-and-the-lakehouse-how-starburst-is-pi_3094ce",
+   "target": "concept_data_observability",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6820,12 +6856,6 @@
   },
   {
    "source": "ans_2025-05-29_scaling-data-operations-with-platform-en_e31a20",
-   "target": "concept_governance",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-05-29_scaling-data-operations-with-platform-en_e31a20",
    "target": "concept_ability",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -6833,6 +6863,12 @@
   {
    "source": "ans_2025-05-21_from-data-discovery-to-ai-the-evolution_4c3718",
    "target": "concept_governance_side",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-05-21_from-data-discovery-to-ai-the-evolution_4c3718",
+   "target": "concept_data_governance",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6850,13 +6886,13 @@
   },
   {
    "source": "ans_2025-05-13_balancing-off-the-shelf-and-custom-solut_8825a6",
-   "target": "concept_manual",
+   "target": "concept_data_quality",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2025-05-13_balancing-off-the-shelf-and-custom-solut_8825a6",
-   "target": "concept_quality",
+   "target": "concept_manual",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6874,13 +6910,13 @@
   },
   {
    "source": "ans_2025-04-28_exploring-nats-a-multi-paradigm-connecti_4fd9b9",
-   "target": "concept_cloud_native",
+   "target": "concept_data_access",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2025-04-12_simplifying-data-pipelines-with-durable_d6989f",
-   "target": "concept_problem",
+   "source": "ans_2025-04-28_exploring-nats-a-multi-paradigm-connecti_4fd9b9",
+   "target": "concept_cloud_native",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6903,18 +6939,6 @@
    "provenance": "tfidf"
   },
   {
-   "source": "ans_2025-03-24_bringing-ai-into-the-inner-loop-of-data_6fed79",
-   "target": "concept_process",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2025-03-16_astronomer-s-role-in-the-airflow-ecosyst_1fde63",
-   "target": "concept_enterprise",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
    "source": "ans_2025-03-16_astronomer-s-role-in-the-airflow-ecosyst_1fde63",
    "target": "concept_point_solution",
    "type": "ABOUT",
@@ -6928,13 +6952,25 @@
   },
   {
    "source": "ans_2025-03-08_accelerated-computing-in-modern-data-cen_a4ad46",
+   "target": "concept_data_platform",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-03-08_accelerated-computing-in-modern-data-cen_a4ad46",
    "target": "concept_area",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2025-02-26_the-future-of-data-engineering-ai-llms-a_202887",
-   "target": "concept_stack",
+   "target": "concept_modern_data",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2025-02-26_the-future-of-data-engineering-ai-llms-a_202887",
+   "target": "concept_data_stack",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -6958,7 +6994,7 @@
   },
   {
    "source": "ans_2025-01-13_csvs-will-never-die-and-oneschema-is-cou_c911ea",
-   "target": "concept_unstructured",
+   "target": "concept_unstructured_data",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7024,6 +7060,12 @@
   },
   {
    "source": "ans_2024-11-26_bridging-code-and-ui-in-data-orchestrati_282d03",
+   "target": "concept_data_engineering",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-11-26_bridging-code-and-ui-in-data-orchestrati_282d03",
    "target": "concept_practice",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -7060,13 +7102,7 @@
   },
   {
    "source": "ans_2024-11-11_an-opinionated-look-at-end-to-end-code-o_cf6dc0",
-   "target": "concept_quality",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-11-11_an-opinionated-look-at-end-to-end-code-o_cf6dc0",
-   "target": "concept_team",
+   "target": "concept_data_quality",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7077,8 +7113,20 @@
    "provenance": "tfidf"
   },
   {
+   "source": "ans_2024-11-11_an-opinionated-look-at-end-to-end-code-o_cf6dc0",
+   "target": "concept_data_team",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
    "source": "ans_2024-11-04_feldera-bridging-batch-and-streaming-wit_9153b5",
    "target": "concept_change",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-11-04_feldera-bridging-batch-and-streaming-wit_9153b5",
+   "target": "concept_existing_data",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7091,6 +7139,12 @@
   {
    "source": "ans_2024-11-04_feldera-bridging-batch-and-streaming-wit_9153b5",
    "target": "concept_streaming",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-10-13_the-role-of-python-in-shaping-the-future_8bdf19",
+   "target": "concept_data_stack",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7109,12 +7163,6 @@
   {
    "source": "ans_2024-10-13_the-role-of-python-in-shaping-the-future_8bdf19",
    "target": "concept_away",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-10-13_the-role-of-python-in-shaping-the-future_8bdf19",
-   "target": "concept_stack",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7138,7 +7186,7 @@
   },
   {
    "source": "ans_2024-09-23_scaling-airbyte-challenges-and-milestone_878d13",
-   "target": "concept_unstructured",
+   "target": "concept_unstructured_data",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7150,25 +7198,31 @@
   },
   {
    "source": "ans_2024-09-01_enhancing-data-accessibility-and-governa_aa233a",
+   "target": "concept_technology_stack",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-09-01_enhancing-data-accessibility-and-governa_aa233a",
    "target": "concept_machine_learning",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2024-09-01_enhancing-data-accessibility-and-governa_aa233a",
-   "target": "concept_engineer",
+   "target": "concept_data_platform",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-09-01_enhancing-data-accessibility-and-governa_aa233a",
+   "target": "concept_data_engineer",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2024-09-01_enhancing-data-accessibility-and-governa_aa233a",
    "target": "concept_usage",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-09-01_enhancing-data-accessibility-and-governa_aa233a",
-   "target": "concept_result",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7192,19 +7246,13 @@
   },
   {
    "source": "ans_2024-07-21_how-generative-ai-is-impacting-data-engi_34661f",
-   "target": "concept_application",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-07-21_how-generative-ai-is-impacting-data-engi_34661f",
    "target": "concept_machine_learning",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2024-07-21_how-generative-ai-is-impacting-data-engi_34661f",
-   "target": "concept_platform",
+   "target": "concept_data_engineering",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7222,12 +7270,6 @@
   },
   {
    "source": "ans_2024-07-13_the-role-of-product-managers-in-data-cen_62b7a8",
-   "target": "concept_based_approach",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-07-13_the-role-of-product-managers-in-data-cen_62b7a8",
    "target": "concept_organization",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -7240,13 +7282,13 @@
   },
   {
    "source": "ans_2024-07-08_neon-a-serverless-and-developer-friendly_c12590",
-   "target": "concept_engineer",
+   "target": "concept_data_engineer",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2024-06-30_improve-data-quality-through-engineering_22d3ba",
-   "target": "concept_platform",
+   "target": "concept_infra_team",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7276,7 +7318,13 @@
   },
   {
    "source": "ans_2024-06-16_being-data-driven-at-stripe-with-trino-a_c3c77d",
-   "target": "concept_catalog",
+   "target": "concept_data_catalog",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-06-09_x-ray-vision-for-your-flink-stream-proce_98431a",
+   "target": "concept_data_infrastructure",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7288,25 +7336,25 @@
   },
   {
    "source": "ans_2024-06-02_practical-first-steps-in-data-governance_38f3a5",
-   "target": "concept_catalog",
+   "target": "concept_data_quality",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2024-06-02_practical-first-steps-in-data-governance_38f3a5",
-   "target": "concept_quality",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-05-27_data-migration-strategies-for-large-scal_3c2137",
-   "target": "concept_process",
+   "target": "concept_data_catalog",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2024-05-27_data-migration-strategies-for-large-scal_3c2137",
    "target": "concept_manual",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-05-27_data-migration-strategies-for-large-scal_3c2137",
+   "target": "concept_process_data",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7354,7 +7402,7 @@
   },
   {
    "source": "ans_2024-04-14_designing-a-non-relational-database-engi_49e3fd",
-   "target": "concept_enterprise",
+   "target": "concept_data_governance",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7384,19 +7432,13 @@
   },
   {
    "source": "ans_2024-03-31_adding-anomaly-detection-and-observabili_8b3db7",
+   "target": "concept_data_observability",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-03-31_adding-anomaly-detection-and-observabili_8b3db7",
    "target": "concept_context",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-03-24_ship-smarter-not-harder-with-declarative_3bd719",
-   "target": "concept_happy",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-03-24_ship-smarter-not-harder-with-declarative_3bd719",
-   "target": "concept_governance",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7419,8 +7461,20 @@
    "provenance": "tfidf"
   },
   {
+   "source": "ans_2024-03-24_ship-smarter-not-harder-with-declarative_3bd719",
+   "target": "concept_modular_system",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
    "source": "ans_2024-03-17_reconciling-the-data-in-your-databases-w_b49403",
    "target": "concept_excited",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-03-17_reconciling-the-data-in-your-databases-w_b49403",
+   "target": "concept_data_engineering",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7432,19 +7486,19 @@
   },
   {
    "source": "ans_2024-03-17_reconciling-the-data-in-your-databases-w_b49403",
-   "target": "concept_application",
+   "target": "concept_modern_data",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2024-03-10_version-your-data-lakehouse-like-your-so_9803c4",
+   "target": "concept_modular_system",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
   {
    "source": "ans_2024-03-10_version-your-data-lakehouse-like-your-so_9803c4",
    "target": "concept_iceberg",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-03-03_when-and-how-to-conduct-an-ai-program_db0f39",
-   "target": "concept_pipeline",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7475,12 +7529,6 @@
   {
    "source": "ans_2024-02-25_find-out-about-the-technology-behind-the_d389e2",
    "target": "concept_focus",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2024-02-18_using-trino-and-iceberg-as-the-foundatio_12fd30",
-   "target": "concept_wrong",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7522,7 +7570,7 @@
   },
   {
    "source": "ans_2024-02-11_data-sharing-across-business-and-platfor_3debee",
-   "target": "concept_startup",
+   "target": "concept_data_infrastructure",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7558,7 +7606,7 @@
   },
   {
    "source": "ans_2024-01-22_modern-customer-data-platform-principles_77d012",
-   "target": "concept_stack",
+   "target": "concept_data_stack",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7600,6 +7648,12 @@
   },
   {
    "source": "ans_2023-12-11_run-your-own-anomaly-detection-for-your_6b96d2",
+   "target": "concept_biggest_challenge",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2023-12-11_run-your-own-anomaly-detection-for-your_6b96d2",
    "target": "concept_option",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -7607,12 +7661,6 @@
   {
    "source": "ans_2023-12-11_run-your-own-anomaly-detection-for-your_6b96d2",
    "target": "concept_focus",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-12-11_run-your-own-anomaly-detection-for-your_6b96d2",
-   "target": "concept_lineage",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7630,12 +7678,6 @@
   },
   {
    "source": "ans_2023-12-04_designing-data-transfer-systems-that-sca_f9b618",
-   "target": "concept_quality",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-12-04_designing-data-transfer-systems-that-sca_f9b618",
    "target": "concept_past",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -7648,7 +7690,7 @@
   },
   {
    "source": "ans_2023-11-27_addressing-the-challenges-of-component-i_b5b10b",
-   "target": "concept_happy",
+   "target": "concept_data_stack",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7660,13 +7702,7 @@
   },
   {
    "source": "ans_2023-11-20_unlocking-your-dbt-projects-with-practic_e639de",
-   "target": "concept_pipeline",
-   "type": "ABOUT",
-   "provenance": "tfidf"
-  },
-  {
-   "source": "ans_2023-11-06_shining-some-light-in-the-black-box-of-p_9fa8e8",
-   "target": "concept_result",
+   "target": "concept_data_engineer",
    "type": "ABOUT",
    "provenance": "tfidf"
   },
@@ -7690,6 +7726,12 @@
   },
   {
    "source": "ans_2023-10-30_surveying-the-market-of-database-product_9d0c67",
+   "target": "concept_data_observability",
+   "type": "ABOUT",
+   "provenance": "tfidf"
+  },
+  {
+   "source": "ans_2023-10-30_surveying-the-market-of-database-product_9d0c67",
    "target": "concept_database",
    "type": "ABOUT",
    "provenance": "tfidf"
@@ -7698,61 +7740,67 @@
    "source": "ans_2026-08-27_specialized-ai-for-data-engineers-inside_c1f76b",
    "target": "ans_2026-08-02_why-multi-agent-systems-need-shared-stat_f5c08f",
    "type": "SIMILAR_TO",
-   "weight": 0.16
-  },
-  {
-   "source": "ans_2025-11-09_the-ai-data-paradox-high-trust-in-models_ca8925",
-   "target": "ans_2023-12-11_run-your-own-anomaly-detection-for-your_6b96d2",
-   "type": "SIMILAR_TO",
-   "weight": 0.159
+   "weight": 0.156
   },
   {
    "source": "ans_2025-09-01_aligning-business-and-data-the-essential_78f785",
    "target": "ans_2023-12-11_run-your-own-anomaly-detection-for-your_6b96d2",
    "type": "SIMILAR_TO",
-   "weight": 0.179
+   "weight": 0.169
   },
   {
    "source": "ans_2025-09-01_aligning-business-and-data-the-essential_78f785",
    "target": "ans_2025-06-03_amazon-s3-the-backbone-of-modern-data-sy_2c2f78",
    "type": "SIMILAR_TO",
-   "weight": 0.162
+   "weight": 0.158
+  },
+  {
+   "source": "ans_2025-05-13_balancing-off-the-shelf-and-custom-solut_8825a6",
+   "target": "ans_2024-11-11_an-opinionated-look-at-end-to-end-code-o_cf6dc0",
+   "type": "SIMILAR_TO",
+   "weight": 0.181
   },
   {
    "source": "ans_2025-03-30_overcoming-redis-limitations-the-dragonf_1a2579",
    "target": "ans_2024-01-07_pushing-the-limits-of-scalability-and-us_aefd87",
    "type": "SIMILAR_TO",
-   "weight": 0.17
+   "weight": 0.167
   },
   {
    "source": "ans_2025-02-26_the-future-of-data-engineering-ai-llms-a_202887",
    "target": "ans_2024-03-17_reconciling-the-data-in-your-databases-w_b49403",
    "type": "SIMILAR_TO",
-   "weight": 0.178
+   "weight": 0.214
+  },
+  {
+   "source": "ans_2025-01-13_csvs-will-never-die-and-oneschema-is-cou_c911ea",
+   "target": "ans_2024-09-23_scaling-airbyte-challenges-and-milestone_878d13",
+   "type": "SIMILAR_TO",
+   "weight": 0.216
   },
   {
    "source": "ans_2024-12-01_the-art-of-database-selection-and-evolut_cfbfd8",
    "target": "ans_2024-04-21_making-email-better-with-ai-at-shortwave_4ac219",
    "type": "SIMILAR_TO",
-   "weight": 0.248
+   "weight": 0.246
+  },
+  {
+   "source": "ans_2024-11-11_an-opinionated-look-at-end-to-end-code-o_cf6dc0",
+   "target": "ans_2024-06-02_practical-first-steps-in-data-governance_38f3a5",
+   "type": "SIMILAR_TO",
+   "weight": 0.209
   },
   {
    "source": "ans_2024-10-06_build-your-data-transformations-faster-a_dacbaf",
    "target": "ans_2024-03-24_ship-smarter-not-harder-with-declarative_3bd719",
    "type": "SIMILAR_TO",
-   "weight": 0.166
-  },
-  {
-   "source": "ans_2024-09-23_scaling-airbyte-challenges-and-milestone_878d13",
-   "target": "ans_2023-11-20_unlocking-your-dbt-projects-with-practic_e639de",
-   "type": "SIMILAR_TO",
-   "weight": 0.161
+   "weight": 0.162
   },
   {
    "source": "ans_2024-06-09_x-ray-vision-for-your-flink-stream-proce_98431a",
    "target": "ans_2024-03-31_adding-anomaly-detection-and-observabili_8b3db7",
    "type": "SIMILAR_TO",
-   "weight": 0.171
+   "weight": 0.152
   }
  ]
 }

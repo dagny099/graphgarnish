@@ -32,10 +32,10 @@
    "Shane Gibson"
   ],
   "node_types": {
-   "answer": 168,
-   "episode": 352,
-   "entity": 78,
    "person": 291,
+   "episode": 352,
+   "answer": 168,
+   "entity": 78,
    "question": 1
   },
   "link_types": {
@@ -45,7 +45,7 @@
    "GAVE": 156,
    "MENTIONS": 229,
    "RECOMMENDS": 118,
-   "SIMILAR_TO": 51
+   "SIMILAR_TO": 50
   }
  },
  "nodes": [
@@ -2422,7 +2422,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/53392e31-1cf1-41b9-99fd-b387002e9e34/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 4
   },
   {
    "id": "ent_jb_bloom",
@@ -2599,7 +2599,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/59e1f852-ac72-406a-8a6e-b387002ec016/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 5
+   "degree": 6
   },
   {
    "id": "person_ian_macomer",
@@ -3528,7 +3528,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/5fefd60d-6fa4-456a-91cf-b387002fa54e/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 7
+   "degree": 8
   },
   {
    "id": "person_shane_gibson",
@@ -4135,7 +4135,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/827b1bdf-d687-44a1-8776-b38700304610/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 5
   },
   {
    "id": "person_brian_tionil",
@@ -4277,7 +4277,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/4102476f-e087-4b20-8531-b38700305f31/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 4
   },
   {
    "id": "ep_2023-09-14_tim-and-juan-rant-from-amsterdam-where-i_c5ef85",
@@ -4452,7 +4452,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/d6b19e82-6cd2-4edc-84ce-b38700307b74/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "ent_samaya_raman",
@@ -4505,7 +4505,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/fe644968-f237-4797-b287-b3870030797a/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 7
   },
   {
    "id": "ep_2023-08-17_juan-and-tim-rant-about-ai-and-chatting_603b85",
@@ -4647,7 +4647,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/028ce088-ab6e-4cdd-a07b-b38700309520/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 12
+   "degree": 11
   },
   {
    "id": "person_moham_arif",
@@ -5235,7 +5235,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/b9ed5c1b-e91a-42ae-bb7b-b38700310173/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 6
+   "degree": 5
   },
   {
    "id": "person_tyler_cowan",
@@ -5303,7 +5303,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/c18788c8-9664-459a-abfd-b38700310adb/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 8
+   "degree": 9
   },
   {
    "id": "person_michael_bronstein",
@@ -7616,7 +7616,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/ae375005-5cb4-48f4-9091-b38700338ae1/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 10
+   "degree": 9
   },
   {
    "id": "ent_knowledge_graph_conference",
@@ -9182,7 +9182,7 @@
    "confidence": 1.0,
    "transcript_source": "whisper",
    "audio_url": "https://traffic.omny.fm/d/clips/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/934aa633-b519-4a95-bb4d-b3870035591f/audio.mp3?utm_source=Podcast&in_playlist=46398967-49a1-45c7-9af5-b387002de875",
-   "degree": 4
+   "degree": 6
   },
   {
    "id": "ent_ceo_of_intelligent_business_strategy",
@@ -16048,25 +16048,25 @@
    "source": "ans_2026-04-02_the-wrong-mandate-why-boards-set-data-ai_d103e7",
    "target": "ans_2021-12-16_please-be-quiet-the-machines-are-talking_83b762",
    "type": "SIMILAR_TO",
-   "weight": 0.186
+   "weight": 0.226
   },
   {
    "source": "ans_2026-03-19_the-data-hygienist-with-thais-cooke_0655ef",
    "target": "ans_2025-01-23_data-teams-are-strategic-not-just-techni_9ff3a5",
    "type": "SIMILAR_TO",
-   "weight": 0.161
-  },
-  {
-   "source": "ans_2026-02-19_shift-left-everything-how-ontology-event_e56a7c",
-   "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
-   "type": "SIMILAR_TO",
-   "weight": 0.211
+   "weight": 0.15
   },
   {
    "source": "ans_2026-02-19_shift-left-everything-how-ontology-event_e56a7c",
    "target": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
    "type": "SIMILAR_TO",
    "weight": 0.209
+  },
+  {
+   "source": "ans_2026-02-19_shift-left-everything-how-ontology-event_e56a7c",
+   "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
+   "type": "SIMILAR_TO",
+   "weight": 0.207
   },
   {
    "source": "ans_2026-02-05_stop-chasing-ai-hype-start-counting-doll_0d54cc",
@@ -16078,31 +16078,31 @@
    "source": "ans_2026-01-29_all-things-data-lineage-with-dr-irina-st_236309",
    "target": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
    "type": "SIMILAR_TO",
-   "weight": 0.247
+   "weight": 0.239
   },
   {
    "source": "ans_2025-12-17_building-ai-agents-with-lena-hall_519a55",
    "target": "ans_2022-10-13_data-empathy-you-either-got-it-or-you-do_8ca928",
    "type": "SIMILAR_TO",
-   "weight": 0.203
+   "weight": 0.193
   },
   {
    "source": "ans_2025-11-19_netflix-s-unified-data-architecture-mode_f9adb1",
    "target": "ans_2024-11-21_we-have-agency-over-ai-with-ethan-mollic_76ddb4",
    "type": "SIMILAR_TO",
-   "weight": 0.177
-  },
-  {
-   "source": "ans_2025-04-17_most-data-teams-are-a-waste-of-resources_1a38c6",
-   "target": "ans_2024-11-28_stop-talking-about-data-governance-and-j_f957d9",
-   "type": "SIMILAR_TO",
-   "weight": 0.165
+   "weight": 0.174
   },
   {
    "source": "ans_2025-04-17_most-data-teams-are-a-waste-of-resources_1a38c6",
    "target": "ans_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
    "type": "SIMILAR_TO",
-   "weight": 0.152
+   "weight": 0.171
+  },
+  {
+   "source": "ans_2025-04-17_most-data-teams-are-a-waste-of-resources_1a38c6",
+   "target": "ans_2024-11-28_stop-talking-about-data-governance-and-j_f957d9",
+   "type": "SIMILAR_TO",
+   "weight": 0.16
   },
   {
    "source": "ans_2025-03-20_data-contracts-data-products-data-mesh-w_59074e",
@@ -16114,7 +16114,7 @@
    "source": "ans_2025-03-20_data-contracts-data-products-data-mesh-w_59074e",
    "target": "ans_2021-09-16_how-to-think-about-data-value-w-lars-alb_b73064",
    "type": "SIMILAR_TO",
-   "weight": 0.164
+   "weight": 0.16
   },
   {
    "source": "ans_2025-01-30_want-to-be-data-and-ai-driven-start-with_b0e089",
@@ -16123,22 +16123,22 @@
    "weight": 0.159
   },
   {
-   "source": "ans_2024-10-24_why-we-need-to-focus-on-knowledge-manage_4679c2",
-   "target": "ans_2023-04-27_what-is-the-dna-of-a-data-organization-w_ce5664",
+   "source": "ans_2024-10-03_data-quality-the-key-to-genai-success-wi_cea74a",
+   "target": "ans_2021-05-20_knowledge-is-power-knowledge-management_f97d7c",
    "type": "SIMILAR_TO",
-   "weight": 0.156
+   "weight": 0.199
   },
   {
    "source": "ans_2024-09-05_building-diversity-in-data-with-dawn-car_b36e51",
    "target": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
    "type": "SIMILAR_TO",
-   "weight": 0.152
+   "weight": 0.15
   },
   {
    "source": "ans_2024-04-04_data-security-and-ai-how-to-get-them-on_f9f836",
    "target": "ans_2021-03-18_identity-graph-the-new-customer-360_91ce16",
    "type": "SIMILAR_TO",
-   "weight": 0.15
+   "weight": 0.158
   },
   {
    "source": "ans_2024-03-11_when-business-goals-and-data-strategies_ad11b8",
@@ -16153,22 +16153,28 @@
    "weight": 0.289
   },
   {
+   "source": "ans_2024-02-26_don-t-lift-and-shift-data-governance-to_e078c2",
+   "target": "ans_2023-10-05_generative-ai-data-products-and-business_5b334f",
+   "type": "SIMILAR_TO",
+   "weight": 0.155
+  },
+  {
    "source": "ans_2024-01-30_productivity-is-not-performance-with-san_bef991",
    "target": "ans_2023-07-13_takeaways-modeling-and-semantics-are-mor_934e29",
    "type": "SIMILAR_TO",
-   "weight": 0.27
+   "weight": 0.266
   },
   {
    "source": "ans_2024-01-30_productivity-is-not-performance-with-san_bef991",
    "target": "ans_2023-07-20_people-and-data-w-tom-redman-the-data-do_c61d0c",
    "type": "SIMILAR_TO",
-   "weight": 0.155
+   "weight": 0.152
   },
   {
    "source": "ans_2024-01-19_the-data-mesh-terclass_995cfc",
    "target": "ans_2022-05-19_a-roadmap-to-data-mesh-success-w-omar-kh_fec187",
    "type": "SIMILAR_TO",
-   "weight": 0.153
+   "weight": 0.179
   },
   {
    "source": "ans_2023-10-26_llms-retrieval-augmented-generation-know_7c42fc",
@@ -16177,28 +16183,16 @@
    "weight": 0.154
   },
   {
-   "source": "ans_2023-09-21_business-value-on-the-meandatastreets-wi_52645e",
-   "target": "ans_2023-08-24_from-technical-to-business-data-strategy_e3736f",
-   "type": "SIMILAR_TO",
-   "weight": 0.153
-  },
-  {
-   "source": "ans_2023-09-21_business-value-on-the-meandatastreets-wi_52645e",
-   "target": "ans_2023-08-24_takeaways-from-technical-to-business-dat_522e13",
-   "type": "SIMILAR_TO",
-   "weight": 0.151
-  },
-  {
    "source": "ans_2023-09-07_data-that-doesn-t-drive-results-is-usele_dcde17",
    "target": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
    "type": "SIMILAR_TO",
-   "weight": 0.333
+   "weight": 0.329
   },
   {
    "source": "ans_2023-09-07_data-that-doesn-t-drive-results-is-usele_dcde17",
    "target": "ans_2022-01-06_will-2022-change-how-we-think-about-data_afb04f",
    "type": "SIMILAR_TO",
-   "weight": 0.288
+   "weight": 0.276
   },
   {
    "source": "ans_2023-08-24_takeaways-from-technical-to-business-dat_522e13",
@@ -16210,31 +16204,31 @@
    "source": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
    "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
    "type": "SIMILAR_TO",
-   "weight": 0.931
+   "weight": 0.914
   },
   {
    "source": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
    "target": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
    "type": "SIMILAR_TO",
-   "weight": 0.25
+   "weight": 0.246
   },
   {
    "source": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
    "target": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
    "type": "SIMILAR_TO",
-   "weight": 0.252
+   "weight": 0.244
   },
   {
    "source": "ans_2023-07-13_takeaways-modeling-and-semantics-are-mor_934e29",
    "target": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
    "type": "SIMILAR_TO",
-   "weight": 0.605
+   "weight": 0.597
   },
   {
    "source": "ans_2023-07-13_takeaways-modeling-and-semantics-are-mor_934e29",
    "target": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
    "type": "SIMILAR_TO",
-   "weight": 0.256
+   "weight": 0.253
   },
   {
    "source": "ans_2023-07-13_modeling-and-semantics-are-more-importan_77d353",
@@ -16252,37 +16246,37 @@
    "source": "ans_2023-05-29_updated-release-automating-data-governan_e48f12",
    "target": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
    "type": "SIMILAR_TO",
-   "weight": 0.17
+   "weight": 0.182
   },
   {
    "source": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
    "target": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
    "type": "SIMILAR_TO",
-   "weight": 0.243
-  },
-  {
-   "source": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
-   "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
-   "type": "SIMILAR_TO",
-   "weight": 0.209
+   "weight": 0.237
   },
   {
    "source": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
    "target": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
    "type": "SIMILAR_TO",
-   "weight": 0.207
+   "weight": 0.205
   },
   {
-   "source": "ans_2022-11-10_where-are-the-semantics-in-the-data-dict_b68636",
+   "source": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
    "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
    "type": "SIMILAR_TO",
-   "weight": 0.156
+   "weight": 0.203
   },
   {
    "source": "ans_2022-11-10_where-are-the-semantics-in-the-data-dict_b68636",
    "target": "ans_2023-08-03_is-data-a-first-class-citizen-in-your-co_6fc4b1",
    "type": "SIMILAR_TO",
-   "weight": 0.155
+   "weight": 0.158
+  },
+  {
+   "source": "ans_2022-11-10_where-are-the-semantics-in-the-data-dict_b68636",
+   "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
+   "type": "SIMILAR_TO",
+   "weight": 0.157
   },
   {
    "source": "ans_2022-10-20_takeaways-with-loris-marini_b8a55a",
@@ -16294,13 +16288,13 @@
    "source": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
    "target": "ans_2022-01-06_will-2022-change-how-we-think-about-data_afb04f",
    "type": "SIMILAR_TO",
-   "weight": 0.387
+   "weight": 0.376
   },
   {
    "source": "ans_2022-09-01_your-thoughts-become-action-going-from-t_4ddba3",
    "target": "ans_2022-09-01_takeways-with-roel-and-valentijn_890a19",
    "type": "SIMILAR_TO",
-   "weight": 0.847
+   "weight": 0.859
   },
   {
    "source": "ans_2022-08-25_season-4-premiere-takeaways_c3f6df",
@@ -16309,34 +16303,34 @@
    "weight": 0.229
   },
   {
-   "source": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
-   "target": "ans_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
+   "source": "ans_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
+   "target": "ans_2022-05-05_automating-the-enterprise-live-from-the_b485a0",
    "type": "SIMILAR_TO",
-   "weight": 0.243
+   "weight": 0.232
   },
   {
    "source": "ans_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
    "target": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
    "type": "SIMILAR_TO",
-   "weight": 0.175
-  },
-  {
-   "source": "ans_2022-04-14_s3e14-takeaways-with-chad-sanderson_4a1094",
-   "target": "ans_2023-08-02_takeaways-is-data-a-first-class-citizen_92c76c",
-   "type": "SIMILAR_TO",
-   "weight": 0.169
+   "weight": 0.167
   },
   {
    "source": "ans_2021-08-26_can-t-spell-buzzwords-without-bs-w-kirk_44d43e",
    "target": "ans_2021-02-11_do-you-test-your-data_2a680c",
    "type": "SIMILAR_TO",
-   "weight": 0.215
+   "weight": 0.2
   },
   {
    "source": "ans_2021-08-04_season-two-kickoff-w-dj-patil_88e4e1",
    "target": "ans_2022-09-03_catalog-cocktails-bonus-episode-with-joh_47ed34",
    "type": "SIMILAR_TO",
    "weight": 0.185
+  },
+  {
+   "source": "ans_2021-05-20_knowledge-is-power-knowledge-management_f97d7c",
+   "target": "ans_2023-04-20_kg-llm-happily-ever-after-w-tony-seale-k_858045",
+   "type": "SIMILAR_TO",
+   "weight": 0.163
   }
  ]
 }
