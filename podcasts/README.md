@@ -51,7 +51,7 @@ carry speaker labels, which the answer cutter relies on.
 | `id`, `question` | the question as you would write it |
 | `cues` | phrases the host says when asking. Matched after lowercasing and dropping punctuation. A reworded question sharing enough of its words is also found (`fuzzy_threshold`, default 0.75), but only on episodes with a known guest: on the full Catalog & Cocktails run, matches below 0.75 or on guestless episodes were mostly the hosts talking among themselves |
 | `answer_cues` | phrases the guest says when starting *this* answer, counted only in a sentence's first six words ("As far as people, ..."). Use them when the host asks several questions in one breath and the guest answers in order. When set and none is heard, the episode is reported unanswered rather than given the neighbouring answer |
-| `stop_cues` | phrases that end the answer: the next answer's opening, the next question, the sign-off |
+| `stop_cues` | phrases that end the answer: the next question, the sign-off. The other questions' cues and answer cues end it too, so these need only cover what those miss |
 | `answer_kind` | `people` when the answer names people ("who should we invite next?"). Names become person nodes with `RECOMMENDS` links from the guest; a named person who was also a guest is one node with both roles |
 | `occurrence` | `last` (default) or `first`, when the cue appears more than once |
 | `max_answer_words`, `host_break_words` | limits on the cut answer |
@@ -70,3 +70,10 @@ carry speaker labels, which the answer cutter relies on.
 
 Every answer keeps its start time and audio URL, so any row can be checked by
 listening to it.
+
+Graph settings (`graph` under each question) affect only the last stage. Try
+them against the committed answers without any transcripts:
+
+```bash
+python3 tools/qa_graph.py podcasts/catalog-and-cocktails.json --regraph --report
+```

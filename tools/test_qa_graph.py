@@ -163,6 +163,11 @@ for (ep, qid), expect in want.items():
     others = [v for (e, q2), v in want.items() if e == ep and q2 != qid]
     check(f"{ep}: the {qid} answer", expect in got and not any(o in got for o in others), repr(got))
 
+sents = qa.sentences([{"text": t, "speaker": ""} for t in [
+    "What's your advice?", "Keep learning every day.", "And for invite, I'd say Ada Park.", "Thanks so much."]])
+got = qa.answer_span(sents, qa.locate(sents, cc["advice"], set()), cc["advice"], set(), [],
+                     ["for invite", "as far as people"])[0]
+check("another answer's opener ends this one", got == "Keep learning every day.", repr(got))
 hints = qa.near_misses(qa.sentences([{"text": t, "speaker": ""} for t in [
     "Great chat.", "So who do you reckon we get on the show next?", "Thanks everyone."]]), cc["invite-next"])
 check("an unanswered episode records the sentences closest to the question",
@@ -213,7 +218,10 @@ check("a people question makes no concept nodes by default",
 check("an open question makes no RECOMMENDS links",
       not any(l["type"] == "RECOMMENDS" for l in advice["links"]))
 concepts = {n["name"] for n in advice["nodes"] if n["type"] == "concept"}
-check("shared ideas become concept nodes", {"knowledge graphs", "governance"} <= concepts, str(concepts))
+check("shared ideas become concept nodes", {"knowledge graph", "governance"} <= concepts, str(concepts))
+toks = qa.tokens_for_tfidf("My advice: tell stories with knowledge graphs. Nobody funds a graph.", {"advice"})
+check("word pairs never span a full stop, and plurals fold", "knowledge graph" in toks and "story" in toks
+      and not any(t.startswith("graph nobody") for t in toks) and "advice" not in toks, str(toks))
 check("every concept connects at least two answers", all(
     sum(1 for l in advice["links"] if l["target"] == n["id"]) >= 2
     for n in advice["nodes"] if n["type"] == "concept"))

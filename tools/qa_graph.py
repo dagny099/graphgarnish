@@ -206,6 +206,9 @@ def load_config(path: Path | None, args) -> tuple[dict, list[dict]]:
             sys.exit(f"no question with id {args.question!r} in {path}")
     raw_q = {q.get("id"): q for q in raw.get("questions", [])}
     for q in questions:
+        # Words of the other questions: an answer that uses them has usually
+        # run on into the next one, so they are not shared ideas.
+        q["_sibling_questions"] = [o["question"] for o in questions if o is not q]
         given = raw_q.get(q["id"], {}).get("graph", {})
         if q["answer_kind"] == "people" and "concepts_per_answer" not in given:
             # Answers to "who should we invite?" are mostly names; recurring
@@ -710,6 +713,10 @@ found work works working worked call called help helps helped mean means meant l
 able sure pretty kinda super totally whatever else different same many much more most less least
 real really true yes okay awesome amazing wonderful interesting cool nice love loved lovely fun
 guess seen saw see sees looking look looks looked hard easy things thing kind sort part whole
+whether together single share shares shared question questions answer answers stuff anybody
+understand already way ways one two three solve possible source topic topics follow listen learn
+anyone someone probably maybe actually certainly especially usually generally basically particular
+somebody everybody person yeah yep nope gosh wow huh hmm oops sort sorts lots bunch couple
 """.split())
 
 
@@ -820,7 +827,8 @@ def opens_with(text: str, phrases: list[str], within: int = 6) -> bool:
 
 
 def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str],
-                siblings: list[str] | None = None) -> tuple[str, float | None, str]:
+                siblings: list[str] | None = None,
+                sibling_openers: list[str] | None = None) -> tuple[str, float | None, str]:
     """The guest's words after the question, until the next recurring
     question, a substantial host turn, or the word limit. Returns (text,
     start seconds, why it stopped); empty text when the answer could not be
@@ -834,6 +842,9 @@ def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str],
     own = [norm(c) for c in q["cues"] if norm(c)]
     answer_cues = [norm(c) for c in q["answer_cues"] if norm(c)]
     siblings = [c for c in (norm(x) for x in (siblings or [])) if c and c not in own]
+    # How guests open the other answers ("As far as people, ..."): when one
+    # opens a sentence, this answer is over.
+    openers = [c for c in (norm(x) for x in (sibling_openers or [])) if c and c not in answer_cues]
     labelled = any(s.speaker for s in sents)
 
     def asking(t: str) -> bool:
@@ -882,6 +893,9 @@ def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str],
         if matches(t, own):
             begin = j + 1
             break
+        if not stacked and opens_with(t, openers, within=3):
+            # Reached the next answer: this one began right after the question.
+            break
         if not host_line and opens_with(t, answer_cues) and not opens_with(t, siblings):
             begin = j
             break
@@ -898,7 +912,7 @@ def answer_span(sents: list[Sentence], loc: Location, q: dict, hosts: set[str],
     host_run_words = 0
     while i < len(sents):
         s = sents[i]
-        if words and matches(s.text, stops + siblings):
+        if words and (matches(s.text, stops + siblings) or opens_with(s.text, openers, within=3)):
             reason = "stop cue"
             break
         if words and matches(s.text, own) and not matches(s.text, answer_cues):
@@ -1171,9 +1185,31 @@ def find_guests(ep: Episode, segs: list[dict], podcast: dict, hosts: set[str],
 
 # ------------------------------------------------------------------- graph
 
-def tokens_for_tfidf(text: str) -> list[str]:
-    words = content_words(text)
-    return words + [f"{a} {b}" for a, b in zip(words, words[1:])]
+def fold(word: str) -> str:
+    """One key for 'LLMs' and 'LLM', 'stories' and 'story'."""
+    if len(word) > 4 and word.endswith("ies"):
+        return word[:-3] + "y"
+    if len(word) > 3 and word.endswith("s") and not word.endswith(("ss", "us", "is")):
+        return word[:-1]
+    return word
+
+
+CLAUSE_SPLIT = re.compile(r"[.,;:!?()\u2014\u2013]+|\s-\s")
+
+
+def tokens_for_tfidf(text: str, drop: set[str] = frozenset()) -> list[str]:
+    """Content words, plus pairs of content words adjacent within a clause.
+    Pairing after removing stopwords, or across a full stop, would invent
+    phrases from words that were never next to each other."""
+    words, pairs = [], []
+    for clause in CLAUSE_SPLIT.split(text):
+        raw = [re.sub(r"'s?$", "", w) for w in norm(clause).split()]
+        keep = [w not in STOPWORDS and fold(w) not in STOPWORDS and len(w) > 2
+                and w not in drop and fold(w) not in drop for w in raw]
+        words += [fold(w) for w, k in zip(raw, keep) if k]
+        pairs += [f"{fold(a)} {fold(b)}" for a, b, ka, kb in zip(raw, raw[1:], keep, keep[1:])
+                  if ka and kb and fold(a) != fold(b)]
+    return words + pairs
 
 
 def tfidf(docs: list[list[str]]) -> tuple[list[dict[str, float]], Counter]:
@@ -1221,7 +1257,11 @@ def build_graph(podcast: dict, q: dict, rows: list[dict], hosts: set[str]) -> di
 
     # Concepts: words and word pairs that recur across answers but are not
     # everywhere. LLM themes, when present, are used as given.
-    vecs, df = tfidf([tokens_for_tfidf(r["answer"]) for r in answered])
+    # The question's own words recur in answers because guests repeat the
+    # question ("my advice is"), not because the answers share an idea.
+    asked_text = " ".join([q["question"], *q.get("_sibling_questions", [])])
+    asked = {fold(w) for w in content_words(asked_text)} | set(content_words(asked_text))
+    vecs, df = tfidf([tokens_for_tfidf(r["answer"], asked) for r in answered])
     n = max(1, len(answered))
     gcfg = q["graph"]
     concept_ok = {t for t, c in df.items()
@@ -1271,7 +1311,7 @@ def build_graph(podcast: dict, q: dict, rows: list[dict], hosts: set[str]) -> di
             name, kind = (ent["name"], ent.get("kind", "other")) if isinstance(ent, dict) else (ent, "other")
             if norm(name) in person_keys:
                 continue
-            xid = add({"id": node_id("ent", name), "type": "entity", "name": name, "kind": kind})
+            xid = add({"id": node_id("ent", fold(norm(name))), "type": "entity", "name": name, "kind": kind})
             link(aid, xid, "MENTIONS")
         for theme in r["themes"]:
             cid = add({"id": node_id("concept", theme), "type": "concept", "name": theme})
@@ -1282,17 +1322,21 @@ def build_graph(podcast: dict, q: dict, rows: list[dict], hosts: set[str]) -> di
         if r["themes"] or gcfg["concepts_per_answer"] <= 0:
             continue
         # A two-word phrase ("data governance") says more than either word.
+        candidates = {t for t in vec if t in concept_ok}
+        # A word yields to a recurring phrase that contains it: "knowledge
+        # graph" says more than "graph".
+        in_pairs = {w for t in candidates if " " in t for w in t.split()}
         ranked = sorted(((w * (1.5 if " " in t else 1.0), t) for t, w in vec.items()
-                         if t in concept_ok), reverse=True)
+                         if t in candidates and t not in in_pairs), reverse=True)
         chosen: list[str] = []
         for _, term in ranked:
-            # Keep "data governance" and drop "governance" once it is covered.
-            if any(term in c.split() or c in term.split() for c in chosen):
-                continue
             chosen.append(term)
             if len(chosen) >= gcfg["concepts_per_answer"]:
                 break
+        named = {fold(norm(x["name"] if isinstance(x, dict) else x)) for x in r["entities"] + r["people"]}
         for term in chosen:
+            if term in named:
+                continue
             cid = add({"id": node_id("concept", term), "type": "concept", "name": term})
             link(f"ans_{r['key']}", cid, "ABOUT", provenance="tfidf")
 
@@ -1368,7 +1412,8 @@ def excerpt_for_llm(sents: list[Sentence], loc: Location | None, words: int = 15
 
 def run_question(podcast: dict, q: dict, episodes: list[Episode], store: TranscriptStore,
                  llm: LLM | None, guest_graph: dict, hosts: set[str],
-                 siblings: list[str] | None = None) -> list[dict]:
+                 siblings: list[str] | None = None,
+                 sibling_openers: list[str] | None = None) -> list[dict]:
     rows, themes = [], Counter()
     guest_exclude = hosts | {h.split()[0] for h in hosts}
     for idx, ep in enumerate(episodes, 1):
@@ -1396,7 +1441,7 @@ def run_question(podcast: dict, q: dict, episodes: list[Episode], store: Transcr
             loc = None
             row["reason"] = "reworded match on an episode with no known guest"
         if loc:
-            text, start, why = answer_span(sents, loc, q, hosts, siblings)
+            text, start, why = answer_span(sents, loc, q, hosts, siblings, sibling_openers)
             row.update(answer=text, start=start, method=loc.method,
                        confidence=loc.score, reason=why, found=bool(text.strip()))
             if not text.strip() and why == "end of transcript":
@@ -1545,6 +1590,8 @@ def main(argv=None) -> int:
     ap.add_argument("--cache-dir", type=Path, default=CACHE_DIR)
     ap.add_argument("--out-dir", type=Path, help="default: qa/<podcast>-<question>")
     ap.add_argument("--report", action="store_true")
+    ap.add_argument("--regraph", action="store_true",
+                    help="rebuild graph.json from the existing answers.json, without transcripts")
     args = ap.parse_args(argv)
 
     podcast, questions = load_config(args.config, args)
@@ -1555,6 +1602,20 @@ def main(argv=None) -> int:
     if args.no_llm:
         podcast["llm"]["mode"] = "off"
     hosts = {h.lower() for h in podcast["hosts"]}
+
+    if args.regraph:
+        # Graph settings (concepts, similarity) change nothing upstream, so
+        # they can be tuned from the committed answers alone.
+        for q in questions:
+            out_dir = args.out_dir or QA_DIR / f"{podcast['id']}-{q['id']}"
+            rows = json.loads((out_dir / "answers.json").read_text(encoding="utf-8"))
+            graph = build_graph(podcast, q, rows, hosts)
+            write_outputs(out_dir, graph, rows)
+            print(f"rebuilt {out_dir}/graph.json from answers.json", file=sys.stderr)
+            if args.report:
+                report(graph, rows)
+        write_index(QA_DIR)
+        return 0
 
     episodes = load_episodes(podcast, args.feed_file, args.save_feed)
     if args.sample and args.sample < len(episodes):
@@ -1582,7 +1643,8 @@ def main(argv=None) -> int:
 
     for q in questions:
         siblings = [c for other in questions if other is not q for c in other["cues"]]
-        rows = run_question(podcast, q, episodes, store, llm, guest_graph, hosts, siblings)
+        openers = [c for other in questions if other is not q for c in other["answer_cues"]]
+        rows = run_question(podcast, q, episodes, store, llm, guest_graph, hosts, siblings, openers)
         graph = build_graph(podcast, q, rows, hosts)
         out_dir = args.out_dir if (args.out_dir and len(questions) == 1) else \
             (args.out_dir or QA_DIR) / f"{podcast['id']}-{q['id']}"
