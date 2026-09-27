@@ -280,6 +280,17 @@ ep = qa.Episode(key="k", title="T", date="2026-01-01")
 check("a cached fetch is re-parsed on read, so parser fixes apply to it",
       store.get(ep)["segments"][0]["speaker"] == "Ann Lee")
 
+print("feed lookup by name")
+real_get = qa.http_get
+qa.http_get = lambda url, timeout=60: (json.dumps({"results": [
+    {"collectionName": "Data Engineering Weekly", "feedUrl": "https://x/wrong.xml"},
+    {"collectionName": "Data Engineering Podcast", "feedUrl": "https://x/right.xml"}]}), "application/json")
+try:
+    check("the directory result whose title matches the name wins",
+          qa.lookup_feed("Data Engineering Podcast") == "https://x/right.xml")
+finally:
+    qa.http_get = real_get
+
 print("config")
 podcast, questions = qa.load_config(DATA / "config.json", qa.argparse.Namespace(
     feed=None, ask=None, question="advice", cue=None, stop_cue=None, answer_kind=None))

@@ -15,6 +15,7 @@ the command line with --ask.
     python3 tools/qa_graph.py podcasts/catalog-and-cocktails.json --question advice
     python3 tools/qa_graph.py --feed URL --ask "What are you reading?" \\
         --cue "what are you reading" --out-dir qa/my-show
+    python3 tools/qa_graph.py --podcast "Lenny's Podcast" --ask "..." --sample 8
 
 The pipeline runs in five stages, each of which records what it did so a
 wrong answer can be traced back to its source:
@@ -176,6 +177,10 @@ def load_config(path: Path | None, args) -> tuple[dict, list[dict]]:
     podcast = deep_merge(DEFAULT_PODCAST, raw.get("podcast", {}))
     if args.feed:
         podcast["feed"] = args.feed
+    if getattr(args, "podcast", None):
+        podcast["name"] = args.podcast
+        if not args.feed and not (path and raw.get("podcast", {}).get("feed")):
+            podcast["feed"] = ""
     if not podcast["id"]:
         podcast["id"] = slug(podcast["name"] or (path.stem if path else "podcast"))
     if path:
@@ -199,7 +204,13 @@ def load_config(path: Path | None, args) -> tuple[dict, list[dict]]:
         questions = [q for q in questions if q["id"] == args.question]
         if not questions:
             sys.exit(f"no question with id {args.question!r} in {path}")
+    raw_q = {q.get("id"): q for q in raw.get("questions", [])}
     for q in questions:
+        given = raw_q.get(q["id"], {}).get("graph", {})
+        if q["answer_kind"] == "people" and "concepts_per_answer" not in given:
+            # Answers to "who should we invite?" are mostly names; recurring
+            # words in them are filler, not shared ideas.
+            q["graph"]["concepts_per_answer"] = 0
         if not q["id"]:
             q["id"] = slug(q["question"], 30)
         if not q["cues"]:
@@ -280,12 +291,34 @@ def parse_items(xml_text: str) -> list[Episode]:
     return out
 
 
+ITUNES_SEARCH = "https://itunes.apple.com/search?media=podcast&entity=podcast&limit=5&term="
+
+
+def lookup_feed(name: str) -> str:
+    """A podcast's RSS feed from its name, via Apple's public podcast
+    directory. The closest title wins; the choice is printed so it can be
+    pinned in the config."""
+    raw, _ = http_get(ITUNES_SEARCH + urllib.parse.quote(name))
+    results = [r for r in json.loads(raw).get("results", []) if r.get("feedUrl")]
+    if not results:
+        return ""
+    want = norm(name)
+    best = max(results, key=lambda r: (norm(r.get("collectionName", "")) == want,
+                                       want in norm(r.get("collectionName", ""))))
+    print(f"FEED LOOKUP: {name!r} -> {best.get('collectionName')!r} {best['feedUrl']} "
+          f"(pin this as podcast.feed)", file=sys.stderr)
+    return best["feedUrl"]
+
+
 def load_episodes(podcast: dict, feed_file: Path | None, save_feed: Path | None) -> list[Episode]:
     if feed_file:
         text = feed_file.read_text(encoding="utf-8")
     else:
+        if not podcast["feed"] and podcast["name"]:
+            podcast["feed"] = lookup_feed(podcast["name"])
         if not podcast["feed"]:
-            sys.exit("no feed: set podcast.feed in the config or pass --feed / --feed-file")
+            sys.exit("no feed: set podcast.feed or podcast.name in the config, "
+                     "or pass --feed / --podcast / --feed-file")
         pages, url, seen = [], podcast["feed"], set()
         for _ in range(bn.MAX_FEED_PAGES):
             if url in seen:
@@ -666,6 +699,13 @@ oh hey alright sure great good thank thanks everybody everyone somebody someone 
 make makes made take takes see look looking come comes came need needs time times will
 us let because 's re ve ll don doesn didn isn aren wasn weren wouldn couldn shouldn gotta wanna
 back still around always never every lot today now then first last next new bit little big
+want wants wanted give gives giving gave bring brings brought everything anything nothing trying try
+tried years year important set sets moving move moves put puts keep keeps start started starting
+use used using thinking thought feel feels felt talk talking talked tell told ask asked asking find
+found work works working worked call called help helps helped mean means meant let lets doing done
+able sure pretty kinda super totally whatever else different same many much more most less least
+real really true yes okay awesome amazing wonderful interesting cool nice love loved lovely fun
+guess seen saw see sees looking look looks looked hard easy things thing kind sort part whole
 """.split())
 
 
@@ -893,7 +933,7 @@ January February March April May June July August September October November Dec
 Ask Get Check Try Have Bring Read Follow Call Reach Look Listen Watch Go Hmm Wow Love Awesome Cool
 Fantastic Anyone Everyone Somebody Someone Folks Start Stop Keep Don't Do Make Be Find Learn Think
 Know Remember Always Never Please Let Let's Obviously Interesting Nice Since Does Did Is Are Was
-Were Can Could Would Should Will Here There's Here's Dr PhD""".split())
+Were Can Could Would Should Here There's Here's Dr PhD Now I've I'm I'd I'll Um Uh""".split())
 # A run containing one of these is an organisation or a thing, not a person.
 ORG_WORDS = set("""Inc Inc. LLC Ltd Corp Corporation Company Co Labs Lab Group Guild Institute
 University College School Foundation Association Society Council Agency Bank Capital Partners
@@ -946,7 +986,8 @@ def mentions(text: str, exclude: set[str], known_people: dict[str, str],
             continue
         toks[-1] = re.sub(r"['\u2019]s$", "", toks[-1])
         run = " ".join(toks).rstrip(".")
-        if len(run) < 3 or run.lower() in exclude or toks[0].split("'")[0] in CAP_STOP:
+        if len(run) < 3 or run.lower() in exclude or any(
+                t in CAP_STOP or t.split("'")[0] in CAP_STOP for t in toks):
             continue
         snapped = snap(run, known_people)
         if snapped:
@@ -1236,7 +1277,9 @@ def build_graph(podcast: dict, q: dict, rows: list[dict], hosts: set[str]) -> di
     for r, vec in zip(answered, vecs):
         if r["themes"]:
             continue
-        ranked = sorted(((w, t) for t, w in vec.items() if t in concept_ok), reverse=True)
+        # A two-word phrase ("data governance") says more than either word.
+        ranked = sorted(((w * (1.5 if " " in t else 1.0), t) for t, w in vec.items()
+                         if t in concept_ok), reverse=True)
         chosen: list[str] = []
         for _, term in ranked:
             # Keep "data governance" and drop "governance" once it is covered.
@@ -1481,6 +1524,7 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("config", nargs="?", type=Path, help="podcasts/<name>.json")
     ap.add_argument("--feed", help="RSS feed URL (overrides the config)")
+    ap.add_argument("--podcast", help="podcast name; its feed is looked up in Apple's directory")
     ap.add_argument("--feed-file", type=Path, help="read a saved feed instead of fetching")
     ap.add_argument("--save-feed", type=Path, help="keep the fetched feed here")
     ap.add_argument("--question", help="run only the question with this id")

@@ -2,27 +2,54 @@
   "podcast": {
     "id": "data-engineering-podcast",
     "name": "Data Engineering Podcast",
-    "feed": "https://www.dataengineeringpodcast.com/feed/mp3/",
-    "hosts": ["Tobias Macey"],
+    "feed": "",
+    "hosts": [
+      "Tobias Macey"
+    ],
     "episodes": {
-      "skip_types": ["trailer", "bonus"],
+      "skip_types": [
+        "trailer",
+        "bonus"
+      ],
       "limit": 120,
       "_note": "700+ episodes; the most recent 120 keep a full speech-to-text run near an hour on 16 runners. Raise or remove limit to go further back."
     },
     "transcripts": {
-      "sources": ["feed", "whisper"],
-      "whisper": {"model": "base.en", "compute_type": "int8", "from_end_minutes": 10}
+      "sources": [
+        "feed",
+        "whisper"
+      ],
+      "whisper": {
+        "model": "base.en",
+        "compute_type": "int8",
+        "from_end_minutes": 10
+      }
     },
-    "guests": {"from": ["speakers", "title", "description"]}
+    "guests": {
+      "from": [
+        "speakers",
+        "title",
+        "description"
+      ]
+    },
+    "_feed_note": "Left blank on purpose: the feed is looked up by name in Apple's podcast directory, and the run log prints the URL it found (FEED LOOKUP) so it can be pinned here."
   },
   "questions": [
     {
       "id": "biggest-gap",
       "question": "What do you see as the biggest gap in the tooling or technology for data management today?",
-      "cues": ["biggest gap in the tooling", "biggest gap in tooling", "gap in the tooling or technology",
-               "biggest gap in the tooling or technology"],
-      "stop_cues": ["thank you very much for taking the time", "thank you for taking the time",
-                    "thank you for listening", "thanks for listening"],
+      "cues": [
+        "biggest gap in the tooling",
+        "biggest gap in tooling",
+        "gap in the tooling or technology",
+        "biggest gap in the tooling or technology"
+      ],
+      "stop_cues": [
+        "thank you very much for taking the time",
+        "thank you for taking the time",
+        "thank you for listening",
+        "thanks for listening"
+      ],
       "answer_kind": "open",
       "max_answer_words": 220
     }

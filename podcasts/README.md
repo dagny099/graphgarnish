@@ -12,11 +12,13 @@ spread across the catalogue before running it on all of them:
 python3 tools/qa_graph.py podcasts/my-show.json --sample 8 --report
 ```
 
-Or skip the config and ask one question of any feed:
+Or skip the config and ask one question of any show, by feed or by name:
 
 ```bash
 python3 tools/qa_graph.py --feed https://example.com/feed.xml \
     --ask "What are you reading?" --cue "what are you reading" --report
+python3 tools/qa_graph.py --podcast "Data Engineering Podcast" \
+    --ask "What is the biggest gap in the tooling?" --cue "biggest gap in the tooling" --sample 8
 ```
 
 ## `podcast`
@@ -24,7 +26,7 @@ python3 tools/qa_graph.py --feed https://example.com/feed.xml \
 | key | meaning |
 | --- | --- |
 | `id`, `name` | `id` names the output folders and the transcript cache |
-| `feed` | the RSS feed; every page of a paginated feed is followed |
+| `feed` | the RSS feed; every page of a paginated feed is followed. Leave it blank to look the feed up by `name` in Apple's podcast directory; the run prints the URL it found (`FEED LOOKUP`) so it can be pinned |
 | `hosts` | full names. Hosts are never counted as guests or as people named in an answer, and a long host turn ends a guest's answer |
 | `episodes.skip_title_regex` | titles to skip, such as companion clips |
 | `episodes.skip_types` | `itunes:episodeType` values to skip (default `trailer`, `bonus`) |
