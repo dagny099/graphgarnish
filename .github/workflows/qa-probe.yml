@@ -1,0 +1,32 @@
+name: QA probe (temporary)
+on:
+  push:
+    branches: ["claude/**"]
+    paths: [".github/workflows/qa-probe.yml"]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Look for transcripts in the feed
+        run: |
+          FEED='https://www.omnycontent.com/d/playlist/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/46398967-49a1-45c7-9af5-b387002de875/podcast.rss'
+          curl -sSL -A 'GraphGarnish/1.0' "$FEED" -o feed.xml
+          wc -c feed.xml
+          echo '--- namespaces'; grep -oE 'xmlns:[a-z]+="[^"]+"' feed.xml | sort -u
+          echo '--- podcast:* tags'; grep -oE '<podcast:[a-zA-Z]+' feed.xml | sort | uniq -c
+          echo '--- transcript tags'; grep -oE '<podcast:transcript[^>]*>' feed.xml | head -8
+          echo '--- first item'; python3 - <<'PY'
+          import re
+          t=open('feed.xml',encoding='utf-8').read()
+          m=re.search(r'<item[\s>].*?</item>',t,re.S)
+          print(m.group(0)[:4000] if m else 'no item')
+          PY
+          for fmt in $(grep -oE '<podcast:transcript[^>]*>' feed.xml | grep -oE 'type="[^"]+"' | sort -u); do echo "type: $fmt"; done
+          URL=$(grep -oE '<podcast:transcript[^>]*>' feed.xml | head -1 | grep -oE 'url="[^"]+"' | cut -d'"' -f2 | sed 's/&amp;/\&/g')
+          echo "--- fetching $URL"
+          if [ -n "$URL" ]; then
+            curl -sSL "$URL" -o t1.txt; wc -c t1.txt; echo '--- head'; head -c 3000 t1.txt; echo; echo '--- tail'; tail -c 6000 t1.txt
+          fi
+          echo '--- item links'; grep -oE '<link>[^<]+</link>' feed.xml | head -3
