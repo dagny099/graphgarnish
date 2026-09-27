@@ -20,10 +20,10 @@
    "Steve Whitla"
   ],
   "node_types": {
-   "entity": 101,
    "person": 203,
-   "episode": 352,
    "answer": 179,
+   "episode": 352,
+   "entity": 101,
    "concept": 227,
    "question": 1
   },

@@ -23,10 +23,10 @@
   ],
   "node_types": {
    "person": 199,
-   "entity": 134,
-   "concept": 178,
-   "episode": 352,
    "answer": 133,
+   "episode": 352,
+   "concept": 178,
+   "entity": 134,
    "question": 1
   },
   "link_types": {
