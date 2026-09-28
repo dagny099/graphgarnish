@@ -3,24 +3,24 @@
     "generated_by": "tools/build_network.py",
     "source": "seed+feed",
     "counts": {
-      "episode": 377,
-      "person": 186,
-      "organization": 103,
+      "episode": 379,
+      "person": 187,
+      "organization": 104,
       "topic": 22
     },
     "provenance": {
       "episode": {
-        "feed": 175,
+        "feed": 177,
         "curated": 202
       },
       "organization": {
         "curated": 60,
-        "inferred": 42,
+        "inferred": 43,
         "verified": 1
       },
       "person": {
         "curated": 141,
-        "inferred": 42,
+        "inferred": 43,
         "verified": 3
       },
       "topic": {
@@ -30,19 +30,19 @@
     "link_provenance": {
       "AFFILIATED_WITH": {
         "curated": 61,
-        "inferred": 46,
+        "inferred": 47,
         "verified": 1
       },
       "COVERS": {
-        "inferred": 557
+        "inferred": 561
       },
       "GUEST_ON": {
-        "inferred": 101,
+        "inferred": 102,
         "curated": 146,
         "verified": 3
       },
       "TAKEAWAY_OF": {
-        "inferred": 64
+        "inferred": 65
       }
     },
     "episodes_needing_review": [
@@ -4259,6 +4259,30 @@
       "episode": "5"
     },
     {
+      "id": "ep_20260925_ai_inherits_the_business",
+      "name": "AI Inherits the Business Choices You Never Made with David Krauza",
+      "type": "episode",
+      "date": "2026-09-25",
+      "is_full": true,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/ai-inherits-the-business-choices-you-never-made-with-david-krauza",
+      "summary": "AI doesn't create your problems. It inherits the business choices you never made and the results nobody owns. David Krauza, VP of Data Strategy and Governance at Comcast, joins Juan and Tim to make the case that most \"data problems\" aren't data problems at all. They are accountability problems, definition problems, assumption problems, and what-are-we-even-measuring problems. The fix isn't better ",
+      "season": "12",
+      "episode": "6"
+    },
+    {
+      "id": "ep_20260925_ai_inherits_the_business_ta",
+      "name": "TAKEAWAY - AI Inherits the Business Choices You Never Made with David Krauza",
+      "type": "episode",
+      "date": "2026-09-25",
+      "is_full": false,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/takeaway-ai-inherits-the-business-choices-you-never-made-with-david-krauza",
+      "summary": "This is the takeaway episode with David Krauza, VP of Data Strategy and Governance at Comcast who makes the case that AI doesn't create your problems, it inherits the business choices you never made and the results nobody owns. David joins Juan and Tim and discuss the accountability problems, definition problems, assumption problems, and what-are-we-even-measuring problems. See omnystudio.com/list",
+      "season": "12",
+      "episode": "6"
+    },
+    {
       "id": "person_aakriti_agrawal",
       "name": "Aakriti Agrawal",
       "type": "person",
@@ -4551,6 +4575,12 @@
       "name": "Danny Bickson",
       "type": "person",
       "source": "curated"
+    },
+    {
+      "id": "person_david_krauza",
+      "name": "David Krauza",
+      "type": "person",
+      "source": "inferred"
     },
     {
       "id": "person_dawn_carter",
@@ -5501,6 +5531,12 @@
       "source": "curated"
     },
     {
+      "id": "org_data_strategy",
+      "name": "Data Strategy",
+      "type": "organization",
+      "source": "inferred"
+    },
+    {
       "id": "org_datakitchen",
       "name": "DataKitchen",
       "type": "organization",
@@ -6327,6 +6363,12 @@
     {
       "source": "person_danielle_oberdier",
       "target": "org_dikayo_data",
+      "type": "AFFILIATED_WITH",
+      "provenance": "inferred"
+    },
+    {
+      "source": "person_david_krauza",
+      "target": "org_data_strategy",
       "type": "AFFILIATED_WITH",
       "provenance": "inferred"
     },
@@ -10117,6 +10159,30 @@
       "provenance": "inferred"
     },
     {
+      "source": "ep_20260925_ai_inherits_the_business",
+      "target": "topic_business_value_roi",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20260925_ai_inherits_the_business",
+      "target": "topic_data_governance",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20260925_ai_inherits_the_business",
+      "target": "topic_data_strategy",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20260925_ai_inherits_the_business",
+      "target": "topic_data_teams_org",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
       "source": "person_aakriti_agrawal",
       "target": "ep_20230608_takeaways_with_aakriti_a",
       "type": "GUEST_ON",
@@ -10505,6 +10571,12 @@
       "target": "ep_20230928_from_london_to_san_franc",
       "type": "GUEST_ON",
       "provenance": "curated"
+    },
+    {
+      "source": "person_david_krauza",
+      "target": "ep_20260925_ai_inherits_the_business",
+      "type": "GUEST_ON",
+      "provenance": "inferred"
     },
     {
       "source": "person_dawn_carter",
@@ -11997,6 +12069,12 @@
     {
       "source": "ep_20260916_harvest_now_decrypt_late_ta",
       "target": "ep_20260916_harvest_now_decrypt_late",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20260925_ai_inherits_the_business_ta",
+      "target": "ep_20260925_ai_inherits_the_business",
       "type": "TAKEAWAY_OF",
       "provenance": "inferred"
     }
