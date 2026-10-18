@@ -865,12 +865,31 @@
             showTopics: true,
             fullEpisodesOnly: true,
             showInferred: true,
-            yearStart: 2021,
-            yearEnd: 2026,
+            yearStart: 2021,   // placeholders; setYearBounds() replaces both
+            yearEnd: 2026,     // with the data's own range before first render
             minGuestEpisodes: 1,
             minOrgGuests: 1,
             searchQuery: ''
         };
+
+        // The year range present in the loaded data. Hard-coding it hid every
+        // 2020 episode: the filter started at 2021 while the title banner,
+        // which reads the data, said 2020-2026.
+        let dataYears = null;
+
+        function setYearBounds(minYear, maxYear) {
+            if (!Number.isFinite(minYear) || !Number.isFinite(maxYear)) return;
+            dataYears = { min: minYear, max: maxYear };
+            filters.yearStart = minYear;
+            filters.yearEnd = maxYear;
+            ['year-start', 'year-end'].forEach(id => {
+                const input = document.getElementById(id);
+                input.min = minYear;
+                input.max = maxYear;
+            });
+            document.getElementById('year-start').value = minYear;
+            document.getElementById('year-end').value = maxYear;
+        }
         
         function scrollToSidebarSection(sectionId) {
             // Open sidebar if collapsed
@@ -1021,6 +1040,7 @@
             document.getElementById('network-title').textContent = 'Catalog & Cocktails';
             document.getElementById('network-subtitle').textContent = 
                 `${episodes.length} Episodes • ${guests.length} Guests • ${minYear}-${maxYear}`;
+            setYearBounds(minYear, maxYear);
         }
         
         // Auto-load sample data on page load
@@ -1183,8 +1203,8 @@
             filters.showTopics = true;
             filters.fullEpisodesOnly = true;
             filters.showInferred = true;
-            filters.yearStart = 2021;
-            filters.yearEnd = 2026;
+            filters.yearStart = dataYears ? dataYears.min : filters.yearStart;
+            filters.yearEnd = dataYears ? dataYears.max : filters.yearEnd;
             filters.minGuestEpisodes = 1;
             filters.minOrgGuests = 1;
             filters.searchQuery = '';
@@ -1197,8 +1217,8 @@
             document.getElementById('show-topics').checked = true;
             document.getElementById('full-episodes-only').checked = true;
             document.getElementById('show-inferred').checked = true;
-            document.getElementById('year-start').value = 2021;
-            document.getElementById('year-end').value = 2026;
+            document.getElementById('year-start').value = filters.yearStart;
+            document.getElementById('year-end').value = filters.yearEnd;
             document.getElementById('min-guest-episodes').value = 1;
             if (minOrgGuestsInput) minOrgGuestsInput.value = 1;
             document.getElementById('search-input').value = '';

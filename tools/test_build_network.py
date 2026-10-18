@@ -614,6 +614,74 @@ check("a node keeps the strongest provenance of its edges",
           and pnodes[l["source"]]["name"] == "Barr Moses")
       == SOURCE_RANK[by_name["Barr Moses"]["source"]])
 
+print("\nguest-named companion clips (2022-23 titling)")
+from build_network import GUEST_CLIP_RE, fold, guest_clip_parent  # noqa: E402
+for title in ["Takeaways with Brett Hurt",
+              "S3E9 Takeaways with Arjun Narayan",
+              "S3E5 Takeways with Laura Madsen",
+              "Season Three Premier Takeaways with Sarah Catanzaro",
+              "Takeaways of EPISODE 100 w/ Fraser Harris"]:
+    check(f"companion: {title!r}", is_takeaway(title, "full"))
+for title in ["Gartner Data & Analytics Summit UK 2025 Takeaways with Rebecca O'Kill",
+              "Takeaways from Gartner D&A with Juan and Tim",
+              "Season 4 Premiere Takeaways",
+              "Bonus Episode: Juan\u2019s Trip Takeaways from MIT CDOIQ",
+              "It's Friday, Juan and Tim rant with Data Day Texas takeaways"]:
+    check(f"still a full episode: {title!r}", not is_takeaway(title, "full"))
+check("fold strips accents and curly apostrophes",
+      fold("Fran\u00e7ois  O\u2019Neill") == "francois o'neill")
+
+FULLS = {
+    "a": {"title": "Automating the Enterprise w/ Fran\u00e7ois Scharffe",
+          "date": "2022-05-05", "guests": []},
+    "b": {"title": "UPDATED RELEASE: Automating Data Governance",
+          "date": "2023-05-29", "guests": ["Ben Clinch"]},
+    "c": {"title": "Something else entirely", "date": "2022-05-05", "guests": []},
+}
+check("pairs on an accented guest name in the parent title",
+      guest_clip_parent("S3E17 Takeaways with Francois Scharffe", "2022-05-05", FULLS) == "a")
+check("pairs on the parent's guest list across a few days",
+      guest_clip_parent("Takeaways with Ben Clinch from BT Group", "2023-05-25", FULLS) == "b")
+check("no parent beyond the date window",
+      guest_clip_parent("Takeaways with Ben Clinch", "2023-04-01", FULLS) is None)
+check("two equally near candidates give no parent rather than a guess",
+      guest_clip_parent("Takeaways with Pat Doe", "2024-01-10", {
+          "x": {"title": "One w/ Pat Doe", "date": "2024-01-09", "guests": []},
+          "y": {"title": "Two w/ Pat Doe", "date": "2024-01-11", "guests": []},
+      }) is None)
+
+
+def feed_item(title, date, desc="", guid=None):
+    return {"title": title, "date": date, "description": desc, "url": "",
+            "guid": guid or title, "episode_type": "full", "season": "", "number": ""}
+
+
+clip_graph = build({"nodes": [], "links": []}, [
+    feed_item("Does our understanding of data bias our analytics outcomes?", "2022-06-02",
+              "Juan and Tim talk bias."),
+    feed_item("Takeaways with Ciaran Dynes", "2022-06-02",
+              "Takeaways with Ciaran Dynes, Chief Product Officer at Matillion."),
+], TOPICS, VERIFIED)
+cn = {n["id"]: n for n in clip_graph["nodes"]}
+cep = {n["name"]: n for n in clip_graph["nodes"] if n["type"] == "episode"}
+check("a guest-named clip is not a full episode",
+      cep["Takeaways with Ciaran Dynes"]["is_full"] is False)
+check("the clip is attached to the only guest-less episode that day",
+      any(l["type"] == "TAKEAWAY_OF"
+          and l["target"] == cep["Does our understanding of data bias our analytics outcomes?"]["id"]
+          for l in clip_graph["links"]))
+check("the clip's guest moves to the parent, as a guess",
+      [(cn[l["source"]]["name"], l["provenance"]) for l in clip_graph["links"]
+       if l["type"] == "GUEST_ON"] == [("Ciaran Dynes", "inferred")]
+      and all(l["target"] == cep["Does our understanding of data bias our analytics outcomes?"]["id"]
+              for l in clip_graph["links"] if l["type"] == "GUEST_ON"))
+check("the parent leaves the review queue once it has a guest",
+      not any(r["title"].startswith("Does our understanding")
+              for r in clip_graph["meta"]["episodes_needing_review"]))
+check("the parent borrows the employer named in the clip's description",
+      [cn[l["target"]]["name"] for l in clip_graph["links"]
+       if l["type"] == "AFFILIATED_WITH"] == ["Matillion"])
+
 print("\ninputs are never outputs")
 from build_network import DEFAULT_SEED, DEFAULT_TOPICS, DEFAULT_VERIFIED, OUTPUTS  # noqa: E402
 check("no input path is also an output path",

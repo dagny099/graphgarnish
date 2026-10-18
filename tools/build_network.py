@@ -135,6 +135,59 @@ def same_date_match(key: str, date: str, records: dict, companion: bool) -> str 
     return best
 
 
+CLIP_PARENT_DAYS = 7
+
+
+def fold(text: str) -> str:
+    """Lowercase, strip accents, straighten apostrophes, collapse spaces, so
+    "François Scharffe" in one title finds "Francois Scharffe" in another."""
+    t = unicodedata.normalize("NFKD", text or "")
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    t = t.replace("\u2019", "'").replace("\u2018", "'")
+    return re.sub(r"\s+", " ", t).strip().lower()
+
+
+def guest_clip_parent(title: str, date: str, full_records: dict) -> str | None:
+    """Find the full episode a guest-named companion clip summarizes.
+
+    "Takeaways with Brett Hurt" shares no opening with "The Data
+    Entrepreneur's Essentials w/ Brett Hurt", so prefix matching cannot pair
+    them. The guest and the date can: the parent is the nearest full episode
+    within CLIP_PARENT_DAYS whose title or guest list names one of the clip's
+    guests. Two candidates equally near return None, because a wrong parent
+    would move a guest onto the wrong episode, which is worse than none."""
+    if not date or not GUEST_CLIP_RE.match(title):
+        return None
+    names = []
+    for raw in guests_from_title(title, companion=True):
+        person, _ = strip_affiliation(raw)
+        if person:
+            names.append(fold(person))
+    if not names:
+        return None
+    try:
+        base = datetime.date.fromisoformat(date)
+    except ValueError:
+        return None
+    hits = []
+    for key, rec in full_records.items():
+        try:
+            gap = abs((datetime.date.fromisoformat(rec["date"]) - base).days)
+        except (ValueError, TypeError):
+            continue
+        if gap > CLIP_PARENT_DAYS:
+            continue
+        hay = " | ".join([fold(rec["title"])] + [fold(g) for g in rec.get("guests", [])])
+        if any(n in hay for n in names):
+            hits.append((gap, key))
+    if not hits:
+        return None
+    hits.sort()
+    if len(hits) > 1 and hits[0][0] == hits[1][0]:
+        return None
+    return hits[0][1]
+
+
 def prefix_match(key: str, candidates) -> str | None:
     """Find the candidate that is the same episode as `key`.
 
@@ -174,14 +227,30 @@ def strip_takeaway_prefix(title: str, companion: bool = False) -> str:
     return title.strip()
 
 
+# Companions from 2022-23 name the guest instead of repeating the episode's
+# title, and carry episodeType "full": "Takeaways with Brett Hurt",
+# "S3E9 Takeaways with Arjun Narayan", "Season Three Premier Takeaways with
+# Sarah Catanzaro", "Takeaways of EPISODE 100 w/ Fraser Harris", and one
+# misspelt "S3E5 Takeways with Laura Madsen". The pattern is anchored at the
+# start and needs "with" or "w/" straight after the word, so real episodes
+# such as "Takeaways from Gartner ..." and "Gartner Data & Analytics Summit
+# UK 2025 Takeaways with Rebecca O'Kill" stay full episodes.
+GUEST_CLIP_RE = re.compile(
+    r"^\s*(?:S\d+E\d+\s+|Season\s+\w+\s+Premiere?\s+)?"
+    r"Take?a?ways?\s+(?:of\s+episode\s+\d+\s+)?(?:with|w/)\s+", re.I)
+
+
 def is_takeaway(title: str, episode_type: str = "") -> bool:
     """Is this the short companion clip rather than the episode itself?
 
-    Two independent signals, because neither is reliable alone: older
-    companions carry <itunes:episodeType>full</itunes:episodeType> and are
-    only identifiable by their title prefix, while the newest ones drop the
-    prefix separator and are only identifiable by episodeType."""
+    Three signals, because none is reliable alone: older companions carry
+    <itunes:episodeType>full</itunes:episodeType> and are only identifiable
+    by their title prefix, the 2022-23 run names the guest instead of the
+    episode (GUEST_CLIP_RE), and the newest ones drop the prefix separator
+    and are only identifiable by episodeType."""
     if TAKEAWAY_RE.match(title):
+        return True
+    if GUEST_CLIP_RE.match(title):
         return True
     if episode_type.strip().lower() == "trailer":
         return True
@@ -879,6 +948,16 @@ def build(seed: dict, feed_items: list[dict], taxonomy: dict,
                 if not rec["hosts_only"]:
                     review.append({"date": rec["date"], "title": rec["title"],
                                    "reason": "no guest found in title or description"})
+        elif not rec["guests"] and companion and GUEST_CLIP_RE.match(rec["title"]):
+            # A guest-named clip is sometimes the only place the guest is
+            # spelled out ("Takeaways with Ciaran Dynes" for an episode whose
+            # own title names nobody). Keep its guests so pairing can match
+            # on them and hand them to a parent that has none.
+            found = clean_guest_list(guests_from_title(rec["title"], companion),
+                                     rec, "inferred")
+            if found:
+                rec["guests"] = found
+                rec["inferred"] = True
 
     nodes, links = [], []
     seen_nodes, seen_links = set(), set()
@@ -949,12 +1028,40 @@ def build(seed: dict, feed_items: list[dict], taxonomy: dict,
     # Attach each companion clip to the full episode it summarizes, so it
     # stops standing in the graph as a second copy of that episode.
     full_keys = [k for (k, c) in records if not c]
+    full_records = {k: records[(k, False)] for k in full_keys}
     parent_of: dict[tuple[str, bool], str] = {}
+    # Clips by the parent they were paired with. A clip's description often
+    # names the guest's employer when the parent's does not ("Benn Stancil
+    # from Mode"), so the parent can borrow it below.
+    clips_of: dict[str, list[dict]] = defaultdict(list)
     for (key, companion) in records:
         if not companion:
             continue
         hit = prefix_match(key, full_keys)
+        clip = records[(key, companion)]
+        if hit is None:
+            hit = guest_clip_parent(clip["title"], clip["date"], full_records)
+        if hit is None and clip["guests"] and GUEST_CLIP_RE.match(clip["title"]):
+            # The guest's name is nowhere on the parent, which is why the parent
+            # has no guest either. Accept the parent only when it is the single
+            # guest-less, non-host episode published the same day (give or take
+            # one), so the clip's guest cannot land on the wrong episode.
+            window = near_dates(clip["date"])
+            bare = [k for k, r in full_records.items()
+                    if r["date"] in window and not r["guests"]
+                    and not r.get("hosts_only")]
+            if len(bare) == 1:
+                hit = bare[0]
+        if hit and clip["guests"] and not full_records[hit]["guests"] \
+                and not full_records[hit].get("hosts_only"):
+            parent = full_records[hit]
+            parent["guests"] = list(clip["guests"])
+            parent["guest_source"] = dict(clip.get("guest_source", {}))
+            parent["inferred"] = True
+            review[:] = [r for r in review
+                         if (r["title"], r["date"]) != (parent["title"], parent["date"])]
         if hit:
+            clips_of[hit].append(clip)
             parent_of[(key, companion)] = node_id[(hit, False)]
             add_link(node_id[(key, companion)], node_id[(hit, False)],
                      "TAKEAWAY_OF", "inferred")
@@ -986,6 +1093,12 @@ def build(seed: dict, feed_items: list[dict], taxonomy: dict,
                     org, osrc = rec["guest_orgs"][person], "inferred"
                 else:
                     org, osrc = org_from_description(rec["description"], person), "inferred"
+                    if not org and full:
+                        for clip in clips_of.get(key, []):
+                            org = (clip.get("guest_orgs", {}).get(person)
+                                   or org_from_description(clip["description"], person))
+                            if org:
+                                break
                 org = clean_org(org)
                 renamed = org_renames.get(org.lower())
                 if renamed:

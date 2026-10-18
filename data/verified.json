@@ -63,6 +63,7 @@
     "_note": "Decisions I could not make for you. Move an entry up into the real key above once you have decided, or delete it.",
     "Valentijn (Vopak)": "Appeared as 'Valentijn of Vopak' and 'Roel and Valentijn'. Both are now dropped, because a single first name cannot be told apart from a job title by any rule. If you know the full names, add them to person_org and I will wire them back in.",
     "BAML / Elemental / Private AI": "Kept as organizations. They read like real companies to me but I could not confirm from the feed alone. Move to drop_organization if they are concepts.",
-    "the Wharton School of the University of Pennsylvania": "Kept. Real institution, but the name is long and inconsistent with the other org names. Add to rename_organization as 'Wharton' if you want it shortened."
+    "the Wharton School of the University of Pennsylvania": "Kept. Real institution, but the name is long and inconsistent with the other org names. Add to rename_organization as 'Wharton' if you want it shortened.",
+    "TAKEAWAYS from People and Data w/ Tom Redman, The Data Doc": "Reads as the companion clip of 'People and Data w/ Tom Redman, The Data Doc', published a day later, so Tom Redman still counts as a repeat guest. No rule claims it: real episodes also start 'Takeaways from' (the Gartner rants). If it is a clip, it needs a way to mark one by title; verified.json has no key for that yet."
   }
 }
