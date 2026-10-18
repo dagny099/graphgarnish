@@ -389,7 +389,8 @@ Transcripts can also come from a folder or a per-episode web page.
 **What is kept, and where.** Speech-to-text is the expensive step, so its
 output is kept twice. The Actions cache is the fast copy, but GitHub drops an
 entry after seven days unused, and a branch cannot read `main`'s. The durable
-copy is a private repository (`dagny099/graphgarnish-transcripts` by default)
+copy is a private repository (`dagny099/transcripts` by default, meant to
+hold transcripts for other projects too; this one writes under `podcasts/`)
 holding every transcript and every full answer; `tools/transcript_store.sh`
 pulls it before a run and pushes new work after. The public repo gets only a
 60-word excerpt of each answer (`publish.answer_words` in the config), with
