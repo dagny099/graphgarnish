@@ -53,7 +53,7 @@ Perfect for podcast producers, researchers, or anyone who wants to understand th
 
 ### Option 1: Try the Demo
 1. Visit **[graph-gist.com](https://graph-gist.com)**
-2. The demo loads with 162 episodes from *Catalog & Cocktails*
+2. The demo loads every episode of *Catalog & Cocktails* since May 2020, refreshed weekly from its feed
 3. Use filters and search to explore
 
 ### Option 2: Use Your Own Data
@@ -364,7 +364,8 @@ podcasts/<show>.json     the feed, the hosts, where transcripts come from,
 qa/<show>-<question>/    graph.json    answers, guests, people and things named,
                                        shared ideas, similar answers
                          answers.json  one row per episode, with the reason
-                                       when no answer was found
+                                       when no answer was found; answers cut
+                                       to a 60-word excerpt plus audio link
                          answers.csv   the same, for a spreadsheet
 ```
 
@@ -380,9 +381,30 @@ publishes one. Catalog & Cocktails does not (Omny reports
 `HasPublishedTranscript: false`, and the show site carries descriptions only),
 so its config falls back to local speech-to-text with faster-whisper, run on
 the last 20 minutes of each episode, where the closing questions live.
-`.github/workflows/qa-graph.yml` does this on 16 parallel runners and keeps
-the transcripts in the Actions cache, so a weekly run transcribes only new
-episodes. Transcripts can also come from a folder or a per-episode web page.
+`.github/workflows/qa-graph.yml` does this on 16 parallel runners. It costs
+GitHub runner time only: Whisper runs on the runner itself, and nothing calls
+an Anthropic service unless the optional Claude pass below is turned on.
+Transcripts can also come from a folder or a per-episode web page.
+
+**What is kept, and where.** Speech-to-text is the expensive step, so its
+output is kept twice. The Actions cache is the fast copy, but GitHub drops an
+entry after seven days unused, and a branch cannot read `main`'s. The durable
+copy is a private repository (`dagny099/graphgarnish-transcripts` by default)
+holding every transcript and every full answer; `tools/transcript_store.sh`
+pulls it before a run and pushes new work after. The public repo gets only a
+60-word excerpt of each answer (`publish.answer_words` in the config), with
+its start time and audio link, so a reader can hear the rest.
+
+To turn the private store on:
+
+1. Create the private repository, with a README so it has a `main` branch.
+2. Make a fine-grained personal access token with *Contents: read and write*
+   on that one repository.
+3. Add it to this repository as the Actions secret `TRANSCRIPTS_TOKEN`. To use
+   another repository name, also set the Actions variable `TRANSCRIPTS_REPO`.
+
+Without the secret the workflow still works, keeping transcripts in the
+Actions cache only.
 
 **Answers.** The host's phrasing (`cues`) finds the question. When several
 questions are asked together and answered in order, the guest's own phrasing
@@ -405,6 +427,9 @@ is re-read by Claude, which returns a summary, a verbatim quote, typed names,
 and short themes. Themes already used are passed back in, so one idea keeps
 one label across episodes. Without a key, names and concepts come from the
 heuristics above; every answer records which path produced it (`method`).
+This is billed to the Anthropic API account behind the key. As written it
+re-reads every episode on every run, so cache its results before leaving it
+on for the weekly schedule (see `docs/TODO.md`).
 
 ---
 

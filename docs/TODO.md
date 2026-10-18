@@ -114,6 +114,10 @@ inherits whatever noise the match phrases in `data/topics.json` carry.
   alone). Each shape is a check in `tools/test_qa_graph.py`. Read the
   `reason` column of `qa/*/answers.json` after each full run: `answer cue not
   found` rows usually mean a new phrasing to add to `answer_cues`.
+- **The Claude pass re-reads every episode on every run.** Cache its result per
+  episode, question, model and prompt (next to the transcripts in the private
+  store) before leaving it on for the weekly schedule; otherwise each weekly run
+  pays for a few hundred calls again.
 - **The Claude pass is built but has not run against the live API.** It is
   tested against a mocked transport only. Add an `ANTHROPIC_API_KEY` repository
   secret to turn it on in the workflow; if the API rejects `fallbacks` together

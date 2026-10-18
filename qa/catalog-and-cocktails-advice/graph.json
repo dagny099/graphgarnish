@@ -18,6 +18,51 @@
    "Lindsay Murphy",
    "Steve Whitla"
   ],
+  "named_then_guest": [],
+  "most_named": [
+   {
+    "name": "business",
+    "type": "concept",
+    "answers": 6
+   },
+   {
+    "name": "learning",
+    "type": "concept",
+    "answers": 6
+   },
+   {
+    "name": "problem",
+    "type": "concept",
+    "answers": 6
+   },
+   {
+    "name": "read",
+    "type": "concept",
+    "answers": 6
+   },
+   {
+    "name": "afraid",
+    "type": "concept",
+    "answers": 5
+   },
+   {
+    "name": "day",
+    "type": "concept",
+    "answers": 5
+   },
+   {
+    "name": "job",
+    "type": "concept",
+    "answers": 5
+   },
+   {
+    "name": "world",
+    "type": "concept",
+    "answers": 5
+   }
+  ],
+  "first_date": "2020-05-13",
+  "last_date": "2026-09-25",
   "node_types": {
    "answer": 179,
    "concept": 219,
@@ -72,7 +117,7 @@
    "guests": [
     "David Krauza"
    ],
-   "text": "Well, um, so advice, I would say is, you know, get close to, you know, your, your business sponsors, right? It's like, if you don't understand what they're doing, then, you know, you're gonna, uh, you're just going to engage in arts and crafts projects. She's doing interesting things that, uh, you know, aren't going anywhere. So, you know, understand what's, what's moving to needle.",
+   "text": "Well, um, so advice, I would say is, you know, get close to, you know, your, your business sponsors, right? It's like, if you don't understand what they're doing, then, you know, you're gonna, uh, you're just going to engage in arts and crafts projects. She's doing interesting things that, uh, you know, aren't going anywhere. So, you know, understand …",
    "summary": "",
    "quote": "Well, um, so advice, I would say is, you know, get close to, you know, your, your business sponsors, right? It's like, if you don't understand what they're doing, then, you know, you're gonna, uh, you're just going to engage in arts and crafts projects. She's doing interesting things that, uh, you know, aren't going anywhere. So, you know, understand",
    "start": 2491.5,
@@ -111,7 +156,7 @@
    "guests": [
     "John Licata"
    ],
-   "text": "I think my advice is to start early, and if you don't understand quantum, this is the time to really explore and ask questions and partner. If you don't have the teams internal, I think that's crucial. I think, you know, look, I come from the quantum space. I'm excited about that world. I think there's some great people in the space, you know, talk to Michael Brett from AWS. It's a really great guy. Look at Scott Crowder from IBM, Steve Suarez from Horizon X, all brilliant people in the space. And look, there's a lot of different, look, the Wall Street Journal. I mean, all of a sudden has become like a fodder for quantum information. I love that. I love starting to see mainstream. Look at the quantum insider. I think it's a great, smaller quantum focus presence that is growing. You know, great group of people, they are trying to get the word out. I think that's really what we need is to get the word in a way that we can all resonate with. So for me, I think that this is a, it's not a journey to just begun. It's a journey that got",
+   "text": "I think my advice is to start early, and if you don't understand quantum, this is the time to really explore and ask questions and partner. If you don't have the teams internal, I think that's crucial. I think, you know, look, I come from the quantum space. I'm excited about that world. I think there's some great people in …",
    "summary": "",
    "quote": "I think my advice is to start early, and if you don't understand quantum, this is the time to really explore and ask questions and partner. If you don't have the teams internal, I think that's crucial. I think, you know, look, I come from the quantum space. I'm excited about that world. I think there's some great people in",
    "start": 2409.1,
@@ -194,7 +239,7 @@
    "guests": [
     "Shachar Meir"
    ],
-   "text": "You can explore what you're here, but like, oh, yeah, what is what, yeah, what's the top advice here? Understand the business, spend a lot more time in the business. You probably need to spend at least 50-50 in the business in the data, probably more in the business as a data leader. And you know, question your priorities. And the second thing is networking, learn how to network efficiently and learn how to connect with people. Shameless blog, I have a video on my channel with my networking philosophy explaining how I connect with people. So feel free to check it out. Yeah, that's my advice.",
+   "text": "You can explore what you're here, but like, oh, yeah, what is what, yeah, what's the top advice here? Understand the business, spend a lot more time in the business. You probably need to spend at least 50-50 in the business in the data, probably more in the business as a data leader. And you know, question your priorities. And …",
    "summary": "",
    "quote": "You can explore what you're here, but like, oh, yeah, what is what, yeah, what's the top advice here? Understand the business, spend a lot more time in the business. You probably need to spend at least 50-50 in the business in the data, probably more in the business as a data leader. And you know, question your priorities. And",
    "start": 2776.4,
@@ -272,7 +317,7 @@
    "guests": [
     "Bethany Sehon"
    ],
-   "text": "I think my advice would be just start and and and start backwards from from your data consumers. I don't start from an ontology. Don't start from your technical solution start from like the why that you're doing it all. I think I've been probably saying that to you to one at least for a long time where I say we're gonna work backwards from use cases but I really believe that that gives you the business value then to go and have that conversation be like look what we did here now think about how we would expand upon this in like in the precedent sets.",
+   "text": "I think my advice would be just start and and and start backwards from from your data consumers. I don't start from an ontology. Don't start from your technical solution start from like the why that you're doing it all. I think I've been probably saying that to you to one at least for a long time where I say …",
    "summary": "",
    "quote": "I think my advice would be just start and and and start backwards from from your data consumers. I don't start from an ontology. Don't start from your technical solution start from like the why that you're doing it all. I think I've been probably saying that to you to one at least for a long time where I say",
    "start": 2458.7,
@@ -333,7 +378,7 @@
    "guests": [
     "Jason Doerr"
    ],
-   "text": "Yeah, you know, I think my advice is always simple. I was just at a day, my event, not long ago, talking to kind of the next generation of data leaders, right? College kids that are about to enter the market. My advice to them is the same advice I'd give to folks listening to this podcast is, you know, never stop learning. This world is always evolving and it's evolving so much quicker than it ever did before on an exponential scale. You know, this concept of broad consumer access of large language models, your chat GPTs or anthropics has really only been around for like two, two and a half years where broadly it's been popular and it's going to accelerate so much quicker. So keep learning and then don't forget the basic skill of listening. You don't always have to be the smartest person in the room and go understand what your business needs and what challenges they're really facing. Don't do governance for the sake of governance. Make sure it's providing value and it's delivering better outcomes. So I know that probably sounds a little cliche or over simple, but it really is down to those",
+   "text": "Yeah, you know, I think my advice is always simple. I was just at a day, my event, not long ago, talking to kind of the next generation of data leaders, right? College kids that are about to enter the market. My advice to them is the same advice I'd give to folks listening to this podcast is, you know, …",
    "summary": "",
    "quote": "Yeah, you know, I think my advice is always simple. I was just at a day, my event, not long ago, talking to kind of the next generation of data leaders, right? College kids that are about to enter the market. My advice to them is the same advice I'd give to folks listening to this podcast is, you know,",
    "start": 2355.8,
@@ -524,7 +569,7 @@
     "Amalia Child",
     "Jenna Jordan"
    ],
-   "text": "advice uh i'll do uh three quick things do what gives you joy find and build community and then my personal motto that i feel like i have to remind myself of always is check all assumptions that's love that that's that that's a t-shirt right there check i think my advice which is also a resource maybe um and then i'll hand it off to Jennifer recommendation for the pod is if you are not a LinkedIn person and i'm not uh do check out sub stack i think it's been really nice to engage differently with a lot of the same voices who have a lot to say in more maybe long form um i know i think one you're on there uh a lot of the big names are and in data that you might want to read so um both advice and a resource okay and in particular i think we both really appreciate um Jessica Talisman's blog intentional arrangement and then Hanalee Golden's blog card catalog and they're both in that space of translating a librarian's perspective for uh data and AI and one i want to shout out in particular that Jessica wrote about",
+   "text": "advice uh i'll do uh three quick things do what gives you joy find and build community and then my personal motto that i feel like i have to remind myself of always is check all assumptions that's love that that's that that's a t-shirt right there check i think my advice which is also a resource maybe um and …",
    "summary": "",
    "quote": "advice uh i'll do uh three quick things do what gives you joy find and build community and then my personal motto that i feel like i have to remind myself of always is check all assumptions that's love that that's that that's a t-shirt right there check i think my advice which is also a resource maybe um and",
    "start": 2955.5,
@@ -580,7 +625,7 @@
    "guests": [
     "Pete Williams"
    ],
-   "text": "What's my advice? Do you mean about what I've just talked about? About data, about life, whatever you want? I mean, I could say investing in red wine, because that's a joy. You know, so there's some healthy advice for you. I think in terms of people, I could probably send you the names of the people who have been defeating on my post as I've tried to make sense of this over the last sort of three months, because I've been sharing it with me, too. I've built a list of about 20 people who are really impacting my thinking. I'm very happy to share those back and out to other people if they want to know those names as well. They're some really good thinkers. What was your last? Who should you",
+   "text": "What's my advice? Do you mean about what I've just talked about? About data, about life, whatever you want? I mean, I could say investing in red wine, because that's a joy. You know, so there's some healthy advice for you. I think in terms of people, I could probably send you the names of the people who have been …",
    "summary": "",
    "quote": "What's my advice? Do you mean about what I've just talked about? About data, about life, whatever you want? I mean, I could say investing in red wine, because that's a joy. You know, so there's some healthy advice for you. I think in terms of people, I could probably send you the names of the people who have been",
    "start": 3267.6,
@@ -678,7 +723,7 @@
    "guests": [
     "Kierra Dotson"
    ],
-   "text": "So, first question was, advice. I think for me, hang it. That's a really good word. Okay, so if I'm giving it to engineers, yes. Don't be afraid to just learn something new that's outside of engineering, the cool, like the shiny new tech toy, new AI skills, something like that. Just because not only will it help you to cross domain knowledge always helps. I am multi-disciplinary just by choice. AI, DevOps, data, data architect as well. I've done a bunch of different things. And that's all helped to inform the decisions that I make today, even how I even landed my job, my role here. So, don't be afraid to adopt new technologies, new lines of thinking, because it all helps strengthen you at the end of the day. I don't even think that's just for engineers. That's in general. That's really how I live my life. Yeah, everything, yeah. There's no thing is, oh man, if I learn this within I'm losing X, Y, and Z. No, it all helps to the shape your character and who you are as a person, and also the valuable advice that you can give to someone else.",
+   "text": "So, first question was, advice. I think for me, hang it. That's a really good word. Okay, so if I'm giving it to engineers, yes. Don't be afraid to just learn something new that's outside of engineering, the cool, like the shiny new tech toy, new AI skills, something like that. Just because not only will it help you to …",
    "summary": "",
    "quote": "So, first question was, advice. I think for me, hang it. That's a really good word. Okay, so if I'm giving it to engineers, yes. Don't be afraid to just learn something new that's outside of engineering, the cool, like the shiny new tech toy, new AI skills, something like that. Just because not only will it help you to",
    "start": 3270.1,
@@ -724,7 +769,7 @@
    "guests": [
     "Thais Cooke"
    ],
-   "text": "Could be any of that advice. Well, if I'm going to stay in the data realm, focus on the problem of trying to solve. Same thing that I have seen for the podcast, focus on the problem of trying to solve. Try to, oh, try to look for simplicity to you. Sometimes you don't need a crazy, complex solution. Try to make a simple, don't look for complexity. It's gonna find you. It will, so. Complexity will find you. You don't need to seek it. Yeah. That's a t-shirt quote right there. Complexity will find you, don't seek it. Yes. What should we wait next? Honestly, now that I think about,",
+   "text": "Could be any of that advice. Well, if I'm going to stay in the data realm, focus on the problem of trying to solve. Same thing that I have seen for the podcast, focus on the problem of trying to solve. Try to, oh, try to look for simplicity to you. Sometimes you don't need a crazy, complex solution. Try …",
    "summary": "",
    "quote": "Could be any of that advice. Well, if I'm going to stay in the data realm, focus on the problem of trying to solve. Same thing that I have seen for the podcast, focus on the problem of trying to solve. Try to, oh, try to look for simplicity to you. Sometimes you don't need a crazy, complex solution. Try",
    "start": 2554.0,
@@ -803,7 +848,7 @@
    "guests": [
     "Säde Haveri"
    ],
-   "text": "resources do you follow okay what's my advice um i'll actually i know that you and you've been talking a lot about um understanding history like where things come from so i would like especially now that with ontologies and and knowledge graphs there is a lot of history there is a lot of history with a lot of these things so kind of uh get to know also in if you're in a company get to know why things are the way they are because that will help you make them better that's a great one that is great i understand the history of your of the own systems that you're working on and because that gives you context of why things happen and why that exists today",
+   "text": "resources do you follow okay what's my advice um i'll actually i know that you and you've been talking a lot about um understanding history like where things come from so i would like especially now that with ontologies and and knowledge graphs there is a lot of history there is a lot of history with a lot of these …",
    "summary": "",
    "quote": "resources do you follow okay what's my advice um i'll actually i know that you and you've been talking a lot about um understanding history like where things come from so i would like especially now that with ontologies and and knowledge graphs there is a lot of history there is a lot of history with a lot of these",
    "start": 3143.8,
@@ -981,7 +1026,7 @@
    "guests": [
     "Dr. Irina Steenbeek"
    ],
-   "text": "You know, I would recommend you to invite Christina Haskell. She's my colleague from years. I can share with you the name later. She is a very famous or well-known specialist in AI governance and also AI culture. And I think it would be nice if you'd like to continue the AI story. I would really provide you with the name and they really would recommend you to contact her. That would be great, man. My sources, oh, it's interesting.",
+   "text": "You know, I would recommend you to invite Christina Haskell. She's my colleague from years. I can share with you the name later. She is a very famous or well-known specialist in AI governance and also AI culture. And I think it would be nice if you'd like to continue the AI story. I would really provide you with the …",
    "summary": "",
    "quote": "You know, I would recommend you to invite Christina Haskell. She's my colleague from years. I can share with you the name later. She is a very famous or well-known specialist in AI governance and also AI culture. And I think it would be nice if you'd like to continue the AI story. I would really provide you with the",
    "start": 3350.3,
@@ -1070,7 +1115,7 @@
     "Matt Housley",
     "Tony Baer"
    ],
-   "text": "It's maybe starting with advice. Oh gosh. About data, about life, about anything. I'm going to go, I'm going to actually steal Tony's and basically say, watch what, in your career development, watch what's happening around you because the career field is changing so fast, watch what skills are really valuable, and then jump on those skills. And what I'll say is kind of like sort of an extension of that, which is that not just look at the adjacencies, but look at also like who you're working with and where are they coming from. I mean, essentially, I mean, we have all this great technology, but like if we're all siloed, we're just solving the same narrow problems all over again. And I think to me, I think that we're really coming to fore is basically in governance, which is data governance and AI governance. And one of the things that I've been very disappointed in is I've seen very little progress in bridging those silos. And I would like to see that. That would be a type of thing I would love to see this year. So finally, we start to correlate what's the lineage of data against",
+   "text": "It's maybe starting with advice. Oh gosh. About data, about life, about anything. I'm going to go, I'm going to actually steal Tony's and basically say, watch what, in your career development, watch what's happening around you because the career field is changing so fast, watch what skills are really valuable, and then jump on those skills. And what I'll …",
    "summary": "",
    "quote": "It's maybe starting with advice. Oh gosh. About data, about life, about anything. I'm going to go, I'm going to actually steal Tony's and basically say, watch what, in your career development, watch what's happening around you because the career field is changing so fast, watch what skills are really valuable, and then jump on those skills. And what I'll",
    "start": 2700.2,
@@ -1276,7 +1321,7 @@
    "guests": [
     "Alex Bertails"
    ],
-   "text": "My advice would be don't be afraid to read more on the information science side of things. I think I'm getting a lot from that. I was not training that one, but I think a lot of people are afraid by that. So information science, I think has a lot to teach us. That's what gave us conceptual modeling, for example. In that regard, actually,",
+   "text": "My advice would be don't be afraid to read more on the information science side of things. I think I'm getting a lot from that. I was not training that one, but I think a lot of people are afraid by that. So information science, I think has a lot to teach us. That's what gave us conceptual modeling, for …",
    "summary": "",
    "quote": "My advice would be don't be afraid to read more on the information science side of things. I think I'm getting a lot from that. I was not training that one, but I think a lot of people are afraid by that. So information science, I think has a lot to teach us. That's what gave us conceptual modeling, for",
    "start": 3788.2,
@@ -1306,7 +1351,7 @@
    "guests": [
     "Sanjeev Mohan"
    ],
-   "text": "Okay, so first of all, my advice to to the community is don't be a skeptic. Just have an open mind. The world is not going to come to an end. We are not the most world person that my voice matters. We are all students. We are all learning constantly. And the whole space is just changing. So be a student and learn what's going on, and just and move with the tide. Like I said, next year we could be recording this and be laughing at agents. So be it. That happens. That happens. That's one.",
+   "text": "Okay, so first of all, my advice to to the community is don't be a skeptic. Just have an open mind. The world is not going to come to an end. We are not the most world person that my voice matters. We are all students. We are all learning constantly. And the whole space is just changing. So be …",
    "summary": "",
    "quote": "Okay, so first of all, my advice to to the community is don't be a skeptic. Just have an open mind. The world is not going to come to an end. We are not the most world person that my voice matters. We are all students. We are all learning constantly. And the whole space is just changing. So be",
    "start": 3382.6,
@@ -1378,7 +1423,7 @@
    "guests": [
     "Rebecca O'Kill"
    ],
-   "text": "So my advice is, I would say that I'd go back to the communication thing, that if you're going to add value to the business, you have to know the business and you have to build relationships with them. So to me, that is the most important thing on this journey. In terms of who you should have next, I'd follow on with that theme and say, you should get somebody that isn't necessarily in data, but with that business lens, because it can be quite interesting to talk to them about how they perceive data, how they can use data, and just kind of understand it from that different perspective. I don't know if you haven't seen, you do know much before. So it could be interesting. Yeah, maybe even somebody from a specific industry like insurance, what are their needs around data, things like that. Yeah. And what was the last one?",
+   "text": "So my advice is, I would say that I'd go back to the communication thing, that if you're going to add value to the business, you have to know the business and you have to build relationships with them. So to me, that is the most important thing on this journey. In terms of who you should have next, I'd …",
    "summary": "",
    "quote": "So my advice is, I would say that I'd go back to the communication thing, that if you're going to add value to the business, you have to know the business and you have to build relationships with them. So to me, that is the most important thing on this journey. In terms of who you should have next, I'd",
    "start": 3237.0,
@@ -1589,7 +1634,7 @@
    "guests": [
     "Hala Nelson"
    ],
-   "text": "My advice, if I haven't given enough in this podcast, do not feel overwhelmed. It might feel very overwhelming. The amount of knowledge, the amount of tools, the hype, you might feel behind, you might feel like you don't know anything. Do not just start with what you care for, what you wanna do and just start from there. Build one little brick at a time and always ask your questions, a question, if it's in your head, ask it and get the answer and that's how you build yourself up and talk about what you're learning. So that's my advice, do not get overwhelmed. It is overwhelming, and you don't, we're all out on the same boat here. We were, Juan and I were talking before we started the life, how we both feel like imposters. I feel like imposted our mathematician. He's a computer scientist. We were laughing about who feels more important. So this is just how it is. That's my advice. Who should do I have next? Oh, there's a lot of amazing people out there. Half-olution knew my own. He is my co-author and he is the one who came up with the idea of",
+   "text": "My advice, if I haven't given enough in this podcast, do not feel overwhelmed. It might feel very overwhelming. The amount of knowledge, the amount of tools, the hype, you might feel behind, you might feel like you don't know anything. Do not just start with what you care for, what you wanna do and just start from there. Build …",
    "summary": "",
    "quote": "My advice, if I haven't given enough in this podcast, do not feel overwhelmed. It might feel very overwhelming. The amount of knowledge, the amount of tools, the hype, you might feel behind, you might feel like you don't know anything. Do not just start with what you care for, what you wanna do and just start from there. Build",
    "start": 3886.4,
@@ -1639,7 +1684,7 @@
    "guests": [
     "Patrick Cuba"
    ],
-   "text": "whatever second who should be invited next and third what are the resources you follow don't get too caught up on what what's uh what was done in the past everybody's got a fresh perspective everybody's got their own experiences bring into to a project the patients but the end of the day everybody involved in in a data architectural data analytics project are really after the same thing business value sometimes your ideas won't get into the final product but that's okay um it's the person who who really makes the decisions are the ones that are most accountable and you never know what pressures they're under to get to that value so um as a consultant as as a guy who who sees a lot of customers i'll bring my expertise but and i'll reason why i think one is better than the other but ultimately you're there to support your customers so you know that is a very that's a very thoughtful and empathetic perspective i appreciate that yeah oh you you have to be right i mean um uh i'm not in charge of their budgets they are so",
+   "text": "whatever second who should be invited next and third what are the resources you follow don't get too caught up on what what's uh what was done in the past everybody's got a fresh perspective everybody's got their own experiences bring into to a project the patients but the end of the day everybody involved in in a data architectural …",
    "summary": "",
    "quote": "whatever second who should be invited next and third what are the resources you follow don't get too caught up on what what's uh what was done in the past everybody's got a fresh perspective everybody's got their own experiences bring into to a project the patients but the end of the day everybody involved in in a data architectural",
    "start": 4033.2,
@@ -1700,7 +1745,7 @@
    "guests": [
     "Jean-Georges Perrin"
    ],
-   "text": "Oh, gosh, that's really tough ones. Um, I, I, you know, I started. Computers a long time ago and back in the day, I read two magazines that I've completely disappeared, which was BITE magazine and Dr. Dobbs. And I was, oh, my God, I forgot about that. Yeah. And I miss them. I really do miss them. Dr. Dobbs was really, I was probably like 15, 16 years old. I could not, at first, it was in English, um, but that didn't help. But the thing is I could not understand half of what the people was writing in this thing, but it gave me, it gave me motivation to learn because I wanted to understand what they wrote in this way. As an anecdote, I was reading a German magazine to learn German called Chip. I don't know if it exists. It's like this, but the, but bite bite and, um, bite and Dr. Dobbs were really something that I tremendously miss. And then as a result of that, I don't have a consistent swish of information. It's really super frustrating. Um, I don't like reading books. Yeah, I know it's interesting. I know, I know, I know.",
+   "text": "Oh, gosh, that's really tough ones. Um, I, I, you know, I started. Computers a long time ago and back in the day, I read two magazines that I've completely disappeared, which was BITE magazine and Dr. Dobbs. And I was, oh, my God, I forgot about that. Yeah. And I miss them. I really do miss them. Dr. Dobbs …",
    "summary": "",
    "quote": "Oh, gosh, that's really tough ones. Um, I, I, you know, I started. Computers a long time ago and back in the day, I read two magazines that I've completely disappeared, which was BITE magazine and Dr. Dobbs. And I was, oh, my God, I forgot about that. Yeah. And I miss them. I really do miss them. Dr. Dobbs",
    "start": 5211.8,
@@ -1886,7 +1931,7 @@
    "guests": [
     "Alexander Torrenegra"
    ],
-   "text": "My advice, no, well, what I share today, some practical tips, who should you invite? It might be interesting, I'm going to pitch my wife, Tanya Zapata, co-founder and the CEO of Bonya Studio, a lot of data and AI stuff related to creative work, which she is definitely on the leading edge of what's happening on that regard, and how to think about data governance and many other things.",
+   "text": "My advice, no, well, what I share today, some practical tips, who should you invite? It might be interesting, I'm going to pitch my wife, Tanya Zapata, co-founder and the CEO of Bonya Studio, a lot of data and AI stuff related to creative work, which she is definitely on the leading edge of what's happening on that regard, and …",
    "summary": "",
    "quote": "My advice, no, well, what I share today, some practical tips, who should you invite? It might be interesting, I'm going to pitch my wife, Tanya Zapata, co-founder and the CEO of Bonya Studio, a lot of data and AI stuff related to creative work, which she is definitely on the leading edge of what's happening on that regard, and",
    "start": 3051.6,
@@ -2012,7 +2057,7 @@
    "guests": [
     "Lindsay Murphy"
    ],
-   "text": "Yeah, I mean, I guess on the theme, like I, my advice is to not forget about your soft skills, like lean into learning the soft skills, they're the hardest ones to learn sometimes. Sometimes you have to learn from experience, but there definitely are ways to lean into that. So don't forget about that. Don't just place technical skills as the main thing you develop.",
+   "text": "Yeah, I mean, I guess on the theme, like I, my advice is to not forget about your soft skills, like lean into learning the soft skills, they're the hardest ones to learn sometimes. Sometimes you have to learn from experience, but there definitely are ways to lean into that. So don't forget about that. Don't just place technical skills …",
    "summary": "",
    "quote": "Yeah, I mean, I guess on the theme, like I, my advice is to not forget about your soft skills, like lean into learning the soft skills, they're the hardest ones to learn sometimes. Sometimes you have to learn from experience, but there definitely are ways to lean into that. So don't forget about that. Don't just place technical skills",
    "start": 3654.8,
@@ -2173,7 +2218,7 @@
    "guests": [
     "Nicola Askham"
    ],
-   "text": "What's my advice? I think it's a kind of stop talking about data governance and just start doing it now. And get people, and in order to use AI, is the reason to get people talking about it, get them to understand that you can design the most wonderful LLM, but you put the wrong data in it or rubbish data, you're not gonna get the results you were hoping. So I think that would be my advice for that. I think, what was the next one? Who should you invite? Have you had to do some walks on? She's great fun. Or Dr. Joe Perez that I was talking about, they would both be very good, I'm sure.",
+   "text": "What's my advice? I think it's a kind of stop talking about data governance and just start doing it now. And get people, and in order to use AI, is the reason to get people talking about it, get them to understand that you can design the most wonderful LLM, but you put the wrong data in it or rubbish …",
    "summary": "",
    "quote": "What's my advice? I think it's a kind of stop talking about data governance and just start doing it now. And get people, and in order to use AI, is the reason to get people talking about it, get them to understand that you can design the most wonderful LLM, but you put the wrong data in it or rubbish",
    "start": 3212.8,
@@ -2357,7 +2402,7 @@
    "guests": [
     "Andrea Gioia"
    ],
-   "text": "My life and fun don't be too serious. We are ironic and enjoy the life about data, as I said, try to be curious and your growth part within the field that try to look discipline that are aside, the practice of data management as a technical think, look at system thinking, look at economics, look at something at sociology. If you have some specific colleague or customer look also at neurology or pathological neurology, it depends. But this is so fun for me. It's a multidisciplinary field. It's very fun to read an economic paper and then an organizational paper, something that you must find fun and you must invest on because it's an integral part of the practice. So this is my suggestion.",
+   "text": "My life and fun don't be too serious. We are ironic and enjoy the life about data, as I said, try to be curious and your growth part within the field that try to look discipline that are aside, the practice of data management as a technical think, look at system thinking, look at economics, look at something at sociology. …",
    "summary": "",
    "quote": "My life and fun don't be too serious. We are ironic and enjoy the life about data, as I said, try to be curious and your growth part within the field that try to look discipline that are aside, the practice of data management as a technical think, look at system thinking, look at economics, look at something at sociology.",
    "start": 3736.3,
@@ -2418,7 +2463,7 @@
    "guests": [
     "Colleen Tartow"
    ],
-   "text": "So, his advice, have a very long USB cable. Oh, that's good. And I bought that and I always got it when I very traveled. So, about life, data and life. All right, my advice is something that I told my child, he just got his first laptop. Anything you say online can be screenshot it and shared. Do not forget that ever. Nothing you say online, whether you think it's a private text to someone, everything can be screenshot it and shared. That's fantastic. Very true. Okay, so who should you have on? I don't think you've had Lindsey Murphy on. I would say Lindsey Murphy. Most of my like nerding out with Monica Miller is amazing. I think she's actually, I think I saw her make a comment. Yeah, she actually left a comment that's awesome. Yeah, she's awesome. Who else? Selena Wong is really amazing. She is the CEO of Data Culture. She sees a lot of different industries through her consulting work. Yeah, there's three for you. Perfect. Love it. Thank you. And so I've been following Lindsey. So definitely, so Lindsey, if you're listening or we can set this episode. Selena, I've met her in",
+   "text": "So, his advice, have a very long USB cable. Oh, that's good. And I bought that and I always got it when I very traveled. So, about life, data and life. All right, my advice is something that I told my child, he just got his first laptop. Anything you say online can be screenshot it and shared. Do not …",
    "summary": "",
    "quote": "So, his advice, have a very long USB cable. Oh, that's good. And I bought that and I always got it when I very traveled. So, about life, data and life. All right, my advice is something that I told my child, he just got his first laptop. Anything you say online can be screenshot it and shared. Do not",
    "start": 3182.9,
@@ -2566,7 +2611,7 @@
    "guests": [
     "Dael Williamson"
    ],
-   "text": "So my advice to those people in our domain and actually outside is start to interrogate like how you can sort of unlock context more in your organization. Like what is the unlock for context? Where is it locked? Because there is so much value in that. And what's interesting about that is like so many people are closing off the data walls, right? That is such a rich form of data that no one even thinks of as data.",
+   "text": "So my advice to those people in our domain and actually outside is start to interrogate like how you can sort of unlock context more in your organization. Like what is the unlock for context? Where is it locked? Because there is so much value in that. And what's interesting about that is like so many people are closing off …",
    "summary": "",
    "quote": "So my advice to those people in our domain and actually outside is start to interrogate like how you can sort of unlock context more in your organization. Like what is the unlock for context? Where is it locked? Because there is so much value in that. And what's interesting about that is like so many people are closing off",
    "start": 3152.1,
@@ -2616,7 +2661,7 @@
    "guests": [
     "Mariam Halfhide"
    ],
-   "text": "do you follow advice bringing us back to the you know individual responsibility if you want to understand the organizational moral compass and you know then you should please understand your own and understand where your values are where you stand for and also not be afraid to raise a question if you feel that something wrong but because only that creates a culture of ethical awareness if you are not able to raise a question about whether or not you think we should be doing something then you're in the wrong company culture",
+   "text": "do you follow advice bringing us back to the you know individual responsibility if you want to understand the organizational moral compass and you know then you should please understand your own and understand where your values are where you stand for and also not be afraid to raise a question if you feel that something wrong but because only …",
    "summary": "",
    "quote": "do you follow advice bringing us back to the you know individual responsibility if you want to understand the organizational moral compass and you know then you should please understand your own and understand where your values are where you stand for and also not be afraid to raise a question if you feel that something wrong but because only",
    "start": 3357.0,
@@ -2735,7 +2780,7 @@
    "guests": [
     "Tiankai Feng"
    ],
-   "text": "I think the advice is pretty much in line with everything we just discussed, but I would in the nutshell say, just try to be more empathetic in your day to day, right? No matter if it's at work or at home. But I realized also with two little children at home that I'm a role model for them. So how I behave in public and how I interact with little people. If I can show them how empathy is leading to the right things and to the better society, let's say, then this is I think really nice. I feel like because of technology being thriving right now that people hiding behind screens, it's taking a little bit away from empathy. But I would just encourage everyone to hopefully still imagine people behind screens that are actually humans to actually just relate to them a bit more. Well stated. Even us behind this, you know, virtual box here and coming into your headphones, we're all three of us are humans too. Exactly. The second one was who should get invited, right? Yeah. I would say actually, just representative of being in the German region here from New Europe,",
+   "text": "I think the advice is pretty much in line with everything we just discussed, but I would in the nutshell say, just try to be more empathetic in your day to day, right? No matter if it's at work or at home. But I realized also with two little children at home that I'm a role model for them. So …",
    "summary": "",
    "quote": "I think the advice is pretty much in line with everything we just discussed, but I would in the nutshell say, just try to be more empathetic in your day to day, right? No matter if it's at work or at home. But I realized also with two little children at home that I'm a role model for them. So",
    "start": 2929.3,
@@ -2781,7 +2826,7 @@
    "guests": [
     "Anna Bergevin"
    ],
-   "text": "My advice is to to use writing to clarify your ideas before you start building anything. I said I use JNI to write PRDs. But like, it's a very conversational, like it's not just me going, imagine this solution and build a thing. And then I often have to edit what the PRD gets written. I think often when I go to write something out, that's when it clarifies for me. What's missing? What assumptions are people not talking about? Hey, this doesn't make sense. Even if that artifact is just for me, even if it never suits the light of day. And even with all the ways I use AI to shortcut things, I still end up writing and and rewriting. Even if I use AI to assist me in getting a first draft, I always end up just cleaning it up. And that process is very thought provoking. So I think everybody should do that. And especially anyone tackling a data project should draft that first word of the assumptions. What do people actually want and ask more questions, try to get the core of the pain point and not just be reactive. The second one, who should",
+   "text": "My advice is to to use writing to clarify your ideas before you start building anything. I said I use JNI to write PRDs. But like, it's a very conversational, like it's not just me going, imagine this solution and build a thing. And then I often have to edit what the PRD gets written. I think often when I …",
    "summary": "",
    "quote": "My advice is to to use writing to clarify your ideas before you start building anything. I said I use JNI to write PRDs. But like, it's a very conversational, like it's not just me going, imagine this solution and build a thing. And then I often have to edit what the PRD gets written. I think often when I",
    "start": 3740.6,
@@ -2856,7 +2901,7 @@
    "guests": [
     "Brandon Gadoci"
    ],
-   "text": "Advice. I'll expand on something I said earlier is like, you know, there's a lot of people who want to do a lot of things and are, you know, have already defeated themselves in their mind. And this advancement in technology is going to empower a lot of people to do things they couldn't do. And so lean into that. It would be my advice. Who to have next? Rachel Woods. Have you had Rachel on the podcast yet? We haven't. I've been reaching out to her. Yeah. Rachel's phenomenal. She's a very forward thinking person in the space and knows a ton. It's had a lot of success. And so she's been a good friend and mentor on this process as well.",
+   "text": "Advice. I'll expand on something I said earlier is like, you know, there's a lot of people who want to do a lot of things and are, you know, have already defeated themselves in their mind. And this advancement in technology is going to empower a lot of people to do things they couldn't do. And so lean into that. …",
    "summary": "",
    "quote": "Advice. I'll expand on something I said earlier is like, you know, there's a lot of people who want to do a lot of things and are, you know, have already defeated themselves in their mind. And this advancement in technology is going to empower a lot of people to do things they couldn't do. And so lean into that.",
    "start": 3273.3,
@@ -2935,7 +2980,7 @@
    "guests": [
     "Ora Lassila"
    ],
-   "text": "do I follow so honestly I don't have time to read all this stuff that's like like the you know what's new today kind of stuff there's so much old stuff I don't understand and I'm still reading that stuff I tend to be the kind of person who has to go way way way deep to claim that I actually understand something so which usually means I have to write some software that does it that to me that's like understanding understanding something so you know I talk to people a lot you know so a lot of the by information sources are kind of like",
+   "text": "do I follow so honestly I don't have time to read all this stuff that's like like the you know what's new today kind of stuff there's so much old stuff I don't understand and I'm still reading that stuff I tend to be the kind of person who has to go way way way deep to claim that I …",
    "summary": "",
    "quote": "do I follow so honestly I don't have time to read all this stuff that's like like the you know what's new today kind of stuff there's so much old stuff I don't understand and I'm still reading that stuff I tend to be the kind of person who has to go way way way deep to claim that I",
    "start": 3238.3,
@@ -2985,7 +3030,7 @@
    "guests": [
     "Sol Rashidi"
    ],
-   "text": "What resources do you follow? Oh, my advice is don't get complacent ever. Don't ever feel like you've got it. And as soon as you feel like, okay, I know my space and I'm hot shit, it probably means you're for the back thing you think. Don't ever get complacent. Always evolve, always adapt. And it sounds easy, but you'd be amazed at how many people I meet. You're like, I am amazing at this. I'm like, that's fantastic. But that's like one thread in the quilt. The picture is bigger.",
+   "text": "What resources do you follow? Oh, my advice is don't get complacent ever. Don't ever feel like you've got it. And as soon as you feel like, okay, I know my space and I'm hot shit, it probably means you're for the back thing you think. Don't ever get complacent. Always evolve, always adapt. And it sounds easy, but you'd …",
    "summary": "",
    "quote": "What resources do you follow? Oh, my advice is don't get complacent ever. Don't ever feel like you've got it. And as soon as you feel like, okay, I know my space and I'm hot shit, it probably means you're for the back thing you think. Don't ever get complacent. Always evolve, always adapt. And it sounds easy, but you'd",
    "start": 3614.3,
@@ -3075,7 +3120,7 @@
     "Mariam Halfhide",
     "Peter Kromhout"
    ],
-   "text": "My advice would be step over your boundaries and collaborate with other people, because I think that's where really the understanding and the knowledge is. So don't stay in your side. My advice would be don't be afraid to ask the tough questions and just be honest with yourself. Ask tough questions and honest, no BS. Who should be right next? We should be right next. Yes, to our podcast. We should. Well, there's this very interesting idea going on about doing less distributed. So this idea of we all need big distributed systems, because we have this petabytes of data. A lot of companies actually don't. So we're seeing here a bit of a momentum around less distributed going like the DuckDB route. Talk about that next. That's interesting. We should probably have some of it from DuckDB. There are challenges to tie it into the management, but that's up to you. Are we okay? Things like DuckDB and strong data foundations. That's a good one. All right.",
+   "text": "My advice would be step over your boundaries and collaborate with other people, because I think that's where really the understanding and the knowledge is. So don't stay in your side. My advice would be don't be afraid to ask the tough questions and just be honest with yourself. Ask tough questions and honest, no BS. Who should be right …",
    "summary": "",
    "quote": "My advice would be step over your boundaries and collaborate with other people, because I think that's where really the understanding and the knowledge is. So don't stay in your side. My advice would be don't be afraid to ask the tough questions and just be honest with yourself. Ask tough questions and honest, no BS. Who should be right",
    "start": 3097.3,
@@ -3132,7 +3177,7 @@
    "guests": [
     "Neil Burge"
    ],
-   "text": "My advice, well, I'll just spend half an hour or so trying to get some advice. My advice, if you're in a data role, is to go and buy a book about business and read it. You know, you could be anything, right? But go and read something about, maybe read the other stuff by Guy Kawazaki, because that's got something about entrepreneurs and people want to be doing something with data. But understand what is it that your business wants to do because that's how you'll find the right context. And hopefully how you'll get the support and funding in the budget to sort of blow up from there. Does that make sense? Yep.",
+   "text": "My advice, well, I'll just spend half an hour or so trying to get some advice. My advice, if you're in a data role, is to go and buy a book about business and read it. You know, you could be anything, right? But go and read something about, maybe read the other stuff by Guy Kawazaki, because that's got …",
    "summary": "",
    "quote": "My advice, well, I'll just spend half an hour or so trying to get some advice. My advice, if you're in a data role, is to go and buy a book about business and read it. You know, you could be anything, right? But go and read something about, maybe read the other stuff by Guy Kawazaki, because that's got",
    "start": 3487.7,
@@ -3189,7 +3234,7 @@
    "guests": [
     "Jesse Sedler"
    ],
-   "text": "So my advice would be be empathetic as much as you can be, right? Again, not even stealing that from the US Army. But, you know, really being people to people will solve more of these challenges and understanding what somebody else is thinking about going through the challenges they're facing, of why they want to do it, makes a whole world of difference, very basic. But I think it's just a core principle with everybody's day job to be focused on.",
+   "text": "So my advice would be be empathetic as much as you can be, right? Again, not even stealing that from the US Army. But, you know, really being people to people will solve more of these challenges and understanding what somebody else is thinking about going through the challenges they're facing, of why they want to do it, makes a …",
    "summary": "",
    "quote": "So my advice would be be empathetic as much as you can be, right? Again, not even stealing that from the US Army. But, you know, really being people to people will solve more of these challenges and understanding what somebody else is thinking about going through the challenges they're facing, of why they want to do it, makes a",
    "start": 3882.8,
@@ -3257,7 +3302,7 @@
    "guests": [
     "Scott Taylor"
    ],
-   "text": "My advice is, and I've already mentioned already, learn how to tell a story. Learn how to tell a story. And I've told that to other people. Like a data science student came up and he was like, what do you, I said, learn how to tell a story, no matter what. A lot of ways to do that, but learn that. It's a craft. It takes practice. I practice all the time, rehearse, all that kind of stuff. Learn how to tell a story.",
+   "text": "My advice is, and I've already mentioned already, learn how to tell a story. Learn how to tell a story. And I've told that to other people. Like a data science student came up and he was like, what do you, I said, learn how to tell a story, no matter what. A lot of ways to do that, but …",
    "summary": "",
    "quote": "My advice is, and I've already mentioned already, learn how to tell a story. Learn how to tell a story. And I've told that to other people. Like a data science student came up and he was like, what do you, I said, learn how to tell a story, no matter what. A lot of ways to do that, but",
    "start": 3423.1,
@@ -3307,7 +3352,7 @@
    "guests": [
     "Cris Hadjez"
    ],
-   "text": "Okay, so for the first one, what's next for me is, you know, being able to go back at least internally and just identify the saying, hey, look, the practices that we're doing for metadata management, they're good. But we probably need to put more focus on it because as the organization is working on other initiatives, we've already kind of put to the forefront just because of what we're doing in terms of some of the initiatives internally. So I think this really kind of just galvanized that thought. It's just like, look, even after they finish this, that next step that's on the horizon, like this needs to be ready for them at that point. So for me, it kind of really helped me force that. Who's next? I would tell you, and I want to make sure I can pronounce his name correctly, but at the cham zai-eed. I'm at the cham. At the cham. So at the cham was, again, we could argue it's like, hey, I'm a bit biased and maybe that's why I heard so much about metadata. But the reality is it was an opening keynote. Like, I don't get to pick the",
+   "text": "Okay, so for the first one, what's next for me is, you know, being able to go back at least internally and just identify the saying, hey, look, the practices that we're doing for metadata management, they're good. But we probably need to put more focus on it because as the organization is working on other initiatives, we've already kind …",
    "summary": "",
    "quote": "Okay, so for the first one, what's next for me is, you know, being able to go back at least internally and just identify the saying, hey, look, the practices that we're doing for metadata management, they're good. But we probably need to put more focus on it because as the organization is working on other initiatives, we've already kind",
    "start": 2933.9,
@@ -3385,7 +3430,7 @@
    "guests": [
     "Karen Meppen"
    ],
-   "text": "What's my advice? This is non-technical, but I feel it's very powerful. Well, there was one thing that my dad taught me at a young age, which is you should learn to say please and thank you in every language. And I found that to be a great challenge, but also something that is really meaningful to honor folks regardless of if you can't see anything else at a minimum, being able to say thank you. And please is a big deal. So I'll throw that out there.",
+   "text": "What's my advice? This is non-technical, but I feel it's very powerful. Well, there was one thing that my dad taught me at a young age, which is you should learn to say please and thank you in every language. And I found that to be a great challenge, but also something that is really meaningful to honor folks regardless …",
    "summary": "",
    "quote": "What's my advice? This is non-technical, but I feel it's very powerful. Well, there was one thing that my dad taught me at a young age, which is you should learn to say please and thank you in every language. And I found that to be a great challenge, but also something that is really meaningful to honor folks regardless",
    "start": 3635.1,
@@ -3424,7 +3469,7 @@
    "guests": [
     "Eva Nahari"
    ],
-   "text": "My advice to whom? To start everyone, whatever you want, whoever you want about data, the one on the on the race and all the listeners. In hard times, some of the best ideas and startups are born. And if you're in it already, like navigating hard times and being resourceful is what's going to become the next level of entrepreneur leadership. And it's only going to give you better tools for the next game level. So it's a shitty, sorry, sucky year that we're coming from. But if you survived it, pat yourself on the back. It was not easy for anyone. That is very good advice. And you see though, a lot of big innovations the companies have been built in times when they're hard. Exactly.",
+   "text": "My advice to whom? To start everyone, whatever you want, whoever you want about data, the one on the on the race and all the listeners. In hard times, some of the best ideas and startups are born. And if you're in it already, like navigating hard times and being resourceful is what's going to become the next level of …",
    "summary": "",
    "quote": "My advice to whom? To start everyone, whatever you want, whoever you want about data, the one on the on the race and all the listeners. In hard times, some of the best ideas and startups are born. And if you're in it already, like navigating hard times and being resourceful is what's going to become the next level of",
    "start": 3724.2,
@@ -3463,7 +3508,7 @@
    "guests": [
     "Paco Nathan"
    ],
-   "text": "Advice, what's my advice? About data, about life, whatever you want. Okay. Well, it's my birthday. Wow. I need water. Yeah. That was a big clop right now. If you're from the background, so you survived your birthday. Yeah. It's no longer where it was at. Yeah. Okay. So I'm in my 60s. I write code every day. I love it. I have gone in my career all the way up to being CTO and board member for two different publicly traded tech firms. And I really hated it because of lawsuits and crap. It goes on. But I mean, that's like any stocks. That's common. But I've gone through different roles. Been in different exec staff. I've been in high flying startups. I've been in low flying startups as well. I've seen a lot of disasters. But I've been through a lot of roles. And I've really enjoyed doing sales engineering. I've really enjoyed going in and closing a deal. But at the end of the day, in my 60s, I love writing code. So I would just say, damn it, figure out what you like, get a lot of background because it's going to come in handy. Keep",
+   "text": "Advice, what's my advice? About data, about life, whatever you want. Okay. Well, it's my birthday. Wow. I need water. Yeah. That was a big clop right now. If you're from the background, so you survived your birthday. Yeah. It's no longer where it was at. Yeah. Okay. So I'm in my 60s. I write code every day. I love …",
    "summary": "",
    "quote": "Advice, what's my advice? About data, about life, whatever you want. Okay. Well, it's my birthday. Wow. I need water. Yeah. That was a big clop right now. If you're from the background, so you survived your birthday. Yeah. It's no longer where it was at. Yeah. Okay. So I'm in my 60s. I write code every day. I love",
    "start": 3507.3,
@@ -3520,7 +3565,7 @@
    "guests": [
     "Santona Tuli"
    ],
-   "text": "Um, be yourself, do the thing that you enjoy most. Be curious. Yeah, it's scrutinized. The ask, don't get lost in trying to implement what's being asked first. The first thing to do is figure out if the person who's asking knows what they're asking for and why they need the things that they're asking for. Who should you invite? I'm sure you've had every awesome person on here. Actually, I got one for you. John Giles. John Giles, all right. From Australia. G. That's really cool. That's a good one. I was going to say, holla Nelson. Hala would be awesome. Yeah, if I do an in-person, she's going to be here, right? Yeah, she's going to be here for day to day Texas. She's amazing.",
+   "text": "Um, be yourself, do the thing that you enjoy most. Be curious. Yeah, it's scrutinized. The ask, don't get lost in trying to implement what's being asked first. The first thing to do is figure out if the person who's asking knows what they're asking for and why they need the things that they're asking for. Who should you invite? …",
    "summary": "",
    "quote": "Um, be yourself, do the thing that you enjoy most. Be curious. Yeah, it's scrutinized. The ask, don't get lost in trying to implement what's being asked first. The first thing to do is figure out if the person who's asking knows what they're asking for and why they need the things that they're asking for. Who should you invite?",
    "start": 4691.8,
@@ -3573,7 +3618,7 @@
    "guests": [
     "Samia Rahman"
    ],
-   "text": "My advice based on reflections over the last couple of years is drive value and innovation with collaboration and eliminate ego. One of the big things I see with product management, Tim, we can maybe chat offline. I've seen a lot of egos get in the way of who owns what application, what team owns, what whose portfolio and whose resume's making today. I think it's very important with data mesh, a reflection of mine is be comfortable with evolving collective ownership of the products you build. One day, those data assets might belong in research, but you have new customers. Now they also have a share invested share into that data. So it's very important to put aside ego and think about that collaboration. So that's my hopefully I can summarize that one day. I might use chat to do that, but that would be my very well said. Yes. Could be a manifesto all on its own. That's awesome.",
+   "text": "My advice based on reflections over the last couple of years is drive value and innovation with collaboration and eliminate ego. One of the big things I see with product management, Tim, we can maybe chat offline. I've seen a lot of egos get in the way of who owns what application, what team owns, what whose portfolio and whose …",
    "summary": "",
    "quote": "My advice based on reflections over the last couple of years is drive value and innovation with collaboration and eliminate ego. One of the big things I see with product management, Tim, we can maybe chat offline. I've seen a lot of egos get in the way of who owns what application, what team owns, what whose portfolio and whose",
    "start": 3429.2,
@@ -3612,7 +3657,7 @@
    "guests": [
     "Jeremiah Owyang"
    ],
-   "text": "People, conferences, blogs, podcasts, whatever. Oh, my god. What advice? Do not fall behind on AI. I have young kids. And with my supervision, we're using these tools because I want them to be AI natives. And I need you all who are listening. I know you are. If you're listening to this advanced podcast, you are leaning into it for personal, family, career, health. Like, don't fall behind on this one. This one is a big one. Who else should you have on this podcast? I would suggest two of my business partners. One is my current one. Chris Ye, who wrote Blitzscaling with Reed Hoffman on how do companies grow using data. And then Charlene Leat, who focuses on AI and leadership and who was the founder at Altimeter Group, which I was co-founder of, also Forrester.",
+   "text": "People, conferences, blogs, podcasts, whatever. Oh, my god. What advice? Do not fall behind on AI. I have young kids. And with my supervision, we're using these tools because I want them to be AI natives. And I need you all who are listening. I know you are. If you're listening to this advanced podcast, you are leaning into it …",
    "summary": "",
    "quote": "People, conferences, blogs, podcasts, whatever. Oh, my god. What advice? Do not fall behind on AI. I have young kids. And with my supervision, we're using these tools because I want them to be AI natives. And I need you all who are listening. I know you are. If you're listening to this advanced podcast, you are leaning into it",
    "start": 3567.6,
@@ -3694,7 +3739,7 @@
    "guests": [
     "Andrew Jones"
    ],
-   "text": "Yeah, I think my advice is, can't relate to what it's being about, just always try to remember why I try and do something. So we talk about a bit about that contract. So, yeah, why are you trying to point them? What is your aim? What do you want to achieve? What is helping the organization achieve? Who else is needed to achieve it? What else needs to achieve it? And then if you need our people, in my case, in our case, they're software engineers, just going to speak to them and get them on board and explain to them what's important. Again, I think I'm able to miss. But I think most people want best outcome. And if you get right people in the room to talk about the problems, you'll get best outcome. And those right people who are day people, sort of people of PMs, they go on people. Both people get many of them and you'll get the outcome. So much, it's like kind of common sense, but again, what I'm saying, some guys forget about it. So I appreciate you bringing these things up. Well, and I think people really, right? Yeah, yeah,",
+   "text": "Yeah, I think my advice is, can't relate to what it's being about, just always try to remember why I try and do something. So we talk about a bit about that contract. So, yeah, why are you trying to point them? What is your aim? What do you want to achieve? What is helping the organization achieve? Who else …",
    "summary": "",
    "quote": "Yeah, I think my advice is, can't relate to what it's being about, just always try to remember why I try and do something. So we talk about a bit about that contract. So, yeah, why are you trying to point them? What is your aim? What do you want to achieve? What is helping the organization achieve? Who else",
    "start": 3582.5,
@@ -3789,7 +3834,7 @@
    "guests": [
     "Kat Greenbrook"
    ],
-   "text": "and what resources do you follow my advice is just in general don't don't be afraid to ask questions and so if you want to improve your data storytelling skills as we talked about you're going to have to improve your business at cumin and asking questions will enable you to to do that and to communicate better you can't communicate something that you don't understand completely agree so",
+   "text": "and what resources do you follow my advice is just in general don't don't be afraid to ask questions and so if you want to improve your data storytelling skills as we talked about you're going to have to improve your business at cumin and asking questions will enable you to to do that and to communicate better you can't …",
    "summary": "",
    "quote": "and what resources do you follow my advice is just in general don't don't be afraid to ask questions and so if you want to improve your data storytelling skills as we talked about you're going to have to improve your business at cumin and asking questions will enable you to to do that and to communicate better you can't",
    "start": 3751.6,
@@ -4083,7 +4128,7 @@
    "guests": [
     "Alexa Westlake"
    ],
-   "text": "Well, I'd say my advice is for data teams, the closer you are to your business, the better your data is. Take the time to listen and listen iteratively. And also wear sunscreen. I got fried on my vacation. And I'm so scared of skin cancer. So wear sunscreen. It's good advice for everyone. I love how everybody, well, everybody gives like really profound advice like this, right? Either about data about life. But then once in a while, we have like those little comments, which are really important advice to like wear sunscreen. And there's one advice that was still sticks with me a long time ago, a couple years ago. I remember Pat Berry, he was on he said, have a long USB cable. Long USB cable. I have all over the house with me. It was a game changing advice. Anyway, I love it.",
+   "text": "Well, I'd say my advice is for data teams, the closer you are to your business, the better your data is. Take the time to listen and listen iteratively. And also wear sunscreen. I got fried on my vacation. And I'm so scared of skin cancer. So wear sunscreen. It's good advice for everyone. I love how everybody, well, everybody …",
    "summary": "",
    "quote": "Well, I'd say my advice is for data teams, the closer you are to your business, the better your data is. Take the time to listen and listen iteratively. And also wear sunscreen. I got fried on my vacation. And I'm so scared of skin cancer. So wear sunscreen. It's good advice for everyone. I love how everybody, well, everybody",
    "start": 3539.6,
@@ -4266,7 +4311,7 @@
    "guests": [
     "Simone Steel"
    ],
-   "text": "Well, my advice is never, and how to say this in English, abdicate responsibility, is that a word, abdicate, like kind of, those think is somebody else's problem ever when you're talking about data, just stopping us why that's my advice for everyone. My recommendation would be, and I can help connect you with him if you would like this sustainability thread, Jerry McGovern, who is the author of World Wide Waste, he's a digital designer, you know, has been for as long as us possibly in the field and has a wealth of end to end design and development life cycle that now I think marries up with data quite nicely. It could be an interesting conversation. And the third, where do I go for knowledge? I do read the Economist every week, and to try not to just getting to tech literature, look a bit more broadly, other things as well, but at the end, there is always a recommendation of a book, you know, at the end of each weekly edition. There's always a recommendation of a book, and I really look forward to seeing what they are reading and whether that can broaden my horizons as",
+   "text": "Well, my advice is never, and how to say this in English, abdicate responsibility, is that a word, abdicate, like kind of, those think is somebody else's problem ever when you're talking about data, just stopping us why that's my advice for everyone. My recommendation would be, and I can help connect you with him if you would like this …",
    "summary": "",
    "quote": "Well, my advice is never, and how to say this in English, abdicate responsibility, is that a word, abdicate, like kind of, those think is somebody else's problem ever when you're talking about data, just stopping us why that's my advice for everyone. My recommendation would be, and I can help connect you with him if you would like this",
    "start": 3805.9,
@@ -4558,7 +4603,7 @@
    "guests": [
     "Aakriti Agrawal"
    ],
-   "text": "So advice. I think just be patient with yourself and your people and your teams. So if you're self-supervised, it's hard work. And I think that's the cool thing about going to the conference. You meet other people who are facing the same issues and overcoming them or not overcoming them. You just learn that you're not alone. And I think that's really important. So give yourself grace. There's a lot to learn. And that's great. If you're in a room where you know everything, you're the smartest person in the room, you're in the wrong room. Go to a different room. So if you're in a situation where you're no longer learning, that's not good. So you're in the right space. If you're still learning, you're still listening to podcasts. You're still doing research. That's good. So that's my advice. So just keep learning and give yourself some grace. What's the next? Ooh, okay. So I don't know the whole set of who you've had, but I went to some really, really great talks this week. So Val Calvo from CBRE talked about communications. And she was amazing. She has a clear model and it was fantastic. Deanna Barrett",
+   "text": "So advice. I think just be patient with yourself and your people and your teams. So if you're self-supervised, it's hard work. And I think that's the cool thing about going to the conference. You meet other people who are facing the same issues and overcoming them or not overcoming them. You just learn that you're not alone. And I …",
    "summary": "",
    "quote": "So advice. I think just be patient with yourself and your people and your teams. So if you're self-supervised, it's hard work. And I think that's the cool thing about going to the conference. You meet other people who are facing the same issues and overcoming them or not overcoming them. You just learn that you're not alone. And I",
    "start": 3473.7,
@@ -4697,7 +4742,7 @@
    "guests": [
     "Madeleine Want"
    ],
-   "text": "My advice is something that it took me way, way, way too long to learn. It is you do your best work when you're getting your best rest. Aim into that. When I was in grad school, I was also sleeping not that much. And then I had a shift. I started sleeping my eight hours and I realized, oh, I'm kind of being more productive. I know. I feel smart now. Yeah. Don't just burn the candle at both ends. Yeah.",
+   "text": "My advice is something that it took me way, way, way too long to learn. It is you do your best work when you're getting your best rest. Aim into that. When I was in grad school, I was also sleeping not that much. And then I had a shift. I started sleeping my eight hours and I realized, oh, …",
    "summary": "",
    "quote": "My advice is something that it took me way, way, way too long to learn. It is you do your best work when you're getting your best rest. Aim into that. When I was in grad school, I was also sleeping not that much. And then I had a shift. I started sleeping my eight hours and I realized, oh,",
    "start": 3780.5,
@@ -4758,7 +4803,7 @@
    "guests": [
     "Katariina Kari"
    ],
-   "text": "what resources do you follow um my advice is um like go and look at other fields like go look at what's happening in the arts um how are they talking about not not not they're not but how they're talking about these phenomenons like do put attention to the emotional um like emotional reaction to the technology we're building and understand a little bit better to to play with that because even though technologies are more known about like no more about technology they will still have those emotional reaction so do look at how art is discussing these artificial intelligence and i don't mean watch Terminator there's also like other things that are really nicely working with it",
+   "text": "what resources do you follow um my advice is um like go and look at other fields like go look at what's happening in the arts um how are they talking about not not not they're not but how they're talking about these phenomenons like do put attention to the emotional um like emotional reaction to the technology we're building …",
    "summary": "",
    "quote": "what resources do you follow um my advice is um like go and look at other fields like go look at what's happening in the arts um how are they talking about not not not they're not but how they're talking about these phenomenons like do put attention to the emotional um like emotional reaction to the technology we're building",
    "start": 3627.9,
@@ -4847,7 +4892,7 @@
    "guests": [
     "Alex Vayner"
    ],
-   "text": "Sure, so my advice is, so I started doing a series at KPMG for the younger analytics professionals in their organization. And it's also kind of catered around creating your identity and connecting and networking within the firm to create value, to help your career grow. And so the motto for that is watch your ass. And this is the ass with a capital S. And the three things analytics professionals that I need, that I think that I pushed to focus on this. First S is the sector. Everything is getting sectorized. Earlier on, you decide I'm gonna be a financial services guy. I'm gonna be a healthcare guy. Or I'm gonna be a consumer goods guy, girl, whoever that is, that's gonna be very, very helpful because that's getting premium more and more. And companies that are, companies like Microsoft, but even next layer down, like Databricks, fantastic company that's in compute space, they're getting sectorized. They're getting focused on specific solutions for specific industries. So the second S is the hyperscaler. The world's in the cloud, right? Now, whether it's AWS or Azure or GCP, fine. But choose one, get certified, get, you know, good at it.",
+   "text": "Sure, so my advice is, so I started doing a series at KPMG for the younger analytics professionals in their organization. And it's also kind of catered around creating your identity and connecting and networking within the firm to create value, to help your career grow. And so the motto for that is watch your ass. And this is the …",
    "summary": "",
    "quote": "Sure, so my advice is, so I started doing a series at KPMG for the younger analytics professionals in their organization. And it's also kind of catered around creating your identity and connecting and networking within the firm to create value, to help your career grow. And so the motto for that is watch your ass. And this is the",
    "start": 3237.4,
@@ -4911,7 +4956,7 @@
    "guests": [
     "Tony Seale"
    ],
-   "text": "So my advice is to start looking in if you're not having got a knowledge graph, then begin looking at your knowledge graph, initiating your knowledge graph project immediately and do it in a decentralized way. So, you know, check out what the data catalog pattern is because the data catalog pattern fits in really nicely with the knowledge graph. People think like knowledge graph, oh, that's one big central database. That's the wrong direction if you're going down there. We're looking after it. We're looking at a decentralized data mesh here with the catalog over the top of it, which is semantically organized. So start getting, start looking into that like yesterday. Sorry. What was your next? What was your next question? What should you",
+   "text": "So my advice is to start looking in if you're not having got a knowledge graph, then begin looking at your knowledge graph, initiating your knowledge graph project immediately and do it in a decentralized way. So, you know, check out what the data catalog pattern is because the data catalog pattern fits in really nicely with the knowledge graph. …",
    "summary": "",
    "quote": "So my advice is to start looking in if you're not having got a knowledge graph, then begin looking at your knowledge graph, initiating your knowledge graph project immediately and do it in a decentralized way. So, you know, check out what the data catalog pattern is because the data catalog pattern fits in really nicely with the knowledge graph.",
    "start": 3031.1,
@@ -4961,7 +5006,7 @@
    "guests": [
     "Veronika Durgin"
    ],
-   "text": "Even you already said many, but yeah. So data, don't go into data just for the money. It's a tough field. You always have to learn. Make sure you actually like it. If you like it, you'll have a very long and fulfilling career. So I talk about a lot of people to go. It's money. Don't just go into it for money. It's not easy. Don't think it's easy.",
+   "text": "Even you already said many, but yeah. So data, don't go into data just for the money. It's a tough field. You always have to learn. Make sure you actually like it. If you like it, you'll have a very long and fulfilling career. So I talk about a lot of people to go. It's money. Don't just go into …",
    "summary": "",
    "quote": "Even you already said many, but yeah. So data, don't go into data just for the money. It's a tough field. You always have to learn. Make sure you actually like it. If you like it, you'll have a very long and fulfilling career. So I talk about a lot of people to go. It's money. Don't just go into",
    "start": 3456.4,
@@ -5011,7 +5056,7 @@
    "guests": [
     "Benny Benford"
    ],
-   "text": "Advice diversity diversity diversity. It's so simple. And I think it's so easy to become absorbed in your profession, particularly an area that's moving as fast as data. That's all you read about. Read about everything. Read about history. Read about other domains. Speak to people from other areas. I learned so much from reading about other areas. One of the things that fascinates me is reading about other transformations. Like the Japanese uptake of technology after World War II. Fascinating things to learn about when you're looking at technology change today. So diversity in your teams. The biggest lesson I learned at JLR was not just to recruit data people in the data team. Recruit people from change backgrounds with no data experience because they're going to teach you so much more about change than someone from a data background. So diversity is the advice. I'm going to cheat on people to invite because I couldn't narrow down to one. I think both of these people won. But Bethany Lyons, superb. My brain always explodes when I have a conversation with her around data. And she was already, she was already, she's already been on the podcast. Well, then",
+   "text": "Advice diversity diversity diversity. It's so simple. And I think it's so easy to become absorbed in your profession, particularly an area that's moving as fast as data. That's all you read about. Read about everything. Read about history. Read about other domains. Speak to people from other areas. I learned so much from reading about other areas. One of …",
    "summary": "",
    "quote": "Advice diversity diversity diversity. It's so simple. And I think it's so easy to become absorbed in your profession, particularly an area that's moving as fast as data. That's all you read about. Read about everything. Read about history. Read about other domains. Speak to people from other areas. I learned so much from reading about other areas. One of",
    "start": 3334.9,
@@ -5092,7 +5137,7 @@
    "guests": [
     "Abhi Sivasailam"
    ],
-   "text": "So I'll answer them in reverse order. So I think data and podcasts, your guys' podcast is great. The analytics engineering roundup is a great newsletter. I think data and weekly, on and on, Paco there, it puts it on, I think, is also great. I think folks to chat with, lots. So someone's sitting in the room right now is Ahmed from Narrator. And I think, I was telling Ahmed this last night, activity schema was in some ways just ahead of its time. And that time might be now. And I think, for a variety of reasons, the rise of AI and LLMs that need a more natural semantic querying interface, I think, is a big one. I think the state of where data is and how it needs to be mapped, a lot of things that we've been talking about, I think thinking about your business as instead of entities and whatnot, as that first level of abstraction being a set of activities and seeing your business as a set of activities that companies do and customers do, is, I think, important. And I hope gets more traction. So I think Ahmed is a great person to",
+   "text": "So I'll answer them in reverse order. So I think data and podcasts, your guys' podcast is great. The analytics engineering roundup is a great newsletter. I think data and weekly, on and on, Paco there, it puts it on, I think, is also great. I think folks to chat with, lots. So someone's sitting in the room right now …",
    "summary": "",
    "quote": "So I'll answer them in reverse order. So I think data and podcasts, your guys' podcast is great. The analytics engineering roundup is a great newsletter. I think data and weekly, on and on, Paco there, it puts it on, I think, is also great. I think folks to chat with, lots. So someone's sitting in the room right now",
    "start": 3348.2,
@@ -5153,7 +5198,7 @@
    "guests": [
     "Kristin Schooley"
    ],
-   "text": "Okay, so the first one is, what is my advice? On a very personal level, this is for anyone out there who's listening, I personally have a career that I don't think a lot of people ever thought I would have. I think I often am a circle trying to fit in the square peg, per se, but I have stayed persistent and I've stayed true to myself. I am truly blessed to have the team that I have. And I cannot say that enough. I'd be doing a disservice if I didn't just show how amazing that they are. And I say all the time, I'm getting to build the team that I always wanted to sit on as an analyst. My way is not necessarily for everybody, but at the end of the day, I know that I can go to bed and that I have done everything by the book to the right standards. I've made the best choices I can. And so for anyone listening, regardless of where you're at, especially with working with something like data, cause it is ugly, it's not cute. Stay true to yourself and be willing to put yourself out there.",
+   "text": "Okay, so the first one is, what is my advice? On a very personal level, this is for anyone out there who's listening, I personally have a career that I don't think a lot of people ever thought I would have. I think I often am a circle trying to fit in the square peg, per se, but I have …",
    "summary": "",
    "quote": "Okay, so the first one is, what is my advice? On a very personal level, this is for anyone out there who's listening, I personally have a career that I don't think a lot of people ever thought I would have. I think I often am a circle trying to fit in the square peg, per se, but I have",
    "start": 2397.9,
@@ -5322,7 +5367,7 @@
    "guests": [
     "Mohammad Syed"
    ],
-   "text": "I mean, we covered quite a few data advice, but maybe I'll go down to life advice stuff. I don't know. I may be a life guru. I try and stay kind of organized with my time. And there's a thing about, you know, habits of effective people. I'm sure you've read the book right about your sphere of influence, right? And how if you allow yourself to just get sucked into stuff that you can't control, you're going to be all over the place, right? You've got to defend your square. So recently I was, there's a CD I'm kind of working with who really frustrated does, you know, basically doesn't know what his job is. And we spent the last two weeks going, this is what you can do with this business, given how it is and helping him present to his COO to go, this is what I think my job is. This is what I want to do so much more. So I think on a personal level, I think, you know, know your space, right? Like what are you responsible for? Well, what's the value you're going to add? Where are you not in competition",
+   "text": "I mean, we covered quite a few data advice, but maybe I'll go down to life advice stuff. I don't know. I may be a life guru. I try and stay kind of organized with my time. And there's a thing about, you know, habits of effective people. I'm sure you've read the book right about your sphere of influence, …",
    "summary": "",
    "quote": "I mean, we covered quite a few data advice, but maybe I'll go down to life advice stuff. I don't know. I may be a life guru. I try and stay kind of organized with my time. And there's a thing about, you know, habits of effective people. I'm sure you've read the book right about your sphere of influence,",
    "start": 3369.8,
@@ -5379,7 +5424,7 @@
    "guests": [
     "Jeff Jonas"
    ],
-   "text": "I'll take that backwards. I like to follow, on Twitter, I like to follow terrible maps. It's really funny. On conferences, I like the Geoend Conference. And just the thing about both of those is that where things are and when and how they move are the highest order bits. If you're trying to do really interesting analytics, geospatial data is superfood for analytics, okay? So, funny side on the maps. And then the Geoend Conference, where people are obsessed with geospatial, that would be to go to is Danny Hillis. Oh man, that guy, do you know Danny Hillis?",
+   "text": "I'll take that backwards. I like to follow, on Twitter, I like to follow terrible maps. It's really funny. On conferences, I like the Geoend Conference. And just the thing about both of those is that where things are and when and how they move are the highest order bits. If you're trying to do really interesting analytics, geospatial data …",
    "summary": "",
    "quote": "I'll take that backwards. I like to follow, on Twitter, I like to follow terrible maps. It's really funny. On conferences, I like the Geoend Conference. And just the thing about both of those is that where things are and when and how they move are the highest order bits. If you're trying to do really interesting analytics, geospatial data",
    "start": 3394.8,
@@ -5434,7 +5479,7 @@
    "guests": [
     "Malcolm Hawker"
    ],
-   "text": "Well, the one negative advice, don't boil the ocean. Take an MVP slash agile outcome-driven approach to anything you want to do. That includes implementing a data catalog, implementing a data governance tool, implementing even an integration tool, just be outcome-driven, outcome-driven, outcome-driven, and if you cannot explain why you're doing what you're doing in business terms, in an increased revenue, decreased cost, or mitigated risk, you need to step back. You need to step back and be able to answer that question in a way that the business cares about. So that's number one.",
+   "text": "Well, the one negative advice, don't boil the ocean. Take an MVP slash agile outcome-driven approach to anything you want to do. That includes implementing a data catalog, implementing a data governance tool, implementing even an integration tool, just be outcome-driven, outcome-driven, outcome-driven, and if you cannot explain why you're doing what you're doing in business terms, in an increased …",
    "summary": "",
    "quote": "Well, the one negative advice, don't boil the ocean. Take an MVP slash agile outcome-driven approach to anything you want to do. That includes implementing a data catalog, implementing a data governance tool, implementing even an integration tool, just be outcome-driven, outcome-driven, outcome-driven, and if you cannot explain why you're doing what you're doing in business terms, in an increased",
    "start": 3557.3,
@@ -5491,7 +5536,7 @@
    "guests": [
     "Anna Abramova"
    ],
-   "text": "And third, what resources do you follow? My advice, I don't want to be obvious. So I'm not going to say the obvious thing that hopefully everyone got out of this conversation, you need to do the non sexy thing. I say advice, keep learning, yeah, keep educating yourself. Any job, any topic, any time, any point in your career or life, keep learning.",
+   "text": "And third, what resources do you follow? My advice, I don't want to be obvious. So I'm not going to say the obvious thing that hopefully everyone got out of this conversation, you need to do the non sexy thing. I say advice, keep learning, yeah, keep educating yourself. Any job, any topic, any time, any point in your career …",
    "summary": "",
    "quote": "And third, what resources do you follow? My advice, I don't want to be obvious. So I'm not going to say the obvious thing that hopefully everyone got out of this conversation, you need to do the non sexy thing. I say advice, keep learning, yeah, keep educating yourself. Any job, any topic, any time, any point in your career",
    "start": 3341.2,
@@ -5541,7 +5586,7 @@
    "guests": [
     "Jane Urban"
    ],
-   "text": "So I think one of my advice probably is not surprising. It's about starting with the people, even though you're in a data space. And one thing I think is really important as a leader in data is that you, I call it especially with my picture with my thing here. You set the weather as a leader. So you kind of decide the energy level, the optimism, the way that everyone's going to feel. And so keep in mind how you show up, the energy you bring, the way you engage is going to really be part of how you succeed or fail. I think sometimes people forget that their own energy as a leader is what sort of starts to generate momentum for the team. So I'm often relentlessly positive. Even when I'm a little unsure, we're going to figure it out. I'm like, we're doing it. This is happening. And it tends to work out that way. So that's one thing I would say I've found to be very helpful over the years. In terms of the next person, I think you should bring on. I'm a huge, huge fan of Israel Abraham. He's over at Mass",
+   "text": "So I think one of my advice probably is not surprising. It's about starting with the people, even though you're in a data space. And one thing I think is really important as a leader in data is that you, I call it especially with my picture with my thing here. You set the weather as a leader. So you …",
    "summary": "",
    "quote": "So I think one of my advice probably is not surprising. It's about starting with the people, even though you're in a data space. And one thing I think is really important as a leader in data is that you, I call it especially with my picture with my thing here. You set the weather as a leader. So you",
    "start": 3697.4,
@@ -5598,7 +5643,7 @@
    "guests": [
     "Bill Inmon"
    ],
-   "text": "Well, okay. I get asked a question by young college students all the time. What should I do? And what I tell them, I give this piece of advice. I say get as close to the decision making of a corporation as you can. Because when it comes time for layoffs, who's the last person to get laid off in a corporation? And that's the person that is closest to the decision making. If you are working in a clerical function, in a regulatory function, we need people like that. But you are open and open in yourself and your family to lay off.",
+   "text": "Well, okay. I get asked a question by young college students all the time. What should I do? And what I tell them, I give this piece of advice. I say get as close to the decision making of a corporation as you can. Because when it comes time for layoffs, who's the last person to get laid off in …",
    "summary": "",
    "quote": "Well, okay. I get asked a question by young college students all the time. What should I do? And what I tell them, I give this piece of advice. I say get as close to the decision making of a corporation as you can. Because when it comes time for layoffs, who's the last person to get laid off in",
    "start": 3879.0,
@@ -5648,7 +5693,7 @@
    "guests": [
     "Anthony Algmin"
    ],
-   "text": "Oh, yes, my first advice is I mean we're recording this at the end of the diversity DJIQ conference and right now everybody's got a lot of ideas swimming around in your head I also think we tend to have a propensity to overthink things So I think let it simmer a little bit and try to simplify like to Shannon's point We can't bring all this complexity to our businesses and be like here's the dump of everything and expect that to go well so Really try to just take a breath and decide. Okay. What's most important in my organization this week? I got a lot of good questions to ask, but I need to Take a measured approach to that or otherwise. It's just gonna blow right past everyone",
+   "text": "Oh, yes, my first advice is I mean we're recording this at the end of the diversity DJIQ conference and right now everybody's got a lot of ideas swimming around in your head I also think we tend to have a propensity to overthink things So I think let it simmer a little bit and try to simplify like to …",
    "summary": "",
    "quote": "Oh, yes, my first advice is I mean we're recording this at the end of the diversity DJIQ conference and right now everybody's got a lot of ideas swimming around in your head I also think we tend to have a propensity to overthink things So I think let it simmer a little bit and try to simplify like to",
    "start": 3117.9,
@@ -5705,7 +5750,7 @@
    "guests": [
     "Allison Sagraves"
    ],
-   "text": "Let's see, advice, well, is probably a more senior person in life than many of you listening to this. I would say like what has worked for me or what I would do differently. I think what I appreciate at this stage of my life is how important relationships are. And you can translate this all to business to life to both. Relationships are everything in life and in work. It's in, and I have gone through this industry having three kids and raising three kids and now they're millennials and gen Zs. And that was very difficult for women in the era that I did that. It's not easy today, but hopefully it's getting better. But I think, you know, when I look at where I am in my career, like the relationships that I made 20 years ago are coming back to me and new ways. And there was somebody that I was involved in outsourcing with who now recommended me to be on an advisory board for a really interesting startup. So I think it's really important to pay it forward, to give before you get, and to really nurture a strong network in a, in a,",
+   "text": "Let's see, advice, well, is probably a more senior person in life than many of you listening to this. I would say like what has worked for me or what I would do differently. I think what I appreciate at this stage of my life is how important relationships are. And you can translate this all to business to life …",
    "summary": "",
    "quote": "Let's see, advice, well, is probably a more senior person in life than many of you listening to this. I would say like what has worked for me or what I would do differently. I think what I appreciate at this stage of my life is how important relationships are. And you can translate this all to business to life",
    "start": 3379.8,
@@ -5755,7 +5800,7 @@
    "guests": [
     "Theresa Kushner"
    ],
-   "text": "What's my advice? I think I've given you a ton of it already. My advice is, I don't think that data's gonna get less important than the organization, it's gonna get more important. So my advice is to start paying attention to it now, if you're not. If you are already, pay more attention to it. Spend more money on it, put your better people on it. Do things that make it different for you. That's my advice.",
+   "text": "What's my advice? I think I've given you a ton of it already. My advice is, I don't think that data's gonna get less important than the organization, it's gonna get more important. So my advice is to start paying attention to it now, if you're not. If you are already, pay more attention to it. Spend more money on …",
    "summary": "",
    "quote": "What's my advice? I think I've given you a ton of it already. My advice is, I don't think that data's gonna get less important than the organization, it's gonna get more important. So my advice is to start paying attention to it now, if you're not. If you are already, pay more attention to it. Spend more money on",
    "start": 3513.7,
@@ -5794,7 +5839,7 @@
    "guests": [
     "Dan Bennett"
    ],
-   "text": "Yeah, so my advice is, when you're doing a podcast, move around more, so the occupancy sensor doesn't turn off the light in the office here. And, but more importantly, you know, I've been in this career for almost 30 years now. And what I've learned is you've got to enjoy what you do and do what you enjoy. Life's too short, not too. And I noticed this might sound completely hack me, but man, like, I just love this stuff. And so it's easy to talk about and it's easy to kind of just freak out on this and keep going after it. And, you know, it's just fun, right? And that's, that's, hopefully that comes across.",
+   "text": "Yeah, so my advice is, when you're doing a podcast, move around more, so the occupancy sensor doesn't turn off the light in the office here. And, but more importantly, you know, I've been in this career for almost 30 years now. And what I've learned is you've got to enjoy what you do and do what you enjoy. Life's …",
    "summary": "",
    "quote": "Yeah, so my advice is, when you're doing a podcast, move around more, so the occupancy sensor doesn't turn off the light in the office here. And, but more importantly, you know, I've been in this career for almost 30 years now. And what I've learned is you've got to enjoy what you do and do what you enjoy. Life's",
    "start": 3420.4,
@@ -5865,7 +5910,7 @@
     "Gabi Steele",
     "Leah Weiss"
    ],
-   "text": "Okay, Gabby, you think about if you didn't invite. I've also wanted to say, okay, my advice, we also, we teach a lot of young people when we have the opportunity, which is really the favorite thing that we've been able to do in our careers. But my advice is always just follow your curiosity. These technical skills are ways of being better at whatever you want to do. But it's often, you know, a means of solving a problem. It's not sort of the goal in and of itself. So any problem that's exciting to you, learn the skills, you'll be motivated to learn the skills that you need in order to solve them. Yeah, no, totally echo that. And just gives me more ideas of people we should invite some of our young scholars who did our data science would be amazing. Like bringing more voices into the space of data science and engineering has been super important to us from the beginning and felt like a responsibility in being a part of this world. So yeah, we have always been telling and the fact that data touches everything. So there are so many ways that you can",
+   "text": "Okay, Gabby, you think about if you didn't invite. I've also wanted to say, okay, my advice, we also, we teach a lot of young people when we have the opportunity, which is really the favorite thing that we've been able to do in our careers. But my advice is always just follow your curiosity. These technical skills are ways …",
    "summary": "",
    "quote": "Okay, Gabby, you think about if you didn't invite. I've also wanted to say, okay, my advice, we also, we teach a lot of young people when we have the opportunity, which is really the favorite thing that we've been able to do in our careers. But my advice is always just follow your curiosity. These technical skills are ways",
    "start": 3705.6,
@@ -5954,7 +5999,7 @@
    "guests": [
     "Loris Marini"
    ],
-   "text": "Don't think too much about data. Think about what you can learn from the data. In other words, knowledge. And don't fix too much on the knowledge you acquire and control as an owner of knowledge. Instead, think about the multiplication effect that comes in when you share knowledge. So find opportunities to share that as much as possible. Whether it's a talk or a slack or a tweet, whatever is your channel, share knowledge, get feedback and learn and find your dopamine spike. That's a great way to finish this. Lawrence, this was fantastic. Thank you for going, we went down this very interesting kind of road of being practical and being kind of philosophical around this. And these are the conversations that I truly appreciate because they stick with you. Guys, absolute pleasure. I had so much fun. We should do this again. Very much. We're very much looking forward to this.",
+   "text": "Don't think too much about data. Think about what you can learn from the data. In other words, knowledge. And don't fix too much on the knowledge you acquire and control as an owner of knowledge. Instead, think about the multiplication effect that comes in when you share knowledge. So find opportunities to share that as much as possible. Whether …",
    "summary": "",
    "quote": "Don't think too much about data. Think about what you can learn from the data. In other words, knowledge. And don't fix too much on the knowledge you acquire and control as an owner of knowledge. Instead, think about the multiplication effect that comes in when you share knowledge. So find opportunities to share that as much as possible. Whether",
    "start": 796.4,
@@ -5982,7 +6027,7 @@
    "date": "2022-10-20",
    "episode": "Knowledge: the missing piece to understanding your business",
    "guests": [],
-   "text": "Well, don't my advice is this. Don't think too much about data. Think about the what you can learn from the data. In other words, knowledge and don't don't fix too much on the knowledge you acquire and control as an owner of knowledge. Instead, think about the multiplication effect that comes in when you share knowledge. So find opportunities to share that as much as possible, whether it's a talk or a slack or a tweet, whatever is your channel, share knowledge, get feedback and learn and find your dopamine spike. That's a great way to finish this. Laurie, this is fantastic. Thank you for going. We got we went down this very interesting kind of road of of being practical and being kind of philosophical around this. And these are the conversations that I truly appreciate because they stick with you. Guys, absolute pleasure. I had so much fun. We should do this again. Very much. We're very much looking forward to this.",
+   "text": "Well, don't my advice is this. Don't think too much about data. Think about the what you can learn from the data. In other words, knowledge and don't don't fix too much on the knowledge you acquire and control as an owner of knowledge. Instead, think about the multiplication effect that comes in when you share knowledge. So find opportunities …",
    "summary": "",
    "quote": "Well, don't my advice is this. Don't think too much about data. Think about the what you can learn from the data. In other words, knowledge and don't don't fix too much on the knowledge you acquire and control as an owner of knowledge. Instead, think about the multiplication effect that comes in when you share knowledge. So find opportunities",
    "start": 3307.8,
@@ -6021,7 +6066,7 @@
    "guests": [
     "Laura Ellis"
    ],
-   "text": "So advice, this is life data advice, right? So my advice is to build people up around you. So build up your team, build up your peers, build up your peer pluses, build up your friends, your family, you know, build people up around you, invest in them. There is more than enough sunshine for everyone, right? Like, it's important to know that giving to other people and making them feel good will like only give back to you, right? It never takes away from you. So that's, everyone advice? I love that.",
+   "text": "So advice, this is life data advice, right? So my advice is to build people up around you. So build up your team, build up your peers, build up your peer pluses, build up your friends, your family, you know, build people up around you, invest in them. There is more than enough sunshine for everyone, right? Like, it's important …",
    "summary": "",
    "quote": "So advice, this is life data advice, right? So my advice is to build people up around you. So build up your team, build up your peers, build up your peer pluses, build up your friends, your family, you know, build people up around you, invest in them. There is more than enough sunshine for everyone, right? Like, it's important",
    "start": 652.9,
@@ -6082,7 +6127,7 @@
    "guests": [
     "Patrick Bangert"
    ],
-   "text": "Well, what's my advice? If you're interested in AI, read about AI, but don't try to learn Python or PyTorch or pick up a technical book with source code and formulas and mathematics in it. Unless, of course, you've got, you know, a year or two of your life to spare. If you do, then by all means, take a math degree. But if you want to find out, you know, so what is AI and you have time to read a couple of books, pick up the more popular books with text and examples as opposed to with code. Learning and programming language takes a long time.",
+   "text": "Well, what's my advice? If you're interested in AI, read about AI, but don't try to learn Python or PyTorch or pick up a technical book with source code and formulas and mathematics in it. Unless, of course, you've got, you know, a year or two of your life to spare. If you do, then by all means, take a …",
    "summary": "",
    "quote": "Well, what's my advice? If you're interested in AI, read about AI, but don't try to learn Python or PyTorch or pick up a technical book with source code and formulas and mathematics in it. Unless, of course, you've got, you know, a year or two of your life to spare. If you do, then by all means, take a",
    "start": 3979.9,
@@ -6139,7 +6184,7 @@
    "guests": [
     "Rupal Sumaria"
    ],
-   "text": "What's my advice? Despite me being on here and doing a few talks, I still haven't got everything nailed down. So just remember that. Take everything with a pinch as well and understand that we are set on our journey and selling you. So that's my one bigger bit of advice. Same for anybody else that you hear out there. Everybody's on a different scale, different part of their journey. So just don't get overwhelmed. Love that.",
+   "text": "What's my advice? Despite me being on here and doing a few talks, I still haven't got everything nailed down. So just remember that. Take everything with a pinch as well and understand that we are set on our journey and selling you. So that's my one bigger bit of advice. Same for anybody else that you hear out there. …",
    "summary": "",
    "quote": "What's my advice? Despite me being on here and doing a few talks, I still haven't got everything nailed down. So just remember that. Take everything with a pinch as well and understand that we are set on our journey and selling you. So that's my one bigger bit of advice. Same for anybody else that you hear out there.",
    "start": 3447.3,
@@ -6283,7 +6328,7 @@
     "Joe Reis",
     "Matt Housley"
    ],
-   "text": "next and third what resources do you follow people blogs newsletters books obviously go get your book but what else Matt do you want to give the advice part yeah I'll actually give some I'll just give advice first buyer data engineers and goes back to an internal conversation that we had a Turner data this morning we were talking about lifelong learning and how you really have to be a self learner and a lifelong learner to succeed in data engineering and so going back to the conversation that we were just having about people in process I feel like if you want to be a successful data engineer you start buggling in the people and process stuff which hopefully you can learn from our book now this is what I'll tell you our book will not teach you data engineering right that's truly bizarre for book it's about the fundamentals rather it's meant to give you foundation so you can start that lifelong learning journey and get into the profession so learn about people in process learn the big picture and then embark on the journey of actually learning the technology learning the practices to be successful if",
+   "text": "next and third what resources do you follow people blogs newsletters books obviously go get your book but what else Matt do you want to give the advice part yeah I'll actually give some I'll just give advice first buyer data engineers and goes back to an internal conversation that we had a Turner data this morning we were talking …",
    "summary": "",
    "quote": "next and third what resources do you follow people blogs newsletters books obviously go get your book but what else Matt do you want to give the advice part yeah I'll actually give some I'll just give advice first buyer data engineers and goes back to an internal conversation that we had a Turner data this morning we were talking",
    "start": 3983.8,
@@ -6322,7 +6367,7 @@
    "guests": [
     "John Kutay"
    ],
-   "text": "My advice about both data and life, I come from a long time ago. I was a musician and I went to music school, San Francisco Conservatory Music, and basically what I learned there is like five to ten minutes a day practicing your craft is better than marathon sessions every week or two. When it comes to data and it's the same thing, just spend five to ten minutes a day just dedicated to learning and getting whatever it is you're trying to get better at. Yeah. Can you remind me of the other questions I lost from then?",
+   "text": "My advice about both data and life, I come from a long time ago. I was a musician and I went to music school, San Francisco Conservatory Music, and basically what I learned there is like five to ten minutes a day practicing your craft is better than marathon sessions every week or two. When it comes to data and …",
    "summary": "",
    "quote": "My advice about both data and life, I come from a long time ago. I was a musician and I went to music school, San Francisco Conservatory Music, and basically what I learned there is like five to ten minutes a day practicing your craft is better than marathon sessions every week or two. When it comes to data and",
    "start": 2922.4,
@@ -6368,7 +6413,7 @@
    "guests": [
     "Valentijn of Vopak"
    ],
-   "text": "I have some advice maybe in perfect and for the data and in life or jobs in general I'd say and especially if you hear all these buzzwords and whatever you try to do I'd say that's perfect or being perfect that's the enemy of just good so if you can have a good idea obvious you believe something is good go for it don't wait a little to be perfect you can shape it out later I think it's sometimes you're just blocking yourself if you're looking for something perfect sage advice and useful in the data world too yeah yeah it applies to many areas you see a good bar don't waste finding the perfect bar go for that fun settle down that's a good one how much time are we wasting looking for a bar then they all closed they all closed get that on the good one what what helps me a lot and my job is showing a bit of empathy and really trying to understand that other person that you that you're talking to right if you really try to understand his concerns even if maybe you think you might completely disagree with this",
+   "text": "I have some advice maybe in perfect and for the data and in life or jobs in general I'd say and especially if you hear all these buzzwords and whatever you try to do I'd say that's perfect or being perfect that's the enemy of just good so if you can have a good idea obvious you believe something is …",
    "summary": "",
    "quote": "I have some advice maybe in perfect and for the data and in life or jobs in general I'd say and especially if you hear all these buzzwords and whatever you try to do I'd say that's perfect or being perfect that's the enemy of just good so if you can have a good idea obvious you believe something is",
    "start": 3305.8,
@@ -6396,7 +6441,7 @@
    "date": "2022-09-01",
    "episode": "Takeways with Roel and Valentijn",
    "guests": [],
-   "text": "People, blogs, books, conference, whatever. And third, who should we write next? So advice? Who wants to go first? I have some advice. Maybe perfect for the data in life or jobs in general. I'd say, and especially if you hear all these buzz words and whatever you try to do, I'd say that perfect or being perfect, that's the enemy of just good. So if you can have a good idea, or if you believe something is good, go for it. Don't wait to be perfect. You can shape it out later. I think that's sometimes you're just blocking yourself if you're looking for something perfect. Sage advice and useful in the data world too. Yeah, yeah. It applies to many areas. You see a good bar? Don't wait to find the perfect bar. Go for that. Go for that one. Set it up. That's a good one. How much time are we waiting looking for a bar? They're all closed. They're all closed. Let's get out on the good one. What helps me a lot in my job is showing a bit of empathy and really trying to understand that all the person that you're talking to, right?",
+   "text": "People, blogs, books, conference, whatever. And third, who should we write next? So advice? Who wants to go first? I have some advice. Maybe perfect for the data in life or jobs in general. I'd say, and especially if you hear all these buzz words and whatever you try to do, I'd say that perfect or being perfect, that's the …",
    "summary": "",
    "quote": "People, blogs, books, conference, whatever. And third, who should we write next? So advice? Who wants to go first? I have some advice. Maybe perfect for the data in life or jobs in general. I'd say, and especially if you hear all these buzz words and whatever you try to do, I'd say that perfect or being perfect, that's the",
    "start": 615.0,
@@ -6605,7 +6650,7 @@
    "guests": [
     "Peter Kapur"
    ],
-   "text": "People, blogs, conferences, podcasts, whatever. Be fearless. You're in an exciting age of data. If you're following what is considered industry best practices, question it. Why not sheep? We all need to think and say, think about what could happen a year, two years on, just because somebody hasn't thought of it, does not make it wrong. So really, I think people need to say, hey, I have a better idea, let's fair it up. Not every idea is good, but I really want people to start thinking that maybe everything hasn't been invented, right? And that's really the mindset, right? Remember, they said 100 years back everything has been invented and data management, even approach and technology maybe have not been invented yet, so you got to continue pushing the envelope. Love it. Be fearless. Push the envelope.",
+   "text": "People, blogs, conferences, podcasts, whatever. Be fearless. You're in an exciting age of data. If you're following what is considered industry best practices, question it. Why not sheep? We all need to think and say, think about what could happen a year, two years on, just because somebody hasn't thought of it, does not make it wrong. So really, I …",
    "summary": "",
    "quote": "People, blogs, conferences, podcasts, whatever. Be fearless. You're in an exciting age of data. If you're following what is considered industry best practices, question it. Why not sheep? We all need to think and say, think about what could happen a year, two years on, just because somebody hasn't thought of it, does not make it wrong. So really, I",
    "start": 3200.1,
@@ -6646,7 +6691,7 @@
    "guests": [
     "Sanjeev Mohan"
    ],
-   "text": "Okay. So if I start from the end, I listen to a lot of podcasts, basically from like analytics engineering podcast, there's Monday morning data chat. So that's how I keep up to date. I'm listening to people who have spent a lot of time in the space reading a lot of blogs. Every week I see people will send an email, some of the influencers. Here are the most common blogs. Like, Ben Stansel does an amazing job every week. It just amazes me. I wish I had his expertise of writing. So that's how I keep up to date. As far as inviting somebody, I just, I didn't come thinking who would be a good person. But since I talked quite a bit about observability, if you haven't, you know, had a lot of people from observability in your show, I would say there's one company that I think is doing it really well. It's Excel data and Rohit Chaudhury is an ex-Hortenworks guy who's been in the space forever. I think he might be a good addition on your show. Awesome. Thank you for that. For the advice, I'm going to add your advice there, which is",
+   "text": "Okay. So if I start from the end, I listen to a lot of podcasts, basically from like analytics engineering podcast, there's Monday morning data chat. So that's how I keep up to date. I'm listening to people who have spent a lot of time in the space reading a lot of blogs. Every week I see people will send …",
    "summary": "",
    "quote": "Okay. So if I start from the end, I listen to a lot of podcasts, basically from like analytics engineering podcast, there's Monday morning data chat. So that's how I keep up to date. I'm listening to people who have spent a lot of time in the space reading a lot of blogs. Every week I see people will send",
    "start": 3610.8,
@@ -6858,7 +6903,7 @@
    "guests": [
     "Sarah Krasnik"
    ],
-   "text": "Yeah, general advice. Operate with intention. Do everything with intention. So, as it relates to, you know, data, people write the decisions that we make, whether it be to use one tool versus the other, who to hire on our team. I think doing everything with intention and knowing why you're doing it, I think will both create a better outcome because you understand the problem that you're trying to solve. But also, I think that it will make you understand why you're sometimes something can be tedious, but you understand why you're doing it. I personally like to carry that kind of with me just like who I am. I want value communicating with intention and kind of all of that in kind of my personal life as well. So, that's kind of my advice.",
+   "text": "Yeah, general advice. Operate with intention. Do everything with intention. So, as it relates to, you know, data, people write the decisions that we make, whether it be to use one tool versus the other, who to hire on our team. I think doing everything with intention and knowing why you're doing it, I think will both create a better …",
    "summary": "",
    "quote": "Yeah, general advice. Operate with intention. Do everything with intention. So, as it relates to, you know, data, people write the decisions that we make, whether it be to use one tool versus the other, who to hire on our team. I think doing everything with intention and knowing why you're doing it, I think will both create a better",
    "start": 3300.7,
@@ -6958,7 +7003,7 @@
    "guests": [
     "Nick Handel"
    ],
-   "text": "I'm going to make mine about life. Do I, both are just one. No, both, both questions. Okay. I see. In about data and life, whatever. Yeah. Yeah. I don't know. Be nice to people. Just like, you know, help people out, have empathy. Like, try to try to be like open and collaborative in these kinds of conversations. Like, I love that. I love just having these kinds of fun, open conversations. And I think that life is just like a lot more fun when you're like nice to people. And you like, you know, try to relate to people. So I appreciate. Yeah. Word. And let's see next. I don't know. Like, I think if you want to, I think that there are some people who have really thought a lot about this metric stuff. You know, there's Aaron Keys with somebody who is at Airbnb and spent a lot of time thinking about this. And he's now at Slack. Johan Rydberg is that Spotify and has been thinking a lot about this space. These are people who like. In my mind, you know, have been thinking about this for a long, long time and have formed, you",
+   "text": "I'm going to make mine about life. Do I, both are just one. No, both, both questions. Okay. I see. In about data and life, whatever. Yeah. Yeah. I don't know. Be nice to people. Just like, you know, help people out, have empathy. Like, try to try to be like open and collaborative in these kinds of conversations. Like, …",
    "summary": "",
    "quote": "I'm going to make mine about life. Do I, both are just one. No, both, both questions. Okay. I see. In about data and life, whatever. Yeah. Yeah. I don't know. Be nice to people. Just like, you know, help people out, have empathy. Like, try to try to be like open and collaborative in these kinds of conversations. Like,",
    "start": 3820.7,
@@ -7061,7 +7106,7 @@
    "guests": [
     "Chad Sanderson"
    ],
-   "text": "For my advice, one thing that I would really recommend any data team out there to do is it can become very easy to fall into the trap of continuous optimization of a bad system. Instead of rethinking the existing system, and that's hard, but it requires going to the people who are using the data, asking them what their problems are, getting a really, really good understanding of their needs, and then coming up with the best solution to solve that set of problems. So that will be my advice. I hope more data teams start following it and really thinking like a product team that's facing a third-party customer, treating those data people, treating those data scientists and analysts and everybody else as if they were customers. Amen. Amen. Yes. In terms of who to ask on next, I'm going to say Chet and Sharma or Che. Che is an awesome guy. He is a founder. He thinks about experimentation. I used to work in experimentation. It's actually experimentation that led me to a lot of these thoughts because there's a really tight interplay between the source of the data, the engineers that are implementing the code, how",
+   "text": "For my advice, one thing that I would really recommend any data team out there to do is it can become very easy to fall into the trap of continuous optimization of a bad system. Instead of rethinking the existing system, and that's hard, but it requires going to the people who are using the data, asking them what their …",
    "summary": "",
    "quote": "For my advice, one thing that I would really recommend any data team out there to do is it can become very easy to fall into the trap of continuous optimization of a bad system. Instead of rethinking the existing system, and that's hard, but it requires going to the people who are using the data, asking them what their",
    "start": 3673.5,
@@ -7122,7 +7167,7 @@
    "guests": [
     "Nong Li"
    ],
-   "text": "Yeah, I think in terms of advice for data and we alluded to some of those is plan for change. We love all this policy as code, X, Y, Z, S code, because it gives you that repeatability when your environment changes for whatever reason. So you've got to go do this. Think about the tasks you're doing. Imagine you're going to do it again and again 100 times over the next five years, swipe variation. So I think that that's the key to success for how to think about your data stack.",
+   "text": "Yeah, I think in terms of advice for data and we alluded to some of those is plan for change. We love all this policy as code, X, Y, Z, S code, because it gives you that repeatability when your environment changes for whatever reason. So you've got to go do this. Think about the tasks you're doing. Imagine you're …",
    "summary": "",
    "quote": "Yeah, I think in terms of advice for data and we alluded to some of those is plan for change. We love all this policy as code, X, Y, Z, S code, because it gives you that repeatability when your environment changes for whatever reason. So you've got to go do this. Think about the tasks you're doing. Imagine you're",
    "start": 3373.8,
@@ -7161,7 +7206,7 @@
    "guests": [
     "Bob Muglia"
    ],
-   "text": "And I guess life, I would say, you know, try and chill out in today's world. I mean, sitting there watching the Ukrainians, you know, the horrible things that are happening in the world today where, you know, this is one of the, I grew up through the whole core. I ducked and covered when I was a kid in elementary school. And, you know, we're in a weird time right now. It's a weird time in the world. We're seeing, I think we may have a rough year, we're seeing super high inflation rates, you know, I don't know whether we may head for a recession or not. It would not surprise me. So, I think we're going to, there's a rough time in the next year or two. Hopefully, all these things straight now. And we all wind up in a better place as a result. I'm a big believer that technology is what moves the world forward and helps to make things better. I believe that somewhat naively, I know that for every step forward, they're backward steps, you know, one, two steps forward, at least one step back, maybe three sometimes. And, but I do believe",
+   "text": "And I guess life, I would say, you know, try and chill out in today's world. I mean, sitting there watching the Ukrainians, you know, the horrible things that are happening in the world today where, you know, this is one of the, I grew up through the whole core. I ducked and covered when I was a kid in …",
    "summary": "",
    "quote": "And I guess life, I would say, you know, try and chill out in today's world. I mean, sitting there watching the Ukrainians, you know, the horrible things that are happening in the world today where, you know, this is one of the, I grew up through the whole core. I ducked and covered when I was a kid in",
    "start": 3348.1,
@@ -7350,7 +7395,7 @@
    "date": "2022-02-24",
    "episode": "Why are data transformations such a big deal? Live from the dbt Coalesce Happy Hour.",
    "guests": [],
-   "text": "I can go first, but yeah, I can go first, which is something I tell my kids a lot when it comes to food, especially if you can't say you don't like something unless you try it once, right? And this goes to the experience point and something Claire mentioned too, which is there's no way you're going to build experience without trying, right? So try, you know, don't be afraid. Try things. Yeah, I'm going to go off that and it also goes to my buy, but my first roll I had zero data experience, but I had a redshift database, found Stitch and found Tableau on top of it. So I was like, I'm a full stack developer. I just went from database to ETL to, but it gives, I think that's where I'm like taking advantage of tools and how many there are in the market, because you can turn someone with zero experience, but an interest in data, that's all I had, into someone who starts to understand the different, you know, roles and components that goes along with it. So that's definitely, yeah, it doesn't always need, you know, all the coding experience in the",
+   "text": "I can go first, but yeah, I can go first, which is something I tell my kids a lot when it comes to food, especially if you can't say you don't like something unless you try it once, right? And this goes to the experience point and something Claire mentioned too, which is there's no way you're going to build …",
    "summary": "",
    "quote": "I can go first, but yeah, I can go first, which is something I tell my kids a lot when it comes to food, especially if you can't say you don't like something unless you try it once, right? And this goes to the experience point and something Claire mentioned too, which is there's no way you're going to build",
    "start": 3649.6,
@@ -7396,7 +7441,7 @@
    "guests": [
     "Karen Lopez"
    ],
-   "text": "my advice about cost benefit and risk but I would say data lasts longer than code so you have to treat it better than you do software so think about that and then the person next so I don't have a name for say but a role if you haven't had someone on there I would love to have you talk to someone about the rapid changing data requirements during the pandemic in the health field so not just about data during covid but having to respond to everything changing about a business so I mean I can think of some people but I'm reluctant to name them because it might be compelling them but that's to see and if you want to have a day you should talk to Lynn Silverston who is a data modeling book author and we will definitely be following up with some of the names that you can recommend because I think that's an interesting topic and this is again I really am looking forward to be able to go see you in person again have this conversation more on like let's talk about horror stories this is dealing with gnolls and all this",
+   "text": "my advice about cost benefit and risk but I would say data lasts longer than code so you have to treat it better than you do software so think about that and then the person next so I don't have a name for say but a role if you haven't had someone on there I would love to have you …",
    "summary": "",
    "quote": "my advice about cost benefit and risk but I would say data lasts longer than code so you have to treat it better than you do software so think about that and then the person next so I don't have a name for say but a role if you haven't had someone on there I would love to have you",
    "start": 3170.9,
@@ -7455,7 +7500,7 @@
    "guests": [
     "Luke Slotwinski"
    ],
-   "text": "So my advice, either from a leadership perspective, lean into your teams, lean into the data. Nothing but good can come out of just paying attention to the world of possible and trying it out. And then for all those people out there trying to learn the data landscape, same thing as lean in and see the world of possible. There is so much cool things we can do with the tools and where they've come, the data models that are getting deployed by a lot of analytics teams out there. So get dangerous and roll up your sleeves. Get dangerous. Yeah. I'm trying that out. Get dangerous.",
+   "text": "So my advice, either from a leadership perspective, lean into your teams, lean into the data. Nothing but good can come out of just paying attention to the world of possible and trying it out. And then for all those people out there trying to learn the data landscape, same thing as lean in and see the world of possible. …",
    "summary": "",
    "quote": "So my advice, either from a leadership perspective, lean into your teams, lean into the data. Nothing but good can come out of just paying attention to the world of possible and trying it out. And then for all those people out there trying to learn the data landscape, same thing as lean in and see the world of possible.",
    "start": 3269.5,
@@ -7505,7 +7550,7 @@
    "guests": [
     "Laura Madsen"
    ],
-   "text": "Yeah, gosh, what's my advice? My advice generally is just keep going, right? I mean, it doesn't have to be a huge win. But it's those little things every day that you do to keep that concept of governance and your organization first and foremost is critically important for that long-term success. So just keep swinging. And so the next person, I am one of those people that firmly believe that data governance and data literacy are very tied together. I am not a data literacy expert by any stretch of the imagination. Different conversation, right? But how important it is when we particularly talk about communication and how important that is for our data functions, our data organization. So a good friend of mine is one of the co-founders of B Data Lit and her name is Sarah Nell Rodriguez. And I think she'd be great. Love this. Please, Sarah, if you're listening, you'll be on here. If you're not, Laura will send you this podcast. Thank you. Guess what? By the way, love your comment about data literacy and data governance being very tightly tied together. Couldn't agree more with that. Awesome.",
+   "text": "Yeah, gosh, what's my advice? My advice generally is just keep going, right? I mean, it doesn't have to be a huge win. But it's those little things every day that you do to keep that concept of governance and your organization first and foremost is critically important for that long-term success. So just keep swinging. And so the next …",
    "summary": "",
    "quote": "Yeah, gosh, what's my advice? My advice generally is just keep going, right? I mean, it doesn't have to be a huge win. But it's those little things every day that you do to keep that concept of governance and your organization first and foremost is critically important for that long-term success. So just keep swinging. And so the next",
    "start": 355.8,
@@ -7580,7 +7625,7 @@
    "guests": [
     "Dora Boussias"
    ],
-   "text": "Okay, what's my advice? I think my biggest advice, we've already touched about it, I don't think that technology is the answer to it all. It starts with people in my mind, then, you know, process and data and technology. My other big piece of advice is, don't forget to put that not only in business context, but in business context and to end. Don't only think about what you're doing right now, think about the impact of what you build two, three steps down the process flow, because we constantly forget this. We have the tennis to forget this.",
+   "text": "Okay, what's my advice? I think my biggest advice, we've already touched about it, I don't think that technology is the answer to it all. It starts with people in my mind, then, you know, process and data and technology. My other big piece of advice is, don't forget to put that not only in business context, but in business …",
    "summary": "",
    "quote": "Okay, what's my advice? I think my biggest advice, we've already touched about it, I don't think that technology is the answer to it all. It starts with people in my mind, then, you know, process and data and technology. My other big piece of advice is, don't forget to put that not only in business context, but in business",
    "start": 3298.3,
@@ -7739,7 +7784,7 @@
    "date": "2021-12-23",
    "episode": "Season Two Finale!!!",
    "guests": [],
-   "text": "My advice is, it's going to be similar to a couple of these here. Don't forget about people. Connect with people. Work with people. Find people that you love to work with. And think about how people fold into the equation, including meaning. People, people, people. What about you, Juan? What's your advice? I tell people always strive for excellence. You know when you're bullshitting. Just you know that and which leads into the second one, which is be honest and no BS. I think that's I think that's part of the whole theme of everything we talk here about. Just we don't have time for drama. Let's eliminate drama. Just be honest and no BS about it. Just be honest about what the people you are in. And you know you can be honest and no BS if you will surround yourself with awesome people who support you because they want that too. Another one I always say. We should make a podcast around honest no BS. That would be really cool. It's actually a great idea. Let's pin that one. And finally, don't forget, I don't know is a perfectly valid answer. If you don't know, say it",
+   "text": "My advice is, it's going to be similar to a couple of these here. Don't forget about people. Connect with people. Work with people. Find people that you love to work with. And think about how people fold into the equation, including meaning. People, people, people. What about you, Juan? What's your advice? I tell people always strive for excellence. …",
    "summary": "",
    "quote": "My advice is, it's going to be similar to a couple of these here. Don't forget about people. Connect with people. Work with people. Find people that you love to work with. And think about how people fold into the equation, including meaning. People, people, people. What about you, Juan? What's your advice? I tell people always strive for excellence.",
    "start": 3887.3,
@@ -7779,7 +7824,7 @@
    "guests": [
     "Steve Whitla"
    ],
-   "text": "So advice, I think you nailed it one, connect to experience. Don't assume that other people have the experiences as you find your own way of doing that. We use drawing, that experiment. You'll know when it happens. Who else should be invited? First person should be invited is the client I mentioned who talked about Chief Purpose Officer. So one of a handful of clients who blow my mind occasionally with how far ahead they're thinking are as their domain. And that's a guy called Daven Crowley Sweet, who's the Chief Data Officer at the organization that runs all of the highways here in the UK, manages and maintains them. He's just a fascinating guy and a great to talk to.",
+   "text": "So advice, I think you nailed it one, connect to experience. Don't assume that other people have the experiences as you find your own way of doing that. We use drawing, that experiment. You'll know when it happens. Who else should be invited? First person should be invited is the client I mentioned who talked about Chief Purpose Officer. So …",
    "summary": "",
    "quote": "So advice, I think you nailed it one, connect to experience. Don't assume that other people have the experiences as you find your own way of doing that. We use drawing, that experiment. You'll know when it happens. Who else should be invited? First person should be invited is the client I mentioned who talked about Chief Purpose Officer. So",
    "start": 3503.9,
@@ -7839,7 +7884,7 @@
    "guests": [
     "Kelly Wright"
    ],
-   "text": "Well, my advice, you know, often in these, we talk about all these things, data, reality, autonomous, AI, sales, all these different things. But I think a lot of it does come back to one thing I mentioned earlier is just how are we thinking about our people as our greatest asset and then empowering those people, empowering our people to be able to thrive, hiring the best people, allowing them to do their best work, bring their authentic self, and everyone's always focusing so much on operational efficiencies. How are we thinking about our people? And as we think about our people, so much of helping our people be empowered and thrive is about allowing them to get those tools to help them be better, to work on their growth mindset, to continue to grow and develop, to be able to have access to the right data. And data really unlocks all of that. And so there's lots of other things you can do to really serve, to be able to be great culture companies for your people. But data is definitely a core one of them. So that's what I'd say. All about the people, and data actually",
+   "text": "Well, my advice, you know, often in these, we talk about all these things, data, reality, autonomous, AI, sales, all these different things. But I think a lot of it does come back to one thing I mentioned earlier is just how are we thinking about our people as our greatest asset and then empowering those people, empowering our people …",
    "summary": "",
    "quote": "Well, my advice, you know, often in these, we talk about all these things, data, reality, autonomous, AI, sales, all these different things. But I think a lot of it does come back to one thing I mentioned earlier is just how are we thinking about our people as our greatest asset and then empowering those people, empowering our people",
    "start": 3457.7,
@@ -7878,7 +7923,7 @@
    "guests": [
     "Nick Schrock"
    ],
-   "text": "So, guest suggestions. I was thinking about this before the show. And, you know, I think you, I hear lots of vendors and tool authors on these shows all the time. And I think we should talk to more power users about the problems they're trying to solve. And an early user, Dagster, who also was a dev actor in his previous life, this guy named David Wallace who works at Duchy. Actually, I think we'll be, someone who comes to mind, I don't have interesting takes on it, but from the standpoint of someone who's trying to solve problems, not pitch a tool. And I think that's like a perspective that's often overlooked in kind of the podcast sphere. So, both the individual, human, and general guest classification suggestion. Love that. Yeah, in terms of advice, what is an important piece of advice? Can you narrow anything? Do you want to narrow anything? Besides, start with, have orchestration. I guess that's a good piece of advice. You don't have anything, anything. Yeah, I guess this is going to probably be cheesy, but the optimized for the people around you in your life, both in your personal life and your",
+   "text": "So, guest suggestions. I was thinking about this before the show. And, you know, I think you, I hear lots of vendors and tool authors on these shows all the time. And I think we should talk to more power users about the problems they're trying to solve. And an early user, Dagster, who also was a dev actor in …",
    "summary": "",
    "quote": "So, guest suggestions. I was thinking about this before the show. And, you know, I think you, I hear lots of vendors and tool authors on these shows all the time. And I think we should talk to more power users about the problems they're trying to solve. And an early user, Dagster, who also was a dev actor in",
    "start": 3424.5,
@@ -7926,7 +7971,7 @@
    "guests": [
     "Andy Palmer"
    ],
-   "text": "Yeah, so in terms of advice, I think that the best thing to do when you're building any modern data ecosystem is to start with the questions. Start with the consumption of the data and work back from the questions that people have and that they need answered, and especially the ones that are really valuable to them. And you know, you will build the infrastructure to suit the questions that they have. And I think the, you know, it's the opposite of where most people start. Most people start with the source. And I think we need to change the design point, you know, for our data engineering ecosystems to starting with the consumption. In terms of who to have next, so I can't believe I'm saying this, but I'm going to, like,",
+   "text": "Yeah, so in terms of advice, I think that the best thing to do when you're building any modern data ecosystem is to start with the questions. Start with the consumption of the data and work back from the questions that people have and that they need answered, and especially the ones that are really valuable to them. And you …",
    "summary": "",
    "quote": "Yeah, so in terms of advice, I think that the best thing to do when you're building any modern data ecosystem is to start with the questions. Start with the consumption of the data and work back from the questions that people have and that they need answered, and especially the ones that are really valuable to them. And you",
    "start": 3152.2,
@@ -7965,7 +8010,7 @@
    "guests": [
     "Cindi Howson"
    ],
-   "text": "yeah so it advice stop stop building legacy things challenge yourself so no more dead end dashboards and and don't feel like you made a bad decision take control of your career recognize that state-of-the-art keeps changing so how are you going to invest in yourself and bring your company forward your careers forward this I mean I've been here 30 years and yet now is the time for data and analytics we are the power behind the fourth industrial revolution it's so exciting so but don't work yourselves to death so it's about doing more with less and working working smarter and that's what I'm super excited about and who should you have yes oh there's there's so many you know who I still want to hear from or how about the new the US now has a new chief data scientist I I still wonder like about it does Israel must have a US chief data scientist or chief data officer I just think there's a lot of innovation in that country I don't know that they share this but I would be curious to hear to hear from that person if he or she exists like another",
+   "text": "yeah so it advice stop stop building legacy things challenge yourself so no more dead end dashboards and and don't feel like you made a bad decision take control of your career recognize that state-of-the-art keeps changing so how are you going to invest in yourself and bring your company forward your careers forward this I mean I've been here …",
    "summary": "",
    "quote": "yeah so it advice stop stop building legacy things challenge yourself so no more dead end dashboards and and don't feel like you made a bad decision take control of your career recognize that state-of-the-art keeps changing so how are you going to invest in yourself and bring your company forward your careers forward this I mean I've been here",
    "start": 3377.0,
@@ -8004,7 +8049,7 @@
    "guests": [
     "Erik Bernhardsson"
    ],
-   "text": "What's my advice is keep a curious mind, write sequel queries and scatter code. I don't know, like I think my biggest advice is think about what the business needs because I think that like so many people get excited about tools and they get excited about like specialization. And like I think people sometimes forget about like, okay, I'm actually here to like the most successful business and I think that's always been my best career advice. It's like every morning come in with this sort of perspective that like what is the biggest value that I can have through business today and then kind of do that. That's great advice. Who do I next? So I was going to say Sarah Cotton's sorrow, but I sounds like you're all should talking to her. So now I'm like drawing a blank. No, that's fine. I met her. I finally met her in person today because she was here in Austin. So I'll make sure that she listens to this and have her know that you called her out. So awesome. Cool.",
+   "text": "What's my advice is keep a curious mind, write sequel queries and scatter code. I don't know, like I think my biggest advice is think about what the business needs because I think that like so many people get excited about tools and they get excited about like specialization. And like I think people sometimes forget about like, okay, I'm …",
    "summary": "",
    "quote": "What's my advice is keep a curious mind, write sequel queries and scatter code. I don't know, like I think my biggest advice is think about what the business needs because I think that like so many people get excited about tools and they get excited about like specialization. And like I think people sometimes forget about like, okay, I'm",
    "start": 3320.9,
@@ -8050,7 +8095,7 @@
    "guests": [
     "Doug Laney"
    ],
-   "text": "We didn't talk much about data literacy. And I think it just incumbent upon organizations and people at every level to become sufficiently data literate. And that doesn't mean how to use a BI tool or a catalog tool, but understand all the terminology, what it means, the challenges of data architecture, the impact on the organization, when data changes or data is misused or mishandled. I think all that understanding the value of data, that all ought to be part of a data literacy program and then ensure there's sufficient change management components to the data literacy program as well. Awesome. Well, Doug, this has been a fantastic conversation. Thanks guys. So many, many important nuggets and as always, I look forward to listening again to this to our podcast ourselves.",
+   "text": "We didn't talk much about data literacy. And I think it just incumbent upon organizations and people at every level to become sufficiently data literate. And that doesn't mean how to use a BI tool or a catalog tool, but understand all the terminology, what it means, the challenges of data architecture, the impact on the organization, when data changes …",
    "summary": "",
    "quote": "We didn't talk much about data literacy. And I think it just incumbent upon organizations and people at every level to become sufficiently data literate. And that doesn't mean how to use a BI tool or a catalog tool, but understand all the terminology, what it means, the challenges of data architecture, the impact on the organization, when data changes",
    "start": 3279.8,
@@ -8100,7 +8145,7 @@
    "guests": [
     "Partha Srinivasa"
    ],
-   "text": "Thank you. So first of all, thank you for inviting me. I appreciate it. Thank you for everyone who's listening to. So I'll tell you that I learned a lot as part of this conversation, to be very honest, because you know what, when you talk, when you share, you learn, because the questions what you were asking actually reminded me to think few things, which I may not have talked through if I didn't sit like this for an hour with somebody and talk about it. So I appreciate this opportunity to talk to you and also learn as part of this conversation as I was sharing what I've learned from many of my peer groups and people who have given me a lot of advice on what to do. I'm still learning. So if you ask me the first advice, you know, keep learning. That's my first advice. There's always the only thing which is constant in the world everyone says is what's changing, right? That's all it is. That continues to change and evolve. And there's so much to learn. So I would say that keep learning and keep your eyes and ears open, because you know",
+   "text": "Thank you. So first of all, thank you for inviting me. I appreciate it. Thank you for everyone who's listening to. So I'll tell you that I learned a lot as part of this conversation, to be very honest, because you know what, when you talk, when you share, you learn, because the questions what you were asking actually reminded …",
    "summary": "",
    "quote": "Thank you. So first of all, thank you for inviting me. I appreciate it. Thank you for everyone who's listening to. So I'll tell you that I learned a lot as part of this conversation, to be very honest, because you know what, when you talk, when you share, you learn, because the questions what you were asking actually reminded",
    "start": 3243.4,
@@ -8217,7 +8262,7 @@
    "guests": [
     "Jans Aasman"
    ],
-   "text": "you're in a particular domain and you're overwhelmed with information that is extremely diverse than think about building a knowledge graph can I add a little bit of color to that I talked this weekend to two different people that are in completely different domains that both never had heard of a knowledge graph by the way that was so we all think in this audience our knowledge graph but I mean most people have no clue what you talk about right one what's them looking at climate change and how can you create a new world where people die fist their money from oil and gas companies and put it into other things right how do it in such a way that that the big companies will accept it accepted how making festers will accept it and I talked about so where do you get your knowledge where do you store successful policies and all of that and she said well everywhere and it's so hard to find and so I had to explain with a knowledge graph was right and another guy talked about he's doing economics research in psychedelics in health care right how how can you",
+   "text": "you're in a particular domain and you're overwhelmed with information that is extremely diverse than think about building a knowledge graph can I add a little bit of color to that I talked this weekend to two different people that are in completely different domains that both never had heard of a knowledge graph by the way that was so …",
    "summary": "",
    "quote": "you're in a particular domain and you're overwhelmed with information that is extremely diverse than think about building a knowledge graph can I add a little bit of color to that I talked this weekend to two different people that are in completely different domains that both never had heard of a knowledge graph by the way that was so",
    "start": 3150.6,
@@ -8256,7 +8301,7 @@
    "guests": [
     "Lars Albertsson"
    ],
-   "text": "I think my advice, which I have twofolder piece of advice. And I think it applies both to data, engineering in general and perhaps life in general. And that is keep things very simple, as simple as you can get away with and prepare and design for failure. So think about the cases where things go bad and try to cater for them or try to plan for them. And that will then if a good data engineering architecture will fall out of those priorities. And a perhaps a good life plan as well. And who should you invite?",
+   "text": "I think my advice, which I have twofolder piece of advice. And I think it applies both to data, engineering in general and perhaps life in general. And that is keep things very simple, as simple as you can get away with and prepare and design for failure. So think about the cases where things go bad and try to …",
    "summary": "",
    "quote": "I think my advice, which I have twofolder piece of advice. And I think it applies both to data, engineering in general and perhaps life in general. And that is keep things very simple, as simple as you can get away with and prepare and design for failure. So think about the cases where things go bad and try to",
    "start": 3380.5,
@@ -8341,7 +8386,7 @@
    "guests": [
     "Mike Ferguson"
    ],
-   "text": "So my advice is nothing necessarily to do with what we've been talking about is a life thing really. For me, my advice is surround yourself with others who are better than you and learn from them. And also, I have this thing in my head, which is always if in doubt, separated out. That means if you don't understand a problem, dismantle the problem and solve bits of it until you solve the whole problem. Love that. Love that.",
+   "text": "So my advice is nothing necessarily to do with what we've been talking about is a life thing really. For me, my advice is surround yourself with others who are better than you and learn from them. And also, I have this thing in my head, which is always if in doubt, separated out. That means if you don't understand …",
    "summary": "",
    "quote": "So my advice is nothing necessarily to do with what we've been talking about is a life thing really. For me, my advice is surround yourself with others who are better than you and learn from them. And also, I have this thing in my head, which is always if in doubt, separated out. That means if you don't understand",
    "start": 3462.7,
@@ -8380,7 +8425,7 @@
    "guests": [
     "Kirk Borne"
    ],
-   "text": "Well, my advice ties right back to our toast at the beginning. And that is about education, start of the school year. So I have ice is to stay a lifelong learner. No matter where you are, what you're doing, always be in learning mode. I mean, I think my background's physics and astronomy with learn physics and I did colliding galaxies and black hole accretion of this, if any of that makes any sense to people years ago. And now I'm advising companies and medicine and cybersecurity and behavior analytics and all kinds of stuff. And it's because that I'm any kind of special person, but I just never stop learning. As always, it was learning new things. It's open the doors for many opportunities in my life. And I encourage people to always do that, just be in the lookout",
+   "text": "Well, my advice ties right back to our toast at the beginning. And that is about education, start of the school year. So I have ice is to stay a lifelong learner. No matter where you are, what you're doing, always be in learning mode. I mean, I think my background's physics and astronomy with learn physics and I did …",
    "summary": "",
    "quote": "Well, my advice ties right back to our toast at the beginning. And that is about education, start of the school year. So I have ice is to stay a lifelong learner. No matter where you are, what you're doing, always be in learning mode. I mean, I think my background's physics and astronomy with learn physics and I did",
    "start": 3314.2,
@@ -8419,7 +8464,7 @@
    "guests": [
     "Denise Gosnell"
    ],
-   "text": "Yeah, so my advice about life is take a sabbatical. Well, in all honesty, the take a sabbatical comment is coming from the theme that Tim was just recapping with developer empathy. If you want to be able to have empathy for other people, first start with understanding what empathy looks like for yourself. I think a lot of people forget to make sure that they're capable of monitoring their own ups and downs sometimes. And if it's going to be really hard to be empathetic for others when they're going through the myriad of open source software tools that are out there and how to use them when you don't fully understand what that looks like. So that's my advice.",
+   "text": "Yeah, so my advice about life is take a sabbatical. Well, in all honesty, the take a sabbatical comment is coming from the theme that Tim was just recapping with developer empathy. If you want to be able to have empathy for other people, first start with understanding what empathy looks like for yourself. I think a lot of people …",
    "summary": "",
    "quote": "Yeah, so my advice about life is take a sabbatical. Well, in all honesty, the take a sabbatical comment is coming from the theme that Tim was just recapping with developer empathy. If you want to be able to have empathy for other people, first start with understanding what empathy looks like for yourself. I think a lot of people",
    "start": 3415.8,
@@ -8458,7 +8503,7 @@
    "guests": [
     "Emil Eifrem"
    ],
-   "text": "Then, advice to, I bet we have other kind of fellow startup founders, entrepreneurs, you know, that type of audience. And one of the things is, first of all, ignore advice, right? That's why I've gotten a lot of advice. I've listened to some of it. We ignored most of it, right? So that's kind of the first one. The one thing though, that always is true is, there's no way for you, dear fellow startup founder, to over index on understanding the customer. Like, that's the one thing. And when I say customer, I mean the actual user of your product. Not the economic buyer, yes, they're valuable. Not their boss, yes, they're valuable. Not freaking procurement, yes, they're valuable. But understand the actual user of your product. There's no way you can spend too much time doing that, right? That's the one advice for startup founders. And then I think, you know, I think general work advice, surround yourself with the, I mean, you're the average of the five people you spend the most time with, right? So find the brightest people, no matter what the role is, no matter what the pay is, just find the brightest,",
+   "text": "Then, advice to, I bet we have other kind of fellow startup founders, entrepreneurs, you know, that type of audience. And one of the things is, first of all, ignore advice, right? That's why I've gotten a lot of advice. I've listened to some of it. We ignored most of it, right? So that's kind of the first one. The …",
    "summary": "",
    "quote": "Then, advice to, I bet we have other kind of fellow startup founders, entrepreneurs, you know, that type of audience. And one of the things is, first of all, ignore advice, right? That's why I've gotten a lot of advice. I've listened to some of it. We ignored most of it, right? So that's kind of the first one. The",
    "start": 3342.5,
@@ -8497,7 +8542,7 @@
    "guests": [
     "DJ Patil"
    ],
-   "text": "is the advice I have is just work with amazing people. And if you're not working with people who are amazing, move on, honestly, move on. And what do I mean by amazing? People are gonna kick your ass every day. People are gonna laugh with you, make you cry, make you so much better. And where in a year, just like, how could I have lived without these people? Find those people. It'll be hard. It'll be intense, but find those people. They will make you so much better. And then who next to have? You know, I'm gonna go with the authors of my book. So I'm just gonna go with my tracker to breaking rules and saying more things here. So it's, I'm gonna recommend Tara and Hannah and Jer. Because I think they're phenomenal people working on Jen, they don't get enough credit. Awesome. G'day, this was a pleasure.",
+   "text": "is the advice I have is just work with amazing people. And if you're not working with people who are amazing, move on, honestly, move on. And what do I mean by amazing? People are gonna kick your ass every day. People are gonna laugh with you, make you cry, make you so much better. And where in a year, …",
    "summary": "",
    "quote": "is the advice I have is just work with amazing people. And if you're not working with people who are amazing, move on, honestly, move on. And what do I mean by amazing? People are gonna kick your ass every day. People are gonna laugh with you, make you cry, make you so much better. And where in a year,",
    "start": 3385.0,
@@ -8547,7 +8592,7 @@
    "date": "2021-05-27",
    "episode": "The Future of BI is AI",
    "guests": [],
-   "text": "My general advice is always be networking. Like talking to you two today, I will want to learn, we have to go have a drink and talk a little bit more about low code, but you learn something every time. And not just specifically in data and analytics in your industry, like always be networking. I tell my team this what makes time for it, always be networking, talk to everybody from entrepreneurs, to people at big companies, it's amazing.",
+   "text": "My general advice is always be networking. Like talking to you two today, I will want to learn, we have to go have a drink and talk a little bit more about low code, but you learn something every time. And not just specifically in data and analytics in your industry, like always be networking. I tell my team this …",
    "summary": "",
    "quote": "My general advice is always be networking. Like talking to you two today, I will want to learn, we have to go have a drink and talk a little bit more about low code, but you learn something every time. And not just specifically in data and analytics in your industry, like always be networking. I tell my team this",
    "start": 2355.2,
@@ -8575,7 +8620,7 @@
    "date": "2021-05-20",
    "episode": "Knowledge is Power: Knowledge Management meets Data Management",
    "guests": [],
-   "text": "So on the advice question, you know, never stop learning. I've learned more in the last three years than I ever learned before. And I think what I've noticed both for our consultants and for myself personally, if you're learning, you're trying new things. If you're trying new things, you're struggling at times, right? You're making the difference, but it's always challenging. And if you treat everything as a learning experience, it will be a positive environment. I think I read an article once that said, the happiest people in the world are people that look at life as a learning experience. So that's my thought there. How's that sound? Love it. Never stop learning.",
+   "text": "So on the advice question, you know, never stop learning. I've learned more in the last three years than I ever learned before. And I think what I've noticed both for our consultants and for myself personally, if you're learning, you're trying new things. If you're trying new things, you're struggling at times, right? You're making the difference, but it's …",
    "summary": "",
    "quote": "So on the advice question, you know, never stop learning. I've learned more in the last three years than I ever learned before. And I think what I've noticed both for our consultants and for myself personally, if you're learning, you're trying new things. If you're trying new things, you're struggling at times, right? You're making the difference, but it's",
    "start": 2758.1,
@@ -8614,7 +8659,7 @@
    "guests": [
     "Brandon Chen"
    ],
-   "text": "My advice is if you can do it in five minutes, just do it now. Save me X amount of time on washing dishes, like hours of washing dishes time, probably. That's my notable benefit. Who would I meet? Don't know any models names off the top of my head or before that theme. But I'm a big fan of Denise Person at Snowflake. She's there at CMO. Prior to Snowflake, she became VP of global marketing at Genesis at like age 27 or something crazy like that. And then she also launched Apigee and like defined like a basically a whole new market segment. And me being a marketing nerd, I am trying to learn more with, I think it should be great if you could reach out there. Awesome. We haven't had any people from Snowflake officially as part of the show. So we might need to remedy that. Love it.",
+   "text": "My advice is if you can do it in five minutes, just do it now. Save me X amount of time on washing dishes, like hours of washing dishes time, probably. That's my notable benefit. Who would I meet? Don't know any models names off the top of my head or before that theme. But I'm a big fan of …",
    "summary": "",
    "quote": "My advice is if you can do it in five minutes, just do it now. Save me X amount of time on washing dishes, like hours of washing dishes time, probably. That's my notable benefit. Who would I meet? Don't know any models names off the top of my head or before that theme. But I'm a big fan of",
    "start": 2434.4,
@@ -8667,7 +8712,7 @@
    "guests": [
     "Meetesh Karia"
    ],
-   "text": "Yeah, so I thought about the advice question and then I guess it came down to something that I think about a lot Because because I've Maybe intentionally or unintentionally practiced it and that's really surround yourself with great people Right. Um, there's no way that we as zebra would be here I would be able to be where I am without having great people with me who challenged me who I can rely on to call bs on me to you know, spitball and have these great conversations with and Just in life. And so I think that you I can't understate how much being around and you know working with great people how important it is Well that",
+   "text": "Yeah, so I thought about the advice question and then I guess it came down to something that I think about a lot Because because I've Maybe intentionally or unintentionally practiced it and that's really surround yourself with great people Right. Um, there's no way that we as zebra would be here I would be able to be where I …",
    "summary": "",
    "quote": "Yeah, so I thought about the advice question and then I guess it came down to something that I think about a lot Because because I've Maybe intentionally or unintentionally practiced it and that's really surround yourself with great people Right. Um, there's no way that we as zebra would be here I would be able to be where I",
    "start": 2502.8,
@@ -8771,7 +8816,7 @@
    "date": "2021-04-07",
    "episode": "Power to the Data!",
    "guests": [],
-   "text": "Let's see advice. You know, we put it on add once a long time ago, we were looking for developers in this enterprise we were in. And we said something about joining our plan to take over the world. And one of the respondents writes back and says, you know, if you're if you're looking for taking over the world, my advice is don't invade Russia in the winter. So that's my that's my first piece of advice. Don't invite don't invade Russia in the winter. In terms of people to invite, have you had Jan's awesome on the show yet? We haven't, but Jan's if you're listening, we're going to send you this, you're going to get you're going to be on the show for sure. Yeah, yeah, he's always got interesting things to say. Do you know Parsa Mahaji at Modafiori? I do know Parsa. Yeah, yeah, I think he'd be a good one. Okay, excellent. Love this. Yeah. Anything anyone else? Nothing on a role there? You know, yeah, we just did a little partnership with this firm called visual meaning. And the the head guy is named Steve Whitla. And they have created this way to",
+   "text": "Let's see advice. You know, we put it on add once a long time ago, we were looking for developers in this enterprise we were in. And we said something about joining our plan to take over the world. And one of the respondents writes back and says, you know, if you're if you're looking for taking over the world, …",
    "summary": "",
    "quote": "Let's see advice. You know, we put it on add once a long time ago, we were looking for developers in this enterprise we were in. And we said something about joining our plan to take over the world. And one of the respondents writes back and says, you know, if you're if you're looking for taking over the world,",
    "start": 1981.1,
@@ -8841,7 +8886,7 @@
    "date": "2021-03-30",
    "episode": "Does your data have a ‘born on’ date?",
    "guests": [],
-   "text": "and second who should we invite or or from what category or what topic so on partying advice you know think about designing for longevity and you know one example I mentioned this semantic summer yay so I did this wine and food pairing program in the 80s in university and it still lives on today this wines ontology that I did in the 80s lives on today that I would have never anticipated and so you know I didn't put provenance in it then but it would have been nice had I done that it was in my head so designing for longevity from a provenance perspective and from a design perspective because you know success like that can happen and and actually I take that I look back on the design principles that I put into the things that lasted for decades and it's usually simplicity and it's usually extensibility and modularity",
+   "text": "and second who should we invite or or from what category or what topic so on partying advice you know think about designing for longevity and you know one example I mentioned this semantic summer yay so I did this wine and food pairing program in the 80s in university and it still lives on today this wines ontology that …",
    "summary": "",
    "quote": "and second who should we invite or or from what category or what topic so on partying advice you know think about designing for longevity and you know one example I mentioned this semantic summer yay so I did this wine and food pairing program in the 80s in university and it still lives on today this wines ontology that",
    "start": 2049.4,
@@ -8869,7 +8914,7 @@
    "date": "2021-03-18",
    "episode": "Identity graph: the new customer 360",
    "guests": [],
-   "text": "Advice, I'll just go back to it. Design for, design to touch the market, right? It's so important. Who should you have next? I don't know about who, but from a category perspective. I'd almost pick, like I think about our client roster, right? Whether they're folks in the automotive industry, the package goods industry, financial services, bring in any one of those people to share their both challenges and needs in the marketplace going forward. I think you'd have a fantastic conversation where they could express work that they're doing, but really what they need. And I think you would find a pretty material connection between the capabilities and the needs. Awesome. How about you, Brett?",
+   "text": "Advice, I'll just go back to it. Design for, design to touch the market, right? It's so important. Who should you have next? I don't know about who, but from a category perspective. I'd almost pick, like I think about our client roster, right? Whether they're folks in the automotive industry, the package goods industry, financial services, bring in any …",
    "summary": "",
    "quote": "Advice, I'll just go back to it. Design for, design to touch the market, right? It's so important. Who should you have next? I don't know about who, but from a category perspective. I'd almost pick, like I think about our client roster, right? Whether they're folks in the automotive industry, the package goods industry, financial services, bring in any",
    "start": 2148.3,
@@ -8936,7 +8981,7 @@
    "guests": [
     "Lior Gavish"
    ],
-   "text": "very broad question and second who should we invite next oh good one so a device I'll since we talked about trust it's just reminding me a quote that I heard from my my previous boss that really stuck with me which is to gain trust you have to extend trust right so that kind of taught me to to first believe with whole judgment and and that's sort of me well in my career and in working with other people so I'll share that advice I'll share that advice",
+   "text": "very broad question and second who should we invite next oh good one so a device I'll since we talked about trust it's just reminding me a quote that I heard from my my previous boss that really stuck with me which is to gain trust you have to extend trust right so that kind of taught me to to …",
    "summary": "",
    "quote": "very broad question and second who should we invite next oh good one so a device I'll since we talked about trust it's just reminding me a quote that I heard from my my previous boss that really stuck with me which is to gain trust you have to extend trust right so that kind of taught me to to",
    "start": 2300.2,
@@ -8975,7 +9020,7 @@
    "guests": [
     "Mohammed Aaser"
    ],
-   "text": "So on the, on the advice question, I guess one of, one of my friends shared this piece with me that, you know, there's an 80, 20 rule, the Pareto principle, you know, 20% or 20% of things that come for 80%, right? You can, you can kind of be efficient that way. I kind of believe in the 92 rule, which is spend 2% of your energy building the right friends and surrounding yourself with the right people and 98% of your life gets solved for you. Nice. I love that.",
+   "text": "So on the, on the advice question, I guess one of, one of my friends shared this piece with me that, you know, there's an 80, 20 rule, the Pareto principle, you know, 20% or 20% of things that come for 80%, right? You can, you can kind of be efficient that way. I kind of believe in the 92 …",
    "summary": "",
    "quote": "So on the, on the advice question, I guess one of, one of my friends shared this piece with me that, you know, there's an 80, 20 rule, the Pareto principle, you know, 20% or 20% of things that come for 80%, right? You can, you can kind of be efficient that way. I kind of believe in the 92",
    "start": 2126.7,

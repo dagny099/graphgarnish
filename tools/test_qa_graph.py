@@ -283,6 +283,23 @@ check("possessives are stripped and names snapped", people == ["Sarah Catanzaro"
 check("lone capitalised words are dropped unless distinctive", "LinkedIn" in things and "Irish" not in things
       and "Take" not in things and "Snowflake" not in things, str(things))
 
+print("what gets published")
+g_pub, rows_pub = qa.published({"nodes": [{"type": "answer", "text": "one two three four five", "quote": "one two"}],
+                                "links": []},
+                               [{"answer": "one two three four five", "quote": "one two", "hints": []}], 3)
+check("published answers stop at the word cap and say so",
+      rows_pub[0]["answer"] == "one two three …" and rows_pub[0]["answer_words"] == 5
+      and g_pub["nodes"][0]["text"] == "one two three …" and rows_pub[0]["quote"] == "one two")
+full = json.loads((tmp / "cache" / "test-show" / "answers" / "invite-next.json").read_text())
+check("full answers go to the private store, beside the transcripts",
+      any("Hana Sato" in r["answer"] for r in full))
+later = {(x["who"], x["by"]) for x in invite["meta"]["named_then_guest"]}
+check("the graph lists people named and later on the show, with dates",
+      later == {("Ada Park", "Cleo Diaz"), ("Ada Park", "Fay Lin"), ("Ben Ortiz", "Dev Rao")}, str(later))
+check("a person named before their own episode is not 'later'", ("Ben Ortiz", "Ada Park") not in later)
+check("the graph carries its date range", invite["meta"]["first_date"] == "2025-10-23"
+      and invite["meta"]["last_date"] == "2026-03-05")
+
 print("cache")
 cached = list((tmp / "cache" / "test-show" / "transcripts").glob("*.json"))
 check("local transcript files are read fresh, not cached", cached == [])

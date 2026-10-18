@@ -37,6 +37,7 @@ python3 tools/qa_graph.py --podcast "Data Engineering Podcast" \
 | `transcripts.whisper` | local speech-to-text with faster-whisper (`pip install faster-whisper`). `from_end_minutes` transcribes only the end of each episode, which is where most shows ask their closing questions, and is about 3x cheaper than the whole episode |
 | `guests.from` | where to find each episode's guest, in order: `speakers` (transcript labels), `graph` (a GraphGarnish network's `GUEST_ON` links), `title`, `description` |
 | `guests.graph` | path to that network, e.g. `../sample_network.json` |
+| `publish.answer_words` | how much of each answer the public files carry (default 60 words); the full answer goes to the private store |
 | `llm.mode` | `auto` runs a Claude pass when `ANTHROPIC_API_KEY` is set; `off` never does |
 | `llm.model`, `llm.effort` | default `claude-opus-5`, effort `low` |
 
@@ -77,3 +78,8 @@ them against the committed answers without any transcripts:
 ```bash
 python3 tools/qa_graph.py podcasts/catalog-and-cocktails.json --regraph --report
 ```
+
+`--regraph` reads the full answers from the private store when it is present
+(`.cache/qa/<podcast>/answers/`, filled by `tools/transcript_store.sh pull`),
+and otherwise the published excerpts, which give shared ideas less to work
+with.

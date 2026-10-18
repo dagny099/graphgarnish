@@ -49,6 +49,8 @@ label.toggle { display: flex; align-items: center; gap: 8px; font-size: 14px; ma
 blockquote { border-left: 3px solid #5a4bb5; padding: 4px 10px; margin: 10px 0; font-style: italic; font-size: 15px; line-height: 1.45; }
 a { color: #5a4bb5; }
 .muted { color: #999; font-size: 13px; }
+.note.transcribed { background: #fff6e6; border-left: 3px solid #f0a500; padding: 6px 9px; border-radius: 0 6px 6px 0; color: #5c4400; }
+.listen { font-size: 12px; white-space: nowrap; }
 #tooltip {
   position: absolute; pointer-events: none; background: rgba(20,20,30,.9); color: white; padding: 6px 10px;
   border-radius: 8px; font-size: 12px; max-width: 280px; opacity: 0; transition: opacity .15s;
@@ -71,6 +73,7 @@ text.label { font-size: 11px; fill: white; pointer-events: none; paint-order: st
     <select id="picker" aria-label="Choose a podcast and question"></select>
     <div class="question" id="q-text">Loading…</div>
     <div class="sub" id="q-podcast"></div>
+    <p class="note transcribed" id="transcribe-note">Each answer is a short excerpt, transcribed by machine from the episode audio. Words and names can be misheard. Every answer links to its moment in the audio, so you can hear what was really said.</p>
     <div class="stats">
       <div class="stat"><b id="s-eps">–</b><span>episodes</span></div>
       <div class="stat"><b id="s-tr">–</b><span>transcribed</span></div>
@@ -196,8 +199,10 @@ function mentionsOf(answerId) {
 function card(a) {
   const chips = mentionsOf(a.id).map(n =>
     `<span class="chip" style="background:${COLORS[n.type]}55" data-id="${esc(n.id)}">${esc(n.name)}</span>`).join('');
+  const listen = a.audio_url && a.start != null
+    ? ` · <a class="listen" href="${esc(a.audio_url)}#t=${Math.floor(a.start)}" target="_blank" rel="noopener">▶ ${mmss(a.start)}</a>` : '';
   return `<div class="card" data-id="${esc(a.id)}">
-    <div class="meta">${esc(a.date)} · <b>${esc((a.guests || []).join(', ') || 'guest unknown')}</b></div>
+    <div class="meta">${esc(a.date)} · <b>${esc((a.guests || []).join(', ') || 'guest unknown')}</b>${listen}</div>
     <div class="quote">${esc(a.summary || a.quote)}</div>
     <div class="chips">${chips}</div></div>`;
 }
@@ -211,7 +216,7 @@ function renderList() {
 
 function bindCards(el) {
   el.querySelectorAll('.chip').forEach(c => c.onclick = ev => { ev.stopPropagation(); select(c.dataset.id); });
-  el.querySelectorAll('.card').forEach(c => c.onclick = () => select(c.dataset.id));
+  el.querySelectorAll('.card').forEach(c => c.onclick = ev => { if (!ev.target.closest('a')) select(c.dataset.id); });
 }
 
 function tab(which) {
@@ -236,14 +241,17 @@ function select(id) {
   let body = '';
   if (n.type === 'answer') {
     const listen = n.audio_url && n.start != null
-      ? `<p><a href="${esc(n.audio_url)}#t=${Math.floor(n.start)}" target="_blank" rel="noopener">▶ Listen from ${mmss(n.start)}</a></p>` : '';
+      ? `<p><a href="${esc(n.audio_url)}#t=${Math.floor(n.start)}" target="_blank" rel="noopener">▶ Hear the whole answer, from ${mmss(n.start)}</a></p>` : '';
+    const source = n.transcript_source === 'whisper'
+      ? 'Machine-transcribed from the audio (Whisper speech-to-text). Words and names may be misheard.'
+      : 'From the transcript the show publishes.';
     const similar = neighbours(id, 'SIMILAR_TO').filter(Boolean);
     body = `<div class="detail-title">${esc((n.guests || []).join(', ') || 'Guest unknown')}</div>
       <div class="muted">${esc(n.date)} · ${esc(n.episode)}</div>
       ${n.summary ? `<p>${esc(n.summary)}</p>` : ''}
-      <blockquote>${esc(n.quote)}</blockquote>${listen}
-      <h2>Full answer</h2><p>${esc(n.text)}</p>
-      <p class="muted">Located by ${esc(n.method)} · transcript from ${esc(n.transcript_source)}</p>
+      <h2>Excerpt</h2><blockquote>${esc(n.text)}</blockquote>${listen}
+      <p class="note transcribed">${source} The excerpt stops at 60 words; the audio has the rest.</p>
+      <p class="muted">Located by ${esc(n.method)}</p>
       ${similar.length ? `<h2>Answers worded alike</h2>${similar.map(card).join('')}` : ''}`;
   } else {
     const ans = neighbours(id).filter(x => x && x.type === 'answer');

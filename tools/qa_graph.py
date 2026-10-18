@@ -104,6 +104,12 @@ DEFAULT_PODCAST = {
         # anything parsed from a title (e.g. sample_network.json).
         "graph": "",
     },
+    "publish": {
+        # Published files (qa/) carry at most this many words of each
+        # answer, with its start time and audio link. The full answer is
+        # kept in the private store next to the transcripts (--cache-dir).
+        "answer_words": 60,
+    },
     "llm": {
         # "auto" uses Claude when ANTHROPIC_API_KEY is set; "off" never does.
         "mode": "auto",
@@ -1384,6 +1390,32 @@ def build_graph(podcast: dict, q: dict, rows: list[dict], hosts: set[str]) -> di
         node["name"] for node in nodes.values()
         if node["type"] == "person" and {"guest", "mentioned"} <= set(node["roles"]))
 
+    # Highlights for the homepage: who was named and later came on, and
+    # what the most answers reach.
+    appearances: dict[str, list[str]] = defaultdict(list)
+    for r in rows:
+        for g in r["guests"]:
+            if r["date"]:
+                appearances[norm(g)].append(r["date"])
+    named_then_guest = []
+    for l in links:
+        if l["type"] != "RECOMMENDS":
+            continue
+        who, by = nodes[l["target"]]["name"], nodes[l["source"]]["name"]
+        later = [d for d in appearances.get(norm(who), []) if d > l.get("date", "")]
+        if later:
+            named_then_guest.append({"who": who, "by": by, "named": l.get("date", ""),
+                                     "guest": min(later)})
+    named_then_guest.sort(key=lambda x: (x["named"], x["who"], x["by"]))
+    reach: dict[str, set] = defaultdict(set)
+    for l in links:
+        if l["type"] in ("MENTIONS", "ABOUT") and l["target"] in keep:
+            reach[l["target"]].add(l["source"])
+    most_named = sorted(({"name": nodes[k]["name"], "type": nodes[k]["type"], "answers": len(v)}
+                         for k, v in reach.items() if len(v) >= 2),
+                        key=lambda x: (-x["answers"], x["name"]))[:8]
+    dates = sorted(r["date"] for r in rows if r["date"])
+
     with_transcript = sum(1 for r in rows if r["has_transcript"])
     return {
         "meta": {
@@ -1397,6 +1429,10 @@ def build_graph(podcast: dict, q: dict, rows: list[dict], hosts: set[str]) -> di
             "answered": len(answered),
             "methods": dict(sorted(Counter(r["method"] for r in answered).items())),
             "people_named_and_later_guests": recommended_then_guest,
+            "named_then_guest": named_then_guest,
+            "most_named": most_named,
+            "first_date": dates[0] if dates else "",
+            "last_date": dates[-1] if dates else "",
             "node_types": dict(sorted(Counter(nodes[k]["type"] for k in keep).items())),
             "link_types": dict(sorted(Counter(l["type"] for l in links).items())),
         },
@@ -1538,14 +1574,47 @@ def merge_companions(rows: list[dict]) -> None:
                              merged_into=keep["title"])
 
 
-def write_outputs(out_dir: Path, graph: dict, rows: list[dict]) -> None:
+def excerpt(text: str, words: int) -> str:
+    parts = (text or "").split()
+    return " ".join(parts) if len(parts) <= words else " ".join(parts[:words]) + " …"
+
+
+def published(graph: dict, rows: list[dict], words: int) -> tuple[dict, list[dict]]:
+    """What goes into the public repo: each answer cut to its first `words`
+    words, with its start time and audio link so a listener can hear the
+    rest. Guests' full words stay in the private store."""
+    out_rows = []
+    for r in rows:
+        r = dict(r)
+        r["answer_words"] = len((r.get("answer") or "").split())
+        r["answer"] = excerpt(r.get("answer", ""), words)
+        r["quote"] = excerpt(r.get("quote", ""), words)
+        r["hints"] = [{**h, "text": h["text"][:160]} for h in r.get("hints", [])]
+        out_rows.append(r)
+    out_graph = dict(graph, nodes=[
+        dict(n, text=excerpt(n.get("text", ""), words), quote=excerpt(n.get("quote", ""), words))
+        if n.get("type") == "answer" else n for n in graph["nodes"]])
+    return out_graph, out_rows
+
+
+def private_answers_path(cache_dir: Path, podcast: dict, q: dict) -> Path:
+    return cache_dir / podcast["id"] / "answers" / f"{q['id']}.json"
+
+
+def write_outputs(out_dir: Path, graph: dict, rows: list[dict], words: int = 60,
+                  private: Path | None = None) -> None:
+    """Public outputs in out_dir; full rows, when given a path, privately."""
+    if private:
+        private.parent.mkdir(parents=True, exist_ok=True)
+        private.write_text(json.dumps(rows, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    graph, rows = published(graph, rows, words)
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "graph.json").write_text(json.dumps(graph, indent=1, ensure_ascii=False) + "\n",
                                         encoding="utf-8")
     (out_dir / "answers.json").write_text(json.dumps(rows, indent=1, ensure_ascii=False) + "\n",
                                           encoding="utf-8")
     cols = ["date", "title", "guests", "found", "reason", "method", "start",
-            "summary", "answer", "people", "entities", "themes", "transcript_source"]
+            "summary", "answer", "people", "entities", "themes", "transcript_source", "audio_url"]
     with (out_dir / "answers.csv").open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(cols)
@@ -1559,9 +1628,10 @@ def write_index(qa_dir: Path) -> None:
     entries = []
     for g in sorted(qa_dir.glob("*/graph.json")):
         meta = json.loads(g.read_text(encoding="utf-8"))["meta"]
-        entries.append({"path": f"{g.parent.name}/graph.json", **{k: meta[k] for k in (
-            "podcast", "podcast_id", "question_id", "question", "episodes",
-            "with_transcript", "answered")}})
+        entries.append({"path": f"{g.parent.name}/graph.json", **{k: meta.get(k) for k in (
+            "podcast", "podcast_id", "question_id", "question", "answer_kind", "episodes",
+            "with_transcript", "answered", "first_date", "last_date", "most_named",
+            "named_then_guest")}})
     (qa_dir / "index.json").write_text(json.dumps(entries, indent=1, ensure_ascii=False) + "\n",
                                        encoding="utf-8")
 
@@ -1625,10 +1695,17 @@ def main(argv=None) -> int:
         # they can be tuned from the committed answers alone.
         for q in questions:
             out_dir = args.out_dir or QA_DIR / f"{podcast['id']}-{q['id']}"
-            rows = json.loads((out_dir / "answers.json").read_text(encoding="utf-8"))
+            full = private_answers_path(args.cache_dir, podcast, q)
+            if full.exists():
+                rows, source = json.loads(full.read_text(encoding="utf-8")), "full answers (private store)"
+            else:
+                # Without the private store, the graph is rebuilt from the
+                # published excerpts, so shared ideas see less text.
+                rows, source = json.loads((out_dir / "answers.json").read_text(encoding="utf-8")), \
+                    "published excerpts"
             graph = build_graph(podcast, q, rows, hosts)
-            write_outputs(out_dir, graph, rows)
-            print(f"rebuilt {out_dir}/graph.json from answers.json", file=sys.stderr)
+            write_outputs(out_dir, graph, rows, podcast["publish"]["answer_words"])
+            print(f"rebuilt {out_dir}/graph.json from {source}", file=sys.stderr)
             if args.report:
                 report(graph, rows)
         write_index(QA_DIR)
@@ -1665,7 +1742,8 @@ def main(argv=None) -> int:
         graph = build_graph(podcast, q, rows, hosts)
         out_dir = args.out_dir if (args.out_dir and len(questions) == 1) else \
             (args.out_dir or QA_DIR) / f"{podcast['id']}-{q['id']}"
-        write_outputs(out_dir, graph, rows)
+        write_outputs(out_dir, graph, rows, podcast["publish"]["answer_words"],
+                      private_answers_path(args.cache_dir, podcast, q))
         print(f"wrote {out_dir}/graph.json", file=sys.stderr)
         if args.report:
             report(graph, rows)

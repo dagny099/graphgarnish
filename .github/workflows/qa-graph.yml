@@ -4,15 +4,24 @@ name: Recurring-question graphs
 # recurring questions it lists, and commit the graphs to qa/.
 #
 # Speech-to-text is the slow part (about two minutes an episode on a hosted
-# runner), so it is split across 16 parallel shards and its output is kept in
-# the Actions cache. Later runs transcribe only episodes they have not seen.
-# Everything after that (locating, extracting, graphing) reruns from the
-# cache in seconds, so a change to a config's cues is cheap to try.
+# runner), so it is split across 16 parallel shards. Its output is kept in
+# two places: the Actions cache (fast, but forgotten after seven days unused)
+# and, when TRANSCRIPTS_TOKEN is set, a private repository that never
+# forgets (tools/transcript_store.sh). Later runs transcribe only episodes
+# they have not seen. Everything after that (locating, extracting, graphing)
+# reruns in seconds, so a change to a config's cues is cheap to try.
+#
+# The public repo gets short excerpts only. Full answers and transcripts
+# live in the private store.
 
 on:
   schedule:
     - cron: "0 15 * * 1"   # Mondays, after the network refresh
+  # Only main runs on push: each branch has its own Actions cache, so a run
+  # on a feature branch would transcribe everything again. Run a branch by
+  # hand from the Actions tab when it needs fresh graphs.
   push:
+    branches: [main]
     paths:
       - "podcasts/**"
       - "tools/qa_graph.py"
@@ -40,11 +49,17 @@ env:
   CONFIG: ${{ github.event.inputs.config }}
   LIMIT: ${{ github.event.inputs.limit }}
   SHARDS: "16"
+  # The private store. Set a TRANSCRIPTS_REPO variable to use another name.
+  TRANSCRIPTS_REPO: ${{ vars.TRANSCRIPTS_REPO || format('{0}-transcripts', github.repository) }}
 
 jobs:
   transcribe:
     runs-on: ubuntu-latest
     timeout-minutes: 240
+    env:
+      # Empty when the secret is not set; shards then hand transcripts to
+      # the graph job as short-lived artifacts instead.
+      TRANSCRIPTS_TOKEN: ${{ secrets.TRANSCRIPTS_TOKEN }}
     strategy:
       fail-fast: false
       matrix:
@@ -60,6 +75,9 @@ jobs:
           path: .cache/qa
           key: qa-transcripts-${{ github.run_id }}
           restore-keys: qa-transcripts-
+      - name: Fetch the private transcript store
+        if: env.TRANSCRIPTS_TOKEN != ''
+        run: bash tools/transcript_store.sh pull
       - run: pip install -q faster-whisper
       - name: Transcribe this shard's episodes
         run: |
@@ -67,13 +85,18 @@ jobs:
             python3 tools/qa_graph.py "$c" ${LIMIT:+--limit "$LIMIT"} \
               --shard "${{ matrix.shard }}/$SHARDS" 2>&1 | tail -n 20 || echo "::warning::$c shard failed"
           done
-      - uses: actions/upload-artifact@v4
+      - name: Save this shard's transcripts to the private store
+        if: env.TRANSCRIPTS_TOKEN != ''
+        run: bash tools/transcript_store.sh push "Transcripts from shard ${{ matrix.shard }}, run ${{ github.run_id }}"
+      - name: Hand transcripts to the graph job (no private store)
+        if: env.TRANSCRIPTS_TOKEN == ''
+        uses: actions/upload-artifact@v4
         with:
           name: transcripts-${{ matrix.shard }}
           path: .cache/qa
           include-hidden-files: true
           if-no-files-found: ignore
-          retention-days: 3
+          retention-days: 1
 
   graph:
     needs: transcribe
@@ -82,6 +105,7 @@ jobs:
     env:
       # Empty when the secret is not set; the LLM pass is then skipped.
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      TRANSCRIPTS_TOKEN: ${{ secrets.TRANSCRIPTS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -93,20 +117,19 @@ jobs:
           path: .cache/qa
           key: qa-transcripts-${{ github.run_id }}
           restore-keys: qa-transcripts-
-      - name: Merge this run's transcripts
+      - name: Fetch the private transcript store
+        if: env.TRANSCRIPTS_TOKEN != ''
+        run: bash tools/transcript_store.sh pull
+      - name: Merge this run's transcripts (no private store)
+        if: env.TRANSCRIPTS_TOKEN == ''
         uses: actions/download-artifact@v4
         with:
           pattern: transcripts-*
           path: shards
       - run: |
           mkdir -p .cache/qa
-          for d in shards/*/; do cp -rn "$d". .cache/qa/ 2>/dev/null || true; done
+          for d in shards/*/; do [ -d "$d" ] && cp -rn "$d". .cache/qa/ 2>/dev/null || true; done
           find .cache/qa -name '*.json' | wc -l
-      - name: Keep the merged transcripts for next time
-        uses: actions/cache/save@v4
-        with:
-          path: .cache/qa
-          key: qa-transcripts-${{ github.run_id }}
       - name: LLM pass, only when a key is configured
         if: env.ANTHROPIC_API_KEY != ''
         run: pip install -q anthropic
@@ -118,6 +141,14 @@ jobs:
             python3 tools/qa_graph.py "$c" ${LIMIT:+--limit "$LIMIT"} --offline --report 2>&1 | tee -a qa-build.log \
               || echo "::warning::$c failed to build"
           done
+      - name: Keep transcripts and full answers for next time
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/qa
+          key: qa-transcripts-${{ github.run_id }}
+      - name: Save full answers to the private store
+        if: env.TRANSCRIPTS_TOKEN != ''
+        run: bash tools/transcript_store.sh push "Full answers, run ${{ github.run_id }}"
       - name: Summarize
         if: always()
         run: |

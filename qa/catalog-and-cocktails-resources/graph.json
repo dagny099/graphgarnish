@@ -21,6 +21,51 @@
    "Sanjeev Mohan",
    "Shane Gibson"
   ],
+  "named_then_guest": [],
+  "most_named": [
+   {
+    "name": "LinkedIn",
+    "type": "entity",
+    "answers": 41
+   },
+   {
+    "name": "conference",
+    "type": "concept",
+    "answers": 6
+   },
+   {
+    "name": "data engineering",
+    "type": "concept",
+    "answers": 5
+   },
+   {
+    "name": "LLMs",
+    "type": "entity",
+    "answers": 4
+   },
+   {
+    "name": "YouTube",
+    "type": "entity",
+    "answers": 4
+   },
+   {
+    "name": "blog",
+    "type": "concept",
+    "answers": 4
+   },
+   {
+    "name": "business",
+    "type": "concept",
+    "answers": 4
+   },
+   {
+    "name": "community",
+    "type": "concept",
+    "answers": 4
+   }
+  ],
+  "first_date": "2020-05-13",
+  "last_date": "2026-09-25",
   "node_types": {
    "answer": 133,
    "concept": 191,
@@ -75,7 +120,7 @@
    "guests": [
     "David Krauza"
    ],
-   "text": "Oh, um, I mean, I, I mean, I honestly, I see out, um, you know, folks like you guys, uh, you know, online, sub-stack, LinkedIn, wherever. And, you know, try to, try to talk to the experts in the field to just kind of understand what's going on there. It's not so much that there is a resource as it is the people I try to find, and the people who, who are shaping the narrative and shaping the discussion. That's, that's so, uh, yeah. This is the part of, of, um, not, not just networking. I was, I see the other day, somebody posted about it. It's, uh, your personal ecosystem, you know, built creating, right? Because something that you think about networking is like this transactional thing. You just want to be able to do and like, just chat and something's going to happen. Maybe nothing's going to happen and that's fine. And then you'll, maybe you can",
+   "text": "Oh, um, I mean, I, I mean, I honestly, I see out, um, you know, folks like you guys, uh, you know, online, sub-stack, LinkedIn, wherever. And, you know, try to, try to talk to the experts in the field to just kind of understand what's going on there. It's not so much that there is a resource as it …",
    "summary": "",
    "quote": "Oh, um, I mean, I, I mean, I honestly, I see out, um, you know, folks like you guys, uh, you know, online, sub-stack, LinkedIn, wherever. And, you know, try to, try to talk to the experts in the field to just kind of understand what's going on there. It's not so much that there is a resource as it",
    "start": 2565.0,
@@ -187,7 +232,7 @@
    "guests": [
     "Patrick McGarry"
    ],
-   "text": "Oh gosh, um I don't follow a lot of like I have my people and I follow on linked in I try to get a good smattering across the technological Personality and political spectrums just because I like to try to understand all of that, but um, you know, honestly here I'm going to tell you that I use clawed heavily as a resource filter generator or notifier Uh to just like I've given it a very very long complex prompt of what are the things that I care about and go find those news and give Me a briefing every morning So I get my emailed uh 15 minute briefing from clawed every morning about the stuff that I should care about And it usually does a pretty good job between that and like google news or whatever else pops in front of my face I usually see the things that I have supposed to care about Patrick",
+   "text": "Oh gosh, um I don't follow a lot of like I have my people and I follow on linked in I try to get a good smattering across the technological Personality and political spectrums just because I like to try to understand all of that, but um, you know, honestly here I'm going to tell you that I use clawed …",
    "summary": "",
    "quote": "Oh gosh, um I don't follow a lot of like I have my people and I follow on linked in I try to get a good smattering across the technological Personality and political spectrums just because I like to try to understand all of that, but um, you know, honestly here I'm going to tell you that I use clawed",
    "start": 2271.6,
@@ -226,7 +271,7 @@
    "guests": [
     "Bethany Sehon"
    ],
-   "text": "myself whereas where I follow things and think that will automatically be in my inbox or in my Instagram feed tends to be more things that are like bring me personal joy things that are shared interests with my kids or my my husband or even just like what do I do like in my off time whether it's Pilates or like running or gardening or something like that. So probably not the answer you're looking for but I am not a big follower of things unless we're just talking about like data and F1. Love it Bethany this has been a fantastic conversation and I look forward to doing like a part two season later there's so much because yeah this places this world is moving so fast and and very curious to know about what is the next data product buzzword and what ontologies going to go and so forth so anyways cool this has been so much",
+   "text": "myself whereas where I follow things and think that will automatically be in my inbox or in my Instagram feed tends to be more things that are like bring me personal joy things that are shared interests with my kids or my my husband or even just like what do I do like in my off time whether it's Pilates …",
    "summary": "",
    "quote": "myself whereas where I follow things and think that will automatically be in my inbox or in my Instagram feed tends to be more things that are like bring me personal joy things that are shared interests with my kids or my my husband or even just like what do I do like in my off time whether it's Pilates",
    "start": 2585.8,
@@ -287,7 +332,7 @@
    "guests": [
     "Jason Doerr"
    ],
-   "text": "Yeah. There's a few folks that come to mind. There's a gal that I used to work with and I do various events with her. I think you guys have met her before, but she had no idea I was going to say this, but Mina Holland, she's written her own book. She's the CEO of Neuronova Consulting and she's got a really interesting aura and org model that she's really trying to push across the data landscape as a governance practitioner. It's kind of inverts some of the previous models that you'll read out there and I encourage you to look her up on LinkedIn and see some of her content and have her on the podcast. I think you guys would enjoy the chat with her. In terms of resources, I like to doom scroll LinkedIn every now and again. There's a lot of really interesting opinions out there, so you just never know what you'll uncover. So",
+   "text": "Yeah. There's a few folks that come to mind. There's a gal that I used to work with and I do various events with her. I think you guys have met her before, but she had no idea I was going to say this, but Mina Holland, she's written her own book. She's the CEO of Neuronova Consulting and she's …",
    "summary": "",
    "quote": "Yeah. There's a few folks that come to mind. There's a gal that I used to work with and I do various events with her. I think you guys have met her before, but she had no idea I was going to say this, but Mina Holland, she's written her own book. She's the CEO of Neuronova Consulting and she's",
    "start": 2450.7,
@@ -335,7 +380,7 @@
    "guests": [
     "Bob Seiner"
    ],
-   "text": "Just keep an open mind, I guess. That's the thing. Don't, don't, don't walk away. Well, I don't think I hope if you stay stuck this long into the podcast, that you're not walking away just with one way of thinking. But people think governance needs to be difficult. And I start with a completely different premise. I start with a premise of you're doing this. We can do it better. Okay, so don't be, don't be as scared about it. What was the second question? Who should you invite? Yes. We'll see you all over topics. You've already had my friend, Anthony, all went on, I think, I just talked to you for the earlier today, you",
+   "text": "Just keep an open mind, I guess. That's the thing. Don't, don't, don't walk away. Well, I don't think I hope if you stay stuck this long into the podcast, that you're not walking away just with one way of thinking. But people think governance needs to be difficult. And I start with a completely different premise. I start with …",
    "summary": "",
    "quote": "Just keep an open mind, I guess. That's the thing. Don't, don't, don't walk away. Well, I don't think I hope if you stay stuck this long into the podcast, that you're not walking away just with one way of thinking. But people think governance needs to be difficult. And I start with a completely different premise. I start with",
    "start": 2725.5,
@@ -413,7 +458,7 @@
    "guests": [
     "Diana Wu David"
    ],
-   "text": "Oh, that's kind of like my secret sauce as a futurist, but I will tell you that we are designing that in our team, a signals to insight engine. And so I am giving them my top sort of hundred resources and we will allow our internal stakeholders to play around with that in just tons of data and information. And then we'll, you can pick your persona, be it for data or CEO or futurist. And then we go from there. So top secret, not telling. I love, that's the honest, don't be us right there.",
+   "text": "Oh, that's kind of like my secret sauce as a futurist, but I will tell you that we are designing that in our team, a signals to insight engine. And so I am giving them my top sort of hundred resources and we will allow our internal stakeholders to play around with that in just tons of data and information. …",
    "summary": "",
    "quote": "Oh, that's kind of like my secret sauce as a futurist, but I will tell you that we are designing that in our team, a signals to insight engine. And so I am giving them my top sort of hundred resources and we will allow our internal stakeholders to play around with that in just tons of data and information.",
    "start": 3179.2,
@@ -500,7 +545,7 @@
    "guests": [
     "Pete Williams"
    ],
-   "text": "Oh, the resources of colour. At the moment, I'm actually leaning into literature and I'm buying books. So, you know, Barry Penay's book, so I have had to build a new data organisation. And one of the biggest things I've been reading or rereading recently is a book called The Lords of Strategy, which is around how business strategy that we talk about all the time is actually a recent new concept. It was only invented in the 1960s. And how people were racing the catch up with something that transformed the way they went to market and wasn't just, you know, a founder with a lot of money bringing their family in and just spending more money next year. So, go and find the book Lords of Strategy and have a read of that, because it's part of the rip-awing tale of how this happened and also insightful as to how we've all ended up in this position. I",
+   "text": "Oh, the resources of colour. At the moment, I'm actually leaning into literature and I'm buying books. So, you know, Barry Penay's book, so I have had to build a new data organisation. And one of the biggest things I've been reading or rereading recently is a book called The Lords of Strategy, which is around how business strategy that …",
    "summary": "",
    "quote": "Oh, the resources of colour. At the moment, I'm actually leaning into literature and I'm buying books. So, you know, Barry Penay's book, so I have had to build a new data organisation. And one of the biggest things I've been reading or rereading recently is a book called The Lords of Strategy, which is around how business strategy that",
    "start": 3310.2,
@@ -612,7 +657,7 @@
    "guests": [
     "Kierra Dotson"
    ],
-   "text": "What are the blogs of newsletters, magazines, conferences, events, or... Okay. Yeah. Since I've moved into AI strategy, I'm a huge fan of Vinvashista's work, 10 out of 10. Steward went to tears as well too. Nina, Nina Duque, she's amazing too. She's more so on the code quality type of work, which is really good for engineers, because that's... A lot of that is really useful for people that use AI coding tools. She shows how to actually use those strategically and effectively, instead of just taking whatever output that Cloud Coach gives you and putting it into a PR. Who else? Oh, Jenna Jordan. She's amazing. I feel like I'm just gonna ramble off a bunch of the top people that we all follow. But yeah. Join us shortly. Dominique Lipi's Shelton. She's awesome too, because she's on the data governance side of a law. So I actually like following a diverse set of people. It just really",
+   "text": "What are the blogs of newsletters, magazines, conferences, events, or... Okay. Yeah. Since I've moved into AI strategy, I'm a huge fan of Vinvashista's work, 10 out of 10. Steward went to tears as well too. Nina, Nina Duque, she's amazing too. She's more so on the code quality type of work, which is really good for engineers, because that's... …",
    "summary": "",
    "quote": "What are the blogs of newsletters, magazines, conferences, events, or... Okay. Yeah. Since I've moved into AI strategy, I'm a huge fan of Vinvashista's work, 10 out of 10. Steward went to tears as well too. Nina, Nina Duque, she's amazing too. She's more so on the code quality type of work, which is really good for engineers, because that's...",
    "start": 3364.5,
@@ -674,7 +719,7 @@
    "guests": [
     "Thais Cooke"
    ],
-   "text": "of resources on sub stack for me has become my favorite platform now. Just looking through something. Eight of communities kind of blown up on sub stack now. Yes. Yes, I'm loving the tool, just. I love that sub stack has this short format, but it also has the long format. So if you want to see it and read through a newsletter you have, if you just want to scroll down the note you have that tool. So absolutely love that. I wish their video was a little better. Their video's a little ify, but overall, it's really great platform. Yeah, that's true. I'm also posting a little bit more on sub stack. So it's a lot of community there.",
+   "text": "of resources on sub stack for me has become my favorite platform now. Just looking through something. Eight of communities kind of blown up on sub stack now. Yes. Yes, I'm loving the tool, just. I love that sub stack has this short format, but it also has the long format. So if you want to see it and read …",
    "summary": "",
    "quote": "of resources on sub stack for me has become my favorite platform now. Just looking through something. Eight of communities kind of blown up on sub stack now. Yes. Yes, I'm loving the tool, just. I love that sub stack has this short format, but it also has the long format. So if you want to see it and read",
    "start": 2624.0,
@@ -754,7 +799,7 @@
    "guests": [
     "Säde Haveri"
    ],
-   "text": "Helsinki data week is one tell us more about that and what are the resources well i mean uh around Helsinki data week so we are we are happening in in october in end of october it's a big long event but we do like meetups uh to keep the community and also uh with our partners we do smaller events during the year um there is uh the kind of how to say meetup community is is quite large around data in in Helsinki so i go to meetups and i listen to quality podcasts on that are on LinkedIn and other devices so that is also good and maybe i also already said that i'm now on this knowledge graph uh a guy's course um with Jessica and Katarina kara instructing and for that i would say that if there is a if you want to learn something and there is some somehow a possibility to learn from",
+   "text": "Helsinki data week is one tell us more about that and what are the resources well i mean uh around Helsinki data week so we are we are happening in in october in end of october it's a big long event but we do like meetups uh to keep the community and also uh with our partners we do smaller …",
    "summary": "",
    "quote": "Helsinki data week is one tell us more about that and what are the resources well i mean uh around Helsinki data week so we are we are happening in in october in end of october it's a big long event but we do like meetups uh to keep the community and also uh with our partners we do smaller",
    "start": 3267.6,
@@ -832,7 +877,7 @@
    "guests": [
     "Vaibhav Gupta"
    ],
-   "text": "I actually probably have the worst person that's that question too. I, for coding my first language of C, I spent 10 years writing assembly professionally for my career. I do high-performance optimization work. I love first principles. Like for fun, I watch CPP Contops or RustCon, RustCon, that's my fun hour-long videos. So I don't typically go on Twitter and do the normal stuff. But I'll do a self-shadow if you guys like hearing about deep technical stuff about how to build agents. We run a podcast called AI that works. But where we go and show real code to, for example, we've talked about how to do what we call streaming systems really well. So how do you build an event streaming system where you can build an agentic loop that can pause and resume? How do you make it so someone can cancel it? That's a distributed web system. That stuff is hard to model. But it's",
+   "text": "I actually probably have the worst person that's that question too. I, for coding my first language of C, I spent 10 years writing assembly professionally for my career. I do high-performance optimization work. I love first principles. Like for fun, I watch CPP Contops or RustCon, RustCon, that's my fun hour-long videos. So I don't typically go on Twitter …",
    "summary": "",
    "quote": "I actually probably have the worst person that's that question too. I, for coding my first language of C, I spent 10 years writing assembly professionally for my career. I do high-performance optimization work. I love first principles. Like for fun, I watch CPP Contops or RustCon, RustCon, that's my fun hour-long videos. So I don't typically go on Twitter",
    "start": 3136.5,
@@ -896,7 +941,7 @@
    "guests": [
     "Juan Gorricho"
    ],
-   "text": "and resources like holy crap. I think that's the biggest like I feel so behind. I focus on this on the soft stack news levels, like you have some great stuff on and you guys are like podcasts, right? And usually I try to mainly use LinkedIn as my guide of what to read and what to follow. It's tough. Like I feel behind. Like I felt so behind all the time.",
+   "text": "and resources like holy crap. I think that's the biggest like I feel so behind. I focus on this on the soft stack news levels, like you have some great stuff on and you guys are like podcasts, right? And usually I try to mainly use LinkedIn as my guide of what to read and what to follow. It's tough. …",
    "summary": "",
    "quote": "and resources like holy crap. I think that's the biggest like I feel so behind. I focus on this on the soft stack news levels, like you have some great stuff on and you guys are like podcasts, right? And usually I try to mainly use LinkedIn as my guide of what to read and what to follow. It's tough.",
    "start": 3218.6,
@@ -946,7 +991,7 @@
    "guests": [
     "Dr. Irina Steenbeek"
    ],
-   "text": "Mainly LinkedIn, yes, or finally, but I do on LinkedIn, so simply review what happens in the industry. Inside gems, it's also something that I follow up. Do I read books? I can take a book, yeah, but honestly, maybe not. For me, one of the biggest sources of all of my developments is talking to professionals. It's really what I've been doing last time. I started organizing my self-care sessions. And also invite people simply to share their challenges and try to find solutions. Yeah, because for me, the most important findings, pragmatic, practical, feasible solutions, not there. Of course, I can develop models, but it's simply for explaining what we are talking about. But the key point is to find solutions. So for me, the biggest source of information is simply practical projects and people. Talk to people really tackling the real challenges and thinking how we can solve it. And yeah, my next, you know, I open",
+   "text": "Mainly LinkedIn, yes, or finally, but I do on LinkedIn, so simply review what happens in the industry. Inside gems, it's also something that I follow up. Do I read books? I can take a book, yeah, but honestly, maybe not. For me, one of the biggest sources of all of my developments is talking to professionals. It's really what …",
    "summary": "",
    "quote": "Mainly LinkedIn, yes, or finally, but I do on LinkedIn, so simply review what happens in the industry. Inside gems, it's also something that I follow up. Do I read books? I can take a book, yeah, but honestly, maybe not. For me, one of the biggest sources of all of my developments is talking to professionals. It's really what",
    "start": 3376.3,
@@ -992,7 +1037,7 @@
    "guests": [
     "Oscar Corcho"
    ],
-   "text": "should they follow if they want to kind of continue learning more about ontologies mm-hmm that's that's really difficult I mean I could just say oh come to my my master classes on engineering when we are doing that on our master on AI yeah well I mean that that's difficult I mean like there are plenty of resources here that can be used for I mean just to continue going on to development but there are many many new resources that are coming up on the use of LLMs for ontology engineering yeah I mean I could just advise to to go through these I mean like publications that are coming out right now I mean mostly on the research context that are very easy to understand I mean I'm pretty sure that the folks working on you know starting to work on ontologies could just",
+   "text": "should they follow if they want to kind of continue learning more about ontologies mm-hmm that's that's really difficult I mean I could just say oh come to my my master classes on engineering when we are doing that on our master on AI yeah well I mean that that's difficult I mean like there are plenty of resources here …",
    "summary": "",
    "quote": "should they follow if they want to kind of continue learning more about ontologies mm-hmm that's that's really difficult I mean I could just say oh come to my my master classes on engineering when we are doing that on our master on AI yeah well I mean that that's difficult I mean like there are plenty of resources here",
    "start": 2518.5,
@@ -1059,7 +1104,7 @@
     "Matt Housley",
     "Tony Baer"
    ],
-   "text": "All those kinds of things. Right? Yeah, of course. Yeah. Yeah. I mean, especially in the context of graphs, I really like Joe's material recently. It feels like he's writing a book in public still and I feel like the ideas are still evolving, which is very cool. But yeah, especially in this context of going back to normalization, he's doing cool stuff. So yeah, he's a good follow. Sorry. That one's pretty obvious. Yeah. It's pretty similar to my. I don't follow any single specific person. What I tend to do is like, you know, with LinkedIn, it's like, I mean, I look to my network and one else to you post. So, you know, let's go check that out. Jessica or whoever Joe, Matt, I can't easily check that. You're stuck with me, Tony, you're here for me all the time. Exactly. But now, I mean, I view it as like, you know, there's just not enough time",
+   "text": "All those kinds of things. Right? Yeah, of course. Yeah. Yeah. I mean, especially in the context of graphs, I really like Joe's material recently. It feels like he's writing a book in public still and I feel like the ideas are still evolving, which is very cool. But yeah, especially in this context of going back to normalization, he's …",
    "summary": "",
    "quote": "All those kinds of things. Right? Yeah, of course. Yeah. Yeah. I mean, especially in the context of graphs, I really like Joe's material recently. It feels like he's writing a book in public still and I feel like the ideas are still evolving, which is very cool. But yeah, especially in this context of going back to normalization, he's",
    "start": 2834.1,
@@ -1109,7 +1154,7 @@
    "guests": [
     "Lena Hall"
    ],
-   "text": "My advice, I think don't listen to anyone, learn software engineering, become good at architecture, become good at data modeling. From managers, make sure you don't lose your most subject matter expert people, people who have the deepest skills in computer science and also the understanding of trade-offs. Those are the people that you will need to rely on to make sure that you are actually works.",
+   "text": "My advice, I think don't listen to anyone, learn software engineering, become good at architecture, become good at data modeling. From managers, make sure you don't lose your most subject matter expert people, people who have the deepest skills in computer science and also the understanding of trade-offs. Those are the people that you will need to rely on to …",
    "summary": "",
    "quote": "My advice, I think don't listen to anyone, learn software engineering, become good at architecture, become good at data modeling. From managers, make sure you don't lose your most subject matter expert people, people who have the deepest skills in computer science and also the understanding of trade-offs. Those are the people that you will need to rely on to",
    "start": 2780.1,
@@ -1168,7 +1213,7 @@
    "guests": [
     "Danielle Crop"
    ],
-   "text": "All sorts of resources. Like I, like I, this is like the downside of the way my brain works at this point in time is that I get so much digital newsletters, et cetera, that I like, I don't even remember the names of them, right? Because like, this is the downside of being, I think maybe a Gen X or whatever is like, I grew up with books, actual physical books. And you actually got to see the title every day and the author every day when you opened the book, right? But when you're like reading digital versions of things, you don't get that. And so you forget what they are.",
+   "text": "All sorts of resources. Like I, like I, this is like the downside of the way my brain works at this point in time is that I get so much digital newsletters, et cetera, that I like, I don't even remember the names of them, right? Because like, this is the downside of being, I think maybe a Gen X …",
    "summary": "",
    "quote": "All sorts of resources. Like I, like I, this is like the downside of the way my brain works at this point in time is that I get so much digital newsletters, et cetera, that I like, I don't even remember the names of them, right? Because like, this is the downside of being, I think maybe a Gen X",
    "start": 3172.1,
@@ -1207,7 +1252,7 @@
    "guests": [
     "Jessica Zuñiga"
    ],
-   "text": "i follow also um data diversity and also i i follow some some peers from lim team like kwansekeda and ding asper old course and then i have rober seine there and many other resources like i have many many books here honestly like for data quality i have done it uh she has a her book of then it's that's for executing data quality projects and then from from taylor i have uh telling your data story and then from from john latley i have data governance how to deploy and execute the data governance a program so yeah at least you can start with those resources and if you need more resources you can reach out to me awesome uh just like i this was such a fantastic episode because we went through from from teaching to frameworks uh your initial honest no BS rent from the beginning where you you could see your face getting red so",
+   "text": "i follow also um data diversity and also i i follow some some peers from lim team like kwansekeda and ding asper old course and then i have rober seine there and many other resources like i have many many books here honestly like for data quality i have done it uh she has a her book of then it's …",
    "summary": "",
    "quote": "i follow also um data diversity and also i i follow some some peers from lim team like kwansekeda and ding asper old course and then i have rober seine there and many other resources like i have many many books here honestly like for data quality i have done it uh she has a her book of then it's",
    "start": 3152.0,
@@ -1246,7 +1291,7 @@
    "guests": [
     "Alex Bertails"
    ],
-   "text": "mostly podcasts, actually, this one in particular, always been a good one for general information. I do like the like everything knowledge graph. So knowledge graph insights, a good one. Otherwise, you know, I pay attention to what's going on on LinkedIn, I guess. Yeah. Alex, it has been a pleasure. I'm excited to hang out with you and discuss more about this. I think this is the, I think, what are the breakthroughs that we needed people to have? We needed to see. And I just hope that this is the start of a lot more of people following this.",
+   "text": "mostly podcasts, actually, this one in particular, always been a good one for general information. I do like the like everything knowledge graph. So knowledge graph insights, a good one. Otherwise, you know, I pay attention to what's going on on LinkedIn, I guess. Yeah. Alex, it has been a pleasure. I'm excited to hang out with you and discuss …",
    "summary": "",
    "quote": "mostly podcasts, actually, this one in particular, always been a good one for general information. I do like the like everything knowledge graph. So knowledge graph insights, a good one. Otherwise, you know, I pay attention to what's going on on LinkedIn, I guess. Yeah. Alex, it has been a pleasure. I'm excited to hang out with you and discuss",
    "start": 3848.2,
@@ -1276,7 +1321,7 @@
    "guests": [
     "Sanjeev Mohan"
    ],
-   "text": "Yeah, so I, I like some podcast channels. There's one, there's a guy called Wes Roth, W E S R O T H. He does a really good analysis. So every time there's a new document that everyone's talking about, and it's just so hard to read and understand, low and behold, he, he does a podcast on that. So he has like 300,000 followers. So I listened to a lot of podcasts to learn from people. I subscribe to a bunch of news, like venture beats of the world. So, so that's where I learn what's going on in the market. Perfect. That's great. This is why I always love asking these questions because you get to get that broader overview. Sanji. Any final words, comments? No, I'm good. Thank you.",
+   "text": "Yeah, so I, I like some podcast channels. There's one, there's a guy called Wes Roth, W E S R O T H. He does a really good analysis. So every time there's a new document that everyone's talking about, and it's just so hard to read and understand, low and behold, he, he does a podcast on that. So …",
    "summary": "",
    "quote": "Yeah, so I, I like some podcast channels. There's one, there's a guy called Wes Roth, W E S R O T H. He does a really good analysis. So every time there's a new document that everyone's talking about, and it's just so hard to read and understand, low and behold, he, he does a podcast on that. So",
    "start": 3470.0,
@@ -1405,7 +1450,7 @@
    "guests": [
     "Barr Moses"
    ],
-   "text": "I like to, well, you know, it's a good question. I feel like I sort of, you know, change between sort of podcasts and newsletters to LinkedIn and various sort of logs. You know, I would follow. You know what? I'm going to take a contrarian take. I'm going to say, other than y'all's podcast, I'm going to say go to in-person conferences. So that's what you should follow. There is a. Anyone in particular? It's back. Snowflake and Databricks this summer. First two weeks of June. Be there. Be square. Keep people in person. Have live. Yeah. Great. Databricks. Big data London. Other way. See, right? There's like the data, the data, the data, the data council one happening. All the gartner ones. Google next. Google next. We go to D G I Q and enterprise day world. All right.",
+   "text": "I like to, well, you know, it's a good question. I feel like I sort of, you know, change between sort of podcasts and newsletters to LinkedIn and various sort of logs. You know, I would follow. You know what? I'm going to take a contrarian take. I'm going to say, other than y'all's podcast, I'm going to say go …",
    "summary": "",
    "quote": "I like to, well, you know, it's a good question. I feel like I sort of, you know, change between sort of podcasts and newsletters to LinkedIn and various sort of logs. You know, I would follow. You know what? I'm going to take a contrarian take. I'm going to say, other than y'all's podcast, I'm going to say go",
    "start": 3110.6,
@@ -1477,7 +1522,7 @@
    "guests": [
     "Blake Burch"
    ],
-   "text": "more more and finally resources for me a lot is on hacker news I am following whatever is the latest and greatest there same thing I have like a multi Reddit on Reddit to like track the data engineering subreddit snowflake subreddit it's all like that stuff just to see what people are talking about how it's changing well this has been an awesome session together I feel like we've done a good job of unpacking you know what's going on with data teams how they can be more",
+   "text": "more more and finally resources for me a lot is on hacker news I am following whatever is the latest and greatest there same thing I have like a multi Reddit on Reddit to like track the data engineering subreddit snowflake subreddit it's all like that stuff just to see what people are talking about how it's changing well this …",
    "summary": "",
    "quote": "more more and finally resources for me a lot is on hacker news I am following whatever is the latest and greatest there same thing I have like a multi Reddit on Reddit to like track the data engineering subreddit snowflake subreddit it's all like that stuff just to see what people are talking about how it's changing well this",
    "start": 3748.9,
@@ -1527,7 +1572,7 @@
    "guests": [
     "Hugo Bowne-Anderson"
    ],
-   "text": "stuff on Substack, a mutual friend, Joe Reese. I do want to say probably one of the best blogs and one I learned most about the space is Simon Willison, who he's one of the few people who's like on the Python side. He's a co-creator of Django back in the day, but he's also big on the data. And he's like, I see on his blog, like a post about Gemini 2.5, his experiments with it before I've even seen it's been released, right? So him, I mentioned Sebastian Roshka, Chip Nguyen, Shreya Shankar, who's at Berkeley. And I'll share some of these people in the show notes. Jeremy Howard is someone I consistently learn a lot from also. So yeah, those are a few names. That's awesome. Well, this is fantastic, because you I love how we're very a data focused podcast. And you you bought offs like the not only the LLM part, which is talking about",
+   "text": "stuff on Substack, a mutual friend, Joe Reese. I do want to say probably one of the best blogs and one I learned most about the space is Simon Willison, who he's one of the few people who's like on the Python side. He's a co-creator of Django back in the day, but he's also big on the data. And …",
    "summary": "",
    "quote": "stuff on Substack, a mutual friend, Joe Reese. I do want to say probably one of the best blogs and one I learned most about the space is Simon Willison, who he's one of the few people who's like on the Python side. He's a co-creator of Django back in the day, but he's also big on the data. And",
    "start": 3483.4,
@@ -1612,7 +1657,7 @@
    "guests": [
     "Hala Nelson"
    ],
-   "text": "Yeah, I follow, it's a good question. I follow you. I follow, I talk, I read a lot, I read the MIT technology review, I read the batch, I read a lot of business resources because I feel in the end we are not doing these technologies just for the sake of technologies, we're doing them in service of businesses and organizations. And so I read a lot of that world and what they care for and how we can deliver for them. So I didn't understand the world from as a tech person. And then I worked myself through that. I read a lot of data engineering because that's where I felt my gap was. I am, I know AI, I know math, I know some computer science, but I don't know the infrastructure. So I read a lot of data engineering books, I follow juries and I learned a lot from all of you guys. I read about",
+   "text": "Yeah, I follow, it's a good question. I follow you. I follow, I talk, I read a lot, I read the MIT technology review, I read the batch, I read a lot of business resources because I feel in the end we are not doing these technologies just for the sake of technologies, we're doing them in service of businesses …",
    "summary": "",
    "quote": "Yeah, I follow, it's a good question. I follow you. I follow, I talk, I read a lot, I read the MIT technology review, I read the batch, I read a lot of business resources because I feel in the end we are not doing these technologies just for the sake of technologies, we're doing them in service of businesses",
    "start": 3990.6,
@@ -1669,7 +1714,7 @@
    "guests": [
     "Patrick Cuba"
    ],
-   "text": "books magazines conferences conferences conferences snowflake blogs mostly because that's part of my job a lot of people like you like yourselves who publish things about knowledge because that is that is the layer between ai and and the landscape of of data um obviously ola jorese all that stuff try to get it in before the the day starts and i continue working with with customers all right well Patrick this has been a fantastic conversation",
+   "text": "books magazines conferences conferences conferences snowflake blogs mostly because that's part of my job a lot of people like you like yourselves who publish things about knowledge because that is that is the layer between ai and and the landscape of of data um obviously ola jorese all that stuff try to get it in before the the day starts …",
    "summary": "",
    "quote": "books magazines conferences conferences conferences snowflake blogs mostly because that's part of my job a lot of people like you like yourselves who publish things about knowledge because that is that is the layer between ai and and the landscape of of data um obviously ola jorese all that stuff try to get it in before the the day starts",
    "start": 4196.4,
@@ -1730,7 +1775,7 @@
    "guests": [
     "Jean-Georges Perrin"
    ],
-   "text": "Um, I don't like reading books. Yeah, I know it's interesting. I know, I know, I know. No, no, this is like, this is, I do my best trying to read books, but I, I feel like it too. Um, a bunch of books that I bought that are still on my shelf. Yeah, sorry. Others send me your books. Sorry. Yeah. Well, I know a good offer for books. Okay. So, um, but, uh, so, so, so, so I don't have an answer for your short question and I really feel LinkedIn is not one. I think this is one, but it's opinionated. It's, I'm not saying that opinionated is not good, but the thing is it's, I think there's this kind of a little bit of this building on top of something else kind of thing, you know, like, uh, finding, finding the real gem in LinkedIn is really difficult. There's a few people I'm following what you're",
+   "text": "Um, I don't like reading books. Yeah, I know it's interesting. I know, I know, I know. No, no, this is like, this is, I do my best trying to read books, but I, I feel like it too. Um, a bunch of books that I bought that are still on my shelf. Yeah, sorry. Others send me your books. …",
    "summary": "",
    "quote": "Um, I don't like reading books. Yeah, I know it's interesting. I know, I know, I know. No, no, this is like, this is, I do my best trying to read books, but I, I feel like it too. Um, a bunch of books that I bought that are still on my shelf. Yeah, sorry. Others send me your books.",
    "start": 5291.9,
@@ -1780,7 +1825,7 @@
    "guests": [
     "Frances O'Rafferty"
    ],
-   "text": "I mostly follow podcasts to be fair because I can walk and listen to them and run and listen to them, which is basically the only spare time I get. Um, I also read a lot on LinkedIn. I'm a lot of blog posts that go up there as well. Shout out to the podcast that you're listening to. Um, so obviously you guys, um, and then let's talk data, um, which is very much focused on DNI as well. So, um, a lot of kind of how diverse do data is really important. And then driven by data, which is another quite big one in the UK. I don't know if it's big in the US here or not. Awesome. Well, Francis, it is, it is truly a pleasure that we get to have the opportunity to meet folks like you. First of all, like, no, we've been listening to us. I know we met you at a big",
+   "text": "I mostly follow podcasts to be fair because I can walk and listen to them and run and listen to them, which is basically the only spare time I get. Um, I also read a lot on LinkedIn. I'm a lot of blog posts that go up there as well. Shout out to the podcast that you're listening to. Um, …",
    "summary": "",
    "quote": "I mostly follow podcasts to be fair because I can walk and listen to them and run and listen to them, which is basically the only spare time I get. Um, I also read a lot on LinkedIn. I'm a lot of blog posts that go up there as well. Shout out to the podcast that you're listening to. Um,",
    "start": 3428.5,
@@ -1866,7 +1911,7 @@
    "guests": [
     "Winfried Etzel"
    ],
-   "text": "Well, I follow. I have my own metadata podcast, so I can definitely recommend that. And one thing that I've, there's an app out there that gives you like 50-minute summaries of books. And I love that one called Blinkist. Is it Blinkist? Blinkist, yeah. So, you get like a 50-minute summary of a book, and if you're interested, you can read it afterwards. It's fantastic. My wife loves Blinkist. She's listening to it all the time. I think I have a family subscription. I should actually use it. No, all right.",
+   "text": "Well, I follow. I have my own metadata podcast, so I can definitely recommend that. And one thing that I've, there's an app out there that gives you like 50-minute summaries of books. And I love that one called Blinkist. Is it Blinkist? Blinkist, yeah. So, you get like a 50-minute summary of a book, and if you're interested, you …",
    "summary": "",
    "quote": "Well, I follow. I have my own metadata podcast, so I can definitely recommend that. And one thing that I've, there's an app out there that gives you like 50-minute summaries of books. And I love that one called Blinkist. Is it Blinkist? Blinkist, yeah. So, you get like a 50-minute summary of a book, and if you're interested, you",
    "start": 3069.4,
@@ -1973,7 +2018,7 @@
    "guests": [
     "Olga Maydanchik"
    ],
-   "text": "so I'm listening to tons of podcasts. I literally like, I'm cooking and I'm listening, or whatever, and those podcasts are not just data related there. I mean, I'm a history bus, so I listen a lot about history. I do like free economics, you know, because that's great. I do like other client podcasts. I like things like how it means and everything, you know? I don't mind doing anything specific. This is it, so I love you.",
+   "text": "so I'm listening to tons of podcasts. I literally like, I'm cooking and I'm listening, or whatever, and those podcasts are not just data related there. I mean, I'm a history bus, so I listen a lot about history. I do like free economics, you know, because that's great. I do like other client podcasts. I like things like how …",
    "summary": "",
    "quote": "so I'm listening to tons of podcasts. I literally like, I'm cooking and I'm listening, or whatever, and those podcasts are not just data related there. I mean, I'm a history bus, so I listen a lot about history. I do like free economics, you know, because that's great. I do like other client podcasts. I like things like how",
    "start": 3922.6,
@@ -2034,7 +2079,7 @@
    "guests": [
     "Lindsay Murphy"
    ],
-   "text": "Um, oh, yeah, I mean, I'm a little bit out of the, the LinkedIn crowd now, but I've been keeping up with, I mean, Joe's got always some good stuff out on data modeling. So I'm excited to start diving into some of that. I know his book is coming out. Um, I mean, podcasts, I, I, ones that are not data ones. But I think are really cool. Um, hyper fixed is one that is not a data podcast, but it's so cool. It's the told and the most interesting way. And just as a podcast nerd, um, that's one of my favorite ones. So you can learn something new, uh, people call in with problems. And then the guy like solves them on the podcast. So that's my non data podcast. All of that. Yeah. All right.",
+   "text": "Um, oh, yeah, I mean, I'm a little bit out of the, the LinkedIn crowd now, but I've been keeping up with, I mean, Joe's got always some good stuff out on data modeling. So I'm excited to start diving into some of that. I know his book is coming out. Um, I mean, podcasts, I, I, ones that are …",
    "summary": "",
    "quote": "Um, oh, yeah, I mean, I'm a little bit out of the, the LinkedIn crowd now, but I've been keeping up with, I mean, Joe's got always some good stuff out on data modeling. So I'm excited to start diving into some of that. I know his book is coming out. Um, I mean, podcasts, I, I, ones that are",
    "start": 3703.8,
@@ -2084,7 +2129,7 @@
    "guests": [
     "Jordan Morrow"
    ],
-   "text": "So resources for me, follow the right people in LinkedIn, follow the right podcasts like this, read lots of books and articles. But the more knowledge you gain and the more information you start to consume can be better when you're when you're critically thinking on it, right? Going back to my thing, brain curious. What book can I read about AI in the next evolution of AI? What can I listen to to to get me up like this podcast? So study, study, study resources, LinkedIn, books, podcasts, you name it. People can reach out and connect with me on LinkedIn and I can give them a resource list of books. The final one, I'm going to recommend two women to the podcast, Cecilia Domes. And I'll send you these names once you can reach out to them. And Christina Stathapolos, two amazing women, friends and colleagues of mine. But Cecilia brings it's a very people-oriented approach. And then",
+   "text": "So resources for me, follow the right people in LinkedIn, follow the right podcasts like this, read lots of books and articles. But the more knowledge you gain and the more information you start to consume can be better when you're when you're critically thinking on it, right? Going back to my thing, brain curious. What book can I read …",
    "summary": "",
    "quote": "So resources for me, follow the right people in LinkedIn, follow the right podcasts like this, read lots of books and articles. But the more knowledge you gain and the more information you start to consume can be better when you're when you're critically thinking on it, right? Going back to my thing, brain curious. What book can I read",
    "start": 3410.2,
@@ -2170,7 +2215,7 @@
    "guests": [
     "Ole Olesen-Bagneux"
    ],
-   "text": "So, I follow a lot of podcasts, a lot of data podcasts and recently I've been expanding outside the data domain to be able to contextualize. So, so many podcasts on information management, knowledge management, and then also people on LinkedIn. So many people that I could mention recently, I've been quite thrilled to discover practitioners that we've been talking a lot to practitioners lately. For example, someone called Anna Ypresheim from UK. I think she's very, like, very, very skilled, but that many, many people that I follow on LinkedIn on substack and on media. The beauty, we all started this conversation about the centralize the social media and all that stuff at the end of the day. Oh, and I'm really appreciated is this community, this data community, which is so open and just open for these conversations that we had. And I'm very thankful to meet so many people that have become friends as you only. I",
+   "text": "So, I follow a lot of podcasts, a lot of data podcasts and recently I've been expanding outside the data domain to be able to contextualize. So, so many podcasts on information management, knowledge management, and then also people on LinkedIn. So many people that I could mention recently, I've been quite thrilled to discover practitioners that we've been talking …",
    "summary": "",
    "quote": "So, I follow a lot of podcasts, a lot of data podcasts and recently I've been expanding outside the data domain to be able to contextualize. So, so many podcasts on information management, knowledge management, and then also people on LinkedIn. So many people that I could mention recently, I've been quite thrilled to discover practitioners that we've been talking",
    "start": 4173.7,
@@ -2216,7 +2261,7 @@
    "guests": [
     "Nicola Askham"
    ],
-   "text": "And what do I follow? There's so much stuff out there. I think Dharma as an organization is, I was on the Dharma UK board for 13 years, so I'm somewhat biased, but I do think Dharma is a good one. Join your local chapter, get along to events and meet people through that. I think that's very good. You don't have to join the one in your country, so Dharma UK does actually do quite a lot of good content and things on LinkedIn, so follow them anyway. I think data verstities always been really good. I've always liked their content. Conferences is a hard one, there are so many of them these days, but I would just make sure you get there and do that. I actually do run a free data governance networking group for people who work in data governance. It, obviously, the people who run it are in the UK, but we try to do",
+   "text": "And what do I follow? There's so much stuff out there. I think Dharma as an organization is, I was on the Dharma UK board for 13 years, so I'm somewhat biased, but I do think Dharma is a good one. Join your local chapter, get along to events and meet people through that. I think that's very good. You …",
    "summary": "",
    "quote": "And what do I follow? There's so much stuff out there. I think Dharma as an organization is, I was on the Dharma UK board for 13 years, so I'm somewhat biased, but I do think Dharma is a good one. Join your local chapter, get along to events and meet people through that. I think that's very good. You",
    "start": 3254.1,
@@ -2273,7 +2318,7 @@
    "guests": [
     "Ethan Mollick"
    ],
-   "text": "So my advice is honestly to use these systems to get most of the way there. There's, I think that there's a lot of people doing really interesting kind of AI hacking on the outside edge of stuff. And I think about Simon Williamson, who's doing really neat open source stuff on this around data journalism, is a really interesting person to think about having on the training side. Matthew Bean, who's been thinking a lot about training and AI. And then on my advice generally about thinking about what I follow, what information. I mean, for better or for worse, Twitter or X or whatever is still where most of the font of information is happening, although it's starting to spread out to other social networking platforms. I have a sub stack, one useful thing that can be useful to follow, but it's conversations like this one. That's where you get all the information from. Well, Ethan, we are",
+   "text": "So my advice is honestly to use these systems to get most of the way there. There's, I think that there's a lot of people doing really interesting kind of AI hacking on the outside edge of stuff. And I think about Simon Williamson, who's doing really neat open source stuff on this around data journalism, is a really interesting …",
    "summary": "",
    "quote": "So my advice is honestly to use these systems to get most of the way there. There's, I think that there's a lot of people doing really interesting kind of AI hacking on the outside edge of stuff. And I think about Simon Williamson, who's doing really neat open source stuff on this around data journalism, is a really interesting",
    "start": 2693.7,
@@ -2339,7 +2384,7 @@
    "guests": [
     "Vinoth Chandar"
    ],
-   "text": "And resources, well, single for our last company, I don't get too much time, but I do like the usual, I read like data engineering weekly. So I read that to catch up on that. And I read like a lot of technical blogs around the data lake of space, what's coming in. And I pick up a book from here and there when I have time and mostly around business because that's a part that I don't know as a folder. So I'm like being the Fox reading to be the hedgehog in that space. So yeah, that's kind of like somebody says my learning activity right now. All right.",
+   "text": "And resources, well, single for our last company, I don't get too much time, but I do like the usual, I read like data engineering weekly. So I read that to catch up on that. And I read like a lot of technical blogs around the data lake of space, what's coming in. And I pick up a book from …",
    "summary": "",
    "quote": "And resources, well, single for our last company, I don't get too much time, but I do like the usual, I read like data engineering weekly. So I read that to catch up on that. And I read like a lot of technical blogs around the data lake of space, what's coming in. And I pick up a book from",
    "start": 3511.8,
@@ -2409,7 +2454,7 @@
    "guests": [
     "Andrea Gioia"
    ],
-   "text": "I follow a lot of different people. In the last period, I like very much the bounderless podcast, it is a podcast on organizational management and they always gas specialized in organizational design, system thinking. So I like it very much and I suggest also to read a lot of book, people see conference event recording, it's very useful and if I have to suggest one resource to, that is a must for me for data management people, but in general, but for data management people is to read something on system thinking. I think that a simple book to read to start is thinking in system of Donatella Meadows, it's very simple but put the introduction to what is system thinking. If you want to go further, I think that the master piece in the field is the fifth discipline of Peter Sange, this is about learning organization, what is learning organization, what is the relation between learning organization",
+   "text": "I follow a lot of different people. In the last period, I like very much the bounderless podcast, it is a podcast on organizational management and they always gas specialized in organizational design, system thinking. So I like it very much and I suggest also to read a lot of book, people see conference event recording, it's very useful and …",
    "summary": "",
    "quote": "I follow a lot of different people. In the last period, I like very much the bounderless podcast, it is a podcast on organizational management and they always gas specialized in organizational design, system thinking. So I like it very much and I suggest also to read a lot of book, people see conference event recording, it's very useful and",
    "start": 3872.9,
@@ -2484,7 +2529,7 @@
    "guests": [
     "Colleen Tartow"
    ],
-   "text": "Right resources. I mean, I love Joe Reese's stuff, Ben Stansel's stuff. Like they're always just hilarious too, right? They're always entertaining, which I appreciate. I like following some industry analysts too. Like Sanjeev Mohan is really good because he always has like a good pulse on like, what's the new hotness? But it's very realistic take, like, you know, is it really hot? Let's see who else I'm. It's just a positive Sanjeev I call it. He's the, he's the true honest, no BS analyst. He loves, I mean, I'm so I'm gonna text him right now that we're talking about him. No, I know. Yes, I love him. And what I love about Sanjeev, you know, people, if you don't know for all Sanjeev, like you are totally missing out. Like he, he, he, he's a guy when you're, when I were with him at a conference, is he is like freaking taking notes every, all the time.",
+   "text": "Right resources. I mean, I love Joe Reese's stuff, Ben Stansel's stuff. Like they're always just hilarious too, right? They're always entertaining, which I appreciate. I like following some industry analysts too. Like Sanjeev Mohan is really good because he always has like a good pulse on like, what's the new hotness? But it's very realistic take, like, you know, …",
    "summary": "",
    "quote": "Right resources. I mean, I love Joe Reese's stuff, Ben Stansel's stuff. Like they're always just hilarious too, right? They're always entertaining, which I appreciate. I like following some industry analysts too. Like Sanjeev Mohan is really good because he always has like a good pulse on like, what's the new hotness? But it's very realistic take, like, you know,",
    "start": 3272.7,
@@ -2530,7 +2575,7 @@
    "guests": [
     "Mike Evans"
    ],
-   "text": "Well, I guess. Yeah, I mean, obviously, Kathleen Cartels, but you mentioned, and this is probably one that I would draw out, you mentioned earlier on Mark by Eric Gartner, I really like the thinking that Mark presents and the research that he's published. I think that has certainly influenced me quite a lot in the way that I think about some of these topics. Other than that, it's possibly an obvious one, but the original thinking that went into the kind of initial definition of data mesh. So, so, Shemak Tagali, Martin Fowler, that body of research, I find that very, very interesting conceptually. And again, you know, we can debate whether or not that's the right operating model for people to look at some kind of a waste, but as a piece of kind of thought leadership, I think it's quite an incredible sort of body of work.",
+   "text": "Well, I guess. Yeah, I mean, obviously, Kathleen Cartels, but you mentioned, and this is probably one that I would draw out, you mentioned earlier on Mark by Eric Gartner, I really like the thinking that Mark presents and the research that he's published. I think that has certainly influenced me quite a lot in the way that I think …",
    "summary": "",
    "quote": "Well, I guess. Yeah, I mean, obviously, Kathleen Cartels, but you mentioned, and this is probably one that I would draw out, you mentioned earlier on Mark by Eric Gartner, I really like the thinking that Mark presents and the research that he's published. I think that has certainly influenced me quite a lot in the way that I think",
    "start": 3555.4,
@@ -2619,7 +2664,7 @@
    "guests": [
     "Kevin Hu"
    ],
-   "text": "When it comes to ML, I think Vicki Boykis and Eugenie N, are excellent, both thinkers and writers. Same thing goes for more on the LM side. S-W-Y-X, he runs a latent space podcast and is a really great guy. Recently, I've been reading this blog called Common Cog by Cedric Chin. It's all about like business expertise. Like, can we get better at doing business? And his answer is yes. He has a much more elegant way to put it. But I think it's very useful for data folks too, to think about, you know, how does what I do impact the business? And how do people in the business think about the business? Highly recommend. Interesting. I gotta check that out. Yeah, I've actually been, I've seen Cedric go around post like, that's great. Thanks. Woof, I tell you now where we're past the hour.",
+   "text": "When it comes to ML, I think Vicki Boykis and Eugenie N, are excellent, both thinkers and writers. Same thing goes for more on the LM side. S-W-Y-X, he runs a latent space podcast and is a really great guy. Recently, I've been reading this blog called Common Cog by Cedric Chin. It's all about like business expertise. Like, can …",
    "summary": "",
    "quote": "When it comes to ML, I think Vicki Boykis and Eugenie N, are excellent, both thinkers and writers. Same thing goes for more on the LM side. S-W-Y-X, he runs a latent space podcast and is a really great guy. Recently, I've been reading this blog called Common Cog by Cedric Chin. It's all about like business expertise. Like, can",
    "start": 3965.3,
@@ -2679,7 +2724,7 @@
    "guests": [
     "Dael Williamson"
    ],
-   "text": "I listen to quite a lot of his talks and stuff, but it's, he belongs to like the Santa Fe Institute, and he's very much into the sort of complexity theory stuff as a biochemistry. I really appreciate that stuff. So I think he would be a known sane guest and resources I follow. I'm like a podcast ninja. I listen to so many things. I've been listening to you guys for quite a few years and listen to loads of other podcasts. So yeah, like that's how I, if I'm trying to get in the zone, I will, I will find something and I will go for a run or go for a paddle or something. And that's how I get sort of my, my knowledge injection. Oh, well, thank you. By the way, you're me like Bill Gurley, the, the venture capital is a very stupid girl. Yeah. That one. Yeah. Oh man, I listen to him all",
+   "text": "I listen to quite a lot of his talks and stuff, but it's, he belongs to like the Santa Fe Institute, and he's very much into the sort of complexity theory stuff as a biochemistry. I really appreciate that stuff. So I think he would be a known sane guest and resources I follow. I'm like a podcast ninja. I …",
    "summary": "",
    "quote": "I listen to quite a lot of his talks and stuff, but it's, he belongs to like the Santa Fe Institute, and he's very much into the sort of complexity theory stuff as a biochemistry. I really appreciate that stuff. So I think he would be a known sane guest and resources I follow. I'm like a podcast ninja. I",
    "start": 3200.3,
@@ -2798,7 +2843,7 @@
    "guests": [
     "Amalia Child"
    ],
-   "text": "Historical and technical books tend to be more entertaining and have like more personality than you'd expect. And this is one example of those. And then my other piece of advice is more life advice. And all my friends, if they listened to this, will laugh at me, but try weightlifting if you haven't already. I'm doing it to prevent osteoporosis. Honestly. Try with lifting. Yeah, that's where I'm late. I need to go to my gym right now to go do that. And then resources, I want to plug locally optimistic. I appreciate them having hosted my essay. And I also think they have a pretty great evergreen collection of career development and leadership type of posts as well. Really great content there. Great stuff, great editors. And then for weightlifting resources, I use the RISE program and can't recommend it enough, but so I'm an evangelist for it. Fantastic.",
+   "text": "Historical and technical books tend to be more entertaining and have like more personality than you'd expect. And this is one example of those. And then my other piece of advice is more life advice. And all my friends, if they listened to this, will laugh at me, but try weightlifting if you haven't already. I'm doing it to prevent …",
    "summary": "",
    "quote": "Historical and technical books tend to be more entertaining and have like more personality than you'd expect. And this is one example of those. And then my other piece of advice is more life advice. And all my friends, if they listened to this, will laugh at me, but try weightlifting if you haven't already. I'm doing it to prevent",
    "start": 3867.2,
@@ -2844,7 +2889,7 @@
    "guests": [
     "Dawn Carter"
    ],
-   "text": "podcasts like Let's Talk Data, I was fortunate enough to be on one of their podcasts earlier on this year. But the work that Mirai Talon are doing behind that and she does data is just phenomenal with some of the results that they've had on placing successful candidates and on one of them's got 80% female placements at the moment from an recruitment perspective. That's just fantastic. They're not just talking about it, but they're actually seeing real action through the stuff that they're doing, which is great.",
+   "text": "podcasts like Let's Talk Data, I was fortunate enough to be on one of their podcasts earlier on this year. But the work that Mirai Talon are doing behind that and she does data is just phenomenal with some of the results that they've had on placing successful candidates and on one of them's got 80% female placements at the …",
    "summary": "",
    "quote": "podcasts like Let's Talk Data, I was fortunate enough to be on one of their podcasts earlier on this year. But the work that Mirai Talon are doing behind that and she does data is just phenomenal with some of the results that they've had on placing successful candidates and on one of them's got 80% female placements at the",
    "start": 3619.5,
@@ -2890,7 +2935,7 @@
    "guests": [
     "Tiankai Feng"
    ],
-   "text": "Yeah, I mean, I think I follow the usual conferences that there are at CDO IQ and the Dataverse 31s, Enterprise Data World and data like DJQ, et cetera, et cetera. I like from once in Europe, we have some specific ones, like big data London coming up or the semantic layer symposium, all these kind of things are good. Overall, I like to read books. I feel like the two recent ones I read, one is AI and the Data Revolution by Laura Metzen, which is really cool. And the other one is called Microsoft Data Management Strategy from Alexis Plotnikos. And it's really an interesting one because he actually talks very in detail about how he basically build up data management from scratch for Microsoft, within Microsoft. And seeing like such an honest and detailed depiction of from within an organization that everyone knows is really new to me because so far I've seen only many anonymized and",
+   "text": "Yeah, I mean, I think I follow the usual conferences that there are at CDO IQ and the Dataverse 31s, Enterprise Data World and data like DJQ, et cetera, et cetera. I like from once in Europe, we have some specific ones, like big data London coming up or the semantic layer symposium, all these kind of things are good. …",
    "summary": "",
    "quote": "Yeah, I mean, I think I follow the usual conferences that there are at CDO IQ and the Dataverse 31s, Enterprise Data World and data like DJQ, et cetera, et cetera. I like from once in Europe, we have some specific ones, like big data London coming up or the semantic layer symposium, all these kind of things are good.",
    "start": 3014.7,
@@ -2978,7 +3023,7 @@
    "guests": [
     "Anna Bergevin"
    ],
-   "text": "And what do I follow or listen to? Like I said, there, there's not a lot directly on data product that I encounter. I basically follow every data product I can person I can find on LinkedIn that I'm just like, tell me what you're doing, tell me what's happening. I also follow data engineering and information architecture people. And I think these are very different thought circles. And it's very helpful to see the ways that they are perceiving trends or things that are happening. So I think curate your little bubble online. I heavily like I unfollow people with all the post is like memes and fluff that's like nonsense, like influencer type stuff. I'm unfollowing that I don't have time for that. But I also try not just to follow people who are just like me, because I want to hear how are people handling things in a different way. I listen to a couple of podcasts,",
+   "text": "And what do I follow or listen to? Like I said, there, there's not a lot directly on data product that I encounter. I basically follow every data product I can person I can find on LinkedIn that I'm just like, tell me what you're doing, tell me what's happening. I also follow data engineering and information architecture people. And …",
    "summary": "",
    "quote": "And what do I follow or listen to? Like I said, there, there's not a lot directly on data product that I encounter. I basically follow every data product I can person I can find on LinkedIn that I'm just like, tell me what you're doing, tell me what's happening. I also follow data engineering and information architecture people. And",
    "start": 3865.9,
@@ -3039,7 +3084,7 @@
    "guests": [
     "Brandon Gadoci"
    ],
-   "text": "People, blogs, magazines, or whatever. This will be a good way to end. I created a bespoke application for myself that goes out and uses something called EXA search and then also Google custom search to find news related to AI operations every day and summarize those into blurbs that I read. So they're coming from all over. That is a good way to end things off. You created an app for that. I love it.",
+   "text": "People, blogs, magazines, or whatever. This will be a good way to end. I created a bespoke application for myself that goes out and uses something called EXA search and then also Google custom search to find news related to AI operations every day and summarize those into blurbs that I read. So they're coming from all over. That is …",
    "summary": "",
    "quote": "People, blogs, magazines, or whatever. This will be a good way to end. I created a bespoke application for myself that goes out and uses something called EXA search and then also Google custom search to find news related to AI operations every day and summarize those into blurbs that I read. So they're coming from all over. That is",
    "start": 3321.3,
@@ -3118,7 +3163,7 @@
    "guests": [
     "Ora Lassila"
    ],
-   "text": "do I follow so honestly I don't have time to read all this stuff that's like like the you know what's new today kind of stuff there's so much old stuff I don't understand and I'm still reading that stuff I tend to be the kind of person who has to go way way way deep to claim that I actually understand something so which usually means I have to write some software that does it that to me that's like understanding understanding something so you know I talk to people a lot you know so a lot of the by information sources are kind of like",
+   "text": "do I follow so honestly I don't have time to read all this stuff that's like like the you know what's new today kind of stuff there's so much old stuff I don't understand and I'm still reading that stuff I tend to be the kind of person who has to go way way way deep to claim that I …",
    "summary": "",
    "quote": "do I follow so honestly I don't have time to read all this stuff that's like like the you know what's new today kind of stuff there's so much old stuff I don't understand and I'm still reading that stuff I tend to be the kind of person who has to go way way way deep to claim that I",
    "start": 3238.3,
@@ -3157,7 +3202,7 @@
    "guests": [
     "Sol Rashidi"
    ],
-   "text": "I have like nine different books that are open. And that's why I struggle reading all of them. But Business Made Simple by Donald Miller, Tim Ferriss, Ray Dalio, Noah Kagan, which I love the million dollar, I could just read that one the million dollar business. I would start with those. I think it'll ground you, and of course my book, but it'll ground you and give you a sense of just how things are done at a different level that we're not involved with. But we are, we just don't know about it. And that's the start to leadership and communication and selling without selling. I don't do hard sells whatsoever, but the subtleties really, really matter. So those are the ones I would recommend.",
+   "text": "I have like nine different books that are open. And that's why I struggle reading all of them. But Business Made Simple by Donald Miller, Tim Ferriss, Ray Dalio, Noah Kagan, which I love the million dollar, I could just read that one the million dollar business. I would start with those. I think it'll ground you, and of course …",
    "summary": "",
    "quote": "I have like nine different books that are open. And that's why I struggle reading all of them. But Business Made Simple by Donald Miller, Tim Ferriss, Ray Dalio, Noah Kagan, which I love the million dollar, I could just read that one the million dollar business. I would start with those. I think it'll ground you, and of course",
    "start": 384.8,
@@ -3253,7 +3298,7 @@
    "guests": [
     "Bob van Luijt"
    ],
-   "text": "And resources, what do I read a lot? Boring answer, boring answer, YouTube. Actually, I don't think a lot of people actually brought up YouTube. It's not stated often enough. And honestly, Bob, I spend a lot of time learning things on YouTube, right? I'm like, I want to understand Lane Chan a little more. Oh, well, this is a good video, right? Yeah, yeah.",
+   "text": "And resources, what do I read a lot? Boring answer, boring answer, YouTube. Actually, I don't think a lot of people actually brought up YouTube. It's not stated often enough. And honestly, Bob, I spend a lot of time learning things on YouTube, right? I'm like, I want to understand Lane Chan a little more. Oh, well, this is a …",
    "summary": "",
    "quote": "And resources, what do I read a lot? Boring answer, boring answer, YouTube. Actually, I don't think a lot of people actually brought up YouTube. It's not stated often enough. And honestly, Bob, I spend a lot of time learning things on YouTube, right? I'm like, I want to understand Lane Chan a little more. Oh, well, this is a",
    "start": 3110.9,
@@ -3300,7 +3345,7 @@
     "Mariam Halfhide",
     "Peter Kromhout"
    ],
-   "text": "Well, LinkedIn has kind of become an Instagram. I'm sometimes scrolling through it, which is ridiculous, of course, but it is. And sometimes you find very interesting articles and that link you into more and more information. So it's nowadays it's often the starting point for me to find more interesting stuff. Link does your new Instagram. How about you? I'll stop with that. I'll closely follow Center for Human Technology. Center for Human Technology. I think it's a really good content there. All right. With that, thank you all very much. We appreciate it. And have a great rest of your day. Thank you, sir. Glad to have you all.",
+   "text": "Well, LinkedIn has kind of become an Instagram. I'm sometimes scrolling through it, which is ridiculous, of course, but it is. And sometimes you find very interesting articles and that link you into more and more information. So it's nowadays it's often the starting point for me to find more interesting stuff. Link does your new Instagram. How about you? …",
    "summary": "",
    "quote": "Well, LinkedIn has kind of become an Instagram. I'm sometimes scrolling through it, which is ridiculous, of course, but it is. And sometimes you find very interesting articles and that link you into more and more information. So it's nowadays it's often the starting point for me to find more interesting stuff. Link does your new Instagram. How about you?",
    "start": 3170.3,
@@ -3357,7 +3402,7 @@
    "guests": [
     "Neil Burge"
    ],
-   "text": "So obviously I'm on LinkedIn a hell of a lot. But one of the things I try and do is to get out of that because we, you know, I'm part of the problem here. Yeah, let go chamber agreement one another. How do you find the people who disagree? Because that's where you actually learn. But the resources that I mainly use, you know, go back to the books. I read probably a book a week. It's something I try and do most of them. Business books, some of them are psychology books, some of them are random things that appear as references. But you know, it's probably the cheapest way to learn more that I know of. The only thing it costs is time and a couple of bucks on it. On the names and Kindle or whatever.",
+   "text": "So obviously I'm on LinkedIn a hell of a lot. But one of the things I try and do is to get out of that because we, you know, I'm part of the problem here. Yeah, let go chamber agreement one another. How do you find the people who disagree? Because that's where you actually learn. But the resources that …",
    "summary": "",
    "quote": "So obviously I'm on LinkedIn a hell of a lot. But one of the things I try and do is to get out of that because we, you know, I'm part of the problem here. Yeah, let go chamber agreement one another. How do you find the people who disagree? Because that's where you actually learn. But the resources that",
    "start": 3570.4,
@@ -3407,7 +3452,7 @@
    "guests": [
     "Jesse Sedler"
    ],
-   "text": "I read the Atlanta Journal of Constitution. They're daily political roundup of whatever's happening in the Georgia State House, which is entertaining at times and not entertaining at others. It's a couple of security blogs that I read. Ross Halleluk is one of them. He's a fantastic writer who's a product manager. And he just writes long-form pieces that pertains to security, but from different lenses. His stuff is awesome because it's non-technical, but it gets, provides you basic, like the baseline understanding of a lot of these challenges, so that you can just relate to it as just a person picking up an article and reading it. Can you say that again? You said Ross, what's it? His last name is Halleluk, H-A-L-I-L-E-U-K. You got it right, Tim. That was pretty fun. I read a hard one, but he just wrote a book. He's got a good following on LinkedIn and his blog is just, it's really, it's awesome,",
+   "text": "I read the Atlanta Journal of Constitution. They're daily political roundup of whatever's happening in the Georgia State House, which is entertaining at times and not entertaining at others. It's a couple of security blogs that I read. Ross Halleluk is one of them. He's a fantastic writer who's a product manager. And he just writes long-form pieces that pertains …",
    "summary": "",
    "quote": "I read the Atlanta Journal of Constitution. They're daily political roundup of whatever's happening in the Georgia State House, which is entertaining at times and not entertaining at others. It's a couple of security blogs that I read. Ross Halleluk is one of them. He's a fantastic writer who's a product manager. And he just writes long-form pieces that pertains",
    "start": 3968.1,
@@ -3489,7 +3534,7 @@
    "guests": [
     "Scott Taylor"
    ],
-   "text": "LinkedIn feeds. I like to watch webinars from brands, and I like to watch the first five minutes. Like how do they set this up? What do they talk about? Do they have any kind of interesting twist to it? Because then they get into a demo or whatever. And again, I don't look under the hood. But I like to hear how people set the stuff up.",
+   "text": "LinkedIn feeds. I like to watch webinars from brands, and I like to watch the first five minutes. Like how do they set this up? What do they talk about? Do they have any kind of interesting twist to it? Because then they get into a demo or whatever. And again, I don't look under the hood. But I like …",
    "summary": "",
    "quote": "LinkedIn feeds. I like to watch webinars from brands, and I like to watch the first five minutes. Like how do they set this up? What do they talk about? Do they have any kind of interesting twist to it? Because then they get into a demo or whatever. And again, I don't look under the hood. But I like",
    "start": 3504.7,
@@ -3539,7 +3584,7 @@
    "guests": [
     "Cris Hadjez"
    ],
-   "text": "And then for resources in terms of what I do, I shared with you that for me, I typically, I don't tend to frequent the same conference year over year. That's not something that I tend to do. I kind of pick what's the conference that gives me a different spin or a different view. If, for example, kind of like I was saying earlier, if there was a much stronger appetite for us to have to understand AI, I would probably go focus and identify a conference. Doesn't have to be large, but what you're really trying to do is you're trying to get with other peers. It's like, what are you guys doing? So even a conference of 500 people, you could come away with value if you're willing to engage in a conversation. If you're gonna be passive about it, then I think your return on those events are much lower than you probably want. It's very",
+   "text": "And then for resources in terms of what I do, I shared with you that for me, I typically, I don't tend to frequent the same conference year over year. That's not something that I tend to do. I kind of pick what's the conference that gives me a different spin or a different view. If, for example, kind of …",
    "summary": "",
    "quote": "And then for resources in terms of what I do, I shared with you that for me, I typically, I don't tend to frequent the same conference year over year. That's not something that I tend to do. I kind of pick what's the conference that gives me a different spin or a different view. If, for example, kind of",
    "start": 3012.1,
@@ -3578,7 +3623,7 @@
    "guests": [
     "Amy Raygada"
    ],
-   "text": "Yeah, I, well, actually, my advice here is to be patient and to listen. Basically, it's parenting, as I said before, is basically just listen and try to get into what to understand what the people need and then solve the issues that you see as a hanging fruit. Maybe for your next episode, you can invite, well, you know, the hype of AI and everybody needs AI for today. And then now I've been on that boat as well. But actually, you can maybe invite Ignaz Muxunas. He's also a data product manager. He used to work with me at some point. And he also it's into these AI topics. So it might be an interesting discussion if you're into this topic and resources that I follow. Well, I follow a lot of influencers on LinkedIn, but I have found already, you know, medium. I don't do this anymore because that's also a lot of unicorns. But if you're",
+   "text": "Yeah, I, well, actually, my advice here is to be patient and to listen. Basically, it's parenting, as I said before, is basically just listen and try to get into what to understand what the people need and then solve the issues that you see as a hanging fruit. Maybe for your next episode, you can invite, well, you know, …",
    "summary": "",
    "quote": "Yeah, I, well, actually, my advice here is to be patient and to listen. Basically, it's parenting, as I said before, is basically just listen and try to get into what to understand what the people need and then solve the issues that you see as a hanging fruit. Maybe for your next episode, you can invite, well, you know,",
    "start": 3811.6,
@@ -3626,7 +3671,7 @@
    "guests": [
     "Karen Meppen"
    ],
-   "text": "I've been following her LinkedIn. I really, really like her content. She's awesome. And she's one of the things she's been experimenting a lot publicly is about, oh, I'm going to use Chechi B for this. Like, oh, this worked all this sucks. And then she's doing it. So I've been giving her. We're chatting also with Shane Gibson. Yes. She's good too. Yes. Yes. And I joke for Anna that she's, until you're live streaming your whole like learning experience, which I think the point is the authenticity of it. We really are kind of plotting along. You don't have to be a, you know, polished expert. We really are. I'm just going to be honest, always real figuring this out. I appreciate it. Just be public about it. Learn together. Learn together. That's awesome. So, so as far as resources that I follow, that's a tough one. I am all over the place. I'm just off the top",
+   "text": "I've been following her LinkedIn. I really, really like her content. She's awesome. And she's one of the things she's been experimenting a lot publicly is about, oh, I'm going to use Chechi B for this. Like, oh, this worked all this sucks. And then she's doing it. So I've been giving her. We're chatting also with Shane Gibson. Yes. …",
    "summary": "",
    "quote": "I've been following her LinkedIn. I really, really like her content. She's awesome. And she's one of the things she's been experimenting a lot publicly is about, oh, I'm going to use Chechi B for this. Like, oh, this worked all this sucks. And then she's doing it. So I've been giving her. We're chatting also with Shane Gibson. Yes.",
    "start": 3695.1,
@@ -3675,7 +3720,7 @@
    "guests": [
     "Eva Nahari"
    ],
-   "text": "magazines, newsletters. I mean, I follow Alchemist and Pitchbook and all that. Like for for my job. And then there's a what's his name? I don't even remember Michael, something something I can I can send it to you guys. You can post it somewhere, maybe. But you know, I listen, you know, what popped into my head. I listen to the Swedish podcast, like a Swedish radio podcast that is called the Trend Spotters. And each week they get like to come up with a new possible trend. They like find three data points to back it up. And I think although it's an entertainment program about what's what's coming and you know, there's been a lot of generative AI trends spotting in there. It's it's opening my mind. And I think this is like what I want to highlight with that resources like I I tend to listen to other things outside my zone, outside my area, because",
+   "text": "magazines, newsletters. I mean, I follow Alchemist and Pitchbook and all that. Like for for my job. And then there's a what's his name? I don't even remember Michael, something something I can I can send it to you guys. You can post it somewhere, maybe. But you know, I listen, you know, what popped into my head. I listen …",
    "summary": "",
    "quote": "magazines, newsletters. I mean, I follow Alchemist and Pitchbook and all that. Like for for my job. And then there's a what's his name? I don't even remember Michael, something something I can I can send it to you guys. You can post it somewhere, maybe. But you know, I listen, you know, what popped into my head. I listen",
    "start": 3865.3,
@@ -3721,7 +3766,7 @@
    "guests": [
     "Paco Nathan"
    ],
-   "text": "So one thing that I follow, like, religiously is team camera. It's a security vulnerability analysis. Comes across usually about 10, 12 items per day, but like summaries of top phone abilities or top attacks, just the security space. I used to work in security. And I really want to keep the hand in it because it's so important and so much is going on. And it's also our customers care about that, right? So I really watch the security space because it's so strange and it evolves so quickly. Another one I listen to is actually geopolitics is more on the rocks. It's $150 a year for a subscription, but I love it. Some of it's out of Austin at the, at the business school, I think. But other parts are out of DC, but it's like a bipartisan, like, you know, non-denominational. Let's look at what's happening in the world. But from a military perspective, I've used to",
+   "text": "So one thing that I follow, like, religiously is team camera. It's a security vulnerability analysis. Comes across usually about 10, 12 items per day, but like summaries of top phone abilities or top attacks, just the security space. I used to work in security. And I really want to keep the hand in it because it's so important and …",
    "summary": "",
    "quote": "So one thing that I follow, like, religiously is team camera. It's a security vulnerability analysis. Comes across usually about 10, 12 items per day, but like summaries of top phone abilities or top attacks, just the security space. I used to work in security. And I really want to keep the hand in it because it's so important and",
    "start": 3648.0,
@@ -3760,7 +3805,7 @@
    "guests": [
     "Jessica Talisman"
    ],
-   "text": "People, blogs, books? I follow, I guess so. The discipline of organizing, I really love as a book. It's very abstract. Every organization I go to, I try to to lend, lend, you know, that advice. And it is very abstract. I'll have book clubs. I think book clubs are very, very important just to help to get resources and information out there. But it's a super library and science type book, the discipline of organizing, but it has that abstraction that helps to take you from the beginning to the end of constructing vocabularies, taxonomies, ontologies. And I think that's a great, a great resource. All right.",
+   "text": "People, blogs, books? I follow, I guess so. The discipline of organizing, I really love as a book. It's very abstract. Every organization I go to, I try to to lend, lend, you know, that advice. And it is very abstract. I'll have book clubs. I think book clubs are very, very important just to help to get resources and …",
    "summary": "",
    "quote": "People, blogs, books? I follow, I guess so. The discipline of organizing, I really love as a book. It's very abstract. Every organization I go to, I try to to lend, lend, you know, that advice. And it is very abstract. I'll have book clubs. I think book clubs are very, very important just to help to get resources and",
    "start": 3979.4,
@@ -3799,7 +3844,7 @@
    "guests": [
     "Santona Tuli"
    ],
-   "text": "And then what about resources to Fala? So nowadays, I just read as I am searching something. Like I go down rabbit holes and then read everything on a topic. You seem like the kind of person. So it's less about, you know, I have these five subscriptions that I'll go through and read. I don't do that. It's more like where it takes me. Say, I don't know. So I'm, you know, Joe standing next to me. So read from Joe's book. And my next book, pretty good book. Yeah, some people read it and stuff. Hey, yeah, I already know what I want to revise in it. But there's a practical data modeling that's subset. I'll give a shameless plug for the new book I'm working on. It's going to be a lot of it's on there already or not on there already, but it will be on there. Other resources, I always read the information. It's a",
+   "text": "And then what about resources to Fala? So nowadays, I just read as I am searching something. Like I go down rabbit holes and then read everything on a topic. You seem like the kind of person. So it's less about, you know, I have these five subscriptions that I'll go through and read. I don't do that. It's more …",
    "summary": "",
    "quote": "And then what about resources to Fala? So nowadays, I just read as I am searching something. Like I go down rabbit holes and then read everything on a topic. You seem like the kind of person. So it's less about, you know, I have these five subscriptions that I'll go through and read. I don't do that. It's more",
    "start": 4743.1,
@@ -3838,7 +3883,7 @@
    "guests": [
     "Samia Rahman"
    ],
-   "text": "Product management content from Shivishi Akash Gupta and Powell Hurin. I'm probably butchering his last name. But I found their content to be phenomenal. And I've shared it with anyone in my community who's aspiring to be a data product manager, AI product manager, or are already executing and are new to the discipline, but have a lot of domain knowledge. So I think they bring a lot of that best practices that anyone in the business can apply that product mindset. And then people that I'm following, Bruno Aziza, he's at Alphabet, Saul Rushdie on AI strategy. She's been posting a few interesting things. And I think she's going to publish a book soon on AI strategy. So I'm going to be looking forward to what she has to say. And then team topologies. Again, super key with even more complexity coming with AI and product Matthew Skeleton and Manuel Pius. Their work is just super, super key. And",
+   "text": "Product management content from Shivishi Akash Gupta and Powell Hurin. I'm probably butchering his last name. But I found their content to be phenomenal. And I've shared it with anyone in my community who's aspiring to be a data product manager, AI product manager, or are already executing and are new to the discipline, but have a lot of domain …",
    "summary": "",
    "quote": "Product management content from Shivishi Akash Gupta and Powell Hurin. I'm probably butchering his last name. But I found their content to be phenomenal. And I've shared it with anyone in my community who's aspiring to be a data product manager, AI product manager, or are already executing and are new to the discipline, but have a lot of domain",
    "start": 3596.0,
@@ -3978,7 +4023,7 @@
    "guests": [
     "Andrew Jones"
    ],
-   "text": "but all about education and some books. So yeah, get your book for sure. Yeah, I do a bit of everything, really. I do buy a lot of books. I read some of them. I like, I subscribe to a lot of newsletters, like E-Manus letters, don't read them all the time, but like, you know, I like to browse them. What I really like though is it can't be in person stuff now. It's kind of back again. So I'm lucky I live from close to London. So it's lots of meetups. Very, very good. What I particularly like about them is, okay, people are all different stages of their career able to talk and able to have conversations with. So yeah, I like those, in particular, look at meetups, more than meetups, as well as a big conference as well. So yeah, a bit of everything, really. And pop-cross as well, obviously. Let's talk to other community as",
+   "text": "but all about education and some books. So yeah, get your book for sure. Yeah, I do a bit of everything, really. I do buy a lot of books. I read some of them. I like, I subscribe to a lot of newsletters, like E-Manus letters, don't read them all the time, but like, you know, I like to browse …",
    "summary": "",
    "quote": "but all about education and some books. So yeah, get your book for sure. Yeah, I do a bit of everything, really. I do buy a lot of books. I read some of them. I like, I subscribe to a lot of newsletters, like E-Manus letters, don't read them all the time, but like, you know, I like to browse",
    "start": 3707.3,
@@ -4066,7 +4111,7 @@
    "guests": [
     "Kat Greenbrook"
    ],
-   "text": "they um data visualization society dot com i think it is a great resource for anybody interested in anything and around visualizing data so they have an annual conference uh that you can either attend in person or online they publish two print magazines a year all about data visualization they have digital articles that they'll constantly publish uh you can write for them if you're interested in in in getting more involved they have memberships they have slack channels it's just the place to go if you're interested in data visualization",
+   "text": "they um data visualization society dot com i think it is a great resource for anybody interested in anything and around visualizing data so they have an annual conference uh that you can either attend in person or online they publish two print magazines a year all about data visualization they have digital articles that they'll constantly publish uh you …",
    "summary": "",
    "quote": "they um data visualization society dot com i think it is a great resource for anybody interested in anything and around visualizing data so they have an annual conference uh that you can either attend in person or online they publish two print magazines a year all about data visualization they have digital articles that they'll constantly publish uh you",
    "start": 3824.5,
@@ -4146,7 +4191,7 @@
    "guests": [
     "Krystin Kim"
    ],
-   "text": "People, conferences, books, magazines, I mean, we'll hear a gartner. So that one's easy. That's a layup. I follow the IBF, which is forecasting. I think it's like, I forgot Institute of Business Forecasting. I forgot what it stands for, but it's really around like demand planning and business function. So they really do a great job of putting up, they have a podcast for forecasting that space. I also listen to the CPG guys, which is for the Consumer Product Goods area. And of course, I listen to cataloging cocktails. Well, you could be on it. Kristin, this was such a pleasure. I'm so glad we got to do this in person here.",
+   "text": "People, conferences, books, magazines, I mean, we'll hear a gartner. So that one's easy. That's a layup. I follow the IBF, which is forecasting. I think it's like, I forgot Institute of Business Forecasting. I forgot what it stands for, but it's really around like demand planning and business function. So they really do a great job of putting up, …",
    "summary": "",
    "quote": "People, conferences, books, magazines, I mean, we'll hear a gartner. So that one's easy. That's a layup. I follow the IBF, which is forecasting. I think it's like, I forgot Institute of Business Forecasting. I forgot what it stands for, but it's really around like demand planning and business function. So they really do a great job of putting up,",
    "start": 3671.3,
@@ -4224,7 +4269,7 @@
    "guests": [
     "Jon Cooke"
    ],
-   "text": "I mean, people, books, magazine, podcasts, conferences. I don't know. So, I get a lot of feeds from things like Medium and DoZone and stuff like that. That's where I get a lot of my content around sort of understanding about LLMs and this kind of stuff. That's typically where I get my sort of my thoughts and that kind of stuff. I do a lot of googling when I say, oh, what about that? I'll go and try it out. So, I tend to be more trying to find the information and actually work stuff through. Obviously, chats like this are absolutely brilliant. And we have a lot of these. I had a drunken chat and a taxi with Chris Tack coming back from Big Day London that day, which was fantastic. We did podcast last night around that time. So, around things like that stuff. So, yeah, exactly right. So, that's certainly a conversation with Big Day London",
+   "text": "I mean, people, books, magazine, podcasts, conferences. I don't know. So, I get a lot of feeds from things like Medium and DoZone and stuff like that. That's where I get a lot of my content around sort of understanding about LLMs and this kind of stuff. That's typically where I get my sort of my thoughts and that kind …",
    "summary": "",
    "quote": "I mean, people, books, magazine, podcasts, conferences. I don't know. So, I get a lot of feeds from things like Medium and DoZone and stuff like that. That's where I get a lot of my content around sort of understanding about LLMs and this kind of stuff. That's typically where I get my sort of my thoughts and that kind",
    "start": 3607.2,
@@ -4378,7 +4423,7 @@
    "guests": [
     "Chris Tabb"
    ],
-   "text": "We follow LinkedIn and we see yourselves. Obviously, yourself, Ryan, and this show. I mean, Joe doesn't break start playing. Obviously, he's got his nerdy rants on the money bought in data chat. There's a lot of, I mean, Ben Rogan's great in a lot of these stuff, he puts out there. And if you're an engineer, you won't find any better stuff on YouTube for that. Yeah, many people. I think the good thing is, don't just focus on a few, you know, have the more different views you can take on, the more you can shake them into your own. So yeah, don't just live into one vendor or one individual. Yeah, have a selection that maybe didn't give them perspectives on things. Definitely have some business folks in there, you know, because we do all we go down to that technical, inter-tech for weeds. Yeah, I think sometimes it's easy to listen to maybe only data podcasts.",
+   "text": "We follow LinkedIn and we see yourselves. Obviously, yourself, Ryan, and this show. I mean, Joe doesn't break start playing. Obviously, he's got his nerdy rants on the money bought in data chat. There's a lot of, I mean, Ben Rogan's great in a lot of these stuff, he puts out there. And if you're an engineer, you won't find …",
    "summary": "",
    "quote": "We follow LinkedIn and we see yourselves. Obviously, yourself, Ryan, and this show. I mean, Joe doesn't break start playing. Obviously, he's got his nerdy rants on the money bought in data chat. There's a lot of, I mean, Ben Rogan's great in a lot of these stuff, he puts out there. And if you're an engineer, you won't find",
    "start": 3517.5,
@@ -4435,7 +4480,7 @@
    "guests": [
     "Alexa Westlake"
    ],
-   "text": "which is a resource that I follow. I love Chad. I love his simple truths about data quality. He tells it like it is. Yeah. And I guess to kind of move into now that I've used Chad to kind of transition into resources I follow. I am a firm believer and I always have been in Jamak, Dagoni's data mesh and a big fan and friend of Scott Herlman. I love the data mesh paradigm shift. I started my career looking at data mesh and I have never looked at something and said this makes sense. But you basically to enable capabilities to get out of your expert's way is the only way that data works at scale. You have to enable self service. You have to look at data as a product. And I think the data mesh captures that so perfectly in the way that this is not a tooling problem. This is a people of processes",
+   "text": "which is a resource that I follow. I love Chad. I love his simple truths about data quality. He tells it like it is. Yeah. And I guess to kind of move into now that I've used Chad to kind of transition into resources I follow. I am a firm believer and I always have been in Jamak, Dagoni's data …",
    "summary": "",
    "quote": "which is a resource that I follow. I love Chad. I love his simple truths about data quality. He tells it like it is. Yeah. And I guess to kind of move into now that I've used Chad to kind of transition into resources I follow. I am a firm believer and I always have been in Jamak, Dagoni's data",
    "start": 3646.7,
@@ -4481,7 +4526,7 @@
    "guests": [
     "Ari Kaplan"
    ],
-   "text": "Any resources that you follow, people blog, say conferences or magazines or whatever. Yeah, so much. But recently like advancing analytics, they kind of have a YouTube channel. They're like everything, not just the lake house, but like from, you know, they're vendor neutral. So like you get the real deal from them. And I've learned a lot, a lot of like myself when I was interviewing at Databricks, I was like watching them so I know what's up. And then Kate struck me with data catered. You mentioned Cindy Howson, you know, there are a lot of great folks. And then, you know, I also do follow analyst firms, especially like Gartner and Forrester, who talk directly with customers and have their own methodology to like quantify what's the value and what are people really doing.",
+   "text": "Any resources that you follow, people blog, say conferences or magazines or whatever. Yeah, so much. But recently like advancing analytics, they kind of have a YouTube channel. They're like everything, not just the lake house, but like from, you know, they're vendor neutral. So like you get the real deal from them. And I've learned a lot, a lot …",
    "summary": "",
    "quote": "Any resources that you follow, people blog, say conferences or magazines or whatever. Yeah, so much. But recently like advancing analytics, they kind of have a YouTube channel. They're like everything, not just the lake house, but like from, you know, they're vendor neutral. So like you get the real deal from them. And I've learned a lot, a lot",
    "start": 3589.4,
@@ -4530,7 +4575,7 @@
    "guests": [
     "Aaron Wilkerson from Carhartt"
    ],
-   "text": "Resources, I mean, I think podcasts are huge. One thing I'm digging into now is rev-ops, so revenue-ops. There's a lot of podcasts around like, you know, sales, marketing, customer service, all those types of things that really kind of help, you know, drive revenue to the business. So I think understanding those kind of functions, let them help the data team out a lot in terms of how we bring business value. That's cool. I didn't realize there were dedicated podcasts on rev-ops, but there's dedicated podcasts about everything. Yeah, I was surprised. I looked at others like 10 of them. And to close up, as we like to say here, and show me the money, which is LinkedIn user, which I know it's Mark Kisson, who's just probably woke up because he's another loyal listener all the way from Perth, Australia, so it's probably, I don't know, six o'clock in the morning. Good morning.",
+   "text": "Resources, I mean, I think podcasts are huge. One thing I'm digging into now is rev-ops, so revenue-ops. There's a lot of podcasts around like, you know, sales, marketing, customer service, all those types of things that really kind of help, you know, drive revenue to the business. So I think understanding those kind of functions, let them help the …",
    "summary": "",
    "quote": "Resources, I mean, I think podcasts are huge. One thing I'm digging into now is rev-ops, so revenue-ops. There's a lot of podcasts around like, you know, sales, marketing, customer service, all those types of things that really kind of help, you know, drive revenue to the business. So I think understanding those kind of functions, let them help the",
    "start": 459.2,
@@ -4578,7 +4623,7 @@
    "guests": [
     "Aaron Wilkerson"
    ],
-   "text": "and we kind of talked on LinkedIn that I would definitely recommend, who's kind of another kind of very, has very great ideas on data in this industry. Resources, I mean, I think podcasts are huge. One thing I'm digging into now is rev ops, so revenue ops. There's a lot of, a lot of podcasts around like, you know, sales, marketing, customer service, all those types of things that really kind of help, you know, drive revenue to the business. So I think understanding those kind of functions, well, I think help the data team out a lot in terms of how we bring business value. That's cool. I didn't realize there were dedicated podcasts on rev ops, but there's dedicated podcasts about everything. I was surprised. I looked at others like 10 of them. Nice. And, and to close up as we like to say here and show me the money, which is LinkedIn user, which I know",
+   "text": "and we kind of talked on LinkedIn that I would definitely recommend, who's kind of another kind of very, has very great ideas on data in this industry. Resources, I mean, I think podcasts are huge. One thing I'm digging into now is rev ops, so revenue ops. There's a lot of, a lot of podcasts around like, you know, …",
    "summary": "",
    "quote": "and we kind of talked on LinkedIn that I would definitely recommend, who's kind of another kind of very, has very great ideas on data in this industry. Resources, I mean, I think podcasts are huge. One thing I'm digging into now is rev ops, so revenue ops. There's a lot of, a lot of podcasts around like, you know,",
    "start": 3658.9,
@@ -4659,7 +4704,7 @@
    "guests": [
     "Wendy Turner-Williams"
    ],
-   "text": "podcasts, books, conferences, whatever. I tend to follow a lot of the kind of standards. I'm very active in a lot of the DEI type of efforts. So women in data, women in technology, I, you know, I do a lot of the gardener of a Kinsey publications. I'm not a huge podcast person. I hate to say that, but you know, I'm not I just busy. But you know, I think that, you know, learn from the people who interest you. We all have different things that we're interested in. I like big thinkers. I like world changing types of concepts. And those are the people I tend to follow. Fantastic. All right,",
+   "text": "podcasts, books, conferences, whatever. I tend to follow a lot of the kind of standards. I'm very active in a lot of the DEI type of efforts. So women in data, women in technology, I, you know, I do a lot of the gardener of a Kinsey publications. I'm not a huge podcast person. I hate to say that, but …",
    "summary": "",
    "quote": "podcasts, books, conferences, whatever. I tend to follow a lot of the kind of standards. I'm very active in a lot of the DEI type of efforts. So women in data, women in technology, I, you know, I do a lot of the gardener of a Kinsey publications. I'm not a huge podcast person. I hate to say that, but",
    "start": 3358.9,
@@ -4694,7 +4739,7 @@
    "date": "2023-08-02",
    "episode": "TAKEAWAYS - Is Data a First Class Citizen in your Company?",
    "guests": [],
-   "text": "And finally, what are your resources that you follow? People, blogs, podcasts, the books, conferences, whatever. I tend to follow a lot of the kind of standards. I'm very active in a lot of the DEI type of effort. So, women in data, women in technology, I do a lot of the gardener of a Kinsey publication. I'm not a huge podcast person. I hate to say that, but I'm not, I just busy. Oh, right. I don't know. But, you know, I think that, you know, learn from the people who interest you. We all have different things that we're interested in. I like big thinkers. I like world-changing types of concepts, and those are the people I tend to follow. Fantastic. All right.",
+   "text": "And finally, what are your resources that you follow? People, blogs, podcasts, the books, conferences, whatever. I tend to follow a lot of the kind of standards. I'm very active in a lot of the DEI type of effort. So, women in data, women in technology, I do a lot of the gardener of a Kinsey publication. I'm not a …",
    "summary": "",
    "quote": "And finally, what are your resources that you follow? People, blogs, podcasts, the books, conferences, whatever. I tend to follow a lot of the kind of standards. I'm very active in a lot of the DEI type of effort. So, women in data, women in technology, I do a lot of the gardener of a Kinsey publication. I'm not a",
    "start": 476.4,
@@ -4733,7 +4778,7 @@
    "guests": [
     "Ethan Aaron"
    ],
-   "text": "Like I will go on LinkedIn, post stuff, start conversations in the comments or in threads. And then I'll just get meetings with people. 30 minutes, no point whatsoever to these meetings. Just like learn, hear about people's backgrounds, hear about how they approach the world. I learned so much from that. Like that's where most of the stuff I talk about comes from is just picking the brains of people that are doing this stuff every single day. Love it.",
+   "text": "Like I will go on LinkedIn, post stuff, start conversations in the comments or in threads. And then I'll just get meetings with people. 30 minutes, no point whatsoever to these meetings. Just like learn, hear about people's backgrounds, hear about how they approach the world. I learned so much from that. Like that's where most of the stuff I …",
    "summary": "",
    "quote": "Like I will go on LinkedIn, post stuff, start conversations in the comments or in threads. And then I'll just get meetings with people. 30 minutes, no point whatsoever to these meetings. Just like learn, hear about people's backgrounds, hear about how they approach the world. I learned so much from that. Like that's where most of the stuff I",
    "start": 440.8,
@@ -4783,7 +4828,7 @@
    "guests": [
     "Tom Redman"
    ],
-   "text": "Look, I read everything, right? I mean, I cast a wide net, right? So, you know, like things from in the business world, from, you know, Michael Porter and Peter Drucker and it's like, you know, it's a wide as a data guy, I know about productivity, right? So, you know, some economics in there, I study, but not view myself as expert in change management, right? I, and by the way, I mean, look, I am a voracious reader and I learn, I try to learn things and integrate them into the way I'm thinking about things. I do my best to give credit to others who have contributed to my thinking. Read everything.",
+   "text": "Look, I read everything, right? I mean, I cast a wide net, right? So, you know, like things from in the business world, from, you know, Michael Porter and Peter Drucker and it's like, you know, it's a wide as a data guy, I know about productivity, right? So, you know, some economics in there, I study, but not view …",
    "summary": "",
    "quote": "Look, I read everything, right? I mean, I cast a wide net, right? So, you know, like things from in the business world, from, you know, Michael Porter and Peter Drucker and it's like, you know, it's a wide as a data guy, I know about productivity, right? So, you know, some economics in there, I study, but not view",
    "start": 3749.4,
@@ -4889,7 +4934,7 @@
    "guests": [
     "Aakriti Agrawal"
    ],
-   "text": "Yeah, podcast, magazine, LinkedIn, or people, these letters. Yeah, so data version you have a lot of really great stuff. There's webinars throughout the year and then the conferences, which I think are really helpful. But I do a lot of Googling, honestly. Not chat to just researching, just Googling, where I'll read about change management theory. There's a lot of podcasts out there, not just in the data governance space, but in other spaces that we can lean on. The hard thing about a field that's pretty new is there isn't a lot out there, right? So we have to lean on things from other fields. So think about related fields to what you're doing and full skills for us. The analogies right there. Hyper-D, this was phenomenal discussion. You can now hear that the music is going on because... They're playing us off. They're playing us off right now. We're going to go... I asked our speeches over.",
+   "text": "Yeah, podcast, magazine, LinkedIn, or people, these letters. Yeah, so data version you have a lot of really great stuff. There's webinars throughout the year and then the conferences, which I think are really helpful. But I do a lot of Googling, honestly. Not chat to just researching, just Googling, where I'll read about change management theory. There's a lot …",
    "summary": "",
    "quote": "Yeah, podcast, magazine, LinkedIn, or people, these letters. Yeah, so data version you have a lot of really great stuff. There's webinars throughout the year and then the conferences, which I think are really helpful. But I do a lot of Googling, honestly. Not chat to just researching, just Googling, where I'll read about change management theory. There's a lot",
    "start": 3599.3,
@@ -5000,7 +5045,7 @@
    "guests": [
     "Madeleine Want"
    ],
-   "text": "We recommend people, blogs, podcasts, books. I mean, obviously your book. Yeah, I got one great resource for you. I think this is an illegal answer, but like, I don't have favorites. I just snack. I just peruse. I'm on people's personal like medium blogs. I'm like following all of the big news channels. Like there's no go to for me. I do feel like that's an illegal answer, but we've had folks say, you know, LinkedIn. Yeah, I just follow. LinkedIn's great.",
+   "text": "We recommend people, blogs, podcasts, books. I mean, obviously your book. Yeah, I got one great resource for you. I think this is an illegal answer, but like, I don't have favorites. I just snack. I just peruse. I'm on people's personal like medium blogs. I'm like following all of the big news channels. Like there's no go to for …",
    "summary": "",
    "quote": "We recommend people, blogs, podcasts, books. I mean, obviously your book. Yeah, I got one great resource for you. I think this is an illegal answer, but like, I don't have favorites. I just snack. I just peruse. I'm on people's personal like medium blogs. I'm like following all of the big news channels. Like there's no go to for",
    "start": 3976.3,
@@ -5061,7 +5106,7 @@
    "guests": [
     "Katariina Kari"
    ],
-   "text": "so um i follow i read newspapers i really love any um sites that talk about culture so my favorite this is like my most favorite saturday past like activity is to read the financial times weekend of life and arts section so life and arts section f t f t weekend because it always has this like beautiful um very well written journalism about literature world events especially like interesting culture things happening in africa they have they covered that really well there's always like a person that they have lunch with and sometimes i dream that maybe you know if t will have lunch with me i'm not that person they get but you know i used to dream that i would be in catalogue cocktails a few years ago and here i am so maybe next time in a few years like in 20 years i'll be a like in a month with it that's my dream",
+   "text": "so um i follow i read newspapers i really love any um sites that talk about culture so my favorite this is like my most favorite saturday past like activity is to read the financial times weekend of life and arts section so life and arts section f t f t weekend because it always has this like beautiful um …",
    "summary": "",
    "quote": "so um i follow i read newspapers i really love any um sites that talk about culture so my favorite this is like my most favorite saturday past like activity is to read the financial times weekend of life and arts section so life and arts section f t f t weekend because it always has this like beautiful um",
    "start": 3731.3,
@@ -5150,7 +5195,7 @@
    "guests": [
     "Alex Vayner"
    ],
-   "text": "I follow him religiously. This is kind of leading to the next question, what do I read or listen to, whatever. So Tyler's podcast is number one. I used to be a big fan of Eric Weinstein when he ran the portal. I don't know if you're familiar with him. He's a Harvard PhD mathematician that used to work for Beertile, Beertile as an MD in his venture fund. Also fascinating, I listened to a podcast called Intelligent Square, at least once a month. I think it's one of the most interesting podcasts that kind of involves different topics from, you know, history, literature, politics, poetry, not a pure data science. Source, but just something that I find fascinating. I think those, I read the journal every day just because you gotta know what's going on in business. Right, and then I follow a bunch of, for technology and data, I don't have a single source. I think I use",
+   "text": "I follow him religiously. This is kind of leading to the next question, what do I read or listen to, whatever. So Tyler's podcast is number one. I used to be a big fan of Eric Weinstein when he ran the portal. I don't know if you're familiar with him. He's a Harvard PhD mathematician that used to work for …",
    "summary": "",
    "quote": "I follow him religiously. This is kind of leading to the next question, what do I read or listen to, whatever. So Tyler's podcast is number one. I used to be a big fan of Eric Weinstein when he ran the portal. I don't know if you're familiar with him. He's a Harvard PhD mathematician that used to work for",
    "start": 3406.2,
@@ -5214,7 +5259,7 @@
    "guests": [
     "Tony Seale"
    ],
-   "text": "blogs, the conferences, books, podcasts? Well, I guess plug for the Knowledge Graph conference that she's coming up soon, I'm going to be speaking there. I guess you guys will be there too. And LinkedIn is a fantastic source, actually. That's probably my main source of information these days. They're obviously backed by a big knowledge graph. All right. Well, Tony, thank you so much for this fascinating conversation. It's very, very timely. And I think it's one where we're",
+   "text": "blogs, the conferences, books, podcasts? Well, I guess plug for the Knowledge Graph conference that she's coming up soon, I'm going to be speaking there. I guess you guys will be there too. And LinkedIn is a fantastic source, actually. That's probably my main source of information these days. They're obviously backed by a big knowledge graph. All right. Well, …",
    "summary": "",
    "quote": "blogs, the conferences, books, podcasts? Well, I guess plug for the Knowledge Graph conference that she's coming up soon, I'm going to be speaking there. I guess you guys will be there too. And LinkedIn is a fantastic source, actually. That's probably my main source of information these days. They're obviously backed by a big knowledge graph. All right. Well,",
    "start": 3124.1,
@@ -5271,7 +5316,7 @@
    "guests": [
     "Veronika Durgin"
    ],
-   "text": "And follow me on LinkedIn. I actually, I don't just like everything. I kind of curate what I share. Again, my perspective, my bias, but at least like, I kind of try not to be just on the hype of liking everybody. I'm sorry, friends. You're also big snowflake. I am a snowflake. They're a superhero for real. It's a true thing. I have a cape to prove it. So if you have any snowflake questions, you know, data modeling is a big thing. I think it's very important. So yeah, follow me on LinkedIn. I blog sometimes. All right.",
+   "text": "And follow me on LinkedIn. I actually, I don't just like everything. I kind of curate what I share. Again, my perspective, my bias, but at least like, I kind of try not to be just on the hype of liking everybody. I'm sorry, friends. You're also big snowflake. I am a snowflake. They're a superhero for real. It's a …",
    "summary": "",
    "quote": "And follow me on LinkedIn. I actually, I don't just like everything. I kind of curate what I share. Again, my perspective, my bias, but at least like, I kind of try not to be just on the hype of liking everybody. I'm sorry, friends. You're also big snowflake. I am a snowflake. They're a superhero for real. It's a",
    "start": 3510.4,
@@ -5321,7 +5366,7 @@
    "guests": [
     "Benny Benford"
    ],
-   "text": "But then let's read medium, LinkedIn. My biggest learning so far this year is LinkedIn is a two way medium. So as I've started putting stuff out there, people have reached out to me and I've created time each week for half an hour conversations. And I think that's priceless. So comment on LinkedIn, reach out to people and find out time to just start chatting to people. 100% with you on the LinkedIn two way medium. I've met so many amazing people with that.",
+   "text": "But then let's read medium, LinkedIn. My biggest learning so far this year is LinkedIn is a two way medium. So as I've started putting stuff out there, people have reached out to me and I've created time each week for half an hour conversations. And I think that's priceless. So comment on LinkedIn, reach out to people and find …",
    "summary": "",
    "quote": "But then let's read medium, LinkedIn. My biggest learning so far this year is LinkedIn is a two way medium. So as I've started putting stuff out there, people have reached out to me and I've created time each week for half an hour conversations. And I think that's priceless. So comment on LinkedIn, reach out to people and find",
    "start": 3429.9,
@@ -5371,7 +5416,7 @@
    "guests": [
     "Abhi Sivasailam"
    ],
-   "text": "What people, podcast, blogs, newsletters, conferences, and so forth? So I'll answer them in reverse order. So I think data and podcasts, your guys' podcast is great. The analytics engineering roundup is a great newsletter. I think data and weekly, on and on, Paco there, it puts it on, I think, is also great. I think folks to chat with, lots. So someone's sitting in the room right now is Ahmed from Narrator. And I think, I was telling Ahmed this last night, activity schema was in some ways just ahead of its time. And that time might be now. And I think, for a variety of reasons, the rise of AI and LLMs that need a more natural semantic querying interface, I think, is a big one. I think the state of where data is and how it needs to be mapped, a lot of things that we've been talking about, I think thinking about your business as instead",
+   "text": "What people, podcast, blogs, newsletters, conferences, and so forth? So I'll answer them in reverse order. So I think data and podcasts, your guys' podcast is great. The analytics engineering roundup is a great newsletter. I think data and weekly, on and on, Paco there, it puts it on, I think, is also great. I think folks to chat with, …",
    "summary": "",
    "quote": "What people, podcast, blogs, newsletters, conferences, and so forth? So I'll answer them in reverse order. So I think data and podcasts, your guys' podcast is great. The analytics engineering roundup is a great newsletter. I think data and weekly, on and on, Paco there, it puts it on, I think, is also great. I think folks to chat with,",
    "start": 3343.7,
@@ -5485,7 +5530,7 @@
    "guests": [
     "Bethany Lyons"
    ],
-   "text": "I guess I'll just mention. Yeah, some people to follow, like Mike Renik is super interesting in data. I don't know if you follow him, but I recommend, I recommend him. And then Caroline Zimmerman, follow her, Clive Benford, follow him. They're all three really interesting people for some of the more like organizational people process strategy aspects of data. So there we go. Well, Caroline Zimmerman and Mike Renik and I highly recommend Clive right now. I mean, everything that he's posting is on a roll right now. He's on the roll right now. He's on the roll. Bethany, this was awesome. We went on so many different areas and we challenged ourselves. Thank you very much for having this honest, they'll be as conversation with us.",
+   "text": "I guess I'll just mention. Yeah, some people to follow, like Mike Renik is super interesting in data. I don't know if you follow him, but I recommend, I recommend him. And then Caroline Zimmerman, follow her, Clive Benford, follow him. They're all three really interesting people for some of the more like organizational people process strategy aspects of data. …",
    "summary": "",
    "quote": "I guess I'll just mention. Yeah, some people to follow, like Mike Renik is super interesting in data. I don't know if you follow him, but I recommend, I recommend him. And then Caroline Zimmerman, follow her, Clive Benford, follow him. They're all three really interesting people for some of the more like organizational people process strategy aspects of data.",
    "start": 829.8,
@@ -5628,7 +5673,7 @@
    "guests": [
     "Mohammad Syed"
    ],
-   "text": "I do go to conferences. But if I'm honest, a lot of conferences just like vendor speak and it reminds me of that stuff. Yeah, I used to work in previous organizations where people get their 15 minutes to present their project. Great. So what, right? I think books and honestly people, right? I think the most valuable lessons I've learned is just meeting people and listening to them. And it's not formal presentation. It's graphs, right? It's graphs in real life. Right? It's the power of network. That's the reality. Let's get out and talk to people. You know, build a graph. Build a graph of your life. So, you know. Build your graph of people. There we go.",
+   "text": "I do go to conferences. But if I'm honest, a lot of conferences just like vendor speak and it reminds me of that stuff. Yeah, I used to work in previous organizations where people get their 15 minutes to present their project. Great. So what, right? I think books and honestly people, right? I think the most valuable lessons I've …",
    "summary": "",
    "quote": "I do go to conferences. But if I'm honest, a lot of conferences just like vendor speak and it reminds me of that stuff. Yeah, I used to work in previous organizations where people get their 15 minutes to present their project. Great. So what, right? I think books and honestly people, right? I think the most valuable lessons I've",
    "start": 3545.8,
@@ -5679,7 +5724,7 @@
    "guests": [
     "Jeff Jonas"
    ],
-   "text": "People, blogs, conferences, books, so forth? I'll take that backwards. I like to follow, on Twitter, I like to follow terrible maps. It's really funny. On conferences, I like the Geoend Conference. And just the thing about both of those is that where things are and when and how they move are the highest order bits. If you're trying to do really interesting analytics, geospatial data is superfood for analytics, okay? So, funny side on the maps. And then the Geoend Conference, where people are obsessed with geospatial, that would be to go to is Danny Hillis. Oh man, that guy, do you know Danny Hillis?",
+   "text": "People, blogs, conferences, books, so forth? I'll take that backwards. I like to follow, on Twitter, I like to follow terrible maps. It's really funny. On conferences, I like the Geoend Conference. And just the thing about both of those is that where things are and when and how they move are the highest order bits. If you're trying to …",
    "summary": "",
    "quote": "People, blogs, conferences, books, so forth? I'll take that backwards. I like to follow, on Twitter, I like to follow terrible maps. It's really funny. On conferences, I like the Geoend Conference. And just the thing about both of those is that where things are and when and how they move are the highest order bits. If you're trying to",
    "start": 3391.6,
@@ -5734,7 +5779,7 @@
    "guests": [
     "Malcolm Hawker"
    ],
-   "text": "Resources, boy, avoid. There's no shortage of online resources, right? There's great podcasts. There's so many data management podcasts. I live and breathe on LinkedIn. And honestly, it's great and it's very much a community, right? It's very much you get what you put in, you get out, right? And if you're not contributing and if you're not active in community and you're not providing feedback and insights, then you're not going to get that much out of it. But if you're actively participating, LinkedIn is fantastic. I am prone to be reading about things at higher levels. So I love books about macroeconomics. Two that really kind of stick out to me is one is called the end of the world. The end of the world is we know it and it's not so. Anyway, the guy's name is Peter Zahan. He's a demographer. He speaks about the ending of globalization. Reading a book right now from Ray Dalio",
+   "text": "Resources, boy, avoid. There's no shortage of online resources, right? There's great podcasts. There's so many data management podcasts. I live and breathe on LinkedIn. And honestly, it's great and it's very much a community, right? It's very much you get what you put in, you get out, right? And if you're not contributing and if you're not active in …",
    "summary": "",
    "quote": "Resources, boy, avoid. There's no shortage of online resources, right? There's great podcasts. There's so many data management podcasts. I live and breathe on LinkedIn. And honestly, it's great and it's very much a community, right? It's very much you get what you put in, you get out, right? And if you're not contributing and if you're not active in",
    "start": 3627.6,
@@ -5791,7 +5836,7 @@
    "guests": [
     "Anna Abramova"
    ],
-   "text": "I mean, oh, yes, I follow, I go everywhere, where I can't. Obviously, oh, going to a snowflake summit in June and Vegas, I probably see you guys there, going to, we're going to this in Switzerland, skiing and data. This is in March with the leading edge IT in somewhere in Alps. Sounds fantastic in terms of skiing and learning. But resources I follow started listening to you guys's podcast. Amazing. For any level, like every recommended internal education is important. So, I recommended some of the pieces of the podcast to some of the team members. Love the stuff. Thank you. Appreciate that. Great news, please. Oh, I will. Yeah, books. Yeah, as I said, reading is not always full book, right? Maybe you just start a book, you know, maybe you watch a couple videos, talk, oh, they talk to people. People are the largest and best knowledge containers out there. And people are amazing. They can",
+   "text": "I mean, oh, yes, I follow, I go everywhere, where I can't. Obviously, oh, going to a snowflake summit in June and Vegas, I probably see you guys there, going to, we're going to this in Switzerland, skiing and data. This is in March with the leading edge IT in somewhere in Alps. Sounds fantastic in terms of skiing and …",
    "summary": "",
    "quote": "I mean, oh, yes, I follow, I go everywhere, where I can't. Obviously, oh, going to a snowflake summit in June and Vegas, I probably see you guys there, going to, we're going to this in Switzerland, skiing and data. This is in March with the leading edge IT in somewhere in Alps. Sounds fantastic in terms of skiing and",
    "start": 3441.4,
@@ -5841,7 +5886,7 @@
    "guests": [
     "Jane Urban"
    ],
-   "text": "And third, what are the resources that you follow people, blogs, conferences, books. Sure. Okay. So I think one of my advice probably is not surprising. It's about starting with the people, even though you're in a data space. And one thing I think is really important as a leader in data is that you, I call it especially with my picture with my thing here. You set the weather as a leader. So you kind of decide the energy level, the optimism, the way that everyone's going to feel. And so keep in mind how you show up, the energy you bring, the way you engage is going to really be part of how you succeed or fail. I think sometimes people forget that their own energy as a leader is what sort of starts to generate momentum for the team. So I'm often relentlessly positive. Even when I'm a little unsure, we're going to figure it out. I'm",
+   "text": "And third, what are the resources that you follow people, blogs, conferences, books. Sure. Okay. So I think one of my advice probably is not surprising. It's about starting with the people, even though you're in a data space. And one thing I think is really important as a leader in data is that you, I call it especially with …",
    "summary": "",
    "quote": "And third, what are the resources that you follow people, blogs, conferences, books. Sure. Okay. So I think one of my advice probably is not surprising. It's about starting with the people, even though you're in a data space. And one thing I think is really important as a leader in data is that you, I call it especially with",
    "start": 3689.4,
@@ -5891,7 +5936,7 @@
    "guests": [
     "Bill Inmon"
    ],
-   "text": "places I've gone, there haven't been books in conferences and things like that. So my great teacher in life, this trial and error and it's a great teacher. Let me tell you something. A long time ago, my young daughter, when she was, I don't know, three or four, was playing in the kitchen and my wife was standing next to me and my daughter was playing with a bar box of matches and my wife wanted to run and grab the matches away from her. And I said, no, no, no, we're going to sit here and watch her. We don't want her to bring the house down, but she's about to learn an important lesson. And so she opened up the box of matches, she lit up the match, she burned her finger, not bad, but she remembered the pain. And pain is the great teacher. And so I don't follow books or conferences or anything like that",
+   "text": "places I've gone, there haven't been books in conferences and things like that. So my great teacher in life, this trial and error and it's a great teacher. Let me tell you something. A long time ago, my young daughter, when she was, I don't know, three or four, was playing in the kitchen and my wife was standing next …",
    "summary": "",
    "quote": "places I've gone, there haven't been books in conferences and things like that. So my great teacher in life, this trial and error and it's a great teacher. Let me tell you something. A long time ago, my young daughter, when she was, I don't know, three or four, was playing in the kitchen and my wife was standing next",
    "start": 3962.8,
@@ -5941,7 +5986,7 @@
    "guests": [
     "Anthony Algmin"
    ],
-   "text": "Resources I use I use personally I like Jonah burger. I believe this is last name might be Bergen Marketing professor from Wharton about influence. He has a lot of information on influence. I like that. I really like pro side calm It's organizational change management. I Follow Gartner blogs a lot and I follow a lot of stuff going on day diversity",
+   "text": "Resources I use I use personally I like Jonah burger. I believe this is last name might be Bergen Marketing professor from Wharton about influence. He has a lot of information on influence. I like that. I really like pro side calm It's organizational change management. I Follow Gartner blogs a lot and I follow a lot of stuff going …",
    "summary": "",
    "quote": "Resources I use I use personally I like Jonah burger. I believe this is last name might be Bergen Marketing professor from Wharton about influence. He has a lot of information on influence. I like that. I really like pro side calm It's organizational change management. I Follow Gartner blogs a lot and I follow a lot of stuff going",
    "start": 3076.0,
@@ -5998,7 +6043,7 @@
    "guests": [
     "Allison Sagraves"
    ],
-   "text": "What books or podcasts or people conferences and stuff? Yeah, I think for conferences, you know, the MIT conference, the guy that runs the Carnegie Mellon program that I'm involved in calls it Coachella for CDOs. Maybe other people caught that. Certainly that's a good one in terms of just, if you're a CDO, that's a good conference to go to. We went to Gartner, both of us this year. I hadn't been to that before. I think something like that is a good overall, that Forrester or their other ones, I'm sure, where you can really just kind of meet all the vendors, get up to speed on everything that's happening. So, those kinds of things are good. And I really, and then there are sector specific things. So, I went to a lot of financial services conferences.",
+   "text": "What books or podcasts or people conferences and stuff? Yeah, I think for conferences, you know, the MIT conference, the guy that runs the Carnegie Mellon program that I'm involved in calls it Coachella for CDOs. Maybe other people caught that. Certainly that's a good one in terms of just, if you're a CDO, that's a good conference to go …",
    "summary": "",
    "quote": "What books or podcasts or people conferences and stuff? Yeah, I think for conferences, you know, the MIT conference, the guy that runs the Carnegie Mellon program that I'm involved in calls it Coachella for CDOs. Maybe other people caught that. Certainly that's a good one in terms of just, if you're a CDO, that's a good conference to go",
    "start": 3648.2,
@@ -6108,7 +6153,7 @@
    "guests": [
     "Dan Bennett"
    ],
-   "text": "I'm pretty boring on this stuff. It's, I was thinking about it when you sent me that question through, it's daring fireball. I just love the way John Gruber writes. And like, if you ever want to figure out how Apple thinks, you just read what he writes and it's pretty much there. I'm a huge, huge blockchain skeptic. So I'm loving web free is going just great. That blog that turned up earlier this year or late last year. And of course, like FTX happening today, right? So it's good to be, you know, get confirmation bias from that blog. Ours Technica is wonderful. Their coverage of so many things is really, really good and in depth. And then one that if you're in the UK, you probably know, which is good for basic tabloid level IT coverage is the register, which I love those guys. And their writing is just the right level of humor. This was great",
+   "text": "I'm pretty boring on this stuff. It's, I was thinking about it when you sent me that question through, it's daring fireball. I just love the way John Gruber writes. And like, if you ever want to figure out how Apple thinks, you just read what he writes and it's pretty much there. I'm a huge, huge blockchain skeptic. So …",
    "summary": "",
    "quote": "I'm pretty boring on this stuff. It's, I was thinking about it when you sent me that question through, it's daring fireball. I just love the way John Gruber writes. And like, if you ever want to figure out how Apple thinks, you just read what he writes and it's pretty much there. I'm a huge, huge blockchain skeptic. So",
    "start": 3506.8,
@@ -6200,7 +6245,7 @@
     "Gabi Steele",
     "Leah Weiss"
    ],
-   "text": "And then you think of resources because you're the big leader of the two of us. The first person I thought it was an amazing woman called Reese Berkwit, who leads data strategy at data culture. She was previously a segment, has a really interesting perspective on the problem and works with a lot of our clients. She works closely with Neil Oliver, who you should also bring on. The two of them are an amazing dream team group. And then there's a young person on them, Ahmed, who is would be delightful on this podcast. And she is going on to study data science at Barnard College and is a code with Clossie alumnist that we know very well. Academy has been an amazing date of his people.",
+   "text": "And then you think of resources because you're the big leader of the two of us. The first person I thought it was an amazing woman called Reese Berkwit, who leads data strategy at data culture. She was previously a segment, has a really interesting perspective on the problem and works with a lot of our clients. She works closely …",
    "summary": "",
    "quote": "And then you think of resources because you're the big leader of the two of us. The first person I thought it was an amazing woman called Reese Berkwit, who leads data strategy at data culture. She was previously a segment, has a really interesting perspective on the problem and works with a lot of our clients. She works closely",
    "start": 3788.0,
@@ -6310,7 +6355,7 @@
    "guests": [
     "Loris Marini"
    ],
-   "text": "Resource I follow, let me read my podcast list. So there's one podcast that I really love, The Knowledge Project by Sean Parrish. I've been listening for quite some time and he just covers a lot of things and just recently a lot into the psychology and building teams and emotional intelligence which is really interesting. I should get him on my podcast eventually, I'll get there. There is equity mates. It's a fantastic podcast. It talks about investing but you really understand more money. So if you're not that well-equipped to be thinking about money and investing in businesses and VCs and capital raises and all that stuff, that's an excellent podcast. So that's the beginning of developing those business skills. What else do I follow? I follow the look and sound of leadership is another fantastic resource by Tom Henschel. He's got this storytelling format in a short 10 minutes episodes at a solo. So it's just him",
+   "text": "Resource I follow, let me read my podcast list. So there's one podcast that I really love, The Knowledge Project by Sean Parrish. I've been listening for quite some time and he just covers a lot of things and just recently a lot into the psychology and building teams and emotional intelligence which is really interesting. I should get him …",
    "summary": "",
    "quote": "Resource I follow, let me read my podcast list. So there's one podcast that I really love, The Knowledge Project by Sean Parrish. I've been listening for quite some time and he just covers a lot of things and just recently a lot into the psychology and building teams and emotional intelligence which is really interesting. I should get him",
    "start": 615.9,
@@ -6366,7 +6411,7 @@
    "date": "2022-10-20",
    "episode": "Knowledge: the missing piece to understanding your business",
    "guests": [],
-   "text": "So from, I'm going to go in reverse order, resource, I follow, let me let me read my podcast list. So there's one podcast that I really love, The Knowledge Project by Sean Parrish. I've been listening for quite some time and he just covers a lot of things and just recently a lot into the psychology and building teams and emotional intelligence, which is really interesting. I should get him on my podcast eventually. I'll get there. There is equity mates, it's a fantastic podcast, talks about investing, but you really understand more, you know, money. So if you're not that well equipped to be thinking about money and investing in businesses and VCs and, you know, capital raises and all that stuff, that's an excellent podcast that that, you know, it's the beginning of developing those business skills. What else do I follow? I follow the look and sound of leadership is another fantastic resource by Tom Henschel.",
+   "text": "So from, I'm going to go in reverse order, resource, I follow, let me let me read my podcast list. So there's one podcast that I really love, The Knowledge Project by Sean Parrish. I've been listening for quite some time and he just covers a lot of things and just recently a lot into the psychology and building teams …",
    "summary": "",
    "quote": "So from, I'm going to go in reverse order, resource, I follow, let me let me read my podcast list. So there's one podcast that I really love, The Knowledge Project by Sean Parrish. I've been listening for quite some time and he just covers a lot of things and just recently a lot into the psychology and building teams",
    "start": 3129.0,
@@ -6405,7 +6450,7 @@
    "guests": [
     "Laura Ellis"
    ],
-   "text": "People, blogs, podcasts, books, conferences? Also mentioned about your blog as well. Yeah. Some folks were adding comments saying, how do we, how do you mention some of your blog posts? How do they find your blog? OK. So my blog is littlemostata.com. So you can find me on Twitter at littlemostata. And my blog is littlemostata.com. And I talk about all things data. Some stuff is weird, but it's all data related. And I find it fun. And that is just me. I'm not going to apologize. That's cool. It's real, right? It's real. And then I like to connect with people. I'm more of like a people learning person. So these conversations, community stuff. So I like to be involved in communities. I have two favorite, like two of my favorite communities. It would be a shout out. One is Our Ladies. So that is kind of where I am my first taste of user communities. It's also",
+   "text": "People, blogs, podcasts, books, conferences? Also mentioned about your blog as well. Yeah. Some folks were adding comments saying, how do we, how do you mention some of your blog posts? How do they find your blog? OK. So my blog is littlemostata.com. So you can find me on Twitter at littlemostata. And my blog is littlemostata.com. And I talk …",
    "summary": "",
    "quote": "People, blogs, podcasts, books, conferences? Also mentioned about your blog as well. Yeah. Some folks were adding comments saying, how do we, how do you mention some of your blog posts? How do they find your blog? OK. So my blog is littlemostata.com. So you can find me on Twitter at littlemostata. And my blog is littlemostata.com. And I talk",
    "start": 720.8,
@@ -6466,7 +6511,7 @@
    "guests": [
     "Patrick Bangert"
    ],
-   "text": "If you're interested in AI, read about AI, but don't try to learn Python or PyTorch or pick up a technical book with source code and formulas and mathematics in it. Unless, of course, you've got, you know, a year or two of your life to spare. If you do, then by all means, take a math degree. But if you want to find out, you know, so what is AI and you have time to read a couple of books, pick up the more popular books with text and examples as opposed to with code. Learning and programming language takes a long time.",
+   "text": "If you're interested in AI, read about AI, but don't try to learn Python or PyTorch or pick up a technical book with source code and formulas and mathematics in it. Unless, of course, you've got, you know, a year or two of your life to spare. If you do, then by all means, take a math degree. But if …",
    "summary": "",
    "quote": "If you're interested in AI, read about AI, but don't try to learn Python or PyTorch or pick up a technical book with source code and formulas and mathematics in it. Unless, of course, you've got, you know, a year or two of your life to spare. If you do, then by all means, take a math degree. But if",
    "start": 3979.9,
@@ -6523,7 +6568,7 @@
    "guests": [
     "Rupal Sumaria"
    ],
-   "text": "One of the books is how to own the room. Because I think when you're talking to everybody, sometimes you do need to be able to own the room. And just decide that also how to adult. Oh, nice. Those are good recommendations. Yeah. But how to own the room, I think, is a really, really great book because you can have to read the whole thing, but, you know, focusing a little snippets. I think really helped because big part of it is the people. And you need to be able to have those different kind of relationships at those different levels. You know, we talk about sometimes people feel intimidated, but it's all about your confidence. And, you know, sometimes everybody needs a bit of that at all. All right. I love that. I haven't checked out that book yet. So I'll have to. All right. Well,",
+   "text": "One of the books is how to own the room. Because I think when you're talking to everybody, sometimes you do need to be able to own the room. And just decide that also how to adult. Oh, nice. Those are good recommendations. Yeah. But how to own the room, I think, is a really, really great book because you …",
    "summary": "",
    "quote": "One of the books is how to own the room. Because I think when you're talking to everybody, sometimes you do need to be able to own the room. And just decide that also how to adult. Oh, nice. Those are good recommendations. Yeah. But how to own the room, I think, is a really, really great book because you",
    "start": 3520.7,
@@ -6584,7 +6629,7 @@
    "guests": [
     "Fraser Harris"
    ],
-   "text": "And third, what are the resources that you follow that you should suggest other people to follow too? Well, I'll start with the first. Like, keep it simple. Like, almost everything is better when you just simplify it down. Yeah, keep it simple. I'll go to my, I read a lot of Hacker News, follow some folks on Twitter. You know, just it varied. Like, it never, the data intelligentsia is like, you know, very loud and talkative. And it's interesting, you know, keep an eye on, but I'd like just focus on the outcomes that you're driving. So you're creating value. Because ultimately, that's why we're all here. It's creating value for the folks that are dependent on us, right? And then finally, who should have next? I recently had a great conversation with Suhir. I can't remember his last name, the CPO of MongoDB. I don't know if that's how relevant that is to you, but had a",
+   "text": "And third, what are the resources that you follow that you should suggest other people to follow too? Well, I'll start with the first. Like, keep it simple. Like, almost everything is better when you just simplify it down. Yeah, keep it simple. I'll go to my, I read a lot of Hacker News, follow some folks on Twitter. You …",
    "summary": "",
    "quote": "And third, what are the resources that you follow that you should suggest other people to follow too? Well, I'll start with the first. Like, keep it simple. Like, almost everything is better when you just simplify it down. Yeah, keep it simple. I'll go to my, I read a lot of Hacker News, follow some folks on Twitter. You",
    "start": 3662.4,
@@ -6621,7 +6666,7 @@
    "guests": [
     "Ole Olesen-Bagneux"
    ],
-   "text": "I follow so many data podcasts. I follow your podcast quite intensively. Monday morning data chat, data mesh radio, data engineering podcast. Follow, let me see. So I follow the data strategy show, the data skeptic, data frames, meets at Dama, Dama Norway, that's data management, Norway, the data chief, experiencing data, sort of podcasts, data lab dialogs, data creators by Mediosa. He also has a data creators club website at Java data, the data download. I could go on and on. Wow. Thank you for shutting out for everybody because I think all those podcasts are fantastic. And it's almost a full time to go full everybody there. But Oh, and this was fantastic. I am so excited.",
+   "text": "I follow so many data podcasts. I follow your podcast quite intensively. Monday morning data chat, data mesh radio, data engineering podcast. Follow, let me see. So I follow the data strategy show, the data skeptic, data frames, meets at Dama, Dama Norway, that's data management, Norway, the data chief, experiencing data, sort of podcasts, data lab dialogs, data creators …",
    "summary": "",
    "quote": "I follow so many data podcasts. I follow your podcast quite intensively. Monday morning data chat, data mesh radio, data engineering podcast. Follow, let me see. So I follow the data strategy show, the data skeptic, data frames, meets at Dama, Dama Norway, that's data management, Norway, the data chief, experiencing data, sort of podcasts, data lab dialogs, data creators",
    "start": 3901.8,
@@ -6681,7 +6726,7 @@
     "Joe Reis",
     "Matt Housley"
    ],
-   "text": "let me see I'll give you a short list yeah so pencil in the data space I think Ben is awesome and he's very focused on the fundamentals I'm gonna give you two other names that you're probably familiar with that are not technically in data one is Kelsey high tower I think Kelsey high tower mostly worries about containers and other technologies but he's super super pragmatic and so I think he has a lot of insights that impact data as well one of my all-time favorite Kelsey high tower talks is a talk he gave about AWS Lambda when he worked at Google which is an Amazon competitor of course like I always feel like I learned something from his talks about data even if he's not focused on data one more name on the FinOps site is Corey Quinn you guys know who Corey Quinn is probably so totally focused on cloud cost management very entertaining one",
+   "text": "let me see I'll give you a short list yeah so pencil in the data space I think Ben is awesome and he's very focused on the fundamentals I'm gonna give you two other names that you're probably familiar with that are not technically in data one is Kelsey high tower I think Kelsey high tower mostly worries about containers …",
    "summary": "",
    "quote": "let me see I'll give you a short list yeah so pencil in the data space I think Ben is awesome and he's very focused on the fundamentals I'm gonna give you two other names that you're probably familiar with that are not technically in data one is Kelsey high tower I think Kelsey high tower mostly worries about containers",
    "start": 4081.9,
@@ -6741,7 +6786,7 @@
    "guests": [
     "John Kutay"
    ],
-   "text": "books, podcasts, stuff, like, share, share with everybody. I definitely, I definitely recommend my podcast, What's New in Data, and we really just focus on, you know, latest trends and we have great guests, you know, Joe, Joe Rice is coming on as well. I just picked up his book on data engineering, this weekend, Labor Day weekend, I've, I've been on my calendar to go through it, so I'm really excited to read it. Also read Zombani's Data Mesh book. I know there's a lot of like, you know, there's so many opinions on data mesh, like on, like that seem a little uneducated flying around and I really wish everyone just read her book. Because it really does clarify a lot of stuff. So that's a great resource as well. This podcast catalog and cocktails, I love tuning into it. It's a great one, especially to get pretty much everyone who's, who's a thought leader right now has",
+   "text": "books, podcasts, stuff, like, share, share with everybody. I definitely, I definitely recommend my podcast, What's New in Data, and we really just focus on, you know, latest trends and we have great guests, you know, Joe, Joe Rice is coming on as well. I just picked up his book on data engineering, this weekend, Labor Day weekend, I've, I've …",
    "summary": "",
    "quote": "books, podcasts, stuff, like, share, share with everybody. I definitely, I definitely recommend my podcast, What's New in Data, and we really just focus on, you know, latest trends and we have great guests, you know, Joe, Joe Rice is coming on as well. I just picked up his book on data engineering, this weekend, Labor Day weekend, I've, I've",
    "start": 3039.6,
@@ -6801,7 +6846,7 @@
    "guests": [
     "Valentijn of Vopak"
    ],
-   "text": "forehand I'm a I'm a books guy I think blocks are too volatile for me maybe a bit old school opinion but I'm a I'm a books guy I had a lot of books currently I'm reading the information by James like love it so for the people that haven't read it's interested in data the information by James like I think it's yeah great suggestion yeah what are you resources not a particular resources but I did read a good book over summer so I thought well let's just recommend that one then you'll find out so it's it's completely different the topic but another fascination of mine is the second world war whatever happened there so the I this summer I read a book but works and she she wrote that book and she wrote a book about the sisters of Auschwitz she moved into a very old house and behind the walls there were all these old",
+   "text": "forehand I'm a I'm a books guy I think blocks are too volatile for me maybe a bit old school opinion but I'm a I'm a books guy I had a lot of books currently I'm reading the information by James like love it so for the people that haven't read it's interested in data the information by James like …",
    "summary": "",
    "quote": "forehand I'm a I'm a books guy I think blocks are too volatile for me maybe a bit old school opinion but I'm a I'm a books guy I had a lot of books currently I'm reading the information by James like love it so for the people that haven't read it's interested in data the information by James like",
    "start": 3397.5,
@@ -6829,7 +6874,7 @@
    "date": "2022-09-01",
    "episode": "Takeways with Roel and Valentijn",
    "guests": [],
-   "text": "I'm a books guy. I think blocks are too volatile for me. Maybe a bit old school opinion, but I'm a books guy. I read a lot of books. Currently, I'm reading the information by James Black. I love it. For the people that haven't read it, are interested in data, the information by James Black. I think it's a very powerful book. Great suggestion. Yeah. What are you? Resources? Not a particular resources, but I did read a good book over the summer, so I thought, let's just recommend that one, then you'll find out. It's a completely different topic, but another fascination of mine is the Second World War, whatever happened there. This summer I read a book, but Roxanne wrote that book. She wrote a book about the sisters of Auschwitz. She moved into a very old house, and behind the walls there were all these old papers. Those were newspapers from resistance parties or Jewish families",
+   "text": "I'm a books guy. I think blocks are too volatile for me. Maybe a bit old school opinion, but I'm a books guy. I read a lot of books. Currently, I'm reading the information by James Black. I love it. For the people that haven't read it, are interested in data, the information by James Black. I think it's a …",
    "summary": "",
    "quote": "I'm a books guy. I think blocks are too volatile for me. Maybe a bit old school opinion, but I'm a books guy. I read a lot of books. Currently, I'm reading the information by James Black. I love it. For the people that haven't read it, are interested in data, the information by James Black. I think it's a",
    "start": 714.0,
@@ -6871,7 +6916,7 @@
    "date": "2022-08-25",
    "episode": "Season 4 Premiere Takeaways",
    "guests": [],
-   "text": "Um, the right people, um, on LinkedIn and making sure that I'm reading the right, you know, blog posts as well. Um, and I just think it's about, for me, it's about absorbing the right information from the right people and debating in your mind everything that you hear, listen and learn, right? Um, as well. So, uh, there's, you know, there's, there's various folks that, that, that I follow, but I just think it's, you know, it's around the people that are around you. Uh, that they're going to be very key to, you know, your immediate learning and understanding, um, as well. Love that. You're, you're big on building that network and, and being able to share knowledge with each other. And I love that. It's a very connected approach to knowledge sharing. Yeah. That's something I've been following a lot and kind of finding the right people connecting them, connecting with them, trying to go talk to",
+   "text": "Um, the right people, um, on LinkedIn and making sure that I'm reading the right, you know, blog posts as well. Um, and I just think it's about, for me, it's about absorbing the right information from the right people and debating in your mind everything that you hear, listen and learn, right? Um, as well. So, uh, there's, you …",
    "summary": "",
    "quote": "Um, the right people, um, on LinkedIn and making sure that I'm reading the right, you know, blog posts as well. Um, and I just think it's about, for me, it's about absorbing the right information from the right people and debating in your mind everything that you hear, listen and learn, right? Um, as well. So, uh, there's, you",
    "start": 791.3,
@@ -6910,7 +6955,7 @@
    "guests": [
     "Vip Parmar"
    ],
-   "text": "And so, I don't do a lot of reading as well. You know, I pursue the right people on LinkedIn and making sure that I'm reading the right, you know, blog posts as well. And I just think it's about, for me, it's about absorbing the right information from the right people and debating in your mind everything that you hear, listen and learn, right? As well. So, you know, there's various folks that I follow, but I just think it's, you know, it's around the people that are around you that they're going to be very key to, you know, your immediate learning and understanding as well. Love that. You're big on building that network and being able to share knowledge with each other. And I love that. It's a very connected approach to knowledge sharing. Yeah, and that's something I've been following a lot and kind of finding the right people, connecting them, connecting with them, trying to",
+   "text": "And so, I don't do a lot of reading as well. You know, I pursue the right people on LinkedIn and making sure that I'm reading the right, you know, blog posts as well. And I just think it's about, for me, it's about absorbing the right information from the right people and debating in your mind everything that you …",
    "summary": "",
    "quote": "And so, I don't do a lot of reading as well. You know, I pursue the right people on LinkedIn and making sure that I'm reading the right, you know, blog posts as well. And I just think it's about, for me, it's about absorbing the right information from the right people and debating in your mind everything that you",
    "start": 3492.7,
@@ -7002,7 +7047,7 @@
    "guests": [
     "Ergest Xheblati"
    ],
-   "text": "What are you reading newsletters or conferences or anything you're going to? I follow a bunch of newsletters. The one from DBT Labs is the one newsletter that I really like that gives me kind of an update of where the industry, what the industry is up to, what they're up to. I follow a bunch of folks on LinkedIn. Best thing to do is follow one or follow myself and see who we follow and just following all the people that we interact with. Same thing with Twitter. And Tim, I don't know if you're on social media at all, but I would follow you as well. I am. Follow me. I will, but yeah. All right.",
+   "text": "What are you reading newsletters or conferences or anything you're going to? I follow a bunch of newsletters. The one from DBT Labs is the one newsletter that I really like that gives me kind of an update of where the industry, what the industry is up to, what they're up to. I follow a bunch of folks on LinkedIn. …",
    "summary": "",
    "quote": "What are you reading newsletters or conferences or anything you're going to? I follow a bunch of newsletters. The one from DBT Labs is the one newsletter that I really like that gives me kind of an update of where the industry, what the industry is up to, what they're up to. I follow a bunch of folks on LinkedIn.",
    "start": 3929.4,
@@ -7059,7 +7104,7 @@
    "guests": [
     "Peter Kapur"
    ],
-   "text": "I actually do a lot of discussions with my peers. And also with the business, it's not about reading. I do a lot of reading, but it's more about talking to people because I feel that if I am talking to people, I realize I have not, maybe I don't have a complete picture. And it makes me rethink what I have, because allows them to think and know. I love this. And that last point, the pandemic for me has given me the opportunity to set up a bunch of one-on-ones with people who are like, I love the concept of one-on-ones. And I encourage everybody, every relationship is a one-on-one. As long as it's a safety to say, I want people to question me. To me, I've got to be honest, in the past, I've loved it, we have people of that, hey, I remember 12, 14 years back, I asked them, I'd say, you punted with you",
+   "text": "I actually do a lot of discussions with my peers. And also with the business, it's not about reading. I do a lot of reading, but it's more about talking to people because I feel that if I am talking to people, I realize I have not, maybe I don't have a complete picture. And it makes me rethink what …",
    "summary": "",
    "quote": "I actually do a lot of discussions with my peers. And also with the business, it's not about reading. I do a lot of reading, but it's more about talking to people because I feel that if I am talking to people, I realize I have not, maybe I don't have a complete picture. And it makes me rethink what",
    "start": 3280.9,
@@ -7100,7 +7145,7 @@
    "guests": [
     "Sanjeev Mohan"
    ],
-   "text": "What are the podcasts you listen to? Okay. So if I start from the end, I listen to a lot of podcasts, basically from like analytics engineering podcast, there's Monday morning data chat. So that's how I keep up to date. I'm listening to people who have spent a lot of time in the space reading a lot of blogs. Every week I see people will send an email, some of the influencers. Here are the most common blogs. Like, Ben Stansel does an amazing job every week. It just amazes me. I wish I had his expertise of writing. So that's how I keep up to date. As far as inviting somebody, I just, I didn't come thinking who would be a good person. But since I talked quite a bit about observability, if you haven't, you know, had a lot of people from observability in your show,",
+   "text": "What are the podcasts you listen to? Okay. So if I start from the end, I listen to a lot of podcasts, basically from like analytics engineering podcast, there's Monday morning data chat. So that's how I keep up to date. I'm listening to people who have spent a lot of time in the space reading a lot of blogs. …",
    "summary": "",
    "quote": "What are the podcasts you listen to? Okay. So if I start from the end, I listen to a lot of podcasts, basically from like analytics engineering podcast, there's Monday morning data chat. So that's how I keep up to date. I'm listening to people who have spent a lot of time in the space reading a lot of blogs.",
    "start": 3607.8,
@@ -7270,7 +7315,7 @@
    "guests": [
     "Sarah Krasnik"
    ],
-   "text": "is Lenny Rochitsky, who writes Lenny's newsletter because he actually writes about products, but really talks about like, how do you make these product decisions? And I think that there's a lot that we can learn from him and apply it to data. So that would be my recommendation. I'm curious, who was the second one? The second one was Zach Wilson, who's more in the data space, but I think works at, oh, I mean, he's worked at like Airbnb and Netflix. I don't, I think he's a Netflix. I don't remember. But the point is, is that like, I think bringing in someone who works at like a huge company and understanding kind of how he approaches things and then how they approach things there, I think we can also learn a lot too. All right.",
+   "text": "is Lenny Rochitsky, who writes Lenny's newsletter because he actually writes about products, but really talks about like, how do you make these product decisions? And I think that there's a lot that we can learn from him and apply it to data. So that would be my recommendation. I'm curious, who was the second one? The second one was …",
    "summary": "",
    "quote": "is Lenny Rochitsky, who writes Lenny's newsletter because he actually writes about products, but really talks about like, how do you make these product decisions? And I think that there's a lot that we can learn from him and apply it to data. So that would be my recommendation. I'm curious, who was the second one? The second one was",
    "start": 781.8,
@@ -7492,7 +7537,7 @@
    "guests": [
     "Nong Li"
    ],
-   "text": "You're following him on LinkedIn. Awesome guy who just writes. So a lot of just great content about it. This is cataloging and go to shells. A special thanks to Data.World for supporting the show. Carly Bergoff for producing. John Williams and Brian Jacob for the show. And thank you to the entire cataloging cocktails fan base. Don't forget to subscribe for each and every new video I can ask. Thank you and thank you for having me. It was fun. And always it's a Data.World for letting us do this. Every Wednesday, so much fun.",
+   "text": "You're following him on LinkedIn. Awesome guy who just writes. So a lot of just great content about it. This is cataloging and go to shells. A special thanks to Data.World for supporting the show. Carly Bergoff for producing. John Williams and Brian Jacob for the show. And thank you to the entire cataloging cocktails fan base. Don't forget to …",
    "summary": "",
    "quote": "You're following him on LinkedIn. Awesome guy who just writes. So a lot of just great content about it. This is cataloging and go to shells. A special thanks to Data.World for supporting the show. Carly Bergoff for producing. John Williams and Brian Jacob for the show. And thank you to the entire cataloging cocktails fan base. Don't forget to",
    "start": 3526.2,
@@ -7639,7 +7684,7 @@
    "guests": [
     "Patricia Thaine"
    ],
-   "text": "which I read on the bathroom stall of my undergrad university. And it is a life changing piece of advice to read on a bathroom stall. And it's that you treat people how to treat you. I'm sorry, you teach people how to treat you, which, you know, should be obvious, but is it? Teach people how to treat you. Yeah, you teach people how to treat you. How to teach you? Yeah. I like it. I like it. I like it. So, and that seems to be like a book you should buy.",
+   "text": "which I read on the bathroom stall of my undergrad university. And it is a life changing piece of advice to read on a bathroom stall. And it's that you treat people how to treat you. I'm sorry, you teach people how to treat you, which, you know, should be obvious, but is it? Teach people how to treat you. …",
    "summary": "",
    "quote": "which I read on the bathroom stall of my undergrad university. And it is a life changing piece of advice to read on a bathroom stall. And it's that you treat people how to treat you. I'm sorry, you teach people how to treat you, which, you know, should be obvious, but is it? Teach people how to treat you.",
    "start": 3413.6,
@@ -7954,7 +7999,7 @@
    "guests": [
     "Sarah Catanzaro"
    ],
-   "text": "on LinkedIn earlier this week. And I think yesterday we had a conversation and it was 30 minutes of just like, oh my God, like you get me, I get you. Like, this is so awesome. And they are, and he was telling me everything that they've been talking, just building over there. And I'm like, wow. And he's literally doing the whole pushing into the engineers and everything. All right, Chad, we have an upcoming meeting, but we're gonna do the traveling practice. So this is awesome. Yeah, and so many dots getting connected. This is so cool. Right now.",
+   "text": "on LinkedIn earlier this week. And I think yesterday we had a conversation and it was 30 minutes of just like, oh my God, like you get me, I get you. Like, this is so awesome. And they are, and he was telling me everything that they've been talking, just building over there. And I'm like, wow. And he's literally …",
    "summary": "",
    "quote": "on LinkedIn earlier this week. And I think yesterday we had a conversation and it was 30 minutes of just like, oh my God, like you get me, I get you. Like, this is so awesome. And they are, and he was telling me everything that they've been talking, just building over there. And I'm like, wow. And he's literally",
    "start": 591.7,
@@ -8326,7 +8371,7 @@
    "guests": [
     "Emil Eifrem"
    ],
-   "text": "you know that I listen to many episodes of this podcast, even before you invited me, I would listen to all of them. So I don't think you've had him on, but I don't know. But Jeff Jonas is a founder of a company called Sensing. He's one of the main thought leaders. It's not the main thought leader in ER entity resolution. I think he's the only IBM fellow to ever leave IBM. I think that's true. And it's just like one of the smartest people ever in data. Get Jeff on the show. Awesome. Well, a pleasure.",
+   "text": "you know that I listen to many episodes of this podcast, even before you invited me, I would listen to all of them. So I don't think you've had him on, but I don't know. But Jeff Jonas is a founder of a company called Sensing. He's one of the main thought leaders. It's not the main thought leader in …",
    "summary": "",
    "quote": "you know that I listen to many episodes of this podcast, even before you invited me, I would listen to all of them. So I don't think you've had him on, but I don't know. But Jeff Jonas is a founder of a company called Sensing. He's one of the main thought leaders. It's not the main thought leader in",
    "start": 3483.1,

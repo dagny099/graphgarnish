@@ -3,615 +3,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GraphGarnish - Transform podcast metadata into interactive network visualizations. Explore 162 episodes of Catalog & Cocktails as a living knowledge graph.">
-    <meta name="keywords" content="network visualization, podcast analytics, knowledge graph, data visualization, D3.js">
+    <meta name="description" content="GraphGarnish reads the Catalog & Cocktails podcast as a network: who came on the show, and what every guest said when asked the same closing questions. Rebuilt from the show's feed every week.">
+    <meta name="keywords" content="podcast knowledge graph, network visualization, Catalog & Cocktails, D3.js, speech-to-text">
     <meta name="author" content="Barbara Hidalgo-Sotelo">
     <meta property="og:title" content="GraphGarnish">
-    <meta property="og:description" content="...">
+    <meta property="og:description" content="A podcast read as a network: who came on the show, and what every guest said.">
     <meta property="og:url" content="https://graph-gist.com/">
-    <meta property="og:image" content="https://graph-gist.com/og-image.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>🍸 GraphGarnish - Interactive Network Visualization</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    
+    <title>🍸 GraphGarnish · A podcast read as a network</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --violet: #667eea;
+            --plum: #764ba2;
+            --ink: #1f2433;
+            --ink-2: #4a5168;
+            --muted: #7a8199;
+            --rule: #e4e6f0;
+            --paper: #fbfbfe;
+            --card: #ffffff;
+            --tint: #f2f0fb;
+            --episode: #ff6b6b;
+            --guest: #4ecdc4;
+            --org: #e8c547;
+            --topic: #9d7cf0;
+            --answer: #ff9f43;
+            --grad: linear-gradient(135deg, var(--violet) 0%, var(--plum) 100%);
         }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: #2d3748;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6; color: var(--ink); background: var(--paper);
         }
-        
+        a { color: var(--plum); }
+        a:focus-visible, .btn:focus-visible { outline: 3px solid var(--answer); outline-offset: 2px; }
+        .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+        .num { font-variant-numeric: tabular-nums; }
+
         /* Header */
-        header {
-            background: rgba(255, 255, 255, 0.98);
-            padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        header { background: rgba(255,255,255,.97); border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 100; }
+        .header-content { max-width: 1120px; margin: 0 auto; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .logo { font-size: 24px; font-weight: 700; background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .nav-links { display: flex; gap: 22px; flex-wrap: wrap; }
+        .nav-links a { color: var(--ink-2); text-decoration: none; font-weight: 500; font-size: 15px; }
+        .nav-links a:hover { color: var(--plum); }
+
+        /* Hero */
+        .hero { background: var(--grad); color: white; padding: 72px 0 56px; }
+        .hero h1 { font-size: clamp(34px, 5.4vw, 54px); line-height: 1.08; font-weight: 750; letter-spacing: -0.015em; max-width: 18ch; text-wrap: balance; }
+        .hero .lede { font-size: clamp(17px, 2vw, 20px); max-width: 60ch; margin-top: 18px; opacity: .95; }
+        .stat-strip { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 26px; font-size: 15px; opacity: .95; }
+        .stat-strip b { font-size: 22px; display: block; line-height: 1.1; }
+
+        /* Two views */
+        .views { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; margin-top: -32px; position: relative; }
+        .view { background: var(--card); border-radius: 14px; padding: 26px 26px 24px; box-shadow: 0 12px 34px rgba(46, 33, 99, .14); display: flex; flex-direction: column; gap: 12px; }
+        .view .kicker { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+        .dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; flex: none; }
+        .view h2 { font-size: 26px; line-height: 1.2; }
+        .view p { color: var(--ink-2); }
+        .view .facts { list-style: none; display: grid; gap: 6px; font-size: 15px; color: var(--ink-2); }
+        .view .facts b { color: var(--ink); }
+        .view .go { margin-top: auto; padding-top: 6px; }
+        .btn { display: inline-block; padding: 12px 22px; border-radius: 9px; font-weight: 600; text-decoration: none; transition: transform .15s; }
+        .btn-primary { background: var(--grad); color: white; }
+        .btn-quiet { background: var(--tint); color: var(--plum); }
+        .btn:hover { transform: translateY(-1px); }
+
+        section.band { padding: 76px 0 0; }
+        .section-title { font-size: clamp(26px, 3.4vw, 34px); line-height: 1.2; text-wrap: balance; }
+        .section-lede { color: var(--ink-2); max-width: 66ch; margin-top: 10px; font-size: 17px; }
+
+        /* Guest network */
+        .legend { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 18px 0 14px; font-size: 14px; color: var(--ink-2); }
+        .legend span { display: inline-flex; align-items: center; gap: 7px; }
+        .demo-frame { background: white; border: 1px solid var(--rule); border-radius: 14px; overflow: hidden; height: 600px; box-shadow: 0 10px 30px rgba(46, 33, 99, .10); }
+        .demo-frame iframe { width: 100%; height: 100%; border: 0; }
+        .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 22px; }
+        .fact { background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 18px; }
+        .fact .label { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+        .fact .value { font-size: 20px; font-weight: 650; margin-top: 4px; line-height: 1.3; }
+        .fact .sub { font-size: 14px; color: var(--ink-2); margin-top: 4px; }
+
+        /* Answers */
+        .questions { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 24px; }
+        .question { display: block; text-decoration: none; color: var(--ink); background: var(--card); border: 1px solid var(--rule); border-left: 4px solid var(--answer); border-radius: 4px 12px 12px 4px; padding: 16px 18px; }
+        .question:hover { background: #fff8f1; }
+        .question .q { font-size: 18px; font-weight: 650; line-height: 1.3; }
+        .question .n { font-size: 14px; color: var(--ink-2); margin-top: 6px; }
+        .answers-split { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px; margin-top: 30px; align-items: start; }
+        .came-true h3, .how-cut h3 { font-size: 20px; margin-bottom: 6px; }
+        .came-true .note, .how-cut p { color: var(--ink-2); font-size: 15px; }
+        .came-true ol { list-style: none; margin-top: 12px; border-top: 1px solid var(--rule); }
+        .came-true li { display: grid; grid-template-columns: 96px 1fr; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--rule); font-size: 15px; }
+        .came-true .d { font-size: 13px; color: var(--muted); padding-top: 2px; }
+        .came-true .gap { font-size: 13px; color: var(--muted); }
+        .how-cut { background: var(--tint); border-radius: 14px; padding: 20px 22px; display: grid; gap: 10px; }
+        .wrap-quote { font-size: 17px; line-height: 1.5; color: var(--ink); border-left: 3px solid var(--answer); padding-left: 12px; }
+        .wrap-quote em { background: #ffe3c4; font-style: normal; padding: 0 3px; border-radius: 3px; }
+        .transcribed { font-size: 14px; color: #5c4400; background: #fff6e6; border-left: 3px solid #f0a500; padding: 8px 11px; border-radius: 0 8px 8px 0; margin-top: 18px; max-width: 72ch; }
+        .also { margin-top: 18px; font-size: 15px; color: var(--ink-2); }
+
+        /* How it works */
+        .lanes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; margin-top: 24px; }
+        .lane { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; padding: 22px; }
+        .lane h3 { font-size: 19px; display: flex; align-items: center; gap: 9px; }
+        .lane ol { list-style: none; counter-reset: s; margin-top: 12px; display: grid; gap: 12px; }
+        .lane li { counter-increment: s; display: grid; grid-template-columns: 30px 1fr; gap: 10px; font-size: 15px; color: var(--ink-2); }
+        .lane li::before { content: counter(s); width: 26px; height: 26px; border-radius: 50%; background: var(--tint); color: var(--plum); font-weight: 700; font-size: 14px; display: grid; place-items: center; }
+        .lane li b { color: var(--ink); display: block; }
+
+        /* Your podcast */
+        .own { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 28px; margin-top: 22px; align-items: start; }
+        .own p { color: var(--ink-2); }
+        .own p + p { margin-top: 10px; }
+        pre { background: #1d1b2e; color: #ece9ff; border-radius: 12px; padding: 18px 20px; font: 13.5px/1.6 ui-monospace, 'SF Mono', Menlo, Consolas, monospace; overflow-x: auto; }
+        pre .c { color: #9a93c4; }
+        code { font: 0.9em ui-monospace, 'SF Mono', Menlo, Consolas, monospace; background: var(--tint); padding: 1px 5px; border-radius: 4px; }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+        .tech-tag { background: var(--tint); color: var(--plum); padding: 7px 14px; border-radius: 999px; font-size: 14px; font-weight: 600; }
+
+        footer { margin-top: 86px; background: #1d1b2e; color: #c9c5e6; padding: 34px 0; font-size: 14px; }
+        footer .container { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+        footer a { color: white; }
+        .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+
+        @media (max-width: 820px) {
+            .answers-split, .own { grid-template-columns: 1fr; }
+            .demo-frame { height: 520px; }
+            .hero { padding: 56px 0 52px; }
+            header { position: static; }
         }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 28px;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-        
-        .nav-links a {
-            color: #4a5568;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        
-        .nav-links a:hover {
-            color: #667eea;
-        }
-        
-        /* Hero Section */
-        .hero {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 80px 20px;
-            text-align: center;
-            color: white;
-        }
-        
-        .hero h1 {
-            font-size: 56px;
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-        
-        .hero .subtitle {
-            font-size: 24px;
-            margin-bottom: 15px;
-            opacity: 0.95;
-            font-weight: 300;
-        }
-        
-        .hero .tagline {
-            font-size: 18px;
-            margin-bottom: 40px;
-            opacity: 0.9;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            padding: 16px 32px;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s;
-            cursor: pointer;
-            border: none;
-        }
-        
-        .btn-primary {
-            background: white;
-            color: #667eea;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-        }
-        
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 2px solid white;
-        }
-        
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-        
-        /* Demo Preview */
-        .demo-preview {
-            background: white;
-            padding: 60px 20px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #2d3748;
-        }
-        
-        .section-subtitle {
-            text-align: center;
-            font-size: 18px;
-            color: #718096;
-            margin-bottom: 50px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .demo-frame {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            height: 600px;
-        }
-        
-        .demo-frame iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        /* Features Section */
-        .features {
-            background: #f7fafc;
-            padding: 80px 20px;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 50px;
-        }
-        
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-        }
-        
-        .feature-icon {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-        
-        .feature-card h3 {
-            font-size: 22px;
-            margin-bottom: 12px;
-            color: #2d3748;
-        }
-        
-        .feature-card p {
-            color: #718096;
-            line-height: 1.7;
-        }
-        
-        /* Use Cases */
-        .use-cases {
-            background: white;
-            padding: 80px 20px;
-        }
-        
-        .use-case-list {
-            max-width: 800px;
-            margin: 50px auto 0;
-        }
-        
-        .use-case {
-            margin-bottom: 30px;
-            padding: 25px;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
-            border-left: 4px solid #667eea;
-            border-radius: 8px;
-        }
-        
-        .use-case h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #2d3748;
-        }
-        
-        .use-case p {
-            color: #4a5568;
-            line-height: 1.7;
-        }
-        
-        /* How It Works */
-        .how-it-works {
-            background: #f7fafc;
-            padding: 80px 20px;
-        }
-        
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .step {
-            text-align: center;
-        }
-        
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            font-weight: 700;
-            margin: 0 auto 20px;
-        }
-        
-        .step h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #2d3748;
-        }
-        
-        .step p {
-            color: #718096;
-            line-height: 1.6;
-        }
-        
-        /* Tech Stack */
-        .tech-stack {
-            background: white;
-            padding: 80px 20px;
-        }
-        
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 40px;
-        }
-        
-        .tech-tag {
-            padding: 12px 24px;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-            border: 2px solid #667eea;
-            border-radius: 25px;
-            color: #667eea;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 80px 20px;
-            text-align: center;
-            color: white;
-        }
-        
-        .cta-section h2 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-        
-        .cta-section p {
-            font-size: 20px;
-            margin-bottom: 40px;
-            opacity: 0.95;
-        }
-        
-        /* Footer */
-        footer {
-            background: #2d3748;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .footer-links {
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .footer-links a {
-            color: #cbd5e0;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        
-        .footer-links a:hover {
-            color: white;
-        }
-        
-        .footer-credit {
-            color: #a0aec0;
-            font-size: 14px;
-            margin-top: 20px;
-        }
-        
-        .footer-credit a {
-            color: #667eea;
-            text-decoration: none;
-        }
-        
-        .footer-credit a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 38px;
-            }
-            
-            .hero .subtitle {
-                font-size: 20px;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-            
-            .section-title {
-                font-size: 28px;
-            }
-            
-            .demo-frame {
-                height: 400px;
-            }
-        }
+        @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <div class="logo">🍸 GraphGarnish</div>
-            <nav class="nav-links">
-                <a href="#demo">Demo</a>
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="qa.html">Recurring Questions</a>
-                <a href="https://github.com/dagny099/graphgarnish" target="_blank">GitHub</a>
-            </nav>
-        </div>
-    </header>
+<header>
+    <div class="header-content">
+        <a class="logo" href="#top">🍸 GraphGarnish</a>
+        <nav class="nav-links" aria-label="Sections">
+            <a href="#guests">Who's on the show</a>
+            <a href="#answers">What guests said</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#your-podcast">Your podcast</a>
+            <a href="https://github.com/dagny099/graphgarnish" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+    </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>🍸 GraphGarnish</h1>
-        <p class="subtitle">Transform podcast metadata into interactive network visualizations</p>
-        <p class="tagline">
-            Explore episodes of Catalog & Cocktails as a living knowledge graph. 
-            See who's talking, which topics keep coming back, and how the conversation evolved over five years.
-        </p>
-        <div class="cta-buttons">
-            <a href="explore.html" class="btn btn-primary">Explore the Network →</a>
-            <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+<section class="hero" id="top">
+    <div class="container">
+        <h1><span data-live="years-word">Six</span> years of a podcast, read as a network</h1>
+        <p class="lede">GraphGarnish rebuilds <em>Catalog &amp; Cocktails: The Honest No-BS Data Podcast</em> from its RSS feed every week. One view shows who came on the show and what they talked about. The other shows what every guest said when the hosts asked them the same closing questions.</p>
+        <div class="stat-strip" aria-label="The show at a glance">
+            <div><b class="num" data-live="episodes">313</b>episodes</div>
+            <div><b class="num" data-live="guests">186</b>guests</div>
+            <div><b class="num" data-live="answers">480</b>answers to the closing questions</div>
+            <div><b class="num" data-live="span">May 2020 – Sep 2026</b>on the record</div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Demo Preview -->
-    <section id="demo" class="demo-preview">
-        <div class="container">
-            <h2 class="section-title">See It In Action</h2>
-            <p class="section-subtitle">
-                This is episodes of the Catalog & Cocktails podcast. Every red dot is an episode. 
-                Every cyan dot is a guest, every yellow dot an organization, and every violet dot a topic 
-                the show keeps returning to. All connected.
-            </p>
-            <div class="demo-frame">
-                <iframe src="explore.html" title="GraphGarnish Interactive Demo"></iframe>
+<div class="container">
+    <div class="views">
+        <article class="view">
+            <div class="kicker"><span class="dot" style="background:var(--guest)"></span>View one</div>
+            <h2>Who's on the show</h2>
+            <p>Every episode, guest, organisation and recurring topic, connected. Filter by year, search a name, click anyone to see their corner of the network.</p>
+            <ul class="facts">
+                <li><b class="num" data-live="repeat">58</b> guests came back for more than one episode</li>
+                <li>Most frequent guest: <b data-live="top-guest">Sanjeev Mohan (4 episodes)</b></li>
+                <li>Busiest year: <b data-live="busiest">2022, with 82 episodes</b></li>
+            </ul>
+            <div class="go"><a class="btn btn-primary" href="explore.html">Open the guest network →</a></div>
+        </article>
+        <article class="view">
+            <div class="kicker"><span class="dot" style="background:var(--answer)"></span>View two</div>
+            <h2>What every guest said</h2>
+            <p>The show ends with the same questions every time: your advice, who we should invite next, what you follow. Each answer was cut out of the episode audio, and the answers were linked by the people, books and ideas they share.</p>
+            <ul class="facts">
+                <li><b class="num" data-live="recs">118</b> guest recommendations naming <b class="num" data-live="rec-people">112</b> people</li>
+                <li><b class="num" data-live="came-true">12</b> of those people later came on the show</li>
+                <li>Most recommended: <b data-live="most-named">Chad Sanderson (3 guests)</b></li>
+            </ul>
+            <div class="go"><a class="btn btn-primary" href="qa.html">Open the answers →</a></div>
+        </article>
+    </div>
+</div>
+
+<section class="band" id="guests">
+    <div class="container">
+        <h2 class="section-title">Who's on the show</h2>
+        <p class="section-lede">The guest network is built from the episode list itself. Titles and descriptions name the guests and their companies; recurring phrases mark the topics the show keeps returning to. The map below is the real thing, so you can try it right here.</p>
+        <div class="legend" aria-label="Legend">
+            <span><i class="dot" style="background:var(--episode)"></i>Episode</span>
+            <span><i class="dot" style="background:var(--guest)"></i>Guest</span>
+            <span><i class="dot" style="background:var(--org)"></i>Organisation</span>
+            <span><i class="dot" style="background:var(--topic)"></i>Topic</span>
+        </div>
+        <div class="demo-frame">
+            <iframe src="explore.html" title="The Catalog & Cocktails guest network" loading="lazy"></iframe>
+        </div>
+        <div class="fact-grid">
+            <div class="fact"><div class="label">Topics heard most</div><div class="value" data-live="top-topics">Data Teams &amp; Org, Data Governance, Architecture &amp; Platforms</div><div class="sub">by number of episodes that cover them</div></div>
+            <div class="fact"><div class="label">Episodes per year</div><div class="value num" data-live="per-year">2020: 34 · 2021: 41 · 2022: 82 · 2023: 64 · 2024: 37 · 2025: 25 · 2026: 30</div><div class="sub" data-live="per-year-note">2026 is counted through September</div></div>
+            <div class="fact"><div class="label">Hosts on their own</div><div class="value num" data-live="hosts-only">23 episodes</div><div class="sub">Juan Sequeda and Tim Gasper, no guest</div></div>
+        </div>
+    </div>
+</section>
+
+<section class="band" id="answers">
+    <div class="container">
+        <h2 class="section-title">What every guest said</h2>
+        <p class="section-lede">A guest list says who was there. The closing questions say what they think. Because every guest gets the same questions, their answers can be laid side by side across years: the same advice given twice, the same book recommended by three people, a guest naming someone who turns up on the show months later.</p>
+
+        <div class="questions" data-live="questions">
+            <a class="question" href="qa.html?graph=qa/catalog-and-cocktails-advice/graph.json"><div class="q">“What's your advice about data, about life?”</div><div class="n">179 answers</div></a>
+            <a class="question" href="qa.html?graph=qa/catalog-and-cocktails-invite-next/graph.json"><div class="q">“Who should we invite next?”</div><div class="n">168 answers</div></a>
+            <a class="question" href="qa.html?graph=qa/catalog-and-cocktails-resources/graph.json"><div class="q">“What resources do you follow?”</div><div class="n">133 answers</div></a>
+        </div>
+
+        <div class="answers-split">
+            <div class="came-true">
+                <h3>Recommended, then on the show</h3>
+                <p class="note">A guest named them when asked who to invite next, and they later appeared as a guest. A gap of about a week may be the hosts announcing next week's guest rather than a recommendation.</p>
+                <ol data-live="came-true-list">
+                    <li><span class="d num">2022-01-06</span><span><b>Chad Sanderson</b>, named by Sarah Catanzaro<br><span class="gap">on the show 2022-04-14 · 98 days later</span></span></li>
+                </ol>
+            </div>
+            <div class="how-cut">
+                <h3>How an answer is found</h3>
+                <p>The show publishes no transcripts, so the last 20 minutes of each episode are transcribed by machine. The hosts ask all three questions in one breath, and the guest answers them in turn:</p>
+                <p class="wrap-quote">“To wrap up, three questions. What's your advice…? Who should we invite next? And what resources do you follow?” · “Okay, <em>so advice</em>, I would say… <em>As far as people</em>, who haven't you had on…?”</p>
+                <p>The host's words find the questions. The guest's own turns of phrase mark where each answer starts and stops. When the pipeline can't tell one answer from the next, it leaves that episode blank rather than guess.</p>
             </div>
         </div>
-    </section>
+        <p class="transcribed">Answers are short excerpts, transcribed by machine from the episode audio, so words and names can be misheard. Each one links to its moment in the audio, so you can hear exactly what was said.</p>
+        <p class="also" data-live="also">The same pipeline also reads the <b>Data Engineering Podcast</b>, which asks every guest about <a href="qa.html?graph=qa/data-engineering-podcast-biggest-gap/graph.json">the biggest gap in data tooling today</a>: 95 answers from its 120 most recent episodes.</p>
+    </div>
+</section>
 
-    <!-- Features -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Why GraphGarnish?</h2>
-            <p class="section-subtitle">
-                Because metadata tells a story that spreadsheets hide
-            </p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎛️</div>
-                    <h3>Smart Filtering</h3>
-                    <p>Filter by year, connection count, or node type. Search for specific people or organizations. All filters work together seamlessly.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">👆</div>
-                    <h3>Click to Focus</h3>
-                    <p>Select any guest or organization to instantly see their network. Highlight connections, dim the rest. Navigate naturally.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔍</div>
-                    <h3>Search Everything</h3>
-                    <p>Find everyone from "Netflix" or track down that guest whose name you half-remember. Real-time search across the entire network.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Real-Time Stats</h3>
-                    <p>See exactly how many episodes, guests, and organizations are visible as you filter. Track the network's shape as you explore.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Beautiful Physics</h3>
-                    <p>D3.js force-directed layout creates natural clustering. Organizations become gravity wells. Guests orbit around them. It just works.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📁</div>
-                    <h3>Bring Your Own Data</h3>
-                    <p>Upload any network JSON. Works with your podcast, your conference, your community. The tool adapts to your data.</p>
-                </div>
+<section class="band" id="how-it-works">
+    <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-lede">No spreadsheets and no uploads. Everything is rebuilt from the show's public feed by scripts in this repository, on a schedule.</p>
+        <div class="lanes">
+            <div class="lane">
+                <h3><span class="dot" style="background:var(--guest)"></span>The guest network</h3>
+                <ol>
+                    <li><span><b>Read the whole feed</b>Every page of the RSS feed, so the back catalogue is never silently cut off.</span></li>
+                    <li><span><b>Extract and check</b>Guests, organisations and topics come out of titles and descriptions. Every link records whether it was curated, corrected by hand, or inferred.</span></li>
+                    <li><span><b>Refresh weekly</b>A scheduled job rebuilds the network every Monday and publishes it here, refusing any rebuild that would lose episodes.</span></li>
+                </ol>
+            </div>
+            <div class="lane">
+                <h3><span class="dot" style="background:var(--answer)"></span>The answers</h3>
+                <ol>
+                    <li><span><b>Get the words</b>A published transcript when the show has one; otherwise speech-to-text on the last 20 minutes of each episode, run across 16 machines at once.</span></li>
+                    <li><span><b>Find and cut</b>Locate the question by the host's phrasing, then cut the guest's answer out of the following lines.</span></li>
+                    <li><span><b>Connect</b>Link answers to the people, things and ideas they name, and to answers worded alike. Short excerpts are published; full text stays private.</span></li>
+                </ol>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Use Cases -->
-    <section class="use-cases">
-        <div class="container">
-            <h2 class="section-title">What Can You Learn?</h2>
-            <p class="section-subtitle">Patterns that emerge when you see the whole network</p>
-            
-            <div class="use-case-list">
-                <div class="use-case">
-                    <h3>🔁 Who Returns?</h3>
-                    <p>32% of guests come back for multiple episodes. They're not just sources—they're part of the ongoing conversation. Filter to guests with 2+ appearances to see the core community.</p>
-                </div>
-                
-                <div class="use-case">
-                    <h3>🏢 Organizational Gravity</h3>
-                    <p>Some companies shape the discourse. data.world, Databricks, Netflix—they're not just represented, they're central nodes. See which organizations have the most affiliated guests.</p>
-                </div>
-                
-                <div class="use-case">
-                    <h3>📈 Growth Patterns</h3>
-                    <p>Filter to 2024 only: 56 episodes. The conversation accelerated. You can see it in the density. Compare year-over-year to track evolution.</p>
-                </div>
-                
-                <div class="use-case">
-                    <h3>🔗 Hidden Connections</h3>
-                    <p>Click on a guest to see their organizational affiliations and all their episodes. Discover connections you didn't know existed.</p>
-                </div>
-                
-                <div class="use-case">
-                    <h3>🎯 Gap Analysis</h3>
-                    <p>One-time guests vs. repeat guests. Organizations with single representatives vs. those with many. See where you might be missing perspectives.</p>
-                </div>
+<section class="band" id="your-podcast">
+    <div class="container">
+        <h2 class="section-title">Point it at your own podcast</h2>
+        <div class="own">
+            <div>
+                <p>Any show that ends with a recurring question can get the same treatment. A podcast is one small settings file: its feed, its hosts, and the questions they always ask. A new question is one more entry in that file.</p>
+                <p>To try an idea without writing a file, give the show's name and the question. The feed is found by name, and a sample of episodes spread across the years shows whether the question can be found before running on all of them.</p>
+                <p>Already have a network of your own? The <a href="explore.html">guest-network explorer</a> loads any network file in the same format.</p>
             </div>
-        </div>
-    </section>
+<pre><span class="c"># one question, any show, eight episodes as a trial</span>
+python3 tools/qa_graph.py --podcast "Data Engineering Podcast" \
+    --ask "What is the biggest gap in the tooling?" \
+    --cue "biggest gap in the tooling" --sample 8 --report
 
-    <!-- How It Works -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-subtitle">From spreadsheet to network in three steps</p>
-            
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Prepare Your Data</h3>
-                    <p>Episode metadata in a spreadsheet: title, date, guest name, organization. We provide a template and sample data.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Generate Network JSON</h3>
-                    <p>Use our Python script to transform your spreadsheet into a network graph. Automatically extracts guests, organizations, and relationships.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Upload & Explore</h3>
-                    <p>Load your JSON into GraphGarnish. Filter, search, click to focus. See patterns you never knew existed.</p>
-                </div>
-            </div>
+<span class="c"># or a config file per show: podcasts/&lt;show&gt;.json</span>
+python3 tools/qa_graph.py podcasts/catalog-and-cocktails.json</pre>
         </div>
-    </section>
+        <div class="tech-tags" aria-label="Built with">
+            <span class="tech-tag">D3.js</span>
+            <span class="tech-tag">Python standard library</span>
+            <span class="tech-tag">faster-whisper speech-to-text</span>
+            <span class="tech-tag">GitHub Actions</span>
+            <span class="tech-tag">GitHub Pages</span>
+            <span class="tech-tag">No backend</span>
+            <span class="tech-tag">Open source</span>
+        </div>
+    </div>
+</section>
 
-    <!-- Tech Stack -->
-    <section class="tech-stack">
-        <div class="container">
-            <h2 class="section-title">Built With</h2>
-            <p class="section-subtitle">Modern web tech, deliberately simple</p>
-            
-            <div class="tech-tags">
-                <span class="tech-tag">D3.js v7</span>
-                <span class="tech-tag">Vanilla JavaScript</span>
-                <span class="tech-tag">Force-Directed Layout</span>
-                <span class="tech-tag">No Backend Required</span>
-                <span class="tech-tag">JSON Data Format</span>
-                <span class="tech-tag">Responsive Design</span>
-                <span class="tech-tag">Open Source</span>
-            </div>
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="https://github.com/dagny099/graphgarnish" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://github.com/dagny099/graphgarnish/blob/main/README.md" target="_blank" rel="noopener">Documentation</a>
+            <a href="https://github.com/dagny099/graphgarnish/issues" target="_blank" rel="noopener">Report an issue</a>
         </div>
-    </section>
+        <div>Built by <a href="https://barbhs.com" target="_blank" rel="noopener">Barbara Hidalgo-Sotelo</a> · Open source, MIT License · <span data-live="year">2026</span></div>
+    </div>
+</footer>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Visualize Your Network?</h2>
-            <p>Explore the demo or create your own network visualization</p>
-            <div class="cta-buttons">
-                <a href="explore.html" class="btn btn-primary">Explore Demo Network →</a>
-                <a href="https://github.com/dagny099/graphgarnish" class="btn btn-secondary" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-    </section>
+<script>
+// Every number on this page comes from the same files the explorers load,
+// so the weekly rebuild keeps it current. The text in the HTML is a fallback
+// for when those files cannot be read.
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const WORDS = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve'];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const set = (key, html) => document.querySelectorAll(`[data-live="${key}"]`).forEach(el => { el.innerHTML = html; });
+const monthYear = d => `${MONTHS[+d.slice(5, 7) - 1]} ${d.slice(0, 4)}`;
+const days = (a, b) => Math.round((new Date(b) - new Date(a)) / 864e5);
+const n = x => Number(x).toLocaleString('en-US');
+set('year', String(new Date().getFullYear()));
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="https://github.com/dagny099/graphgarnish" target="_blank">GitHub</a>
-                <a href="https://github.com/dagny099/graphgarnish/blob/main/README.md" target="_blank">Documentation</a>
-                <a href="https://github.com/dagny099/graphgarnish/issues" target="_blank">Report Issue</a>
-            </div>
-            <div class="footer-credit">
-                Built with curiosity and coffee by <a href="https://barbhs.com" target="_blank">Barbara Hidalgo-Sotelo</a>
-                <br>
-                Open source • MIT License • 2026
-            </div>
-        </div>
-    </footer>
+fetch('sample_network.json').then(r => r.json()).then(g => {
+    const byId = new Map(g.nodes.map(x => [x.id, x]));
+    const full = g.nodes.filter(x => x.type === 'episode' && x.is_full !== false);
+    const fullIds = new Set(full.map(x => x.id));
+    const guestEps = new Map(), topicEps = new Map();
+    g.links.forEach(l => {
+        if (l.type === 'GUEST_ON' && fullIds.has(l.target)) {
+            if (!guestEps.has(l.source)) guestEps.set(l.source, new Set());
+            guestEps.get(l.source).add(l.target);
+        }
+        if (l.type === 'COVERS' && fullIds.has(l.source)) {
+            if (!topicEps.has(l.target)) topicEps.set(l.target, new Set());
+            topicEps.get(l.target).add(l.source);
+        }
+    });
+    const dates = full.map(x => x.date).filter(Boolean).sort();
+    const first = dates[0], last = dates[dates.length - 1];
+    const years = Math.floor(days(first, last) / 365.25);
+    set('years-word', WORDS[years] || String(years));
+    set('episodes', n(full.length));
+    set('guests', n(guestEps.size));
+    set('span', `${monthYear(first)} – ${monthYear(last)}`);
+    set('repeat', n([...guestEps.values()].filter(s => s.size > 1).length));
+    const top = [...guestEps.entries()].sort((a, b) => b[1].size - a[1].size || byId.get(a[0]).name.localeCompare(byId.get(b[0]).name))[0];
+    if (top) set('top-guest', `${esc(byId.get(top[0]).name)} (${top[1].size} episodes)`);
+    const perYear = {};
+    dates.forEach(d => { const y = d.slice(0, 4); perYear[y] = (perYear[y] || 0) + 1; });
+    const busiest = Object.entries(perYear).sort((a, b) => b[1] - a[1])[0];
+    set('busiest', `${busiest[0]}, with ${busiest[1]} episodes`);
+    set('per-year', Object.entries(perYear).map(([y, c]) => `${y}: ${c}`).join(' · '));
+    set('per-year-note', `${last.slice(0, 4)} is counted through ${['January','February','March','April','May','June','July','August','September','October','November','December'][+last.slice(5, 7) - 1]}`);
+    const topics = [...topicEps.entries()].sort((a, b) => b[1].size - a[1].size).slice(0, 3).map(([id]) => esc(byId.get(id).name));
+    if (topics.length) set('top-topics', topics.join(', '));
+    set('hosts-only', `${full.filter(x => x.hosts_only).length} episodes`);
+}).catch(() => { /* keep the fallback text */ });
+
+fetch('qa/index.json').then(r => r.json()).then(index => {
+    const show = index.filter(e => e.podcast_id === 'catalog-and-cocktails');
+    const other = index.filter(e => e.podcast_id !== 'catalog-and-cocktails');
+    set('answers', n(show.reduce((t, e) => t + e.answered, 0)));
+    set('questions', show.map(e => `<a class="question" href="qa.html?graph=qa/${esc(e.path)}">
+        <div class="q">“${esc(e.question)}”</div><div class="n">${n(e.answered)} answers from ${n(e.episodes)} guest appearances</div></a>`).join(''));
+    const invite = show.find(e => e.answer_kind === 'people');
+    if (invite) {
+        const later = invite.named_then_guest || [];
+        set('came-true', n(new Set(later.map(x => x.who)).size));
+        const top = (invite.most_named || []).find(x => x.type === 'person');
+        if (top) set('most-named', `${esc(top.name)} (${top.answers} guests)`);
+        if (later.length) set('came-true-list', later.map(x => `<li><span class="d num">${esc(x.named)}</span><span><b>${esc(x.who)}</b>, named by ${esc(x.by)}<br><span class="gap">on the show ${esc(x.guest)} · ${days(x.named, x.guest)} days later</span></span></li>`).join(''));
+        fetch(`qa/${invite.path}`).then(r => r.json()).then(g => {
+            const recs = g.links.filter(l => l.type === 'RECOMMENDS');
+            set('recs', n(recs.length));
+            set('rec-people', n(new Set(recs.map(l => l.target)).size));
+        }).catch(() => {});
+    }
+    if (other.length) set('also', other.map(e => `The same pipeline also reads the <b>${esc(e.podcast)}</b>, asking every guest <a href="qa.html?graph=qa/${esc(e.path)}">“${esc(e.question)}”</a>: ${n(e.answered)} answers from ${n(e.episodes)} episodes.`).join(' '));
+}).catch(() => { /* keep the fallback text */ });
+</script>
 </body>
 </html>
