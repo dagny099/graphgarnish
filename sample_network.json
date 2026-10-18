@@ -3,25 +3,25 @@
     "generated_by": "tools/build_network.py",
     "source": "seed+feed",
     "counts": {
-      "episode": 383,
+      "episode": 385,
       "person": 188,
-      "organization": 104,
+      "organization": 106,
       "topic": 22
     },
     "provenance": {
       "episode": {
-        "feed": 181,
+        "feed": 183,
         "curated": 202
       },
       "organization": {
         "curated": 60,
-        "inferred": 43,
+        "inferred": 45,
         "verified": 1
       },
       "person": {
-        "curated": 141,
+        "curated": 142,
         "inferred": 44,
-        "verified": 3
+        "verified": 2
       },
       "topic": {
         "curated": 22
@@ -30,19 +30,19 @@
     "link_provenance": {
       "AFFILIATED_WITH": {
         "curated": 61,
-        "inferred": 48,
+        "inferred": 50,
         "verified": 1
       },
       "COVERS": {
-        "inferred": 564
+        "inferred": 546
       },
       "GUEST_ON": {
-        "inferred": 104,
         "curated": 146,
-        "verified": 3
+        "inferred": 54,
+        "verified": 2
       },
       "TAKEAWAY_OF": {
-        "inferred": 67
+        "inferred": 121
       }
     },
     "episodes_needing_review": [
@@ -67,18 +67,8 @@
         "reason": "no guest found in title or description"
       },
       {
-        "date": "2023-03-09",
-        "title": "Data Operations vs. Data Analytics",
-        "reason": "no guest found in title or description"
-      },
-      {
         "date": "2023-03-02",
         "title": "Catalog & Cocktails: Throwback Elixir",
-        "reason": "no guest found in title or description"
-      },
-      {
-        "date": "2022-06-02",
-        "title": "Does our understanding of data bias our analytics outcomes?",
         "reason": "no guest found in title or description"
       },
       {
@@ -102,11 +92,6 @@
         "reason": "no guest found in title or description"
       },
       {
-        "date": "2022-10-20",
-        "title": "Knowledge: the missing piece to understanding your business",
-        "reason": "no guest found in title or description"
-      },
-      {
         "date": "2022-09-23",
         "title": "BONUS EPISODE: Live from Big Data London",
         "reason": "no guest found in title or description"
@@ -114,11 +99,6 @@
       {
         "date": "2022-09-01",
         "title": "Your thoughts become action; going from Thought Leadership to Practice w/ Roel and Valentijn of Vopak",
-        "reason": "no guest found in title or description"
-      },
-      {
-        "date": "2022-09-01",
-        "title": "Takeways with Roel and Valentijn",
         "reason": "no guest found in title or description"
       },
       {
@@ -1091,11 +1071,11 @@
       "summary": "Let's wrap Season Two of Catalog & Cocktails with the Takeaways of the Takeaways! See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20220106_season_three_premier_tak",
+      "id": "ep_20220106_season_three_premier_tak_ta",
       "name": "Season Three Premier Takeaways with Sarah Catanzaro",
       "type": "episode",
       "date": "2022-01-06",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Season-Three-Premier-Takeaways-with-Sarah-Catanzaro-e3650a5",
       "summary": "Juan and Tim sit down for the Catalog & Cocktails Season Three Premier with Sarah Catanzaro from Amplify Partners to discuss what’s in store in 2022. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1121,21 +1101,21 @@
       "summary": "Sure, it’s fun to chat with data executives and thought leaders, but this season, we are focusing on the people who roll up their sleeves and get the data work done. And there’s no better place for a podcast like ours to start than with a data practitioner at Drizly. Special guest Emily Hawkins , analytics and data platform lead, joins Tim and Juan to share how the data team and the data stack wer"
     },
     {
-      "id": "ep_20220113_s3e2_takeaways_with_emil",
+      "id": "ep_20220113_s3e2_takeaways_with_emil_ta",
       "name": "S3E2 Takeaways with Emily Hawkins",
       "type": "episode",
       "date": "2022-01-13",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E2-Takeaways-with-Emily-Hawkins-e36509o",
       "summary": "Juan and Tim sit down for Catalog & Cocktails with Emily Hawkins from Drizly. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20220120_s3e3_takeaways_with_benn",
+      "id": "ep_20220120_s3e3_takeaways_with_benn_ta",
       "name": "S3E3 Takeaways with Benn Stancil",
       "type": "episode",
       "date": "2022-01-20",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E3-Takeaways-with-Benn-Stancil-e3650bl",
       "summary": "Juan and Tim sit down for Catalog & Cocktails with Benn Stancil , chief analytics officer and founder of Mode This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1161,11 +1141,11 @@
       "summary": "Data mesh continues to be a hot topic in 2022, and it feels like we’re finally past the definition stage. The big question to resolve this year is: how do you do federated data governance in a decentralized environment? Can you even do it? Join Tim, Juan and special guest Dora Boussias , Director of Enterprise Architecture and Data Strategy, for a live brainstorming session on how to implement dat"
     },
     {
-      "id": "ep_20220127_s3e4_takeaways_with_dora",
+      "id": "ep_20220127_s3e4_takeaways_with_dora_ta",
       "name": "S3E4 Takeaways with Dora Boussias",
       "type": "episode",
       "date": "2022-01-27",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E4-Takeaways-with-Dora-Boussias-e3650b9",
       "summary": "Juan and Tim sit down for Catalog & Cocktails with Dora Boussias , Director of Enterprise Architecture and Data Strategy. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1181,21 +1161,21 @@
       "summary": "For all the incredible innovation in the field of data and analytics, one practice unfortunately remains stuck in neutral. Data governance, when applied with an agile approach that aligns with business objectives and focuses people first, can be a boon for data-driven organizations. However, most companies today still think about governance in terms of tools, workflows, or privacy and compliance. "
     },
     {
-      "id": "ep_20220203_s3e5_takeways_with_laura",
+      "id": "ep_20220203_s3e5_takeways_with_laura_ta",
       "name": "S3E5 Takeways with Laura Madsen",
       "type": "episode",
       "date": "2022-02-03",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E5-Takeways-with-Laura-Madsen-e3650ee",
       "summary": "Juan and Tim sit down for Catalog & Cocktailsv with Laura Madsen , CEO of Moxy Analytics and author of “ Disrupting Data Governance ,” for a discussion on how we can all be better ambassadors for data. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20220210_s3e6_takeaways_with_luke",
+      "id": "ep_20220210_s3e6_takeaways_with_luke_ta",
       "name": "S3E6 Takeaways with Luke Slotwinski",
       "type": "episode",
       "date": "2022-02-10",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E6-Takeaways-with-Luke-Slotwinski-e3650ae",
       "summary": "Join Tim, Juan and special guest Luke Slotwinski, VP of Data & Analytics at Prologis, to discuss how data leaders can empower their teams by asking for more from their data. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1211,11 +1191,11 @@
       "summary": "Analytics are great for answering the “what.” Did we hit our sales targets or not? Did our supply chain hold up under the strain of a prolonged pandemic? But smart data leaders recognize that real transformational insights come from people, processes, and tools that answer the bigger question of “why.” Join Tim, Juan and special guest Luke Slotwinski , VP of Data & Analytics at Prologis, to discus"
     },
     {
-      "id": "ep_20220217_s3e7_takeaways_with_kare",
+      "id": "ep_20220217_s3e7_takeaways_with_kare_ta",
       "name": "S3E7 Takeaways with Karen Lopez",
       "type": "episode",
       "date": "2022-02-17",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E7-Takeaways-with-Karen-Lopez-e3650ab",
       "summary": "Join Tim, Juan and Karen Lopez, aka @datachick from InfoAdvisors, to discuss what assumptions people and applications make about the simplest data. We’ll also try and answer the question, “why are phone numbers, and addresses so damn hard to model?!?” This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1251,21 +1231,21 @@
       "summary": "Are you on Team Batch or Team Stream? Next-gen data warehouses, lakehouses, ELT, and orchestration have made batch more modern and popular than ever, but more and more use cases - from fraud detection to smart energy grids - rely on continuous streams to make real-time decisions. Is streaming the coming revolution, or just another way to process data? Join Tim, Juan and special guest Arjun Narayan"
     },
     {
-      "id": "ep_20220303_s3e9_takeaways_with_arju",
+      "id": "ep_20220303_s3e9_takeaways_with_arju_ta",
       "name": "S3E9 Takeaways with Arjun Narayan",
       "type": "episode",
       "date": "2022-03-03",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E9-Takeaways-with-Arjun-Narayan-e36509p",
       "summary": "Join Tim, Juan and special guest Arjun Narayan , CEO of Materialize to discuss all things data streams and how these pipelines fuel the modern data stack. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20220310_s3e10_takeaways_with_pat",
+      "id": "ep_20220310_s3e10_takeaways_with_pat_ta",
       "name": "S3E10 Takeaways with Patricia Thaine",
       "type": "episode",
       "date": "2022-03-10",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E10-Takeaways-with-Patricia-Thaine-e3650ak",
       "summary": "Join Tim, Juan and special guest Patricia Thaine, CEO from Private AI to discuss the state of data privacy and how enterprises and customers should think about it. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1291,21 +1271,21 @@
       "summary": "Agile processes in software development date back to the beginning of the century. We’re now seeing concepts like scrum and sprints make their way into the world of data. data.world is even applying agile to data governance. But what exactly does it mean to be agile in data? What’s the end product, and how do you measure and scale the practice in your organization? Join Tim, Juan and special guest"
     },
     {
-      "id": "ep_20220317_s3e11_takeaways_with_sha",
+      "id": "ep_20220317_s3e11_takeaways_with_sha_ta",
       "name": "S3E11 Takeaways with Shane Gibson",
       "type": "episode",
       "date": "2022-03-17",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E11-Takeaways-with-Shane-Gibson-e36509u",
       "summary": "Join Tim, Juan and special guest Shane Gibson from AgileData.io , to talk agile in the domain of data. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20220331_s3e12_takeaways_with_bob",
+      "id": "ep_20220331_s3e12_takeaways_with_bob_ta",
       "name": "S3E12 Takeaways with Bob Muglia",
       "type": "episode",
       "date": "2022-03-31",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E12-Takeaways-with-Bob-Muglia-e3650bg",
       "summary": "Join Tim, Juan and special guest Bob Muglia, former CEO of Snowflake, to talk about the future of data; knowledge This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1331,21 +1311,21 @@
       "summary": "Everyone - including us - wants to talk about how to get value from your data, but the truth is you can’t even get your data program off the ground without policy. Policies guide our decisions, our access controls, and even our data supply chains. But can policy make us more productive? In this special episode, Tim and Juan are joined by Nong Li, CEO of Okera, to discuss why and how the data world"
     },
     {
-      "id": "ep_20220407_s3e13_takeaways_with_non",
+      "id": "ep_20220407_s3e13_takeaways_with_non_ta",
       "name": "S3E13 Takeaways with Nong Li",
       "type": "episode",
       "date": "2022-04-07",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E13-Takeaways-with-Nong-Li-e3650a8",
       "summary": "Join Tim, Juan and special guest Nong Li, CEO of Okera, to discuss why and how the data world should be thinking about policies. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20220414_s3e14_takeaways_with_cha",
+      "id": "ep_20220414_s3e14_takeaways_with_cha_ta",
       "name": "S3E14 Takeaways with Chad Sanderson",
       "type": "episode",
       "date": "2022-04-14",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E14-Takeaways-with-Chad-Sanderson-e3650a6",
       "summary": "In this special episode, Tim and Juan are joined by Chad Sanderson, Head of Product, Data Platform at Convoy, to discuss whether we’re incorrectly architecting our modern data stack. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1371,11 +1351,11 @@
       "summary": "It’s not easy being a “data leader.” For one, you have to advocate for good data practices at your company. But you may also feel a strong desire to create your own brand on social media and at conferences. With the constant noise, posturing, and rigorous debate over every facet of data and analytics, this can be daunting. And sometimes, you feel like an imposter. In this episode, Tim and Juan are"
     },
     {
-      "id": "ep_20220421_s3e15_takeaways_with_ste",
+      "id": "ep_20220421_s3e15_takeaways_with_ste_ta",
       "name": "S3E15 Takeaways with Steve Perry",
       "type": "episode",
       "date": "2022-04-21",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E15-Takeaways-with-Steve-Perry-e3650a1",
       "summary": "In this episode, Tim and Juan are joined by Steve Perry, Director of Data and Analytics at Genius Sports, to talk about the challenges that rising data leaders face, and how to block out the noise, and chart your path to success. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1391,11 +1371,11 @@
       "summary": "Data architecture is more layered than an onion. Data, metadata, access, transform, virtualization, visualization. And with the modern data stack, we’re now talking more about semantics and metrics layers. This week, Tim and Juan are joined by Nick Handel, CEO of Transform, to talk all things semantics and metrics and why enterprises need to be thinking more about more about relationships. This ep"
     },
     {
-      "id": "ep_20220428_s3e16_takeaways_with_nic",
+      "id": "ep_20220428_s3e16_takeaways_with_nic_ta",
       "name": "S3E16 Takeaways with Nick Handel",
       "type": "episode",
       "date": "2022-04-28",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E16-Takeaways-with-Nick-Handel-e3650ev",
       "summary": "This week, Tim and Juan are joined by Nick Handel, CEO of Transform, to talk all things semantics and metrics and why enterprises need to be thinking more about more about relationships. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1411,11 +1391,11 @@
       "summary": "How do the most successful companies stitch together data governance, understanding, access, and use to create active and engaged data cultures? The answer, as usual, can be found in the knowledge graph. And what better place to talk nodes and edges than the Knowledge Graph Conference in New York City? In this episode, Tim and Juan are joined by conference chair, Francois Scharffe, to discuss how "
     },
     {
-      "id": "ep_20220505_s3e17_takeaways_with_fra",
+      "id": "ep_20220505_s3e17_takeaways_with_fra_ta",
       "name": "S3E17 Takeaways with Francois Scharffe",
       "type": "episode",
       "date": "2022-05-05",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E17-Takeaways-with-Francois-Scharffe-e3650fm",
       "summary": "What better place to talk nodes and edges than the Knowledge Graph Conference in New York City? In this episode, Tim and Juan are joined by conference chair, Francois Scharffe, to discuss how knowledge graphs are driving the automated enterprise. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1431,11 +1411,11 @@
       "summary": "Everyone has an opinion on the modern data stack. What’s in it? What’s out? What’s the cool new buzzy technology? Unfortunately, it’s often the most important question that people fail to ask: How are your tools delivering value? In this episode, Tim, Juan, and Sarah Krasnik get back to first principles and remind us why everyone was excited about the modern data stack to begin with. This episode "
     },
     {
-      "id": "ep_20220512_s3e18_takeaways_with_sar",
+      "id": "ep_20220512_s3e18_takeaways_with_sar_ta",
       "name": "S3E18 Takeaways with Sarah Krasnik",
       "type": "episode",
       "date": "2022-05-12",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/S3E18-Takeaways-with-Sarah-Krasnik-e3650a7",
       "summary": "In this episode, Tim, Juan, and Sarah Krasnik get back to first principles and remind us why everyone was excited about the modern data stack to begin with. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1451,21 +1431,21 @@
       "summary": "Some of the greatest breakthroughs throughout human history can be attributed to the biotech field, from life-saving vaccines to advances in supply chains. So it’s no surprise that biotech is also a fast-mover when it comes to innovative socio-technical paradigms like data mesh. In this episode, Tim, Juan, and Omar Khawaja, Global Head of BI at Roche, break down the good, the bad, and the ugly of "
     },
     {
-      "id": "ep_20220519_takeaways_with_omar_khaw",
+      "id": "ep_20220519_takeaways_with_omar_khaw_ta",
       "name": "Takeaways with Omar Khawaja",
       "type": "episode",
       "date": "2022-05-19",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Omar-Khawaja-e3650bm",
       "summary": "Some of the greatest breakthroughs throughout human history can be attributed to the biotech field, from life-saving vaccines to advances in supply chains. So it’s no surprise that biotech is also a fast-mover when it comes to innovative socio-technical paradigms like data mesh. In this episode, Tim, Juan, and Omar Khawaja, Global Head of BI at Roche, break down the good, the bad, and the ugly of "
     },
     {
-      "id": "ep_20220526_takeaways_with_brett_hur",
+      "id": "ep_20220526_takeaways_with_brett_hur_ta",
       "name": "Takeaways with Brett Hurt",
       "type": "episode",
       "date": "2022-05-26",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Brett-Hurt-e3650cp",
       "summary": "In this episode, Tim, Juan, and Brett discuss what it’s like to fundraise and scale a data company in this challenging economic climate, who inspires him and why, and how he sees the data and analytics landscape evolving. This Takeaway episode will feature the summary of the upcoming episode. See omnystudio.com/listener for privacy information."
@@ -1491,11 +1471,11 @@
       "summary": "Why do some data-driven decisions seem to go so disastrously wrong? Ironically, the answer to this question likely isn’t found in the data at all, but rather our subconscious. In a time when companies have never been more data rich, it’s often our inherent information biases that doom critical analytics and data science work. Is it possible to take the bias out of data work? That’s the question we"
     },
     {
-      "id": "ep_20220602_takeaways_with_ciaran_dy",
+      "id": "ep_20220602_takeaways_with_ciaran_dy_ta",
       "name": "Takeaways with Ciaran Dynes",
       "type": "episode",
       "date": "2022-06-02",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Ciaran-Dynes-e3650b7",
       "summary": "Is it possible to take the bias out of data work? That’s the question Tim and Juan ponder in this episode featuring Ciaran Dynes, chief product officer at Matillion. This Takeaway episode will feature the summary of the upcoming show. See omnystudio.com/listener for privacy information."
@@ -1511,11 +1491,11 @@
       "summary": "So much of the focus of the analytics and vendor community today is on data. We have solutions for data visualization, warehousing, observability, cataloging, transformations, and more. But data is nothing without context. So why does metadata tend to draw the short straw? In this episode, Tim, Juan, and Sanjeev Mohan, former Gartner analyst and principal at SanjMo, explore how metadata acts as a "
     },
     {
-      "id": "ep_20220609_takeaways_with_sanjeev_m",
+      "id": "ep_20220609_takeaways_with_sanjeev_m_ta",
       "name": "Takeaways with Sanjeev Mohan",
       "type": "episode",
       "date": "2022-06-09",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Sanjeev-Mohan-e3650ov",
       "summary": "In this episode, Tim, Juan, and Sanjeev Mohan, former Gartner analyst and principal at SanjMo, explore how metadata acts as a proverbial travel guide for your data and analytics journey. This Takeaway episode will feature the summary of the upcoming show. See omnystudio.com/listener for privacy information."
@@ -1531,11 +1511,11 @@
       "summary": "LIVE from the Snowflake Summit in Vegas. The hosts of Catalog & Cocktails sit down with Peter Kapur from WM to explore how we should be getting true value from metadata, data and analytics. See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20220616_takeaways_with_peter_kap",
+      "id": "ep_20220616_takeaways_with_peter_kap_ta",
       "name": "Takeaways with Peter Kapur",
       "type": "episode",
       "date": "2022-06-16",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Peter-Kapur-e3650cv",
       "summary": "LIVE from the Snowflake Summit in Vegas. The hosts of Catalog & Cocktails sit down with Peter Kapur from WM to explore how we should be getting true value from metadata, data and analytics. This Takeaway episode will feature the summary of the upcoming show. See omnystudio.com/listener for privacy information."
@@ -1551,11 +1531,11 @@
       "summary": "We live in a data first world. Give me more and more data. But what about the meaning of that data? How should the data be modeled so it can be easily understood and consumed by data scientist and analyst? In this episode, Tim, Juan, and Ergest Xheblati, will live discuss why data modeling should be at the core of an enterprise. This episode will also cover: How data modeling is going to change th"
     },
     {
-      "id": "ep_20220623_takeaways_with_ergest_xh",
+      "id": "ep_20220623_takeaways_with_ergest_xh_ta",
       "name": "Takeaways with Ergest Xheblati",
       "type": "episode",
       "date": "2022-06-23",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Ergest-Xheblati-e3650c1",
       "summary": "In this episode, Tim, Juan, and Ergest Xheblati, will live discuss why data modeling should be at the core of an enterprise. This Takeaway episode will feature the summary of the upcoming show. See omnystudio.com/listener for privacy information."
@@ -1613,11 +1593,11 @@
       "summary": "Catalog & Cocktails is BACK! Tune in for the SEASON FOUR PREMIERE with hosts Juan Sequeda and Tim Gasper ! Bridging the gap between business and IT is an age-old problem. IT doesn’t understand the business. The business doesn’t understand IT. Everyone looks at IT and business as if they were separate and point fingers, when they should actually be together. Join Tim, Juan and Vipul P. , Global Hea"
     },
     {
-      "id": "ep_20220901_takeways_with_roel_and_v",
+      "id": "ep_20220901_takeways_with_roel_and_v_ta",
       "name": "Takeways with Roel and Valentijn",
       "type": "episode",
       "date": "2022-09-01",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeways-with-Roel-and-Valentijn-e3650ac",
       "summary": "This Takeaway episode will feature the summary of the upcoming episode with Roel and Valentijn from Vopak. See omnystudio.com/listener for privacy information."
@@ -1653,21 +1633,21 @@
       "summary": "What is the state of Data engineering today and where is it going (or should it be going)? Who better to talk about Data Engineering than the authors of the recent O’Reilly book “Fundamentals of Data Engineering”, Joe Reis and Matt Housley from Ternary Data. Join Tim, Juan, Joe and Matt to discuss the state of data engineering. Conversation highlights: [00:44] Introduction to Joe Reis and Matt Hou"
     },
     {
-      "id": "ep_20220908_takeaways_with_joe_reis_",
+      "id": "ep_20220908_takeaways_with_joe_reis__ta",
       "name": "Takeaways with Joe Reis and Matt Housley of Ternary Data",
       "type": "episode",
       "date": "2022-09-08",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Joe-Reis-and-Matt-Housley-of-Ternary-Data-e3650a4",
       "summary": "See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20220915_takeaways_with_ole_olese",
+      "id": "ep_20220915_takeaways_with_ole_olese_ta",
       "name": "Takeaways with Ole Olesen-Bagneux",
       "type": "episode",
       "date": "2022-09-15",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Ole-Olesen-Bagneux-e3650oo",
       "summary": "In this episode, Tim, Juan, and Ole Olesen-Bagneux, author of O’Reilly “The Enterprise Data Catalog, discuss the future of data catalogs. This Takeaway episode will feature the summary of the upcoming show. See omnystudio.com/listener for privacy information."
@@ -1693,11 +1673,11 @@
       "summary": "Answering critical business questions relies on integrating data from a variety of systems. But it takes a lot of work to understand what the disparate data means and how it all fits together. How do we make data as reliable as an electricity? Join Tim Gasper , Juan Sequeda and Fraser Harris , VP of Product at Fivetran , as they celebrate the 100th live episode of Catalog & Cocktails and discuss h"
     },
     {
-      "id": "ep_20220922_takeaways_of_episode_100",
+      "id": "ep_20220922_takeaways_of_episode_100_ta",
       "name": "Takeaways of EPISODE 100 w/ Fraser Harris",
       "type": "episode",
       "date": "2022-09-22",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-of-EPISODE-100-w-Fraser-Harris-e3650c4",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1723,11 +1703,11 @@
       "summary": "You have been asked to start the Data Governance program in your organization. Sounds easy, right? How do you start? How do you define success? Who needs to be part of the team? Join Tim, Juan and Rupal Sumaria, Head of Governance of Penguin Random House UK to discuss the steps for a successful data governance program and what to avoid. Key Takeaways [00:06 - 03:16] Introduction and Toasts [03:17 "
     },
     {
-      "id": "ep_20220929_takeaways_with_rupal_sum",
+      "id": "ep_20220929_takeaways_with_rupal_sum_ta",
       "name": "Takeaways with Rupal Sumaria",
       "type": "episode",
       "date": "2022-09-29",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Rupal-Sumaria-e3650cu",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1743,11 +1723,11 @@
       "summary": "AI and ML are both at the center of many applications today from autonomous vehicles to healthcare. But where is this ship heading? Join Tim, Juan, and Patrick Bangert, VP of AI at Samsung SDS where they will discuss where the focus of AI is today and where it should be tomorrow. Key Takeaways [00:04 - 01:06] Episode introduction/trailer [01:18 - 02:22] Drinks & Toasts [02:23 - 04:40] What is the "
     },
     {
-      "id": "ep_20221006_takeaways_with_patrick_b",
+      "id": "ep_20221006_takeaways_with_patrick_b_ta",
       "name": "Takeaways with Patrick Bangert, VP of AI at Samsung",
       "type": "episode",
       "date": "2022-10-06",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Patrick-Bangert--VP-of-AI-at-Samsung-e3650ap",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1763,11 +1743,11 @@
       "summary": "Data needs to be in the hands of the people who really need it. Sounds simple, right? So where is the disconnect? If your teams aren’t partnering to get projects done, it’s often due to a lack of understanding of each others pain points. That’s where empathy is a must. Join Tim, Juan and special guest Laura Ellis from Rapid7 as they discuss supporting all the cooks in the kitchen when it comes to "
     },
     {
-      "id": "ep_20221013_takeaways_with_laura_ell",
+      "id": "ep_20221013_takeaways_with_laura_ell_ta",
       "name": "Takeaways with Laura Ellis from Rapid7",
       "type": "episode",
       "date": "2022-10-13",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Laura-Ellis-from-Rapid7-e36509t",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1783,11 +1763,11 @@
       "summary": "The most effective way to understand your business is the special balance between things like tribal knowledge and extracted knowledge, technical teams and business teams, confidence and skepticism. Join Tim, Juan, and Loris Marini, CEO of Discovering Data, as they zoom in to find that balance and the humility it may take. Key Takeaways [00:11 - 03:10] Introduction & Toasts [03:13 - 05:32] What's "
     },
     {
-      "id": "ep_20221020_takeaways_with_loris_mar",
+      "id": "ep_20221020_takeaways_with_loris_mar_ta",
       "name": "Takeaways with Loris Marini",
       "type": "episode",
       "date": "2022-10-20",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Loris-Marini-e36509q",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1803,11 +1783,11 @@
       "summary": "You can’t buy a predictive model off the shelf. And if you COULD… would you? It’s the old “build versus buy” debate and with data in a constant state of change, building and deploying AI is more challenging than ever. Join Tim, Juan, and Andrew Eye, CEO at ClosedLoop.ai, to discuss the challenges of AI deployment, AIOps, and maintaining models as data changes. Key Takeaways [00:08 - 01:45] Cheers "
     },
     {
-      "id": "ep_20221027_takeaways_with_andrew_ey",
+      "id": "ep_20221027_takeaways_with_andrew_ey_ta",
       "name": "Takeaways with Andrew Eye",
       "type": "episode",
       "date": "2022-10-27",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Andrew-Eye-e3650aq",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1823,21 +1803,21 @@
       "summary": "Data and business teams become a convoluted intersection, and when they struggle to communicate, it leads to bigger problems than awkward water-cooler talk. So what comes first? Translation? Data literacy? Company culture? The chicken? The egg? Co-founders of Preql, Gabi Steele and Leah Weiss , join hosts Tim and Juan to discuss how to put the business in charge of their own data and how this lead"
     },
     {
-      "id": "ep_20221103_takeaways_with_gabi_stee",
+      "id": "ep_20221103_takeaways_with_gabi_stee_ta",
       "name": "Takeaways with Gabi Steele and Leah Weiss",
       "type": "episode",
       "date": "2022-11-03",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Gabi-Steele-and-Leah-Weiss-e3650bo",
       "summary": "See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20221110_takeaways_with_dan_benne",
+      "id": "ep_20221110_takeaways_with_dan_benne_ta",
       "name": "Takeaways with Dan Bennett",
       "type": "episode",
       "date": "2022-11-10",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Dan-Bennett-e3650cm",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1863,11 +1843,11 @@
       "summary": "You have to have a lot of data to get AI to work. But the data folks are not jumping on it as fast as they should. So what happens when data teams aren’t up to speed, companies are hiring more data scientists than they are engineers, AND current data teams are focusing too much on biz reporting and not supporting AI? This week on Catalog & Cocktails, join hosts Tim Gasper and Juan Sequeda as they "
     },
     {
-      "id": "ep_20221117_takeaways_with_theresa_k",
+      "id": "ep_20221117_takeaways_with_theresa_k_ta",
       "name": "Takeaways with Theresa Kushner",
       "type": "episode",
       "date": "2022-11-17",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Theresa-Kushner-e3650a2",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1883,11 +1863,11 @@
       "summary": "Think back to when you were first learning to swim. How’d you do it? Chances are, you weren’t thrown into the ocean being circled by sharks. We sure hope not, anyway. You probably picked it up under the watch of a lifeguard in most cases.But once it became second nature, the lifeguard didn’t hold SO much power. Well, data engineers are the lifeguard, and if there isn’t a checks and balances system"
     },
     {
-      "id": "ep_20221201_takeaways_with_allison_s",
+      "id": "ep_20221201_takeaways_with_allison_s_ta",
       "name": "Takeaways with Allison Sagraves",
       "type": "episode",
       "date": "2022-12-01",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Allison-Sagraves-e3650d8",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1924,11 +1904,11 @@
       "summary": "Those who don’t know their history are doomed to repeat it. If there is someone who can speak to data history, it’s Bill Inmon . How did data warehouses start? Why is the computing profession still immature? Join Tim Gasper , Juan Sequeda and Bill Inmon, the father of the data warehouse and Founder of Forest Rim Technology , to learn about the past and present of data, and where things might be he"
     },
     {
-      "id": "ep_20230112_takeaways_with_bill_inmo",
+      "id": "ep_20230112_takeaways_with_bill_inmo_ta",
       "name": "Takeaways with Bill Inmon",
       "type": "episode",
       "date": "2023-01-12",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Bill-Inmon-e3650es",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1944,11 +1924,11 @@
       "summary": "Imagine planting seeds and not watering them. Or putting water on the stove but not turning on the gas. Sounds silly, right? Now take your organizations data and think about not leveraging it as an asset. It’s like taking the initial step of planting something in the garden and deciding not to provide nourishment. Join Tim, Juan, and special guest Jane Urban from Takeda to understand the differenc"
     },
     {
-      "id": "ep_20230119_takeaways_with_jane_urba",
+      "id": "ep_20230119_takeaways_with_jane_urba_ta",
       "name": "Takeaways with Jane Urban",
       "type": "episode",
       "date": "2023-01-19",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Jane-Urban-e3650au",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1964,11 +1944,11 @@
       "summary": "Data modeling isn’t new. So why is it still a problem? Maybe the problem isn’t data modeling itself, but rather there is no modern solution for companies, or the incentives are not well understood. It’s a learn-as-you-go type of thing, but that’s where the trouble lies. Do you hire one data engineer and have them do everything? Do we encourage training in data modeling? OR… do we throw in the towe"
     },
     {
-      "id": "ep_20230126_takeaways_with_anna_abra",
+      "id": "ep_20230126_takeaways_with_anna_abra_ta",
       "name": "Takeaways with Anna Abramova",
       "type": "episode",
       "date": "2023-01-26",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Anna-Abramova-e3650dj",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -1984,11 +1964,11 @@
       "summary": "If there were a tombstone for this episode it would read “here lies Master Data Management,” But would you agree? In this episode, join Tim, Juan, and special guest Malcolm Hawker from Profisee, will discuss the history of master data management, the buzzwords surrounding it, and where it’s headed, assuming it’s still alive. Key Takeaways: [00:01 - 00:54] Introduction [02:31 - 04:55] Toast to sun "
     },
     {
-      "id": "ep_20230202_takeaways_with_malcolm_h",
+      "id": "ep_20230202_takeaways_with_malcolm_h_ta",
       "name": "Takeaways with Malcolm Hawker from Profisee",
       "type": "episode",
       "date": "2023-02-02",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Malcolm-Hawker-from-Profisee-e3650na",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2004,11 +1984,11 @@
       "summary": "Entity resolution.Is it a single source of truth? Is it multiple sources of truth? Is it multiple data sources that refer to the same real-world thing? How do we make sense of it? How can we harness the value of data through entity resolution? Talk to Jeff Jonas from Senzing on this week’s episode of Catalog & Cocktails and you’ll understand. Key Takeaways [00:33 - 05:14] Episode intro & cheers [0"
     },
     {
-      "id": "ep_20230209_takeaways_with_jeff_jona",
+      "id": "ep_20230209_takeaways_with_jeff_jona_ta",
       "name": "Takeaways with Jeff Jonas",
       "type": "episode",
       "date": "2023-02-09",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Jeff-Jonas-e3650er",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2024,11 +2004,11 @@
       "summary": "Metadata management has been a topic for a while now. Lately, the industry is pushing that metadata is a knowledge graph problem. What does metadata in a pre and post graph world look like? Join Juan Sequeda and Tim Gasper with special guest Mohammad Syed , Head of Data Architecture & Engineering at Capco to chat about metadata and knowledge graphs. Key Takeaways: [00:06 - 02:40] Introduction & Ch"
     },
     {
-      "id": "ep_20230216_takeaways_with_mohammad_",
+      "id": "ep_20230216_takeaways_with_mohammad__ta",
       "name": "Takeaways with Mohammad Syed from Capco",
       "type": "episode",
       "date": "2023-02-16",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Mohammad-Syed-from-Capco-e36509r",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2044,11 +2024,11 @@
       "summary": "Increasing adoption of data products, by design Look no further than Brian T. O’Neill’s bio to tell you that’s what he does best. Our special guest this week knows that low adoption of data products are enterprises biggest enemy. Not just in terms of quantity, but also quality of these investments. Why are teams so often creating technically right, effectively wrong data products? Why do people fa"
     },
     {
-      "id": "ep_20230223_takeaways_with_brian_t_o",
+      "id": "ep_20230223_takeaways_with_brian_t_o_ta",
       "name": "Takeaways with Brian T. O’Neill",
       "type": "episode",
       "date": "2023-02-23",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Brian-T--ONeill-e3650dt",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2074,11 +2054,11 @@
       "summary": "Are we doing data and analytics correctly? Self service, centralization vs decentralization, analytics vs operations… so many aspects that data teams need to consider. Join this week’s episode of Catalog & Cocktails with hosts Juan and Tim as they speak with special guest Bethany Lyons to discuss how we should have a separation between data operations an data analytics Key Takeaways: [00:10 - 02:3"
     },
     {
-      "id": "ep_20230309_takeaways_with_bethany_l",
+      "id": "ep_20230309_takeaways_with_bethany_l_ta",
       "name": "Takeaways with Bethany Lyons",
       "type": "episode",
       "date": "2023-03-09",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Bethany-Lyons-e3650fa",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2094,11 +2074,11 @@
       "summary": "In this episode of Catalog & Cocktails, Kristin Schooley from Learning Care Group sits down with Juan Sequeda and Tim Gasper to discuss the importance of teamwork and building relationships when it comes to scaling an analytics team within a large organization. The conversation covers a lot of ground, including the need to understand what reporting is needed and what story is being told, how to en"
     },
     {
-      "id": "ep_20230316_takeaways_with_kristin_s",
+      "id": "ep_20230316_takeaways_with_kristin_s_ta",
       "name": "Takeaways with Kristin Schooley",
       "type": "episode",
       "date": "2023-03-16",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Kristin-Schooley-e3650ds",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2124,11 +2104,11 @@
       "summary": "Metrics are one of the most important and durable primitives in a company. And if data teams are looking to create value FAST… they have to learn how their businesses work. To figure out how you business works, you have to find the right starting point; back to the METRICS. Join Tim, Juan and special guest Abhi Sivasailam from Levers Lab on this week’s episode of Catalog & Cocktails to hear more a"
     },
     {
-      "id": "ep_20230330_takeaways_with_abhi_siva",
+      "id": "ep_20230330_takeaways_with_abhi_siva_ta",
       "name": "Takeaways with Abhi Sivasailam",
       "type": "episode",
       "date": "2023-03-30",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Abhi-Sivasailam-e3650ba",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2144,11 +2124,11 @@
       "summary": "Is business the problem or is it the data? Business science hasn’t changed since Peter Druker. But, it needs to change. It was designed in an era of certain technologies and data limitations. We had to work in isolation. Those days are long gone. So who’s to blame for inefficiencies, unsolved problems, mismanaged processes and other barriers? Join this weeks episode of Catalog & Cocktails with hos"
     },
     {
-      "id": "ep_20230406_takeaways_with_benny_ben",
+      "id": "ep_20230406_takeaways_with_benny_ben_ta",
       "name": "Takeaways with Benny Benford",
       "type": "episode",
       "date": "2023-04-06",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Benny-Benford-e3650oe",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2164,11 +2144,11 @@
       "summary": "Survival guides, rulebooks, blueprints and more. The best way to prepare yourself as a next generation data leader is this episode of Catalog & Cocktails with Tim Gasper , Juan Sequeda , and special guest Veronika Durgin , VP of Data at Saks 5th Avenue. Get deep into some preparation-curriculum with topics like:-Do’s and Don’ts of Data Leaders -Are you skeptical enough? -How curious are you? -Join"
     },
     {
-      "id": "ep_20230413_takeaways_with_veronika_",
+      "id": "ep_20230413_takeaways_with_veronika__ta",
       "name": "Takeaways with Veronika Durgin, VP of Data at Saks 5th Avenue",
       "type": "episode",
       "date": "2023-04-13",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Veronika-Durgin--VP-of-Data-at-Saks-5th-Avenue-e3650bt",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2184,11 +2164,11 @@
       "summary": "Knowledge graphs and large language models. A match made in heaven. This pair will drive centralization and eventually work with AI to further consolidate and connect your data. So why aren’t people prepared for it and what’s going to happen when AI steps in? Join us on this weeks episode of Catalog & Cocktails with hosts Tim, Juan, and special guest Tony Seale, Knowledge Graph Engineer. See omnys"
     },
     {
-      "id": "ep_20230427_takeaways_with_alex_vayn",
+      "id": "ep_20230427_takeaways_with_alex_vayn_ta",
       "name": "Takeaways with Alex Vayner from KPMG US",
       "type": "episode",
       "date": "2023-04-27",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Alex-Vayner-from-KPMG-US-e3650d3",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2204,11 +2184,11 @@
       "summary": "There’s a high turnover of CDO/CDAO positions. Data teams are not directly contributing to ROI . What’s the root cause? It’s all in the DNA of the organization. Understanding this will be critical in addressing this issue in organizations. Hosts Juan and Tim will be joined by special guest Alex Vayner, from KPMG US to also discuss the data roles in the different types organizations and also dive i"
     },
     {
-      "id": "ep_20230504_takeaways_with_ricardo_b",
+      "id": "ep_20230504_takeaways_with_ricardo_b_ta",
       "name": "Takeaways with Ricardo Baeza-Yates",
       "type": "episode",
       "date": "2023-05-04",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Ricardo-Baeza-Yates-e3650bs",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2234,21 +2214,21 @@
       "summary": "Join this weeks episode of Catalog & Cocktails LIVE from the Knowledge Graph Conference. Hosts Tim Gasper and Juan Sequeda will be joined by Katariina Kari , Lead Ontologist at IKEA to chat about all things Knowledge Graph. See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20230511_takeaways_with_katariina",
+      "id": "ep_20230511_takeaways_with_katariina_ta",
       "name": "Takeaways with Katariina Kari from Ikea",
       "type": "episode",
       "date": "2023-05-11",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Katariina-Kari-from-Ikea-e3650e4",
       "summary": "See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20230518_takeaways_with_maddy_wan",
+      "id": "ep_20230518_takeaways_with_maddy_wan_ta",
       "name": "Takeaways with Maddy Want from Fanatics",
       "type": "episode",
       "date": "2023-05-18",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Maddy-Want-from-Fanatics-e3650c9",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2264,11 +2244,11 @@
       "summary": "Are you criminally under leveraging your data? This week Juan Sequeda and Tim Gasper will be joined by Maddy Want, VP of Data at Fanatics and author of “Precisely: Working with Precision Systems in a World of Data” to discuss digital transformations stories from her book. See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20230525_takeaways_with_ben_clinc",
+      "id": "ep_20230525_takeaways_with_ben_clinc_ta",
       "name": "Takeaways with Ben Clinch from BT Group",
       "type": "episode",
       "date": "2023-05-25",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Ben-Clinch-from-BT-Group-e3650co",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -2295,11 +2275,11 @@
       "summary": "We all need a break sometimes. Juan is on vacation but he wasn't skipping this week's episode of Catalog & Cocktails. Join Tim Gasper and Juan Sequeda for this weeks mini-sode. See omnystudio.com/listener for privacy information."
     },
     {
-      "id": "ep_20230608_takeaways_with_aakriti_a",
+      "id": "ep_20230608_takeaways_with_aakriti_a_ta",
       "name": "Takeaways with Aakriti Agrawal from American Express",
       "type": "episode",
       "date": "2023-06-08",
-      "is_full": true,
+      "is_full": false,
       "source": "feed",
       "url": "https://podcasters.spotify.com/pod/show/catalogandcocktails/episodes/Takeaways-with-Aakriti-Agrawal-from-American-Express-e3650bi",
       "summary": "See omnystudio.com/listener for privacy information."
@@ -4331,6 +4311,30 @@
       "episode": "8"
     },
     {
+      "id": "ep_20261016_game_changers_the_talent",
+      "name": "Game Changers: The Talent Imperative for the AI Era with Mohammed Aaser",
+      "type": "episode",
+      "date": "2026-10-16",
+      "is_full": true,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/game-changers-the-talent-imperative-for-the-ai-era-with-mohammed-aaser",
+      "summary": "Mohammed Aaser, former chief data officer at McKinsey and former chief data strategy officer at Domo, recently visited Juan and shared his framework on talent in the AI era. It was incredibly insightful and we asked if he could come back to the podcast (after 5 years!) His argument is that the potential of AI will be unlocked by humans because humans understand the problems, and are driven/motivat",
+      "season": "12",
+      "episode": "9"
+    },
+    {
+      "id": "ep_20261016_game_changers_the_talent_ta",
+      "name": "TAKEAWAY Game Changers: The Talent Imperative for the AI Era with Mohammed Aaser",
+      "type": "episode",
+      "date": "2026-10-16",
+      "is_full": false,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/takeaway-game-changers-the-talent-imperative-for-the-ai-era-with-mohammed-aaser",
+      "summary": "This is the takeaway episode with Mohammed Aaser, former chief data officer at McKinsey and former chief data strategy officer at Domo. He recently visited Juan and shared his framework on talent in the AI era. It was incredibly insightful and we asked if he could come back to the podcast (after 5 years!) His argument is that the potential of AI will be unlocked by humans because humans understand",
+      "season": "12",
+      "episode": "9"
+    },
+    {
       "id": "person_aakriti_agrawal",
       "name": "Aakriti Agrawal",
       "type": "person",
@@ -5030,7 +5034,7 @@
       "id": "person_madeleine_want",
       "name": "Madeleine Want",
       "type": "person",
-      "source": "verified"
+      "source": "curated"
     },
     {
       "id": "person_malcolm_hawker",
@@ -5627,6 +5631,12 @@
       "source": "inferred"
     },
     {
+      "id": "org_discovering_data",
+      "name": "Discovering Data",
+      "type": "organization",
+      "source": "inferred"
+    },
+    {
       "id": "org_drizly",
       "name": "Drizly",
       "type": "organization",
@@ -5733,6 +5743,12 @@
       "name": "Jaguar Land Rover",
       "type": "organization",
       "source": "curated"
+    },
+    {
+      "id": "org_kawa_analytics",
+      "name": "KAWA Analytics",
+      "type": "organization",
+      "source": "inferred"
     },
     {
       "id": "org_kpmg",
@@ -6337,6 +6353,12 @@
       "provenance": "curated"
     },
     {
+      "source": "person_bethany_lyons",
+      "target": "org_kawa_analytics",
+      "type": "AFFILIATED_WITH",
+      "provenance": "inferred"
+    },
+    {
       "source": "person_bethany_sehon",
       "target": "org_capital_one",
       "type": "AFFILIATED_WITH",
@@ -6635,6 +6657,12 @@
       "target": "org_monte_carlo",
       "type": "AFFILIATED_WITH",
       "provenance": "verified"
+    },
+    {
+      "source": "person_loris_marini",
+      "target": "org_discovering_data",
+      "type": "AFFILIATED_WITH",
+      "provenance": "inferred"
     },
     {
       "source": "person_luke_slotwinski",
@@ -7753,18 +7781,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220127_s3e4_takeaways_with_dora",
-      "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220127_s3e4_takeaways_with_dora",
-      "target": "topic_data_strategy",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220203_can_agile_practices_disr",
       "target": "topic_data_governance",
       "type": "COVERS",
@@ -7773,12 +7789,6 @@
     {
       "source": "ep_20220203_can_agile_practices_disr",
       "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220203_s3e5_takeways_with_laura",
-      "target": "topic_data_governance",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7849,24 +7859,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220303_s3e9_takeaways_with_arju",
-      "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220303_s3e9_takeaways_with_arju",
-      "target": "topic_data_engineering",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220310_s3e10_takeaways_with_pat",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220310_your_privacy_is_my_curre",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
@@ -7905,12 +7897,6 @@
     {
       "source": "ep_20220407_can_data_policy_drive_da",
       "target": "topic_data_products",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220414_s3e14_takeaways_with_cha",
-      "target": "topic_architecture_platforms",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -7975,18 +7961,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220505_s3e17_takeaways_with_fra",
-      "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220505_s3e17_takeaways_with_fra",
-      "target": "topic_knowledge_graphs",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220512_is_your_modern_data_stac",
       "target": "topic_analytics_bi",
       "type": "COVERS",
@@ -7994,12 +7968,6 @@
     },
     {
       "source": "ep_20220512_is_your_modern_data_stac",
-      "target": "topic_architecture_platforms",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220512_s3e18_takeaways_with_sar",
       "target": "topic_architecture_platforms",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8029,24 +7997,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220519_takeaways_with_omar_khaw",
-      "target": "topic_analytics_bi",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220519_takeaways_with_omar_khaw",
-      "target": "topic_data_mesh",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220519_takeaways_with_omar_khaw",
-      "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220526_the_data_entrepreneurs_e",
       "target": "topic_industry_field_notes",
       "type": "COVERS",
@@ -8054,12 +8004,6 @@
     },
     {
       "source": "ep_20220602_does_our_understanding_o",
-      "target": "topic_privacy_ethics_risk",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220602_takeaways_with_ciaran_dy",
       "target": "topic_privacy_ethics_risk",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8089,18 +8033,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "ep_20220609_takeaways_with_sanjeev_m",
-      "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220609_takeaways_with_sanjeev_m",
-      "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
       "source": "ep_20220616_dont_let_good_metadata_g",
       "target": "topic_industry_field_notes",
       "type": "COVERS",
@@ -8108,30 +8040,12 @@
     },
     {
       "source": "ep_20220616_dont_let_good_metadata_g",
-      "target": "topic_metadata",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220616_takeaways_with_peter_kap",
-      "target": "topic_industry_field_notes",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220616_takeaways_with_peter_kap",
       "target": "topic_metadata",
       "type": "COVERS",
       "provenance": "inferred"
     },
     {
       "source": "ep_20220623_data_models_are_divas_w_",
-      "target": "topic_data_modeling",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220623_takeaways_with_ergest_xh",
       "target": "topic_data_modeling",
       "type": "COVERS",
       "provenance": "inferred"
@@ -8265,12 +8179,6 @@
     {
       "source": "ep_20220908_data_engineering_where_a",
       "target": "topic_data_teams_org",
-      "type": "COVERS",
-      "provenance": "inferred"
-    },
-    {
-      "source": "ep_20220915_takeaways_with_ole_olese",
-      "target": "topic_data_catalogs",
       "type": "COVERS",
       "provenance": "inferred"
     },
@@ -10261,9 +10169,15 @@
       "provenance": "inferred"
     },
     {
-      "source": "person_aakriti_agrawal",
-      "target": "ep_20230608_takeaways_with_aakriti_a",
-      "type": "GUEST_ON",
+      "source": "ep_20261016_game_changers_the_talent",
+      "target": "topic_data_strategy",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20261016_game_changers_the_talent",
+      "target": "topic_data_teams_org",
+      "type": "COVERS",
       "provenance": "inferred"
     },
     {
@@ -10285,22 +10199,10 @@
       "provenance": "curated"
     },
     {
-      "source": "person_abhi_sivasailam",
-      "target": "ep_20230330_takeaways_with_abhi_siva",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_alex_bertails",
       "target": "ep_20251119_netflixs_unified_data_ar",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_alex_vayner",
-      "target": "ep_20230427_takeaways_with_alex_vayn",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_alex_vayner",
@@ -10325,12 +10227,6 @@
       "target": "ep_20221201_getting_into_the_pool_wi",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_allison_sagraves",
-      "target": "ep_20221201_takeaways_with_allison_s",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_amalia_child",
@@ -10363,12 +10259,6 @@
       "provenance": "inferred"
     },
     {
-      "source": "person_andrew_eye",
-      "target": "ep_20221027_takeaways_with_andrew_ey",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_andrew_jones",
       "target": "ep_20231201_data_contracts_and_shift",
       "type": "GUEST_ON",
@@ -10385,12 +10275,6 @@
       "target": "ep_20230126_data_modeling_your_data_",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_anna_abramova",
-      "target": "ep_20230126_takeaways_with_anna_abra",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_anna_bergevin",
@@ -10423,12 +10307,6 @@
       "provenance": "curated"
     },
     {
-      "source": "person_arjun_narayan",
-      "target": "ep_20220303_s3e9_takeaways_with_arju",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_barr_moses",
       "target": "ep_20250501_what_is_data_ai_observab",
       "type": "GUEST_ON",
@@ -10436,21 +10314,9 @@
     },
     {
       "source": "person_ben_clinch",
-      "target": "ep_20230525_takeaways_with_ben_clinc",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_ben_clinch",
       "target": "ep_20230529_updated_release_automati",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_benn_stancil",
-      "target": "ep_20220120_s3e3_takeaways_with_benn",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_benn_stancil",
@@ -10465,14 +10331,8 @@
       "provenance": "curated"
     },
     {
-      "source": "person_benny_benford",
-      "target": "ep_20230406_takeaways_with_benny_ben",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_bethany_lyons",
-      "target": "ep_20230309_takeaways_with_bethany_l",
+      "target": "ep_20230309_data_operations_vs_data_",
       "type": "GUEST_ON",
       "provenance": "inferred"
     },
@@ -10489,22 +10349,10 @@
       "provenance": "curated"
     },
     {
-      "source": "person_bill_inmon",
-      "target": "ep_20230112_takeaways_with_bill_inmo",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_blake_burch",
       "target": "ep_20250417_most_data_teams_are_a_wa",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_bob_muglia",
-      "target": "ep_20220331_s3e12_takeaways_with_bob",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_bob_muglia",
@@ -10538,12 +10386,6 @@
     },
     {
       "source": "person_brett_hurt",
-      "target": "ep_20220526_takeaways_with_brett_hur",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_brett_hurt",
       "target": "ep_20220526_the_data_entrepreneurs_e",
       "type": "GUEST_ON",
       "provenance": "curated"
@@ -10555,22 +10397,10 @@
       "provenance": "curated"
     },
     {
-      "source": "person_brian_t_oneill",
-      "target": "ep_20230223_takeaways_with_brian_t_o",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_bryon_jacob",
       "target": "ep_20231122_understanding_the_role_o",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_chad_sanderson",
-      "target": "ep_20220414_s3e14_takeaways_with_cha",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_chad_sanderson",
@@ -10592,7 +10422,7 @@
     },
     {
       "source": "person_ciaran_dynes",
-      "target": "ep_20220602_takeaways_with_ciaran_dy",
+      "target": "ep_20220602_does_our_understanding_o",
       "type": "GUEST_ON",
       "provenance": "inferred"
     },
@@ -10619,12 +10449,6 @@
       "target": "ep_20240926_why_data_ai_needs_to_emb",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_dan_bennett",
-      "target": "ep_20221110_takeaways_with_dan_benne",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_dan_bennett",
@@ -10700,12 +10524,6 @@
     },
     {
       "source": "person_dora_boussias",
-      "target": "ep_20220127_s3e4_takeaways_with_dora",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_dora_boussias",
       "target": "ep_20261009_preserve_executive_trust",
       "type": "GUEST_ON",
       "provenance": "inferred"
@@ -10741,22 +10559,10 @@
       "provenance": "curated"
     },
     {
-      "source": "person_emily_hawkins",
-      "target": "ep_20220113_s3e2_takeaways_with_emil",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_ergest_xheblati",
       "target": "ep_20220623_data_models_are_divas_w_",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_ergest_xheblati",
-      "target": "ep_20220623_takeaways_with_ergest_xh",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_erik_bernhardsson",
@@ -10813,20 +10619,8 @@
       "provenance": "curated"
     },
     {
-      "source": "person_francois_scharffe",
-      "target": "ep_20220505_s3e17_takeaways_with_fra",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_fraser_harris",
       "target": "ep_20220922_keeping_it_100_about_met",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_fraser_harris",
-      "target": "ep_20220922_takeaways_of_episode_100",
       "type": "GUEST_ON",
       "provenance": "inferred"
     },
@@ -10835,12 +10629,6 @@
       "target": "ep_20221103_put_the_business_in_char",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_gabi_steele",
-      "target": "ep_20221103_takeaways_with_gabi_stee",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_gev_sogomonian",
@@ -10865,12 +10653,6 @@
       "target": "ep_20230119_providing_data_business_",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_jane_urban",
-      "target": "ep_20230119_takeaways_with_jane_urba",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_jans_aasman",
@@ -10901,12 +10683,6 @@
       "target": "ep_20230209_everywhere_you_look_ther",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_jeff_jonas",
-      "target": "ep_20230209_takeaways_with_jeff_jona",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_jenna_jordan",
@@ -10958,12 +10734,6 @@
     },
     {
       "source": "person_joe_reis",
-      "target": "ep_20220908_takeaways_with_joe_reis_",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_joe_reis",
       "target": "ep_20230713_modeling_and_semantics_a",
       "type": "GUEST_ON",
       "provenance": "curated"
@@ -11006,12 +10776,6 @@
     },
     {
       "source": "person_karen_lopez",
-      "target": "ep_20220217_s3e7_takeaways_with_kare",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_karen_lopez",
       "target": "ep_20220217_the_easiest_data_is_alwa",
       "type": "GUEST_ON",
       "provenance": "curated"
@@ -11047,12 +10811,6 @@
       "provenance": "curated"
     },
     {
-      "source": "person_katariina_kari",
-      "target": "ep_20230511_takeaways_with_katariina",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_kelly_wright",
       "target": "ep_20211209_what_happens_when_everyo",
       "type": "GUEST_ON",
@@ -11081,12 +10839,6 @@
       "target": "ep_20230316_school_of_building_data_",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_kristin_schooley",
-      "target": "ep_20230316_takeaways_with_kristin_s",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_krystin_kim",
@@ -11119,34 +10871,16 @@
       "provenance": "inferred"
     },
     {
-      "source": "person_laura_ellis",
-      "target": "ep_20221013_takeaways_with_laura_ell",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_laura_madsen",
       "target": "ep_20220203_can_agile_practices_disr",
       "type": "GUEST_ON",
       "provenance": "curated"
     },
     {
-      "source": "person_laura_madsen",
-      "target": "ep_20220203_s3e5_takeways_with_laura",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_leah_weiss",
       "target": "ep_20221103_put_the_business_in_char",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_leah_weiss",
-      "target": "ep_20221103_takeaways_with_gabi_stee",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_lena_hall",
@@ -11168,13 +10902,7 @@
     },
     {
       "source": "person_loris_marini",
-      "target": "ep_20221020_takeaways_with_loris_mar",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_luke_slotwinski",
-      "target": "ep_20220210_s3e6_takeaways_with_luke",
+      "target": "ep_20221020_knowledge_the_missing_pi",
       "type": "GUEST_ON",
       "provenance": "inferred"
     },
@@ -11183,12 +10911,6 @@
       "target": "ep_20220210_the_three_most_important",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_madeleine_want",
-      "target": "ep_20230518_takeaways_with_maddy_wan",
-      "type": "GUEST_ON",
-      "provenance": "verified"
     },
     {
       "source": "person_madeleine_want",
@@ -11201,12 +10923,6 @@
       "target": "ep_20230202_is_master_data_managemen",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_malcolm_hawker",
-      "target": "ep_20230202_takeaways_with_malcolm_h",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_malcolm_hawker",
@@ -11241,12 +10957,6 @@
     {
       "source": "person_matt_housley",
       "target": "ep_20220908_data_engineering_where_a",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_matt_housley",
-      "target": "ep_20220908_takeaways_with_joe_reis_",
       "type": "GUEST_ON",
       "provenance": "inferred"
     },
@@ -11287,14 +10997,14 @@
       "provenance": "curated"
     },
     {
-      "source": "person_mohammad_syed",
-      "target": "ep_20230216_takeaways_with_mohammad_",
+      "source": "person_mohammed_aaser",
+      "target": "ep_20210225_what_does_a_chief_data_o",
       "type": "GUEST_ON",
       "provenance": "inferred"
     },
     {
       "source": "person_mohammed_aaser",
-      "target": "ep_20210225_what_does_a_chief_data_o",
+      "target": "ep_20261016_game_changers_the_talent",
       "type": "GUEST_ON",
       "provenance": "inferred"
     },
@@ -11323,12 +11033,6 @@
       "provenance": "curated"
     },
     {
-      "source": "person_nick_handel",
-      "target": "ep_20220428_s3e16_takeaways_with_nic",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_nick_schrock",
       "target": "ep_20211202_modern_data_stack_techno",
       "type": "GUEST_ON",
@@ -11347,22 +11051,10 @@
       "provenance": "curated"
     },
     {
-      "source": "person_nong_li",
-      "target": "ep_20220407_s3e13_takeaways_with_non",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_ofer_mendelevitch",
       "target": "ep_20230928_from_london_to_san_franc",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_ole_olesen_bagneux",
-      "target": "ep_20220915_takeaways_with_ole_olese",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_ole_olesen_bagneux",
@@ -11387,12 +11079,6 @@
       "target": "ep_20220519_a_roadmap_to_data_mesh_s",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_omar_khawaja",
-      "target": "ep_20220519_takeaways_with_omar_khaw",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_ora_lassila",
@@ -11420,12 +11106,6 @@
     },
     {
       "source": "person_patricia_thaine",
-      "target": "ep_20220310_s3e10_takeaways_with_pat",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_patricia_thaine",
       "target": "ep_20220310_your_privacy_is_my_curre",
       "type": "GUEST_ON",
       "provenance": "curated"
@@ -11433,12 +11113,6 @@
     {
       "source": "person_patrick_bangert",
       "target": "ep_20221006_ai_ml_where_should_the_f",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_patrick_bangert",
-      "target": "ep_20221006_takeaways_with_patrick_b",
       "type": "GUEST_ON",
       "provenance": "inferred"
     },
@@ -11479,12 +11153,6 @@
       "provenance": "curated"
     },
     {
-      "source": "person_peter_kapur",
-      "target": "ep_20220616_takeaways_with_peter_kap",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_peter_kromhout",
       "target": "ep_20240418_crawl_walk_and_run_on_ho",
       "type": "GUEST_ON",
@@ -11504,12 +11172,6 @@
     },
     {
       "source": "person_ricardo_baeza_yates",
-      "target": "ep_20230504_takeaways_with_ricardo_b",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_ricardo_baeza_yates",
       "target": "ep_20230504_unpacking_responsible_ai",
       "type": "GUEST_ON",
       "provenance": "curated"
@@ -11517,12 +11179,6 @@
     {
       "source": "person_rupal_sumaria",
       "target": "ep_20220929_struggles_of_setting_up_",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_rupal_sumaria",
-      "target": "ep_20220929_takeaways_with_rupal_sum",
       "type": "GUEST_ON",
       "provenance": "inferred"
     },
@@ -11558,12 +11214,6 @@
     },
     {
       "source": "person_sanjeev_mohan",
-      "target": "ep_20220609_takeaways_with_sanjeev_m",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_sanjeev_mohan",
       "target": "ep_20251112_fall_2025_data_analytics",
       "type": "GUEST_ON",
       "provenance": "curated"
@@ -11582,12 +11232,6 @@
     },
     {
       "source": "person_sarah_catanzaro",
-      "target": "ep_20220106_season_three_premier_tak",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
-      "source": "person_sarah_catanzaro",
       "target": "ep_20220106_will_2022_change_how_we_",
       "type": "GUEST_ON",
       "provenance": "curated"
@@ -11597,12 +11241,6 @@
       "target": "ep_20220512_is_your_modern_data_stac",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_sarah_krasnik",
-      "target": "ep_20220512_s3e18_takeaways_with_sar",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_scott_taylor",
@@ -11623,12 +11261,6 @@
       "provenance": "curated"
     },
     {
-      "source": "person_shane_gibson",
-      "target": "ep_20220317_s3e11_takeaways_with_sha",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_simone_steel",
       "target": "ep_20230810_data_sustainability_w_si",
       "type": "GUEST_ON",
@@ -11645,12 +11277,6 @@
       "target": "ep_20220421_everybodys_an_imposter_s",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_steve_perry",
-      "target": "ep_20220421_s3e15_takeaways_with_ste",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_steve_whitla",
@@ -11675,12 +11301,6 @@
       "target": "ep_20221117_are_data_teams_keeping_u",
       "type": "GUEST_ON",
       "provenance": "curated"
-    },
-    {
-      "source": "person_theresa_kushner",
-      "target": "ep_20221117_takeaways_with_theresa_k",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
     },
     {
       "source": "person_tiankai_feng",
@@ -11731,12 +11351,6 @@
       "provenance": "curated"
     },
     {
-      "source": "person_veronika_durgin",
-      "target": "ep_20230413_takeaways_with_veronika_",
-      "type": "GUEST_ON",
-      "provenance": "inferred"
-    },
-    {
       "source": "person_victoria_gamerman",
       "target": "ep_20260507_ai_governance_isn_t_comp",
       "type": "GUEST_ON",
@@ -11777,6 +11391,324 @@
       "target": "ep_20230928_from_london_to_san_franc",
       "type": "GUEST_ON",
       "provenance": "curated"
+    },
+    {
+      "source": "ep_20220106_season_three_premier_tak_ta",
+      "target": "ep_20220106_will_2022_change_how_we_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220113_s3e2_takeaways_with_emil_ta",
+      "target": "ep_20220113_modern_data_work_at_driz",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220120_s3e3_takeaways_with_benn_ta",
+      "target": "ep_20220120_what_good_is_a_metrics_l",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220127_s3e4_takeaways_with_dora_ta",
+      "target": "ep_20220127_can_the_data_mesh_be_gov",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220203_s3e5_takeways_with_laura_ta",
+      "target": "ep_20220203_can_agile_practices_disr",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220210_s3e6_takeaways_with_luke_ta",
+      "target": "ep_20220210_the_three_most_important",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220217_s3e7_takeaways_with_kare_ta",
+      "target": "ep_20220217_the_easiest_data_is_alwa",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220303_s3e9_takeaways_with_arju_ta",
+      "target": "ep_20220303_are_you_swimming_upstrea",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220310_s3e10_takeaways_with_pat_ta",
+      "target": "ep_20220310_your_privacy_is_my_curre",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220317_s3e11_takeaways_with_sha_ta",
+      "target": "ep_20220317_agile_like_a_fox_but_for",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220331_s3e12_takeaways_with_bob_ta",
+      "target": "ep_20220331_the_future_of_data_is_kn",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220407_s3e13_takeaways_with_non_ta",
+      "target": "ep_20220407_can_data_policy_drive_da",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220414_s3e14_takeaways_with_cha_ta",
+      "target": "ep_20220414_why_are_we_so_bad_at_thi",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220421_s3e15_takeaways_with_ste_ta",
+      "target": "ep_20220421_everybodys_an_imposter_s",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220428_s3e16_takeaways_with_nic_ta",
+      "target": "ep_20220428_a_layered_approach_to_da",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220505_s3e17_takeaways_with_fra_ta",
+      "target": "ep_20220505_automating_the_enterpris",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220512_s3e18_takeaways_with_sar_ta",
+      "target": "ep_20220512_is_your_modern_data_stac",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220519_takeaways_with_omar_khaw_ta",
+      "target": "ep_20220519_a_roadmap_to_data_mesh_s",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220526_takeaways_with_brett_hur_ta",
+      "target": "ep_20220526_the_data_entrepreneurs_e",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220602_takeaways_with_ciaran_dy_ta",
+      "target": "ep_20220602_does_our_understanding_o",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220609_takeaways_with_sanjeev_m_ta",
+      "target": "ep_20220609_getting_all_meta_about_d",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220616_takeaways_with_peter_kap_ta",
+      "target": "ep_20220616_dont_let_good_metadata_g",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220623_takeaways_with_ergest_xh_ta",
+      "target": "ep_20220623_data_models_are_divas_w_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220908_takeaways_with_joe_reis__ta",
+      "target": "ep_20220908_data_engineering_where_a",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220915_takeaways_with_ole_olese_ta",
+      "target": "ep_20220915_the_future_of_data_catal",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220922_takeaways_of_episode_100_ta",
+      "target": "ep_20220922_keeping_it_100_about_met",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20220929_takeaways_with_rupal_sum_ta",
+      "target": "ep_20220929_struggles_of_setting_up_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20221006_takeaways_with_patrick_b_ta",
+      "target": "ep_20221006_ai_ml_where_should_the_f",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20221013_takeaways_with_laura_ell_ta",
+      "target": "ep_20221013_data_empathy_you_either_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20221020_takeaways_with_loris_mar_ta",
+      "target": "ep_20221020_knowledge_the_missing_pi",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20221027_takeaways_with_andrew_ey_ta",
+      "target": "ep_20221027_ai_no_one_wants_your_mod",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20221103_takeaways_with_gabi_stee_ta",
+      "target": "ep_20221103_put_the_business_in_char",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20221110_takeaways_with_dan_benne_ta",
+      "target": "ep_20221110_where_are_the_semantics_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20221117_takeaways_with_theresa_k_ta",
+      "target": "ep_20221117_are_data_teams_keeping_u",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20221201_takeaways_with_allison_s_ta",
+      "target": "ep_20221201_getting_into_the_pool_wi",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230112_takeaways_with_bill_inmo_ta",
+      "target": "ep_20230112_a_conversation_with_the_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230119_takeaways_with_jane_urba_ta",
+      "target": "ep_20230119_providing_data_business_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230126_takeaways_with_anna_abra_ta",
+      "target": "ep_20230126_data_modeling_your_data_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230202_takeaways_with_malcolm_h_ta",
+      "target": "ep_20230202_is_master_data_managemen",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230209_takeaways_with_jeff_jona_ta",
+      "target": "ep_20230209_everywhere_you_look_ther",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230216_takeaways_with_mohammad__ta",
+      "target": "ep_20230216_metadata_is_this_a_graph",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230223_takeaways_with_brian_t_o_ta",
+      "target": "ep_20230223_increasing_adoption_of_d",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230309_takeaways_with_bethany_l_ta",
+      "target": "ep_20230309_data_operations_vs_data_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230316_takeaways_with_kristin_s_ta",
+      "target": "ep_20230316_school_of_building_data_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230330_takeaways_with_abhi_siva_ta",
+      "target": "ep_20230330_show_me_the_metrics_w_ab",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230406_takeaways_with_benny_ben_ta",
+      "target": "ep_20230406_passing_the_buck_busines",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230413_takeaways_with_veronika__ta",
+      "target": "ep_20230413_dos_and_dont_for_the_nex",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230427_takeaways_with_alex_vayn_ta",
+      "target": "ep_20230427_what_is_the_dna_of_a_dat",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230504_takeaways_with_ricardo_b_ta",
+      "target": "ep_20230504_unpacking_responsible_ai",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230511_takeaways_with_katariina_ta",
+      "target": "ep_20230511_live_from_the_knowledge_",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230518_takeaways_with_maddy_wan_ta",
+      "target": "ep_20230518_using_data_to_change_the",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230525_takeaways_with_ben_clinc_ta",
+      "target": "ep_20230529_updated_release_automati",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20230608_takeaways_with_aakriti_a_ta",
+      "target": "ep_20230608_there_is_no_i_in_data_go",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
     },
     {
       "source": "ep_20230713_modeling_and_semantics_a_ta",
@@ -12177,6 +12109,12 @@
     {
       "source": "ep_20261009_preserve_executive_trust_ta",
       "target": "ep_20261009_preserve_executive_trust",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20261016_game_changers_the_talent_ta",
+      "target": "ep_20261016_game_changers_the_talent",
       "type": "TAKEAWAY_OF",
       "provenance": "inferred"
     }
