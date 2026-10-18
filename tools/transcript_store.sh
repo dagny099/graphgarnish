@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 # The durable, private home for transcripts and full answers.
 #
+# One private repository can hold transcripts for many projects. Each kind
+# of material gets a top-level folder (TRANSCRIPTS_PREFIX, "podcasts" here),
+# and GraphGarnish keeps its cache layout inside it:
+#
+#   podcasts/<show>/transcripts/<episode>.json   what speech-to-text heard
+#   podcasts/<show>/answers/<question>.json      full answers cut from them
+#
 # Speech-to-text is the expensive step, so its output is worth keeping
 # forever. The Actions cache is fast but forgets: GitHub drops an entry after
 # seven days unused, and a branch cannot read main's twin. This keeps a copy
@@ -12,7 +19,7 @@
 #                                                 copy the cache into the store
 #
 # Needs TRANSCRIPTS_TOKEN (a token that can write TRANSCRIPTS_REPO) and
-# TRANSCRIPTS_REPO (owner/name). The token is passed per command as a header
+# TRANSCRIPTS_REPO (owner/name). TRANSCRIPTS_PREFIX defaults to "podcasts". The token is passed per command as a header
 # and never written to disk: the cache folder is uploaded to the Actions
 # cache, and anything in it would travel with it.
 set -euo pipefail
@@ -21,6 +28,7 @@ cmd=${1:?usage: transcript_store.sh pull|push ...}
 : "${TRANSCRIPTS_TOKEN:?TRANSCRIPTS_TOKEN is not set}"
 : "${TRANSCRIPTS_REPO:?TRANSCRIPTS_REPO is not set}"
 store="${RUNNER_TEMP:-/tmp}/transcript-store"
+prefix="${TRANSCRIPTS_PREFIX:-podcasts}"
 url="${TRANSCRIPTS_URL:-https://github.com/${TRANSCRIPTS_REPO}.git}"  # URL override for tests
 header="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$TRANSCRIPTS_TOKEN" | base64 | tr -d '\n')"
 # Copy a tree without its .git folder (tar is on every runner; rsync is not).
@@ -32,8 +40,12 @@ case "$cmd" in
   pull)
     cache=${2:-.cache/qa}
     fresh_clone
-    copy_tree "$store" "$cache"
-    echo "store: $(find "$store" -path "$store/.git" -prune -o -type f -name '*.json' -print | wc -l) files pulled from $TRANSCRIPTS_REPO"
+    if [ -d "$store/$prefix" ]; then
+      copy_tree "$store/$prefix" "$cache"
+    else
+      mkdir -p "$cache"
+    fi
+    echo "store: $(find "$store/$prefix" -type f -name '*.json' 2>/dev/null | wc -l) files pulled from $TRANSCRIPTS_REPO/$prefix"
     ;;
   push)
     message=${2:?push needs a commit message}
@@ -42,13 +54,13 @@ case "$cmd" in
     # a rejected push it starts again from a fresh clone rather than merging.
     for attempt in 1 2 3 4 5 6; do
       fresh_clone
-      copy_tree "$cache" "$store"
+      copy_tree "$cache" "$store/$prefix"
       git -C "$store" add -A
       if git -C "$store" diff --cached --quiet; then echo "store: nothing new"; exit 0; fi
       git -C "$store" -c user.name="github-actions[bot]" \
         -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "$message"
       if git_auth -C "$store" push -q origin HEAD; then
-        echo "store: pushed to $TRANSCRIPTS_REPO"
+        echo "store: pushed to $TRANSCRIPTS_REPO/$prefix"
         exit 0
       fi
       sleep $((attempt * 4))

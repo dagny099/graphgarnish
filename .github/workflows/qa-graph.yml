@@ -49,8 +49,10 @@ env:
   CONFIG: ${{ github.event.inputs.config }}
   LIMIT: ${{ github.event.inputs.limit }}
   SHARDS: "16"
-  # The private store. Set a TRANSCRIPTS_REPO variable to use another name.
-  TRANSCRIPTS_REPO: ${{ vars.TRANSCRIPTS_REPO || format('{0}-transcripts', github.repository) }}
+  # The private store, shared with other projects' transcripts: this one
+  # writes under podcasts/. Set a TRANSCRIPTS_REPO variable to use another.
+  TRANSCRIPTS_REPO: ${{ vars.TRANSCRIPTS_REPO || format('{0}/transcripts', github.repository_owner) }}
+  TRANSCRIPTS_PREFIX: podcasts
 
 jobs:
   transcribe:
