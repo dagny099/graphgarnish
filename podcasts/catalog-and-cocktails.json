@@ -1,0 +1,188 @@
+{
+  "podcast": {
+    "id": "catalog-and-cocktails",
+    "name": "Catalog & Cocktails",
+    "feed": "https://www.omnycontent.com/d/playlist/922e0f19-2d84-4485-835c-a83f00036b00/ec23d51c-1891-4428-81ee-b387002de817/46398967-49a1-45c7-9af5-b387002de875/podcast.rss",
+    "hosts": [
+      "Juan Sequeda",
+      "Tim Gasper"
+    ],
+    "episodes": {
+      "skip_types": [
+        "trailer",
+        "bonus"
+      ],
+      "_note": "Companion TAKEAWAYS clips are kept: in some seasons they carry the closing questions. A clip and its episode are merged into one row."
+    },
+    "transcripts": {
+      "sources": [
+        "feed",
+        "dir",
+        "whisper"
+      ],
+      "dir": "../transcripts/catalog-and-cocktails",
+      "whisper": {
+        "model": "base.en",
+        "compute_type": "int8",
+        "from_end_minutes": 20
+      }
+    },
+    "guests": {
+      "from": [
+        "graph",
+        "title",
+        "description"
+      ],
+      "graph": "../sample_network.json"
+    }
+  },
+  "questions": [
+    {
+      "id": "advice",
+      "question": "What's your advice about data, about life?",
+      "cues": [
+        "what's your advice",
+        "what is your advice",
+        "advice about data",
+        "your final advice",
+        "any advice",
+        "one piece of advice",
+        "piece of advice for"
+      ],
+      "answer_cues": [
+        "advice",
+        "i would say",
+        "i'd say"
+      ],
+      "stop_cues": [
+        "as far as people",
+        "as far as who",
+        "next guest",
+        "who haven't you",
+        "resources",
+        "third question",
+        "second question",
+        "thank you so much",
+        "thanks so much",
+        "thanks for having me",
+        "cheers",
+        "takeaway",
+        "who should have on",
+        "who should we have",
+        "next week",
+        "quick reminders",
+        "before we say goodbye",
+        "season finale"
+      ],
+      "answer_kind": "open",
+      "max_answer_words": 200
+    },
+    {
+      "id": "invite-next",
+      "question": "Who should we invite next?",
+      "cues": [
+        "who should we invite",
+        "invite next",
+        "who to invite",
+        "who should invite",
+        "who should we have on",
+        "who should we bring on",
+        "who's on right next",
+        "who should have on",
+        "who should we have"
+      ],
+      "block_cues": [
+        "what's your advice",
+        "what is your advice",
+        "what resources do you follow",
+        "three questions",
+        "final questions"
+      ],
+      "answer_cues": [
+        "as far as people",
+        "as far as who",
+        "next guest",
+        "who haven't you",
+        "one person",
+        "i would invite",
+        "i'd invite",
+        "you should invite",
+        "you should have",
+        "you should talk",
+        "should talk to",
+        "i'd have",
+        "i would have",
+        "i'd love",
+        "i would love",
+        "i'd recommend",
+        "i would recommend",
+        "bring on",
+        "have on",
+        "reach out to",
+        "you guys should",
+        "well served"
+      ],
+      "stop_cues": [
+        "resources",
+        "third question",
+        "last question",
+        "thank you so much",
+        "thanks so much",
+        "thanks for having me",
+        "cheers",
+        "takeaway",
+        "next week",
+        "quick reminders",
+        "before we say goodbye",
+        "season finale"
+      ],
+      "answer_kind": "people",
+      "max_answer_words": 140,
+      "answer_search_words": 500
+    },
+    {
+      "id": "resources",
+      "question": "What resources do you follow?",
+      "cues": [
+        "what resources",
+        "resources do you follow",
+        "resources you follow",
+        "the resources you"
+      ],
+      "block_cues": [
+        "what's your advice",
+        "what is your advice",
+        "who should we invite",
+        "three questions",
+        "final questions"
+      ],
+      "answer_cues": [
+        "resources",
+        "i follow",
+        "i read",
+        "i listen",
+        "newsletter",
+        "substack",
+        "podcasts",
+        "books",
+        "i subscribe",
+        "linkedin"
+      ],
+      "stop_cues": [
+        "thank you so much",
+        "thanks so much",
+        "thanks for having me",
+        "cheers",
+        "takeaway",
+        "wrap up",
+        "next week",
+        "quick reminders",
+        "before we say goodbye",
+        "season finale"
+      ],
+      "answer_kind": "open",
+      "max_answer_words": 160,
+      "answer_search_words": 700
+    }
+  ]
+}

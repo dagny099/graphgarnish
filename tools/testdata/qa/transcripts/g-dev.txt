@@ -1,0 +1,14 @@
+Juan Sequeda (00:44:10):
+So Dev, one piece of advice for our listeners?
+
+Dev Rao (00:44:14):
+Governance without tears means starting small. Pick one metric, agree on the definition, and make governance part of data modeling.
+
+Tim Gasper (00:44:30):
+And who should we have on next?
+
+Dev Rao (00:44:33):
+Talk to Ben Ortiz. Also Ivy Chen from the Metadata Guild.
+
+Juan Sequeda (00:44:45):
+Thank you so much Dev. Cheers.

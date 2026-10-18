@@ -1,0 +1,179 @@
+name: Recurring-question graphs
+
+# For each podcast config in podcasts/, find every episode's answer to the
+# recurring questions it lists, and commit the graphs to qa/.
+#
+# Speech-to-text is the slow part (about two minutes an episode on a hosted
+# runner), so it is split across 16 parallel shards. Its output is kept in
+# two places: the Actions cache (fast, but forgotten after seven days unused)
+# and, when TRANSCRIPTS_TOKEN is set, a private repository that never
+# forgets (tools/transcript_store.sh). Later runs transcribe only episodes
+# they have not seen. Everything after that (locating, extracting, graphing)
+# reruns in seconds, so a change to a config's cues is cheap to try.
+#
+# The public repo gets short excerpts only. Full answers and transcripts
+# live in the private store.
+
+on:
+  schedule:
+    - cron: "0 15 * * 1"   # Mondays, after the network refresh
+  # Only main runs on push: each branch has its own Actions cache, so a run
+  # on a feature branch would transcribe everything again. Run a branch by
+  # hand from the Actions tab when it needs fresh graphs.
+  push:
+    branches: [main]
+    paths:
+      - "podcasts/**"
+      - "tools/qa_graph.py"
+      - ".github/workflows/qa-graph.yml"
+  workflow_dispatch:
+    inputs:
+      config:
+        description: "One podcast config to run (blank = every podcasts/*.json)"
+        required: false
+        default: ""
+      limit:
+        description: "Only the N most recent episodes (blank = each config's own limit)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qa-graph-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  # Blank runs every config in podcasts/: adding a podcast is adding a file.
+  CONFIG: ${{ github.event.inputs.config }}
+  LIMIT: ${{ github.event.inputs.limit }}
+  SHARDS: "16"
+  # The private store, shared with other projects' transcripts: this one
+  # writes under podcasts/. Set a TRANSCRIPTS_REPO variable to use another.
+  TRANSCRIPTS_REPO: ${{ vars.TRANSCRIPTS_REPO || format('{0}/transcripts', github.repository_owner) }}
+  TRANSCRIPTS_PREFIX: podcasts
+
+jobs:
+  transcribe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      # Empty when the secret is not set; shards then hand transcripts to
+      # the graph job as short-lived artifacts instead.
+      TRANSCRIPTS_TOKEN: ${{ secrets.TRANSCRIPTS_TOKEN }}
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Restore transcripts from earlier runs
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/qa
+          key: qa-transcripts-${{ github.run_id }}
+          restore-keys: qa-transcripts-
+      - name: Fetch the private transcript store
+        if: env.TRANSCRIPTS_TOKEN != ''
+        run: bash tools/transcript_store.sh pull
+      - run: pip install -q faster-whisper
+      - name: Transcribe this shard's episodes
+        run: |
+          for c in ${CONFIG:-podcasts/*.json}; do
+            python3 tools/qa_graph.py "$c" ${LIMIT:+--limit "$LIMIT"} \
+              --shard "${{ matrix.shard }}/$SHARDS" 2>&1 | tail -n 20 || echo "::warning::$c shard failed"
+          done
+      - name: Save this shard's transcripts to the private store
+        if: env.TRANSCRIPTS_TOKEN != ''
+        run: bash tools/transcript_store.sh push "Transcripts from shard ${{ matrix.shard }}, run ${{ github.run_id }}"
+      - name: Hand transcripts to the graph job (no private store)
+        if: env.TRANSCRIPTS_TOKEN == ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: transcripts-${{ matrix.shard }}
+          path: .cache/qa
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 1
+
+  graph:
+    needs: transcribe
+    if: always()
+    runs-on: ubuntu-latest
+    env:
+      # Empty when the secret is not set; the LLM pass is then skipped.
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      TRANSCRIPTS_TOKEN: ${{ secrets.TRANSCRIPTS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Restore transcripts from earlier runs
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/qa
+          key: qa-transcripts-${{ github.run_id }}
+          restore-keys: qa-transcripts-
+      - name: Fetch the private transcript store
+        if: env.TRANSCRIPTS_TOKEN != ''
+        run: bash tools/transcript_store.sh pull
+      - name: Merge this run's transcripts (no private store)
+        if: env.TRANSCRIPTS_TOKEN == ''
+        uses: actions/download-artifact@v4
+        with:
+          pattern: transcripts-*
+          path: shards
+      - run: |
+          mkdir -p .cache/qa
+          for d in shards/*/; do [ -d "$d" ] && cp -rn "$d". .cache/qa/ 2>/dev/null || true; done
+          find .cache/qa -name '*.json' | wc -l
+      - name: LLM pass, only when a key is configured
+        if: env.ANTHROPIC_API_KEY != ''
+        run: pip install -q anthropic
+      - name: Build the graphs
+        run: |
+          set -o pipefail
+          python3 tools/test_qa_graph.py > /dev/null
+          for c in ${CONFIG:-podcasts/*.json}; do
+            python3 tools/qa_graph.py "$c" ${LIMIT:+--limit "$LIMIT"} --offline --report 2>&1 | tee -a qa-build.log \
+              || echo "::warning::$c failed to build"
+          done
+      - name: Keep transcripts and full answers for next time
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/qa
+          key: qa-transcripts-${{ github.run_id }}
+      - name: Save full answers to the private store
+        if: env.TRANSCRIPTS_TOKEN != ''
+        run: bash tools/transcript_store.sh push "Full answers, run ${{ github.run_id }}"
+      - name: Summarize
+        if: always()
+        run: |
+          { echo '### Recurring-question graphs'; echo '```'; cat qa-build.log 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit the graphs
+        run: |
+          rm -f qa-build.log
+          rm -rf shards
+          # qa/ is fully derived. Another run may have pushed its own qa/ to
+          # the branch while this one worked, so rebasing would conflict on
+          # every file. Put this run's qa/ on top of the branch as it is now
+          # instead: code that landed meanwhile stays, and its own run
+          # (queued behind this one) rebuilds qa/ again.
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          cp -r qa "$RUNNER_TEMP/qa-new"
+          git fetch -q origin "$BRANCH"
+          git checkout -q -B "$BRANCH" "origin/$BRANCH"
+          rm -rf qa && cp -r "$RUNNER_TEMP/qa-new" qa
+          git add -A qa
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "Rebuild recurring-question graphs
+
+          Regenerated by .github/workflows/qa-graph.yml."
+          git push origin "HEAD:$BRANCH"

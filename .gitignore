@@ -14,3 +14,6 @@ build.log
 # Local scratch renders, not build outputs.
 output/
 tmp/
+
+# Transcript cache for tools/qa_graph.py (kept in the Actions cache, not git).
+.cache/

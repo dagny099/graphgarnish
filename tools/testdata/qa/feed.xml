@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel>
+<title>Test Show</title>
+<item><title>Graphs Everywhere with Ada Park</title><pubDate>Thu, 05 Mar 2026 10:00:00 GMT</pubDate><guid>g-ada</guid>
+  <link>https://example.com/ep/ada</link><description>Ada Park joins the hosts.</description>
+  <enclosure url="https://example.com/ada.mp3" type="audio/mpeg"/>
+  <podcast:transcript url="https://example.com/ada.vtt" type="text/vtt"/></item>
+<item><title>Semantics Matter with Ben Ortiz</title><pubDate>Thu, 12 Feb 2026 10:00:00 GMT</pubDate><guid>g-ben</guid>
+  <description>Our guest is Ben Ortiz.</description></item>
+<item><title>Metadata at Scale with Cleo Diaz</title><pubDate>Thu, 15 Jan 2026 10:00:00 GMT</pubDate><guid>g-cleo</guid>
+  <description>Cleo Diaz talks metadata.</description></item>
+<item><title>Governance Without Tears with Dev Rao</title><pubDate>Thu, 18 Dec 2025 10:00:00 GMT</pubDate><guid>g-dev</guid>
+  <description>Dev Rao on governance.</description></item>
+<item><title>A Show With No Transcript with Eve Moss</title><pubDate>Thu, 20 Nov 2025 10:00:00 GMT</pubDate><guid>g-eve</guid>
+  <description>Eve Moss.</description></item>
+<item><title>TAKEAWAYS - Graphs Everywhere with Ada Park</title><pubDate>Thu, 05 Mar 2026 12:00:00 GMT</pubDate><guid>g-ada-t</guid>
+  <description>Takeaways.</description></item>
+<item><title>Coming soon</title><pubDate>Thu, 01 Jan 2026 10:00:00 GMT</pubDate><guid>g-trailer</guid>
+  <itunes:episodeType>trailer</itunes:episodeType></item>
+<item><title>Knowledge Graph Stories with Fay Lin</title><pubDate>Thu, 23 Oct 2025 10:00:00 GMT</pubDate><guid>g-fay</guid>
+  <description>Fay Lin.</description></item>
+</channel></rss>
