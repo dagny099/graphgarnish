@@ -3,24 +3,24 @@
     "generated_by": "tools/build_network.py",
     "source": "seed+feed",
     "counts": {
-      "episode": 385,
-      "person": 188,
-      "organization": 106,
+      "episode": 387,
+      "person": 189,
+      "organization": 107,
       "topic": 22
     },
     "provenance": {
       "episode": {
-        "feed": 183,
+        "feed": 185,
         "curated": 202
       },
       "organization": {
         "curated": 60,
-        "inferred": 45,
+        "inferred": 46,
         "verified": 1
       },
       "person": {
         "curated": 142,
-        "inferred": 44,
+        "inferred": 45,
         "verified": 2
       },
       "topic": {
@@ -30,19 +30,19 @@
     "link_provenance": {
       "AFFILIATED_WITH": {
         "curated": 61,
-        "inferred": 50,
+        "inferred": 51,
         "verified": 1
       },
       "COVERS": {
-        "inferred": 546
+        "inferred": 549
       },
       "GUEST_ON": {
         "curated": 146,
-        "inferred": 54,
+        "inferred": 55,
         "verified": 2
       },
       "TAKEAWAY_OF": {
-        "inferred": 121
+        "inferred": 122
       }
     },
     "episodes_needing_review": [
@@ -4335,6 +4335,30 @@
       "episode": "9"
     },
     {
+      "id": "ep_20261023_how_data_teams_become_tr",
+      "name": "How data teams become trusted business partners with Nick Zervoudis",
+      "type": "episode",
+      "date": "2026-10-23",
+      "is_full": true,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/how-data-teams-become-trusted-business-partners-with-nick-zervoudis",
+      "summary": "Nick Zervoudis, data product manager, trainer, and consultant at Value from Data & AI, joins Juan and Time to talk about why many data teams end up working like a service desk and what to do about it. The answer is: DO DISCOVERY! In this conversation, we cover how a service desk model breaks down when a request can&rsquo;t be described in a few words, why dashboards get opened once and then forgot",
+      "season": "12",
+      "episode": "10"
+    },
+    {
+      "id": "ep_20261023_how_data_teams_become_tr_ta",
+      "name": "TAKEAWAY How data teams become trusted business partners with Nick Zervoudis",
+      "type": "episode",
+      "date": "2026-10-23",
+      "is_full": false,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/takeaway-how-data-teams-become-trusted-business-partners-with-nick-zervoudis",
+      "summary": "This is the takeaway episode with Nick Zervoudis, data product manager, trainer, and consultant at Value from Data & AI, joins Juan and Time to talk about why many data teams end up working like a service desk and what to do about it. The answer is: DO DISCOVERY! See omnystudio.com/listener for privacy information.",
+      "season": "12",
+      "episode": "10"
+    },
+    {
       "id": "person_aakriti_agrawal",
       "name": "Aakriti Agrawal",
       "type": "person",
@@ -5131,6 +5155,12 @@
       "name": "Nick Schrock",
       "type": "person",
       "source": "curated"
+    },
+    {
+      "id": "person_nick_zervoudis",
+      "name": "Nick Zervoudis",
+      "type": "person",
+      "source": "inferred"
     },
     {
       "id": "person_nicola_askham",
@@ -6045,6 +6075,12 @@
       "source": "curated"
     },
     {
+      "id": "org_value",
+      "name": "Value",
+      "type": "organization",
+      "source": "inferred"
+    },
+    {
       "id": "org_vectara",
       "name": "Vectara",
       "type": "organization",
@@ -6739,6 +6775,12 @@
     {
       "source": "person_nick_schrock",
       "target": "org_elemental",
+      "type": "AFFILIATED_WITH",
+      "provenance": "inferred"
+    },
+    {
+      "source": "person_nick_zervoudis",
+      "target": "org_value",
       "type": "AFFILIATED_WITH",
       "provenance": "inferred"
     },
@@ -10181,6 +10223,24 @@
       "provenance": "inferred"
     },
     {
+      "source": "ep_20261023_how_data_teams_become_tr",
+      "target": "topic_analytics_bi",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20261023_how_data_teams_become_tr",
+      "target": "topic_data_products",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20261023_how_data_teams_become_tr",
+      "target": "topic_data_teams_org",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
       "source": "person_aakriti_agrawal",
       "target": "ep_20230608_there_is_no_i_in_data_go",
       "type": "GUEST_ON",
@@ -11037,6 +11097,12 @@
       "target": "ep_20211202_modern_data_stack_techno",
       "type": "GUEST_ON",
       "provenance": "curated"
+    },
+    {
+      "source": "person_nick_zervoudis",
+      "target": "ep_20261023_how_data_teams_become_tr",
+      "type": "GUEST_ON",
+      "provenance": "inferred"
     },
     {
       "source": "person_nicola_askham",
@@ -12115,6 +12181,12 @@
     {
       "source": "ep_20261016_game_changers_the_talent_ta",
       "target": "ep_20261016_game_changers_the_talent",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20261023_how_data_teams_become_tr_ta",
+      "target": "ep_20261023_how_data_teams_become_tr",
       "type": "TAKEAWAY_OF",
       "provenance": "inferred"
     }
