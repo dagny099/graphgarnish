@@ -3,14 +3,14 @@
     "generated_by": "tools/build_network.py",
     "source": "seed+feed",
     "counts": {
-      "episode": 387,
-      "person": 189,
+      "episode": 388,
+      "person": 190,
       "organization": 107,
       "topic": 22
     },
     "provenance": {
       "episode": {
-        "feed": 185,
+        "feed": 186,
         "curated": 202
       },
       "organization": {
@@ -20,7 +20,7 @@
       },
       "person": {
         "curated": 142,
-        "inferred": 45,
+        "inferred": 46,
         "verified": 2
       },
       "topic": {
@@ -34,11 +34,11 @@
         "verified": 1
       },
       "COVERS": {
-        "inferred": 549
+        "inferred": 553
       },
       "GUEST_ON": {
         "curated": 146,
-        "inferred": 55,
+        "inferred": 56,
         "verified": 2
       },
       "TAKEAWAY_OF": {
@@ -4359,6 +4359,18 @@
       "episode": "10"
     },
     {
+      "id": "ep_20261030_dashboard_slop_rant_with",
+      "name": "Dashboard Slop rant with Sonny Rivera",
+      "type": "episode",
+      "date": "2026-10-30",
+      "is_full": true,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/dashboard-slop-rant-with-sonny-rivera",
+      "summary": "In this special rant episode, Sonny Rivera joins Juan and Tim during a live recording and rant about AI-generated dashboards, semantic layers, and what it takes to trust an answer. The situation: dashboards slop is easy to build which makes foundation matter more, not less. We discussed: Building a dashboard was never the hard part. Being able to explain where a number came from is. Speed without ",
+      "season": "12",
+      "episode": "11"
+    },
+    {
       "id": "person_aakriti_agrawal",
       "name": "Aakriti Agrawal",
       "type": "person",
@@ -5371,6 +5383,12 @@
       "name": "Sol Rashidi",
       "type": "person",
       "source": "curated"
+    },
+    {
+      "id": "person_sonny_rivera",
+      "name": "Sonny Rivera",
+      "type": "person",
+      "source": "inferred"
     },
     {
       "id": "person_steve_perry",
@@ -10241,6 +10259,30 @@
       "provenance": "inferred"
     },
     {
+      "source": "ep_20261030_dashboard_slop_rant_with",
+      "target": "topic_analytics_bi",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20261030_dashboard_slop_rant_with",
+      "target": "topic_data_engineering",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20261030_dashboard_slop_rant_with",
+      "target": "topic_data_modeling",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20261030_dashboard_slop_rant_with",
+      "target": "topic_knowledge_graphs",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
       "source": "person_aakriti_agrawal",
       "target": "ep_20230608_there_is_no_i_in_data_go",
       "type": "GUEST_ON",
@@ -11337,6 +11379,12 @@
       "target": "ep_20240507_leadership_transformatio",
       "type": "GUEST_ON",
       "provenance": "curated"
+    },
+    {
+      "source": "person_sonny_rivera",
+      "target": "ep_20261030_dashboard_slop_rant_with",
+      "type": "GUEST_ON",
+      "provenance": "inferred"
     },
     {
       "source": "person_steve_perry",
