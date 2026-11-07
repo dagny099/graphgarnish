@@ -1,0 +1,311 @@
+[
+ {
+  "path": "catalog-and-cocktails-advice/graph.json",
+  "podcast": "Catalog & Cocktails",
+  "podcast_id": "catalog-and-cocktails",
+  "question_id": "advice",
+  "question": "What's your advice about data, about life?",
+  "answer_kind": "open",
+  "episodes": 352,
+  "with_transcript": 350,
+  "answered": 179,
+  "first_date": "2020-05-13",
+  "last_date": "2026-09-25",
+  "most_named": [
+   {
+    "name": "business",
+    "type": "concept",
+    "answers": 6
+   },
+   {
+    "name": "learning",
+    "type": "concept",
+    "answers": 6
+   },
+   {
+    "name": "problem",
+    "type": "concept",
+    "answers": 6
+   },
+   {
+    "name": "read",
+    "type": "concept",
+    "answers": 6
+   },
+   {
+    "name": "afraid",
+    "type": "concept",
+    "answers": 5
+   },
+   {
+    "name": "day",
+    "type": "concept",
+    "answers": 5
+   },
+   {
+    "name": "job",
+    "type": "concept",
+    "answers": 5
+   },
+   {
+    "name": "world",
+    "type": "concept",
+    "answers": 5
+   }
+  ],
+  "named_then_guest": []
+ },
+ {
+  "path": "catalog-and-cocktails-invite-next/graph.json",
+  "podcast": "Catalog & Cocktails",
+  "podcast_id": "catalog-and-cocktails",
+  "question_id": "invite-next",
+  "question": "Who should we invite next?",
+  "answer_kind": "people",
+  "episodes": 352,
+  "with_transcript": 350,
+  "answered": 168,
+  "first_date": "2020-05-13",
+  "last_date": "2026-09-25",
+  "most_named": [
+   {
+    "name": "LinkedIn",
+    "type": "entity",
+    "answers": 12
+   },
+   {
+    "name": "CDO",
+    "type": "entity",
+    "answers": 3
+   },
+   {
+    "name": "Chad Sanderson",
+    "type": "person",
+    "answers": 3
+   },
+   {
+    "name": "DBT",
+    "type": "entity",
+    "answers": 3
+   },
+   {
+    "name": "Ethan Aaron",
+    "type": "person",
+    "answers": 3
+   },
+   {
+    "name": "Bob Muglia",
+    "type": "person",
+    "answers": 2
+   },
+   {
+    "name": "CEO of Snowflake",
+    "type": "entity",
+    "answers": 2
+   },
+   {
+    "name": "CEOs",
+    "type": "entity",
+    "answers": 2
+   }
+  ],
+  "named_then_guest": [
+   {
+    "who": "Lars Albertsson",
+    "by": "Chris Bergh",
+    "named": "2021-04-29",
+    "guest": "2021-09-16"
+   },
+   {
+    "who": "Jeff Jonas",
+    "by": "Emil Eifrem",
+    "named": "2021-08-12",
+    "guest": "2023-02-09"
+   },
+   {
+    "who": "Chad Sanderson",
+    "by": "Sarah Catanzaro",
+    "named": "2022-01-06",
+    "guest": "2022-04-14"
+   },
+   {
+    "who": "Sarah Krasnik",
+    "by": "François Scharffe",
+    "named": "2022-05-05",
+    "guest": "2022-05-12"
+   },
+   {
+    "who": "Andrew Eye",
+    "by": "Brett Hurt",
+    "named": "2022-05-26",
+    "guest": "2022-10-27"
+   },
+   {
+    "who": "Ethan Aaron",
+    "by": "John Kutay",
+    "named": "2022-09-03",
+    "guest": "2023-07-27"
+   },
+   {
+    "who": "Bill Inmon",
+    "by": "Joe Reis",
+    "named": "2022-09-08",
+    "guest": "2023-01-12"
+   },
+   {
+    "who": "Bill Inmon",
+    "by": "Matt Housley",
+    "named": "2022-09-08",
+    "guest": "2023-01-12"
+   },
+   {
+    "who": "Ethan Aaron",
+    "by": "Joe Reis",
+    "named": "2023-07-13",
+    "guest": "2023-07-27"
+   },
+   {
+    "who": "Matt Housley",
+    "by": "Chris Tabb",
+    "named": "2023-09-21",
+    "guest": "2026-01-15"
+   },
+   {
+    "who": "Anna Bergevin",
+    "by": "Karen Meppen",
+    "named": "2024-02-26",
+    "guest": "2024-08-22"
+   },
+   {
+    "who": "Lindsay Murphy",
+    "by": "Colleen Tartow",
+    "named": "2024-10-17",
+    "guest": "2025-01-23"
+   },
+   {
+    "who": "Arielle Rolland",
+    "by": "Frances O'Rafferty",
+    "named": "2025-03-13",
+    "guest": "2025-12-10"
+   },
+   {
+    "who": "Jenna Jordan",
+    "by": "Alex Bertails",
+    "named": "2025-11-19",
+    "guest": "2026-04-16"
+   }
+  ]
+ },
+ {
+  "path": "catalog-and-cocktails-resources/graph.json",
+  "podcast": "Catalog & Cocktails",
+  "podcast_id": "catalog-and-cocktails",
+  "question_id": "resources",
+  "question": "What resources do you follow?",
+  "answer_kind": "open",
+  "episodes": 352,
+  "with_transcript": 350,
+  "answered": 133,
+  "first_date": "2020-05-13",
+  "last_date": "2026-09-25",
+  "most_named": [
+   {
+    "name": "LinkedIn",
+    "type": "entity",
+    "answers": 41
+   },
+   {
+    "name": "conference",
+    "type": "concept",
+    "answers": 6
+   },
+   {
+    "name": "data engineering",
+    "type": "concept",
+    "answers": 5
+   },
+   {
+    "name": "LLMs",
+    "type": "entity",
+    "answers": 4
+   },
+   {
+    "name": "YouTube",
+    "type": "entity",
+    "answers": 4
+   },
+   {
+    "name": "blog",
+    "type": "concept",
+    "answers": 4
+   },
+   {
+    "name": "business",
+    "type": "concept",
+    "answers": 4
+   },
+   {
+    "name": "community",
+    "type": "concept",
+    "answers": 4
+   }
+  ],
+  "named_then_guest": []
+ },
+ {
+  "path": "data-engineering-podcast-biggest-gap/graph.json",
+  "podcast": "Data Engineering Podcast",
+  "podcast_id": "data-engineering-podcast",
+  "question_id": "biggest-gap",
+  "question": "What do you see as the biggest gap in the tooling or technology for data management today?",
+  "answer_kind": "open",
+  "episodes": 120,
+  "with_transcript": 120,
+  "answered": 95,
+  "first_date": "2023-10-30",
+  "last_date": "2026-09-24",
+  "most_named": [
+   {
+    "name": "LLM",
+    "type": "entity",
+    "answers": 7
+   },
+   {
+    "name": "SQL",
+    "type": "entity",
+    "answers": 5
+   },
+   {
+    "name": "business",
+    "type": "concept",
+    "answers": 4
+   },
+   {
+    "name": "data engineer",
+    "type": "concept",
+    "answers": 4
+   },
+   {
+    "name": "data quality",
+    "type": "concept",
+    "answers": 4
+   },
+   {
+    "name": "data stack",
+    "type": "concept",
+    "answers": 4
+   },
+   {
+    "name": "language",
+    "type": "concept",
+    "answers": 4
+   },
+   {
+    "name": "area",
+    "type": "concept",
+    "answers": 3
+   }
+  ],
+  "named_then_guest": []
+ }
+]

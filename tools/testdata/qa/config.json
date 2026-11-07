@@ -1,0 +1,21 @@
+{
+  "podcast": {
+    "id": "test-show",
+    "name": "Test Show",
+    "hosts": ["Juan Sequeda", "Tim Gasper"],
+    "episodes": {"skip_title_regex": "^TAKEAWAYS?\\b"},
+    "transcripts": {"sources": ["dir"], "dir": "transcripts"},
+    "guests": {"from": ["speakers", "title", "description"]},
+    "llm": {"mode": "off"}
+  },
+  "questions": [
+    {"id": "invite-next", "question": "Who should we invite next?",
+     "cues": ["who should we invite next", "who should we have on next"],
+     "stop_cues": ["what resources do you follow", "thank you so much"],
+     "answer_kind": "people"},
+    {"id": "advice", "question": "What's your advice about data, about life?",
+     "cues": ["what's your advice", "what is your advice", "one piece of advice"],
+     "stop_cues": ["who should we invite", "who should we have on", "thank you so much"],
+     "graph": {"concept_min_answers": 2, "concept_max_share": 0.9, "similar_threshold": 0.05}}
+  ]
+}

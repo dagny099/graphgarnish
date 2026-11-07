@@ -95,3 +95,38 @@ agents.
 
 Topic edges are keyword matches (`provenance: inferred`), so a time view
 inherits whatever noise the match phrases in `data/topics.json` carry.
+
+## Recurring-question graphs (`tools/qa_graph.py`, `qa.html`)
+
+- **No transcript source beats speech-to-text for this show.** The feed has no
+  `<podcast:transcript>`, Omny reports `HasPublishedTranscript: false`, the show
+  site carries descriptions only, and YouTube refuses GitHub's runners ("Sign in
+  to confirm you're not a bot"). Whisper `base.en` on the last 20 minutes of
+  each episode takes about three minutes an episode on a hosted runner.
+- **Names are the weak point of speech-to-text.** `base.en` wrote "Sarah
+  Cotton's sorrow" and "Bill Tanabaman" for guests' recommendations. Names
+  within a small edit distance of a known guest are snapped to that guest; the
+  rest are kept as heard. `small.en` would hear names better at roughly three
+  times the cost.
+- **The heuristic cutter depends on cue lists.** The closing questions were
+  asked in at least four shapes across the 2021-2026 sample (stacked in one
+  sentence, stacked with "Second. Third.", stacked then re-asked alone, asked
+  alone). Each shape is a check in `tools/test_qa_graph.py`. Read the
+  `reason` column of `qa/*/answers.json` after each full run: `answer cue not
+  found` rows usually mean a new phrasing to add to `answer_cues`.
+- **The Claude pass re-reads every episode on every run.** Cache its result per
+  episode, question, model and prompt (next to the transcripts in the private
+  store) before leaving it on for the weekly schedule; otherwise each weekly run
+  pays for a few hundred calls again.
+- **The Claude pass is built but has not run against the live API.** It is
+  tested against a mocked transport only. Add an `ANTHROPIC_API_KEY` repository
+  secret to turn it on in the workflow; if the API rejects `fallbacks` together
+  with structured output, the code retries without fallbacks.
+- **Panel episodes have several guests answering in turn.** The answer is cut
+  from the first guest to answer; later panellists' answers are lost.
+- **Guests are missing for shows whose titles do not name them.** The Data
+  Engineering Podcast run found the guest for 47 of 120 episodes, all from
+  transcript speaker labels or titles. Its descriptions name guests in prose
+  ("In this episode ... talks with ..."), which `guests_from_description` does
+  not parse. Answers without a guest still join the graph through shared
+  ideas and similarity, but carry no GAVE link.
