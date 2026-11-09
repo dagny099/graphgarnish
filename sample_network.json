@@ -3,24 +3,24 @@
     "generated_by": "tools/build_network.py",
     "source": "seed+feed",
     "counts": {
-      "episode": 388,
-      "person": 190,
-      "organization": 107,
+      "episode": 390,
+      "person": 191,
+      "organization": 108,
       "topic": 22
     },
     "provenance": {
       "episode": {
-        "feed": 186,
+        "feed": 188,
         "curated": 202
       },
       "organization": {
+        "inferred": 47,
         "curated": 60,
-        "inferred": 46,
         "verified": 1
       },
       "person": {
         "curated": 142,
-        "inferred": 46,
+        "inferred": 47,
         "verified": 2
       },
       "topic": {
@@ -30,19 +30,19 @@
     "link_provenance": {
       "AFFILIATED_WITH": {
         "curated": 61,
-        "inferred": 51,
+        "inferred": 52,
         "verified": 1
       },
       "COVERS": {
-        "inferred": 553
+        "inferred": 554
       },
       "GUEST_ON": {
         "curated": 146,
-        "inferred": 56,
+        "inferred": 57,
         "verified": 2
       },
       "TAKEAWAY_OF": {
-        "inferred": 122
+        "inferred": 123
       }
     },
     "episodes_needing_review": [
@@ -4371,6 +4371,30 @@
       "episode": "11"
     },
     {
+      "id": "ep_20261105_start_with_the_business_",
+      "name": "Start With the Business Metric, Not the AI with Richard Masters",
+      "type": "episode",
+      "date": "2026-11-05",
+      "is_full": true,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/start-with-the-business-metric-not-the-ai-with-richard-masters",
+      "summary": "Richard Masters, Senior Managing Director and Head of AI Strategy at Ancora AI by Design and former VP of Data at Virgin Atlantic joins Juan and Tim to discuss how to tie data and AI work to business strategy. The first basic question: what does the organization want to look like in three to five years, and what has to happen to get there? Platforms and models only matter if they serve that answer",
+      "season": "12",
+      "episode": "12"
+    },
+    {
+      "id": "ep_20261105_start_with_the_business__ta",
+      "name": "TAKEAWAY Start With the Business Metric, Not the AI with Richard Masters",
+      "type": "episode",
+      "date": "2026-11-05",
+      "is_full": false,
+      "source": "feed",
+      "url": "https://omny.fm/shows/catalog-and-cocktails-the-honest-no-bs-data-podcast/takeaway-start-with-the-business-metric-not-the-ai-with-richard-masters",
+      "summary": "This is the takeaway episode with Richard Masters, Senior Managing Director and Head of AI Strategy at Ancora AI by Design and former VP of Data at Virgin Atlantic where he joins Juan and Tim to discuss how to tie data and AI work to business strategy. We cover: starting with AI instead of a workflow or metric, running a pre-mortem, tracking evaluation scores instead of the business outcomes, gove",
+      "season": "12",
+      "episode": "12"
+    },
+    {
       "id": "person_aakriti_agrawal",
       "name": "Aakriti Agrawal",
       "type": "person",
@@ -5307,6 +5331,12 @@
       "source": "curated"
     },
     {
+      "id": "person_richard_masters",
+      "name": "Richard Masters",
+      "type": "person",
+      "source": "inferred"
+    },
+    {
       "id": "person_rupal_sumaria",
       "name": "Rupal Sumaria",
       "type": "person",
@@ -5509,6 +5539,12 @@
       "name": "Yujian Tang",
       "type": "person",
       "source": "curated"
+    },
+    {
+      "id": "org_ai_strategy",
+      "name": "AI Strategy",
+      "type": "organization",
+      "source": "inferred"
     },
     {
       "id": "org_aig",
@@ -6853,6 +6889,12 @@
     {
       "source": "person_peter_kromhout",
       "target": "org_xebia",
+      "type": "AFFILIATED_WITH",
+      "provenance": "inferred"
+    },
+    {
+      "source": "person_richard_masters",
+      "target": "org_ai_strategy",
       "type": "AFFILIATED_WITH",
       "provenance": "inferred"
     },
@@ -10283,6 +10325,12 @@
       "provenance": "inferred"
     },
     {
+      "source": "ep_20261105_start_with_the_business_",
+      "target": "topic_data_governance",
+      "type": "COVERS",
+      "provenance": "inferred"
+    },
+    {
       "source": "person_aakriti_agrawal",
       "target": "ep_20230608_there_is_no_i_in_data_go",
       "type": "GUEST_ON",
@@ -11285,6 +11333,12 @@
       "provenance": "curated"
     },
     {
+      "source": "person_richard_masters",
+      "target": "ep_20261105_start_with_the_business_",
+      "type": "GUEST_ON",
+      "provenance": "inferred"
+    },
+    {
       "source": "person_rupal_sumaria",
       "target": "ep_20220929_struggles_of_setting_up_",
       "type": "GUEST_ON",
@@ -12235,6 +12289,12 @@
     {
       "source": "ep_20261023_how_data_teams_become_tr_ta",
       "target": "ep_20261023_how_data_teams_become_tr",
+      "type": "TAKEAWAY_OF",
+      "provenance": "inferred"
+    },
+    {
+      "source": "ep_20261105_start_with_the_business__ta",
+      "target": "ep_20261105_start_with_the_business_",
       "type": "TAKEAWAY_OF",
       "provenance": "inferred"
     }
